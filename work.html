@@ -54,14 +54,19 @@
       
       <!-- Minimalist Filter & Sort Toolbar -->
       <div class="work-toolbar">
-        <!-- Filter Controls -->
-        <div class="filter-nav" role="tablist" aria-label="Filter projects">
-          <span class="toolbar-label">Filter:</span>
+                <!-- Filter Controls — Same list of services as under Expertise -->
+        <div class="filter-nav" role="tablist" aria-label="Filter projects by expertise service">
+          <span class="toolbar-label">Services:</span>
           <button type="button" class="filter-btn active" data-filter="all">All</button>
-          <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
-          <button type="button" class="filter-btn" data-filter="interior">Interior Design</button>
-          <button type="button" class="filter-btn" data-filter="visuals">VFX &amp; Visuals</button>
-          <button type="button" class="filter-btn" data-filter="build">Turnkey Build</button>
+          <button type="button" class="filter-btn" data-filter="architecture-planning">Architecture &amp; Planning</button>
+          <button type="button" class="filter-btn" data-filter="interior-architecture">Interior Architecture</button>
+          <button type="button" class="filter-btn" data-filter="interior-design">Interior Design &amp; Styling</button>
+          <button type="button" class="filter-btn" data-filter="vfx-cgi">Visual Effects (VFX) &amp; CGI</button>
+          <button type="button" class="filter-btn" data-filter="motion-design">Motion Design &amp; Spatial Animation</button>
+          <button type="button" class="filter-btn" data-filter="graphic-design">Graphic Design &amp; Brand Systems</button>
+          <button type="button" class="filter-btn" data-filter="industrial-design">Industrial &amp; Furniture Design</button>
+          <button type="button" class="filter-btn" data-filter="web-design">Digital &amp; Web Design</button>
+          <button type="button" class="filter-btn" data-filter="turnkey-build">Turnkey Design + Build</button>
         </div>
 
         <!-- Sort Controls (Typology, Date, Discipline) -->
@@ -76,16 +81,15 @@
       </div>
     </header>
 
-    <!-- Minimalissimo Portfolio Grid -->
+        <!-- Minimalissimo Portfolio Grid -->
     <section class="minimal-grid" id="projectGrid" aria-label="Project portfolio">
-      
-      <!-- Project 01: AFG -->
+      <!-- Project: AFG Executive Headquarters -->
       <a href="afg.html" class="grid-card" 
          data-title="AFG Executive Headquarters" 
          data-year="2024" 
          data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior build commercial space">
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture turnkey-build industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="card-img" loading="lazy">
         </div>
@@ -97,18 +101,18 @@
           <div class="card-meta-sub">
             <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+            <span class="card-category">Interior Architecture & Turnkey Build</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 02: Hamlet -->
+      <!-- Project: Hamlet Contemporary Residence -->
       <a href="hamlet.html" class="grid-card" 
          data-title="Hamlet Contemporary Residence" 
          data-year="2024" 
          data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture visuals residential">
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Hamlet Contemporary Residence" class="card-img" loading="lazy">
         </div>
@@ -120,18 +124,18 @@
           <div class="card-meta-sub">
             <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture &amp; 3D VFX</span>
+            <span class="card-category">Architecture & 3D VFX</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 03: DYV -->
+      <!-- Project: DYV Mixed-Use Development -->
       <a href="dyv.html" class="grid-card" 
          data-title="DYV Mixed-Use Development" 
          data-year="2025" 
          data-typology="Mixed-Use" 
-         data-discipline="Architecture" 
-         data-category="architecture visuals mixed-use">
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi motion-design">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="card-img" loading="lazy">
         </div>
@@ -143,41 +147,41 @@
           <div class="card-meta-sub">
             <span class="card-typology">Mixed-Use</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture &amp; Urbanism</span>
+            <span class="card-category">Architecture & Spatial Animation</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 04: Hubtel -->
+      <!-- Project: Hubtel Executive Boardroom Wing -->
       <a href="hubtel.html" class="grid-card" 
-         data-title="Hubtel Executive Boardroom" 
+         data-title="Hubtel Executive Boardroom Wing" 
          data-year="2023" 
-         data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior build commercial industrial space">
+         data-typology="Workplace" 
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture industrial-design turnkey-build">
         <div class="card-media-wrapper">
-          <img src="assets/images/hubtel/hubtel-executive.jpg" alt="Hubtel Executive Boardroom" class="card-img" loading="lazy">
+          <img src="assets/images/hubtel/hubtel-executive.jpg" alt="Hubtel Executive Boardroom Wing" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">Hubtel Executive Boardroom</h2>
+            <h2 class="card-title">Hubtel Executive Boardroom Wing</h2>
             <span class="card-year">2023</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Commercial</span>
+            <span class="card-typology">Workplace</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Millwork</span>
+            <span class="card-category">Interior Architecture & Industrial Design</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 05: 41 Barham -->
+      <!-- Project: 41 Barham Luxury Residence -->
       <a href="barham.html" class="grid-card" 
          data-title="41 Barham Luxury Residence" 
          data-year="2025" 
          data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture interior residential space">
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning interior-design">
         <div class="card-media-wrapper">
           <img src="assets/images/barham/barham-residence.jpg" alt="41 Barham Luxury Residence" class="card-img" loading="lazy">
         </div>
@@ -189,18 +193,18 @@
           <div class="card-meta-sub">
             <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture &amp; Interiors</span>
+            <span class="card-category">Architecture & Interior Design</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 06: Frontier -->
+      <!-- Project: Frontier Commercial Complex -->
       <a href="frontier.html" class="grid-card" 
          data-title="Frontier Commercial Complex" 
          data-year="2025" 
          data-typology="Commercial" 
-         data-discipline="Architecture" 
-         data-category="architecture visuals commercial">
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/frontier/frontier-tower.jpg" alt="Frontier Commercial Complex" class="card-img" loading="lazy">
         </div>
@@ -212,18 +216,18 @@
           <div class="card-meta-sub">
             <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture &amp; Simulation</span>
+            <span class="card-category">Architecture & Environmental VFX</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 07: La Beach Towers -->
+      <!-- Project: La Beach Towers Penthouse -->
       <a href="labeach.html" class="grid-card" 
          data-title="La Beach Towers Penthouse" 
          data-year="2024" 
          data-typology="Residential" 
-         data-discipline="Interior Design" 
-         data-category="interior visuals residential space">
+         data-discipline="Interior Design & Styling" 
+         data-category="interior-design interior-architecture industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/labeach/la-beach-towers.jpg" alt="La Beach Towers Penthouse" class="card-img" loading="lazy">
         </div>
@@ -235,87 +239,340 @@
           <div class="card-meta-sub">
             <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Styling</span>
+            <span class="card-category">Interior Design & Styling</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 08: MTN Headquarters -->
+      <!-- Project: MTN Headquarters Executive Wing -->
       <a href="mtn.html" class="grid-card" 
          data-title="MTN Headquarters Executive Wing" 
-         data-year="2023" 
+         data-year="2024" 
          data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior build commercial space">
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/mtn/mtn-corridor.jpg" alt="MTN Headquarters Executive Wing" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">MTN Headquarters Executive Wing</h2>
-            <span class="card-year">2023</span>
+            <span class="card-year">2024</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+            <span class="card-category">Interior Architecture & Millwork Build</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 09: OneHive -->
+      <!-- Project: OneHive Innovation Center -->
       <a href="onehive.html" class="grid-card" 
          data-title="OneHive Innovation Center" 
-         data-year="2026" 
+         data-year="2025" 
          data-typology="Technology" 
-         data-discipline="VFX &amp; Visuals" 
-         data-category="visuals interior space technology">
+         data-discipline="Visual Effects (VFX) & CGI" 
+         data-category="vfx-cgi motion-design web-design">
         <div class="card-media-wrapper">
           <img src="assets/images/onehive/onehive.jpg" alt="OneHive Innovation Center" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">OneHive Innovation Center</h2>
-            <span class="card-year">2026</span>
+            <span class="card-year">2025</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Technology</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">VFX &amp; Spatial Design</span>
+            <span class="card-category">VFX & Spatial Animation</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 10: PURC -->
+      <!-- Project: PURC Institutional Complex -->
       <a href="purc.html" class="grid-card" 
          data-title="PURC Institutional Complex" 
-         data-year="2024" 
+         data-year="2023" 
          data-typology="Institutional" 
-         data-discipline="Architecture" 
-         data-category="architecture build institutional">
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/purc/purc-facade.jpg" alt="PURC Institutional Complex" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">PURC Institutional Complex</h2>
-            <span class="card-year">2024</span>
+            <span class="card-year">2023</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Institutional</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture &amp; Turnkey Build</span>
+            <span class="card-category">Architecture & Turnkey Build</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 11: ABL Corporate Reception -->
+      <!-- Project: 2GS Identity & Spatial Systems -->
+      <a href="work.html#2gs" class="grid-card" 
+         data-title="2GS Identity & Spatial Systems" 
+         data-year="2024" 
+         data-typology="Identity" 
+         data-discipline="Graphic Design & Brand Systems" 
+         data-category="graphic-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/2gs/2gs-branding.jpg" alt="2GS Identity & Spatial Systems" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">2GS Identity & Spatial Systems</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Identity</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Graphic Design & Brand Systems</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: Aelius Consult Brand System -->
+      <a href="work.html#aelius" class="grid-card" 
+         data-title="Aelius Consult Brand System" 
+         data-year="2024" 
+         data-typology="Identity" 
+         data-discipline="Graphic Design & Brand Systems" 
+         data-category="graphic-design web-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/aelius/aelius-brand.jpg" alt="Aelius Consult Brand System" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Aelius Consult Brand System</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Identity</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Graphic Design & Digital Systems</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: RDVS Studio Digital Platform -->
+      <a href="work.html#rdvs-platform" class="grid-card" 
+         data-title="RDVS Studio Digital Platform" 
+         data-year="2026" 
+         data-typology="Digital" 
+         data-discipline="Digital & Web Design" 
+         data-category="web-design motion-design graphic-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/web/rdvs-website.jpg" alt="RDVS Studio Digital Platform" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">RDVS Studio Digital Platform</h2>
+            <span class="card-year">2026</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Digital</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Digital & Web Design</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: HFC Brand Motion Direction -->
+      <a href="work.html#hfc" class="grid-card" 
+         data-title="HFC Brand Motion Direction" 
+         data-year="2024" 
+         data-typology="Broadcast" 
+         data-discipline="Motion Design & Spatial Animation" 
+         data-category="motion-design vfx-cgi">
+        <div class="card-media-wrapper">
+          <img src="assets/images/motion/hfc-motion.jpg" alt="HFC Brand Motion Direction" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">HFC Brand Motion Direction</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Broadcast</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Motion Design & Spatial Animation</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: ELO TV Broadcast & Motion Identity -->
+      <a href="work.html#elo" class="grid-card" 
+         data-title="ELO TV Broadcast & Motion Identity" 
+         data-year="2024" 
+         data-typology="Broadcast" 
+         data-discipline="Motion Design & Spatial Animation" 
+         data-category="motion-design graphic-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/motion/elo-tv.jpg" alt="ELO TV Broadcast & Motion Identity" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">ELO TV Broadcast & Motion Identity</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Broadcast</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Motion Design & Brand Identity</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: 1957 Monochrome Residence -->
+      <a href="work.html#1957" class="grid-card" 
+         data-title="1957 Monochrome Residence" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Interior Design & Styling" 
+         data-category="interior-design interior-architecture">
+        <div class="card-media-wrapper">
+          <img src="assets/images/1957/1957-interior.jpg" alt="1957 Monochrome Residence" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">1957 Monochrome Residence</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design & Minimalist Styling</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: Brownies Place Retreat -->
+      <a href="work.html#brownies" class="grid-card" 
+         data-title="Brownies Place Retreat" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi">
+        <div class="card-media-wrapper">
+          <img src="assets/images/brownies/brownies-place.jpg" alt="Brownies Place Retreat" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Brownies Place Retreat</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture & Planning</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: Fule Residence Villa -->
+      <a href="work.html#fule" class="grid-card" 
+         data-title="Fule Residence Villa" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi">
+        <div class="card-media-wrapper">
+          <img src="assets/images/fule/fule-residence.jpg" alt="Fule Residence Villa" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Fule Residence Villa</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture & CGI Simulation</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: Funko Ridge Coastal Concept -->
+      <a href="work.html#funko" class="grid-card" 
+         data-title="Funko Ridge Coastal Concept" 
+         data-year="2025" 
+         data-typology="Mixed-Use" 
+         data-discipline="Architecture & Planning" 
+         data-category="architecture-planning vfx-cgi motion-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/funko/funko-ridge.jpg" alt="Funko Ridge Coastal Concept" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Funko Ridge Coastal Concept</h2>
+            <span class="card-year">2025</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Mixed-Use</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture & Masterplanning</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: NPA Corporate Open Office -->
+      <a href="work.html#npa" class="grid-card" 
+         data-title="NPA Corporate Open Office" 
+         data-year="2024" 
+         data-typology="Workplace" 
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture turnkey-build industrial-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/npa/npa-office.jpg" alt="NPA Corporate Open Office" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">NPA Corporate Open Office</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Workplace</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Architecture & Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: Nyla Bespoke Dressing Suite -->
+      <a href="work.html#nyla" class="grid-card" 
+         data-title="Nyla Bespoke Dressing Suite" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Interior Design & Styling" 
+         data-category="interior-design industrial-design">
+        <div class="card-media-wrapper">
+          <img src="assets/images/nyla/nyla-closet.jpg" alt="Nyla Bespoke Dressing Suite" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Nyla Bespoke Dressing Suite</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design & Millwork</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project: ABL Corporate Reception -->
       <a href="afg.html" class="grid-card" 
          data-title="ABL Corporate Reception" 
          data-year="2023" 
          data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior build commercial space">
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture turnkey-build industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/abl/abl-reception.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
         </div>
@@ -327,18 +584,18 @@
           <div class="card-meta-sub">
             <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+            <span class="card-category">Interior Architecture & Millwork Build</span>
           </div>
         </div>
       </a>
 
-      <!-- Project 12: Margin Financial Suite -->
+      <!-- Project: Margin Financial Suite -->
       <a href="hubtel.html" class="grid-card" 
          data-title="Margin Financial Suite" 
          data-year="2024" 
          data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior build commercial space">
+         data-discipline="Interior Architecture" 
+         data-category="interior-architecture turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/margin/margin-bank.jpg" alt="Margin Financial Suite" class="card-img" loading="lazy">
         </div>
@@ -350,7 +607,7 @@
           <div class="card-meta-sub">
             <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+            <span class="card-category">Interior Architecture & Acoustic Build</span>
           </div>
         </div>
       </a>
@@ -391,11 +648,22 @@
       let currentSort = 'date';
       let currentDirection = 'desc'; // default newest first for date
 
-      // Read URL query parameter (e.g. ?q=searchterm)
+      // Read URL query parameter (e.g. ?q=searchterm or ?filter=web-design)
       const urlParams = new URLSearchParams(window.location.search);
       const queryParam = urlParams.get('q');
+      const filterParam = urlParams.get('filter') || urlParams.get('service');
+
       if (queryParam && searchInput) {
         searchInput.value = queryParam;
+      }
+
+      if (filterParam) {
+        const matchingBtn = document.querySelector(`.filter-btn[data-filter="${filterParam}"]`);
+        if (matchingBtn) {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          matchingBtn.classList.add('active');
+          currentFilter = filterParam;
+        }
       }
 
       function applyFilterAndSort() {
@@ -435,7 +703,8 @@
             discipline.includes(query) || 
             year.includes(query);
 
-          const matchesFilter = (currentFilter === 'all') || category.includes(currentFilter);
+          const services = category.split(/\s+/);
+          const matchesFilter = (currentFilter === 'all') || services.includes(currentFilter);
 
           card.style.display = (matchesQuery && matchesFilter) ? 'block' : 'none';
           projectGrid.appendChild(card);

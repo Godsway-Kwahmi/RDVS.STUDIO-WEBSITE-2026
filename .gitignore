@@ -6,3 +6,7 @@ node_modules/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Test artifacts
+scratch/
+

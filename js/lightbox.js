@@ -189,14 +189,6 @@
       }
     }, { passive: true });
 
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const primaryNav = document.querySelector('.primary-nav');
-    if (mobileMenuBtn && primaryNav) {
-      mobileMenuBtn.addEventListener('click', () => {
-        primaryNav.classList.toggle('mobile-active');
-        mobileMenuBtn.textContent = primaryNav.classList.contains('mobile-active') ? 'Close' : 'Menu';
-      });
-    }
+
   });
 })();
