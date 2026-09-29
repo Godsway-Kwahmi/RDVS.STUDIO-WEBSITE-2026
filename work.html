@@ -634,15 +634,7 @@
       const cards = Array.from(document.querySelectorAll('.grid-card'));
       const searchInput = document.getElementById('workSearchInput');
       const searchForm = document.getElementById('workSearchForm');
-      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-      const primaryNav = document.querySelector('.primary-nav');
 
-      if (mobileMenuBtn && primaryNav) {
-        mobileMenuBtn.addEventListener('click', () => {
-          primaryNav.classList.toggle('mobile-active');
-          mobileMenuBtn.textContent = primaryNav.classList.contains('mobile-active') ? 'Close' : 'Menu';
-        });
-      }
 
       let currentFilter = 'all';
       let currentSort = 'date';
@@ -767,5 +759,6 @@
       applyFilterAndSort();
     });
   </script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
