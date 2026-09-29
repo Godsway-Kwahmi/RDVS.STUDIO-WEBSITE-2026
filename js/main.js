@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'AFG Executive Headquarters',
       category: 'Space / Commercial Build — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/afg-headquarters.jpg',
+      imageUrl: 'assets/images/afg/afg-headquarters.jpg',
       projectUrl: 'afg.html',
       desc: 'A sculptured corporate reception and executive suite featuring bespoke faceted acoustics, continuous glass partitioning, and turnkey timber fabrication.',
       specs: {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Hamlet Contemporary Residence',
       category: 'Architecture / Residential — 2024',
       discipline: 'architecture',
-      imageUrl: 'assets/images/hamlet-estate.jpg',
+      imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
       projectUrl: 'hamlet.html',
       desc: 'Cantilevered geometric volumes with integrated nightscape illumination, balancing private sanctuaries with panoramic open-plan entertainment zones.',
       specs: {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'DYV Mixed-Use Development',
       category: 'Urbanism / Concept — 2025',
       discipline: 'architecture',
-      imageUrl: 'assets/images/dyv-dawn.jpg',
+      imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
       projectUrl: 'dyv.html',
       desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
       specs: {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Hubtel Executive Boardroom Wing',
       category: 'Workplace / Build — 2023',
       discipline: 'interiors',
-      imageUrl: 'assets/images/hubtel-executive.jpg',
+      imageUrl: 'assets/images/hubtel/hubtel-executive.jpg',
       projectUrl: 'hubtel.html',
       desc: 'An immersive technological executive sanctum pairing seamless acoustic wall paneling with custom-milled monolithic conference furnishings.',
       specs: {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: '41 Barham Luxury Residence',
       category: 'Architecture / Private Residence — 2025',
       discipline: 'architecture',
-      imageUrl: 'assets/images/barham-residence.jpg',
+      imageUrl: 'assets/images/barham/barham-residence.jpg',
       projectUrl: 'barham.html',
       desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
       specs: {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Frontier Commercial Complex',
       category: 'Architecture / Commercial — 2025',
       discipline: 'architecture',
-      imageUrl: 'assets/images/frontier-tower.jpg',
+      imageUrl: 'assets/images/frontier/frontier-tower.jpg',
       projectUrl: 'frontier.html',
       desc: 'A striking vertical facade composition optimizing solar shading and environmental efficiency for high-density metropolitan commerce.',
       specs: {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'La Beach Towers Penthouse',
       category: 'Space / Interior Architecture — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/la-beach-towers.jpg',
+      imageUrl: 'assets/images/labeach/la-beach-towers.jpg',
       projectUrl: 'labeach.html',
       desc: 'Panoramic coastal luxury interior framing expansive oceanic vistas through minimalist double-height glazing and bespoke low-slung joinery.',
       specs: {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'MTN Headquarters Executive Wing',
       category: 'Space / Corporate Build — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/mtn-corridor.jpg',
+      imageUrl: 'assets/images/mtn/mtn-corridor.jpg',
       projectUrl: 'mtn.html',
       desc: 'Continuous rhythm of warm timber fins and diffused recessed light guides circulation through executive conference suites.',
       specs: {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'OneHive Innovation Center',
       category: 'Visuals / Computational Design — 2025',
       discipline: 'vfx',
-      imageUrl: 'assets/images/onehive.jpg',
+      imageUrl: 'assets/images/onehive/onehive.jpg',
       projectUrl: 'onehive.html',
       desc: 'A high-concept technology incubator pairing organic fluid contours with integrated digital display matrices and acoustic ceiling baffles.',
       specs: {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'PURC Institutional Complex',
       category: 'Architecture / Civic Build — 2023',
       discipline: 'architecture',
-      imageUrl: 'assets/images/purc-facade.jpg',
+      imageUrl: 'assets/images/purc/purc-facade.jpg',
       projectUrl: 'purc.html',
       desc: 'Monolithic civic architecture combining deep louvered facades, robust masonry massing, and monumental public entry porticos.',
       specs: {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'ABL Corporate Reception',
       category: 'Space / Interior Millwork — 2023',
       discipline: 'interiors',
-      imageUrl: 'assets/images/abl-reception.jpg',
+      imageUrl: 'assets/images/abl/abl-reception.jpg',
       projectUrl: 'afg.html',
       desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
       specs: {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Margin Financial Suite',
       category: 'Space / Acoustic Build — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/margin-bank.jpg',
+      imageUrl: 'assets/images/margin/margin-bank.jpg',
       projectUrl: 'hubtel.html',
       desc: 'Precision banking suite designed with acoustic baffle ceilings, private consultation pods, and brushed architectural bronze detailing.',
       specs: {
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'AFG Executive Boardroom',
       category: 'Space / Workplace — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/afg-meeting.jpg',
+      imageUrl: 'assets/images/afg/afg-meeting.jpg',
       projectUrl: 'afg.html',
       desc: 'A 24-seat conference sanctum engineered with acoustic fabric paneling, integrated conferencing tech, and continuous shadow-line ceilings.',
       specs: {
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'AFG Atrium Suite',
       category: 'Space / Spatial Design — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/afg-reception-2.jpg',
+      imageUrl: 'assets/images/afg/afg-reception-2.jpg',
       projectUrl: 'afg.html',
       desc: 'Dramatic high-ceiling arrival gallery highlighting polished terrazzo flooring, linear light coves, and fluted timber wall finishes.',
       specs: {
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Hamlet Master Sanctuary',
       category: 'Interiors / Residential Spa — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/hamlet-bath.jpg',
+      imageUrl: 'assets/images/hamlet/hamlet-bath.jpg',
       projectUrl: 'hamlet.html',
       desc: 'Monolithic fluted stone surfaces framing a freestanding soaking tub with floor-to-ceiling glass looking onto a private Japanese stone courtyard.',
       specs: {
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: '2GS Identity & Spatial Branding',
       category: 'Branding / Graphic Design — 2024',
       discipline: 'graphics',
-      imageUrl: 'assets/images/2gs-branding.jpg',
+      imageUrl: 'assets/images/2gs/2gs-branding.jpg',
       projectUrl: 'work.html',
       desc: 'A comprehensive brand identity system, tactile stationery suites, and environmental typography integrated into corporate headquarters.',
       specs: {
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: '1957 Monochrome Residence',
       category: 'Interiors / Minimalism — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/1957-interior.jpg',
+      imageUrl: 'assets/images/1957/1957-interior.jpg',
       projectUrl: 'work.html',
       desc: 'A masterclass in quiet luxury, featuring continuous off-white microcement surfaces, recessed linear reveal details, and low-profile European furniture.',
       specs: {
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Brownies Place Retreat',
       category: 'Architecture / Residential — 2024',
       discipline: 'architecture',
-      imageUrl: 'assets/images/brownies-place.jpg',
+      imageUrl: 'assets/images/brownies/brownies-place.jpg',
       projectUrl: 'work.html',
       desc: 'Subtropical modern villa balancing open cross-ventilated living pavilions with natural teak decking and expansive infinity water features.',
       specs: {
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Fule Residence Villa',
       category: 'Architecture / Contemporary — 2024',
       discipline: 'architecture',
-      imageUrl: 'assets/images/fule-residence.jpg',
+      imageUrl: 'assets/images/fule/fule-residence.jpg',
       projectUrl: 'work.html',
       desc: 'Stacked linear volumes with deep architectural overhangs, tinted solar control glazing, and seamless ground-level garden terraces.',
       specs: {
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Funko Ridge Coastal Concept',
       category: 'Urbanism / Masterplan — 2025',
       discipline: 'architecture',
-      imageUrl: 'assets/images/funko-ridge.jpg',
+      imageUrl: 'assets/images/funko/funko-ridge.jpg',
       projectUrl: 'work.html',
       desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
       specs: {
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'NPA Corporate Open Office',
       category: 'Space / Workplace — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/npa-office.jpg',
+      imageUrl: 'assets/images/npa/npa-office.jpg',
       projectUrl: 'work.html',
       desc: 'High-density activity-based workplace layout integrating custom felt sound barriers, biophilic planters, and collaborative team benches.',
       specs: {
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Nyla Bespoke Dressing Suite',
       category: 'Interiors / Millwork — 2024',
       discipline: 'interiors',
-      imageUrl: 'assets/images/nyla-closet.jpg',
+      imageUrl: 'assets/images/nyla/nyla-closet.jpg',
       projectUrl: 'work.html',
       desc: 'Handcrafted smoked oak wardrobes with internal perimeter LED channels, smoked glass doors, and tailored suede jewelry displays.',
       specs: {
