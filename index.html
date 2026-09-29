@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDVS — Multidisciplinary Design + Build Studio</title>
+  <meta name="description" content="Revival Design + VFX Studios (RDVS) is a multidisciplinary architecture, interior design, 3D visualization, and construction studio.">
+  
+  <!-- Minimalissimo Exact Font Stack: Geist Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <!-- Studio Brand Link: strictly "RDVS" -->
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <!-- Navigation & Utility: grouped to the right close to Contact -->
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Bleed Minimal Hero Section (10 Slides, Zero Zoom) -->
+  <main>
+    <section class="hero-viewport" aria-label="Featured Works">
+      <div class="hero-scrim"></div>
+
+      <!-- 10 Photographic Slides -->
+      <div class="hero-slider">
+        <!-- Slide 01: AFG -->
+        <article class="slide active" data-index="0" aria-label="AFG Executive Headquarters">
+          <div class="slide-media">
+            <img src="assets/images/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="slide-img" fetchpriority="high">
+          </div>
+        </article>
+
+        <!-- Slide 02: Hamlet -->
+        <article class="slide" data-index="1" aria-hidden="true" aria-label="Hamlet Contemporary Residence">
+          <div class="slide-media">
+            <img src="assets/images/hamlet-estate.jpg" alt="Hamlet Contemporary Residence" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 03: DYV -->
+        <article class="slide" data-index="2" aria-hidden="true" aria-label="DYV Mixed-Use Development">
+          <div class="slide-media">
+            <img src="assets/images/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 04: Hubtel -->
+        <article class="slide" data-index="3" aria-hidden="true" aria-label="Hubtel Executive Boardroom">
+          <div class="slide-media">
+            <img src="assets/images/hubtel-executive.jpg" alt="Hubtel Executive Boardroom" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 05: 41 Barham -->
+        <article class="slide" data-index="4" aria-hidden="true" aria-label="41 Barham Luxury Residence">
+          <div class="slide-media">
+            <img src="assets/images/barham-residence.jpg" alt="41 Barham Luxury Residence" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 06: Frontier -->
+        <article class="slide" data-index="5" aria-hidden="true" aria-label="Frontier Commercial Complex">
+          <div class="slide-media">
+            <img src="assets/images/frontier-tower.jpg" alt="Frontier Commercial Complex" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 07: La Beach Towers -->
+        <article class="slide" data-index="6" aria-hidden="true" aria-label="La Beach Towers Penthouse">
+          <div class="slide-media">
+            <img src="assets/images/la-beach-towers.jpg" alt="La Beach Towers Penthouse" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 08: MTN Headquarters -->
+        <article class="slide" data-index="7" aria-hidden="true" aria-label="MTN Headquarters Executive Wing">
+          <div class="slide-media">
+            <img src="assets/images/mtn-corridor.jpg" alt="MTN Headquarters Executive Wing" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 09: OneHive -->
+        <article class="slide" data-index="8" aria-hidden="true" aria-label="OneHive Innovation Center">
+          <div class="slide-media">
+            <img src="assets/images/onehive.jpg" alt="OneHive Innovation Center" class="slide-img" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Slide 10: PURC Complex -->
+        <article class="slide" data-index="9" aria-hidden="true" aria-label="PURC Institutional Complex">
+          <div class="slide-media">
+            <img src="assets/images/purc-facade.jpg" alt="PURC Institutional Complex" class="slide-img" loading="lazy">
+          </div>
+        </article>
+      </div>
+
+      <!-- Minimalissimo Editorial Lower-Third Captions -->
+      <div class="hero-footer">
+        <div class="hero-footer-container">
+          <div class="caption-wrapper" aria-live="polite">
+            <!-- Caption 01 -->
+            <div class="caption-card active" data-index="0">
+              <p class="project-category">Space / Commercial Build — 2024</p>
+              <h1 class="project-title">AFG Executive Headquarters</h1>
+              <p class="project-desc">A sculptured corporate reception and executive suite featuring bespoke faceted acoustics, continuous glass partitioning, and turnkey timber fabrication.</p>
+              <div class="project-links">
+                <a href="afg.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="0">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 02 -->
+            <div class="caption-card" data-index="1">
+              <p class="project-category">Architecture / Residential — 2024</p>
+              <h2 class="project-title">Hamlet Contemporary Residence</h2>
+              <p class="project-desc">Cantilevered geometric volumes with integrated nightscape illumination, balancing private sanctuaries with panoramic open-plan entertainment zones.</p>
+              <div class="project-links">
+                <a href="hamlet.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="1">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 03 -->
+            <div class="caption-card" data-index="2">
+              <p class="project-category">Urbanism / Concept — 2025</p>
+              <h2 class="project-title">DYV Mixed-Use Development</h2>
+              <p class="project-desc">An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.</p>
+              <div class="project-links">
+                <a href="dyv.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="2">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 04 -->
+            <div class="caption-card" data-index="3">
+              <p class="project-category">Workplace / Build — 2023</p>
+              <h2 class="project-title">Hubtel Executive Boardroom Wing</h2>
+              <p class="project-desc">An immersive technological executive sanctum pairing seamless acoustic wall paneling with custom-milled monolithic conference furnishings.</p>
+              <div class="project-links">
+                <a href="hubtel.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="3">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 05 -->
+            <div class="caption-card" data-index="4">
+              <p class="project-category">Architecture / Private Residence — 2025</p>
+              <h2 class="project-title">41 Barham Luxury Residence</h2>
+              <p class="project-desc">A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.</p>
+              <div class="project-links">
+                <a href="barham.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="4">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 06 -->
+            <div class="caption-card" data-index="5">
+              <p class="project-category">Architecture / Commercial — 2025</p>
+              <h2 class="project-title">Frontier Commercial Complex</h2>
+              <p class="project-desc">A striking vertical facade composition optimizing solar shading and environmental efficiency for high-density metropolitan commerce.</p>
+              <div class="project-links">
+                <a href="frontier.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="5">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 07 -->
+            <div class="caption-card" data-index="6">
+              <p class="project-category">Space / Interior Architecture — 2024</p>
+              <h2 class="project-title">La Beach Towers Penthouse</h2>
+              <p class="project-desc">Panoramic coastal luxury interior framing expansive oceanic vistas through minimalist double-height glazing and bespoke low-slung joinery.</p>
+              <div class="project-links">
+                <a href="labeach.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="6">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 08 -->
+            <div class="caption-card" data-index="7">
+              <p class="project-category">Space / Corporate Build — 2024</p>
+              <h2 class="project-title">MTN Headquarters Executive Wing</h2>
+              <p class="project-desc">Continuous rhythm of warm timber fins and diffused recessed light guides circulation through executive conference suites.</p>
+              <div class="project-links">
+                <a href="mtn.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="7">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 09 -->
+            <div class="caption-card" data-index="8">
+              <p class="project-category">Visuals / Computational Design — 2025</p>
+              <h2 class="project-title">OneHive Innovation Center</h2>
+              <p class="project-desc">A high-concept technology incubator pairing organic fluid contours with integrated digital display matrices and acoustic ceiling baffles.</p>
+              <div class="project-links">
+                <a href="onehive.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="8">Specifications</button>
+              </div>
+            </div>
+
+            <!-- Caption 10 -->
+            <div class="caption-card" data-index="9">
+              <p class="project-category">Architecture / Civic Build — 2023</p>
+              <h2 class="project-title">PURC Institutional Complex</h2>
+              <p class="project-desc">Monolithic civic architecture combining deep louvered facades, robust masonry massing, and monumental public entry porticos.</p>
+              <div class="project-links">
+                <a href="purc.html" class="project-action-link">View project &rarr;</a>
+                <button type="button" class="project-spec-trigger" data-index="9">Specifications</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Minimal Controls & Pagination -->
+          <div class="hero-meta-controls">
+            <div class="slide-status">
+              <span class="status-active">01</span>
+              <span>/</span>
+              <span class="status-total">10</span>
+            </div>
+
+            <!-- 10 Hairline Progress Indicators -->
+            <div class="pagination-bars" role="tablist" aria-label="Slide Selection">
+              <button class="pagination-bar active" data-index="0" role="tab" aria-label="Slide 1"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="1" role="tab" aria-label="Slide 2"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="2" role="tab" aria-label="Slide 3"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="3" role="tab" aria-label="Slide 4"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="4" role="tab" aria-label="Slide 5"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="5" role="tab" aria-label="Slide 6"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="6" role="tab" aria-label="Slide 7"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="7" role="tab" aria-label="Slide 8"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="8" role="tab" aria-label="Slide 9"><span class="pagination-fill"></span></button>
+              <button class="pagination-bar" data-index="9" role="tab" aria-label="Slide 10"><span class="pagination-fill"></span></button>
+            </div>
+
+            <!-- Understated Step Controls -->
+            <div class="step-nav">
+              <button type="button" class="step-btn prev" aria-label="Previous">Previous</button>
+              <button type="button" class="step-btn next" aria-label="Next">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Specifications Slide-Over -->
+  <aside class="spec-drawer" id="specDrawer" aria-label="Project Details">
+    <div class="drawer-header">
+      <span class="drawer-tag">Project specifications</span>
+      <button type="button" class="drawer-close-btn" id="drawerClose">Close</button>
+    </div>
+
+    <div class="drawer-content">
+      <h3 class="drawer-project-name" id="drawerTitle">AFG Executive Headquarters</h3>
+      <div class="spec-list">
+        <div class="spec-row">
+          <span class="spec-label">Client</span>
+          <span class="spec-value" id="drawerClient">AFG Corporation</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Area</span>
+          <span class="spec-value" id="drawerArea">1,450 sq.m</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Year</span>
+          <span class="spec-value" id="drawerYear">2024</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Scope</span>
+          <span class="spec-value" id="drawerScope">Spatial Architecture, Interior Design & Turnkey Build</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Disciplines</span>
+          <div class="spec-disciplines" id="drawerDisciplines"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <script src="js/sanity-client.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

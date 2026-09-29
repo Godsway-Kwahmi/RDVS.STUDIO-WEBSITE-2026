@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — RDVS Studios</title>
+  <meta name="description" content="News, monographs, project completions, and editorial insights from RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link active">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">News</h1>
+      <p class="page-subtitle">Dispatches, spatial monographs, project milestones, and technical explorations from our studio.</p>
+    </header>
+
+    <section class="minimal-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));" aria-label="News articles">
+      <!-- Article 1 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">Architecture / 2026</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">DYV Mixed-Use Masterplan Unveiled</h2>
+        <p class="project-desc">A conceptual breakthrough exploring tiered coastal geometry, natural airflow channels, and sustainable mixed-use urban density.</p>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">Space / 2026</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">AFG Executive Headquarters Handover</h2>
+        <p class="project-desc">Comprehensive walkthrough of our turnkey design and build delivery in Accra, detailing faceted acoustic timber walling and custom millwork.</p>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/hamlet-estate.jpg" alt="Hamlet Contemporary Residence" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">Visuals / 2025</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">Nocturnal Lighting & VFX In Contemporary Architecture</h2>
+        <p class="project-desc">An analytical studio paper exploring atmospheric light propagation, low-key contrast, and physical rendering simulations for private estates.</p>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/hubtel-executive.jpg" alt="Hubtel Executive Boardroom" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">Practice / 2025</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">The Direct Link Between 3D Concept and Construction</h2>
+        <p class="project-desc">Examining how unfragmented ownership over both digital prototyping and physical trades eliminates design compromises on site.</p>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/onehive.jpg" alt="OneHive Innovation Center" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">RDVSchool / 2025</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">RDVSchool Announces 2026 Masterclass Cohort</h2>
+        <p class="project-desc">Applications now open for our intensive training track in real-time computational rendering, photoreal lighting, and spatial drafting.</p>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="grid-card">
+        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+          <img src="assets/images/abl-reception.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
+        </div>
+        <p class="project-category">Interiors / 2025</p>
+        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">Material Quietude in Corporate Reception Design</h2>
+        <p class="project-desc">How understated monochrome palettes and tactile stone surfaces calm transitional spatial experiences in commercial environments.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

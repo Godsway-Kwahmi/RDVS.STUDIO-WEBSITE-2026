@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — RDVS Studios</title>
+  <meta name="description" content="Selected architecture, spatial interiors, photoreal visualization, and turnkey build commissions by RDVS.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <!-- Studio Brand Link: strictly "RDVS" -->
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <!-- Navigation & Utility: grouped to the right close to Contact -->
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link active">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Search with clickable icon button to the right outside text area -->
+        <form class="search-form" action="work.html" method="GET" role="search" id="workSearchForm">
+          <input type="search" name="q" id="workSearchInput" placeholder="Search..." aria-label="Search projects" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">Work</h1>
+      <p class="page-subtitle">A curated index of architecture, interior environments, 3D photoreal visualization, and custom design + build execution.</p>
+      
+      <!-- Minimalist Filter & Sort Toolbar -->
+      <div class="work-toolbar">
+        <!-- Filter Controls -->
+        <div class="filter-nav" role="tablist" aria-label="Filter projects">
+          <span class="toolbar-label">Filter:</span>
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+          <button type="button" class="filter-btn" data-filter="interior">Interior Design</button>
+          <button type="button" class="filter-btn" data-filter="visuals">VFX &amp; Visuals</button>
+          <button type="button" class="filter-btn" data-filter="build">Turnkey Build</button>
+        </div>
+
+        <!-- Sort Controls (Typology, Date, Discipline) -->
+        <div class="sort-nav" aria-label="Sort projects">
+          <span class="toolbar-label">Sort:</span>
+          <div class="sort-group">
+            <button type="button" class="sort-btn active" data-sort="date" data-direction="desc">Date <span class="sort-indicator">↓</span></button>
+            <button type="button" class="sort-btn" data-sort="typology" data-direction="asc">Typology <span class="sort-indicator"></span></button>
+            <button type="button" class="sort-btn" data-sort="discipline" data-direction="asc">Discipline <span class="sort-indicator"></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Minimalissimo Portfolio Grid -->
+    <section class="minimal-grid" id="projectGrid" aria-label="Project portfolio">
+      
+      <!-- Project 01: AFG -->
+      <a href="afg.html" class="grid-card" 
+         data-title="AFG Executive Headquarters" 
+         data-year="2024" 
+         data-typology="Commercial" 
+         data-discipline="Interior Design" 
+         data-category="interior build commercial space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">AFG Executive Headquarters</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 02: Hamlet -->
+      <a href="hamlet.html" class="grid-card" 
+         data-title="Hamlet Contemporary Residence" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Architecture" 
+         data-category="architecture visuals residential">
+        <div class="card-media-wrapper">
+          <img src="assets/images/hamlet-estate.jpg" alt="Hamlet Contemporary Residence" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Hamlet Contemporary Residence</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture &amp; 3D VFX</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 03: DYV -->
+      <a href="dyv.html" class="grid-card" 
+         data-title="DYV Mixed-Use Development" 
+         data-year="2025" 
+         data-typology="Mixed-Use" 
+         data-discipline="Architecture" 
+         data-category="architecture visuals mixed-use">
+        <div class="card-media-wrapper">
+          <img src="assets/images/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">DYV Mixed-Use Development</h2>
+            <span class="card-year">2025</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Mixed-Use</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture &amp; Urbanism</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 04: Hubtel -->
+      <a href="hubtel.html" class="grid-card" 
+         data-title="Hubtel Executive Boardroom" 
+         data-year="2023" 
+         data-typology="Commercial" 
+         data-discipline="Interior Design" 
+         data-category="interior build commercial industrial space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/hubtel-executive.jpg" alt="Hubtel Executive Boardroom" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Hubtel Executive Boardroom</h2>
+            <span class="card-year">2023</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Millwork</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 05: 41 Barham -->
+      <a href="barham.html" class="grid-card" 
+         data-title="41 Barham Luxury Residence" 
+         data-year="2025" 
+         data-typology="Residential" 
+         data-discipline="Architecture" 
+         data-category="architecture interior residential space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/barham-residence.jpg" alt="41 Barham Luxury Residence" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">41 Barham Luxury Residence</h2>
+            <span class="card-year">2025</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture &amp; Interiors</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 06: Frontier -->
+      <a href="frontier.html" class="grid-card" 
+         data-title="Frontier Commercial Complex" 
+         data-year="2025" 
+         data-typology="Commercial" 
+         data-discipline="Architecture" 
+         data-category="architecture visuals commercial">
+        <div class="card-media-wrapper">
+          <img src="assets/images/frontier-tower.jpg" alt="Frontier Commercial Complex" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Frontier Commercial Complex</h2>
+            <span class="card-year">2025</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture &amp; Simulation</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 07: La Beach Towers -->
+      <a href="labeach.html" class="grid-card" 
+         data-title="La Beach Towers Penthouse" 
+         data-year="2024" 
+         data-typology="Residential" 
+         data-discipline="Interior Design" 
+         data-category="interior visuals residential space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/la-beach-towers.jpg" alt="La Beach Towers Penthouse" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">La Beach Towers Penthouse</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Residential</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Styling</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 08: MTN Headquarters -->
+      <a href="mtn.html" class="grid-card" 
+         data-title="MTN Headquarters Executive Wing" 
+         data-year="2023" 
+         data-typology="Commercial" 
+         data-discipline="Interior Design" 
+         data-category="interior build commercial space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/mtn-corridor.jpg" alt="MTN Headquarters Executive Wing" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">MTN Headquarters Executive Wing</h2>
+            <span class="card-year">2023</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 09: OneHive -->
+      <a href="onehive.html" class="grid-card" 
+         data-title="OneHive Innovation Center" 
+         data-year="2026" 
+         data-typology="Technology" 
+         data-discipline="VFX &amp; Visuals" 
+         data-category="visuals interior space technology">
+        <div class="card-media-wrapper">
+          <img src="assets/images/onehive.jpg" alt="OneHive Innovation Center" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">OneHive Innovation Center</h2>
+            <span class="card-year">2026</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Technology</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">VFX &amp; Spatial Design</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 10: PURC -->
+      <a href="purc.html" class="grid-card" 
+         data-title="PURC Institutional Complex" 
+         data-year="2024" 
+         data-typology="Institutional" 
+         data-discipline="Architecture" 
+         data-category="architecture build institutional">
+        <div class="card-media-wrapper">
+          <img src="assets/images/purc-facade.jpg" alt="PURC Institutional Complex" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">PURC Institutional Complex</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Institutional</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Architecture &amp; Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 11: ABL Corporate Reception -->
+      <a href="afg.html" class="grid-card" 
+         data-title="ABL Corporate Reception" 
+         data-year="2023" 
+         data-typology="Commercial" 
+         data-discipline="Interior Design" 
+         data-category="interior build commercial space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/abl-reception.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">ABL Corporate Reception</h2>
+            <span class="card-year">2023</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 12: Margin Financial Suite -->
+      <a href="hubtel.html" class="grid-card" 
+         data-title="Margin Financial Suite" 
+         data-year="2024" 
+         data-typology="Commercial" 
+         data-discipline="Interior Design" 
+         data-category="interior build commercial space">
+        <div class="card-media-wrapper">
+          <img src="assets/images/margin-bank.jpg" alt="Margin Financial Suite" class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Margin Financial Suite</h2>
+            <span class="card-year">2024</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Commercial</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Interior Design &amp; Turnkey Build</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const sortBtns = document.querySelectorAll('.sort-btn');
+      const projectGrid = document.getElementById('projectGrid');
+      const cards = Array.from(document.querySelectorAll('.grid-card'));
+      const searchInput = document.getElementById('workSearchInput');
+      const searchForm = document.getElementById('workSearchForm');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const primaryNav = document.querySelector('.primary-nav');
+
+      if (mobileMenuBtn && primaryNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+          primaryNav.classList.toggle('mobile-active');
+          mobileMenuBtn.textContent = primaryNav.classList.contains('mobile-active') ? 'Close' : 'Menu';
+        });
+      }
+
+      let currentFilter = 'all';
+      let currentSort = 'date';
+      let currentDirection = 'desc'; // default newest first for date
+
+      // Read URL query parameter (e.g. ?q=searchterm)
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryParam = urlParams.get('q');
+      if (queryParam && searchInput) {
+        searchInput.value = queryParam;
+      }
+
+      function applyFilterAndSort() {
+        const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+        // 1. Sort cards array
+        cards.sort((a, b) => {
+          let valA, valB;
+          if (currentSort === 'date') {
+            valA = parseInt(a.getAttribute('data-year'), 10) || 0;
+            valB = parseInt(b.getAttribute('data-year'), 10) || 0;
+            return currentDirection === 'desc' ? valB - valA : valA - valB;
+          } else if (currentSort === 'typology') {
+            valA = (a.getAttribute('data-typology') || '').toLowerCase();
+            valB = (b.getAttribute('data-typology') || '').toLowerCase();
+            return currentDirection === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+          } else if (currentSort === 'discipline') {
+            valA = (a.getAttribute('data-discipline') || '').toLowerCase();
+            valB = (b.getAttribute('data-discipline') || '').toLowerCase();
+            return currentDirection === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+          }
+          return 0;
+        });
+
+        // 2. Re-append in sorted order and filter visibility
+        cards.forEach(card => {
+          const title = (card.getAttribute('data-title') || '').toLowerCase();
+          const category = (card.getAttribute('data-category') || '').toLowerCase();
+          const typology = (card.getAttribute('data-typology') || '').toLowerCase();
+          const discipline = (card.getAttribute('data-discipline') || '').toLowerCase();
+          const year = (card.getAttribute('data-year') || '');
+
+          const matchesQuery = !query || 
+            title.includes(query) || 
+            category.includes(query) || 
+            typology.includes(query) || 
+            discipline.includes(query) || 
+            year.includes(query);
+
+          const matchesFilter = (currentFilter === 'all') || category.includes(currentFilter);
+
+          card.style.display = (matchesQuery && matchesFilter) ? 'block' : 'none';
+          projectGrid.appendChild(card);
+        });
+      }
+
+      // Filter Buttons
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          applyFilterAndSort();
+        });
+      });
+
+      // Sort Buttons
+      sortBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const sortType = btn.getAttribute('data-sort');
+          if (currentSort === sortType) {
+            // Toggle direction
+            currentDirection = currentDirection === 'asc' ? 'desc' : 'asc';
+          } else {
+            currentSort = sortType;
+            currentDirection = (sortType === 'date') ? 'desc' : 'asc';
+            sortBtns.forEach(b => {
+              b.classList.remove('active');
+              const ind = b.querySelector('.sort-indicator');
+              if (ind) ind.textContent = '';
+            });
+            btn.classList.add('active');
+          }
+
+          const indicator = btn.querySelector('.sort-indicator');
+          if (indicator) {
+            indicator.textContent = currentDirection === 'asc' ? '↑' : '↓';
+          }
+
+          applyFilterAndSort();
+        });
+      });
+
+      // Live search typing
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          applyFilterAndSort();
+        });
+      }
+
+      // Search form submission
+      if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          applyFilterAndSort();
+        });
+      }
+
+      // Initial application
+      applyFilterAndSort();
+    });
+  </script>
+</body>
+</html>

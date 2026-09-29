@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDVSchool — Academy of Architectural VFX & Spatial Design</title>
+  <meta name="description" content="RDVSchool — Specialized training in computational 3D architecture, photorealistic rendering, real-time spatial visualization, and craft.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link active">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">RDVSchool</h1>
+      <p class="page-subtitle">The educational wing of RDVS Studios, training emerging architects, spatial designers, and 3D visual artists in industry-grade digital craft.</p>
+    </header>
+
+    <div class="editorial-grid">
+      <div class="editorial-text">
+        <p class="editorial-lead">We believe exceptional architectural design requires uncompromising visual articulation. RDVSchool translates our commercial studio pipeline into rigorous masterclasses.</p>
+        
+        <div class="editorial-body">
+          <p>Taught directly by practicing architects and senior VFX supervisors, our curriculum eschews generic software tutorials in favor of deep optical physics, real-world construction tolerances, and emotive spatial storytelling.</p>
+          <p>Students work directly with actual architectural CAD packages, high-end shading libraries, and real-time visualization engines to build professional portfolios capable of competing on the international stage.</p>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <h2 style="font-size: 1.15rem; margin-bottom: 20px; color: var(--foreground);">Core Masterclass Tracks</h2>
+
+          <div class="expertise-list" style="gap: 24px;">
+            <div style="padding-bottom: 20px; border-bottom: 1px solid var(--border-hairline);">
+              <h3 style="font-size: 1rem; color: var(--foreground); margin-bottom: 4px;">01. Photoreal 3D Architecture & Lighting</h3>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.5;">Ray-traced lighting models, PBR physical shaders, composition, daylight studies, and camera calibration.</p>
+            </div>
+
+            <div style="padding-bottom: 20px; border-bottom: 1px solid var(--border-hairline);">
+              <h3 style="font-size: 1rem; color: var(--foreground); margin-bottom: 4px;">02. Real-Time Spatial Environments (Unreal Engine 5)</h3>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.5;">Dynamic Lumen illumination, Nanite mesh optimization, interactive walkthroughs, and cinematic film output.</p>
+            </div>
+
+            <div style="padding-bottom: 20px; border-bottom: 1px solid var(--border-hairline);">
+              <h3 style="font-size: 1rem; color: var(--foreground); margin-bottom: 4px;">03. Interior Detailing & Millwork Modeling</h3>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.5;">Translating spatial interior concepts into buildable shop drawings, custom cabinetry joinery, and fabrication plans.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <a href="contact.html?interest=rdvschool" class="project-action-link" style="font-size: 1rem;">Apply for upcoming cohort &rarr;</a>
+        </div>
+      </div>
+
+      <div class="editorial-media">
+        <div class="card-media-wrapper" style="aspect-ratio: 4/5;">
+          <img src="assets/images/onehive.jpg" alt="RDVSchool Training Studio" class="editorial-img" style="height: 100%; object-fit: cover;">
+        </div>
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 8px;">RDVSchool Laboratory — Practical computational modeling and lighting critique.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
