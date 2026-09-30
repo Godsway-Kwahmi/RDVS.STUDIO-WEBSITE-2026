@@ -1,0 +1,241 @@
+{
+  "the-hamlet-presentation.html": {
+    "imgsInHtml": [
+      "assets/images/the-hamlet-presentation/the-hamlet-presentation-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-2.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-3.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-4.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-4.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-2.jpg"
+    ]
+  },
+  "the-saddle.html": {
+    "imgsInHtml": [
+      "assets/images/the-saddle/the-saddle-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": []
+  },
+  "the-tea-house.html": {
+    "imgsInHtml": [
+      "assets/images/the-tea-house/the-tea-house-1.png",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/adentan-townhouses/adentan-townhouses-1.jpg",
+      "assets/images/adentan-townhouses/adentan-townhouses-2.jpg",
+      "assets/images/adentan-townhouses/adentan-townhouses-3.jpg",
+      "assets/images/adentan-townhouses/adentan-townhouses-4.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-2.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-3.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-4.jpg"
+    ]
+  },
+  "victoria-island-naija-project.html": {
+    "imgsInHtml": [
+      "assets/images/victoria-island-naija-project/victoria-island-naija-project-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-2.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-3.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-4.jpg",
+      "assets/images/haven-project/haven-project-1.jpg",
+      "assets/images/haven-project/haven-project-2.jpg",
+      "assets/images/haven-project/haven-project-3.jpg",
+      "assets/images/haven-project/haven-project-4.jpg"
+    ]
+  },
+  "views-from-airport-hills.html": {
+    "imgsInHtml": [
+      "assets/images/views-from-airport-hills/views-from-airport-hills-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/airport-city/airport-city-1.jpg",
+      "assets/images/airport-city/airport-city-2.jpg",
+      "assets/images/airport-city/airport-city-3.jpg",
+      "assets/images/airport-city/airport-city-4.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-1.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-2.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-3.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-4.jpg",
+      "assets/images/airporthills/airporthills-residence.jpg",
+      "assets/images/baobab-hotel-airport/baobab-hotel-airport-1.jpg"
+    ]
+  },
+  "villa-aggregate.html": {
+    "imgsInHtml": [
+      "assets/images/villa-aggregate/villa-aggregate-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/aggregate/villa-aggregate-side.jpg",
+      "assets/images/aggregate/villa-aggregate.jpg"
+    ]
+  },
+  "vodafone-red-hse.html": {
+    "imgsInHtml": [
+      "assets/images/vodafone-red-hse/vodafone-red-hse-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": []
+  },
+  "vr-photos.html": {
+    "imgsInHtml": [
+      "assets/images/vr-photos/vr-photos-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": []
+  },
+  "wcigl.html": {
+    "imgsInHtml": [
+      "assets/images/wcigl/wcigl-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": []
+  },
+  "web-design-design.html": {
+    "imgsInHtml": [
+      "assets/images/web-design-design/web-design-design-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-4.jpg",
+      "assets/images/graphic-design/graphic-design-1.jpg",
+      "assets/images/graphic-design/graphic-design-2.jpg",
+      "assets/images/graphic-design/graphic-design-3.jpg",
+      "assets/images/graphic-design/graphic-design-4.jpg"
+    ]
+  },
+  "west-cantonments-igl-presentation.html": {
+    "imgsInHtml": [
+      "assets/images/west-cantonments-igl-presentation/west-cantonments-igl-presentation-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-2.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-3.jpg",
+      "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-4.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg",
+      "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-4.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg",
+      "assets/images/baatsona-house-presentation/baatsona-house-presentation-2.jpg"
+    ]
+  },
+  "west-hills-mall.html": {
+    "imgsInHtml": [
+      "assets/images/west-hills-mall/west-hills-mall-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": [
+      "assets/images/airport-hills-residence/airport-hills-residence-1.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-2.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-3.jpg",
+      "assets/images/airport-hills-residence/airport-hills-residence-4.jpg",
+      "assets/images/airporthills/airporthills-residence.jpg",
+      "assets/images/cantonments/west-cantonments.jpg"
+    ]
+  },
+  "yao-yaa.html": {
+    "imgsInHtml": [
+      "assets/images/yao-yaa/yao-yaa-1.jpg",
+      "assets/images/afg/afg-headquarters.jpg",
+      "assets/images/afg/afg-meeting.jpg",
+      "assets/images/afg/afg-reception-2.jpg",
+      "js/lightbox.js",
+      "js/nav.js",
+      "js/sanity-client.js",
+      "js/sanity-render.js"
+    ],
+    "candidateMedia": []
+  }
+}

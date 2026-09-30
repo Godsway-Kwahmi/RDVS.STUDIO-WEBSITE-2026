@@ -1,0 +1,2351 @@
+{
+  "totalCards": 164,
+  "existingPages": [
+    {
+      "href": "yao-yaa.html",
+      "slug": "yao-yaa",
+      "title": "YAO+YAA",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/yao-yaa/yao-yaa-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "west-hills-mall.html",
+      "slug": "west-hills-mall",
+      "title": "west_hills_mall",
+      "year": "2009",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/west-hills-mall/west-hills-mall-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "west-cantonments-igl-presentation.html",
+      "slug": "west-cantonments-igl-presentation",
+      "title": "WEST_CANTONMENTS_IGL_PRESENTATION",
+      "year": "2009",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/west-cantonments-igl-presentation/west-cantonments-igl-presentation-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "web-design-design.html",
+      "slug": "web-design-design",
+      "title": "WEB_DESIGN_DESIGN",
+      "year": "2009",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/web-design-design/web-design-design-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "wcigl.html",
+      "slug": "wcigl",
+      "title": "WCIGL",
+      "year": "2009",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/wcigl/wcigl-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "vr-showcase.html",
+      "slug": "vr-showcase",
+      "title": "VR_SHOWCASE",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/vr-showcase/vr-showcase-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "vr-photos.html",
+      "slug": "vr-photos",
+      "title": "VR_PHOTOS",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/vr-photos/vr-photos-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "vodafone-red-hse.html",
+      "slug": "vodafone-red-hse",
+      "title": "VODAFONE_RED_HSE",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/vodafone-red-hse/vodafone-red-hse-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "villa-aggregate.html",
+      "slug": "villa-aggregate",
+      "title": "VILLA_AGGREGATE",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/villa-aggregate/villa-aggregate-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "views-from-airport-hills.html",
+      "slug": "views-from-airport-hills",
+      "title": "VIEWS_FROM_AIRPORT_HILLS",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/views-from-airport-hills/views-from-airport-hills-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "victoria-island-naija-project.html",
+      "slug": "victoria-island-naija-project",
+      "title": "VICTORIA_ISLAND_NAIJA_PROJECT",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/victoria-island-naija-project/victoria-island-naija-project-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "viasat1-breakfast-show.html",
+      "slug": "viasat1-breakfast-show",
+      "title": "viasat1_breakfast_show",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/viasat1-breakfast-show/viasat1-breakfast-show-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "trumpet-africa-ident.html",
+      "slug": "trumpet-africa-ident",
+      "title": "TRUMPET_AFRICA_IDENT",
+      "year": "2026",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/trumpet-africa-ident/trumpet-africa-ident-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "tower-cascades.html",
+      "slug": "tower-cascades",
+      "title": "TOWER_CASCADES",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/tower-cascades/tower-cascades-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "the-tea-house.html",
+      "slug": "the-tea-house",
+      "title": "THE_TEA_HOUSE",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/the-tea-house/the-tea-house-1.png",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "the-saddle.html",
+      "slug": "the-saddle",
+      "title": "THE_SADDLE",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/the-saddle/the-saddle-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "the-hamlet-presentation.html",
+      "slug": "the-hamlet-presentation",
+      "title": "THE_ HAMLET_ PRESENTATION",
+      "year": "2025",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/the-hamlet-presentation/the-hamlet-presentation-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "asante-interior-design-presentation.html",
+      "slug": "asante-interior-design-presentation",
+      "title": "asante_interior_design_presentation",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg",
+        "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg",
+        "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg",
+        "assets/images/asante-interior-design-presentation/asante-interior-design-presentation-4.jpg"
+      ]
+    },
+    {
+      "href": "apartment-in-takoradi.html",
+      "slug": "apartment-in-takoradi",
+      "title": "APARTMENT_IN_TAKORADI",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg",
+        "assets/images/apartment-in-takoradi/apartment-in-takoradi-2.jpg"
+      ]
+    },
+    {
+      "href": "anyigbanua.html",
+      "slug": "anyigbanua",
+      "title": "ANYIGBANUA",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/anyigbanua/anyigbanua-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/anyigbanua/anyigbanua-1.jpg"
+      ]
+    },
+    {
+      "href": "ameyaw-sarah.html",
+      "slug": "ameyaw-sarah",
+      "title": "AMEYAW+SARAH",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg",
+        "assets/images/ameyaw-sarah/ameyaw-sarah-2.jpg",
+        "assets/images/ameyaw-sarah/ameyaw-sarah-3.jpg",
+        "assets/images/ameyaw-sarah/ameyaw-sarah-4.jpg"
+      ]
+    },
+    {
+      "href": "alexander-signage.html",
+      "slug": "alexander-signage",
+      "title": "ALEXANDER-SIGNAGE",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/alexander-signage/alexander-signage-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/alexander-signage/alexander-signage-1.jpg"
+      ]
+    },
+    {
+      "href": "airport-hills-residence.html",
+      "slug": "airport-hills-residence",
+      "title": "AIRPORT_HILLS_RESIDENCE",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/airport-hills-residence/airport-hills-residence-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/airport-hills-residence/airport-hills-residence-1.jpg",
+        "assets/images/airport-hills-residence/airport-hills-residence-2.jpg",
+        "assets/images/airport-hills-residence/airport-hills-residence-3.jpg",
+        "assets/images/airport-hills-residence/airport-hills-residence-4.jpg"
+      ]
+    },
+    {
+      "href": "airport-city.html",
+      "slug": "airport-city",
+      "title": "airport_city",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/airport-city/airport-city-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/airport-city/airport-city-1.jpg",
+        "assets/images/airport-city/airport-city-2.jpg",
+        "assets/images/airport-city/airport-city-3.jpg",
+        "assets/images/airport-city/airport-city-4.jpg"
+      ]
+    },
+    {
+      "href": "aika-osu.html",
+      "slug": "aika-osu",
+      "title": "aika_osu",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/aika-osu/aika-osu-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/aika-osu/aika-osu-1.jpg",
+        "assets/images/aika-osu/aika-osu-2.jpg",
+        "assets/images/aika-osu/aika-osu-3.jpg"
+      ]
+    },
+    {
+      "href": "advantage-place.html",
+      "slug": "advantage-place",
+      "title": "ADVANTAGE_PLACE",
+      "year": "2021",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/advantage-place/advantage-place-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/advantage-place/advantage-place-1.jpg",
+        "assets/images/advantage-place/advantage-place-2.jpg",
+        "assets/images/advantage-place/advantage-place-3.jpg",
+        "assets/images/advantage-place/advantage-place-4.jpg"
+      ]
+    },
+    {
+      "href": "adolph-s-wedding-invite.html",
+      "slug": "adolph-s-wedding-invite",
+      "title": "ADOLPH'S_WEDDING_INVITE",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg",
+        "assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-2.jpg",
+        "assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-3.jpg",
+        "assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-4.jpg"
+      ]
+    },
+    {
+      "href": "adentan-townhouses.html",
+      "slug": "adentan-townhouses",
+      "title": "ADENTAN_TOWNHOUSES",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/adentan-townhouses/adentan-townhouses-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/adentan-townhouses/adentan-townhouses-1.jpg",
+        "assets/images/adentan-townhouses/adentan-townhouses-2.jpg",
+        "assets/images/adentan-townhouses/adentan-townhouses-3.jpg",
+        "assets/images/adentan-townhouses/adentan-townhouses-4.jpg"
+      ]
+    },
+    {
+      "href": "accra-milleniuem-city-project-presentation-2012.html",
+      "slug": "accra-milleniuem-city-project-presentation-2012",
+      "title": "ACCRA_MILLENIUEM_CITY_PROJECT_PRESENTATION_2012",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg",
+        "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-2.jpg",
+        "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-3.jpg",
+        "assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-4.jpg"
+      ]
+    },
+    {
+      "href": "access-bank-iris.html",
+      "slug": "access-bank-iris",
+      "title": "ACCESS_BANK_IRIS",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/access-bank-iris/access-bank-iris-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/access-bank-iris/access-bank-iris-1.jpg",
+        "assets/images/access-bank-iris/access-bank-iris-2.jpg",
+        "assets/images/access-bank-iris/access-bank-iris-3.jpg",
+        "assets/images/access-bank-iris/access-bank-iris-4.jpg"
+      ]
+    },
+    {
+      "href": "access-bank.html",
+      "slug": "access-bank",
+      "title": "ACCESS_BANK",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/access-bank/access-bank-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/access-bank/access-bank-1.jpg",
+        "assets/images/access-bank/access-bank-2.jpg",
+        "assets/images/access-bank/access-bank-3.jpg",
+        "assets/images/access-bank/access-bank-4.jpg"
+      ]
+    },
+    {
+      "href": "abl-reception.html",
+      "slug": "abl-reception",
+      "title": "ABL_RECEPTION",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/abl-reception/abl-reception-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/abl-reception/abl-reception-1.jpg",
+        "assets/images/abl-reception/abl-reception-2.jpg",
+        "assets/images/abl-reception/abl-reception-3.jpg"
+      ]
+    },
+    {
+      "href": "abl.html",
+      "slug": "abl",
+      "title": "ABL",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/abl/abl-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/abl/abl-1.jpg",
+        "assets/images/abl/abl-2.jpg",
+        "assets/images/abl/abl-3.jpg",
+        "assets/images/abl/abl-4.jpg",
+        "assets/images/abl/abl-reception.jpg"
+      ]
+    },
+    {
+      "href": "94-laurel.html",
+      "slug": "94-laurel",
+      "title": "94_LAUREL",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/94-laurel/94-laurel-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/94-laurel/94-laurel-1.jpg",
+        "assets/images/94-laurel/94-laurel-2.jpg",
+        "assets/images/94-laurel/94-laurel-3.jpg",
+        "assets/images/94-laurel/94-laurel-4.jpg"
+      ]
+    },
+    {
+      "href": "5aap.html",
+      "slug": "5aap",
+      "title": "5AAP",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/5aap/5aap-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/5aap/5aap-1.jpg",
+        "assets/images/5aap/5aap-2.jpg",
+        "assets/images/5aap/5aap-3.jpg",
+        "assets/images/5aap/5aap-4.jpg"
+      ]
+    },
+    {
+      "href": "41-barham.html",
+      "slug": "41-barham",
+      "title": "41_BARHAM",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/41-barham/41-barham-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/41-barham/41-barham-1.jpg"
+      ]
+    },
+    {
+      "href": "2gs-construction-logistics.html",
+      "slug": "2gs-construction-logistics",
+      "title": "2GS_CONSTRUCTION+LOGISTICS",
+      "year": "2022",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/2gs-construction-logistics/2gs-construction-logistics-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/2gs-construction-logistics/2gs-construction-logistics-1.jpg",
+        "assets/images/2gs-construction-logistics/2gs-construction-logistics-2.jpg",
+        "assets/images/2gs-construction-logistics/2gs-construction-logistics-3.jpg",
+        "assets/images/2gs-construction-logistics/2gs-construction-logistics-4.jpg"
+      ]
+    },
+    {
+      "href": "1hive.html",
+      "slug": "1hive",
+      "title": "1hive",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/1hive/1hive-1.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/1hive/1hive-1.jpg",
+        "assets/images/1hive/1hive-2.jpg",
+        "assets/images/1hive/1hive-3.jpg",
+        "assets/images/1hive/1hive-4.jpg"
+      ]
+    },
+    {
+      "href": "1957.html",
+      "slug": "1957",
+      "title": "1957",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/1957/1957-1.mp4",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/1957/1957-1.jpg",
+        "assets/images/1957/1957-2.jpg",
+        "assets/images/1957/1957-3.jpg",
+        "assets/images/1957/1957-4.jpg",
+        "assets/images/1957/1957-interior.jpg",
+        "assets/images/1957/1957-wide-hero.jpg"
+      ]
+    },
+    {
+      "href": "swipe.html",
+      "slug": "swipe",
+      "title": "SWIPE=FLOAT",
+      "year": "2023",
+      "typology": "Digital",
+      "discipline": "Motion Design",
+      "category": "motion-design web-design",
+      "thumbnail": "assets/images/swipe/swipe-cover.jpg",
+      "pageExists": true,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "afg.html",
+      "slug": "afg",
+      "title": "AFG Executive Headquarters",
+      "year": "2024",
+      "typology": "Commercial",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build industrial-design",
+      "thumbnail": "assets/images/afg/afg-headquarters.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/afg/afg-headquarters.jpg",
+        "assets/images/afg/afg-meeting.jpg",
+        "assets/images/afg/afg-panoramic-header.jpg",
+        "assets/images/afg/afg-reception-2.jpg",
+        "assets/images/afg/afg-reception-wide.jpg"
+      ]
+    },
+    {
+      "href": "hamlet.html",
+      "slug": "hamlet",
+      "title": "Hamlet Contemporary Residence",
+      "year": "2025",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/hamlet/hamlet-estate.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/hamlet/hamlet-bath.jpg",
+        "assets/images/hamlet/hamlet-estate.jpg",
+        "assets/images/hamlet/hamlet-night-angle.jpg",
+        "assets/images/hamlet/hamlet-wide-hero.jpg"
+      ]
+    },
+    {
+      "href": "dyv.html",
+      "slug": "dyv",
+      "title": "DYV Mixed-Use Development",
+      "year": "2023",
+      "typology": "Mixed-Use",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi motion-design",
+      "thumbnail": "assets/images/dyv/dyv-dawn.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/dyv/dyv-dawn.jpg",
+        "assets/images/dyv/dyv-panoramic-header.jpg",
+        "assets/images/dyv/dyv-street-wide.jpg",
+        "assets/images/dyv/dyv-street.jpg"
+      ]
+    },
+    {
+      "href": "hubtel.html",
+      "slug": "hubtel",
+      "title": "Hubtel Executive Boardroom Wing",
+      "year": "2023",
+      "typology": "Workplace",
+      "discipline": "Interior Design",
+      "category": "interior-design industrial-design turnkey-build",
+      "thumbnail": "assets/images/hubtel/hubtel-executive.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/hubtel/hubtel-aisle.jpg",
+        "assets/images/hubtel/hubtel-corridor.jpg",
+        "assets/images/hubtel/hubtel-executive.jpg",
+        "assets/images/hubtel/hubtel-wide-hero.jpg"
+      ]
+    },
+    {
+      "href": "barham.html",
+      "slug": "barham",
+      "title": "41 Barham Luxury Residence",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/barham/barham-residence.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/barham/barham-courtyard.jpg",
+        "assets/images/barham/barham-pavilion.jpg",
+        "assets/images/barham/barham-residence.jpg"
+      ]
+    },
+    {
+      "href": "frontier.html",
+      "slug": "frontier",
+      "title": "Frontier Commercial Complex",
+      "year": "2025",
+      "typology": "Commercial",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/frontier/frontier-tower.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/frontier/frontier-base.jpg",
+        "assets/images/frontier/frontier-facade.jpg",
+        "assets/images/frontier/frontier-tower.jpg"
+      ]
+    },
+    {
+      "href": "labeach.html",
+      "slug": "labeach",
+      "title": "La Beach Towers Penthouse",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Interior Design",
+      "category": "interior-design industrial-design",
+      "thumbnail": "assets/images/labeach/la-beach-towers.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/labeach/la-beach-dining.jpg",
+        "assets/images/labeach/la-beach-living.jpg",
+        "assets/images/labeach/la-beach-towers.jpg"
+      ]
+    },
+    {
+      "href": "mtn.html",
+      "slug": "mtn",
+      "title": "MTN Headquarters Executive Wing",
+      "year": "2024",
+      "typology": "Commercial",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build",
+      "thumbnail": "assets/images/mtn/mtn-corridor.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/mtn/mtn-corridor.jpg",
+        "assets/images/mtn/mtn-lighting-detail.jpg",
+        "assets/images/mtn/mtn-timber-detail.jpg"
+      ]
+    },
+    {
+      "href": "onehive.html",
+      "slug": "onehive",
+      "title": "OneHive Innovation Center",
+      "year": "2025",
+      "typology": "Technology",
+      "discipline": "Visual Effects (VFX) & CGI",
+      "category": "vfx-cgi motion-design web-design",
+      "thumbnail": "assets/images/onehive/onehive.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/onehive/onehive-atrium.jpg",
+        "assets/images/onehive/onehive-ceiling-structure.jpg",
+        "assets/images/onehive/onehive.jpg"
+      ]
+    },
+    {
+      "href": "purc.html",
+      "slug": "purc",
+      "title": "PURC Institutional Complex",
+      "year": "2023",
+      "typology": "Institutional",
+      "discipline": "Architecture",
+      "category": "architecture-planning turnkey-build",
+      "thumbnail": "assets/images/purc/purc-facade.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/purc/purc-colonnade.jpg",
+        "assets/images/purc/purc-facade.jpg",
+        "assets/images/purc/purc-portico.jpg"
+      ]
+    },
+    {
+      "href": "afg.html",
+      "slug": "afg",
+      "title": "ABL Corporate Reception",
+      "year": "2024",
+      "typology": "Commercial",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build industrial-design",
+      "thumbnail": "assets/images/abl/abl-reception.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/afg/afg-headquarters.jpg",
+        "assets/images/afg/afg-meeting.jpg",
+        "assets/images/afg/afg-panoramic-header.jpg",
+        "assets/images/afg/afg-reception-2.jpg",
+        "assets/images/afg/afg-reception-wide.jpg"
+      ]
+    },
+    {
+      "href": "hubtel.html",
+      "slug": "hubtel",
+      "title": "Margin Financial Suite",
+      "year": "2023",
+      "typology": "Commercial",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build",
+      "thumbnail": "assets/images/margin/margin-bank.jpg",
+      "pageExists": true,
+      "mediaOnDisk": [
+        "assets/images/hubtel/hubtel-aisle.jpg",
+        "assets/images/hubtel/hubtel-corridor.jpg",
+        "assets/images/hubtel/hubtel-executive.jpg",
+        "assets/images/hubtel/hubtel-wide-hero.jpg"
+      ]
+    }
+  ],
+  "missingPages": [
+    {
+      "href": "stephen-yvonne.html",
+      "slug": "stephen-yvonne",
+      "title": "STEPHEN+YVONNE",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/stephen-yvonne/stephen-yvonne-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "stellar-bar.html",
+      "slug": "stellar-bar",
+      "title": "STELLAR_BAR",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/stellar-bar/stellar-bar-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "stark-glaube.html",
+      "slug": "stark-glaube",
+      "title": "STARK_GLAUBE",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/stark-glaube/stark-glaube-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "stanchart-hq.html",
+      "slug": "stanchart-hq",
+      "title": "STANCHART_HQ",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/stanchart-hq/stanchart-hq-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "special-days-posts.html",
+      "slug": "special-days-posts",
+      "title": "SPECIAL_DAYS_POSTS",
+      "year": "2011",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/special-days-posts/special-days-posts-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "smsgh-hubtel.html",
+      "slug": "smsgh-hubtel",
+      "title": "SMSGH=HUBTEL",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/smsgh-hubtel/smsgh-hubtel-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "six-acres-company-profile.html",
+      "slug": "six-acres-company-profile",
+      "title": "SIX_ACRES_COMPANY_PROFILE",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/six-acres-company-profile/six-acres-company-profile-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "senya-resort.html",
+      "slug": "senya-resort",
+      "title": "SENYA_RESORT",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/senya-resort/senya-resort-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "safo-adu-residence.html",
+      "slug": "safo-adu-residence",
+      "title": "SAFO_ADU_RESIDENCE",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/safo-adu-residence/safo-adu-residence-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rlg.html",
+      "slug": "rlg",
+      "title": "RLG",
+      "year": "2026",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/rlg/rlg-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "ready.html",
+      "slug": "ready",
+      "title": "READY",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/ready/ready-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rdvs-website.html",
+      "slug": "rdvs-website",
+      "title": "RDVS_WEBSITE",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/rdvs-website/rdvs-website-1.png",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rdvs-rev-olution-2-0-website.html",
+      "slug": "rdvs-rev-olution-2-0-website",
+      "title": "RDVS_REV.OLUTION.2.0_WEBSITE",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/rdvs-rev-olution-2-0-website/rdvs-rev-olution-2-0-website-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rdvs-logo.html",
+      "slug": "rdvs-logo",
+      "title": "RDVS_LOGO",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/rdvs-logo/rdvs-logo-1.png",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rdvs-branding.html",
+      "slug": "rdvs-branding",
+      "title": "RDVS_BRANDING",
+      "year": "2012",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/rdvs-branding/rdvs-branding-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "rdvs-ads.html",
+      "slug": "rdvs-ads",
+      "title": "RDVS_ADS",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/rdvs-ads/rdvs-ads-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "provident-insurance.html",
+      "slug": "provident-insurance",
+      "title": "PROVIDENT_INSURANCE",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/provident-insurance/provident-insurance-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "project-mount.html",
+      "slug": "project-mount",
+      "title": "PROJECT_MOUNT",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/project-mount/project-mount-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "premier-place.html",
+      "slug": "premier-place",
+      "title": "PREMIER_PLACE",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/premier-place/premier-place-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "premier-lodge-2.html",
+      "slug": "premier-lodge-2",
+      "title": "PREMIER_LODGE_2",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/premier-lodge-2/premier-lodge-2-1.png",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "portfolios.html",
+      "slug": "portfolios",
+      "title": "PORTFOLIOS",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/portfolios/portfolios-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "poconos-bar-grill.html",
+      "slug": "poconos-bar-grill",
+      "title": "POCONOS_BAR+GRILL",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "poconos.html",
+      "slug": "poconos",
+      "title": "POCONOS",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/poconos/poconos-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "petrus.html",
+      "slug": "petrus",
+      "title": "PETRUS",
+      "year": "2026",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/petrus/petrus-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "palazzo.html",
+      "slug": "palazzo",
+      "title": "PALAZZO",
+      "year": "2026",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/palazzo/palazzo-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "osu-apartment-002.html",
+      "slug": "osu-apartment-002",
+      "title": "OSU_APARTMENT_002",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/osu-apartment-002/osu-apartment-002-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "osu-apartments.html",
+      "slug": "osu-apartments",
+      "title": "OSU_APARTMENTS",
+      "year": "2013",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/osu-apartments/osu-apartments-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "nyla-court.html",
+      "slug": "nyla-court",
+      "title": "NYLA_COURT",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/nyla-court/nyla-court-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "npa-reception-renders.html",
+      "slug": "npa-reception-renders",
+      "title": "NPA_RECEPTION_RENDERS",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/npa-reception-renders/npa-reception-renders-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "nissa-offices-2010.html",
+      "slug": "nissa-offices-2010",
+      "title": "NISSA_OFFICES_2010",
+      "year": "2010",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/nissa-offices-2010/nissa-offices-2010-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "naadei-villas.html",
+      "slug": "naadei-villas",
+      "title": "NAADEI_VILLAS",
+      "year": "2026",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/naadei-villas/naadei-villas-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "mtn-env-graphics.html",
+      "slug": "mtn-env-graphics",
+      "title": "MTN_ENV_GRAPHICS",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/mtn-env-graphics/mtn-env-graphics-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "moty.html",
+      "slug": "moty",
+      "title": "MOTY",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/moty/moty-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "mig-rdvs.html",
+      "slug": "mig-rdvs",
+      "title": "MIG.RDVS",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/mig-rdvs/mig-rdvs-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "maurice-abena.html",
+      "slug": "maurice-abena",
+      "title": "MAURICE+ABENA",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/maurice-abena/maurice-abena-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "link-drive-road.html",
+      "slug": "link-drive-road",
+      "title": "LINK_DRIVE_ROAD",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/link-drive-road/link-drive-road-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "light-camera-visualize-002.html",
+      "slug": "light-camera-visualize-002",
+      "title": "LIGHT_CAMERA_VISUALIZE_002",
+      "year": "2014",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/light-camera-visualize-002/light-camera-visualize-002-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "la-palm-2008-christmas-party-posters.html",
+      "slug": "la-palm-2008-christmas-party-posters",
+      "title": "LA_PALM_2008_CHRISTMAS_PARTY_POSTERS",
+      "year": "2009",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/la-palm-2008-christmas-party-posters/la-palm-2008-christmas-party-posters-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "la-maison-osu.html",
+      "slug": "la-maison-osu",
+      "title": "la_maison_osu",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/la-maison-osu/la-maison-osu-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "la-beach-towers.html",
+      "slug": "la-beach-towers",
+      "title": "LA_BEACH_TOWERS",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/la-beach-towers/la-beach-towers-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "kdmrd.html",
+      "slug": "kdmrd",
+      "title": "KDMRD",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/kdmrd/kdmrd-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/kdmrd/kdmrd-1.jpg",
+        "assets/images/kdmrd/kdmrd-2.jpg"
+      ]
+    },
+    {
+      "href": "k-line-architects-baobab-hotel-interiors-presentation.html",
+      "slug": "k-line-architects-baobab-hotel-interiors-presentation",
+      "title": "K-LINE_ARCHITECTS_BAOBAB_HOTEL_INTERIORS_PRESENTATION",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/k-line-architects-baobab-hotel-interiors-presentation/k-line-architects-baobab-hotel-interiors-presentation-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/k-line-architects-baobab-hotel-interiors-presentation/k-line-architects-baobab-hotel-interiors-presentation-1.jpg",
+        "assets/images/k-line-architects-baobab-hotel-interiors-presentation/k-line-architects-baobab-hotel-interiors-presentation-2.jpg"
+      ]
+    },
+    {
+      "href": "hydra-form.html",
+      "slug": "hydra-form",
+      "title": "HYDRA_FORM",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/hydra-form/hydra-form-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hydra-form/hydra-form-1.jpg",
+        "assets/images/hydra-form/hydra-form-2.jpg",
+        "assets/images/hydra-form/hydra-form-3.jpg",
+        "assets/images/hydra-form/hydra-form-4.jpg"
+      ]
+    },
+    {
+      "href": "hydra-form-presentation.html",
+      "slug": "hydra-form-presentation",
+      "title": "HYDRA-FORM_PRESENTATION",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/hydra-form-presentation/hydra-form-presentation-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hydra-form-presentation/hydra-form-presentation-1.jpg",
+        "assets/images/hydra-form-presentation/hydra-form-presentation-2.jpg",
+        "assets/images/hydra-form-presentation/hydra-form-presentation-3.jpg",
+        "assets/images/hydra-form-presentation/hydra-form-presentation-4.jpg"
+      ]
+    },
+    {
+      "href": "hvl.html",
+      "slug": "hvl",
+      "title": "HVL",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/hvl/hvl-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hvl/hvl-1.jpg",
+        "assets/images/hvl/hvl-2.jpg"
+      ]
+    },
+    {
+      "href": "hubtel-kenya.html",
+      "slug": "hubtel-kenya",
+      "title": "hubtel_kenya",
+      "year": "2023",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/hubtel-kenya/hubtel-kenya-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hubtel-kenya/hubtel-kenya-1.jpg",
+        "assets/images/hubtel-kenya/hubtel-kenya-2.jpg",
+        "assets/images/hubtel-kenya/hubtel-kenya-3.jpg",
+        "assets/images/hubtel-kenya/hubtel-kenya-4.jpg"
+      ]
+    },
+    {
+      "href": "hot-gossip.html",
+      "slug": "hot-gossip",
+      "title": "HOT_GOSSIP",
+      "year": "2015",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/hot-gossip/hot-gossip-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hot-gossip/hot-gossip-1.jpg",
+        "assets/images/hot-gossip/hot-gossip-2.jpg",
+        "assets/images/hot-gossip/hot-gossip-3.jpg",
+        "assets/images/hot-gossip/hot-gossip-4.jpg"
+      ]
+    },
+    {
+      "href": "home-automation-system-presentation.html",
+      "slug": "home-automation-system-presentation",
+      "title": "HOME_AUTOMATION_SYSTEM_PRESENTATION",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/home-automation-system-presentation/home-automation-system-presentation-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/home-automation-system-presentation/home-automation-system-presentation-1.jpg",
+        "assets/images/home-automation-system-presentation/home-automation-system-presentation-2.jpg",
+        "assets/images/home-automation-system-presentation/home-automation-system-presentation-3.jpeg",
+        "assets/images/home-automation-system-presentation/home-automation-system-presentation-4.jpeg"
+      ]
+    },
+    {
+      "href": "his-grace-garden-presentation.html",
+      "slug": "his-grace-garden-presentation",
+      "title": "HIS_GRACE_GARDEN_PRESENTATION",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/his-grace-garden-presentation/his-grace-garden-presentation-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/his-grace-garden-presentation/his-grace-garden-presentation-1.jpg",
+        "assets/images/his-grace-garden-presentation/his-grace-garden-presentation-2.jpg",
+        "assets/images/his-grace-garden-presentation/his-grace-garden-presentation-3.jpg",
+        "assets/images/his-grace-garden-presentation/his-grace-garden-presentation-4.jpg"
+      ]
+    },
+    {
+      "href": "hfc-tvc.html",
+      "slug": "hfc-tvc",
+      "title": "HFC_TVC",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/hfc-tvc/hfc-tvc-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/hfc-tvc/hfc-tvc-1.jpg",
+        "assets/images/hfc-tvc/hfc-tvc-2.jpg",
+        "assets/images/hfc-tvc/hfc-tvc-3.jpg",
+        "assets/images/hfc-tvc/hfc-tvc-4.jpg"
+      ]
+    },
+    {
+      "href": "haven-project.html",
+      "slug": "haven-project",
+      "title": "HAVEN_PROJECT",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/haven-project/haven-project-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/haven-project/haven-project-1.jpg",
+        "assets/images/haven-project/haven-project-2.jpg",
+        "assets/images/haven-project/haven-project-3.jpg",
+        "assets/images/haven-project/haven-project-4.jpg"
+      ]
+    },
+    {
+      "href": "haustalks.html",
+      "slug": "haustalks",
+      "title": "HAUSTALKS",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/haustalks/haustalks-1.png",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/haustalks/haustalks-1.png",
+        "assets/images/haustalks/haustalks-2.png"
+      ]
+    },
+    {
+      "href": "harbour-pointe.html",
+      "slug": "harbour-pointe",
+      "title": "HARBOUR_POINTE",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/harbour-pointe/harbour-pointe-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/harbour-pointe/harbour-pointe-1.jpg",
+        "assets/images/harbour-pointe/harbour-pointe-2.jpg",
+        "assets/images/harbourpointe/harbour-pointe.jpg"
+      ]
+    },
+    {
+      "href": "graphic-design.html",
+      "slug": "graphic-design",
+      "title": "graphic_design",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/graphic-design/graphic-design-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/graphic-design/graphic-design-1.jpg",
+        "assets/images/graphic-design/graphic-design-2.jpg",
+        "assets/images/graphic-design/graphic-design-3.jpg",
+        "assets/images/graphic-design/graphic-design-4.jpg"
+      ]
+    },
+    {
+      "href": "gh-phot-awards.html",
+      "slug": "gh-phot-awards",
+      "title": "gh_phot_awards",
+      "year": "2016",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/gh-phot-awards/gh-phot-awards-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/gh-phot-awards/gh-phot-awards-1.jpg",
+        "assets/images/gh-phot-awards/gh-phot-awards-2.jpg",
+        "assets/images/gh-phot-awards/gh-phot-awards-3.jpg",
+        "assets/images/gh-phot-awards/gh-phot-awards-4.jpg"
+      ]
+    },
+    {
+      "href": "furnart.html",
+      "slug": "furnart",
+      "title": "FURNART",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/furnart/furnart-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/furnart/furnart-1.jpg",
+        "assets/images/furnart/furnart-2.jpg",
+        "assets/images/furnart/furnart-3.jpg",
+        "assets/images/furnart/furnart-4.jpg"
+      ]
+    },
+    {
+      "href": "funko-ridge.html",
+      "slug": "funko-ridge",
+      "title": "FUNKO_RIDGE",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/funko-ridge/funko-ridge-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/funko-ridge/funko-ridge-1.jpg",
+        "assets/images/funko-ridge/funko-ridge-2.jpg",
+        "assets/images/funko-ridge/funko-ridge-3.jpg",
+        "assets/images/funko-ridge/funko-ridge-4.jpg"
+      ]
+    },
+    {
+      "href": "fule.html",
+      "slug": "fule",
+      "title": "FULE",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/fule/fule-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/fule/fule-1.jpg",
+        "assets/images/fule/fule-residence.jpg"
+      ]
+    },
+    {
+      "href": "frontier-filling-station.html",
+      "slug": "frontier-filling-station",
+      "title": "FRONTIER_FILLING_STATION",
+      "year": "2025",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/frontier-filling-station/frontier-filling-station-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/frontier-filling-station/frontier-filling-station-1.jpg"
+      ]
+    },
+    {
+      "href": "ert.html",
+      "slug": "ert",
+      "title": "ERT",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/ert/ert-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/ert/ert-1.jpg",
+        "assets/images/ert/ert-2.jpg",
+        "assets/images/ert/ert-3.jpg",
+        "assets/images/ert/ert-4.jpg"
+      ]
+    },
+    {
+      "href": "enda-whm.html",
+      "slug": "enda-whm",
+      "title": "ENDA_WHM",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/enda-whm/enda-whm-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/enda-whm/enda-whm-1.jpg",
+        "assets/images/enda-whm/enda-whm-2.jpg",
+        "assets/images/enda-whm/enda-whm-3.jpg",
+        "assets/images/enda-whm/enda-whm-4.jpg"
+      ]
+    },
+    {
+      "href": "enda-acm.html",
+      "slug": "enda-acm",
+      "title": "ENDA_ACM",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/enda-acm/enda-acm-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/enda-acm/enda-acm-1.jpg",
+        "assets/images/enda-acm/enda-acm-2.jpg",
+        "assets/images/enda-acm/enda-acm-3.jpg",
+        "assets/images/enda-acm/enda-acm-4.jpg"
+      ]
+    },
+    {
+      "href": "empire-tower.html",
+      "slug": "empire-tower",
+      "title": "EMPIRE_TOWER",
+      "year": "2017",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/empire-tower/empire-tower-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/empire-tower/empire-tower-1.jpg",
+        "assets/images/empire-tower/empire-tower-2.jpg",
+        "assets/images/empire-tower/empire-tower-3.jpg",
+        "assets/images/empire-tower/empire-tower-4.jpg"
+      ]
+    },
+    {
+      "href": "emerge-ident.html",
+      "slug": "emerge-ident",
+      "title": "EMERGE_IDENT",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/emerge-ident/emerge-ident-1.png",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/emerge-ident/emerge-ident-1.png",
+        "assets/images/emerge-ident/emerge-ident-2.png",
+        "assets/images/emerge-ident/emerge-ident-3.png",
+        "assets/images/emerge-ident/emerge-ident-4.png"
+      ]
+    },
+    {
+      "href": "el-dor.html",
+      "slug": "el-dor",
+      "title": "EL_DOR",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/el-dor/el-dor-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/el-dor/el-dor-1.jpg",
+        "assets/images/el-dor/el-dor-2.jpg",
+        "assets/images/el-dor/el-dor-3.jpg",
+        "assets/images/el-dor/el-dor-4.jpg"
+      ]
+    },
+    {
+      "href": "elo-tv.html",
+      "slug": "elo-tv",
+      "title": "ELO_TV",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/elo-tv/elo-tv-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/elo-tv/elo-tv-1.jpg",
+        "assets/images/elo-tv/elo-tv-2.jpg",
+        "assets/images/elo-tv/elo-tv-3.jpg",
+        "assets/images/elo-tv/elo-tv-4.jpg"
+      ]
+    },
+    {
+      "href": "ela-b.html",
+      "slug": "ela-b",
+      "title": "ELA_B",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/ela-b/ela-b-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/ela-b/ela-b-1.jpg",
+        "assets/images/ela-b/ela-b-2.jpg",
+        "assets/images/ela-b/ela-b-3.jpg",
+        "assets/images/ela-b/ela-b-4.jpg"
+      ]
+    },
+    {
+      "href": "eic-competition.html",
+      "slug": "eic-competition",
+      "title": "EIC_COMPETITION",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/eic-competition/eic-competition-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/eic-competition/eic-competition-1.jpg",
+        "assets/images/eic-competition/eic-competition-2.jpg",
+        "assets/images/eic-competition/eic-competition-3.jpg",
+        "assets/images/eic-competition/eic-competition-4.jpg"
+      ]
+    },
+    {
+      "href": "ehr.html",
+      "slug": "ehr",
+      "title": "EHR",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/ehr/ehr-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/ehr/ehr-1.jpg"
+      ]
+    },
+    {
+      "href": "dyv-predios.html",
+      "slug": "dyv-predios",
+      "title": "DYV-PREDIOS",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/dyv-predios/dyv-predios-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/dyv-predios/dyv-predios-1.jpg",
+        "assets/images/dyv-predios/dyv-predios-2.jpg",
+        "assets/images/dyv-predios/dyv-predios-3.jpg",
+        "assets/images/dyv-predios/dyv-predios-4.jpg"
+      ]
+    },
+    {
+      "href": "drw-furnart.html",
+      "slug": "drw-furnart",
+      "title": "DRW_FURNART",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/drw-furnart/drw-furnart-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/drw-furnart/drw-furnart-1.jpg",
+        "assets/images/drw-furnart/drw-furnart-2.jpg",
+        "assets/images/drw-furnart/drw-furnart-3.jpg",
+        "assets/images/drw-furnart/drw-furnart-4.jpg"
+      ]
+    },
+    {
+      "href": "dela-anyaa.html",
+      "slug": "dela-anyaa",
+      "title": "DELA_ANYAA",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/dela-anyaa/dela-anyaa-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/dela-anyaa/dela-anyaa-1.jpg",
+        "assets/images/dela-anyaa/dela-anyaa-2.jpg",
+        "assets/images/dela-anyaa/dela-anyaa-3.jpg",
+        "assets/images/dela-anyaa/dela-anyaa-4.jpg"
+      ]
+    },
+    {
+      "href": "d-e-t-a-i-l-s.html",
+      "slug": "d-e-t-a-i-l-s",
+      "title": "D E T A I L S",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg",
+        "assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg",
+        "assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-3.jpg",
+        "assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg"
+      ]
+    },
+    {
+      "href": "chocolate.html",
+      "slug": "chocolate",
+      "title": "CHOCOLATE",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/chocolate/chocolate-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/chocolate/chocolate-1.jpg",
+        "assets/images/chocolate/chocolate-2.jpg",
+        "assets/images/chocolate/chocolate-3.jpg",
+        "assets/images/chocolate/chocolate-4.jpg"
+      ]
+    },
+    {
+      "href": "ceeander.html",
+      "slug": "ceeander",
+      "title": "ceeander",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/videos/ceeander/ceeander-1.mp4",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/ceeander/ceeander-1.jpg",
+        "assets/images/ceeander/ceeander-2.jpg",
+        "assets/images/ceeander/ceeander-3.jpg",
+        "assets/images/ceeander/ceeander-4.png"
+      ]
+    },
+    {
+      "href": "carmenbasin.html",
+      "slug": "carmenbasin",
+      "title": "CarmenBasin",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/carmenbasin/carmenbasin-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/carmenbasin/carmenbasin-1.jpg",
+        "assets/images/carmenbasin/carmenbasin-2.jpg",
+        "assets/images/carmenbasin/carmenbasin-3.jpg",
+        "assets/images/carmenbasin/carmenbasin-4.jpg"
+      ]
+    },
+    {
+      "href": "campions-renderings.html",
+      "slug": "campions-renderings",
+      "title": "CAMPIONS_RENDERINGS",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/campions-renderings/campions-renderings-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/campions-renderings/campions-renderings-1.jpg",
+        "assets/images/campions-renderings/campions-renderings-2.jpg",
+        "assets/images/campions-renderings/campions-renderings-3.jpg",
+        "assets/images/campions-renderings/campions-renderings-4.jpg"
+      ]
+    },
+    {
+      "href": "c25.html",
+      "slug": "c25",
+      "title": "C25",
+      "year": "2019",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/c25/c25-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/c25/c25-1.jpg",
+        "assets/images/c25/c25-2.jpg",
+        "assets/images/c25/c25-3.jpg",
+        "assets/images/c25/c25-4.jpg"
+      ]
+    },
+    {
+      "href": "brownies-place.html",
+      "slug": "brownies-place",
+      "title": "BROWNIES_PLACE",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/brownies-place/brownies-place-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/brownie-s-place/brownie-s-place-1.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-2.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-3.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-4.jpg",
+        "assets/images/brownies-place/brownies-place-1.jpg",
+        "assets/images/brownies-place/brownies-place-2.jpg",
+        "assets/images/brownies-place/brownies-place-3.jpg",
+        "assets/images/brownies-place/brownies-place-4.jpg"
+      ]
+    },
+    {
+      "href": "brownies-brochure.html",
+      "slug": "brownies-brochure",
+      "title": "BROWNIES_BROCHURE",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/brownies-brochure/brownies-brochure-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/brownies-brochure/brownies-brochure-1.jpg",
+        "assets/images/brownies-brochure/brownies-brochure-2.jpg",
+        "assets/images/brownies-brochure/brownies-brochure-3.jpg",
+        "assets/images/brownies-brochure/brownies-brochure-4.jpg"
+      ]
+    },
+    {
+      "href": "brownie-s-place.html",
+      "slug": "brownie-s-place",
+      "title": "BROWNIE'S_PLACE",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/brownie-s-place/brownie-s-place-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/brownie-s-place/brownie-s-place-1.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-2.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-3.jpg",
+        "assets/images/brownie-s-place/brownie-s-place-4.jpg",
+        "assets/images/brownies-place/brownies-place-1.jpg",
+        "assets/images/brownies-place/brownies-place-2.jpg",
+        "assets/images/brownies-place/brownies-place-3.jpg",
+        "assets/images/brownies-place/brownies-place-4.jpg"
+      ]
+    },
+    {
+      "href": "bfa-2018.html",
+      "slug": "bfa-2018",
+      "title": "BFA_2018",
+      "year": "2018",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/bfa-2018/bfa-2018-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/bfa-2018/bfa-2018-1.jpg",
+        "assets/images/bfa-2018/bfa-2018-2.jpg",
+        "assets/images/bfa-2018/bfa-2018-3.jpg",
+        "assets/images/bfa-2018/bfa-2018-4.jpg"
+      ]
+    },
+    {
+      "href": "batsona-flats.html",
+      "slug": "batsona-flats",
+      "title": "BATSONA_FLATS",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/batsona-flats/batsona-flats-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/batsona-flats/batsona-flats-1.jpg",
+        "assets/images/batsona-flats/batsona-flats-2.jpg",
+        "assets/images/batsona-flats/batsona-flats-3.jpg",
+        "assets/images/batsona-flats/batsona-flats-4.jpg"
+      ]
+    },
+    {
+      "href": "baobab-hotel-airport.html",
+      "slug": "baobab-hotel-airport",
+      "title": "BAOBAB_HOTEL_AIRPORT",
+      "year": "2024",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/baobab-hotel-airport/baobab-hotel-airport-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/baobab-hotel-airport/baobab-hotel-airport-1.jpg"
+      ]
+    },
+    {
+      "href": "baatsona-house-presentation.html",
+      "slug": "baatsona-house-presentation",
+      "title": "BAATSONA_HOUSE_PRESENTATION",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg",
+        "assets/images/baatsona-house-presentation/baatsona-house-presentation-2.jpg",
+        "assets/images/baatsona-house-presentation/baatsona-house-presentation-3.jpg",
+        "assets/images/baatsona-house-presentation/baatsona-house-presentation-4.jpg"
+      ]
+    },
+    {
+      "href": "b1-hq-lagos-ave.html",
+      "slug": "b1-hq-lagos-ave",
+      "title": "B1_HQ_LAGOS_AVE",
+      "year": "2020",
+      "typology": "Architecture",
+      "discipline": "Architecture",
+      "category": "architecture-planning",
+      "thumbnail": "assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-1.png",
+      "pageExists": false,
+      "mediaOnDisk": [
+        "assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-1.png",
+        "assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-2.png",
+        "assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-3.png",
+        "assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-4.png"
+      ]
+    },
+    {
+      "href": "work.html#2gs",
+      "slug": "work#2gs",
+      "title": "2GS Identity & Spatial Systems",
+      "year": "2023",
+      "typology": "Identity",
+      "discipline": "Graphic Design",
+      "category": "graphic-design",
+      "thumbnail": "assets/images/2gs/2gs-branding.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#aelius",
+      "slug": "work#aelius",
+      "title": "Aelius Consult Brand System",
+      "year": "2023",
+      "typology": "Identity",
+      "discipline": "Graphic Design",
+      "category": "graphic-design web-design",
+      "thumbnail": "assets/images/aelius/aelius-brand.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#rdvs-platform",
+      "slug": "work#rdvs-platform",
+      "title": "RDVS Studio Digital Platform",
+      "year": "2023",
+      "typology": "Digital",
+      "discipline": "Digital & Web Design",
+      "category": "web-design motion-design graphic-design",
+      "thumbnail": "assets/images/web/rdvs-website.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#hfc",
+      "slug": "work#hfc",
+      "title": "HFC Brand Motion Direction",
+      "year": "2023",
+      "typology": "Broadcast",
+      "discipline": "Motion Design",
+      "category": "motion-design vfx-cgi",
+      "thumbnail": "assets/images/motion/hfc-motion.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#elo",
+      "slug": "work#elo",
+      "title": "ELO TV Broadcast & Motion Identity",
+      "year": "2024",
+      "typology": "Broadcast",
+      "discipline": "Motion Design",
+      "category": "motion-design graphic-design",
+      "thumbnail": "assets/images/motion/elo-tv.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#1957",
+      "slug": "work#1957",
+      "title": "1957 Monochrome Residence",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Interior Design",
+      "category": "interior-design",
+      "thumbnail": "assets/images/1957/1957-interior.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#brownies",
+      "slug": "work#brownies",
+      "title": "Brownies Place Retreat",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/brownies/brownies-place.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#fule",
+      "slug": "work#fule",
+      "title": "Fule Residence Villa",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/fule/fule-residence.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#funko",
+      "slug": "work#funko",
+      "title": "Funko Ridge Coastal Concept",
+      "year": "2024",
+      "typology": "Mixed-Use",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi motion-design",
+      "thumbnail": "assets/images/funko/funko-ridge.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#npa",
+      "slug": "work#npa",
+      "title": "NPA Corporate Open Office",
+      "year": "2024",
+      "typology": "Workplace",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build industrial-design",
+      "thumbnail": "assets/images/npa/npa-office.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#nyla",
+      "slug": "work#nyla",
+      "title": "Nyla Bespoke Dressing Suite",
+      "year": "2024",
+      "typology": "Residential",
+      "discipline": "Interior Design",
+      "category": "interior-design industrial-design",
+      "thumbnail": "assets/images/nyla/nyla-closet.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "macord.html",
+      "slug": "macord",
+      "title": "Macord International School",
+      "year": "2024",
+      "typology": "Educational",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/macord/macord-hero.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#teahouse",
+      "slug": "work#teahouse",
+      "title": "The Tea House Pavilion",
+      "year": "2025",
+      "typology": "Cultural",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/teahouse/teahouse-pavilion.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#aggregate",
+      "slug": "work#aggregate",
+      "title": "Villa Aggregate",
+      "year": "2025",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning turnkey-build interior-design",
+      "thumbnail": "assets/images/aggregate/villa-aggregate.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#cascades",
+      "slug": "work#cascades",
+      "title": "Tower Cascades",
+      "year": "2025",
+      "typology": "Commercial",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/cascades/tower-cascades.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#cantonments",
+      "slug": "work#cantonments",
+      "title": "West Cantonments Luxury Residences",
+      "year": "2025",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/cantonments/west-cantonments.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#senya",
+      "slug": "work#senya",
+      "title": "Senya Coastal Resort",
+      "year": "2024",
+      "typology": "Hospitality",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/senya/senya-resort.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#poconos",
+      "slug": "work#poconos",
+      "title": "Poconos Lounge & Nightclub",
+      "year": "2024",
+      "typology": "Hospitality",
+      "discipline": "Interior Design",
+      "category": "interior-design industrial-design",
+      "thumbnail": "assets/images/poconos/poconos-lounge.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#naadei",
+      "slug": "work#naadei",
+      "title": "Naadei Luxury Villas",
+      "year": "2026",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/naadei/naadei-villas.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#petrus",
+      "slug": "work#petrus",
+      "title": "Petrus Wine Lounge",
+      "year": "2026",
+      "typology": "Hospitality",
+      "discipline": "Interior Design",
+      "category": "interior-design industrial-design",
+      "thumbnail": "assets/images/petrus/petrus-lounge.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#trumpet",
+      "slug": "work#trumpet",
+      "title": "Trumpet Africa Ident",
+      "year": "2026",
+      "typology": "Broadcast",
+      "discipline": "Motion Design",
+      "category": "motion-design graphic-design",
+      "thumbnail": "assets/images/trumpet/trumpet-africa.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#rlg",
+      "slug": "work#rlg",
+      "title": "RLG Monolithic Retail Systems",
+      "year": "2026",
+      "typology": "Commercial",
+      "discipline": "Industrial & Product Design",
+      "category": "industrial-design interior-design",
+      "thumbnail": "assets/images/rlg/rlg-displays.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#airporthills",
+      "slug": "work#airporthills",
+      "title": "Airport Hills Luxury Residence",
+      "year": "2025",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/airporthills/airporthills-residence.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#palazzo",
+      "slug": "work#palazzo",
+      "title": "Palazzo Luxury Living",
+      "year": "2026",
+      "typology": "Residential",
+      "discipline": "Architecture",
+      "category": "architecture-planning interior-design",
+      "thumbnail": "assets/images/palazzo/palazzo-living.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#harbourpointe",
+      "slug": "work#harbourpointe",
+      "title": "Harbour Pointe Waterfront Development",
+      "year": "2026",
+      "typology": "Mixed-Use",
+      "discipline": "Architecture",
+      "category": "architecture-planning vfx-cgi",
+      "thumbnail": "assets/images/harbourpointe/harbour-pointe.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    },
+    {
+      "href": "work.html#baobab",
+      "slug": "work#baobab",
+      "title": "Baobab Hotel Airport",
+      "year": "2024",
+      "typology": "Hospitality",
+      "discipline": "Interior Design",
+      "category": "interior-design turnkey-build",
+      "thumbnail": "assets/images/baobab/baobab-hotel.jpg",
+      "pageExists": false,
+      "mediaOnDisk": []
+    }
+  ],
+  "projectsWithImagesOnDisk": 80,
+  "projectsWithoutImagesOnDisk": 84
+}

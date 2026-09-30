@@ -1,13 +1,12 @@
 /**
  * RDVS STUDIOS — Sanity CDN Client & GROQ Query Service
- * Headless integration for architecture portfolio, news, and hero slideshow.
+ * Headless integration for architecture portfolio, news, project details, and editorial content.
  */
 
 const RDVSSanity = (() => {
-  // Sanity Configuration
-  // Replace 'your-project-id' with your Sanity Project ID when deployed
+  // Sanity Configuration grounded in studio/sanity.cli.ts and studio/.env.local
   const config = {
-    projectId: window.SANITY_PROJECT_ID || 'your-project-id',
+    projectId: window.SANITY_PROJECT_ID || 'lqnpv8ns',
     dataset: window.SANITY_DATASET || 'production',
     apiVersion: '2024-01-01',
     useCdn: true
@@ -17,7 +16,7 @@ const RDVSSanity = (() => {
    * Check if Sanity credentials have been configured
    */
   function isConfigured() {
-    return config.projectId && config.projectId !== 'your-project-id';
+    return Boolean(config.projectId && config.projectId !== 'your-project-id');
   }
 
   /**
@@ -87,7 +86,6 @@ const RDVSSanity = (() => {
       scope,
       disciplines
     }`;
-
     const remoteProjects = await query(groq);
     return remoteProjects && remoteProjects.length > 0 ? remoteProjects : null;
   }
@@ -102,12 +100,44 @@ const RDVSSanity = (() => {
       "slug": slug.current,
       category,
       discipline,
+      year,
+      typology,
       "imageUrl": coverImage.asset->url,
       description
     }`;
-
     const remoteProjects = await query(groq);
     return remoteProjects && remoteProjects.length > 0 ? remoteProjects : null;
+  }
+
+  /**
+   * Fetch a single project by slug for dedicated project pages
+   */
+  async function getProjectBySlug(slug) {
+    const groq = `*[_type == "project" && slug.current == "${slug}"][0] {
+      _id,
+      title,
+      "slug": slug.current,
+      category,
+      discipline,
+      year,
+      client,
+      location,
+      area,
+      scope,
+      leadText,
+      description,
+      "coverImageUrl": coverImage.asset->url,
+      "galleryUrls": gallery[].asset->url
+    }`;
+    return await query(groq);
+  }
+
+  /**
+   * Fetch editorial content for standard pages (about, expertise, contact, etc.)
+   */
+  async function getPageContent(pageKey) {
+    const groq = `*[_type == "page" && slug.current == "${pageKey}"][0]`;
+    return await query(groq);
   }
 
   /**
@@ -123,7 +153,6 @@ const RDVSSanity = (() => {
       "imageUrl": coverImage.asset->url,
       excerpt
     }`;
-
     const remoteArticles = await query(groq);
     return remoteArticles && remoteArticles.length > 0 ? remoteArticles : null;
   }
@@ -135,6 +164,8 @@ const RDVSSanity = (() => {
     urlForImage,
     getHeroProjects,
     getWorkProjects,
+    getProjectBySlug,
+    getPageContent,
     getNewsArticles
   };
 })();
