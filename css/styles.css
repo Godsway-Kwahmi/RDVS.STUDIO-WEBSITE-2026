@@ -1508,3 +1508,42 @@ button {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ==========================================================================
+   Work Page Row-by-Row Layout System
+   ========================================================================== */
+.grouped-rows-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 72px;
+  width: 100%;
+}
+
+.work-group-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.work-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-bottom: 12px;
+}
+
+.work-group-title {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.work-group-count {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-feature-settings: "tnum";
+}

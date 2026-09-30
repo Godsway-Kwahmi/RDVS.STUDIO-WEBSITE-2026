@@ -1,7 +1,19 @@
 # Dependencies
 node_modules/
+studio/node_modules/
+
+# Environment — never commit real credentials
 .env
 .env.local
+studio/.env
+studio/.env.local
+
+# Sanity build output
+studio/dist/
+studio/.sanity/
+
+# Generated content (rebuilt from Sanity before deploy)
+data/sanity-content.json
 
 # OS files
 .DS_Store
@@ -9,4 +21,3 @@ Thumbs.db
 
 # Test artifacts
 scratch/
-
