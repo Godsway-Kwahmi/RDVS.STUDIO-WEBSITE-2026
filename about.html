@@ -11,6 +11,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .about-section-heading {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 40px 0 12px 0;
+      color: var(--foreground);
+      letter-spacing: -0.01em;
+    }
+    .about-section-intro {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .about-services-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+      margin: 28px 0 40px 0;
+    }
+    @media (min-width: 640px) {
+      .about-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 24px;
+      }
+    }
+    .about-service-item h3 {
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--foreground);
+      margin-bottom: 6px;
+      text-transform: lowercase;
+    }
+    .about-service-item p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin: 0;
+    }
+    .about-clients-section {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-hairline);
+    }
+    .about-clients-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 24px;
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+    }
+    @media (min-width: 640px) {
+      .about-clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -47,40 +105,91 @@
 
   <main class="page-container">
     <header class="page-header">
-      <h1 class="page-title">About</h1>
+      <h1 class="page-title">About RDVS</h1>
       <p class="page-subtitle">A multidisciplinary practice established on the convergence of digital architectural thinking and direct physical fabrication.</p>
     </header>
 
     <div class="editorial-grid">
       <div class="editorial-text">
-        <p class="editorial-lead">RDVS is an independent multidisciplinary studio operating across architecture, interior design, visual effects (VFX), motion design, graphic systems, industrial design, and turnkey construction.</p>
+        <p class="editorial-lead">Designing and making things since 2009, Revival Design + VFX Studios (RDVS) is an independent, remote-first multidisciplinary studio. Originating in Accra, Ghana, our distributed practice transcends physical borders to undertake private residential estates, contemporary commercial headquarters, institutional landmarks, and cultural installations across West Africa and internationally.</p>
         
         <div class="editorial-body">
-          <p>Founded on the belief that spatial design cannot be detached from its physical reality, RDVS bridges the gap between speculative 3D conceptualization and tactile, site-built execution. We operate simultaneously as spatial architects, computational visualizers, and general contractors.</p>
-          <p>This closed-loop methodology ensures that every detail visualized in our digital studio is engineered with acoustic, structural, and material integrity before breaking ground on site. Our team works collaboratively across technical disciplines, delivering turnkey projects that embody spatial clarity, quiet elegance, and enduring construction craft.</p>
-          <p>Headquartered in Accra, Ghana, our practice undertakes private residential estates, contemporary commercial headquarters, institutional landmarks, and cultural installations across West Africa and internationally.</p>
-        </div>
+          <p>Spearheaded by its three founders—Kofi Tetteh, Jude Abbey, and Jude Nyoagbe—who share deep architectural backgrounds, RDVS is built on the belief that spatial design cannot be detached from its physical reality. We bridge the gap between speculative 3D conceptualization and tactile, site-built execution, operating simultaneously as computational visualizers, spatial designers, and general contractors—seamlessly collaborating with licensed architects when a project's scale and vision demand it.</p>
+          
+          <h2 class="about-section-heading">The Closed-Loop Methodology</h2>
+          <p>Our remote-first infrastructure empowers a truly closed-loop methodology. It ensures that every detail conceptualized within our digital studio environments is engineered with acoustic, structural, and material integrity long before breaking ground on site.</p>
+          <p>Working collaboratively across technical disciplines from wherever we are, our team delivers turnkey projects that embody spatial clarity, quiet elegance, and enduring construction craft. Whether we are constructing physical spaces, rendering photorealistic virtual environments, or designing a brand's digital footprint, our work is intentionally designed to move the needle.</p>
+          
+          <h2 class="about-section-heading">What We Do</h2>
+          <p class="about-section-intro">We offer an end-to-end suite of creative and technical services, allowing us to bridge the gap between digital concepts and physical execution seamlessly.</p>
+          
+          <div class="about-services-grid">
+            <div class="about-service-item">
+              <h3>architecture.</h3>
+              <p>Strategic collaboration with licensed architects on complex projects—bringing striking, functional structures to life through our deep architectural roots.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>interior design.</h3>
+              <p>Data-driven spatial planning and indoor environments engineered for form, function, and feeling.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>visual effects (vfx) &amp; cgi.</h3>
+              <p>Digital artistry, photorealistic 3D rendering, and post-production that breathe magic into your vision before a single brick is laid.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>motion design.</h3>
+              <p>Dynamic graphics, cinematic animations, and kinetic typography that tell immersive, moving stories.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>graphic design.</h3>
+              <p>Strategic communication through visual identities, print, and packaging that resonate with your audience.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>industrial &amp; furniture design.</h3>
+              <p>From the spark of an idea to physical objects—we design, prototype, and engineer functional products.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>digital &amp; web design.</h3>
+              <p>Crafting intuitive, engaging, and responsive digital experiences for modern brands.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>design + build.</h3>
+              <p>A seamless, turnkey approach—handling every phase of a project from creative conception to final physical construction.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>competitions.</h3>
+              <p>Pushing the boundaries of conceptual design and architectural thought leadership on the global stage.</p>
+            </div>
+            <div class="about-service-item">
+              <h3>digital art.</h3>
+              <p>Bespoke artwork and visual storytelling tailored to elevate ideas, brands, and narratives.</p>
+            </div>
+          </div>
 
-        <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-hairline);">
-          <h2 style="font-size: 1.15rem; margin-bottom: 16px; color: var(--foreground);">Selected Clients & Collaborators</h2>
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; font-size: 0.9375rem; color: var(--text-secondary);">
-            <span>Hubtel Technologies</span>
-            <span>AFG Corporation</span>
-            <span>MTN Group</span>
-            <span>Barham Developments</span>
-            <span>Public Utilities Commission</span>
-            <span>Accra Brewery Limited</span>
-            <span>DYV Holdings</span>
-            <span>Margin Financial</span>
+          <div class="about-clients-section">
+            <h2 class="about-section-heading">Selected Clients &amp; Collaborators</h2>
+            <p class="about-section-intro">We partner with forward-thinking brands, architects, and creators to shape the physical and digital world.</p>
+            <div class="about-clients-grid">
+              <span>Hubtel</span>
+              <span>Swipe</span>
+              <span>MTN Group</span>
+              <span>Imperial Homes</span>
+              <span>Public Utilities Commission</span>
+              <span>Accra Brewery Limited</span>
+              <span>DYV Holdings</span>
+              <span>Margin Financial</span>
+              <span>AFG Corporation</span>
+              <span>Barham Developments</span>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="editorial-media">
-        <div class="card-media-wrapper" style="aspect-ratio: 4/5;">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="RDVS Studio Built Space" class="editorial-img" style="height: 100%; object-fit: cover;">
+        <div class="card-media-wrapper">
+          <img src="assets/images/afg/afg-headquarters.jpg" alt="RDVS Studio Built Space" class="card-img">
         </div>
-        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 8px;">AFG Executive Lounge — Designed & built turnkey by RDVS Studios, Accra.</p>
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 8px;">AFG Executive Lounge — Designed &amp; built turnkey by RDVS Studios, Accra.</p>
       </div>
     </div>
   </main>
@@ -97,8 +206,5 @@
   </footer>
 
   <script src="js/nav.js"></script>
-  
-  <script src="js/sanity-client.js"></script>
-  <script src="js/sanity-render.js"></script>
 </body>
 </html>
