@@ -86,25 +86,71 @@
       if (nextBtn) nextBtn.style.display = 'none';
     }
 
+    let currentVrViewer = null;
+
     function showImage(idx) {
       if (idx < 0) idx = total - 1;
       if (idx >= total) idx = 0;
       currentIndex = idx;
 
       const item = imagesData[currentIndex];
-      activeImg.style.opacity = '0';
 
-      setTimeout(() => {
-        activeImg.src = item.src;
-        activeImg.alt = item.alt;
+      if (currentVrViewer) {
+        currentVrViewer.destroy();
+        currentVrViewer = null;
+      }
+
+      const is360 = (item.src && (item.src.includes('360') || item.src.includes('vr-'))) || (item.element && item.element.getAttribute('data-360') === 'true');
+
+      if (is360 && window.VR360) {
+        activeImg.style.display = 'none';
+        let vrContainer = mediaContainer.querySelector('.lightbox-vr-container');
+        if (!vrContainer) {
+          vrContainer = document.createElement('div');
+          vrContainer.className = 'lightbox-vr-container vr-360-container';
+          vrContainer.style.width = '88vw';
+          vrContainer.style.height = '72vh';
+          vrContainer.style.maxWidth = '1400px';
+          vrContainer.style.borderRadius = '4px';
+          mediaContainer.appendChild(vrContainer);
+        }
+        vrContainer.style.display = 'block';
+        currentVrViewer = window.VR360.create(vrContainer, {
+          src: item.src,
+          isVideo: /\.(mp4|webm)$/i.test(item.src),
+          autoRotate: true,
+          autoRotateSpeed: 0.03,
+          showControls: true,
+          showDpad: true,
+          showZoom: true,
+          showBadge: true,
+          showDragHint: true
+        });
+
         if (counterEl) {
           counterEl.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
         }
         if (captionEl) {
           captionEl.textContent = item.alt;
         }
-        activeImg.style.opacity = '1';
-      }, 100);
+      } else {
+        const vrContainer = mediaContainer.querySelector('.lightbox-vr-container');
+        if (vrContainer) vrContainer.style.display = 'none';
+        activeImg.style.display = 'block';
+        activeImg.style.opacity = '0';
+
+        setTimeout(() => {
+          activeImg.src = item.src;
+          activeImg.alt = item.alt;
+          if (counterEl) {
+            counterEl.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+          }
+          if (captionEl) {
+            captionEl.textContent = item.alt;
+          }
+          activeImg.style.opacity = '1';
+        }, 100);
+      }
     }
 
     function openLightbox(idx) {
@@ -115,6 +161,14 @@
     }
 
     function closeLightbox() {
+      if (currentVrViewer) {
+        currentVrViewer.destroy();
+        currentVrViewer = null;
+      }
+      const vrContainer = mediaContainer.querySelector('.lightbox-vr-container');
+      if (vrContainer) vrContainer.style.display = 'none';
+      activeImg.style.display = 'block';
+
       lightboxEl.classList.remove('open');
       lightboxEl.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';

@@ -57,6 +57,10 @@
             const scopeVal = document.querySelector('.project-spec-item:nth-child(5) .project-spec-val');
             if (scopeVal) scopeVal.textContent = project.scope;
           }
+          if (project.team) {
+            const teamVal = document.querySelector('.project-spec-item:nth-child(6) .project-spec-val');
+            if (teamVal) teamVal.textContent = Array.isArray(project.team) ? project.team.join(', ') : project.team;
+          }
 
           // Gallery hydration
           if (project.galleryUrls && project.galleryUrls.length > 0) {
@@ -98,6 +102,25 @@
         if (aboutContent && aboutContent.leadText) {
           const lead = document.querySelector('.about-lead-statement');
           if (lead) lead.textContent = aboutContent.leadText;
+        }
+      }
+
+      // 5. Social Links Hydration
+      if (window.RDVSSanity.getSiteSettings) {
+        const settings = await window.RDVSSanity.getSiteSettings();
+        if (settings && settings.socialLinks) {
+          const { instagram, twitter, facebook, youtube } = settings.socialLinks;
+          const applySocial = (patterns, url) => {
+            if (!url) return;
+            const selectors = patterns.map(p => `.hero-social-link[href*="${p}"], .footer-social-links a[href*="${p}"]`).join(', ');
+            document.querySelectorAll(selectors).forEach(link => {
+              link.href = url;
+            });
+          };
+          applySocial(['instagram'], instagram);
+          applySocial(['twitter', 'x.com'], twitter);
+          applySocial(['facebook'], facebook);
+          applySocial(['youtube'], youtube);
         }
       }
     } catch (err) {

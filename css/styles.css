@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap');
+
 /* ==========================================================================
    RDVS STUDIOS — Minimalist Design Language
    Design Benchmark: Minimalissimo (https://minimalissimo.com/)
@@ -20,6 +22,7 @@
 
   /* Stripped to Minimalissimo Standard: 400 weight, 1.4 line-height */
   --font-weight-normal: 400;
+  --font-weight-bold: 700;
   --line-height-base: 1.4;
   --line-height-heading: 1.25;
 
@@ -120,7 +123,7 @@ button {
 /* Studio Brand Link — strictly "RDVS" */
 .brand-link {
   font-size: 1rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: 700;
   color: var(--brand-blue);
   flex-shrink: 0;
   letter-spacing: -0.01em;
@@ -263,6 +266,7 @@ button {
 }
 
 .slide-media {
+  background-color: #000000;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -273,14 +277,15 @@ button {
   overflow: hidden;
 }
 
-.slide-img {
+.slide-img,
+.slide-video,
+.slide-media video {
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  filter: brightness(0.92);
+  display: block;
+  filter: brightness(0.95);
   transform: none;
 }
 
@@ -331,6 +336,12 @@ button {
   transform: translateY(0);
 }
 
+
+.caption-card .project-service,
+.caption-card .project-desc {
+  display: none !important;
+}
+
 .project-category {
   font-size: 0.9375rem;
   line-height: var(--line-height-base);
@@ -343,7 +354,7 @@ button {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-heading);
   color: var(--foreground);
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .project-desc {
@@ -384,11 +395,159 @@ button {
 }
 
 .hero-meta-controls {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
   flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Minimalist Video Volume Controls
+   Benchmark: Minimalissimo (Quiet, hairline, refined)
+   ========================================================================== */
+.minimal-volume-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 5px 10px;
+  border-radius: 20px;
+  user-select: none;
+  z-index: 25;
+  transition: opacity 0.25s ease, visibility 0.25s ease, border-color var(--transition-speed) var(--transition-ease), background-color var(--transition-speed) var(--transition-ease);
+}
+
+.hero-volume-control {
+  position: relative;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 4px 10px;
+  border-radius: 20px;
+  user-select: none;
+  z-index: 25;
+  transition: border-color var(--transition-speed) var(--transition-ease), background-color var(--transition-speed) var(--transition-ease);
+}
+
+.hero-volume-control.visible {
+  display: inline-flex;
+}
+
+.hero-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.minimal-volume-control:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.volume-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--foreground);
+  opacity: 0.85;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  transition: opacity var(--transition-speed) var(--transition-ease), transform var(--transition-speed) var(--transition-ease);
+}
+
+.volume-toggle-btn:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.volume-toggle-btn svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.volume-slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 58px;
+  height: 14px;
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  transition: background var(--transition-speed) var(--transition-ease);
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease;
+}
+
+.volume-slider::-moz-range-thumb:hover {
+  transform: scale(1.25);
+}
+
+.volume-slider::-moz-range-track {
+  height: 2px;
+  background: transparent;
+  border-radius: 1px;
+}
+
+/* Standalone video volume overlay for any video on the site */
+.video-volume-overlay {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
 }
 
 .slide-status {
@@ -406,11 +565,11 @@ button {
 .pagination-bars {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .pagination-bar {
-  width: 18px;
+  width: 12px;
   height: 1px;
   background-color: var(--text-tertiary);
   cursor: pointer;
@@ -423,7 +582,7 @@ button {
 }
 
 .pagination-bar.active {
-  width: 30px;
+  width: 22px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -434,10 +593,6 @@ button {
   height: 100%;
   width: 0%;
   background-color: var(--foreground);
-}
-
-.pagination-bar.active .pagination-fill {
-  width: 100%;
 }
 
 .step-nav {
@@ -452,6 +607,35 @@ button {
 }
 
 .step-btn:hover {
+  color: var(--foreground);
+}
+
+/* Base Social Navigation Links */
+.hero-controls-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.hero-social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.hero-social-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-speed) var(--transition-ease);
+  white-space: nowrap;
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus-visible {
   color: var(--foreground);
 }
 
@@ -1366,6 +1550,33 @@ button {
   color: var(--text-secondary);
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-social-links a {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-speed) var(--transition-ease);
+  white-space: nowrap;
+}
+
+.footer-social-links a:hover,
+.footer-social-links a:focus-visible {
+  color: var(--foreground);
+}
+
 .footer-links {
   display: flex;
   align-items: center;
@@ -1439,23 +1650,50 @@ button {
   }
 
   .hero-meta-controls {
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .hero-controls-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
     gap: 10px;
   }
 
+  .hero-status-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .step-nav {
+    justify-content: flex-end;
+  }
+
+  .hero-social-links {
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 0;
+  }
+
   .pagination-bars {
-    gap: 4px;
+    gap: 3px;
   }
 
   .pagination-bar {
-    width: 10px;
+    width: 6px;
   }
 
   .pagination-bar.active {
-    width: 18px;
+    width: 14px;
   }
 }
 
@@ -1484,6 +1722,32 @@ button {
 
   .card-year {
     font-size: 0.75rem;
+  }
+
+  .hero-social-links {
+    gap: 12px;
+  }
+
+  .hero-social-link {
+    font-size: 0.6875rem;
+  }
+
+  .pagination-bars {
+    gap: 2px;
+  }
+
+  .pagination-bar {
+    width: 5px;
+  }
+
+  .pagination-bar.active {
+    width: 12px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
   }
 
   .page-container {
@@ -1546,4 +1810,288 @@ button {
   font-size: 0.8125rem;
   color: var(--text-secondary);
   font-feature-settings: "tnum";
+}
+
+/* ==========================================================================
+   INTERACTIVE 360° SPHERICAL MEDIA VIEWER
+   ========================================================================== */
+.vr-360-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050505;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.vr-360-container.is-dragging {
+  cursor: grabbing !important;
+}
+
+.vr-360-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.vr-360-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+/* 360 Panoramic Badge */
+.vr-360-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(12, 12, 12, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  width: fit-content;
+  pointer-events: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vr-badge-icon {
+  animation: vr-spin 16s linear infinite;
+}
+
+@keyframes vr-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Center Drag Hint */
+.vr-drag-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  pointer-events: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 1;
+}
+
+.vr-drag-hint.dismissed {
+  opacity: 0;
+  transform: translate(-50%, -40%);
+}
+
+/* Look-Around D-Pad (Compass Widget) */
+.vr-look-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: auto;
+  background: rgba(10, 10, 10, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vr-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.vr-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(25, 25, 25, 0.65);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  touch-action: manipulation;
+}
+
+.vr-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+.vr-btn:active {
+  transform: scale(0.95);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.vr-btn-center {
+  background: rgba(40, 40, 40, 0.7);
+}
+
+/* Secondary Controls (Zoom + Fullscreen) */
+.vr-secondary-controls {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.vr-zoom-group {
+  display: flex;
+  background: rgba(10, 10, 10, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 4px;
+}
+
+.vr-btn-fullscreen {
+  background: rgba(10, 10, 10, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Slideshow Hero integration adjustments */
+.slide .vr-360-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slide .vr-look-controls {
+  bottom: 120px;
+  left: 32px;
+}
+
+.slide .vr-secondary-controls {
+  bottom: 120px;
+  right: 32px;
+}
+
+@media (max-width: 768px) {
+  .slide .vr-look-controls {
+    bottom: 140px;
+    left: 16px;
+    transform: scale(0.9);
+    transform-origin: bottom left;
+  }
+  .slide .vr-secondary-controls {
+    bottom: 140px;
+    right: 16px;
+    transform: scale(0.9);
+    transform-origin: bottom right;
+  }
+}
+
+/* Minimalist Playback Bar for dedicated 360 video pages */
+.vr-hero-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.vr-playback-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 18px;
+  background: rgba(14, 14, 14, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.vr-play-pause-btn,
+.vr-mute-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.vr-play-pause-btn:hover,
+.vr-mute-btn:hover {
+  opacity: 0.75;
+  transform: scale(1.08);
+}
+
+.vr-progress-track {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.15s ease;
+}
+
+.vr-progress-track:hover {
+  height: 6px;
+}
+
+.vr-progress-fill {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.vr-time-display {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-feature-settings: "tnum";
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
