@@ -145,22 +145,42 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'barham-residence',
-        title: '41 Barham Luxury Residence',
-        category: 'Architecture — 2024',
+        title: '41 Barham',
+        category: 'Architecture — 2016/2017',
         service: 'Architecture',
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-residence-desktop.jpg',
         imageUrlDesktop: 'assets/images/barham/barham-residence-desktop.jpg',
         imageMobileUrl: 'assets/images/barham/barham-residence-mobile.jpg',
-        projectUrl: 'barham.html',
+        projectUrl: '41-barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
         specs: {
-          client: 'Barham Group',
-          scope: 'Architectural Design, Interior Styling & Execution',
-          team: 'Godsway Kwahmi, RDVS Architecture',
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Architect Kofi Amankwah (Architecture), RDVS (Interior Design & 3D Visualization)',
           area: '1,100 sq.m',
-          year: '2024',
-          disciplines: ['Architectural Design', 'Interior Design', 'Lighting Engineering']
+          year: '2016/2017',
+          disciplines: ['Architecture', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'imperial-square',
+        title: 'Imperial Square',
+        category: 'Interior Design — 2013',
+        service: 'Interior Design',
+        discipline: 'interior-design',
+        imageUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
+        imageUrlDesktop: 'assets/images/imperial-square/imperial-square-1.jpg',
+        imageMobileUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
+        projectUrl: 'imperial-square.html',
+        desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design, Industrial & Furniture Design, 3D Visualization',
+          team: 'RDVS Team',
+          area: 'Commercial Space',
+          year: '2013',
+          disciplines: ['Interior Design', 'Industrial Design', 'Furniture Design', '3D Visualization']
         }
       },
       {
@@ -181,6 +201,26 @@ document.addEventListener('DOMContentLoaded', async () => {
           area: 'Roadside Fueling Station',
           year: '2016',
           disciplines: ['Architecture', 'Industrial Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'weldment-panels',
+        title: 'Weldment Panels',
+        category: '3D Visualization — 2016',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
+        imageUrlDesktop: 'assets/images/weldment-panels/weldment-panels-1.jpg',
+        imageMobileUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
+        projectUrl: 'weldment-panels.html',
+        desc: 'Photorealistic 3D visualization for Weldment Panels, completed in 2016 for a private client.',
+        specs: {
+          client: 'Private Client',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          area: 'Product Visualization',
+          year: '2016',
+          disciplines: ['3D Visualization']
         }
       },
       {
@@ -670,21 +710,41 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'harbour-pointe',
         title: 'Harbour Pointe',
-        category: '3D Visualization — 2015',
-        service: '3D Visualization',
-        discipline: 'vfx',
+        category: 'Interior Design — 2015',
+        service: 'Interior Design',
+        discipline: 'interior-design',
         imageUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
         imageUrlDesktop: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
         imageMobileUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
         projectUrl: 'harbour-pointe.html',
-        desc: 'Photorealistic 3D visualization for Harbour Pointe, a mixed-use waterfront development completed in 2015.',
+        desc: 'Collaborative interior design and photorealistic 3D visualization for Harbour Pointe, a mixed-use waterfront development completed in 2015.',
         specs: {
-          client: 'Private Client',
-          scope: '3D Visualization',
-          team: 'RDVS Team',
+          client: 'Infinite Group Ltd',
+          scope: 'Interior Design, 3D Visualization',
+          team: 'Kwadwo Boadi (Infinite Group Ltd), Annabella Boadi-Misa (RDVS), Jude Nyoagbe (RDVS)',
           area: 'Waterfront Development',
           year: '2015',
-          disciplines: ['3D Visualization']
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'gh-phot-awards',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design — 2016',
+        service: 'Industrial Design',
+        discipline: 'industrial-design',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
+        imageUrlDesktop: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
+        imageMobileUrl: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          area: 'Event Design',
+          year: '2016',
+          disciplines: ['Industrial Design', '3D Visualization', 'Motion Design']
         }
       },
       {
