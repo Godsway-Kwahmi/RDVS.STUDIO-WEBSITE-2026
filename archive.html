@@ -27,7 +27,7 @@
   <style>
     .archive-header-section {
       padding: 40px 0 32px 0;
-      border-bottom: 1px solid var(--border-light, #1e1e1e);
+      border-bottom: 1px solid var(--border-color);
       margin-bottom: 32px;
     }
     .archive-headline {
@@ -35,7 +35,7 @@
       font-weight: 300;
       letter-spacing: -0.03em;
       margin: 8px 0 16px 0;
-      color: var(--text-primary, #ffffff);
+      color: var(--foreground);
     }
     .archive-intro {
       font-size: 0.9375rem;
@@ -60,17 +60,17 @@
       width: 100%;
       max-width: 440px;
       padding: 10px 14px;
-      background: #111;
-      border: 1px solid #222;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
       border-radius: 4px;
-      color: #fff;
+      color: var(--foreground);
       font-family: inherit;
       font-size: 0.875rem;
       outline: none;
       transition: border-color 0.2s ease;
     }
     .archive-search-input:focus {
-      border-color: #666;
+      border-color: var(--text-secondary);
     }
     .archive-count-badge {
       font-size: 0.8125rem;
@@ -89,16 +89,16 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--text-secondary, rgba(255,255,255,0.5));
-      border-bottom: 1px solid #222;
+      border-bottom: 1px solid var(--border-color);
     }
     .archive-table td {
       padding: 14px 16px;
-      border-bottom: 1px solid #181818;
+      border-bottom: 1px solid var(--border-hairline);
       color: var(--text-secondary, rgba(255,255,255,0.7));
     }
     .archive-row:hover td {
-      background: rgba(255,255,255,0.02);
-      color: #fff;
+      background: var(--hover-bg);
+      color: var(--foreground);
     }
     .archive-col-year {
       width: 80px;
@@ -109,7 +109,7 @@
       font-weight: 400;
     }
     .archive-project-link {
-      color: var(--text-primary, #ffffff);
+      color: var(--foreground);
       text-decoration: none;
       transition: opacity 0.2s ease;
     }
@@ -134,7 +134,7 @@
       display: none;
       padding: 40px 16px;
       text-align: center;
-      color: rgba(255,255,255,0.5);
+      color: var(--text-secondary);
       font-size: 0.9375rem;
     }
   </style>
@@ -192,14 +192,14 @@
 
   <main class="page-container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
     <section class="archive-header-section">
-      <span class="project-meta-line" style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.5);">Catalogue &amp; Chronology &middot; 2009&ndash;2026</span>
+      <span class="project-meta-line" style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-secondary);">Catalogue &amp; Chronology &middot; 2009&ndash;2026</span>
       <h1 class="archive-headline">Project Archive</h1>
-      <p class="archive-intro">A comprehensive chronological directory of all 143 studio works, architectural commissions, spatial interiors, and computational designs spanning 2009 to the present.</p>
+      <p class="archive-intro">A comprehensive chronological directory of all 138 studio works, architectural commissions, spatial interiors, and computational designs spanning 2009 to the present.</p>
     </section>
 
     <div class="archive-controls">
       <input type="search" id="archiveFilterInput" class="archive-search-input" placeholder="Live filter by title, year, or typology..." aria-label="Filter archive projects">
-      <span class="archive-count-badge" id="archiveCountBadge">Showing 143 works</span>
+      <span class="archive-count-badge" id="archiveCountBadge">Showing 138 works</span>
     </div>
 
     <table class="archive-table" id="archiveTable" role="table">
@@ -230,6 +230,18 @@
           <td class="archive-col-title"><a href="west-cantonments-igl-presentation.html" class="archive-project-link">West Cantonments Residence</a></td>
           <td class="archive-col-typology">Interior Design</td>
           <td class="archive-col-discipline">Interior Design &amp; 3D Visualization</td>
+        </tr>
+        <tr class="archive-row" data-year="2017" data-title="hubtel nairobi" data-typology="commercial" data-discipline="interior design &amp; 3d visualization" data-client="smsgh / hubtel" data-location="nairobi, kenya">
+          <td class="archive-col-year">2017</td>
+          <td class="archive-col-title"><a href="hubtel.html" class="archive-project-link">Hubtel Nairobi</a></td>
+          <td class="archive-col-typology">Commercial</td>
+          <td class="archive-col-discipline">Interior Design &amp; 3D Visualization</td>
+        </tr>
+        <tr class="archive-row" data-year="2017" data-title="mtn hq" data-typology="graphic design" data-discipline="graphic design &amp; 3d visualization" data-client="james cubitt" data-location="accra, ghana">
+          <td class="archive-col-year">2017</td>
+          <td class="archive-col-title"><a href="mtn.html" class="archive-project-link">MTN HQ</a></td>
+          <td class="archive-col-typology">Graphic Design</td>
+          <td class="archive-col-discipline">Graphic Design &amp; 3D Visualization</td>
         </tr>
         <tr class="archive-row" data-year="2017" data-title="palazzo" data-typology="residential" data-discipline="3d visualization" data-client="imperial homes" data-location="accra, ghana">
           <td class="archive-col-year">2017</td>
@@ -291,12 +303,6 @@
           <td class="archive-col-typology">Commercial</td>
           <td class="archive-col-discipline">Architecture</td>
         </tr>
-        <tr class="archive-row" data-year="2025" data-title="villa aggregate" data-typology="residential" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2025</td>
-          <td class="archive-col-title"><a href="villa-aggregate.html" class="archive-project-link">Villa Aggregate</a></td>
-          <td class="archive-col-typology">Residential</td>
-          <td class="archive-col-discipline">Architecture</td>
-        </tr>
         <tr class="archive-row" data-year="2024" data-title="41 barham" data-typology="architecture" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2024</td>
           <td class="archive-col-title"><a href="41-barham.html" class="archive-project-link">41 Barham</a></td>
@@ -308,12 +314,6 @@
           <td class="archive-col-title"><a href="barham.html" class="archive-project-link">41 Barham Luxury Residence</a></td>
           <td class="archive-col-typology">Residential</td>
           <td class="archive-col-discipline">Architecture</td>
-        </tr>
-        <tr class="archive-row" data-year="2024" data-title="afg headquarters" data-typology="commercial" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2024</td>
-          <td class="archive-col-title"><a href="afg.html" class="archive-project-link">AFG Headquarters</a></td>
-          <td class="archive-col-typology">Commercial</td>
-          <td class="archive-col-discipline">Interior Design</td>
         </tr>
         <tr class="archive-row" data-year="2024" data-title="baobab hotel airport" data-typology="hospitality" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2024</td>
@@ -357,18 +357,6 @@
           <td class="archive-col-typology">Educational</td>
           <td class="archive-col-discipline">Architecture</td>
         </tr>
-        <tr class="archive-row" data-year="2024" data-title="mtn env graphics" data-typology="architecture" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2024</td>
-          <td class="archive-col-title"><a href="mtn-env-graphics.html" class="archive-project-link">MTN Env Graphics</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architecture</td>
-        </tr>
-        <tr class="archive-row" data-year="2024" data-title="mtn headquarters executive wing" data-typology="commercial" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2024</td>
-          <td class="archive-col-title"><a href="mtn.html" class="archive-project-link">MTN Headquarters Executive Wing</a></td>
-          <td class="archive-col-typology">Commercial</td>
-          <td class="archive-col-discipline">Interior Design</td>
-        </tr>
         <tr class="archive-row" data-year="2024" data-title="npa corporate open office" data-typology="workplace" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2024</td>
           <td class="archive-col-title"><a href="npa-reception-renders.html" class="archive-project-link">NPA Corporate Open Office</a></td>
@@ -398,6 +386,7 @@
           <td class="archive-col-title"><a href="yao-yaa.html" class="archive-project-link">Yao + Yaa</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architecture</td>
+        </tr>
         <tr class="archive-row" data-year="2023" data-title="2gs identity & spatial systems" data-typology="identity" data-discipline="graphic design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2023</td>
           <td class="archive-col-title"><a href="2gs-construction-logistics.html" class="archive-project-link">2GS Identity & Spatial Systems</a></td>
@@ -416,24 +405,6 @@
           <td class="archive-col-typology">Mixed-Use</td>
           <td class="archive-col-discipline">Architecture</td>
         </tr>
-        <tr class="archive-row" data-year="2023" data-title="hubtel kenya" data-typology="architecture" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2023</td>
-          <td class="archive-col-title"><a href="hubtel-kenya.html" class="archive-project-link">Hubtel Kenya</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architecture</td>
-        </tr>
-        <tr class="archive-row" data-year="2023" data-title="margin financial suite" data-typology="commercial" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2023</td>
-          <td class="archive-col-title"><a href="hubtel.html" class="archive-project-link">Margin Financial Suite</a></td>
-          <td class="archive-col-typology">Commercial</td>
-          <td class="archive-col-discipline">Interior Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2023" data-title="margin financial suite" data-typology="commercial" data-discipline="interior design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2023</td>
-          <td class="archive-col-title"><a href="hubtel.html" class="archive-project-link">Margin Financial Suite</a></td>
-          <td class="archive-col-typology">Commercial</td>
-          <td class="archive-col-discipline">Interior Design</td>
-        </tr>
         <tr class="archive-row" data-year="2023" data-title="purc institutional complex" data-typology="institutional" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2023</td>
           <td class="archive-col-title"><a href="purc.html" class="archive-project-link">PURC Institutional Complex</a></td>
@@ -445,12 +416,6 @@
           <td class="archive-col-title"><a href="rdvs-website.html" class="archive-project-link">RDVS Studio Digital Platform</a></td>
           <td class="archive-col-typology">Digital</td>
           <td class="archive-col-discipline">Digital & Web Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2023" data-title="smsgh=hubtel" data-typology="architecture" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2023</td>
-          <td class="archive-col-title"><a href="smsgh-hubtel.html" class="archive-project-link">Smsgh=hubtel</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architecture</td>
         </tr>
         <tr class="archive-row" data-year="2023" data-title="swipe=float" data-typology="digital" data-discipline="motion design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2023</td>
@@ -583,6 +548,12 @@
           <td class="archive-col-title"><a href="1957.html" class="archive-project-link">1957 Apartments and Retail</a></td>
           <td class="archive-col-typology">Apartments &amp; Retail</td>
           <td class="archive-col-discipline">Interior Design &amp; 3D Visualization</td>
+        </tr>
+        <tr class="archive-row" data-year="2019" data-title="afg offices" data-typology="commercial" data-discipline="graphic design, 3d visualization, industrial &amp; furniture design, interior design &amp; build" data-client="private client" data-location="accra, ghana">
+          <td class="archive-col-year">2019</td>
+          <td class="archive-col-title"><a href="afg.html" class="archive-project-link">AFG Offices</a></td>
+          <td class="archive-col-typology">Commercial</td>
+          <td class="archive-col-discipline">Graphic Design, 3D Visualization, Industrial &amp; Furniture Design, Interior Design &amp; Build</td>
         </tr>
         <tr class="archive-row" data-year="2019" data-title="c25" data-typology="architecture" data-discipline="architecture" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2019</td>
