@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>Poconos Bar + Grill — RDVS Studios</title>
   <meta name="description" content="Poconos Bar + Grill — Architectural commission and spatial design by RDVS Studios.">
   
@@ -10,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -49,20 +80,20 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Architecture / Architecture &mdash; 2024 &middot; Studio Commission</span>
+      <span class="project-meta-line">Architecture / Landscape Design, Interior Design &amp; 3D Visualization &mdash; 2017 &middot; Studio Commission</span>
       <h1 class="project-page-title">Poconos Bar + Grill</h1>
     </header>
 
     <div class="project-hero-media">
-      <img src="assets/images/abl/abl-1.jpg" alt="Poconos Bar + Grill Primary View" class="project-hero-img">
+      <img src="assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg" alt="Poconos Bar + Grill Primary View" class="project-hero-img">
     </div>
 
     <div class="project-content-grid">
       <div class="project-story">
-        <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Poconos Bar + Grill.</p>
+        <p class="project-lead-text">A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.</p>
         
         <div class="project-body-text">
-          <p>Poconos Bar + Grill forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2024, the project investigates tactile material boundaries and volumetric precision.</p>
+          <p>Poconos Bar + Grill forms part of RDVS Studios' enduring catalogue of architectural, landscape, and interior design explorations. Completed in 2017, the project investigates tactile material boundaries and volumetric precision.</p>
           <p>Our multidisciplinary team developed the project from programmatic schematic design through high-fidelity visual simulation and comprehensive turnkey project execution, ensuring strict adherence to the studio's closed-loop methodology.</p>
         </div>
       </div>
@@ -79,7 +110,7 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2024</span>
+            <span class="project-spec-val">2017</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
@@ -87,7 +118,7 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Scope of Services</span>
-            <span class="project-spec-val">Architecture, Spatial Design, 3D VFX & Turnkey Delivery</span>
+            <span class="project-spec-val">Architecture, Landscape Design, Interior Design &amp; 3D Visualization</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Team</span>
@@ -100,13 +131,28 @@
     <section class="project-gallery-grid" aria-label="Project detail gallery">
       
       <div class="gallery-item">
-        <img src="assets/images/abl/abl-1.jpg" alt="Poconos Bar + Grill Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg" alt="Poconos Bar + Grill Detail 01" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-2.jpg" alt="Poconos Bar + Grill Detail 02" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-3.jpg" alt="Poconos Bar + Grill Detail 03" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-4.jpg" alt="Poconos Bar + Grill Detail 04" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-5.jpg" alt="Poconos Bar + Grill Detail 05" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/poconos-bar-grill/poconos-bar-grill-6.jpg" alt="Poconos Bar + Grill Detail 06" class="gallery-img" loading="lazy">
       </div>
     </section>
 
     <nav class="project-nav-footer" aria-label="Project pagination">
       <a href="portfolios.html" class="project-nav-link">&larr; Previous: Portfolios</a>
-      <a href="poconos.html" class="project-nav-link">Next: Poconos &rarr;</a>
+      <a href="petrus.html" class="project-nav-link">Next: Petrus &rarr;</a>
     </nav>
   </main>
 

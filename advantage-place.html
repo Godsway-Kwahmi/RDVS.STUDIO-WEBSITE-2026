@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>Advantage Place — RDVS Studios</title>
-  <meta name="description" content="Advantage Place — Architectural commission and spatial design by RDVS Studios.">
+  <meta name="description" content="Advantage Place — A 2015 interior design and 3D visualization project by RDVS Studios.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -49,21 +80,25 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Architecture / Architecture &mdash; 2021 &middot; Studio Commission</span>
+      <span class="project-meta-line">Interior Design / 3D Visualization &mdash; 2015 &middot; Studio Commission</span>
       <h1 class="project-page-title">Advantage Place</h1>
     </header>
 
-    <div class="project-hero-media">
-      <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="Advantage Place Primary View" class="project-hero-img">
+    <!-- Video Header -->
+    <div class="project-hero-media has-video">
+      <video class="project-hero-video" src="assets/videos/advantage-place/advantage-place-anim.mp4" controls autoplay muted loop playsinline poster="assets/images/advantage-place/advantage-place-01.jpg">
+        <source src="assets/videos/advantage-place/advantage-place-anim.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <div class="project-content-grid">
       <div class="project-story">
-        <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Advantage Place.</p>
+        <p class="project-lead-text">A 2015 interior design and 3D visualization commission for the Advantage Place commercial development in Accra, presenting the tower's shared and workplace interiors through photorealistic renders and a full 3D animation.</p>
         
         <div class="project-body-text">
-          <p>Advantage Place forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2021, the project investigates tactile material boundaries and volumetric precision.</p>
-          <p>Our multidisciplinary team developed the project from programmatic schematic design through high-fidelity visual simulation and comprehensive turnkey project execution, ensuring strict adherence to the studio's closed-loop methodology.</p>
+          <p>Advantage Place forms part of RDVS Studios' enduring catalogue of interior and visual explorations. Completed in 2015, the commission carried the interior design and produced the photorealistic visualizations used to present the proposed commercial development &mdash; its curved glazed facade, entrance canopy and colonnade, and the full sequence of interior amenity spaces, from surface and basement parking to the double-height reception lobby.</p>
+          <p>The presentation moves from the public realm inward: a reception hall with a glass staircase and black marble walls, a curved white reception desk set against ADVANTAGE PLACE feature lettering, an elevator lobby carrying the building's floor directory, and open-plan workplace floors with timber partitions and graphic accent walls. Detail studies cover the Worldwide Bank office suite, a fitness centre, and white-tiled washrooms finished in black marble &mdash; all rendered alongside the accompanying 3D animation, which opens on an aerial view of the tower above the city before carrying viewers through the building.</p>
         </div>
       </div>
 
@@ -79,15 +114,15 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2021</span>
+            <span class="project-spec-val">2015</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
-            <span class="project-spec-val">Architecture</span>
+            <span class="project-spec-val">Interior Design</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Scope of Services</span>
-            <span class="project-spec-val">Architecture, Spatial Design, 3D VFX & Turnkey Delivery</span>
+            <span class="project-spec-val">Interior Design &amp; 3D Visualization (Modeling &amp; Rendering)</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Team</span>
@@ -100,16 +135,52 @@
     <section class="project-gallery-grid" aria-label="Project detail gallery">
       
       <div class="gallery-item">
-        <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="Advantage Place Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/advantage-place/advantage-place-01.jpg" alt="Advantage Place Detail 01" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/advantage-place/advantage-place-2.jpg" alt="Advantage Place Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/advantage-place/advantage-place-02.jpg" alt="Advantage Place Detail 02" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/advantage-place/advantage-place-3.jpg" alt="Advantage Place Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/advantage-place/advantage-place-03.jpg" alt="Advantage Place Detail 03" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/advantage-place/advantage-place-4.jpg" alt="Advantage Place Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/advantage-place/advantage-place-04.jpg" alt="Advantage Place Detail 04" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-05.jpg" alt="Advantage Place Detail 05" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-06.jpg" alt="Advantage Place Detail 06" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-07.jpg" alt="Advantage Place Detail 07" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-08.jpg" alt="Advantage Place Detail 08" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-09.jpg" alt="Advantage Place Detail 09" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-10.jpg" alt="Advantage Place Detail 10" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-11.jpg" alt="Advantage Place Detail 11" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-12.jpg" alt="Advantage Place Detail 12" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-13.jpg" alt="Advantage Place Detail 13" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-14.jpg" alt="Advantage Place Detail 14" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-15.jpg" alt="Advantage Place Detail 15" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/advantage-place/advantage-place-16.jpg" alt="Advantage Place Detail 16" class="gallery-img" loading="lazy">
       </div>
     </section>
 

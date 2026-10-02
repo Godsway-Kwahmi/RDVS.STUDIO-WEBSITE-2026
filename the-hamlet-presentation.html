@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Hamlet Presentation — RDVS Studios</title>
-  <meta name="description" content="The Hamlet Presentation — Architectural commission and spatial design by RDVS Studios.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>The Hamlet — RDVS Studios</title>
+  <meta name="description" content="The Hamlet — A 2018 interior design and 3D visualization project by RDVS Studios.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -49,21 +80,21 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Architecture / Architecture &mdash; 2025 &middot; Studio Commission</span>
-      <h1 class="project-page-title">The Hamlet Presentation</h1>
+      <span class="project-meta-line">Interior Design / 3D Visualization &mdash; 2018 &middot; Studio Commission</span>
+      <h1 class="project-page-title">The Hamlet</h1>
     </header>
 
     <div class="project-hero-media">
-      <img src="assets/images/hamlet/hamlet-bath.jpg" alt="The Hamlet Presentation Primary View" class="project-hero-img">
+      <img src="assets/images/hamlet/hamlet-bath.jpg" alt="The Hamlet Primary View" class="project-hero-img">
     </div>
 
     <div class="project-content-grid">
       <div class="project-story">
-        <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for The Hamlet Presentation.</p>
+        <p class="project-lead-text">A 2018 interior design and 3D visualization commission for The Hamlet, Nest's twenty-residence luxury development in Cantonments, Accra.</p>
         
         <div class="project-body-text">
-          <p>The Hamlet Presentation forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2025, the project investigates tactile material boundaries and volumetric precision.</p>
-          <p>Our multidisciplinary team developed the project from programmatic schematic design through high-fidelity visual simulation and comprehensive turnkey project execution, ensuring strict adherence to the studio's closed-loop methodology.</p>
+          <p>The Hamlet forms part of RDVS Studios' enduring catalogue of interior and visual explorations. Completed in 2018, the project comprises twenty luxury residences in Cantonments, Accra, developed by Nest as its final luxury scheme before a shift toward the middle-income market. RDVS Studios carried the interior design and produced the photorealistic visualizations used to present the proposed houses to potential clients.</p>
+          <p>The presentation sought an atmosphere of high-quality luxury living &mdash; a careful, apt use of materials carried in a posh and luxurious tone, with details and elements locally produced and readily available. Exterior imagery spans the gate house and driveway, aerial views, the pool area, private garden, and terrace across day and night compound perspectives; interior views cover living and dining, kitchen and out kitchen, family area, master bedroom and bathroom, study, and gym.</p>
         </div>
       </div>
 
@@ -71,27 +102,27 @@
         <div class="project-specs-grid">
           <div class="project-spec-item">
             <span class="project-spec-label">Client</span>
-            <span class="project-spec-val">Private Client</span>
+            <span class="project-spec-val">Nest</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Location</span>
-            <span class="project-spec-val">Accra, Ghana</span>
+            <span class="project-spec-val">Cantonments, Accra, Ghana</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2025</span>
+            <span class="project-spec-val">2018</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
-            <span class="project-spec-val">Architecture</span>
+            <span class="project-spec-val">Interior Design</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Scope of Services</span>
-            <span class="project-spec-val">Architecture, Spatial Design, 3D VFX & Turnkey Delivery</span>
+            <span class="project-spec-val">Interior Design &amp; 3D Visualization (Modeling &amp; Rendering)</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Team</span>
-            <span class="project-spec-val">RDVS Team</span>
+            <span class="project-spec-val">Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng</span>
           </div>
         </div>
       </aside>
@@ -100,16 +131,16 @@
     <section class="project-gallery-grid" aria-label="Project detail gallery">
       
       <div class="gallery-item">
-        <img src="assets/images/hamlet/hamlet-bath.jpg" alt="The Hamlet Presentation Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/hamlet/hamlet-bath.jpg" alt="The Hamlet Detail" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/hamlet/hamlet-estate.jpg" alt="The Hamlet Presentation Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/hamlet/hamlet-estate.jpg" alt="The Hamlet Detail" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/hamlet/hamlet-night-angle.jpg" alt="The Hamlet Presentation Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/hamlet/hamlet-night-angle.jpg" alt="The Hamlet Detail" class="gallery-img" loading="lazy">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/hamlet/hamlet-wide-hero.jpg" alt="The Hamlet Presentation Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/hamlet/hamlet-wide-hero.jpg" alt="The Hamlet Detail" class="gallery-img" loading="lazy">
       </div>
     </section>
 

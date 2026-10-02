@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>Work — RDVS Studios</title>
   <meta name="description" content="Selected architecture, spatial interiors, photoreal visualization, and turnkey build commissions by RDVS.">
   
@@ -10,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -45,6 +58,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -54,37 +85,37 @@
     <header class="page-header">
       <h1 class="page-title">Work</h1>
       <p class="page-subtitle">A curated index of architecture, interior environments, 3D photoreal visualization, and custom design + build execution.</p>
+    </header>
       
-      <!-- Minimalist Filter & Sort Toolbar -->
-      <div class="work-toolbar">
-                <!-- Filter Controls — Same list of services as under Expertise -->
-        <div class="filter-nav" role="tablist" aria-label="Filter projects by expertise service">
-          <span class="toolbar-label">Services:</span>
-          <button type="button" class="filter-btn active" data-filter="all">All</button>
-          <button type="button" class="filter-btn" data-filter="architecture-planning">Architecture</button>
-          <button type="button" class="filter-btn" data-filter="competitions">Competitions</button>
-          <button type="button" class="filter-btn" data-filter="turnkey-build">Design + Build</button>
-          <button type="button" class="filter-btn" data-filter="web-design">Digital &amp; Web Design</button>
-          <button type="button" class="filter-btn" data-filter="digital-art">Digital Art</button>
-          <button type="button" class="filter-btn" data-filter="graphic-design">Graphic Design</button>
-          <button type="button" class="filter-btn" data-filter="industrial-design">Industrial &amp; Furniture Design</button>
-          <button type="button" class="filter-btn" data-filter="interior-design">Interior Design</button>
-          <button type="button" class="filter-btn" data-filter="motion-design">Motion Design</button>
-          <button type="button" class="filter-btn" data-filter="photography">Photography</button>
-          <button type="button" class="filter-btn" data-filter="vfx-cgi">Visual Effects (VFX) &amp; CGI</button>
-        </div>
+    <!-- Minimalist Filter & Sort Toolbar -->
+    <div class="work-toolbar">
+      <!-- Filter Controls — Same list of services as under Expertise -->
+      <div class="filter-nav" role="tablist" aria-label="Filter projects by expertise service">
+        <span class="toolbar-label">Services:</span>
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="architecture-planning">Architecture</button>
+        <button type="button" class="filter-btn" data-filter="competitions">Competitions</button>
+        <button type="button" class="filter-btn" data-filter="turnkey-build">Design + Build</button>
+        <button type="button" class="filter-btn" data-filter="web-design">Digital &amp; Web Design</button>
+        <button type="button" class="filter-btn" data-filter="digital-art">Digital Art</button>
+        <button type="button" class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+        <button type="button" class="filter-btn" data-filter="industrial-design">Industrial &amp; Furniture Design</button>
+        <button type="button" class="filter-btn" data-filter="interior-design">Interior Design</button>
+        <button type="button" class="filter-btn" data-filter="motion-design">Motion Design</button>
+        <button type="button" class="filter-btn" data-filter="photography">Photography</button>
+        <button type="button" class="filter-btn" data-filter="vfx-cgi">Visual Effects (VFX) &amp; CGI</button>
+      </div>
 
-        <!-- Sort Controls (Typology, Date, Discipline) -->
-        <div class="sort-nav" aria-label="Sort projects">
-          <span class="toolbar-label">Sort:</span>
-          <div class="sort-group">
-            <button type="button" class="sort-btn active" data-sort="date" data-direction="desc">Date <span class="sort-indicator">↓</span></button>
-            <button type="button" class="sort-btn" data-sort="typology" data-direction="asc">Typology <span class="sort-indicator"></span></button>
-            <button type="button" class="sort-btn" data-sort="discipline" data-direction="asc">Discipline <span class="sort-indicator"></span></button>
-          </div>
+      <!-- Sort Controls (Typology, Date, Discipline) -->
+      <div class="sort-nav" aria-label="Sort projects">
+        <span class="toolbar-label">Sort:</span>
+        <div class="sort-group">
+          <button type="button" class="sort-btn active" data-sort="date" data-direction="desc">Date <span class="sort-indicator">↓</span></button>
+          <button type="button" class="sort-btn" data-sort="typology" data-direction="asc">Typology <span class="sort-indicator"></span></button>
+          <button type="button" class="sort-btn" data-sort="discipline" data-direction="asc">Discipline <span class="sort-indicator"></span></button>
         </div>
       </div>
-    </header>
+    </div>
 
         <!-- Minimalissimo Portfolio Grid -->
     <section class="minimal-grid" id="projectGrid" aria-label="Project portfolio">
@@ -95,6 +126,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="YAO  +  YAA" class="card-img" loading="lazy">
@@ -119,6 +152,8 @@
          data-year="2009" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="west hills mall" class="card-img" loading="lazy">
@@ -137,25 +172,27 @@
       </a>
 
 
-      <!-- Project: WEST_CANTONMENTS_IGL_PRESENTATION -->
+      <!-- Project: WEST_CANTONMENTS_RESIDENCE -->
       <a href="west-cantonments-igl-presentation.html" class="grid-card" 
-         data-title="West Cantonments IGL Presentation" 
-         data-year="2009" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-title="West Cantonments Residence" 
+         data-year="2018" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Infinite Group Ltd" 
+         data-location="Cantonments, Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/cantonments/west-cantonments.jpg" alt="WEST CANTONMENTS IGL PRESENTATION" class="card-img" loading="lazy">
+          <img src="assets/images/cantonments/west-cantonments-1.jpg" alt="West Cantonments Residence" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">West Cantonments IGL Presentation</h2>
-            <span class="card-year">2009</span>
+            <h2 class="card-title">West Cantonments Residence</h2>
+            <span class="card-year">2018</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -167,6 +204,8 @@
          data-year="2009" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/web/rdvs-website.jpg" alt="WEB DESIGN DESIGN" class="card-img" loading="lazy">
@@ -185,36 +224,14 @@
       </a>
 
 
-      <!-- Project: WCIGL -->
-      <a href="wcigl.html" class="grid-card" 
-         data-title="WCIGL" 
-         data-year="2009" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
-        <div class="card-media-wrapper">
-          <img src="assets/images/dyv/dyv-dawn.jpg" alt="WCIGL" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">WCIGL</h2>
-            <span class="card-year">2009</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-
       <!-- Project: VR_SHOWCASE -->
       <a href="vr-showcase.html" class="grid-card" 
          data-title="VR Showcase" 
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="RDVS Virtual Lab" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/vr-showcase/vr-showcase-poster.jpg" alt="VR SHOWCASE" class="card-img" loading="lazy">
@@ -239,6 +256,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="RDVS Virtual Studio" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/vr-photos/vr-photo-ceo-office.jpg" alt="VR PHOTOS" class="card-img" loading="lazy">
@@ -263,6 +282,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="VODAFONE RED HSE" class="card-img" loading="lazy">
@@ -287,6 +308,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/aggregate/villa-aggregate-side.jpg" alt="VILLA AGGREGATE" class="card-img" loading="lazy">
@@ -311,6 +334,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/airporthills/airporthills-residence.jpg" alt="VIEWS FROM AIRPORT HILLS" class="card-img" loading="lazy">
@@ -335,6 +360,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="VICTORIA ISLAND NAIJA PROJECT" class="card-img" loading="lazy">
@@ -359,6 +386,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="viasat1 breakfast show" class="card-img" loading="lazy">
@@ -377,36 +406,14 @@
       </a>
 
 
-      <!-- Project: TRUMPET_AFRICA_IDENT -->
-      <a href="trumpet-africa-ident.html" class="grid-card" 
-         data-title="Trumpet Africa Ident" 
-         data-year="2026" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
-        <div class="card-media-wrapper">
-          <img src="assets/images/dyv/dyv-dawn.jpg" alt="TRUMPET AFRICA IDENT" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Trumpet Africa Ident</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-
       <!-- Project: TOWER_CASCADES -->
       <a href="tower-cascades.html" class="grid-card" 
          data-title="Tower Cascades" 
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/cascades/tower-cascades-night.jpg" alt="TOWER CASCADES" class="card-img" loading="lazy">
@@ -428,22 +435,24 @@
       <!-- Project: THE_TEA_HOUSE -->
       <a href="the-tea-house.html" class="grid-card" 
          data-title="The Tea House" 
-         data-year="2011" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2021" 
+         data-typology="Identity" 
+         data-discipline="Graphic Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="graphic-design web-design">
         <div class="card-media-wrapper">
-          <img src="assets/images/abl/abl-1.jpg" alt="THE TEA HOUSE" class="card-img" loading="lazy">
+          <img src="assets/images/tea-house/tea-house-header.jpg" alt="The Tea House" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">The Tea House</h2>
-            <span class="card-year">2011</span>
+            <span class="card-year">2021</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Identity</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Graphic Design</span>
           </div>
         </div>
       </a>
@@ -455,6 +464,8 @@
          data-year="2011" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/1957/1957-1.jpg" alt="THE SADDLE" class="card-img" loading="lazy">
@@ -473,25 +484,27 @@
       </a>
 
 
-      <!-- Project: THE_ HAMLET_ PRESENTATION -->
+      <!-- Project: THE HAMLET -->
       <a href="the-hamlet-presentation.html" class="grid-card" 
-         data-title="The Hamlet Presentation" 
-         data-year="2025" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-title="The Hamlet" 
+         data-year="2018" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Nest" 
+         data-location="Cantonments, Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-bath.jpg" alt="THE  HAMLET  PRESENTATION" class="card-img" loading="lazy">
+          <img src="assets/images/hamlet/hamlet-bath.jpg" alt="The Hamlet" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">The Hamlet Presentation</h2>
-            <span class="card-year">2025</span>
+            <h2 class="card-title">The Hamlet</h2>
+            <span class="card-year">2018</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -503,6 +516,8 @@
          data-year="2011" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/margin/margin-bank.jpg" alt="STEPHEN  +  YVONNE" class="card-img" loading="lazy">
@@ -527,6 +542,8 @@
          data-year="2011" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="STELLAR BAR" class="card-img" loading="lazy">
@@ -551,6 +568,8 @@
          data-year="2011" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="STARK GLAUBE" class="card-img" loading="lazy">
@@ -572,22 +591,24 @@
       <!-- Project: STANCHART_HQ -->
       <a href="stanchart-hq.html" class="grid-card" 
          data-title="Stanchart HQ" 
-         data-year="2011" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2010" 
+         data-typology="Commercial" 
+         data-discipline="3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="STANCHART HQ" class="card-img" loading="lazy">
+          <img src="assets/images/stanchart-hq/stanchart-hq-1.jpg" alt="STANCHART HQ" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Stanchart HQ</h2>
-            <span class="card-year">2011</span>
+            <span class="card-year">2010</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Commercial</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -599,6 +620,8 @@
          data-year="2011" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/margin/margin-bank.jpg" alt="SPECIAL DAYS POSTS" class="card-img" loading="lazy">
@@ -623,6 +646,8 @@
          data-year="2023" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hubtel/hubtel-aisle.jpg" alt="SMSGH=HUBTEL" class="card-img" loading="lazy">
@@ -647,6 +672,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="SIX ACRES COMPANY PROFILE" class="card-img" loading="lazy">
@@ -671,6 +698,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/abl/abl-1.jpg" alt="SENYA RESORT" class="card-img" loading="lazy">
@@ -695,6 +724,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/1957/1957-1.jpg" alt="SAFO ADU RESIDENCE" class="card-img" loading="lazy">
@@ -716,22 +747,24 @@
       <!-- Project: RLG -->
       <a href="rlg.html" class="grid-card" 
          data-title="RLG" 
-         data-year="2026" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2013" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design, Industrial &amp; Furniture Design, Graphic Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design industrial-design graphic-design vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="RLG" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">RLG</h2>
-            <span class="card-year">2026</span>
+            <span class="card-year">2013</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Industrial &amp; Furniture Design, Graphic Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -743,6 +776,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="READY" class="card-img" loading="lazy">
@@ -767,6 +802,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/web/rdvs-website.jpg" alt="RDVS WEBSITE" class="card-img" loading="lazy">
@@ -791,6 +828,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/web/rdvs-website.jpg" alt="RDVS REV.OLUTION.2.0 WEBSITE" class="card-img" loading="lazy">
@@ -815,6 +854,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="RDVS LOGO" class="card-img" loading="lazy">
@@ -839,6 +880,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="RDVS BRANDING" class="card-img" loading="lazy">
@@ -863,6 +906,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/abl/abl-1.jpg" alt="RDVS ADS" class="card-img" loading="lazy">
@@ -887,6 +932,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/1957/1957-1.jpg" alt="PROVIDENT INSURANCE" class="card-img" loading="lazy">
@@ -911,6 +958,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="PROJECT MOUNT" class="card-img" loading="lazy">
@@ -935,6 +984,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="PREMIER PLACE" class="card-img" loading="lazy">
@@ -959,6 +1010,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="PREMIER LODGE 2" class="card-img" loading="lazy">
@@ -983,6 +1036,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="PORTFOLIOS" class="card-img" loading="lazy">
@@ -1004,46 +1059,24 @@
       <!-- Project: POCONOS_BAR+GRILL -->
       <a href="poconos-bar-grill.html" class="grid-card" 
          data-title="Poconos Bar + Grill" 
-         data-year="2024" 
+         data-year="2017" 
          data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-discipline="Architecture, Landscape Design, Interior Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/abl/abl-1.jpg" alt="POCONOS BAR  +  GRILL" class="card-img" loading="lazy">
+          <img src="assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg" alt="Poconos Bar + Grill" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Poconos Bar + Grill</h2>
-            <span class="card-year">2024</span>
+            <span class="card-year">2017</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Architecture</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-
-      <!-- Project: POCONOS -->
-      <a href="poconos.html" class="grid-card" 
-         data-title="Poconos" 
-         data-year="2024" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
-        <div class="card-media-wrapper">
-          <img src="assets/images/1957/1957-1.jpg" alt="POCONOS" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Poconos</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Landscape Design, Interior Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1052,46 +1085,50 @@
       <!-- Project: PETRUS -->
       <a href="petrus.html" class="grid-card" 
          data-title="Petrus" 
-         data-year="2026" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2017" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Imperial Homes" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="PETRUS" class="card-img" loading="lazy">
+          <img src="assets/images/petrus/petrus-1.jpg" alt="Petrus" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Petrus</h2>
-            <span class="card-year">2026</span>
+            <span class="card-year">2017</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design</span>
           </div>
         </div>
       </a>
 
 
-      <!-- Project: PALAZZO -->
+            <!-- Project: PALAZZO -->
       <a href="palazzo.html" class="grid-card" 
          data-title="Palazzo" 
-         data-year="2026" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2017" 
+         data-typology="Residential" 
+         data-discipline="3D Visualization" 
+         data-client="Imperial Homes" 
+         data-location="Accra, Ghana" 
+         data-category="vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="PALAZZO" class="card-img" loading="lazy">
+          <img src="assets/images/palazzo/palazzo-1.jpg" alt="Palazzo" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Palazzo</h2>
-            <span class="card-year">2026</span>
+            <span class="card-year">2017</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1103,6 +1140,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="OSU APARTMENT 002" class="card-img" loading="lazy">
@@ -1127,6 +1166,8 @@
          data-year="2013" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="OSU APARTMENTS" class="card-img" loading="lazy">
@@ -1151,6 +1192,8 @@
          data-year="2014" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/nyla/nyla-closet.jpg" alt="NYLA COURT" class="card-img" loading="lazy">
@@ -1174,8 +1217,10 @@
          data-title="NPA Reception Renders" 
          data-year="2014" 
          data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-discipline="Visual Effects (VFX) &amp; CGI" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/npa/npa-office.jpg" alt="NPA RECEPTION RENDERS" class="card-img" loading="lazy">
         </div>
@@ -1187,7 +1232,7 @@
           <div class="card-meta-sub">
             <span class="card-typology">Architecture</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1199,6 +1244,8 @@
          data-year="2010" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/abl/abl-1.jpg" alt="NISSA OFFICES 2010" class="card-img" loading="lazy">
@@ -1220,22 +1267,24 @@
       <!-- Project: NAADEI_VILLAS -->
       <a href="naadei-villas.html" class="grid-card" 
          data-title="Naadei Villas" 
-         data-year="2026" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2018" 
+         data-typology="Residential" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning interior-design">
         <div class="card-media-wrapper">
-          <img src="assets/images/1957/1957-1.jpg" alt="NAADEI VILLAS" class="card-img" loading="lazy">
+          <img src="assets/images/naadei-villas/naadei-villas-1.jpg" alt="Naadei Villas" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Naadei Villas</h2>
-            <span class="card-year">2026</span>
+            <span class="card-year">2018</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1247,6 +1296,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/mtn/mtn-corridor.jpg" alt="MTN ENV GRAPHICS" class="card-img" loading="lazy">
@@ -1271,6 +1322,8 @@
          data-year="2014" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="MOTY" class="card-img" loading="lazy">
@@ -1295,6 +1348,8 @@
          data-year="2014" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="MIG.RDVS" class="card-img" loading="lazy">
@@ -1319,6 +1374,8 @@
          data-year="2014" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="MAURICE  +  ABENA" class="card-img" loading="lazy">
@@ -1337,25 +1394,27 @@
       </a>
 
 
-      <!-- Project: LINK_DRIVE_ROAD -->
+            <!-- Project: LINK_DRIVE_ROAD -->
       <a href="link-drive-road.html" class="grid-card" 
-         data-title="Link Drive Road" 
-         data-year="2014" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-title="Link Drive Rd." 
+         data-year="2018" 
+         data-typology="Residential" 
+         data-discipline="Interior Design & 3D Visualization" 
+         data-client="Imperial Homes" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/dyv/dyv-dawn.jpg" alt="LINK DRIVE ROAD" class="card-img" loading="lazy">
+          <img src="assets/images/link-drive/link-drive-1.jpg" alt="Link Drive Rd." class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">Link Drive Road</h2>
-            <span class="card-year">2014</span>
+            <h2 class="card-title">Link Drive Rd.</h2>
+            <span class="card-year">2018</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design & 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1367,6 +1426,8 @@
          data-year="2014" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/abl/abl-1.jpg" alt="LIGHT CAMERA VISUALIZE 002" class="card-img" loading="lazy">
@@ -1391,6 +1452,8 @@
          data-year="2009" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/1957/1957-1.jpg" alt="LA PALM 2008 CHRISTMAS PARTY POSTERS" class="card-img" loading="lazy">
@@ -1415,6 +1478,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="la maison osu" class="card-img" loading="lazy">
@@ -1436,22 +1501,24 @@
       <!-- Project: LA_BEACH_TOWERS -->
       <a href="la-beach-towers.html" class="grid-card" 
          data-title="La Beach Towers" 
-         data-year="2015" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2013" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/labeach/la-beach-dining.jpg" alt="LA BEACH TOWERS" class="card-img" loading="lazy">
+          <img src="assets/images/la-beach-towers/la-beach-towers-1.jpg" alt="LA BEACH TOWERS" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">La Beach Towers</h2>
-            <span class="card-year">2015</span>
+            <span class="card-year">2013</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1463,6 +1530,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/kdmrd/kdmrd-1.jpg" alt="KDMRD" class="card-img" loading="lazy">
@@ -1487,6 +1556,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/k-line-architects-baobab-hotel-interiors-presentation/k-line-architects-baobab-hotel-interiors-presentation-1.jpg" alt="K-LINE ARCHITECTS BAOBAB HOTEL INTERIORS PRESENTATION" class="card-img" loading="lazy">
@@ -1511,6 +1582,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hydra-form/hydra-form-1.jpg" alt="HYDRA FORM" class="card-img" loading="lazy">
@@ -1535,6 +1608,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hydra-form-presentation/hydra-form-presentation-1.jpg" alt="HYDRA-FORM PRESENTATION" class="card-img" loading="lazy">
@@ -1559,6 +1634,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hvl/hvl-1.jpg" alt="HVL" class="card-img" loading="lazy">
@@ -1583,6 +1660,8 @@
          data-year="2023" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hubtel-kenya/hubtel-kenya-1.jpg" alt="hubtel kenya" class="card-img" loading="lazy">
@@ -1607,6 +1686,8 @@
          data-year="2015" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/hot-gossip/hot-gossip-1.jpg" alt="HOT GOSSIP" class="card-img" loading="lazy">
@@ -1631,6 +1712,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/home-automation-system-presentation/home-automation-system-presentation-1.jpg" alt="HOME AUTOMATION SYSTEM PRESENTATION" class="card-img" loading="lazy">
@@ -1655,6 +1738,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/his-grace-garden-presentation/his-grace-garden-presentation-1.jpg" alt="HIS GRACE GARDEN PRESENTATION" class="card-img" loading="lazy">
@@ -1673,13 +1758,15 @@
       </a>
 
 
-      <!-- Project: HFC_TVC -->
+            <!-- Project: HFC_TVC -->
       <a href="hfc-tvc.html" class="grid-card" 
          data-title="HFC TVC" 
          data-year="2016" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-typology="Commercial / TVC" 
+         data-discipline="Visual Effects (VFX) & Motion Design" 
+         data-client="Midnight Run" 
+         data-location="Accra, Ghana" 
+         data-category="vfx-cgi motion-design">
         <div class="card-media-wrapper">
           <img src="assets/images/hfc-tvc/hfc-tvc-1.jpg" alt="HFC TVC" class="card-img" loading="lazy">
         </div>
@@ -1689,9 +1776,9 @@
             <span class="card-year">2016</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Commercial / TVC</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Visual Effects (VFX) & Motion Design</span>
           </div>
         </div>
       </a>
@@ -1703,6 +1790,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/haven-project/haven-project-1.jpg" alt="HAVEN PROJECT" class="card-img" loading="lazy">
@@ -1727,6 +1816,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/haustalks/haustalks-1.png" alt="HAUSTALKS" class="card-img" loading="lazy">
@@ -1748,22 +1839,24 @@
       <!-- Project: HARBOUR_POINTE -->
       <a href="harbour-pointe.html" class="grid-card" 
          data-title="Harbour Pointe" 
-         data-year="2016" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2015" 
+         data-typology="Mixed-Use" 
+         data-discipline="3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/harbour-pointe/harbour-pointe-1.jpg" alt="HARBOUR POINTE" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Harbour Pointe</h2>
-            <span class="card-year">2016</span>
+            <span class="card-year">2015</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Mixed-Use</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1775,6 +1868,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/graphic-design/graphic-design-1.jpg" alt="graphic design" class="card-img" loading="lazy">
@@ -1799,6 +1894,8 @@
          data-year="2016" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/gh-phot-awards/gh-phot-awards-1.jpg" alt="gh phot awards" class="card-img" loading="lazy">
@@ -1823,6 +1920,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/furnart/furnart-1.jpg" alt="FURNART" class="card-img" loading="lazy">
@@ -1841,23 +1940,25 @@
       </a>
 
 
-      <!-- Project: FUNKO_RIDGE -->
+            <!-- Project: FUNKO_RIDGE -->
       <a href="funko-ridge.html" class="grid-card" 
-         data-title="Funko Ridge" 
-         data-year="2017" 
-         data-typology="Architecture" 
+         data-title="Funko Ridge Residence" 
+         data-year="2019" 
+         data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Ridge Estates / Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
-          <img src="assets/images/funko-ridge/funko-ridge-1.jpg" alt="FUNKO RIDGE" class="card-img" loading="lazy">
+          <img src="assets/images/funko-ridge/funko-ridge-1.jpg" alt="Funko Ridge Residence" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">Funko Ridge</h2>
-            <span class="card-year">2017</span>
+            <h2 class="card-title">Funko Ridge Residence</h2>
+            <span class="card-year">2019</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
             <span class="card-category">Architecture</span>
           </div>
@@ -1871,6 +1972,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/fule/fule-1.jpg" alt="FULE" class="card-img" loading="lazy">
@@ -1892,22 +1995,24 @@
       <!-- Project: FRONTIER_FILLING_STATION -->
       <a href="frontier-filling-station.html" class="grid-card" 
          data-title="Frontier Filling Station" 
-         data-year="2025" 
+         data-year="2016" 
          data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-discipline="Architecture, Industrial Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning industrial-design vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/frontier-filling-station/frontier-filling-station-1.jpg" alt="FRONTIER FILLING STATION" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Frontier Filling Station</h2>
-            <span class="card-year">2025</span>
+            <span class="card-year">2016</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Architecture</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Industrial Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -1919,6 +2024,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/ert/ert-1.jpg" alt="ERT" class="card-img" loading="lazy">
@@ -1943,6 +2050,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/enda-whm/enda-whm-1.jpg" alt="ENDA WHM" class="card-img" loading="lazy">
@@ -1967,6 +2076,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/enda-acm/enda-acm-1.jpg" alt="ENDA ACM" class="card-img" loading="lazy">
@@ -1991,6 +2102,8 @@
          data-year="2017" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/empire-tower/empire-tower-1.jpg" alt="EMPIRE TOWER" class="card-img" loading="lazy">
@@ -2015,6 +2128,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/emerge-ident/emerge-ident-1.png" alt="EMERGE IDENT" class="card-img" loading="lazy">
@@ -2039,6 +2154,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/el-dor/el-dor-1.jpg" alt="EL DOR" class="card-img" loading="lazy">
@@ -2063,6 +2180,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/elo-tv/elo-tv-1.jpg" alt="ELO TV" class="card-img" loading="lazy">
@@ -2087,6 +2206,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/ela-b/ela-b-1.jpg" alt="ELA B" class="card-img" loading="lazy">
@@ -2111,6 +2232,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/eic-competition/eic-competition-1.jpg" alt="EIC COMPETITION" class="card-img" loading="lazy">
@@ -2135,6 +2258,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/ehr/ehr-1.jpg" alt="EHR" class="card-img" loading="lazy">
@@ -2159,6 +2284,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv-predios/dyv-predios-1.jpg" alt="DYV-PREDIOS" class="card-img" loading="lazy">
@@ -2183,6 +2310,8 @@
          data-year="2018" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/drw-furnart/drw-furnart-1.jpg" alt="DRW FURNART" class="card-img" loading="lazy">
@@ -2207,6 +2336,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/dela-anyaa/dela-anyaa-1.jpg" alt="DELA ANYAA" class="card-img" loading="lazy">
@@ -2231,6 +2362,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg" alt="D E T A I L S" class="card-img" loading="lazy">
@@ -2255,6 +2388,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/chocolate/chocolate-1.jpg" alt="CHOCOLATE" class="card-img" loading="lazy">
@@ -2279,6 +2414,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/ceeander/ceeander-1.jpg" alt="ceeander" class="card-img" loading="lazy">
@@ -2303,6 +2440,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/carmenbasin/carmenbasin-1.jpg" alt="CarmenBasin" class="card-img" loading="lazy">
@@ -2326,8 +2465,10 @@
          data-title="Campions Renderings" 
          data-year="2019" 
          data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-discipline="Visual Effects (VFX) &amp; CGI" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/campions-renderings/campions-renderings-1.jpg" alt="CAMPIONS RENDERINGS" class="card-img" loading="lazy">
         </div>
@@ -2339,7 +2480,7 @@
           <div class="card-meta-sub">
             <span class="card-typology">Architecture</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Architectural Visualization</span>
           </div>
         </div>
       </a>
@@ -2351,6 +2492,8 @@
          data-year="2019" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/c25/c25-1.jpg" alt="C25" class="card-img" loading="lazy">
@@ -2375,6 +2518,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/brownies-place/brownies-place-1.jpg" alt="BROWNIES PLACE" class="card-img" loading="lazy">
@@ -2399,6 +2544,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/brownies-brochure/brownies-brochure-1.jpg" alt="BROWNIES BROCHURE" class="card-img" loading="lazy">
@@ -2423,6 +2570,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/brownie-s-place/brownie-s-place-1.jpg" alt="BROWNIE'S PLACE" class="card-img" loading="lazy">
@@ -2441,49 +2590,27 @@
       </a>
 
 
-      <!-- Project: BFA_2018 -->
-      <a href="bfa-2018.html" class="grid-card" 
-         data-title="BFA 2018" 
+            <!-- Project: BFA -->
+      <a href="bfa.html" class="grid-card" 
+         data-title="BFA" 
          data-year="2018" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-typology="Residential" 
+         data-discipline="Interior Design & 3D Visualization" 
+         data-client="Homes Direct" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/bfa-2018/bfa-2018-1.jpg" alt="BFA 2018" class="card-img" loading="lazy">
+          <img src="assets/images/bfa/bfa-1.jpg" alt="BFA" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">BFA 2018</h2>
+            <h2 class="card-title">BFA</h2>
             <span class="card-year">2018</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Residential</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-
-      <!-- Project: BATSONA_FLATS -->
-      <a href="batsona-flats.html" class="grid-card" 
-         data-title="Batsona Flats" 
-         data-year="2020" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
-        <div class="card-media-wrapper">
-          <img src="assets/images/batsona-flats/batsona-flats-1.jpg" alt="BATSONA FLATS" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Batsona Flats</h2>
-            <span class="card-year">2020</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design & 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -2495,6 +2622,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/baobab-hotel-airport/baobab-hotel-airport-1.jpg" alt="BAOBAB HOTEL AIRPORT" class="card-img" loading="lazy">
@@ -2519,6 +2648,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/baatsona-house-presentation/baatsona-house-presentation-1.jpg" alt="BAATSONA HOUSE PRESENTATION" class="card-img" loading="lazy">
@@ -2543,6 +2674,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/b1-hq-lagos-ave/b1-hq-lagos-ave-1.png" alt="B1 HQ LAGOS AVE" class="card-img" loading="lazy">
@@ -2567,6 +2700,8 @@
          data-year="2020" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg" alt="asante interior design presentation" class="card-img" loading="lazy">
@@ -2591,6 +2726,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg" alt="APARTMENT IN TAKORADI" class="card-img" loading="lazy">
@@ -2615,6 +2752,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/anyigbanua/anyigbanua-1.jpg" alt="ANYIGBANUA" class="card-img" loading="lazy">
@@ -2639,6 +2778,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg" alt="AMEYAW  +  SARAH" class="card-img" loading="lazy">
@@ -2663,6 +2804,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/alexander-signage/alexander-signage-1.jpg" alt="ALEXANDER-SIGNAGE" class="card-img" loading="lazy">
@@ -2687,6 +2830,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/airport-hills-residence/airport-hills-residence-1.jpg" alt="AIRPORT HILLS RESIDENCE" class="card-img" loading="lazy">
@@ -2711,6 +2856,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/airport-city/airport-city-1.jpg" alt="airport city" class="card-img" loading="lazy">
@@ -2735,6 +2882,8 @@
          data-year="2021" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/aika-osu/aika-osu-1.jpg" alt="aika osu" class="card-img" loading="lazy">
@@ -2756,22 +2905,24 @@
       <!-- Project: ADVANTAGE_PLACE -->
       <a href="advantage-place.html" class="grid-card" 
          data-title="Advantage Place" 
-         data-year="2021" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2015" 
+         data-typology="Interior Design" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/advantage-place/advantage-place-1.jpg" alt="ADVANTAGE PLACE" class="card-img" loading="lazy">
+          <img src="assets/images/advantage-place/advantage-place-01.jpg" alt="ADVANTAGE PLACE" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">Advantage Place</h2>
-            <span class="card-year">2021</span>
+            <span class="card-year">2015</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -2783,6 +2934,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg" alt="ADOLPH'S WEDDING INVITE" class="card-img" loading="lazy">
@@ -2807,6 +2960,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/adentan-townhouses/adentan-townhouses-1.jpg" alt="ADENTAN TOWNHOUSES" class="card-img" loading="lazy">
@@ -2831,6 +2986,8 @@
          data-year="2012" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/accra-milleniuem-city-project-presentation-2012/accra-milleniuem-city-project-presentation-2012-1.jpg" alt="ACCRA MILLENIUEM CITY PROJECT PRESENTATION 2012" class="card-img" loading="lazy">
@@ -2855,6 +3012,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/access-bank-iris/access-bank-iris-1.jpg" alt="ACCESS BANK IRIS" class="card-img" loading="lazy">
@@ -2879,6 +3038,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/access-bank/access-bank-1.jpg" alt="ACCESS BANK" class="card-img" loading="lazy">
@@ -2900,46 +3061,24 @@
       <!-- Project: ABL_RECEPTION -->
       <a href="abl-reception.html" class="grid-card" 
          data-title="ABL Reception" 
-         data-year="2023" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-year="2017" 
+         data-typology="Corporate Reception" 
+         data-discipline="Interior Design &amp; 3D Visualization" 
+         data-client="ABL (Accra Brewery Limited)" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design 3d-vfx">
         <div class="card-media-wrapper">
-          <img src="assets/images/abl-reception/abl-reception-1.jpg" alt="ABL RECEPTION" class="card-img" loading="lazy">
+          <img src="assets/images/abl-reception/abl-reception-1.jpg" alt="ABL Reception" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">ABL Reception</h2>
-            <span class="card-year">2023</span>
+            <span class="card-year">2017</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Corporate Reception</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-
-      <!-- Project: ABL -->
-      <a href="abl.html" class="grid-card" 
-         data-title="ABL" 
-         data-year="2023" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
-        <div class="card-media-wrapper">
-          <img src="assets/images/abl/abl-1.jpg" alt="ABL" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">ABL</h2>
-            <span class="card-year">2023</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
@@ -2951,6 +3090,8 @@
          data-year="2013" 
          data-typology="Residential CGI" 
          data-discipline="Visual Effects (VFX) &amp; CGI" 
+         data-client="Brent Hughes" 
+         data-location="Laurel, Canada" 
          data-category="vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/94-laurel/94-laurel-1.jpg" alt="94 LAUREL" class="card-img" loading="lazy">
@@ -2975,6 +3116,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/5aap/5aap-1.jpg" alt="5AAP" class="card-img" loading="lazy">
@@ -2999,6 +3142,8 @@
          data-year="2024" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/41-barham/41-barham-1.jpg" alt="41 BARHAM" class="card-img" loading="lazy">
@@ -3023,6 +3168,8 @@
          data-year="2022" 
          data-typology="Architecture" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning">
         <div class="card-media-wrapper">
           <img src="assets/images/2gs-construction-logistics/2gs-construction-logistics-1.jpg" alt="2GS CONSTRUCTION  +  LOGISTICS" class="card-img" loading="lazy">
@@ -3044,46 +3191,50 @@
       <!-- Project: 1hive -->
       <a href="1hive.html" class="grid-card" 
          data-title="1Hive" 
-         data-year="2023" 
+         data-year="2016" 
          data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-discipline="Architecture, Interior Design &amp; 3D Visualization" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="architecture-planning interior-design vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/1hive/1hive-1.jpg" alt="1Hive" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
             <h2 class="card-title">1Hive</h2>
-            <span class="card-year">2023</span>
+            <span class="card-year">2016</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Architecture</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">Interior Design &amp; 3D Visualization</span>
           </div>
         </div>
       </a>
 
 
-      <!-- Project: 1957 -->
+      <!-- Project: 1957 Apartments and Retail -->
       <a href="1957.html" class="grid-card" 
-         data-title="1957" 
-         data-year="2023" 
-         data-typology="Architecture" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning">
+         data-title="1957 Apartments and Retail" 
+         data-year="2019" 
+         data-typology="Apartments &amp; Retail" 
+         data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
+         data-category="interior-design vfx-cgi">
         <div class="card-media-wrapper">
-          <img src="assets/images/1957/1957-1.jpg" alt="1957" class="card-img" loading="lazy">
+          <img src="assets/images/1957/1957-12.jpg" alt="1957 Apartments and Retail Aerial View" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">1957</h2>
-            <span class="card-year">2023</span>
+            <h2 class="card-title">1957 Apartments and Retail</h2>
+            <span class="card-year">2019</span>
           </div>
           <div class="card-meta-sub">
-            <span class="card-typology">Architecture</span>
+            <span class="card-typology">Interior Design</span>
             <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
+            <span class="card-category">3D Visualization</span>
           </div>
         </div>
       </a>
@@ -3094,6 +3245,8 @@
          data-year="2023" 
          data-typology="Digital" 
          data-discipline="Motion Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="motion-design web-design">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="SWIPE=FLOAT" class="card-img" loading="lazy">
@@ -3113,17 +3266,19 @@
 
       <!-- Project: AFG Executive Headquarters -->
       <a href="afg.html" class="grid-card" 
-         data-title="ABL Corporate Reception" 
+         data-title="AFG Executive Headquarters" 
          data-year="2024" 
          data-typology="Commercial" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build industrial-design">
         <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
+          <img src="assets/images/afg/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">ABL Corporate Reception</h2>
+            <h2 class="card-title">AFG Executive Headquarters</h2>
             <span class="card-year">2024</span>
           </div>
           <div class="card-meta-sub">
@@ -3134,28 +3289,6 @@
         </div>
       </a>
 
-      <!-- Project: Hamlet Contemporary Residence -->
-      <a href="hamlet.html" class="grid-card" 
-         data-title="Hamlet Contemporary Residence" 
-         data-year="2025" 
-         data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning vfx-cgi">
-        <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-bath.jpg" alt="Hamlet Contemporary Residence" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Hamlet Contemporary Residence</h2>
-            <span class="card-year">2025</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
 
       <!-- Project: DYV Mixed-Use Development -->
       <a href="dyv.html" class="grid-card" 
@@ -3163,6 +3296,8 @@
          data-year="2023" 
          data-typology="Mixed-Use" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi motion-design">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="card-img" loading="lazy">
@@ -3186,6 +3321,8 @@
          data-year="2023" 
          data-typology="Commercial" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/hubtel/hubtel-aisle.jpg" alt="Margin Financial Suite" class="card-img" loading="lazy">
@@ -3209,6 +3346,8 @@
          data-year="2024" 
          data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning interior-design">
         <div class="card-media-wrapper">
           <img src="assets/images/barham/barham-courtyard.jpg" alt="41 Barham Luxury Residence" class="card-img" loading="lazy">
@@ -3226,58 +3365,14 @@
         </div>
       </a>
 
-      <!-- Project: Frontier Commercial Complex -->
-      <a href="frontier.html" class="grid-card" 
-         data-title="Frontier Commercial Complex" 
-         data-year="2025" 
-         data-typology="Commercial" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning vfx-cgi">
-        <div class="card-media-wrapper">
-          <img src="assets/images/frontier/frontier-base.jpg" alt="Frontier Commercial Complex" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Frontier Commercial Complex</h2>
-            <span class="card-year">2025</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Commercial</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project: La Beach Towers Penthouse -->
-      <a href="labeach.html" class="grid-card" 
-         data-title="La Beach Towers Penthouse" 
-         data-year="2024" 
-         data-typology="Residential" 
-         data-discipline="Interior Design" 
-         data-category="interior-design industrial-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/labeach/la-beach-dining.jpg" alt="La Beach Towers Penthouse" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">La Beach Towers Penthouse</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: MTN Headquarters Executive Wing -->
       <a href="mtn.html" class="grid-card" 
          data-title="MTN Headquarters Executive Wing" 
          data-year="2024" 
          data-typology="Commercial" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/mtn/mtn-corridor.jpg" alt="MTN Headquarters Executive Wing" class="card-img" loading="lazy">
@@ -3295,35 +3390,14 @@
         </div>
       </a>
 
-      <!-- Project: OneHive Innovation Center -->
-      <a href="onehive.html" class="grid-card" 
-         data-title="Onehive Innovation Center" 
-         data-year="2025" 
-         data-typology="Technology" 
-         data-discipline="Visual Effects (VFX) & CGI" 
-         data-category="vfx-cgi motion-design web-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/onehive/onehive-atrium.jpg" alt="OneHive Innovation Center" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Onehive Innovation Center</h2>
-            <span class="card-year">2025</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Technology</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Visual Effects (VFX) & CGI</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: PURC Institutional Complex -->
       <a href="purc.html" class="grid-card" 
          data-title="PURC Institutional Complex" 
          data-year="2023" 
          data-typology="Institutional" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/purc/purc-colonnade.jpg" alt="PURC Institutional Complex" class="card-img" loading="lazy">
@@ -3347,6 +3421,8 @@
          data-year="2023" 
          data-typology="Identity" 
          data-discipline="Graphic Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="graphic-design">
         <div class="card-media-wrapper">
           <img src="assets/images/2gs/2gs-branding.jpg" alt="2GS Identity & Spatial Systems" class="card-img" loading="lazy">
@@ -3370,6 +3446,8 @@
          data-year="2023" 
          data-typology="Identity" 
          data-discipline="Graphic Design" 
+         data-client="Aelius Consult" 
+         data-location="Accra, Ghana" 
          data-category="graphic-design web-design">
         <div class="card-media-wrapper">
           <img src="assets/images/aelius/aelius-brand.jpg" alt="Aelius Consult Brand System" class="card-img" loading="lazy">
@@ -3393,6 +3471,8 @@
          data-year="2023" 
          data-typology="Digital" 
          data-discipline="Digital & Web Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="web-design motion-design graphic-design">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="RDVS Studio Digital Platform" class="card-img" loading="lazy">
@@ -3410,35 +3490,14 @@
         </div>
       </a>
 
-      <!-- Project: HFC Brand Motion Direction -->
-      <a href="hfc-tvc.html" class="grid-card" 
-         data-title="HFC Brand Motion Direction" 
-         data-year="2023" 
-         data-typology="Broadcast" 
-         data-discipline="Motion Design" 
-         data-category="motion-design vfx-cgi">
-        <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="HFC Brand Motion Direction" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">HFC Brand Motion Direction</h2>
-            <span class="card-year">2023</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Broadcast</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Motion Design</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: ELO TV Broadcast & Motion Identity -->
       <a href="elo-tv.html" class="grid-card" 
          data-title="ELO TV Broadcast & Motion Identity" 
          data-year="2024" 
          data-typology="Broadcast" 
          data-discipline="Motion Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="motion-design graphic-design">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="ELO TV Broadcast & Motion Identity" class="card-img" loading="lazy">
@@ -3456,35 +3515,14 @@
         </div>
       </a>
 
-      <!-- Project: 1957 Monochrome Residence -->
-      <a href="1957.html" class="grid-card" 
-         data-title="1957 Monochrome Residence" 
-         data-year="2024" 
-         data-typology="Residential" 
-         data-discipline="Interior Design" 
-         data-category="interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/1957/1957-1.jpg" alt="1957 Monochrome Residence" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">1957 Monochrome Residence</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: Brownies Place Retreat -->
       <a href="brownies-place.html" class="grid-card" 
          data-title="Brownies Place Retreat" 
          data-year="2024" 
          data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/brownies/brownies-place.jpg" alt="Brownies Place Retreat" class="card-img" loading="lazy">
@@ -3508,6 +3546,8 @@
          data-year="2024" 
          data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/fule/fule-1.jpg" alt="Fule Residence Villa" class="card-img" loading="lazy">
@@ -3525,35 +3565,14 @@
         </div>
       </a>
 
-      <!-- Project: Funko Ridge Coastal Concept -->
-      <a href="funko-ridge.html" class="grid-card" 
-         data-title="Funko Ridge Coastal Concept" 
-         data-year="2024" 
-         data-typology="Mixed-Use" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning vfx-cgi motion-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/funko/funko-ridge.jpg" alt="Funko Ridge Coastal Concept" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Funko Ridge Coastal Concept</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Mixed-Use</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: NPA Corporate Open Office -->
       <a href="npa-reception-renders.html" class="grid-card" 
          data-title="NPA Corporate Open Office" 
          data-year="2024" 
          data-typology="Workplace" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/npa/npa-office.jpg" alt="NPA Corporate Open Office" class="card-img" loading="lazy">
@@ -3577,6 +3596,8 @@
          data-year="2024" 
          data-typology="Residential" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/nyla/nyla-closet.jpg" alt="Nyla Bespoke Dressing Suite" class="card-img" loading="lazy">
@@ -3594,28 +3615,6 @@
         </div>
       </a>
 
-      <!-- Project: ABL Corporate Reception -->
-      <a href="afg.html" class="grid-card" 
-         data-title="ABL Corporate Reception" 
-         data-year="2024" 
-         data-typology="Commercial" 
-         data-discipline="Interior Design" 
-         data-category="interior-design turnkey-build industrial-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/abl/abl-reception.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">ABL Corporate Reception</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Commercial</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design & Millwork Build</span>
-          </div>
-        </div>
-      </a>
 
       <!-- Project: Margin Financial Suite -->
       <a href="hubtel.html" class="grid-card" 
@@ -3623,6 +3622,8 @@
          data-year="2023" 
          data-typology="Commercial" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/margin/margin-bank.jpg" alt="Margin Financial Suite" class="card-img" loading="lazy">
@@ -3646,6 +3647,8 @@
          data-year="2024" 
          data-typology="Educational" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="Macord International School" class="card-img" loading="lazy">
@@ -3663,35 +3666,14 @@
         </div>
       </a>
 
-      <!-- Project: The Tea House Pavilion -->
-      <a href="the-tea-house.html" class="grid-card" 
-         data-title="The Tea House Pavilion" 
-         data-year="2025" 
-         data-typology="Cultural" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="The Tea House Pavilion" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">The Tea House Pavilion</h2>
-            <span class="card-year">2025</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Cultural</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: Villa Aggregate -->
       <a href="villa-aggregate.html" class="grid-card" 
          data-title="Villa Aggregate" 
          data-year="2025" 
          data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning turnkey-build interior-design">
         <div class="card-media-wrapper">
           <img src="assets/images/aggregate/villa-aggregate-side.jpg" alt="Villa Aggregate" class="card-img" loading="lazy">
@@ -3715,6 +3697,8 @@
          data-year="2025" 
          data-typology="Commercial" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/cascades/tower-cascades-night.jpg" alt="Tower Cascades" class="card-img" loading="lazy">
@@ -3732,35 +3716,14 @@
         </div>
       </a>
 
-      <!-- Project: West Cantonments Luxury Residences -->
-      <a href="west-cantonments-igl-presentation.html" class="grid-card" 
-         data-title="West Cantonments Luxury Residences" 
-         data-year="2025" 
-         data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/cantonments/west-cantonments.jpg" alt="West Cantonments Luxury Residences" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">West Cantonments Luxury Residences</h2>
-            <span class="card-year">2025</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: Senya Coastal Resort -->
       <a href="senya-resort.html" class="grid-card" 
          data-title="Senya Coastal Resort" 
          data-year="2024" 
          data-typology="Hospitality" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning vfx-cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/afg/afg-headquarters.jpg" alt="Senya Coastal Resort" class="card-img" loading="lazy">
@@ -3778,89 +3741,22 @@
         </div>
       </a>
 
-      <!-- Project: Poconos Lounge & Nightclub -->
-      <a href="poconos.html" class="grid-card" 
-         data-title="Poconos Lounge & Nightclub" 
-         data-year="2024" 
-         data-typology="Hospitality" 
-         data-discipline="Interior Design" 
-         data-category="interior-design industrial-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Poconos Lounge & Nightclub" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Poconos Lounge & Nightclub</h2>
-            <span class="card-year">2024</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Hospitality</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project: Naadei Luxury Villas -->
-      <a href="naadei-villas.html" class="grid-card" 
-         data-title="Naadei Luxury Villas" 
-         data-year="2026" 
-         data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="Naadei Luxury Villas" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Naadei Luxury Villas</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project: Petrus Wine Lounge -->
-      <a href="petrus.html" class="grid-card" 
-         data-title="Petrus Wine Lounge" 
-         data-year="2026" 
-         data-typology="Hospitality" 
-         data-discipline="Interior Design" 
-         data-category="interior-design industrial-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Petrus Wine Lounge" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Petrus Wine Lounge</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Hospitality</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Interior Design</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project: Trumpet Africa Ident -->
+      <!-- Project: Trumpet Africa Productions Ident -->
       <a href="trumpet-africa-ident.html" class="grid-card" 
-         data-title="Trumpet Africa Ident" 
-         data-year="2026" 
+         data-title="Trumpet Africa Productions Ident" 
+         data-year="2014" 
          data-typology="Broadcast" 
          data-discipline="Motion Design" 
+         data-client="Trumpet Africa Productions" 
+         data-location="Accra, Ghana" 
          data-category="motion-design graphic-design">
         <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="Trumpet Africa Ident" class="card-img" loading="lazy">
+          <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png" alt="Trumpet Africa Productions Ident" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
-            <h2 class="card-title">Trumpet Africa Ident</h2>
-            <span class="card-year">2026</span>
+            <h2 class="card-title">Trumpet Africa Productions Ident</h2>
+            <span class="card-year">2014</span>
           </div>
           <div class="card-meta-sub">
             <span class="card-typology">Broadcast</span>
@@ -3870,28 +3766,6 @@
         </div>
       </a>
 
-      <!-- Project: RLG Monolithic Retail Systems -->
-      <a href="rlg.html" class="grid-card" 
-         data-title="RLG Monolithic Retail Systems" 
-         data-year="2026" 
-         data-typology="Commercial" 
-         data-discipline="Industrial & Product Design" 
-         data-category="industrial-design interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="RLG Monolithic Retail Systems" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">RLG Monolithic Retail Systems</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Commercial</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Industrial & Product Design</span>
-          </div>
-        </div>
-      </a>
 
       <!-- Project: Airport Hills Luxury Residence -->
       <a href="airport-hills-residence.html" class="grid-card" 
@@ -3899,6 +3773,8 @@
          data-year="2025" 
          data-typology="Residential" 
          data-discipline="Architecture" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="architecture-planning interior-design">
         <div class="card-media-wrapper">
           <img src="assets/images/airporthills/airporthills-residence.jpg" alt="Airport Hills Luxury Residence" class="card-img" loading="lazy">
@@ -3916,58 +3792,14 @@
         </div>
       </a>
 
-      <!-- Project: Palazzo Luxury Living -->
-      <a href="palazzo.html" class="grid-card" 
-         data-title="Palazzo Luxury Living" 
-         data-year="2026" 
-         data-typology="Residential" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning interior-design">
-        <div class="card-media-wrapper">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="Palazzo Luxury Living" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Palazzo Luxury Living</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Residential</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project: Harbour Pointe Waterfront Development -->
-      <a href="harbour-pointe.html" class="grid-card" 
-         data-title="Harbour Pointe Waterfront Development" 
-         data-year="2026" 
-         data-typology="Mixed-Use" 
-         data-discipline="Architecture" 
-         data-category="architecture-planning vfx-cgi">
-        <div class="card-media-wrapper">
-          <img src="assets/images/harbour-pointe/harbour-pointe-1.jpg" alt="Harbour Pointe Waterfront Development" class="card-img" loading="lazy">
-        </div>
-        <div class="card-meta">
-          <div class="card-meta-main">
-            <h2 class="card-title">Harbour Pointe Waterfront Development</h2>
-            <span class="card-year">2026</span>
-          </div>
-          <div class="card-meta-sub">
-            <span class="card-typology">Mixed-Use</span>
-            <span class="meta-sep">/</span>
-            <span class="card-category">Architecture</span>
-          </div>
-        </div>
-      </a>
-
       <!-- Project: Baobab Hotel Airport -->
       <a href="baobab-hotel-airport.html" class="grid-card" 
          data-title="Baobab Hotel Airport" 
          data-year="2024" 
          data-typology="Hospitality" 
          data-discipline="Interior Design" 
+         data-client="Private Client" 
+         data-location="Accra, Ghana" 
          data-category="interior-design turnkey-build">
         <div class="card-media-wrapper">
           <img src="assets/images/baobab/baobab-hotel.jpg" alt="Baobab Hotel Airport" class="card-img" loading="lazy">
@@ -4031,11 +3863,16 @@
       }
 
       if (filterParam) {
-        const matchingBtn = document.querySelector(`.filter-btn[data-filter="${filterParam}"]`);
+        let normalizedFilter = filterParam;
+        const subServiceParams = ['3d-visualization', '3d-animation', 'architectural-visualization', 'arch-viz', 'archviz', 'cgi', 'vfx'];
+        if (subServiceParams.includes(filterParam.toLowerCase())) {
+          normalizedFilter = 'vfx-cgi';
+        }
+        const matchingBtn = document.querySelector(`.filter-btn[data-filter="${normalizedFilter}"]`);
         if (matchingBtn) {
           filterBtns.forEach(b => b.classList.remove('active'));
           matchingBtn.classList.add('active');
-          currentFilter = filterParam;
+          currentFilter = normalizedFilter;
         }
       }
 
@@ -4068,16 +3905,30 @@
           const typology = (card.getAttribute('data-typology') || '').toLowerCase();
           const discipline = (card.getAttribute('data-discipline') || '').toLowerCase();
           const year = (card.getAttribute('data-year') || '');
+          const client = (card.getAttribute('data-client') || '').toLowerCase();
+          const location = (card.getAttribute('data-location') || '').toLowerCase();
+
+          // Visual Effects (VFX) & CGI Sub-services:
+          // 3D Visualization, 3D Animation, Architectural Visualization, Arch Viz fall under Visual Effects (VFX) & CGI
+          const vfxSubServices = ['3d visualization', '3d animation', 'architectural visualization', 'arch viz', 'visualization', 'visualisation', 'rendering', 'cgi', 'vfx'];
+          const hasVfxSubService = vfxSubServices.some(s => discipline.includes(s) || category.includes(s) || typology.includes(s) || title.includes(s));
+          const isVfxQuery = query && vfxSubServices.some(s => s.includes(query) || query.includes(s));
 
           const matchesQuery = !query || 
             title.includes(query) || 
             category.includes(query) || 
             typology.includes(query) || 
             discipline.includes(query) || 
-            year.includes(query);
+            year.includes(query) ||
+            client.includes(query) || 
+            location.includes(query) ||
+            (isVfxQuery && (category.includes('vfx-cgi') || discipline.includes('visual effects')));
 
           const services = category.split(/\s+/);
-          const matchesFilter = (currentFilter === 'all') || services.includes(currentFilter) || category.includes(currentFilter);
+          let matchesFilter = (currentFilter === 'all') || services.includes(currentFilter) || category.includes(currentFilter);
+          if (!matchesFilter && currentFilter === 'vfx-cgi' && hasVfxSubService) {
+            matchesFilter = true;
+          }
 
           return matchesQuery && matchesFilter;
         });
@@ -4201,6 +4052,121 @@
           applyFilterAndSort();
         });
       }
+
+      // Slide-left/right-to-scroll for the mobile filter & sort rows
+      // (CSS reserves horizontal gestures via touch-action: pan-y so touch pans slide the row itself)
+      function enableDragToScroll(el) {
+        if (!el) return;
+
+        const DRAG_THRESHOLD = 6; // px of movement before a gesture becomes a drag
+        let pointerActive = false;
+        let dragging = false;
+        let startX = 0;
+        let startY = 0;
+        let startScrollLeft = 0;
+        let lastX = 0;
+        let lastTime = 0;
+        let velocity = 0; // px per ms
+        let rafId = null;
+        let suppressClick = null;
+
+        const stopInertia = () => {
+          if (rafId !== null) {
+            cancelAnimationFrame(rafId);
+            rafId = null;
+          }
+        };
+
+        const clearSuppressor = () => {
+          if (suppressClick) {
+            el.removeEventListener('click', suppressClick, true);
+            suppressClick = null;
+          }
+        };
+
+        const runInertia = () => {
+          rafId = null;
+          if (Math.abs(velocity) < 0.02) return;
+          const maxScroll = el.scrollWidth - el.clientWidth;
+          el.scrollLeft -= velocity * 16;
+          velocity *= 0.94;
+          if ((el.scrollLeft <= 0 && velocity < 0) || (el.scrollLeft >= maxScroll && velocity > 0)) return;
+          rafId = requestAnimationFrame(runInertia);
+        };
+
+        el.addEventListener('pointerdown', (e) => {
+          if (e.pointerType === 'mouse' && e.button !== 0) return;
+          if (el.scrollWidth <= el.clientWidth) return; // nothing to slide
+          clearSuppressor();
+          stopInertia();
+          pointerActive = true;
+          dragging = false;
+          startX = e.clientX;
+          startY = e.clientY;
+          lastX = e.clientX;
+          lastTime = e.timeStamp || performance.now();
+          velocity = 0;
+          startScrollLeft = el.scrollLeft;
+        });
+
+        el.addEventListener('pointermove', (e) => {
+          if (!pointerActive) return;
+          // Mouse released outside the row without hitting the drag threshold
+          if (e.pointerType === 'mouse' && e.buttons === 0) {
+            pointerActive = false;
+            return;
+          }
+          const dx = e.clientX - startX;
+          const dy = e.clientY - startY;
+          if (!dragging) {
+            if (Math.abs(dx) < DRAG_THRESHOLD) return;
+            // Vertical intent wins — let the page scroll natively instead
+            if (Math.abs(dx) < Math.abs(dy)) {
+              pointerActive = false;
+              return;
+            }
+            dragging = true;
+            // Capture only once a real drag starts, so plain clicks keep their normal target
+            if (el.setPointerCapture) {
+              try { el.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+            }
+          }
+          const now = e.timeStamp || performance.now();
+          const dt = Math.max(now - lastTime, 1);
+          velocity = (e.clientX - lastX) / dt;
+          lastX = e.clientX;
+          lastTime = now;
+          el.scrollLeft = startScrollLeft - dx;
+          e.preventDefault();
+        });
+
+        const endDrag = () => {
+          if (!pointerActive && !dragging) return;
+          pointerActive = false;
+          if (!dragging) return;
+          dragging = false;
+          stopInertia();
+          rafId = requestAnimationFrame(runInertia);
+          // Swallow the click that immediately follows a real drag
+          suppressClick = (ev) => {
+            ev.preventDefault();
+            ev.stopPropagation();
+            clearSuppressor();
+          };
+          el.addEventListener('click', suppressClick, true);
+          setTimeout(clearSuppressor, 400);
+        };
+
+        el.addEventListener('pointerup', endDrag);
+        el.addEventListener('pointercancel', () => {
+          pointerActive = false;
+          dragging = false;
+          stopInertia();
+        });
+      }
+
+      enableDragToScroll(document.querySelector('.filter-nav'));
+      enableDragToScroll(document.querySelector('.sort-nav'));
 
       // Initial application
       applyFilterAndSort();

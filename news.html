@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>News — RDVS Studios</title>
   <meta name="description" content="News, monographs, project completions, and editorial insights from RDVS Studios.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,8 +33,6 @@
       <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
 
       <div class="header-right">
-        
-        
         <nav class="primary-nav" aria-label="Primary navigation">
           <a href="work.html" class="nav-link">Work</a>
           <a href="about.html" class="nav-link">About</a>
@@ -42,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -53,65 +82,20 @@
       <p class="page-subtitle">Dispatches, spatial monographs, project milestones, and technical explorations from our studio.</p>
     </header>
 
-    <section class="minimal-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));" aria-label="News articles">
-      <!-- Article 1 -->
+    <section class="minimal-grid" style="grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));" aria-label="News articles">
+      <!-- Only News Entry -->
       <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/dyv/dyv-dawn.jpg" alt="DYV Mixed-Use Development" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">Architecture / 2026</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">DYV Mixed-Use Masterplan Unveiled</h2>
-        <p class="project-desc">A conceptual breakthrough exploring tiered coastal geometry, natural airflow channels, and sustainable mixed-use urban density.</p>
-      </article>
-
-      <!-- Article 2 -->
-      <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/afg/afg-headquarters.jpg" alt="AFG Executive Headquarters" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">Space / 2026</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">AFG Executive Headquarters Handover</h2>
-        <p class="project-desc">Comprehensive walkthrough of our turnkey design and build delivery in Accra, detailing faceted acoustic timber walling and custom millwork.</p>
-      </article>
-
-      <!-- Article 3 -->
-      <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Hamlet Contemporary Residence" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">Visuals / 2025</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">Nocturnal Lighting & VFX In Contemporary Architecture</h2>
-        <p class="project-desc">An analytical studio paper exploring atmospheric light propagation, low-key contrast, and physical rendering simulations for private estates.</p>
-      </article>
-
-      <!-- Article 4 -->
-      <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/hubtel/hubtel-executive.jpg" alt="Hubtel Executive Boardroom" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">Practice / 2025</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">The Direct Link Between 3D Concept and Construction</h2>
-        <p class="project-desc">Examining how unfragmented ownership over both digital prototyping and physical trades eliminates design compromises on site.</p>
-      </article>
-
-      <!-- Article 5 -->
-      <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/onehive/onehive.jpg" alt="OneHive Innovation Center" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">RDVSchool / 2025</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">RDVSchool Announces 2026 Masterclass Cohort</h2>
-        <p class="project-desc">Applications now open for our intensive training track in real-time computational rendering, photoreal lighting, and spatial drafting.</p>
-      </article>
-
-      <!-- Article 6 -->
-      <article class="grid-card">
-        <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
-          <img src="assets/images/abl/abl-reception.jpg" alt="ABL Corporate Reception" class="card-img" loading="lazy">
-        </div>
-        <p class="project-category">Interiors / 2025</p>
-        <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">Material Quietude in Corporate Reception Design</h2>
-        <p class="project-desc">How understated monochrome palettes and tactile stone surfaces calm transitional spatial experiences in commercial environments.</p>
+        <a href="we-have-updated-our-website.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="card-media-wrapper" style="aspect-ratio: 16/10;">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/hamlet/hamlet-estate-mobile.jpg">
+              <img src="assets/images/hamlet/hamlet-estate-desktop.jpg" alt="We have updated our website" class="card-img" loading="lazy">
+            </picture>
+          </div>
+          <p class="project-category">Studio / 2026</p>
+          <h2 class="card-title" style="white-space: normal; margin-bottom: 8px;">We have updated our website</h2>
+          <p class="project-desc">RDVS Studios launches an updated digital platform documenting our multidisciplinary architecture, interior design, 3D visualization, visual effects, and turnkey build practices.</p>
+        </a>
       </article>
     </section>
   </main>
@@ -127,10 +111,10 @@
           <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
         <div class="footer-links">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
   </footer>

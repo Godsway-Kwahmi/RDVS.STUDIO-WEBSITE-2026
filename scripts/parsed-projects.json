@@ -442,11 +442,11 @@
   {
     "slug": "petrus",
     "title": "Petrus",
-    "year": "2026",
-    "typology": "Architecture",
-    "discipline": "Architecture",
-    "category": "architecture-planning",
-    "img": "assets/images/advantage-place/advantage-place-1.jpg",
+    "year": "2017",
+    "typology": "Interior Design",
+    "discipline": "Interior Design & 3D Visualization",
+    "category": "interior-design vfx-cgi",
+    "img": "assets/images/petrus/petrus-1.jpg",
     "videoUrl": null,
     "hasImage": true
   },
@@ -519,11 +519,11 @@
   {
     "slug": "naadei-villas",
     "title": "Naadei Villas",
-    "year": "2026",
-    "typology": "Architecture",
-    "discipline": "Architecture",
-    "category": "architecture-planning",
-    "img": "assets/images/1957/1957-1.jpg",
+    "year": "2018",
+    "typology": "Residential",
+    "discipline": "Interior Design & 3D Visualization",
+    "category": "architecture-planning interior-design",
+    "img": "assets/images/naadei-villas/naadei-villas-1.jpg",
     "videoUrl": null,
     "hasImage": true
   },
@@ -1289,22 +1289,11 @@
   {
     "slug": "abl-reception",
     "title": "ABL Reception",
-    "year": "2023",
-    "typology": "Architecture",
-    "discipline": "Architecture",
-    "category": "architecture-planning",
+    "year": "2017",
+    "typology": "Corporate Reception",
+    "discipline": "Interior Design &amp; 3D Visualization",
+    "category": "interior-design 3d-vfx",
     "img": "assets/images/abl-reception/abl-reception-1.jpg",
-    "videoUrl": null,
-    "hasImage": true
-  },
-  {
-    "slug": "abl",
-    "title": "ABL",
-    "year": "2023",
-    "typology": "Architecture",
-    "discipline": "Architecture",
-    "category": "architecture-planning",
-    "img": "assets/images/abl/abl-1.jpg",
     "videoUrl": null,
     "hasImage": true
   },
@@ -1365,13 +1354,13 @@
   },
   {
     "slug": "1957",
-    "title": "1957",
-    "year": "2023",
-    "typology": "Architecture",
-    "discipline": "Architecture",
-    "category": "architecture-planning",
-    "img": "assets/images/1957/1957-1.jpg",
-    "videoUrl": "assets/videos/1957/1957-lounge.mp4",
+    "title": "1957 Apartments and Retail",
+    "year": "2019",
+    "typology": "Apartments & Retail",
+    "discipline": "Interior Design & 3D Visualization",
+    "category": "interior-design vfx-cgi",
+    "img": "assets/images/1957/1957-12.jpg",
+    "videoUrl": null,
     "hasImage": true
   },
   {
@@ -1387,7 +1376,7 @@
   },
   {
     "slug": "afg",
-    "title": "ABL Corporate Reception",
+    "title": "AFG Executive Headquarters",
     "year": "2024",
     "typology": "Commercial",
     "discipline": "Interior Design",
@@ -1551,17 +1540,6 @@
     "hasImage": true
   },
   {
-    "slug": "1957",
-    "title": "1957 Monochrome Residence",
-    "year": "2024",
-    "typology": "Residential",
-    "discipline": "Interior Design",
-    "category": "interior-design",
-    "img": "assets/images/1957/1957-1.jpg",
-    "videoUrl": "assets/videos/1957/1957-lounge.mp4",
-    "hasImage": true
-  },
-  {
     "slug": "brownies-place",
     "title": "Brownies Place Retreat",
     "year": "2024",
@@ -1613,17 +1591,6 @@
     "discipline": "Interior Design",
     "category": "interior-design industrial-design",
     "img": "assets/images/nyla/nyla-closet.jpg",
-    "videoUrl": null,
-    "hasImage": true
-  },
-  {
-    "slug": "afg",
-    "title": "ABL Corporate Reception",
-    "year": "2024",
-    "typology": "Commercial",
-    "discipline": "Interior Design",
-    "category": "interior-design turnkey-build industrial-design",
-    "img": "assets/images/abl/abl-reception.jpg",
     "videoUrl": null,
     "hasImage": true
   },
@@ -1708,28 +1675,6 @@
     "slug": "poconos",
     "title": "Poconos Lounge & Nightclub",
     "year": "2024",
-    "typology": "Hospitality",
-    "discipline": "Interior Design",
-    "category": "interior-design industrial-design",
-    "img": "assets/images/hamlet/hamlet-estate.jpg",
-    "videoUrl": null,
-    "hasImage": true
-  },
-  {
-    "slug": "naadei-villas",
-    "title": "Naadei Luxury Villas",
-    "year": "2026",
-    "typology": "Residential",
-    "discipline": "Architecture",
-    "category": "architecture-planning interior-design",
-    "img": "assets/images/afg/afg-headquarters.jpg",
-    "videoUrl": null,
-    "hasImage": true
-  },
-  {
-    "slug": "petrus",
-    "title": "Petrus Wine Lounge",
-    "year": "2026",
     "typology": "Hospitality",
     "discipline": "Interior Design",
     "category": "interior-design industrial-design",

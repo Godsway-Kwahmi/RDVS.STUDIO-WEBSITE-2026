@@ -6,8 +6,31 @@
 
 (function () {
   document.addEventListener('DOMContentLoaded', () => {
-    // Only run on pages that have project images
-    const projectImages = Array.from(document.querySelectorAll('.project-hero-img, .gallery-img, .project-detail-container img'));
+    // Select gallery images only — exclude the project hero image from the lightbox slideshow
+    const candidateImages = Array.from(
+      document.querySelectorAll('.gallery-img, .project-gallery-grid img, .gallery-item img')
+    );
+
+    const sourceImages = candidateImages.length > 0
+      ? candidateImages
+      : Array.from(document.querySelectorAll('.project-detail-container img'));
+
+    // Filter out any hero image (.project-hero-img or inside .project-hero-media)
+    const filteredImages = sourceImages.filter(img => 
+      !img.classList.contains('project-hero-img') && 
+      !img.closest('.project-hero-media')
+    );
+
+    // Deduplicate in case overlapping selectors match the same image element
+    const projectImages = [];
+    const seenElements = new Set();
+    for (const img of filteredImages) {
+      if (!seenElements.has(img)) {
+        seenElements.add(img);
+        projectImages.push(img);
+      }
+    }
+
     if (projectImages.length === 0) return;
 
     // Extract project title if present

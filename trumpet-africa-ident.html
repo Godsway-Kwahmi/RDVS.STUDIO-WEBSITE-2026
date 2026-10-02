@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trumpet Africa Ident — RDVS Studios</title>
-  <meta name="description" content="Trumpet Africa Ident — Architectural commission and spatial design by RDVS Studios.">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Trumpet Africa Productions Ident — RDVS Studios</title>
+  <meta name="description" content="Trumpet Africa Productions Ident — 2014 broadcast identity and motion design by RDVS Studios for Trumpet Africa Productions.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -49,21 +80,42 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Architecture / Architecture &mdash; 2026 &middot; Studio Commission</span>
-      <h1 class="project-page-title">Trumpet Africa Ident</h1>
+      <span class="project-meta-line">Motion Design / Broadcast &mdash; 2014 &middot; Commissioned Identity</span>
+      <h1 class="project-page-title">Trumpet Africa Productions Ident</h1>
     </header>
 
-    <div class="project-hero-media">
-      <img src="assets/images/dyv/dyv-dawn.jpg" alt="Trumpet Africa Ident Primary View" class="project-hero-img">
+    <!-- Video Header -->
+    <div class="project-hero-media has-video">
+      <video class="project-hero-video" src="assets/videos/trumpet-africa-ident/trumpet-africa.mp4" controls autoplay muted loop playsinline poster="assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png">
+        <source src="assets/videos/trumpet-africa-ident/trumpet-africa.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <div class="project-content-grid">
       <div class="project-story">
-        <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Trumpet Africa Ident.</p>
+        <p class="project-lead-text">The sole objective for this project is to create a short length logo animation to be used as an ident in motion picture projects produced by Trumpet Africa Productions.</p>
         
         <div class="project-body-text">
-          <p>Trumpet Africa Ident forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2026, the project investigates tactile material boundaries and volumetric precision.</p>
-          <p>Our multidisciplinary team developed the project from programmatic schematic design through high-fidelity visual simulation and comprehensive turnkey project execution, ensuring strict adherence to the studio's closed-loop methodology.</p>
+          <h3 style="font-size: 0.9375rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-bottom: 8px;">Brief + Overview</h3>
+          <p>We opted for a one-point 3D camera movement approach to the animation, to transform and bring some sort of life to the rather flat 1-dimensional form of the original logo. We believe this will help convey the message of the concept more appropriately.</p>
+          <p>The animation is calibrated between a standard duration of 15&ndash;30 seconds in length with a frame rate of 30fps and screen resolution of 1920&times;1080 Full HD in a 16:9 aspect ratio.</p>
+
+          <h3 style="font-size: 0.9375rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-top: 24px; margin-bottom: 8px;">Concept &mdash; &ldquo;Creation / Revelation&rdquo;</h3>
+          <p>Trumpet Africa Productions is a Ghanaian established film production company on a quest to explore and document stories that depict the lives of Africans, thus telling the African story from an African perspective.</p>
+          <p>The outfit takes special interest in promoting and preserving African culture through films, music, and various forms of performance arts. The brief for this project was simply to develop a short piece of animation to be used as the production company&rsquo;s ident. The animation is to be a reflection of the company and define what it stands for.</p>
+          <p>The motif is based on the concepts of &lsquo;Creation and Revelation.&rsquo; These facets are literally in accord with the purpose that drives the entity as a film production company: creating and developing projects that focus and reveal stories on the lives of Africans.</p>
+          <p>In this sense, we aimed at capturing the essence and value of being African, fixating attention on originality, identity, richness, and creativity.</p>
+
+          <h3 style="font-size: 0.9375rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-top: 24px; margin-bottom: 8px;">Colour Palette &amp; Textures</h3>
+          <p>Albeit the animation will have more of an organic feel, the necessity to maintain or incorporate the company&rsquo;s core brand colours (which already has presence of brown as a natural tone) still remains. Earth toned colours ranging from dark brown to black and gold are suitable colour choices for this project.</p>
+          <p>We considered introducing relatively organic and physical materials into the scene to give the mood of the animation a natural feel. Elements like clay, earth, sand, and to some extent gold, will be incorporated within the animation.</p>
+
+          <h3 style="font-size: 0.9375rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--foreground); margin-top: 24px; margin-bottom: 8px;">Storyboard Narrative</h3>
+          <p>In the storyboard we explain how we sought to help produce a piece that is easily recognizable and readily identified as African.</p>
+          <p>The 30-second long animation captures a model African countryside setting, meant to make the company distinguishable as a production company originating from Africa. It goes further to show a typical portrayal of an African storytelling scene. The objective was to portray the production company as an effective storytelling tool.</p>
+          <p>The piece begins with a shot of a sunset scene over misty hills and valleys and gradually glides over scenery and captures a fleet of birds and grazing goats, bringing naturalness and depth to the composition. It then goes over a compound and ends behind a &ldquo;bonfire-storytelling&rdquo; scene with an old man (representing the storyteller) sitting in a circle with children listening on.</p>
+          <p>We finally attempted to define the company&rsquo;s logo composition and depicting what exactly each element is: two facial expressions merging to form an abstraction of the African map, bounded by a trumpet on the left; both elements form the name of the production company, &lsquo;TRUMPET AFRICA&rsquo;.</p>
         </div>
       </div>
 
@@ -71,7 +123,7 @@
         <div class="project-specs-grid">
           <div class="project-spec-item">
             <span class="project-spec-label">Client</span>
-            <span class="project-spec-val">Private Client</span>
+            <span class="project-spec-val">Trumpet Africa Productions</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Location</span>
@@ -79,29 +131,168 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2026</span>
+            <span class="project-spec-val">2014</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
-            <span class="project-spec-val">Architecture</span>
+            <span class="project-spec-val">Broadcast &amp; Motion Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Motion Design, 3D Animation</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Scope of Services</span>
-            <span class="project-spec-val">Architecture, Spatial Design, 3D VFX & Turnkey Delivery</span>
+            <span class="project-spec-val">Concept Development, Storyboarding, Illustrations, Motion Design &amp; 3D Animation</span>
           </div>
           <div class="project-spec-item">
-            <span class="project-spec-label">Team</span>
-            <span class="project-spec-val">RDVS Team</span>
+            <span class="project-spec-label">The Team</span>
+            <span class="project-spec-val" style="line-height: 1.6;">
+              Concept: Jude Nyoagbe + Randy Biney<br>
+              Storyboard: Jude Nyoagbe + Randy Biney<br>
+              Illustrations: Randy Biney<br>
+              Animation: Randy Biney
+            </span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software Used</span>
+            <span class="project-spec-val" style="line-height: 1.6;">
+              Adobe Photoshop<br>
+              Adobe Illustrator<br>
+              Adobe After Effects
+            </span>
           </div>
         </div>
       </aside>
     </div>
 
+    <!-- Gallery & Media Grid -->
     <section class="project-gallery-grid" aria-label="Project detail gallery">
       
-      <div class="gallery-item">
-        <img src="assets/images/dyv/dyv-dawn.jpg" alt="Trumpet Africa Ident Architectural Detail" class="gallery-img" loading="lazy">
+      <!-- Colour Palette -->
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Colour Palette</h2>
+        <p class="gallery-section-subtitle">Core brand tones: dark brown, earth, ochre, black, and gold</p>
       </div>
+      <div class="gallery-item gallery-item-full">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-palette.jpg" alt="Trumpet Africa Productions Ident — Colour Palette" class="gallery-img" loading="lazy">
+      </div>
+
+      <!-- Storyboard: Sunset -->
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Storyboard &mdash; Sunset</h2>
+        <p class="gallery-section-subtitle">12-frame sequence: misty valley terrain, wildlife, village compound, bonfire gathering, and identity resolution</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png" alt="Sunset Storyboard Frame 01 — Misty hills and valleys" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png" alt="Sunset Storyboard Frame 02 — Landscape glide" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-03.png" alt="Sunset Storyboard Frame 03 — Countryside flight" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-04.png" alt="Sunset Storyboard Frame 04 — Grazing terrain" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-05.png" alt="Sunset Storyboard Frame 05 — Compound approach" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-06.png" alt="Sunset Storyboard Frame 06 — Village dwelling" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-07.png" alt="Sunset Storyboard Frame 07 — Bonfire gathering" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-08.png" alt="Sunset Storyboard Frame 08 — Storyteller circle" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-09.png" alt="Sunset Storyboard Frame 09 — Storytelling scene" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-10.png" alt="Sunset Storyboard Frame 10 — Face abstraction" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-11.png" alt="Sunset Storyboard Frame 11 — African map formation" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-sunset-12.png" alt="Sunset Storyboard Frame 12 — Trumpet Africa logo identity resolve" class="gallery-img" loading="lazy">
+      </div>
+
+      <!-- Storyboard: Moonlit -->
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Storyboard &mdash; Moonlit</h2>
+        <p class="gallery-section-subtitle">13-frame nocturnal lighting study: moonlight, deep shadow volumes, fire glow, and metallic resolve</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-01.png" alt="Moonlit Storyboard Frame 01 — Nocturnal misty terrain" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-02.png" alt="Moonlit Storyboard Frame 02 — Nighttime valley glide" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-03.png" alt="Moonlit Storyboard Frame 03 — Night countryside" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-04.png" alt="Moonlit Storyboard Frame 04 — Nocturnal grazing scenery" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-05.png" alt="Moonlit Storyboard Frame 05 — Approaching moonlit settlement" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-06.png" alt="Moonlit Storyboard Frame 06 — Compound under moonlight" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-07.png" alt="Moonlit Storyboard Frame 07 — Firelight illumination" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-08.png" alt="Moonlit Storyboard Frame 08 — Storytelling under stars" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-09.png" alt="Moonlit Storyboard Frame 09 — Children and storyteller" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-10.png" alt="Moonlit Storyboard Frame 10 — Face profile transition" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-11.png" alt="Moonlit Storyboard Frame 11 — Merging contour geometry" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-12.png" alt="Moonlit Storyboard Frame 12 — African silhouette abstraction" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item gallery-item-full">
+        <img src="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-13.png" alt="Moonlit Storyboard Frame 13 — Trumpet Africa final resolve" class="gallery-img" loading="lazy">
+      </div>
+
+      <!-- Animation Section -->
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Animation</h2>
+        <p class="gallery-section-subtitle">Full rendered broadcast ident animations</p>
+      </div>
+
+      <!-- Sunset Video -->
+      <div class="gallery-item gallery-item-full">
+        <div style="padding: 12px 18px; width: 100%; background-color: var(--surface); border-bottom: 1px solid var(--border-hairline); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--foreground);">
+          Sunset Edition &mdash; 30s Ident Animation
+        </div>
+        <video src="assets/videos/trumpet-africa-ident/trumpet-africa.mp4" controls playsinline preload="metadata" class="gallery-video" poster="assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png">
+          <source src="assets/videos/trumpet-africa-ident/trumpet-africa.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Moonlit Video -->
+      <div class="gallery-item gallery-item-full">
+        <div style="padding: 12px 18px; width: 100%; background-color: var(--surface); border-bottom: 1px solid var(--border-hairline); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--foreground);">
+          Moonlit Edition &mdash; 30s Ident Animation
+        </div>
+        <video src="assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4" controls playsinline preload="metadata" class="gallery-video" poster="assets/images/trumpet-africa-ident/trumpet-africa-moonlit-01.png">
+          <source src="assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
     </section>
 
     <nav class="project-nav-footer" aria-label="Project pagination">
@@ -121,12 +312,12 @@
           <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
         <div class="footer-links">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="expertise.html">Expertise</a>
-        <a href="archive.html">Archive</a>
-        <a href="contact.html">Contact</a>
-      </div>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="expertise.html">Expertise</a>
+          <a href="archive.html">Archive</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
   </footer>

@@ -3,14 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>RDVS — Multidisciplinary Design + Build Studio</title>
   <meta name="description" content="Revival Design + VFX Studios (RDVS) is a multidisciplinary architecture, interior design, 3D visualization, and construction studio.">
   
   <!-- Minimalissimo Exact Font Stack: Geist Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -45,155 +58,233 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
   </header>
 
-  <!-- Full-Bleed Minimal Hero Section (10 Slides, Zero Zoom) -->
+  <!-- Full-Bleed Minimal Hero Section (20 Slides, Zero Zoom) -->
   <main>
     <section class="hero-viewport" aria-label="Featured Works">
       <div class="hero-scrim"></div>
 
-      <!-- 10 Photographic Slides -->
+      <!-- 20 Slides -->
       <div class="hero-slider">
         <!-- Slide 01 -->
-        <article class="slide active" data-index="0" aria-label="Slide 01">
+        <article class="slide active" data-index="0" aria-label="We have updated our website">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 01" class="slide-img" fetchpriority="high">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/hamlet/hamlet-estate-mobile.jpg">
+              <img src="assets/images/hamlet/hamlet-estate-desktop.jpg" alt="We have updated our website" class="slide-img" fetchpriority="high">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 02 -->
-        <article class="slide" data-index="1" aria-hidden="true" aria-label="Slide 02">
+        <article class="slide" data-index="1" aria-hidden="true" aria-label="DYV Mixed-Use Development">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 02" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/dyv/dyv-dawn-mobile.jpg">
+              <img src="assets/images/dyv/dyv-street-wide.jpg" alt="DYV Mixed-Use Development" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 03 -->
-        <article class="slide" data-index="2" aria-hidden="true" aria-label="Slide 03">
+        <article class="slide" data-index="2" aria-hidden="true" aria-label="41 Barham Luxury Residence">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 03" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/barham/barham-residence-mobile.jpg">
+              <img src="assets/images/barham/barham-residence-desktop.jpg" alt="41 Barham Luxury Residence" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 04 -->
-        <article class="slide" data-index="3" aria-hidden="true" aria-label="Slide 04">
+        <article class="slide" data-index="3" aria-hidden="true" aria-label="Frontier Filling Station">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 04" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/frontier-filling-station/frontier-filling-station-1.jpg">
+              <img src="assets/images/frontier-filling-station/frontier-filling-station-1.jpg" alt="Frontier Filling Station" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 05 -->
-        <article class="slide" data-index="4" aria-hidden="true" aria-label="Slide 05">
+        <article class="slide" data-index="4" aria-hidden="true" aria-label="PURC Institutional Complex">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 05" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/purc/purc-facade-mobile.jpg">
+              <img src="assets/images/purc/purc-facade-desktop.jpg" alt="PURC Institutional Complex" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 06 -->
-        <article class="slide" data-index="5" aria-hidden="true" aria-label="Slide 06">
+        <article class="slide" data-index="5" aria-hidden="true" aria-label="Airport City">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 06" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/airport-city/airport-city-1-mobile.jpg">
+              <img src="assets/images/airport-city/airport-city-1-desktop.jpg" alt="Airport City" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 07 -->
-        <article class="slide" data-index="6" aria-hidden="true" aria-label="Slide 07">
+        <article class="slide" data-index="6" aria-hidden="true" aria-label="Advantage Place">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 07" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/advantage-place/advantage-place-01.jpg">
+              <img src="assets/images/advantage-place/advantage-place-01.jpg" alt="Advantage Place" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 08 -->
-        <article class="slide" data-index="7" aria-hidden="true" aria-label="Slide 08">
+        <article class="slide" data-index="7" aria-hidden="true" aria-label="Adentan Townhouses">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 08" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/adentan-townhouses/adentan-townhouses-1-mobile.jpg">
+              <img src="assets/images/adentan-townhouses/adentan-townhouses-1-desktop.jpg" alt="Adentan Townhouses" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 09 -->
-        <article class="slide" data-index="8" aria-hidden="true" aria-label="Slide 09">
+        <article class="slide" data-index="8" aria-hidden="true" aria-label="AFG Headquarters">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 09" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/afg/afg-headquarters-mobile.jpg">
+              <img src="assets/images/afg/afg-headquarters-desktop.jpg" alt="AFG Headquarters" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 10 -->
-        <article class="slide" data-index="9" aria-hidden="true" aria-label="Slide 10">
+        <article class="slide" data-index="9" aria-hidden="true" aria-label="Hubtel">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 10" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/hubtel/hubtel-executive-mobile.jpg">
+              <img src="assets/images/hubtel/hubtel-executive-desktop.jpg" alt="Hubtel" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 11 -->
-        <article class="slide" data-index="10" aria-hidden="true" aria-label="Slide 11">
+        <article class="slide" data-index="10" aria-hidden="true" aria-label="La Beach Towers">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 11" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/labeach/la-beach-towers-mobile.jpg">
+              <img src="assets/images/labeach/la-beach-towers-desktop.jpg" alt="La Beach Towers" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 12 -->
-        <article class="slide" data-index="11" aria-hidden="true" aria-label="Slide 12">
+        <article class="slide" data-index="11" aria-hidden="true" aria-label="MTN Headquarters Executive Wing">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 12" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/mtn/mtn-corridor-mobile.jpg">
+              <img src="assets/images/mtn/mtn-corridor-desktop.jpg" alt="MTN Headquarters Executive Wing" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 13 -->
-        <article class="slide" data-index="12" aria-hidden="true" aria-label="Slide 13">
+        <article class="slide" data-index="12" aria-hidden="true" aria-label="ABL Reception">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 13" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/abl/abl-reception-mobile.jpg">
+              <img src="assets/images/abl/abl-reception-desktop.jpg" alt="ABL Reception" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 14 -->
-        <article class="slide" data-index="13" aria-hidden="true" aria-label="Slide 14">
+        <article class="slide" data-index="13" aria-hidden="true" aria-label="C25">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 14" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/c25/c25-1-mobile.jpg">
+              <img src="assets/images/c25/c25-1-desktop.jpg" alt="C25" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 15 -->
-        <article class="slide" data-index="14" aria-hidden="true" aria-label="Slide 15">
+        <article class="slide" data-index="14" aria-hidden="true" aria-label="Hubtel">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 15" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/margin/margin-bank-mobile.jpg">
+              <img src="assets/images/margin/margin-bank-desktop.jpg" alt="Hubtel" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 16 -->
-        <article class="slide" data-index="15" aria-hidden="true" aria-label="Slide 16">
+        <article class="slide" data-index="15" aria-hidden="true" aria-label="94 Laurel">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 16" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/94-laurel/94-laurel-1-mobile.jpg">
+              <img src="assets/images/94-laurel/94-laurel-1-desktop.jpg" alt="94 Laurel" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 17 -->
-        <article class="slide" data-index="16" aria-hidden="true" aria-label="Slide 17">
+        <article class="slide" data-index="16" aria-hidden="true" aria-label="1Hive">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 17" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/1hive/1hive-1.jpg">
+              <img src="assets/images/1hive/1hive-1.jpg" alt="1Hive" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 18 -->
-        <article class="slide" data-index="17" aria-hidden="true" aria-label="Slide 18">
+        <article class="slide" data-index="17" aria-hidden="true" aria-label="Campions Renderings">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 18" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/campions-renderings/campions-renderings-1-mobile.jpg">
+              <img src="assets/images/campions-renderings/campions-renderings-1-desktop.jpg" alt="Campions Renderings" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 19 -->
-        <article class="slide" data-index="18" aria-hidden="true" aria-label="Slide 19">
+        <article class="slide" data-index="18" aria-hidden="true" aria-label="Villa Aggregate">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 19" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/aggregate/villa-aggregate-mobile.jpg">
+              <img src="assets/images/aggregate/villa-aggregate-desktop.jpg" alt="Villa Aggregate" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
 
         <!-- Slide 20 -->
-        <article class="slide" data-index="19" aria-hidden="true" aria-label="Slide 20">
+        <article class="slide" data-index="19" aria-hidden="true" aria-label="Chocolate">
           <div class="slide-media">
-            <img src="assets/images/hamlet/hamlet-estate.jpg" alt="Featured Work 20" class="slide-img" loading="lazy">
+            <picture class="slide-picture">
+              <source media="(max-width: 768px)" srcset="assets/images/chocolate/chocolate-1-mobile.jpg">
+              <img src="assets/images/chocolate/chocolate-1-desktop.jpg" alt="Chocolate" class="slide-img" loading="lazy">
+            </picture>
           </div>
         </article>
       </div>
@@ -204,200 +295,200 @@
           <div class="caption-wrapper" aria-live="polite">
             <!-- Caption 01 -->
             <div class="caption-card active" data-index="0">
-              <p class="project-category">Architecture — 2024</p>
-              <h1 class="project-title">Featured Project 01</h1>
+              <p class="project-category"><span class="service-name">Studio</span> &mdash; 2026</p>
+              <h1 class="project-title">We have updated our website</h1>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="we-have-updated-our-website.html" class="project-action-link">Read article &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="0">Details</button>
               </div>
             </div>
 
             <!-- Caption 02 -->
             <div class="caption-card" data-index="1">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 02</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2025</p>
+              <h2 class="project-title">DYV Mixed-Use Development</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="dyv.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="1">Details</button>
               </div>
             </div>
 
             <!-- Caption 03 -->
             <div class="caption-card" data-index="2">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 03</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2025</p>
+              <h2 class="project-title">41 Barham Luxury Residence</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="barham.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="2">Details</button>
               </div>
             </div>
 
             <!-- Caption 04 -->
             <div class="caption-card" data-index="3">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 04</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2016</p>
+              <h2 class="project-title">Frontier Filling Station</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="frontier-filling-station.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="3">Details</button>
               </div>
             </div>
 
             <!-- Caption 05 -->
             <div class="caption-card" data-index="4">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 05</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2023</p>
+              <h2 class="project-title">PURC Institutional Complex</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="purc.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="4">Details</button>
               </div>
             </div>
 
             <!-- Caption 06 -->
             <div class="caption-card" data-index="5">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 06</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2024</p>
+              <h2 class="project-title">Airport City</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="airport-city.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="5">Details</button>
               </div>
             </div>
 
             <!-- Caption 07 -->
             <div class="caption-card" data-index="6">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 07</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2015</p>
+              <h2 class="project-title">Advantage Place</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="advantage-place.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="6">Details</button>
               </div>
             </div>
 
             <!-- Caption 08 -->
             <div class="caption-card" data-index="7">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 08</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2024</p>
+              <h2 class="project-title">Adentan Townhouses</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="adentan-townhouses.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="7">Details</button>
               </div>
             </div>
 
             <!-- Caption 09 -->
             <div class="caption-card" data-index="8">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 09</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2024</p>
+              <h2 class="project-title">AFG Headquarters</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="afg.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="8">Details</button>
               </div>
             </div>
 
             <!-- Caption 10 -->
             <div class="caption-card" data-index="9">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 10</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2023</p>
+              <h2 class="project-title">Hubtel</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="hubtel.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="9">Details</button>
               </div>
             </div>
 
             <!-- Caption 11 -->
             <div class="caption-card" data-index="10">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 11</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2013</p>
+              <h2 class="project-title">La Beach Towers</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="la-beach-towers.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="10">Details</button>
               </div>
             </div>
 
             <!-- Caption 12 -->
             <div class="caption-card" data-index="11">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 12</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2024</p>
+              <h2 class="project-title">MTN Headquarters Executive Wing</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="mtn.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="11">Details</button>
               </div>
             </div>
 
             <!-- Caption 13 -->
             <div class="caption-card" data-index="12">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 13</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2017</p>
+              <h2 class="project-title">ABL Reception</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="abl-reception.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="12">Details</button>
               </div>
             </div>
 
             <!-- Caption 14 -->
             <div class="caption-card" data-index="13">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 14</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2024</p>
+              <h2 class="project-title">C25</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="c25.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="13">Details</button>
               </div>
             </div>
 
             <!-- Caption 15 -->
             <div class="caption-card" data-index="14">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 15</h2>
+              <p class="project-category"><span class="service-name">Interior Design</span> &mdash; 2024</p>
+              <h2 class="project-title">Hubtel</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="hubtel.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="14">Details</button>
               </div>
             </div>
 
             <!-- Caption 16 -->
             <div class="caption-card" data-index="15">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 16</h2>
+              <p class="project-category"><span class="service-name">Visual Effects (VFX) &amp; CGI</span> &mdash; 2013</p>
+              <h2 class="project-title">94 Laurel</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="94-laurel.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="15">Details</button>
               </div>
             </div>
 
             <!-- Caption 17 -->
             <div class="caption-card" data-index="16">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 17</h2>
+              <p class="project-category"><span class="service-name">Architecture</span> &mdash; 2016</p>
+              <h2 class="project-title">1Hive</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="1hive.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="16">Details</button>
               </div>
             </div>
 
             <!-- Caption 18 -->
             <div class="caption-card" data-index="17">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 18</h2>
+              <p class="project-category"><span class="service-name">Visual Effects (VFX) &amp; CGI</span> &mdash; 2024</p>
+              <h2 class="project-title">Campions Renderings</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="campions-renderings.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="17">Details</button>
               </div>
             </div>
 
             <!-- Caption 19 -->
             <div class="caption-card" data-index="18">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 19</h2>
+              <p class="project-category"><span class="service-name">Visual Effects (VFX) &amp; CGI</span> &mdash; 2024</p>
+              <h2 class="project-title">Villa Aggregate</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="villa-aggregate.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="18">Details</button>
               </div>
             </div>
 
             <!-- Caption 20 -->
             <div class="caption-card" data-index="19">
-              <p class="project-category">Architecture — 2024</p>
-              <h2 class="project-title">Featured Project 20</h2>
+              <p class="project-category"><span class="service-name">Visual Effects (VFX) &amp; CGI</span> &mdash; 2024</p>
+              <h2 class="project-title">Chocolate</h2>
               <div class="project-links">
-                <a href="work.html" class="project-action-link">View project &rarr;</a>
+                <a href="chocolate.html" class="project-action-link">View project &rarr;</a>
                 <button type="button" class="project-spec-trigger" data-index="19">Details</button>
               </div>
             </div>
@@ -409,26 +500,26 @@
               <div class="hero-status-row">
                 <!-- 20 Hairline Progress Indicators -->
                 <div class="pagination-bars" role="tablist" aria-label="Slide Selection">
-                  <button class="pagination-bar active" data-index="0" role="tab" aria-label="Slide 1"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="1" role="tab" aria-label="Slide 2"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="2" role="tab" aria-label="Slide 3"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="3" role="tab" aria-label="Slide 4"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="4" role="tab" aria-label="Slide 5"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="5" role="tab" aria-label="Slide 6"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="6" role="tab" aria-label="Slide 7"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="7" role="tab" aria-label="Slide 8"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="8" role="tab" aria-label="Slide 9"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="9" role="tab" aria-label="Slide 10"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="10" role="tab" aria-label="Slide 11"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="11" role="tab" aria-label="Slide 12"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="12" role="tab" aria-label="Slide 13"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="13" role="tab" aria-label="Slide 14"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="14" role="tab" aria-label="Slide 15"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="15" role="tab" aria-label="Slide 16"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="16" role="tab" aria-label="Slide 17"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="17" role="tab" aria-label="Slide 18"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="18" role="tab" aria-label="Slide 19"><span class="pagination-fill"></span></button>
-                  <button class="pagination-bar" data-index="19" role="tab" aria-label="Slide 20"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar active" data-index="0" role="tab" aria-selected="true" aria-label="Slide 1"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="1" role="tab" aria-selected="false" aria-label="Slide 2"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="2" role="tab" aria-selected="false" aria-label="Slide 3"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="3" role="tab" aria-selected="false" aria-label="Slide 4"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="4" role="tab" aria-selected="false" aria-label="Slide 5"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="5" role="tab" aria-selected="false" aria-label="Slide 6"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="6" role="tab" aria-selected="false" aria-label="Slide 7"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="7" role="tab" aria-selected="false" aria-label="Slide 8"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="8" role="tab" aria-selected="false" aria-label="Slide 9"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="9" role="tab" aria-selected="false" aria-label="Slide 10"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="10" role="tab" aria-selected="false" aria-label="Slide 11"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="11" role="tab" aria-selected="false" aria-label="Slide 12"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="12" role="tab" aria-selected="false" aria-label="Slide 13"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="13" role="tab" aria-selected="false" aria-label="Slide 14"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="14" role="tab" aria-selected="false" aria-label="Slide 15"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="15" role="tab" aria-selected="false" aria-label="Slide 16"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="16" role="tab" aria-selected="false" aria-label="Slide 17"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="17" role="tab" aria-selected="false" aria-label="Slide 18"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="18" role="tab" aria-selected="false" aria-label="Slide 19"><span class="pagination-fill"></span></button>
+                  <button class="pagination-bar" data-index="19" role="tab" aria-selected="false" aria-label="Slide 20"><span class="pagination-fill"></span></button>
                 </div>
 
                 <!-- Minimalist Video Volume Control (Inline with indicators and counter) -->

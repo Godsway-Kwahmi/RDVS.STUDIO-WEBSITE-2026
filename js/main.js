@@ -31,12 +31,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     videos: [
       {
         id: 'tower-cascades',
-        title: 'Tower Cascades Vertical Complex',
+        title: 'Tower Cascades',
         category: 'Architecture — 2025',
         service: 'Architecture',
         discipline: 'architecture',
         videoUrl: 'assets/videos/tower-cascades/tower-cascades.mp4',
-        imageUrl: 'assets/images/cascades/tower-cascades-night.jpg',
+        videoUrlDesktop: 'assets/videos/tower-cascades/tower-cascades.mp4',
+        videoMobileUrl: 'assets/videos/tower-cascades/tower-cascades-mobile.mp4',
+        imageUrl: 'assets/images/cascades/tower-cascades-night-desktop.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-night-desktop.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-night-mobile.jpg',
         projectUrl: 'tower-cascades.html',
         desc: 'A landmark high-density vertical architecture project integrating tiered garden cascades, environmental shading, and monolithic concrete expressions.',
         specs: {
@@ -50,12 +54,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'details-film',
-        title: 'D E T A I L S Architectural Film',
+        title: 'Details',
         category: 'Architecture — 2024',
         service: 'Architecture',
         discipline: 'architecture',
         videoUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
-        imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
+        videoUrlDesktop: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
+        videoMobileUrl: 'assets/videos/d-e-t-a-i-l-s/details-film-mobile.mp4',
+        imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageMobileUrl: 'assets/images/hamlet/hamlet-estate-mobile.jpg',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A visual celebration of tactile material joints, shadow reveals, stone junctions, and precision architectural craftsmanship.',
         specs: {
@@ -69,12 +77,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'funko-ridge',
-        title: 'Funko Ridge Coastal Enclave',
-        category: 'Architecture — 2025',
+        title: 'Funko Ridge Residence',
+        category: 'Architecture — 2019',
         service: 'Architecture',
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-terrace.mp4',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-1.jpg',
+        videoUrlDesktop: 'assets/videos/funko-ridge/funko-terrace.mp4',
+        videoMobileUrl: 'assets/videos/funko-ridge/funko-terrace-mobile.mp4',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-1-mobile.jpg',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -82,18 +94,22 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Topographic Masterplanning & Architectural Simulation',
           team: 'Godsway Kwahmi, RDVS Masterplanning',
           area: '45,000 sq.m',
-          year: '2025',
+          year: '2019',
           disciplines: ['Masterplanning', 'Environmental Architecture', '3D Simulation']
         }
       },
       {
         id: '5aap-progress',
-        title: '5AAP Commercial Complex',
+        title: '5AAP',
         category: 'Architecture — 2024',
         service: 'Architecture',
         discipline: 'architecture',
-        videoUrl: 'assets/videos/5aap/5aap-progress.mp4',
-        imageUrl: 'assets/images/5aap/5aap-1.jpg',
+        videoUrl: 'assets/videos/5aap/5aap-progress-desktop.mp4',
+        videoUrlDesktop: 'assets/videos/5aap/5aap-progress-desktop.mp4',
+        videoMobileUrl: 'assets/videos/5aap/5aap-progress-mobile.mp4',
+        imageUrl: 'assets/images/5aap/5aap-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/5aap/5aap-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/5aap/5aap-1-mobile.jpg',
         projectUrl: '5aap.html',
         desc: 'Progressive corporate and commercial campus balancing monumental civic presence with human-scale pedestrian plazas and natural daylight voids.',
         specs: {
@@ -108,30 +124,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
-        id: 'hamlet-estate',
-        title: 'Hamlet Contemporary Residence',
-        category: 'Architecture — 2024',
-        service: 'Architecture',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
-        projectUrl: 'hamlet.html',
-        desc: 'Cantilevered geometric volumes with integrated nightscape illumination, balancing private sanctuaries with panoramic open-plan entertainment zones.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Concept & Photorealistic 3D VFX Visualization',
-          team: 'Godsway Kwahmi, RDVS Architecture',
-          area: '820 sq.m',
-          year: '2024',
-          disciplines: ['Architectural Design', '3D Photoreal Visualization', 'Landscape Integration']
-        }
-      },
-      {
         id: 'dyv-dawn',
         title: 'DYV Mixed-Use Development',
         category: 'Architecture — 2025',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
+        imageUrl: 'assets/images/dyv/dyv-street-wide.jpg',
+        imageUrlDesktop: 'assets/images/dyv/dyv-street-wide.jpg',
+        imageMobileUrl: 'assets/images/dyv/dyv-dawn-mobile.jpg',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -149,7 +149,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architecture — 2025',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/barham/barham-residence.jpg',
+        imageUrl: 'assets/images/barham/barham-residence-desktop.jpg',
+        imageUrlDesktop: 'assets/images/barham/barham-residence-desktop.jpg',
+        imageMobileUrl: 'assets/images/barham/barham-residence-mobile.jpg',
         projectUrl: 'barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
         specs: {
@@ -162,21 +164,43 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'frontier-tower',
-        title: 'Frontier Commercial Complex',
-        category: 'Architecture — 2025',
+        id: 'frontier-filling-station',
+        title: 'Frontier Filling Station',
+        category: 'Architecture — 2016',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/frontier/frontier-tower.jpg',
-        projectUrl: 'frontier.html',
-        desc: 'A striking vertical facade composition optimizing solar shading and environmental efficiency for high-density metropolitan commerce.',
+        imageUrl: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
+        imageUrlDesktop: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
+        imageMobileUrl: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
+        projectUrl: 'frontier-filling-station.html',
+        desc: 'A 2016 multidisciplinary commission spanning architecture, industrial design, and 3D visualization for the Frontier Filling Station.',
         specs: {
-          client: 'Frontier Properties',
-          scope: 'Commercial Architecture & Photoreal Simulation',
-          team: 'Godsway Kwahmi, Lead Architectural Team',
-          area: '16,500 sq.m',
-          year: '2025',
-          disciplines: ['Architectural Design', 'Structural Coordination', '3D VFX Simulation']
+          client: 'Private Client',
+          scope: 'Architecture, Industrial Design & 3D Visualization',
+          team: 'RDVS Team',
+          area: 'Roadside Fueling Station',
+          year: '2016',
+          disciplines: ['Architecture', 'Industrial Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'poconos-bar-grill',
+        title: 'Poconos Bar + Grill',
+        category: 'Architecture — 2017',
+        service: 'Architecture',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
+        imageUrlDesktop: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
+        imageMobileUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
+        projectUrl: 'poconos-bar-grill.html',
+        desc: 'A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architecture, Landscape Design, Interior Design & 3D Visualization',
+          team: 'RDVS Team',
+          area: 'Bar + Grill Venue',
+          year: '2017',
+          disciplines: ['Architecture', 'Landscape Design', 'Interior Design', '3D Visualization']
         }
       },
       {
@@ -185,7 +209,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architecture — 2023',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/purc/purc-facade.jpg',
+        imageUrl: 'assets/images/purc/purc-facade-desktop.jpg',
+        imageUrlDesktop: 'assets/images/purc/purc-facade-desktop.jpg',
+        imageMobileUrl: 'assets/images/purc/purc-facade-mobile.jpg',
         projectUrl: 'purc.html',
         desc: 'Monolithic civic architecture combining deep louvered facades, robust masonry massing, and monumental public entry porticos.',
         specs: {
@@ -199,11 +225,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'airport-city',
-        title: 'Airport City Commercial Hub',
+        title: 'Airport City',
         category: 'Architecture — 2024',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/airport-city/airport-city-1.jpg',
+        imageUrl: 'assets/images/airport-city/airport-city-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/airport-city/airport-city-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/airport-city/airport-city-1-mobile.jpg',
         projectUrl: 'airport-city.html',
         desc: 'A dynamic masterplanned business gateway combining high-performance sustainable glazing with expansive communal arrival piazzas.',
         specs: {
@@ -216,30 +244,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'advantage-place',
-        title: 'Advantage Place Commercial Center',
-        category: 'Architecture — 2024',
-        service: 'Architecture',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/advantage-place/advantage-place-1.jpg',
-        projectUrl: 'advantage-place.html',
-        desc: 'High-density commercial office architecture engineered for climate resilience with continuous solar-shading louver screens.',
-        specs: {
-          client: 'Advantage Properties',
-          scope: 'Commercial Facade & Architectural Planning',
-          team: 'Godsway Kwahmi, Commercial Design Team',
-          area: '12,400 sq.m',
-          year: '2024',
-          disciplines: ['Commercial Architecture', 'Facade Engineering']
-        }
-      },
-      {
         id: 'adentan-townhouses',
-        title: 'Adentan Contemporary Townhouses',
+        title: 'Adentan Townhouses',
         category: 'Architecture — 2024',
         service: 'Architecture',
         discipline: 'architecture',
-        imageUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1.jpg',
+        imageUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/adentan-townhouses/adentan-townhouses-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1-mobile.jpg',
         projectUrl: 'adentan-townhouses.html',
         desc: 'Modular residential community balancing privacy with shared landscape courtyards and climate-responsive natural ventilation.',
         specs: {
@@ -250,6 +262,26 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2024',
           disciplines: ['Residential Architecture', 'Landscape Integration']
         }
+      },
+      {
+        id: '1hive',
+        title: '1Hive',
+        category: 'Architecture — 2016',
+        service: 'Architecture',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/1hive/1hive-1.jpg',
+        imageUrlDesktop: 'assets/images/1hive/1hive-1.jpg',
+        imageMobileUrl: 'assets/images/1hive/1hive-1.jpg',
+        projectUrl: '1hive.html',
+        desc: 'A 2016 multidisciplinary commission spanning architecture, interior design, and 3D visualization for 1Hive.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architecture, Interior Design & 3D Visualization',
+          team: 'RDVS Team',
+          area: 'Private Residence',
+          year: '2016',
+          disciplines: ['Architecture', 'Interior Design', '3D Visualization']
+        }
       }
     ]
   },
@@ -258,32 +290,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     name: 'Interior Design',
     videos: [
       {
-        id: '1957-interior-video',
-        title: '1957 Monochrome Residence',
-        category: 'Interior Design — 2024',
-        service: 'Interior Design',
-        discipline: 'interiors',
-        videoUrl: 'assets/videos/1957/1957-lounge.mp4',
-        imageUrl: 'assets/images/1957/1957-1.jpg',
-        projectUrl: '1957.html',
-        desc: 'A masterclass in quiet luxury, featuring continuous off-white microcement surfaces, recessed linear reveal details, and low-profile European furniture.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Minimalist Furniture Styling',
-          team: 'Godsway Kwahmi, RDVS Interior Atelier',
-          area: '340 sq.m',
-          year: '2024',
-          disciplines: ['Interior Design', 'Minimalist Architecture', 'Joinery Fabrication']
-        }
-      },
-      {
         id: 'csm-interiors-film',
         title: 'CSM Executive Suites',
         category: 'Interior Design — 2024',
         service: 'Interior Design',
         discipline: 'interiors',
         videoUrl: 'assets/videos/csm-interiors/csm-interiors.mp4',
-        imageUrl: 'assets/images/margin/margin-bank.jpg',
+        videoUrlDesktop: 'assets/videos/csm-interiors/csm-interiors.mp4',
+        videoMobileUrl: 'assets/videos/csm-interiors/csm-interiors-mobile.mp4',
+        imageUrl: 'assets/images/margin/margin-bank-desktop.jpg',
+        imageUrlDesktop: 'assets/images/margin/margin-bank-desktop.jpg',
+        imageMobileUrl: 'assets/images/margin/margin-bank-mobile.jpg',
         projectUrl: 'work.html',
         desc: 'An immersive cinematic walkthrough detailing warm minimalist executive environments, concealed cove lighting, and acoustic millwork.',
         specs: {
@@ -294,16 +311,81 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2024',
           disciplines: ['Interior Design', 'Workplace Strategy', 'CGI Visualization']
         }
+      },
+      {
+        id: 'advantage-place',
+        title: 'Advantage Place',
+        category: 'Interior Design — 2015',
+        service: 'Interior Design',
+        discipline: 'interiors',
+        videoUrl: 'assets/videos/advantage-place/advantage-place-anim.mp4',
+        videoUrlDesktop: 'assets/videos/advantage-place/advantage-place-anim.mp4',
+        videoMobileUrl: 'assets/videos/advantage-place/advantage-place-anim-mobile.mp4',
+        imageUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
+        imageUrlDesktop: 'assets/images/advantage-place/advantage-place-01.jpg',
+        imageMobileUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
+        projectUrl: 'advantage-place.html',
+        desc: 'A 2015 interior design and 3D visualization presentation of the Advantage Place commercial development in Accra — lobby, workplace floors, and amenities rendered in photoreal detail alongside a full 3D animation.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          area: 'Commercial Development',
+          year: '2015',
+          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
+        }
       }
     ],
     images: [
       {
+        id: 'hamlet-estate',
+        title: 'The Hamlet',
+        category: 'Interior Design — 2018',
+        service: 'Interior Design',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageMobileUrl: 'assets/images/hamlet/hamlet-estate-mobile.jpg',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          area: '20 Residences',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
+        }
+      },
+      {
+        id: '1957-apartments-retail',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design — 2019',
+        service: 'Interior Design',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-12-desktop.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-12-desktop.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-12-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          architecture: 'Mustard Architecture',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
         id: 'afg-hq',
-        title: 'AFG Executive Headquarters',
+        title: 'AFG Headquarters',
         category: 'Interior Design — 2024',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/afg/afg-headquarters.jpg',
+        imageUrl: 'assets/images/afg/afg-headquarters-desktop.jpg',
+        imageUrlDesktop: 'assets/images/afg/afg-headquarters-desktop.jpg',
+        imageMobileUrl: 'assets/images/afg/afg-headquarters-mobile.jpg',
         projectUrl: 'afg.html',
         desc: 'A sculptured corporate reception and executive suite featuring bespoke faceted acoustics, continuous glass partitioning, and turnkey timber fabrication.',
         specs: {
@@ -317,11 +399,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'hubtel-executive',
-        title: 'Hubtel Executive Boardroom Wing',
+        title: 'Hubtel',
         category: 'Interior Design — 2023',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/hubtel/hubtel-executive.jpg',
+        imageUrl: 'assets/images/hubtel/hubtel-executive-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hubtel/hubtel-executive-desktop.jpg',
+        imageMobileUrl: 'assets/images/hubtel/hubtel-executive-mobile.jpg',
         projectUrl: 'hubtel.html',
         desc: 'An immersive technological executive sanctum pairing seamless acoustic wall paneling with custom-milled monolithic conference furnishings.',
         specs: {
@@ -335,20 +419,42 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'la-beach-towers',
-        title: 'La Beach Towers Penthouse',
-        category: 'Interior Design — 2024',
+        title: 'La Beach Towers',
+        category: 'Interior Design — 2013',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/labeach/la-beach-towers.jpg',
-        projectUrl: 'labeach.html',
-        desc: 'Panoramic coastal luxury interior framing expansive oceanic vistas through minimalist double-height glazing and bespoke low-slung joinery.',
+        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
+        imageUrlDesktop: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
+        imageMobileUrl: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
+        projectUrl: 'la-beach-towers.html',
+        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
-          client: 'Private Residence',
-          scope: 'Luxury Interior Design & High-End 3D Visualization',
-          team: 'Godsway Kwahmi, Residential Luxury Unit',
-          area: '480 sq.m',
-          year: '2024',
-          disciplines: ['Interior Design', 'Lighting Design', 'Custom Furniture Specification']
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          area: 'Seaside Development',
+          year: '2013',
+          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
+        }
+      },
+      {
+        id: 'west-cantonments-residence',
+        title: 'West Cantonments Residence',
+        category: 'Interior Design — 2018',
+        service: 'Interior Design',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cantonments/west-cantonments-1.jpg',
+        imageUrlDesktop: 'assets/images/cantonments/west-cantonments-1.jpg',
+        imageMobileUrl: 'assets/images/cantonments/west-cantonments-1.jpg',
+        projectUrl: 'west-cantonments-igl-presentation.html',
+        desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
+        specs: {
+          client: 'Infinite Group Ltd',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          area: 'Amenity Interiors',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
         }
       },
       {
@@ -357,7 +463,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design — 2024',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/mtn/mtn-corridor.jpg',
+        imageUrl: 'assets/images/mtn/mtn-corridor-desktop.jpg',
+        imageUrlDesktop: 'assets/images/mtn/mtn-corridor-desktop.jpg',
+        imageMobileUrl: 'assets/images/mtn/mtn-corridor-mobile.jpg',
         projectUrl: 'mtn.html',
         desc: 'Continuous rhythm of warm timber fins and diffused recessed light guides circulation through executive conference suites.',
         specs: {
@@ -371,29 +479,33 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'abl-reception',
-        title: 'ABL Corporate Reception',
-        category: 'Interior Design — 2023',
+        title: 'ABL Reception',
+        category: 'Interior Design — 2017',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/abl/abl-reception.jpg',
+        imageUrl: 'assets/images/abl-reception/abl-reception-desktop.jpg',
+        imageUrlDesktop: 'assets/images/abl-reception/abl-reception-desktop.jpg',
+        imageMobileUrl: 'assets/images/abl-reception/abl-reception-mobile.jpg',
         projectUrl: 'abl-reception.html',
         desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
         specs: {
-          client: 'Accra Breweries Limited',
-          scope: 'Interior Design & Bespoke Reception Millwork',
-          team: 'Godsway Kwahmi, RDVS Commercial Interiors',
+          client: 'ABL (Accra Brewery Limited)',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Afua Boateng',
           area: '380 sq.m',
-          year: '2023',
-          disciplines: ['Interior Design', 'Joinery Fabrication', 'Lighting Design']
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
         }
       },
       {
         id: 'c25-interior',
-        title: 'C25 Private Residence',
+        title: 'C25',
         category: 'Interior Design — 2024',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/c25/c25-1.jpg',
+        imageUrl: 'assets/images/c25/c25-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/c25/c25-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/c25/c25-1-mobile.jpg',
         projectUrl: 'c25.html',
         desc: 'Warm neutral palette interior utilizing micro-cement, acoustic fluting, and tailored concealed storage joinery.',
         specs: {
@@ -407,11 +519,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'margin-suite',
-        title: 'Margin Financial Suite',
+        title: 'Hubtel',
         category: 'Interior Design — 2024',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/margin/margin-bank.jpg',
+        imageUrl: 'assets/images/margin/margin-bank-desktop.jpg',
+        imageUrlDesktop: 'assets/images/margin/margin-bank-desktop.jpg',
+        imageMobileUrl: 'assets/images/margin/margin-bank-mobile.jpg',
         projectUrl: 'hubtel.html',
         desc: 'Precision banking suite designed with acoustic baffle ceilings, private consultation pods, and brushed architectural bronze detailing.',
         specs: {
@@ -435,7 +549,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & CGI — 2024',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/1957/1957-interior.jpg',
+        imageUrl: 'assets/images/1957/1957-interior-desktop.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-interior-desktop.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-interior-mobile.jpg',
         videoUrl: 'assets/videos/1981/1981-film.mp4',
         projectUrl: 'work.html',
         desc: 'Minimalist spatial composition balancing monumental monolithic massing with continuous floor-to-ceiling panoramic glass openings.',
@@ -450,11 +566,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'vr-showcase-video',
-        title: 'VR Showcase Architectural Simulation',
+        title: 'VR Showcase',
         category: 'Visual Effects (VFX) & CGI — 2024',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
         imageUrl: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
+        imageUrlDesktop: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
+        imageMobileUrl: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
         videoUrl: 'assets/videos/vr-showcase/vr-showcase.mp4',
         projectUrl: 'vr-showcase.html',
         is360: true,
@@ -472,47 +590,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     images: [
       {
         id: '94-laurel-cgi',
-        title: '94 Laurel CGI Visualization',
+        title: '94 Laurel',
         category: 'Visual Effects (VFX) & CGI — 2013',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/94-laurel/94-laurel-1.jpg',
+        imageUrl: 'assets/images/94-laurel/94-laurel-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/94-laurel/94-laurel-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/94-laurel/94-laurel-1-mobile.jpg',
         projectUrl: '94-laurel.html',
-        desc: 'High-fidelity photorealistic CGI rendering for a Canadian residential estate, executing high-precision 3D modeling, texturing, material shading, ray-traced lighting, and post-processing.',
+        desc: 'High-fidelity photorealistic CGI rendering for a residential estate in Laurel, Canada, executing high-precision 3D modeling, texturing, material shading, ray-traced lighting, and post-processing.',
         specs: {
           client: 'Brent Hughes',
           scope: '3D Modeling, Texturing, Shading, Rendering & Post Processing',
-          team: 'Godsway Kwahmi, RDVS CGI Team',
-          area: 'Canada',
+          team: 'Modelling: Jude Abbey, James Dapaah, Jude Nyoagbe | Texturing + Rendering + Post Processing: Jude Nyoagbe',
+          location: 'Laurel, Canada',
+          area: 'Laurel, Canada',
           year: '2013',
           disciplines: ['Visual Effects (VFX) & CGI', '3D Photoreal Rendering']
         }
       },
       {
-        id: 'onehive-center',
-        title: 'OneHive Innovation Center',
-        category: 'Visual Effects (VFX) & CGI — 2025',
-        service: 'Visual Effects (VFX) & CGI',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/onehive/onehive.jpg',
-        projectUrl: 'onehive.html',
-        desc: 'A high-concept technology incubator pairing organic fluid contours with integrated digital display matrices and acoustic ceiling baffles.',
-        specs: {
-          client: 'OneHive Venture Studio',
-          scope: 'Computational Concept Modeling & Cinematic 3D VFX',
-          team: 'Godsway Kwahmi, RDVS VFX Studio',
-          area: '1,800 sq.m',
-          year: '2025',
-          disciplines: ['Parametric Modeling', 'Lighting Simulation', 'Creative Direction']
-        }
-      },
-      {
         id: 'campions-estate',
-        title: 'Campions Estate CGI Renderings',
+        title: 'Campions Renderings',
         category: 'Visual Effects (VFX) & CGI — 2024',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/campions-renderings/campions-renderings-1.jpg',
+        imageUrl: 'assets/images/campions-renderings/campions-renderings-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-1-mobile.jpg',
         projectUrl: 'campions-renderings.html',
         desc: 'Photorealistic exterior and interior visual effects study capturing delicate twilight scattering, stone textures, and water reflections.',
         specs: {
@@ -526,11 +631,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'villa-aggregate-cgi',
-        title: 'Villa Aggregate CGI Simulation',
+        title: 'Villa Aggregate',
         category: 'Visual Effects (VFX) & CGI — 2024',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/aggregate/villa-aggregate.jpg',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-desktop.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-desktop.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-mobile.jpg',
         projectUrl: 'villa-aggregate.html',
         desc: 'Complex monolithic concrete and aggregate stone shader simulations exploring tactile micro-reliefs under directional sunlight.',
         specs: {
@@ -544,11 +651,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'chocolate-pavilion',
-        title: 'Chocolate Pavilion CGI Simulation',
+        title: 'Chocolate',
         category: 'Visual Effects (VFX) & CGI — 2024',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/chocolate/chocolate-1.jpg',
+        imageUrl: 'assets/images/chocolate/chocolate-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/chocolate/chocolate-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/chocolate/chocolate-1-mobile.jpg',
         projectUrl: 'chocolate.html',
         desc: 'Experimental pavilion visualization capturing high-gloss organic envelopes, caustic light dispersion, and spatial volumetric forms.',
         specs: {
@@ -559,6 +668,46 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2024',
           disciplines: ['Visual Effects (VFX) & CGI', '3D Visualization']
         }
+      },
+      {
+        id: 'stanchart-hq',
+        title: 'Stanchart HQ',
+        category: 'Visual Effects (VFX) & CGI — 2010',
+        service: 'Visual Effects (VFX) & CGI',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
+        imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
+        imageMobileUrl: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
+        projectUrl: 'stanchart-hq.html',
+        desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
+        specs: {
+          client: 'Private Client',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          area: 'Corporate HQ Tower',
+          year: '2010',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'harbour-pointe',
+        title: 'Harbour Pointe',
+        category: 'Visual Effects (VFX) & CGI — 2015',
+        service: 'Visual Effects (VFX) & CGI',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
+        imageUrlDesktop: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
+        imageMobileUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
+        projectUrl: 'harbour-pointe.html',
+        desc: 'Photorealistic 3D visualization for Harbour Pointe, a mixed-use waterfront development completed in 2015.',
+        specs: {
+          client: 'Private Client',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          area: 'Waterfront Development',
+          year: '2015',
+          disciplines: ['3D Visualization']
+        }
       }
     ]
   },
@@ -568,11 +717,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     videos: [
       {
         id: 'ceeander-motion',
-        title: 'Ceeander Entertainment Broadcast Ident',
+        title: 'Ceeander',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/ceeander/ceeander-1.jpg',
+        imageUrl: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/ceeander/ceeander-1-mobile.jpg',
         videoUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
         projectUrl: 'ceeander.html',
         desc: 'Cinematic 3D identity animation blending tactile material textures, kinetic typography, and atmospheric lighting.',
@@ -587,37 +738,41 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'trumpet-africa-motion',
-        title: 'Trumpet Africa Broadcast Ident',
-        category: 'Motion Design — 2024',
+        title: 'Trumpet Africa Productions Ident',
+        category: 'Motion Design — 2014',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
+        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
         videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
         projectUrl: 'trumpet-africa-ident.html',
-        desc: 'Dynamic broadcast identity featuring sculptured fluid geometry, particle physics simulation, and monumental form.',
+        desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
-          client: 'Trumpet Africa Network',
-          scope: 'Broadcast Design & Cinematic Animation',
-          team: 'Godsway Kwahmi, RDVS Broadcast Motion',
-          area: 'Network Ident',
-          year: '2024',
+          client: 'Trumpet Africa Productions',
+          scope: 'Concept Development, Storyboarding, Illustrations, Motion Design & 3D Animation',
+          team: 'Concept: Jude Nyoagbe + Randy Biney, Animation: Randy Biney',
+          area: 'Broadcast Ident',
+          year: '2014',
           disciplines: ['Motion Design', '3D Animation']
         }
       },
       {
         id: 'hfc-tvc-motion',
-        title: 'HFC Bank Commercial TVC',
-        category: 'Motion Design — 2024',
+        title: 'HFC TVC',
+        category: 'Visual Effects (VFX) & CGI — 2016',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1-mobile.jpg',
         videoUrl: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
         projectUrl: 'hfc-tvc.html',
         desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
         specs: {
           client: 'HFC Bank',
           scope: 'Broadcast Commercial & Motion Direction',
-          team: 'Godsway Kwahmi, RDVS Motion Studio',
+          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
           area: 'Commercial Campaign',
           year: '2024',
           disciplines: ['Motion Design', 'Broadcast TVC']
@@ -625,11 +780,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'moty-intro-motion',
-        title: 'MOTY Broadcast Titles',
+        title: 'MOTY',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/ceeander/ceeander-1.jpg',
+        imageUrl: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/ceeander/ceeander-1-mobile.jpg',
         videoUrl: 'assets/videos/moty/moty-intro.mp4',
         projectUrl: 'moty.html',
         desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
@@ -644,11 +801,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'viasat1-titles-motion',
-        title: 'Viasat1 Breakfast Show Opening Titles',
+        title: 'Viasat1 Breakfast Show',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
+        imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+        imageMobileUrl: 'assets/images/hamlet/hamlet-estate-mobile.jpg',
         videoUrl: 'assets/videos/viasat1-breakfast-show/viasat1-titles.mp4',
         projectUrl: 'viasat1-breakfast-show.html',
         desc: 'Vibrant morning broadcast identity package featuring 3D graphic ribbons, geometric layout transitions, and dynamic typography.',
@@ -665,11 +824,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     images: [
       {
         id: 'emerge-ident',
-        title: 'Emerge Brand Identity Motion Package',
+        title: 'Emerge Ident',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-1.png',
+        imageUrl: 'assets/images/emerge-ident/emerge-ident-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-1-mobile.jpg',
         projectUrl: 'emerge-ident.html',
         desc: 'A comprehensive broadcast and digital motion design system exploring clean geometry and dynamic typographic pacing.',
         specs: {
@@ -683,11 +844,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'elo-tv',
-        title: 'Elo TV Broadcast Package',
+        title: 'Elo Tv',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/elo-tv/elo-tv-1.jpg',
+        imageUrl: 'assets/images/elo-tv/elo-tv-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-1-mobile.jpg',
         projectUrl: 'elo-tv.html',
         desc: 'On-air broadcast packaging featuring lower thirds, segment stingers, program bugs, and motion typography guidelines.',
         specs: {
@@ -701,11 +864,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'hot-gossip',
-        title: 'Hot Gossip Broadcast Branding',
+        title: 'Hot Gossip',
         category: 'Motion Design — 2024',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-1-mobile.jpg',
         projectUrl: 'hot-gossip.html',
         desc: 'Fast-paced, colorful entertainment broadcast titles and transition cards designed for prime-time programming.',
         specs: {
@@ -719,17 +884,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'hfc-tvc-keyframes',
-        title: 'HFC TVC Visual Keyframe Design',
-        category: 'Motion Design — 2024',
+        title: 'HFC TVC',
+        category: 'Visual Effects (VFX) & CGI — 2016',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1-mobile.jpg',
         projectUrl: 'hfc-tvc.html',
         desc: 'High-contrast stylized motion keyframes establishing lighting mood, particle density, and corporate typographic hierarchy.',
         specs: {
           client: 'HFC Bank',
           scope: 'Broadcast Visual Keyframes & Motion Graphics',
-          team: 'Godsway Kwahmi, RDVS Motion Studio',
+          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
           area: 'Commercial Campaign',
           year: '2024',
           disciplines: ['Motion Design', 'Keyframe Design']
@@ -752,12 +919,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Try to load dynamic Sanity content if configured and merge
   if (window.RDVSSanity && window.RDVSSanity.isConfigured()) {
     try {
-      const sanityHero = await window.RDVSSanity.getHeroProjects();
+      // Race against a short timeout so a slow/unreachable Sanity API can never
+      // stall slide population and leave static markup on screen
+      const sanityHero = await Promise.race([
+        window.RDVSSanity.getHeroProjects(),
+        new Promise(resolve => setTimeout(() => resolve(null), 2500))
+      ]);
       if (sanityHero && sanityHero.length > 0) {
         sanityHero.forEach((p, idx) => {
           const disc = (p.discipline || '').toLowerCase();
           const targetKey = disc.includes('interior') ? 'interiors'
-            : disc.includes('vfx') || disc.includes('cgi') ? 'vfx'
+            : disc.includes('vfx') || disc.includes('cgi') || disc.includes('visualization') || disc.includes('animation') || disc.includes('arch viz') ? 'vfx'
             : disc.includes('motion') ? 'motion'
             : 'architecture';
 
@@ -794,19 +966,109 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Generate 20 slides: Equal number (5) from each of the 4 service types
-  // Mix of videos and images (2 videos + 3 images per service discipline = 8 videos and 12 images total)
+  // ─── News slides: the first 3 items from the news section always lead the slideshow ───
+  // Fallback snapshot mirrors news.html (applies on file:// where fetch is blocked).
+  const staticNewsSlides = [
+    {
+      id: 'news-website-update',
+      title: 'We have updated our website',
+      category: 'Studio — 2026',
+      service: 'Studio',
+      discipline: 'news',
+      imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+      imageMobileUrl: 'assets/images/hamlet/hamlet-estate-mobile.jpg',
+      projectUrl: 'we-have-updated-our-website.html',
+      desc: 'RDVS Studios launches an updated digital platform documenting our multidisciplinary architecture, interior design, 3D visualization, visual effects, and turnkey build practices.',
+      specs: {
+        client: 'RDVS Studios',
+        scope: 'News / Editorial',
+        team: 'RDVS Design Team',
+        area: '—',
+        year: '2026',
+        disciplines: ['Studio News']
+      }
+    }
+  ];
+
+  /**
+   * Best-effort read of the first items from the news section of news.html.
+   * Falls back to the static snapshot when fetch is unavailable (file://).
+   */
+  async function fetchNewsSlideEntries(limit = 3) {
+    try {
+      const res = await fetch('news.html', { cache: 'no-cache' });
+      if (!res.ok) return staticNewsSlides;
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const cards = doc.querySelectorAll('section.minimal-grid .grid-card');
+      const entries = [];
+      for (const card of cards) {
+        if (entries.length >= limit) break;
+        const link = card.querySelector('a[href]');
+        const titleEl = card.querySelector('.card-title');
+        if (!link || !titleEl) continue;
+
+        const catEl = card.querySelector('.project-category');
+        const descEl = card.querySelector('.project-desc');
+        const img = card.querySelector('img');
+        const source = card.querySelector('source[srcset]');
+
+        const catText = (catEl ? catEl.textContent : '').trim(); // e.g. "Studio / 2026"
+        const parts = catText.split('/').map(s => s.trim());
+        const servicePart = parts[0] || 'Studio';
+        const year = (catText.match(/\d{4}/) || [])[0] || '2026';
+
+        entries.push({
+          id: `news-${entries.length}-${(link.getAttribute('href') || '').replace(/[^a-z0-9]+/gi, '-')}`,
+          title: titleEl.textContent.trim(),
+          category: `${servicePart} — ${year}`,
+          service: servicePart,
+          discipline: 'news',
+          imageUrl: img ? (img.getAttribute('src') || '') : '',
+          imageMobileUrl: source ? source.getAttribute('srcset') : (img ? img.getAttribute('src') : ''),
+          projectUrl: link.getAttribute('href'),
+          desc: descEl ? descEl.textContent.trim() : '',
+          specs: {
+            client: 'RDVS Studios',
+            scope: 'News / Editorial',
+            team: 'RDVS Design Team',
+            area: '—',
+            year: year,
+            disciplines: ['Studio News']
+          }
+        });
+      }
+      return entries.length > 0 ? entries : staticNewsSlides;
+    } catch (e) {
+      // file:// protocol blocks fetch — use the static snapshot
+      return staticNewsSlides;
+    }
+  }
+
+  const newsSlides = (await fetchNewsSlideEntries(3)).slice(0, 3);
+
+  // Generate the remaining slides: equal distribution across the 4 service types.
+  // News slides always occupy the front, so the budget adapts to their count.
   const serviceKeys = ['architecture', 'interiors', 'vfx', 'motion'];
-  const perServiceCount = 5;
+  const TOTAL_SLIDE_BUDGET = 20;
+  const projectSlotBudget = Math.max(TOTAL_SLIDE_BUDGET - newsSlides.length, 0);
+  const basePerService = Math.floor(projectSlotBudget / serviceKeys.length);
+  let remainder = projectSlotBudget - basePerService * serviceKeys.length;
+  const perServiceCounts = {};
   const selectedByService = {};
 
   serviceKeys.forEach(key => {
+    // Distribute any remainder across the first services
+    perServiceCounts[key] = basePerService + (remainder > 0 ? 1 : 0);
+    if (remainder > 0) remainder--;
+
     const pool = servicePools[key];
     const shuffledVideos = shuffleArray(pool.videos || []);
     const shuffledImages = shuffleArray(pool.images || []);
 
-    const videoCount = Math.min(2, shuffledVideos.length);
-    const imageCount = perServiceCount - videoCount;
+    // Mix of videos and images (max 2 videos per discipline)
+    const videoCount = Math.min(2, shuffledVideos.length, perServiceCounts[key]);
+    const imageCount = Math.max(perServiceCounts[key] - videoCount, 0);
 
     const chosenVideos = shuffledVideos.slice(0, videoCount);
     const chosenImages = shuffledImages.slice(0, imageCount);
@@ -815,13 +1077,60 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // Interleave round-robin across services so consecutive slides alternate discipline
-  const projects = [];
-  for (let r = 0; r < perServiceCount; r++) {
+  const interleavedProjects = [];
+  const maxPerService = Math.max(...serviceKeys.map(k => perServiceCounts[k]), 0);
+  for (let r = 0; r < maxPerService; r++) {
     serviceKeys.forEach(k => {
       if (selectedByService[k] && selectedByService[k][r]) {
-        projects.push(selectedByService[k][r]);
+        interleavedProjects.push(selectedByService[k][r]);
       }
     });
+  }
+
+  // Top-up from any pool if the selection underfilled (never exceed the total budget)
+  if (newsSlides.length + interleavedProjects.length < TOTAL_SLIDE_BUDGET) {
+    const used = new Set([...newsSlides, ...interleavedProjects].map(p => p.id));
+    for (const key of serviceKeys) {
+      const pool = [...(servicePools[key].videos || []), ...(servicePools[key].images || [])];
+      for (const entry of shuffleArray(pool)) {
+        if (newsSlides.length + interleavedProjects.length >= TOTAL_SLIDE_BUDGET) break;
+        if (used.has(entry.id)) continue;
+        used.add(entry.id);
+        interleavedProjects.push(entry);
+      }
+      if (newsSlides.length + interleavedProjects.length >= TOTAL_SLIDE_BUDGET) break;
+    }
+  }
+
+  // News items always run first on the slideshow
+  const projects = [...newsSlides, ...interleavedProjects];
+
+  // Check URL query or hash call for specific project (e.g. ?project=1957 or #1957)
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedProject = urlParams.get('project') || urlParams.get('slide') || window.location.hash.replace('#', '');
+    if (requestedProject) {
+      const norm = requestedProject.toLowerCase().trim();
+      let matchedProj = null;
+      for (const key of serviceKeys) {
+        const allInPool = [...(servicePools[key].videos || []), ...(servicePools[key].images || [])];
+        matchedProj = allInPool.find(p => 
+          (p.id && p.id.toLowerCase().includes(norm)) || 
+          (p.title && p.title.toLowerCase().includes(norm)) ||
+          (p.projectUrl && p.projectUrl.toLowerCase().includes(norm))
+        );
+        if (matchedProj) break;
+      }
+      if (matchedProj) {
+        const existingIdx = projects.findIndex(p => p.id === matchedProj.id || p.title === matchedProj.title);
+        if (existingIdx > -1) {
+          projects.splice(existingIdx, 1);
+        }
+        projects.unshift(matchedProj);
+      }
+    }
+  } catch (e) {
+    console.warn('[RDVS Slideshow] URL project selection error:', e);
   }
 
   // DOM Elements
@@ -918,13 +1227,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Dynamically populate randomized slides into the DOM
   function populateRandomizedSlides() {
+    const isMobileViewport = window.innerWidth <= 768 || window.matchMedia('(max-width: 768px)').matches;
+
     projects.forEach((proj, idx) => {
-      // 1. Update photographic or cinematic video slide
+      // 1. Update photographic or cinematic video slide (dual mobile portrait & desktop widescreen)
       if (slides[idx]) {
         slides[idx].setAttribute('aria-label', proj.title);
         const mediaContainer = slides[idx].querySelector('.slide-media');
         if (mediaContainer) {
-          if (proj.videoUrl) {
+          // Force aerial header for 1957 Apartments and Retail anytime there is a call for it
+          const is1957 = (proj.id && (proj.id.includes('1957') || proj.id === '1957-apartments-retail')) || 
+                         (proj.title && proj.title.includes('1957')) ||
+                         (proj.projectUrl && proj.projectUrl.includes('1957'));
+
+          if (is1957) {
+            const deskImg = 'assets/images/1957/1957-12-desktop.jpg';
+            const mobImg = 'assets/images/1957/1957-12-mobile.jpg';
+
+            mediaContainer.innerHTML = `
+              <picture class="slide-picture">
+                <source media="(max-width: 768px)" srcset="${mobImg}">
+                <img src="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+              </picture>
+            `;
+          } else if (proj.videoUrl) {
             if ((proj.is360 || proj.videoUrl.includes('vr-showcase') || proj.videoUrl.includes('360')) && window.VR360) {
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
@@ -958,16 +1284,36 @@ document.addEventListener('DOMContentLoaded', async () => {
                 showDragHint: true
               });
             } else {
-              mediaContainer.innerHTML = `<video class="slide-video" src="${proj.videoUrl}" poster="${proj.imageUrl || ''}" muted playsinline preload="auto"></video>`;
+              const deskVid = proj.videoUrlDesktop || proj.videoUrl;
+              const mobVid = proj.videoMobileUrl || proj.videoUrl;
+              const deskPoster = proj.imageUrlDesktop || proj.imageUrl || '';
+              const mobPoster = proj.imageMobileUrl || proj.imageUrl || '';
+              const activeVid = isMobileViewport && mobVid ? mobVid : deskVid;
+              const activePoster = isMobileViewport && mobPoster ? mobPoster : deskPoster;
+
+              mediaContainer.innerHTML = `
+                <video class="slide-video" src="${activeVid}" poster="${activePoster}" muted playsinline preload="auto">
+                  <source media="(max-width: 768px)" src="${mobVid}" type="video/mp4">
+                  <source src="${deskVid}" type="video/mp4">
+                </video>
+              `;
             }
 
           } else {
-            mediaContainer.innerHTML = `<img src="${proj.imageUrl}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>`;
+            const deskImg = proj.imageUrlDesktop || proj.imageUrl;
+            const mobImg = proj.imageMobileUrl || proj.imageUrl;
+
+            mediaContainer.innerHTML = `
+              <picture class="slide-picture">
+                <source media="(max-width: 768px)" srcset="${mobImg}">
+                <img src="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+              </picture>
+            `;
           }
         }
       }
 
-      // 2. Update lower-third caption card
+      // 2. Update lower-third caption card with thin service name
       if (captionCards[idx]) {
 
         const catEl = captionCards[idx].querySelector('.project-category');
@@ -975,11 +1321,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const actionLink = captionCards[idx].querySelector('.project-action-link');
         const specTrigger = captionCards[idx].querySelector('.project-spec-trigger');
 
-        if (catEl) catEl.textContent = proj.category;
+        if (catEl) {
+          const serviceName = proj.service || (proj.category ? proj.category.split('—')[0].trim() : '');
+          const yr = proj.category && proj.category.includes('—') ? proj.category.split('—')[1].trim() : '2026';
+          catEl.innerHTML = `<span class="service-name">${formatServiceOrTitle(serviceName)}</span> &mdash; ${yr}`;
+        }
         if (titleEl) titleEl.textContent = proj.title;
         if (actionLink) {
           actionLink.href = proj.projectUrl || 'work.html';
-          actionLink.innerHTML = 'View project &rarr;';
+          actionLink.innerHTML = proj.discipline === 'news' ? 'Read article &rarr;' : 'View project &rarr;';
         }
         if (specTrigger) {
           specTrigger.setAttribute('data-index', idx);
@@ -988,8 +1338,90 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
+  // Dynamic Project Title Synchronization from Project Pages
+  const projectTitleCache = new Map();
+
+  /**
+   * Fetches the latest title directly from a project's HTML page.
+   * Ensures that changing the project title on the project page immediately reflects on the slide.
+   */
+  async function fetchTitleFromProjectPage(projectUrl) {
+    if (!projectUrl || projectUrl === 'work.html' || projectUrl.startsWith('http')) {
+      return null;
+    }
+    if (projectTitleCache.has(projectUrl)) {
+      return projectTitleCache.get(projectUrl);
+    }
+    try {
+      const res = await fetch(projectUrl, { cache: 'no-cache' });
+      if (!res.ok) return null;
+      const html = await res.text();
+      const match = html.match(/<h1[^>]*class=["'][^"']*project-page-title[^"']*["'][^>]*>([\s\S]*?)<\/h1>/i) ||
+                    html.match(/<header[^>]*class=["'][^"']*project-hero-header[^"']*["'][^>]*>[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i) ||
+                    html.match(/<main[^>]*class=["'][^"']*project-detail-container[^"']*["'][^>]*>[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i) ||
+                    html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+      if (match && match[1]) {
+        const temp = document.createElement('div');
+        temp.innerHTML = match[1];
+        const pageTitle = temp.textContent.trim();
+        if (pageTitle) {
+          projectTitleCache.set(projectUrl, pageTitle);
+          return pageTitle;
+        }
+      }
+    } catch (e) {
+      // In file:// protocol or offline, gracefully retain default proj.title
+    }
+    return null;
+  }
+
+  function applyLiveTitleToSlide(idx, liveTitle) {
+    if (!projects[idx] || !liveTitle) return;
+    projects[idx].title = liveTitle;
+
+    // 1. Lower-third caption title
+    if (captionCards[idx]) {
+      const titleEl = captionCards[idx].querySelector('.project-title');
+      if (titleEl) titleEl.textContent = liveTitle;
+    }
+
+    // 2. Slide accessibility labels & image alt text
+    if (slides[idx]) {
+      slides[idx].setAttribute('aria-label', liveTitle);
+      const img = slides[idx].querySelector('img');
+      if (img) img.alt = liveTitle;
+    }
+
+    // 3. Spec Drawer title if currently open for this project
+    if (specDrawer && specDrawer.classList.contains('open') && currentIndex === idx) {
+      if (drawerTitle) drawerTitle.textContent = liveTitle;
+    }
+  }
+
+  async function syncSlideTitlesFromProjectPages() {
+    // 1. Fetch active slide first for immediate update
+    if (projects.length > 0 && projects[0] && projects[0].projectUrl) {
+      fetchTitleFromProjectPage(projects[0].projectUrl).then(liveTitle => {
+        if (liveTitle && liveTitle !== projects[0].title) {
+          applyLiveTitleToSlide(0, liveTitle);
+        }
+      });
+    }
+
+    // 2. Concurrently fetch all remaining slides
+    projects.forEach((proj, idx) => {
+      if (idx === 0 || !proj || !proj.projectUrl) return;
+      fetchTitleFromProjectPage(proj.projectUrl).then(liveTitle => {
+        if (liveTitle && liveTitle !== proj.title) {
+          applyLiveTitleToSlide(idx, liveTitle);
+        }
+      });
+    });
+  }
+
   // Populate slides with the randomized selection immediately
   populateRandomizedSlides();
+  syncSlideTitlesFromProjectPages();
 
   let currentIndex = 0;
   const totalSlides = Math.min(slides.length, projects.length);
@@ -1037,6 +1469,23 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentIndex = newIndex;
     }
 
+    // Sync title from project page for the active slide if available
+    const activeProject = projects[currentIndex];
+    if (activeProject && activeProject.projectUrl) {
+      if (projectTitleCache.has(activeProject.projectUrl)) {
+        const cached = projectTitleCache.get(activeProject.projectUrl);
+        if (cached && cached !== activeProject.title) {
+          applyLiveTitleToSlide(currentIndex, cached);
+        }
+      } else {
+        fetchTitleFromProjectPage(activeProject.projectUrl).then(liveTitle => {
+          if (liveTitle && liveTitle !== activeProject.title) {
+            applyLiveTitleToSlide(currentIndex, liveTitle);
+          }
+        });
+      }
+    }
+
     // Update slides & strictly pause/reset non-active videos
     slides.forEach((slide, idx) => {
       const isActive = idx === currentIndex;
@@ -1053,6 +1502,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       const vid = slide.querySelector('video');
       if (vid) {
+        const proj = projects[idx];
+        if (isActive && proj && !proj.is360 && proj.videoMobileUrl) {
+          const isMobileNow = window.innerWidth <= 768 || window.matchMedia('(max-width: 768px)').matches;
+          const targetSrc = isMobileNow ? proj.videoMobileUrl : (proj.videoUrlDesktop || proj.videoUrl);
+          if (targetSrc && !vid.src.endsWith(targetSrc)) {
+            vid.src = targetSrc;
+          }
+        }
         vid.pause();
         vid.currentTime = 0;
         vid.loop = false; // Strictly do not loop
@@ -1067,6 +1524,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Hairline Pagination
     paginationBars.forEach((bar, idx) => {
       bar.classList.toggle('active', idx === currentIndex);
+      bar.setAttribute('aria-selected', idx === currentIndex ? 'true' : 'false');
       const fill = bar.querySelector('.pagination-fill');
       if (fill) {
         fill.style.width = idx === currentIndex ? '0%' : (idx < currentIndex ? '100%' : '0%');
@@ -1330,9 +1788,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   }
 
-  function openDrawer(index) {
+  async function openDrawer(index) {
     const project = projects[index];
     if (!project) return;
+
+    if (project.projectUrl) {
+      if (projectTitleCache.has(project.projectUrl)) {
+        const cached = projectTitleCache.get(project.projectUrl);
+        if (cached && cached !== project.title) {
+          applyLiveTitleToSlide(index, cached);
+        }
+      } else {
+        fetchTitleFromProjectPage(project.projectUrl).then(liveTitle => {
+          if (liveTitle && liveTitle !== project.title) {
+            applyLiveTitleToSlide(index, liveTitle);
+          }
+        });
+      }
+    }
 
     if (drawerTitle) drawerTitle.textContent = project.title;
     if (drawerClient) drawerClient.textContent = project.specs.client;

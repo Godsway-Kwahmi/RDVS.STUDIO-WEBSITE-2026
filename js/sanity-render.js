@@ -62,10 +62,10 @@
             if (teamVal) teamVal.textContent = Array.isArray(project.team) ? project.team.join(', ') : project.team;
           }
 
-          // Gallery hydration
+          // Gallery hydration (skip pages that lock the static markup)
           if (project.galleryUrls && project.galleryUrls.length > 0) {
             const gallerySection = document.querySelector('.project-gallery-grid');
-            if (gallerySection) {
+            if (gallerySection && gallerySection.getAttribute('data-static-gallery') !== 'true') {
               gallerySection.innerHTML = project.galleryUrls.map(url => `
                 <div class="gallery-item">
                   <img src="${url}" alt="${project.title} Architectural Detail" class="gallery-img" loading="lazy">

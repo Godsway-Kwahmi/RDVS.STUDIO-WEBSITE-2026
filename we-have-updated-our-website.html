@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>We have updated our website — RDVS Studios</title>
+  <meta name="description" content="RDVS Studios launches an updated digital platform documenting our multidisciplinary architecture, interior design, 3D visualization, visual effects, and turnkey build practices.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link active">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="news.html" class="project-back-link">&larr; Back to news</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Studio Dispatch &mdash; 2026 &middot; Digital Announcement</span>
+      <h1 class="project-page-title">We have updated our website</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <picture class="slide-picture">
+        <source media="(max-width: 768px)" srcset="assets/images/hamlet/hamlet-estate-mobile.jpg">
+        <img src="assets/images/hamlet/hamlet-estate-desktop.jpg" alt="RDVS Studios Digital Platform" class="project-hero-img">
+      </picture>
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">RDVS Studios is proud to unveil our updated website — an interactive digital catalog documenting over 18 years of multidisciplinary architecture, interior spatial design, 3D visualization, visual effects, and turnkey construction practice.</p>
+        
+        <div class="project-body-text">
+          <p>This update reflects the studio's core philosophical commitment: eliminating boundaries between conceptual digital experimentation and physical craft. Our updated platform is designed from the ground up to present each project with precision, clarity, and uncompromising fidelity across all digital touchpoints.</p>
+          
+          <h2 style="font-size: 1.15rem; font-weight: 400; margin: 32px 0 12px 0; color: var(--foreground);">Dual Responsive Media System</h2>
+          <p>Central to this release is an adaptive media delivery engine tailored specifically for mobile and desktop screens. Aside from our immersive 360-degree virtual experiences, every slide and featured work is prepared in dual formats: an expansive 16:9 widescreen composition for desktop displays, and an optimized 9:16 vertical portrait presentation for mobile handsets. On mobile screens, the site dynamically serves portrait assets to provide an intimate, edge-to-edge full-bleed viewing experience without unnecessary black bars or horizontal clipping.</p>
+
+          <h2 style="font-size: 1.15rem; font-weight: 400; margin: 32px 0 12px 0; color: var(--foreground);">Curated Disciplines & Project Archive</h2>
+          <p>Our work is structured across four primary disciplines: Architecture, Interior Design, Visual Effects (VFX) & CGI, and Motion Design. Visitors can seamlessly explore project specifications, construction details, and material studies through an integrated slide-over drawer, or dive into comprehensive case studies spanning corporate headquarters, luxury residential villas, and broadcast commercial identities.</p>
+
+          <h2 style="font-size: 1.15rem; font-weight: 400; margin: 32px 0 12px 0; color: var(--foreground);">Interactive 360 Virtual Exploration</h2>
+          <p>In addition to cinematic video and architectural photography, the updated site integrates interactive 360-degree virtual reality showcases. Powered by our proprietary WebGL viewer, clients and collaborators can dynamically rotate, pan, and examine spatial geometries in real time directly from their browsers.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Release</span>
+            <span class="project-spec-val">Studio Update 2026</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Category</span>
+            <span class="project-spec-val">Announcement</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Year</span>
+            <span class="project-spec-val">2026</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Studio</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Disciplines</span>
+            <span class="project-spec-val">Architecture, Interiors, VFX & Motion</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Director</span>
+            <span class="project-spec-val">Godsway Kwahmi</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Announcement gallery">
+      <div class="gallery-item">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/dyv/dyv-dawn-mobile.jpg">
+          <img src="assets/images/dyv/dyv-street-wide.jpg" alt="DYV Mixed-Use Development" class="gallery-img" loading="lazy">
+        </picture>
+      </div>
+      <div class="gallery-item">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/afg/afg-headquarters-mobile.jpg">
+          <img src="assets/images/afg/afg-headquarters-desktop.jpg" alt="AFG Headquarters" class="gallery-img" loading="lazy">
+        </picture>
+      </div>
+      <div class="gallery-item">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/cascades/tower-cascades-night-mobile.jpg">
+          <img src="assets/images/cascades/tower-cascades-night-desktop.jpg" alt="Tower Cascades" class="gallery-img" loading="lazy">
+        </picture>
+      </div>
+      <div class="gallery-item">
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/hubtel/hubtel-executive-mobile.jpg">
+          <img src="assets/images/hubtel/hubtel-executive-desktop.jpg" alt="Hubtel Executive Boardroom" class="gallery-img" loading="lazy">
+        </picture>
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="news.html" class="project-nav-link">&larr; Back to news</a>
+      <a href="work.html" class="project-nav-link">Explore all work &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

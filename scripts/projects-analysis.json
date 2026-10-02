@@ -553,20 +553,25 @@
     {
       "href": "1957.html",
       "slug": "1957",
-      "title": "1957",
-      "year": "2023",
-      "typology": "Architecture",
-      "discipline": "Architecture",
-      "category": "architecture-planning",
-      "thumbnail": "assets/videos/1957/1957-1.mp4",
+      "title": "1957 Apartments and Retail",
+      "year": "2019",
+      "typology": "Apartments & Retail",
+      "discipline": "Interior Design & 3D Visualization",
+      "category": "interior-design vfx-cgi",
+      "thumbnail": "assets/images/1957/1957-1.jpg",
       "pageExists": true,
       "mediaOnDisk": [
         "assets/images/1957/1957-1.jpg",
         "assets/images/1957/1957-2.jpg",
         "assets/images/1957/1957-3.jpg",
         "assets/images/1957/1957-4.jpg",
-        "assets/images/1957/1957-interior.jpg",
-        "assets/images/1957/1957-wide-hero.jpg"
+        "assets/images/1957/1957-5.jpg",
+        "assets/images/1957/1957-6.jpg",
+        "assets/images/1957/1957-7.jpg",
+        "assets/images/1957/1957-8.jpg",
+        "assets/images/1957/1957-9.jpg",
+        "assets/images/1957/1957-10.jpg",
+        "assets/images/1957/1957-11.jpg"
       ]
     },
     {
@@ -1062,13 +1067,13 @@
     {
       "href": "petrus.html",
       "slug": "petrus",
-      "title": "PETRUS",
-      "year": "2026",
-      "typology": "Architecture",
-      "discipline": "Architecture",
-      "category": "architecture-planning",
+      "title": "Petrus",
+      "year": "2017",
+      "typology": "Interior Design",
+      "discipline": "Interior Design & 3D Visualization",
+      "category": "interior-design vfx-cgi",
       "thumbnail": "assets/images/petrus/petrus-1.jpg",
-      "pageExists": false,
+      "pageExists": true,
       "mediaOnDisk": []
     },
     {
@@ -1146,14 +1151,14 @@
     {
       "href": "naadei-villas.html",
       "slug": "naadei-villas",
-      "title": "NAADEI_VILLAS",
-      "year": "2026",
-      "typology": "Architecture",
-      "discipline": "Architecture",
-      "category": "architecture-planning",
+      "title": "Naadei Villas",
+      "year": "2018",
+      "typology": "Residential",
+      "discipline": "Interior Design & 3D Visualization",
+      "category": "architecture-planning interior-design",
       "thumbnail": "assets/images/naadei-villas/naadei-villas-1.jpg",
-      "pageExists": false,
-      "mediaOnDisk": []
+      "pageExists": true,
+      "mediaOnDisk": true
     },
     {
       "href": "mtn-env-graphics.html",
@@ -2094,18 +2099,6 @@
       "mediaOnDisk": []
     },
     {
-      "href": "work.html#1957",
-      "slug": "work#1957",
-      "title": "1957 Monochrome Residence",
-      "year": "2024",
-      "typology": "Residential",
-      "discipline": "Interior Design",
-      "category": "interior-design",
-      "thumbnail": "assets/images/1957/1957-interior.jpg",
-      "pageExists": false,
-      "mediaOnDisk": []
-    },
-    {
       "href": "work.html#brownies",
       "slug": "work#brownies",
       "title": "Brownies Place Retreat",
@@ -2246,30 +2239,6 @@
       "discipline": "Interior Design",
       "category": "interior-design industrial-design",
       "thumbnail": "assets/images/poconos/poconos-lounge.jpg",
-      "pageExists": false,
-      "mediaOnDisk": []
-    },
-    {
-      "href": "work.html#naadei",
-      "slug": "work#naadei",
-      "title": "Naadei Luxury Villas",
-      "year": "2026",
-      "typology": "Residential",
-      "discipline": "Architecture",
-      "category": "architecture-planning interior-design",
-      "thumbnail": "assets/images/naadei/naadei-villas.jpg",
-      "pageExists": false,
-      "mediaOnDisk": []
-    },
-    {
-      "href": "work.html#petrus",
-      "slug": "work#petrus",
-      "title": "Petrus Wine Lounge",
-      "year": "2026",
-      "typology": "Hospitality",
-      "discipline": "Interior Design",
-      "category": "interior-design industrial-design",
-      "thumbnail": "assets/images/petrus/petrus-lounge.jpg",
       "pageExists": false,
       "mediaOnDisk": []
     },

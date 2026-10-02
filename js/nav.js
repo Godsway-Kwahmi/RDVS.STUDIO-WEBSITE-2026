@@ -1,10 +1,69 @@
 /**
- * RDVS STUDIO 2026 — Global Navigation Controller
- * Handles responsive mobile navigation drawer, accessibility attributes, 
- * outside-click dismissal, and active link states across all screen sizes.
+ * RDVS STUDIO 2026 — Global Navigation & Theme Controller
+ * Handles dark/light theme switching, responsive mobile navigation drawer,
+ * accessibility attributes, outside-click dismissal, and active link states across all screen sizes.
  */
 
 (function () {
+  // --- Dark / Light Mode Theme Controller ---
+  function initThemeToggle() {
+    function updateThemeUI(theme) {
+      const isDark = theme === 'dark';
+      const label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+      document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
+        btn.setAttribute('aria-label', label);
+        btn.setAttribute('title', label);
+      });
+    }
+
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    updateThemeUI(currentTheme);
+
+    // Event delegation for theme toggle button
+    document.addEventListener('click', (e) => {
+      const toggleBtn = e.target.closest('.theme-toggle-btn');
+      if (!toggleBtn) return;
+      e.preventDefault();
+
+      const activeTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', nextTheme);
+      try {
+        localStorage.setItem('rdvs-theme', nextTheme);
+      } catch (err) {}
+
+      updateThemeUI(nextTheme);
+    });
+
+    // Multi-tab synchronization
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'rdvs-theme' && (e.newValue === 'light' || e.newValue === 'dark')) {
+        document.documentElement.setAttribute('data-theme', e.newValue);
+        updateThemeUI(e.newValue);
+      }
+    });
+
+    // OS color scheme change listener (if user has not set an explicit override)
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+        try {
+          if (!localStorage.getItem('rdvs-theme')) {
+            const osTheme = e.matches ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', osTheme);
+            updateThemeUI(osTheme);
+          }
+        } catch (err) {}
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn') || document.querySelector('.mobile-toggle');
     const primaryNav = document.querySelector('.primary-nav');

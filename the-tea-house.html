@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <title>The Tea House — RDVS Studios</title>
-  <meta name="description" content="The Tea House — Architectural commission and spatial design by RDVS Studios.">
+  <meta name="description" content="The Tea House — Identity system design and custom UI/UX web design by RDVS Studios.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
   
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,6 +53,24 @@
           </button>
         </form>
 
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
         <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
       </div>
     </div>
@@ -49,21 +80,21 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Architecture / Architecture &mdash; 2011 &middot; Studio Commission</span>
+      <span class="project-meta-line">Identity / Web Design &mdash; 2021 &middot; Private Client</span>
       <h1 class="project-page-title">The Tea House</h1>
     </header>
 
     <div class="project-hero-media">
-      <img src="assets/images/abl/abl-1.jpg" alt="The Tea House Primary View" class="project-hero-img">
+      <img src="assets/images/tea-house/tea-house-header.jpg" alt="The Tea House Digital Platform & Identity Header" class="project-hero-img">
     </div>
 
     <div class="project-content-grid">
       <div class="project-story">
-        <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for The Tea House.</p>
+        <p class="project-lead-text">Comprehensive brand identity system and bespoke UI/UX digital web design created for The Tea House.</p>
         
         <div class="project-body-text">
-          <p>The Tea House forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2011, the project investigates tactile material boundaries and volumetric precision.</p>
-          <p>Our multidisciplinary team developed the project from programmatic schematic design through high-fidelity visual simulation and comprehensive turnkey project execution, ensuring strict adherence to the studio's closed-loop methodology.</p>
+          <p>The Tea House is a 2021 project commissioned by a private client that covers graphic design to create an extensive identity system and web design featuring custom UI/UX design. The work explores the balance between organic visual harmony, refined brand typography, and seamless digital interaction.</p>
+          <p>Our multidisciplinary team developed every brand touchpoint—from the fluid logo mark and warm earthy colour palette to the modern digital web platform with intuitive menus, spatial storytelling, and customized online reservation flows.</p>
         </div>
       </div>
 
@@ -79,28 +110,78 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2011</span>
+            <span class="project-spec-val">2021</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
-            <span class="project-spec-val">Architecture</span>
+            <span class="project-spec-val">Brand Identity &amp; Web Design</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Scope of Services</span>
-            <span class="project-spec-val">Architecture, Spatial Design, 3D VFX & Turnkey Delivery</span>
+            <span class="project-spec-val">Graphic Design, Identity System, Web Design &amp; Custom UI/UX</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Team</span>
-            <span class="project-spec-val">RDVS Team</span>
+            <span class="project-spec-val">Jude Abbey, Jude Nyoagbe, Mahalia, Bimpong</span>
           </div>
         </div>
       </aside>
     </div>
 
     <section class="project-gallery-grid" aria-label="Project detail gallery">
-      
       <div class="gallery-item">
-        <img src="assets/images/abl/abl-1.jpg" alt="The Tea House Architectural Detail" class="gallery-img" loading="lazy">
+        <img src="assets/images/tea-house/tea-house-01.png" alt="The Tea House Homepage & Hero Layout" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-02.png" alt="The Tea House About Story & Culinary Section" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-03.png" alt="The Tea House What We Do & Brand Philosophy" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-04.png" alt="The Tea House Culinary Team & Philosophy" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-05.png" alt="The Tea House Signature Blend & Menu Feature" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-06.png" alt="The Tea House Curated Tea Selection Grid" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-07.png" alt="The Tea House Interactive FAQ & Support Section" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-08.png" alt="The Tea House Contact & Inquiry Interface" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-09.png" alt="The Tea House Spaces & Architectural Atmosphere" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-10.png" alt="The Tea House Private Dining & Gathering Rooms" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-11.png" alt="The Tea House Meeting Packages & Pricing" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-12.png" alt="The Tea House Terrace & Outdoor Lounge" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-13.png" alt="The Tea House Tasting Sessions & Masterclasses" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-14.png" alt="The Tea House Space Specs & Guidelines" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-15.png" alt="The Tea House Meeting & Event Services" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-16.png" alt="The Tea House Corporate Amenities & Hospitality" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-17.png" alt="The Tea House Visual Gallery & Spatial Mood" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/tea-house/tea-house-18.png" alt="The Tea House Online Reservation System" class="gallery-img" loading="lazy">
       </div>
     </section>
 
