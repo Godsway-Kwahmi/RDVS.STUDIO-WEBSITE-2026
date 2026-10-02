@@ -282,6 +282,25 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2016',
           disciplines: ['Architecture', 'Interior Design', '3D Visualization']
         }
+      },
+      {
+        id: 'macord-international-school',
+        title: 'Macord International School',
+        category: '3D Visualization — 2024',
+        service: '3D Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/macord/macord-1.jpg',
+        imageUrlDesktop: 'assets/images/macord/macord-1.jpg',
+        imageMobileUrl: 'assets/images/macord/macord-1.jpg',
+        projectUrl: 'macord.html',
+        desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
+        specs: {
+          client: 'Macord International School',
+          scope: 'Facade Design (Architecture), Landscape Design, Interior Design, Industrial & Furniture Design & 3D Visualization',
+          team: 'Jude Nyoagbe',
+          year: '2024',
+          disciplines: ['Architecture', 'Landscape Design', 'Interior Design', 'Industrial & Furniture Design', '3D Visualization']
+        }
       }
     ]
   },
@@ -400,8 +419,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'hubtel-nairobi',
         title: 'Hubtel Nairobi',
-        category: 'Interior Design — 2017',
-        service: 'Interior Design',
+        category: '3D Visualization — 2017',
+        service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hubtel/hubtel-nairobi-1.jpg',
         imageUrlDesktop: 'assets/images/hubtel/hubtel-nairobi-1.jpg',
@@ -823,22 +842,22 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'elo-tv',
-        title: 'Elo Tv',
-        category: 'Motion Design — 2018',
+        title: 'ELO TV',
+        category: 'Motion Design — 2015',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/elo-tv/elo-tv-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/elo-tv/elo-tv-1-mobile.jpg',
+        imageUrl: 'assets/images/elo-tv/elo-tv-01.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-01.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-01.jpg',
         projectUrl: 'elo-tv.html',
-        desc: 'On-air broadcast packaging featuring lower thirds, segment stingers, program bugs, and motion typography guidelines.',
+        desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
-          client: 'Elo TV Network',
-          scope: 'Television Broadcast Graphics & On-Screen Design',
-          team: 'Godsway Kwahmi, RDVS Broadcast Design',
+          client: 'ELO TV',
+          scope: 'Graphic Design & Motion Design (Brand Identity, Stationery & Broadcast Ident)',
+          team: 'RDVS Team',
           area: 'Broadcast Channel',
-          year: '2018',
-          disciplines: ['Motion Design', 'Broadcast Design', 'Motion Packaging']
+          year: '2015',
+          disciplines: ['Graphic Design', 'Motion Design']
         }
       },
       {
