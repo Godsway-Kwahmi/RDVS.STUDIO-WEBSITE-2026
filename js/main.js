@@ -603,6 +603,28 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2024',
           disciplines: ['Visual Effects (VFX) & CGI', 'VR Simulation', 'Interactive 3D']
         }
+      },
+      {
+        id: 'beautiful-choices-anim',
+        title: 'Beautiful Choices',
+        category: '3D Visualization — 2014',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/beautiful-choices/beautiful-choices-1-mobile.jpg',
+        videoUrl: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
+        projectUrl: 'beautiful-choices.html',
+        desc: 'Rendering and animation for a poster series designed by Dela Anyaa — five colourways of the same sheet modelled as printed panels and fanned through a seamless white set.',
+        specs: {
+          client: 'Dela Anyaa',
+          scope: '3D Modelling, Animation, Rendering, Post Processing & Compositing',
+          team: 'Modelling + Animation + Rendering: Jude Nyoagbe | Post Processing + Compositing: Randy Biney',
+          location: 'Accra, Ghana',
+          area: 'Product Visualization',
+          year: '2014',
+          disciplines: ['3D Visualization', 'Product Visualization', 'Animation']
+        }
       }
     ],
     images: [
@@ -668,23 +690,86 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'chocolate-pavilion',
+        id: 'chocolate',
         title: 'Chocolate',
-        category: 'Visual Effects (VFX) & CGI — 2019',
-        service: 'Visual Effects (VFX) & CGI',
-        discipline: 'vfx',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
         imageUrl: 'assets/images/chocolate/chocolate-1-desktop.jpg',
         imageUrlDesktop: 'assets/images/chocolate/chocolate-1-desktop.jpg',
         imageMobileUrl: 'assets/images/chocolate/chocolate-1-mobile.jpg',
         projectUrl: 'chocolate.html',
-        desc: 'Experimental pavilion visualization capturing high-gloss organic envelopes, caustic light dispersion, and spatial volumetric forms.',
+        desc: 'Logo design for Chocolate by Kwaku Bediako, a fashion design house in Ghana — a dripping C monogram drawn from a couturier’s dress form, paired with a script wordmark, a winged badge variant, a corporate typeface, stationery, and the badge cast as metal hardware on the house’s footwear and leatherwear.',
         specs: {
-          client: 'Pavilion Design Arts',
-          scope: 'CGI Volumetric Simulation & Concept Visualization',
-          team: 'Godsway Kwahmi, RDVS Experimental VFX',
-          area: '720 sq.m',
-          year: '2019',
-          disciplines: ['Visual Effects (VFX) & CGI', '3D Visualization']
+          client: 'Chocolate by Kwaku Bediako',
+          scope: 'Logo Design, Brand Identity, Corporate Typeface, Stationery & Application',
+          team: 'RDVS Team',
+          area: 'Brand Identity System',
+          year: '2014',
+          disciplines: ['Graphic Design', 'Brand Identity']
+        }
+      },
+      {
+        id: 'glow-in-the-dark',
+        title: 'Glow in the Dark',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-mobile.jpg',
+        projectUrl: 'glow-in-the-dark.html',
+        desc: 'Event marketing for a party advertised for 4 October 2014 — a neon sign key visual modelled in 3D so the glass could be shown dead and struck up, then looped as a teaser between the two states.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Graphic Design, 3D Visualization, Motion Design',
+          team: 'Jude Nyoagbe, Randy Biney',
+          location: 'Accra, Ghana',
+          area: 'Event Marketing',
+          year: '2014',
+          disciplines: ['Graphic Design', '3D Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'stark-glaube',
+        title: 'Stark Glaube',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/stark-glaube/stark-glaube-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-1-mobile.jpg',
+        projectUrl: 'stark-glaube.html',
+        desc: 'Identity for a Ghanaian company — the initials SG knocked out of a band of triangles graded green to blue, under a geometric wordmark set as a single word.',
+        specs: {
+          client: 'Stark Glaube',
+          scope: 'Graphic Design, Logo Design & Brand Identity',
+          team: 'Paa Kofi Tetteh',
+          location: 'Ghana',
+          area: 'Identity',
+          year: '2014',
+          disciplines: ['Graphic Design', 'Brand Identity']
+        }
+      },
+      {
+        id: 'stephen-yvonne',
+        title: 'Stephen + Yvonne',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1-mobile.jpg',
+        projectUrl: 'stephen-yvonne.html',
+        desc: 'Wedding invitation suite for Stephen + Yvonne Ntow — a pair of gold lovebirds whose wings meet as a heart, their plumage then opened out into a feather macro that carries the verse, the invitation and a gold-on-grey location card.',
+        specs: {
+          client: 'Stephen & Yvonne Ntow',
+          scope: 'Graphic Design, Illustration, Digital Art & Print',
+          team: 'Randy Biney',
+          location: 'Accra, Ghana',
+          area: 'Wedding Invitation',
+          year: '2014',
+          disciplines: ['Graphic Design', 'Digital Art', 'Illustration']
         }
       },
       {
@@ -765,6 +850,69 @@ document.addEventListener('DOMContentLoaded', async () => {
           area: 'Environmental Graphics',
           year: '2017',
           disciplines: ['Environmental Graphics', 'Way-Finding', '3D Visualization']
+        }
+      },
+      {
+        id: 'yao-yaa',
+        title: 'Yao + Yaa',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/yao-yaa/yao-yaa-1-mobile.jpg',
+        projectUrl: 'yao-yaa.html',
+        desc: 'Wedding invitation for Yao Tettey and Yaa Lamptey — a sea-green paisley field with the couple\u2019s day-names worked into it tone-on-tone, geometric-sans type panels and redrawn Tema venue maps.',
+        specs: {
+          client: 'Yao Tettey & Yaa Lamptey',
+          scope: 'Graphic Design, Illustration, Digital Art & Print',
+          team: 'RDVS Team',
+          location: 'Tema, Ghana',
+          area: 'Wedding Invitation',
+          year: '2014',
+          disciplines: ['Graphic Design', 'Digital Art', 'Illustration']
+        }
+      },
+      {
+        id: 'ameyaw-sarah',
+        title: 'Ameyaw + Sarah',
+        category: 'Graphic Design — 2014',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-mobile.jpg',
+        projectUrl: 'ameyaw-sarah.html',
+        desc: 'Invitation for an Akan customary marriage \u2014 the adinkra symbol Me Ware Wo redrawn from the couple\u2019s initials as a four-lobed monogram, laid over a kente weave built from minute S and A letterforms, with an adinkra legend driving the directions map.',
+        specs: {
+          client: 'Ameyaw Mensah & Sarah Amoabeng',
+          scope: 'Graphic Design, Illustration & Print',
+          team: 'Randy Biney, Jude Nyoagbe',
+          location: 'Sunyani, Ghana',
+          area: 'Wedding Invitation',
+          year: '2014',
+          disciplines: ['Graphic Design', 'Illustration', 'Print']
+        }
+      },
+      {
+        id: 'baobab-hotel-exteriors',
+        title: 'Baobab Hotel - Exteriors',
+        category: '3D Visualization — 2016',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-mobile.jpg',
+        projectUrl: 'baobab-hotel-exteriors.html',
+        desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
+        specs: {
+          client: 'Architect Theodore Kanyi',
+          scope: '3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          location: 'Accra, Ghana',
+          area: 'Hospitality',
+          year: '2016',
+          disciplines: ['3D Visualization']
         }
       }
     ]

@@ -1467,6 +1467,11 @@ button {
   margin-bottom: 16px;
 }
 
+.project-body-text a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .project-specs-panel {
   border-top: 1px solid var(--border-hairline);
   padding-top: 24px;
