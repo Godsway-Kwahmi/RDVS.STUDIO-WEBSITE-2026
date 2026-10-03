@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>SMSGH &mdash; RDVS Studios</title>
+  <meta name="description" content="SMSGH - 2013 workplace &amp; office project in Accra, Ghana: interior design, graphic design, digital illustration &amp; architectural visualization for SMSGH by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Workplace &amp; Office / Interior Design, Graphic Design, Digital Illustration &amp; Architectural Visualization &mdash; 2013 &middot; SMSGH</span>
+      <h1 class="project-page-title">SMSGH</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/smsgh/smsgh-1.jpg" alt="Visualization of the reception: full-height orange wall, dark desk with a white sms logo behind it, multicolour striped carpet, low black benches at the window and recessed ceiling panels over a cove-lit glass partition." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Interior design, visualization and later photography for the SMSGH office in Accra, Ghana: twelve plates that run from the orange-walled reception and boardroom renders through to photographed corridors, workrooms and the break-out space.</p>
+
+        <div class="project-body-text">
+          <p>SMSGH needed a workplace that felt like its own brand: energetic, informal and clearly Ghanaian, without slipping into a novelty colour scheme. The company was moving into a conventional open-plan floor, so the design had to absorb rows of workstations, meeting rooms and a reception while still reading as somewhere people wanted to sit. RDVS. DESIGN answered with a zoned plan and a strong accent palette.</p>
+          <p>The floor is split into a public front and a working back. Reception, lounge and breakout sit in saturated colour, while the open desk areas are calmer, organized on timber floors with green screens and a striped runner marking the main circulation spine. Glass-walled meeting rooms line the corridors, and the boardroom keeps its own darker, wood-lined character.</p>
+          <p>Orange is the signature, used on full-height reception walls and partitions, then balanced by white ceilings, pale timber and a deep green shelving wall. Yellow armchairs and large paintings lift the lounge. Lighting is mostly recessed panels and cove strips, with pendants and track heads marking the social spaces; the photographed rooms add downlit glass partitions and exposed concrete.</p>
+          <p>The set merges two records of the same commission: seven visualizations from the design phase, each carrying the SMSGH OFFICE credit block dated May 2013, and five photographs of the completed office carrying the RDVS MAGAZINE mark. Together they show how closely the orange, timber and glass scheme translated from screen to floor.</p>
+          <p>The project was published as <em>SMSGH OFFICE &mdash; RDVS. DESIGN</em>; the full set is <a href="https://www.behance.net/gallery/8996035" target="_blank" rel="noopener noreferrer">on Behance</a> and <a href="https://www.behance.net/gallery/31852489" target="_blank" rel="noopener noreferrer">the companion set</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">SMSGH</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2013</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Workplace &amp; Office</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design, Graphic Design, Digital Illustration &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design for the office floor, environmental graphics and logo wall, 3D visualization of the scheme, and photographic documentation of the completed office.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">RDVS. DESIGN</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">12 plates &middot; up to 1400 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-1.jpg" alt="Visualization of the reception: full-height orange wall, dark desk with a white sms logo behind it, multicolour striped carpet, low black benches at the window and recessed ceiling panels over a cove-lit glass partition." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-2.jpg" alt="Visualization of a private office: white desk with a computer and black task chairs, green accent wall with open shelving, warm timber floor and ceiling, cove lighting and an orange sofa in the foreground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-3.jpg" alt="Visualization of the breakout lounge: exposed timber ceiling beams and track lights, large colourful paintings on white walls, grey sofas, two yellow armchairs on a dark shag rug, black coffee table and white chairs beyond." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-4.jpg" alt="Visualization down the main circulation route: striped runner carpet between timber-floored desk banks with green screens, white columns, an orange and white partition wall at right and linear ceiling lights leading to a red far wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-5.jpg" alt="Visualization of the boardroom: long pale table with black leather chairs, timber floor and wall panelling, a dark green feature wall washed by concealed lighting, recessed linear ceiling slots and a planter in a white trough." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-6.jpg" alt="Visualization of the open-plan floor: rows of workstations with monitors and green desk screens on timber flooring, black mesh chairs, an orange wall in the distance, yellow lounge seats at right and planted troughs between bays." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-7.jpg" alt="Visualization of a meeting room: the sms gh speech-bubble logo mounted on a white wall, grey tiled floor, a pale table ringed by black and chrome chairs, air-conditioning unit above and a downlit white ceiling." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-8.jpg" alt="Photograph of a completed corridor: glass-walled offices with frosted horizontal strips, polished dark timber floor reflecting the downlights, an exposed concrete column, white ceilings and a glimpse of the workspace at the far end." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-9.jpg" alt="Photograph, another corridor in the built office: blue-grey columns and walls, glossy timber floor, a bed of white pebbles around a planter with a young palm, timber door at the end and downlight reflections." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-10.jpg" alt="Photograph, close detail of the pebble border beside the timber floor: smooth white and grey river stones in shallow focus, the office blurred behind, RDVS MAGAZINE mark in the lower right corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-11.jpg" alt="Photograph of a small office: pale wood desk with a computer, black task chair, grey sofa against a white wall, grey tiled floor, timber door, framed board and a window with blinds looking onto another building." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/smsgh/smsgh-12.jpg" alt="Photograph of the break area: dark ceiling beams with yellow pendant lamps, high tables with black, yellow and tan stools, white painted brick, a sofa at left and a glossy floor underfoot." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="stanchart-hq.html" class="project-nav-link">&larr; Previous: Stanchart HQ</a>
+      <a href="six-acres-company-profile.html" class="project-nav-link">Next: Six Acres Company Profile &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

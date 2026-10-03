@@ -27,19 +27,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 4 Core Disciplines: Architecture, Interior Design, Visual Effects (VFX) & CGI, Motion Design
   const servicePools = {
   architecture: {
-    name: 'Architecture',
+    name: 'Architectural Design',
     videos: [
       {
         id: 'tower-cascades',
         title: 'Tower Cascades',
-        category: 'Architecture — 2010',
-        service: 'Architecture',
+        category: 'Architectural Design — 2010',
+        service: 'Architectural Design',
         discipline: 'architecture',
         videoUrl: 'assets/videos/tower-cascades/tower-cascades.mp4',
         videoUrlDesktop: 'assets/videos/tower-cascades/tower-cascades.mp4',
         videoMobileUrl: 'assets/videos/tower-cascades/tower-cascades-mobile.mp4',
-        imageUrl: 'assets/images/cascades/tower-cascades-night-desktop.jpg',
-        imageUrlDesktop: 'assets/images/cascades/tower-cascades-night-desktop.jpg',
+        imageUrl: 'assets/images/cascades/tower-cascades-night.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-night.jpg',
         imageMobileUrl: 'assets/images/cascades/tower-cascades-night-mobile.jpg',
         projectUrl: 'tower-cascades.html',
         desc: 'A landmark high-density vertical architecture project integrating tiered garden cascades, environmental shading, and monolithic concrete expressions.',
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'details-film',
         title: 'Details',
-        category: 'Architecture — 2019',
-        service: 'Architecture',
+        category: 'Architectural Design — 2019',
+        service: 'Architectural Design',
         discipline: 'architecture',
         videoUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
         videoUrlDesktop: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/funko-ridge/funko-terrace.mp4',
         videoUrlDesktop: 'assets/videos/funko-ridge/funko-terrace.mp4',
         videoMobileUrl: 'assets/videos/funko-ridge/funko-terrace-mobile.mp4',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-1-desktop.jpg',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-1.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-1.jpg',
         imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-1-mobile.jpg',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
@@ -101,24 +101,24 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: '5aap-progress',
         title: '5AAP',
-        category: 'Architecture — 2022',
-        service: 'Architecture',
+        category: 'Design + Build — 2022',
+        service: 'Design + Build',
         discipline: 'architecture',
         videoUrl: 'assets/videos/5aap/5aap-progress-desktop.mp4',
         videoUrlDesktop: 'assets/videos/5aap/5aap-progress-desktop.mp4',
         videoMobileUrl: 'assets/videos/5aap/5aap-progress-mobile.mp4',
-        imageUrl: 'assets/images/5aap/5aap-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-1-desktop.jpg',
+        imageUrl: 'assets/images/5aap/5aap-1.jpg',
+        imageUrlDesktop: 'assets/images/5aap/5aap-1.jpg',
         imageMobileUrl: 'assets/images/5aap/5aap-1-mobile.jpg',
         projectUrl: '5aap.html',
         desc: 'Progressive corporate and commercial campus balancing monumental civic presence with human-scale pedestrian plazas and natural daylight voids.',
         specs: {
           client: '5AAP Holdings',
-          scope: 'Architectural Design & Structural Visualization',
+          scope: 'Architecture, Design & Build',
           team: 'Godsway Kwahmi, RDVS Architecture',
           area: '18,500 sq.m',
           year: '2022',
-          disciplines: ['Architecture', 'Structural Design', 'CGI Visualization']
+          disciplines: ['Architecture', 'Design & Build']
         }
       }
     ],
@@ -126,12 +126,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'dyv-dawn',
         title: 'DYV Mixed-Use Development',
-        category: 'Architecture — 2023',
-        service: 'Architecture',
+        category: 'Architectural Design — 2023',
+        service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/dyv/dyv-street-wide.jpg',
-        imageUrlDesktop: 'assets/images/dyv/dyv-street-wide.jpg',
-        imageMobileUrl: 'assets/images/dyv/dyv-dawn-mobile.jpg',
+        imageUrl: 'assets/images/dyv/dyv-street.jpg',
+        imageUrlDesktop: 'assets/images/dyv/dyv-street.jpg',
+        imageMobileUrl: 'assets/images/dyv/dyv-street.jpg',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -146,11 +146,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'barham-residence',
         title: '41 Barham',
-        category: 'Architecture — 2016/2017',
-        service: 'Architecture',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/barham/barham-residence-desktop.jpg',
-        imageUrlDesktop: 'assets/images/barham/barham-residence-desktop.jpg',
+        imageUrl: 'assets/images/barham/barham-residence.jpg',
+        imageUrlDesktop: 'assets/images/barham/barham-residence.jpg',
         imageMobileUrl: 'assets/images/barham/barham-residence-mobile.jpg',
         projectUrl: '41-barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
@@ -204,26 +204,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'weldment-panels',
-        title: 'Weldment Panels',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        imageUrlDesktop: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        imageMobileUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        projectUrl: 'weldment-panels.html',
-        desc: 'Photorealistic 3D visualization for Weldment Panels, completed in 2016 for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D Visualization',
-          team: 'RDVS Team',
-          area: 'Product Visualization',
-          year: '2016',
-          disciplines: ['3D Visualization']
-        }
-      },
-      {
         id: 'poconos-bar-grill',
         title: 'Poconos Bar + Grill',
         category: 'Landscape Design, Interior Design & 3D Visualization — 2017',
@@ -245,52 +225,32 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'purc-complex',
-        title: 'PURC Institutional Complex',
-        category: 'Architecture — 2023',
-        service: 'Architecture',
+        title: 'PURC',
+        category: 'Architectural Design — 2012',
+        service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/purc/purc-facade-desktop.jpg',
-        imageUrlDesktop: 'assets/images/purc/purc-facade-desktop.jpg',
+        imageUrl: 'assets/images/purc/purc-facade.jpg',
+        imageUrlDesktop: 'assets/images/purc/purc-facade.jpg',
         imageMobileUrl: 'assets/images/purc/purc-facade-mobile.jpg',
         projectUrl: 'purc.html',
-        desc: 'Monolithic civic architecture combining deep louvered facades, robust masonry massing, and monumental public entry porticos.',
+        desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
         specs: {
           client: 'Public Utilities Regulatory Commission',
-          scope: 'Architectural Design, Site Engineering & Construction Oversight',
-          team: 'Godsway Kwahmi, RDVS Institutional Group',
-          area: '3,200 sq.m',
-          year: '2023',
-          disciplines: ['Civic Architecture', 'Structural Engineering', 'General Construction']
-        }
-      },
-      {
-        id: 'airport-city',
-        title: 'Airport City',
-        category: 'Architecture — 2021',
-        service: 'Architecture',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/airport-city/airport-city-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/airport-city/airport-city-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/airport-city/airport-city-1-mobile.jpg',
-        projectUrl: 'airport-city.html',
-        desc: 'A dynamic masterplanned business gateway combining high-performance sustainable glazing with expansive communal arrival piazzas.',
-        specs: {
-          client: 'Airport City Development',
-          scope: 'Commercial Architecture & Masterplanning',
-          team: 'Godsway Kwahmi, RDVS Masterplanning',
-          area: '28,000 sq.m',
-          year: '2021',
-          disciplines: ['Architecture', 'Urban Masterplanning', 'CGI Visualization']
+          scope: 'Architecture, interior design, architectural visualization, graphic design and design documentation',
+          team: 'Six-person winning team, incl. RDVS directors @niianerkwei and @kwahmi',
+          area: '—',
+          year: '2012',
+          disciplines: ['Architecture', 'Interior Design', 'Architectural Visualization', 'Graphic Design', 'Design Documentation']
         }
       },
       {
         id: 'adentan-townhouses',
         title: 'Adentan Townhouses',
-        category: 'Architecture — 2022',
-        service: 'Architecture',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/adentan-townhouses/adentan-townhouses-1-desktop.jpg',
+        imageUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1.jpg',
+        imageUrlDesktop: 'assets/images/adentan-townhouses/adentan-townhouses-1.jpg',
         imageMobileUrl: 'assets/images/adentan-townhouses/adentan-townhouses-1-mobile.jpg',
         projectUrl: 'adentan-townhouses.html',
         desc: 'Modular residential community balancing privacy with shared landscape courtyards and climate-responsive natural ventilation.',
@@ -299,7 +259,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Residential Architecture & Site Planning',
           team: 'Godsway Kwahmi, Residential Unit',
           area: '4,800 sq.m',
-          year: '2022',
+          year: '2017',
           disciplines: ['Residential Architecture', 'Landscape Integration']
         }
       },
@@ -329,9 +289,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2024',
         service: '3D Visualization',
         discipline: 'architecture',
-        imageUrl: 'assets/images/macord/macord-1.jpg',
-        imageUrlDesktop: 'assets/images/macord/macord-1.jpg',
-        imageMobileUrl: 'assets/images/macord/macord-1.jpg',
+        imageUrl: 'assets/images/macord/macord-5.jpg',
+        imageUrlDesktop: 'assets/images/macord/macord-5.jpg',
+        imageMobileUrl: 'assets/images/macord/macord-5.jpg',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
@@ -348,29 +308,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   interiors: {
     name: 'Interior Design',
     videos: [
-      {
-        id: 'csm-interiors-film',
-        title: 'CSM Executive Suites',
-        category: 'Interior Design — 2024',
-        service: 'Interior Design',
-        discipline: 'interiors',
-        videoUrl: 'assets/videos/csm-interiors/csm-interiors.mp4',
-        videoUrlDesktop: 'assets/videos/csm-interiors/csm-interiors.mp4',
-        videoMobileUrl: 'assets/videos/csm-interiors/csm-interiors-mobile.mp4',
-        imageUrl: 'assets/images/margin/margin-bank-desktop.jpg',
-        imageUrlDesktop: 'assets/images/margin/margin-bank-desktop.jpg',
-        imageMobileUrl: 'assets/images/margin/margin-bank-mobile.jpg',
-        projectUrl: 'work.html',
-        desc: 'An immersive cinematic walkthrough detailing warm minimalist executive environments, concealed cove lighting, and acoustic millwork.',
-        specs: {
-          client: 'CSM Group',
-          scope: 'Commercial Interior Design & 3D Walkthrough Film',
-          team: 'Godsway Kwahmi, RDVS Interior Architecture',
-          area: '480 sq.m',
-          year: '2024',
-          disciplines: ['Interior Design', 'Workplace Strategy', 'CGI Visualization']
-        }
-      },
       {
         id: 'advantage-place',
         title: 'Advantage Place',
@@ -397,6 +334,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
+        id: 'csm',
+        title: 'CSM',
+        category: 'Interior Design & 3D Visualization — 2014',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/csm/csm-1.jpg',
+        imageUrlDesktop: 'assets/images/csm/csm-1.jpg',
+        imageMobileUrl: 'assets/images/csm/csm-1-mobile.jpg',
+        projectUrl: 'csm.html',
+        desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
+        specs: {
+          client: 'Centre Stage Management',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey + Jude Nyoagbe',
+          area: 'Compact Office',
+          year: '2014',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
         id: 'hamlet-estate',
         title: 'The Hamlet',
         category: '3D Visualization — 2018',
@@ -422,8 +379,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2019',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/1957/1957-12-desktop.jpg',
-        imageUrlDesktop: 'assets/images/1957/1957-12-desktop.jpg',
+        imageUrl: 'assets/images/1957/1957-12.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-12.jpg',
         imageMobileUrl: 'assets/images/1957/1957-12-mobile.jpg',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
@@ -442,8 +399,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Build — 2019',
         service: 'Interior Design & Build',
         discipline: 'interiors',
-        imageUrl: 'assets/images/afg/afg-headquarters-desktop.jpg',
-        imageUrlDesktop: 'assets/images/afg/afg-headquarters-desktop.jpg',
+        imageUrl: 'assets/images/afg/afg-headquarters.jpg',
+        imageUrlDesktop: 'assets/images/afg/afg-headquarters.jpg',
         imageMobileUrl: 'assets/images/afg/afg-headquarters-mobile.jpg',
         projectUrl: 'afg.html',
         desc: 'A complete design-and-build office commission for AFG in Accra — combining graphic design, photoreal 3D visualization, bespoke industrial & furniture design, and turnkey interior delivery.',
@@ -538,7 +495,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'c25-interior',
         title: 'C25',
-        category: 'Interior Design — 2019',
+        category: 'Interior Design — 2012',
         service: 'Interior Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/c25/c25-1-desktop.jpg',
@@ -551,7 +508,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Interior Architecture & Custom Cabinetry',
           team: 'Godsway Kwahmi, RDVS Interior Atelier',
           area: '420 sq.m',
-          year: '2019',
+          year: '2012',
           disciplines: ['Interior Design', 'Custom Millwork', 'Lighting']
         }
       }
@@ -563,45 +520,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     videos: [
       {
         id: '1981-film-project',
-        title: '1981 Spatial Architecture Film',
-        category: 'Visual Effects (VFX) & CGI — 2024',
-        service: 'Visual Effects (VFX) & CGI',
+        title: '1981',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/1957/1957-interior-desktop.jpg',
-        imageUrlDesktop: 'assets/images/1957/1957-interior-desktop.jpg',
-        imageMobileUrl: 'assets/images/1957/1957-interior-mobile.jpg',
+        imageUrl: 'assets/images/1981/1981-6.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-6.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-6-mobile.jpg',
         videoUrl: 'assets/videos/1981/1981-film.mp4',
-        projectUrl: 'work.html',
-        desc: 'Minimalist spatial composition balancing monumental monolithic massing with continuous floor-to-ceiling panoramic glass openings.',
+        projectUrl: '1981.html',
+        desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
-          client: 'Private Client',
-          scope: 'Spatial Architecture & CGI Cinematic Experience',
-          team: 'Godsway Kwahmi, RDVS VFX & Cinematic Unit',
-          area: '520 sq.m',
-          year: '2024',
-          disciplines: ['Visual Effects (VFX) & CGI', 'Spatial Architecture']
-        }
-      },
-      {
-        id: 'vr-showcase-video',
-        title: 'VR Showcase',
-        category: 'VR Simulation — 2024',
-        service: 'VR Simulation',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
-        imageUrlDesktop: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
-        imageMobileUrl: 'assets/images/vr-showcase/vr-showcase-poster.jpg',
-        videoUrl: 'assets/videos/vr-showcase/vr-showcase.mp4',
-        projectUrl: 'vr-showcase.html',
-        is360: true,
-        desc: 'An immersive real-time virtual simulation exploring photorealistic lighting, dynamic materials, and interactive spatial flow.',
-        specs: {
-          client: 'RDVS Virtual Lab',
-          scope: 'Virtual Reality Simulation & Photoreal 3D Environments',
-          team: 'Godsway Kwahmi, RDVS Virtual Reality Team',
-          area: 'Interactive',
-          year: '2024',
-          disciplines: ['Visual Effects (VFX) & CGI', 'VR Simulation', 'Interactive 3D']
+          client: 'Joelle Eyeson / 1981',
+          scope: '3D Modelling, Shading + Texturing, Lighting, Rendering, Post-Processing & Film Animation',
+          team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
+          location: 'Accra, Ghana',
+          area: 'Retail Interior',
+          year: '2015',
+          disciplines: ['3D Visualization', 'Retail Interior']
         }
       },
       {
@@ -610,8 +546,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2014',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1-desktop.jpg',
+        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
+        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
         imageMobileUrl: 'assets/images/beautiful-choices/beautiful-choices-1-mobile.jpg',
         videoUrl: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
         projectUrl: 'beautiful-choices.html',
@@ -634,8 +570,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & CGI — 2013',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/94-laurel/94-laurel-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/94-laurel/94-laurel-1-desktop.jpg',
+        imageUrl: 'assets/images/94-laurel/94-laurel-1.jpg',
+        imageUrlDesktop: 'assets/images/94-laurel/94-laurel-1.jpg',
         imageMobileUrl: 'assets/images/94-laurel/94-laurel-1-mobile.jpg',
         projectUrl: '94-laurel.html',
         desc: 'High-fidelity photorealistic CGI rendering for a residential estate in Laurel, Canada, executing high-precision 3D modeling, texturing, material shading, ray-traced lighting, and post-processing.',
@@ -652,21 +588,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'campions-estate',
         title: 'Campions Renderings',
-        category: 'Visual Effects (VFX) & CGI — 2019',
-        service: 'Visual Effects (VFX) & CGI',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/campions-renderings/campions-renderings-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-1-mobile.jpg',
+        category: 'Architectural Design — 2015',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
+        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
+        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-01-mobile.jpg',
         projectUrl: 'campions-renderings.html',
-        desc: 'Photorealistic exterior and interior visual effects study capturing delicate twilight scattering, stone textures, and water reflections.',
+        desc: 'Terraced houses grouped around a shared pool courtyard, drawn in several exterior colourways and carried through to the interiors.',
         specs: {
-          client: 'Campions Property Group',
-          scope: 'Photoreal CGI Architectural Visualization',
-          team: 'Godsway Kwahmi, RDVS CGI Studio',
-          area: '2,200 sq.m',
-          year: '2019',
-          disciplines: ['Visual Effects (VFX) & CGI', 'Lighting Simulation', 'Shading']
+          client: 'Imperial Homes',
+          scope: 'Architectural Design, Interior Design & 3D Visualization',
+          area: 'Residential Development',
+          year: '2015',
+          disciplines: ['Architecture', 'Interior Design', '3D Visualization']
         }
       },
       {
@@ -675,8 +610,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & CGI — 2010',
         service: 'Visual Effects (VFX) & CGI',
         discipline: 'vfx',
-        imageUrl: 'assets/images/aggregate/villa-aggregate-desktop.jpg',
-        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-desktop.jpg',
+        imageUrl: 'assets/images/aggregate/villa-aggregate.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate.jpg',
         imageMobileUrl: 'assets/images/aggregate/villa-aggregate-mobile.jpg',
         projectUrl: 'villa-aggregate.html',
         desc: 'Complex monolithic concrete and aggregate stone shader simulations exploring tactile micro-reliefs under directional sunlight.',
@@ -695,9 +630,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'graphic',
-        imageUrl: 'assets/images/chocolate/chocolate-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/chocolate/chocolate-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/chocolate/chocolate-1-mobile.jpg',
+        imageUrl: 'assets/images/chocolate/chocolate-15-desktop.jpg',
+        imageUrlDesktop: 'assets/images/chocolate/chocolate-15-desktop.jpg',
+        imageMobileUrl: 'assets/images/chocolate/chocolate-15-mobile.jpg',
         projectUrl: 'chocolate.html',
         desc: 'Logo design for Chocolate by Kwaku Bediako, a fashion design house in Ghana — a dripping C monogram drawn from a couturier’s dress form, paired with a script wordmark, a winged badge variant, a corporate typeface, stationery, and the badge cast as metal hardware on the house’s footwear and leatherwear.',
         specs: {
@@ -715,8 +650,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'graphic',
-        imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-desktop.jpg',
+        imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
+        imageUrlDesktop: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
         imageMobileUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1-mobile.jpg',
         projectUrl: 'glow-in-the-dark.html',
         desc: 'Event marketing for a party advertised for 4 October 2014 — a neon sign key visual modelled in 3D so the glass could be shown dead and struck up, then looped as a teaser between the two states.',
@@ -736,11 +671,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'graphic',
-        imageUrl: 'assets/images/stark-glaube/stark-glaube-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-1-mobile.jpg',
+        imageUrl: 'assets/images/stark-glaube/stark-glaube-2-desktop.jpg',
+        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-2-desktop.jpg',
+        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-2-mobile.jpg',
         projectUrl: 'stark-glaube.html',
-        desc: 'Identity for a Ghanaian company — the initials SG knocked out of a band of triangles graded green to blue, under a geometric wordmark set as a single word.',
+        desc: 'Identity for a Ghanaian company — the initials SG and the name set as a wordmark, taken through four routes: a monogram knocked out of a graded band of triangles, glossy green-and-blue ribbon loops, a bird in flight and a three-bar banner.',
         specs: {
           client: 'Stark Glaube',
           scope: 'Graphic Design, Logo Design & Brand Identity',
@@ -813,6 +748,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'ghana-bbq-beer-festival',
+        title: 'Ghana BBQ & Beer Festival',
+        category: 'Graphic Design — 2017',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-desktop.jpg',
+        imageUrlDesktop: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-desktop.jpg',
+        imageMobileUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-mobile.jpg',
+        projectUrl: 'ghana-bbq-beer-festival.html',
+        desc: 'Event poster for a barbecue and beer festival at Bermuda Gardens, Accra — a mustard A4 sheet torn open onto a white-lined street plan, with the title set in a face whose letters are themselves torn.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Graphic Design & Digital Art',
+          team: 'RDVS Team',
+          location: 'Accra, Ghana',
+          area: 'Event Poster',
+          year: '2017',
+          disciplines: ['Graphic Design', 'Digital Art']
+        }
+      },
+      {
         id: 'gh-phot-awards',
         title: 'Gh Photography Awards',
         category: 'Industrial Design — 2016',
@@ -830,6 +786,27 @@ document.addEventListener('DOMContentLoaded', async () => {
           area: 'Event Design',
           year: '2016',
           disciplines: ['Industrial Design', '3D Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'haustalks',
+        title: 'Haustalks',
+        category: 'Graphic Design — 2019',
+        service: 'Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/haustalks/haustalks-desktop.jpg',
+        imageUrlDesktop: 'assets/images/haustalks/haustalks-desktop.jpg',
+        imageMobileUrl: 'assets/images/haustalks/haustalks-mobile.jpg',
+        projectUrl: 'haustalks.html',
+        desc: 'Identity and campaign plates for Haustalks, an advice service that connects a client with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and of stone.',
+        specs: {
+          client: 'Haustalks',
+          scope: 'Brand Identity, Graphic Design & 3D Visualization',
+          team: 'RDVS Team',
+          location: 'Accra, Ghana',
+          area: 'Brand Identity',
+          year: '2019',
+          disciplines: ['Graphic Design', '3D Visualization']
         }
       },
       {
@@ -855,11 +832,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'yao-yaa',
         title: 'Yao + Yaa',
-        category: 'Graphic Design — 2014',
+        category: 'Graphic Design — 2013',
         service: 'Graphic Design',
         discipline: 'graphic',
-        imageUrl: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
+        imageUrl: 'assets/images/yao-yaa/yao-yaa-1.jpg',
+        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-1.jpg',
         imageMobileUrl: 'assets/images/yao-yaa/yao-yaa-1-mobile.jpg',
         projectUrl: 'yao-yaa.html',
         desc: 'Wedding invitation for Yao Tettey and Yaa Lamptey — a sea-green paisley field with the couple\u2019s day-names worked into it tone-on-tone, geometric-sans type panels and redrawn Tema venue maps.',
@@ -869,7 +846,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           location: 'Tema, Ghana',
           area: 'Wedding Invitation',
-          year: '2014',
+          year: '2013',
           disciplines: ['Graphic Design', 'Digital Art', 'Illustration']
         }
       },
@@ -879,8 +856,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'graphic',
-        imageUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-desktop.jpg',
+        imageUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg',
+        imageUrlDesktop: 'assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg',
         imageMobileUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1-mobile.jpg',
         projectUrl: 'ameyaw-sarah.html',
         desc: 'Invitation for an Akan customary marriage \u2014 the adinkra symbol Me Ware Wo redrawn from the couple\u2019s initials as a four-lobed monogram, laid over a kente weave built from minute S and A letterforms, with an adinkra legend driving the directions map.',
@@ -900,8 +877,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2016',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-desktop.jpg',
+        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1.jpg',
+        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1.jpg',
         imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-mobile.jpg',
         projectUrl: 'baobab-hotel-exteriors.html',
         desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
@@ -912,6 +889,27 @@ document.addEventListener('DOMContentLoaded', async () => {
           location: 'Accra, Ghana',
           area: 'Hospitality',
           year: '2016',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'senya-resort',
+        title: 'Senya Resort',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/senya-resort/senya-resort-1.jpg',
+        imageUrlDesktop: 'assets/images/senya-resort/senya-resort-1.jpg',
+        imageMobileUrl: 'assets/images/senya-resort/senya-resort-1-mobile.jpg',
+        projectUrl: 'senya-resort.html',
+        desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
+        specs: {
+          client: 'Leonie Badger',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          location: 'Senya, Ghana',
+          area: 'Hospitality',
+          year: '2018',
           disciplines: ['3D Visualization']
         }
       }
@@ -927,8 +925,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Motion Design — 2019',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/ceeander/ceeander-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageUrl: 'assets/images/ceeander/ceeander-1.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-1.jpg',
         imageMobileUrl: 'assets/images/ceeander/ceeander-1-mobile.jpg',
         videoUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
         projectUrl: 'ceeander.html',
@@ -969,8 +967,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & Motion Design — 2016',
         service: 'Visual Effects (VFX) & Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
         imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1-mobile.jpg',
         videoUrl: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
         projectUrl: 'hfc-tvc.html',
@@ -987,11 +985,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'moty-intro-motion',
         title: 'MOTY',
-        category: 'Motion Design — 2014',
+        category: 'Motion Design — 2016',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/ceeander/ceeander-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ceeander/ceeander-1-desktop.jpg',
+        imageUrl: 'assets/images/ceeander/ceeander-1.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-1.jpg',
         imageMobileUrl: 'assets/images/ceeander/ceeander-1-mobile.jpg',
         videoUrl: 'assets/videos/moty/moty-intro.mp4',
         projectUrl: 'moty.html',
@@ -1001,14 +999,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Broadcast Title Sequence & Motion Design',
           team: 'Godsway Kwahmi, RDVS Motion Studio',
           area: 'Broadcast Event',
-          year: '2014',
+          year: '2016',
           disciplines: ['Motion Design', '3D Motion Graphics']
         }
       },
       {
         id: 'viasat1-titles-motion',
         title: 'Viasat1 Breakfast Show',
-        category: 'Motion Design — 2010',
+        category: 'Motion Design — 2013',
         service: 'Motion Design',
         discipline: 'motion',
         imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
@@ -1022,7 +1020,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Broadcast Identity & Title Package',
           team: 'Godsway Kwahmi, RDVS Motion Studio',
           area: 'Morning Broadcast',
-          year: '2010',
+          year: '2013',
           disciplines: ['Motion Design', 'Broadcast Packaging']
         }
       }
@@ -1030,22 +1028,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     images: [
       {
         id: 'emerge-ident',
-        title: 'Emerge Ident',
-        category: 'Motion Design — 2018',
+        title: 'Emerge Co. Ltd Showreel',
+        category: 'Motion Design — 2015',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-1-mobile.jpg',
+        imageUrl: 'assets/images/emerge-ident/emerge-ident-desktop.jpg',
+        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-desktop.jpg',
+        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-mobile.jpg',
         projectUrl: 'emerge-ident.html',
-        desc: 'A comprehensive broadcast and digital motion design system exploring clean geometry and dynamic typographic pacing.',
+        desc: 'A 3D animated showreel for Emerge Co. Ltd \u2014 goldfish leap out of a bowl on white, each jump carrying an orange service heading after it: Clientele, Production, Events, Advertising.',
         specs: {
-          client: 'Emerge Media Group',
-          scope: 'Brand Identity System & Motion Graphics',
-          team: 'Godsway Kwahmi, RDVS Motion & Branding',
-          area: 'Media Brand',
-          year: '2018',
-          disciplines: ['Motion Design', 'Brand Identity', 'Graphic Systems']
+          client: 'Emerge Co. Ltd',
+          scope: 'Concept, 3D Animation & Motion Design',
+          team: 'RDVS Studios',
+          location: 'Accra, Ghana',
+          area: 'Motion Design',
+          year: '2015',
+          disciplines: ['Motion Design', '3D Animation']
         }
       },
       {
@@ -1074,8 +1073,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Motion Design — 2015',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-1-desktop.jpg',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-1.jpg',
         imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-1-mobile.jpg',
         projectUrl: 'hot-gossip.html',
         desc: 'Fast-paced, colorful entertainment broadcast titles and transition cards designed for prime-time programming.',
@@ -1094,8 +1093,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & Motion Design — 2016',
         service: 'Visual Effects (VFX) & Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1-desktop.jpg',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
         imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1-mobile.jpg',
         projectUrl: 'hfc-tvc.html',
         desc: 'High-contrast stylized motion keyframes establishing lighting mood, particle density, and corporate typographic hierarchy.',
@@ -1253,33 +1252,78 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const newsSlides = (await fetchNewsSlideEntries(3)).slice(0, 3);
 
-  // Generate the remaining slides: equal distribution across the 4 service types.
-  // News slides always occupy the front, so the budget adapts to their count.
+  // Generate the remaining slides: the most recent works of each of the 4 service
+  // pools, distributed equally. News slides always occupy the front, so the budget
+  // adapts to their count.
   const serviceKeys = ['architecture', 'interiors', 'vfx', 'motion'];
   const TOTAL_SLIDE_BUDGET = 20;
+
+  // Recency, not randomness. A slide's date is the year its pool entry carries (the same
+  // year the project page publishes, and what the page-sync below keeps in step). Videos
+  // and images rank together — "most recent video or image" is the brief — and because
+  // Array#sort is stable, same-year entries keep the order they are curated in the pool.
+  function slideYear(entry) {
+    const rawYear = (entry && entry.specs && entry.specs.year) ||
+      (entry && entry.category ? String(entry.category).split('—')[1] : '') || '';
+    const year = parseInt(String(rawYear).trim(), 10);
+    return isNaN(year) ? 0 : year;
+  }
+  function byRecency(a, b) { return slideYear(b) - slideYear(a); }
+  function recentOf(key) {
+    const pool = servicePools[key] || {};
+    return [...(pool.videos || []), ...(pool.images || [])].sort(byRecency);
+  }
+
+  // "After the 20 slide in the slideshow on the home page, let's implement an automatic
+  // page refresh." The deck itself is now a fixed newest-first selection, so the reload
+  // exists to pick up new work and fresh news rather than to reshuffle. Once the deck
+  // has run its full length it reloads the page, so the news
+  // slides, the page-derived titles and any freshly published work are all re-read.
+  const AUTO_REFRESH_AFTER_SLIDE = TOTAL_SLIDE_BUDGET;
+  const AUTO_REFRESH_MIN_GAP_MS = 30000;
+  let autoRefreshQueued = false;
+
+  function requestDeckRefresh() {
+    if (autoRefreshQueued) return false;
+    try {
+      const last = Number(sessionStorage.getItem('rdvs-deck-refreshed-at') || 0);
+      if (Date.now() - last < AUTO_REFRESH_MIN_GAP_MS) return false;
+      sessionStorage.setItem('rdvs-deck-refreshed-at', String(Date.now()));
+    } catch (e) {
+      // Storage unavailable: the once-per-page-life flag below still prevents looping
+    }
+    autoRefreshQueued = true;
+    window.location.reload();
+    return true;
+  }
+
   const projectSlotBudget = Math.max(TOTAL_SLIDE_BUDGET - newsSlides.length, 0);
   const basePerService = Math.floor(projectSlotBudget / serviceKeys.length);
   let remainder = projectSlotBudget - basePerService * serviceKeys.length;
   const perServiceCounts = {};
   const selectedByService = {};
 
+  // A project can appear in more than one pool (a film in motion, its stills in vfx).
+  // Under the old random draw that sometimes doubled a work up by accident; under a fixed
+  // newest-first order it would happen on every single load, so each work is now claimed
+  // once — by the first service that reaches it — and the rest of the deck moves up.
+  const slideKey = (entry) => entry.projectUrl || entry.id || entry.title;
+  const claimed = new Set();
+
   serviceKeys.forEach(key => {
     // Distribute any remainder across the first services
     perServiceCounts[key] = basePerService + (remainder > 0 ? 1 : 0);
     if (remainder > 0) remainder--;
 
-    const pool = servicePools[key];
-    const shuffledVideos = shuffleArray(pool.videos || []);
-    const shuffledImages = shuffleArray(pool.images || []);
-
-    // Mix of videos and images (max 2 videos per discipline)
-    const videoCount = Math.min(2, shuffledVideos.length, perServiceCounts[key]);
-    const imageCount = Math.max(perServiceCounts[key] - videoCount, 0);
-
-    const chosenVideos = shuffledVideos.slice(0, videoCount);
-    const chosenImages = shuffledImages.slice(0, imageCount);
-
-    selectedByService[key] = shuffleArray([...chosenVideos, ...chosenImages]);
+    const chosen = [];
+    for (const entry of recentOf(key)) {
+      if (chosen.length >= perServiceCounts[key]) break;
+      const id = slideKey(entry);
+      if (claimed.has(id)) continue;
+      claimed.add(id);
+      chosen.push(entry);
+    }
+    selectedByService[key] = chosen;
   });
 
   // Interleave round-robin across services so consecutive slides alternate discipline
@@ -1295,13 +1339,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Top-up from any pool if the selection underfilled (never exceed the total budget)
   if (newsSlides.length + interleavedProjects.length < TOTAL_SLIDE_BUDGET) {
-    const used = new Set([...newsSlides, ...interleavedProjects].map(p => p.id));
+    const used = new Set([...newsSlides, ...interleavedProjects].map(slideKey));
     for (const key of serviceKeys) {
-      const pool = [...(servicePools[key].videos || []), ...(servicePools[key].images || [])];
-      for (const entry of shuffleArray(pool)) {
+      for (const entry of recentOf(key)) {
         if (newsSlides.length + interleavedProjects.length >= TOTAL_SLIDE_BUDGET) break;
-        if (used.has(entry.id)) continue;
-        used.add(entry.id);
+        if (used.has(slideKey(entry))) continue;
+        used.add(slideKey(entry));
         interleavedProjects.push(entry);
       }
       if (newsSlides.length + interleavedProjects.length >= TOTAL_SLIDE_BUDGET) break;
@@ -1457,7 +1500,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               </picture>
             `;
           } else if (proj.videoUrl) {
-            if ((proj.is360 || proj.videoUrl.includes('vr-showcase') || proj.videoUrl.includes('360')) && window.VR360) {
+            if ((proj.is360 || proj.videoUrl.includes('360')) && window.VR360) {
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
               vrWrap.className = 'slide-vr-wrapper vr-360-container';
@@ -1709,13 +1752,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupEventListeners();
   }
 
-  function updateSlide(newIndex) {
+  function updateSlide(newIndex, autoAdvance = false) {
     clearSlideTimer();
     imageElapsed = 0;
 
     if (newIndex < 0) {
       currentIndex = totalSlides - 1;
     } else if (newIndex >= totalSlides) {
+      // End of the deck: the automatic run refreshes the page instead of looping
+      // (manual stepping still wraps to slide one). See AUTO_REFRESH_AFTER_SLIDE.
+      if (autoAdvance && totalSlides >= AUTO_REFRESH_AFTER_SLIDE && requestDeckRefresh()) return;
       currentIndex = 0;
     } else {
       currentIndex = newIndex;
@@ -1818,7 +1864,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (advanced) return;
         advanced = true;
         clearSlideTimer();
-        updateSlide(currentIndex + 1);
+        updateSlide(currentIndex + 1, true);
       };
 
       const getTargetDuration = () => {
@@ -1925,7 +1971,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }, 40);
 
       slideTimer = setTimeout(() => {
-        updateSlide(currentIndex + 1);
+        updateSlide(currentIndex + 1, true);
       }, remainingTime);
     }
   }

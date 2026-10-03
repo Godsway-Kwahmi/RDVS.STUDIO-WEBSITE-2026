@@ -936,8 +936,7 @@ button {
 .toolbar-label {
   font-size: 0.75rem;
   color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
   margin-right: 2px;
   flex-shrink: 0;
 }
@@ -1246,8 +1245,7 @@ button {
 .subservice-label {
   font-weight: 500;
   color: var(--foreground);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
   font-size: 0.75rem;
   margin-right: 4px;
 }
@@ -1413,11 +1411,12 @@ button {
   border-bottom: 1px solid var(--border-hairline);
 }
 
+/* Gallery sub-headings render in the case they are written in the page markup
+   ("Approach + Dressing", "Bar + Lounge") with no forced capitals. */
 .gallery-section-title {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: var(--foreground);
 }
 
@@ -2184,8 +2183,7 @@ button {
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
+    color: #fff;
   width: fit-content;
   pointer-events: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -2217,8 +2215,7 @@ button {
   border-radius: 30px;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #ffffff;
+    color: #ffffff;
   pointer-events: none;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2349,12 +2346,18 @@ button {
 }
 
 /* Minimalist Playback Bar for dedicated 360 video pages */
+/* The hero wrapper sizes itself to its content here: .project-hero-media's 16/10
+   aspect ratio and 78vh cap would clip the viewer plus the bar below it. */
 .vr-hero-media {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  aspect-ratio: auto;
+  max-height: none;
+  overflow: visible;
+  background-color: transparent;
 }
 
 .vr-playback-bar {

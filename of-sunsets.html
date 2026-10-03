@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Of Sunsets &mdash; RDVS Studios</title>
+  <meta name="description" content="Of Sunsets - 2017 residential interior project in Accra, Ghana: architectural visualization &amp; motion design for Mobius Architecture by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Architectural Visualization &amp; Motion Design &mdash; 2017 &middot; Mobius Architecture</span>
+      <h1 class="project-page-title">Of Sunsets</h1>
+    </header>
+
+    <div class="project-hero-media has-video">
+      <video class="project-hero-video" controls autoplay muted loop playsinline preload="metadata" poster="assets/images/of-sunsets/of-sunsets-1.jpg">
+        <source src="assets/videos/of-sunsets/of-sunsets-film.mp4" type="video/mp4">
+        Your browser does not support the embedded film.
+      </video>
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.</p>
+
+        <div class="project-body-text">
+          <p>The architecture was Mobius Architecture&rsquo;s, and the imagery was made for an architectural competition while the scheme was still a model rather than a building. RDVS Studio built the development in 3D and rendered it as a sequence, so the lobby, the apartments and the shared roof terrace could be judged as lived-in rooms instead of as drawings, then cut a short film from an earlier version of that model.</p>
+          <p>The sequence runs from arrival to outlook. It opens on the lobby, where a dark timber wall carries the building name and a pale stone desk anchors the room, then moves into apartment interiors where kitchen, dining and lounge sit in one open sweep. It closes on the roof, where sculptural timber pergolas, planters and a pool frame the city beyond.</p>
+          <p>Materials stay restrained so the light can do the work: pale stone, oak-toned timber screens, glossy white joinery, tan leather and charcoal wool. Daylight plates read cool and mineral; the night plates push amber cove strips, backlit shelves and thin pendants until every surface glows. Several views were rendered twice, once at dusk and once after dark, to show how each room changes.</p>
+          <p>Twenty-eight stills were published as one gallery alongside the film, with the lobby plate serving as its opening frame. The lettering built into the walls doubles as a title card, so the film and the image set share one look. The set was competition material at the time; archived here it reads as a record of how far the scheme was taken before anything was built.</p>
+          <p>The project was published as <em>OF SUNSETS &mdash; 3D VISUALIZATION &mdash; RDVS. DESIGN</em>; the full set is <a href="https://www.behance.net/gallery/47859657" target="_blank" rel="noopener noreferrer">on Behance</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Mobius Architecture</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2017</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization &amp; Motion Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">RDVS. DESIGN</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">28 plates &middot; up to 1400 px wide &middot; 1080p film</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-1.jpg" alt="Interior visualization of an apartment lobby: a dark timber wall carries white APARTMENTS lettering above a pale stone reception desk, three cylindrical pendants hang over it, and a woven timber screen art panel hangs on the concrete wall beside a tan leather sofa." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-2.jpg" alt="Closer view of the same lobby, rendered in warm interior light: the APARTMENTS lettering fills the timber wall, the stone desk is lit from its cove, and the timber screen artwork and low leather seating sit against a board-marked concrete wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-3.jpg" alt="Daytime lobby visualization from the seating side: full-height glazing on the left shows green trees and bright daylight outside, the APARTMENTS wall and white reception desk sit centre, and the timber screen art panel anchors the right-hand concrete wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-4.jpg" alt="A near-duplicate daylight take of the same lobby view as plate 3, pulled slightly wider: the timber screen reads more fully, a sofa back crosses the foreground, and warm uplighting grazes the base of the APARTMENTS wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-5.jpg" alt="Close-up render of a sculptural timber floor lamp with a wide disc shade glowing amber, its tripod legs rising beside leather seating; behind it the lobby APARTMENTS wall falls into shadow and the timber screen artwork catches the last light." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-6.jpg" alt="Night version of the lobby sequence: deep blue dusk sky and tree silhouettes behind the full-height glazing, the APARTMENTS lettering lit white on the timber wall, and the stone reception desk glowing from within while dark seating fills the foreground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-7.jpg" alt="Deliberately underexposed interior render of an apartment living room at night, lights almost off: only the outline of a sofa, a round coffee table and a framed picture emerge from the dark, a low-light study for the sequence." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-8.jpg" alt="Same living room with its lighting switched on: an amber ceiling cove strip runs the length of the white ceiling, a tan leather sofa and white marble coffee table sit on a dark rug, and a bright floral painting warms the far wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-9.jpg" alt="Brighter daylight variant of the same living room view as plate 8: white walls and a pale floor read cleanly, the cove lighting is softer, and the accent chair, marble table, leather sofa and floral artwork all hold their positions." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-10.jpg" alt="Living room render taken from the media wall: a flat screen is mounted on a white feature wall above a floating console, a pale rug and marble coffee table sit in front, and the dining zone and cove light continue beyond." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-11.jpg" alt="Open-plan kitchen visualization: a long white island with leather bar stools runs toward a glazed end wall showing dusk sky, a single linear pendant hangs above the stone top, and glossy white cabinets with built-in ovens line the right side." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-12.jpg" alt="Slightly reframed night view of the same kitchen: warm toe-kick and under-cabinet lighting lifts the island off the polished floor, a glass-fronted cabinet glows at the far end, and the blue abstract panel on the left wall repeats from plate 11." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-13.jpg" alt="Kitchen close view along the island: a slim undermount sink and an open laptop sit on the white worktop, a linear pendant throws a hard band of light, and the stainless oven stack and pale floor reflections fill the background." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-14.jpg" alt="Evening living room render dominated by a large drum floor lamp shading warm light over a tan leather sofa; a wall-mounted screen and floating console sit opposite on a white wall, and the dining area glows in the distance." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-15.jpg" alt="Night variant of the same lamp and sofa view as plate 14, with the drum shade burning brighter and the whole room pushed to amber: the leather sofa fills the foreground and the floral artwork at the right edge saturates." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-16.jpg" alt="Apartment lounge at night from the sofa end: the media wall and console read cool white against warm cove light, an accent chair and marble table sit on a dark rug, and the dining zone continues under a lit ceiling reveal." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-17.jpg" alt="Interior render looking through a slatted timber screen and door toward a lounge, with a night city skyline glittering beyond the glazing and a planted island in the middle of the polished reflective floor." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-18.jpg" alt="Wide penthouse interior at night: full-height glazing frames a dense lit skyline, a white sofa and pale rug sit under a curved ceiling cove, and the kitchen island and glossy cabinets run along the right side of the room." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-19.jpg" alt="Penthouse dining render at dusk: a round white table with moulded chairs sits below a copper-toned pendant, a backlit shelving niche and a wall screen are set into timber slat panelling, and a curved ceiling cove glows over a blue-purple skyline." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-20.jpg" alt="Same penthouse dining and lounge view as plate 19, tightened: the glowing bar niche, white sofa and copper pendant cluster at the window while the twilight city sits low beyond the glass." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-21.jpg" alt="Opposite angle of the same penthouse: the open kitchen with its island and stools reads across the room, a round dining table with white chairs occupies the middle, and a lit display niche and bookshelf line the timber wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-22.jpg" alt="Penthouse interior at night, dining first: a white pedestal table and chairs under a paper-lantern pendant, a backlit glass niche with stemware and a wall screen beyond, dark kitchen cabinetry at the left, and a long lit ceiling reveal above." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-23.jpg" alt="Rooftop terrace visualization at dusk: branch-like timber pergola columns carry a pale canopy over a deck, planters of ornamental grasses, white mosaic tables and low daybeds sit below, and a glowing pool edge meets the city skyline." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-24.jpg" alt="Second dusk take of the same roof terrace from a shifted position: the timber pergola frames the view across the planters and lounge poufs, with the pool lit cyan at the parapet and buildings dotting the horizon." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-25.jpg" alt="Night view along the rooftop infinity pool: the water glows bright cyan against a dark skyline of lit towers, black lounge chairs with folded white towels line the timber deck, and the angled pergola posts cut across the sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-26.jpg" alt="Night variant of the same poolside view as plate 25, framed slightly wider: the cyan water, deck chairs and white planter hold their positions while the tower lights behind read more clearly against the deep blue sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-27.jpg" alt="Rooftop lounge and dining terrace at night: heavy timber V-columns rise from the deck beside white daybeds and mosaic tables, dark chairs group around tables, a furled parasol stands at the glass stair core, and pendants hang inside it." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/of-sunsets/of-sunsets-28.jpg" alt="Closing rooftop render: a small dining table and dark chairs on the timber deck under a closed cream parasol, framed by an angled timber column, with daybeds, grasses and a night sky behind the glass balustrade." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="osu-apartments.html" class="project-nav-link">&larr; Previous: Osu Apartments</a>
+      <a href="odade3.html" class="project-nav-link">Next: Odade3 &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

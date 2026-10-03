@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Alexander &mdash; RDVS Studios</title>
+  <meta name="description" content="Alexander - 2016 residential project in Accra, Ghana: interior design &amp; architectural visualization for Private Client by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential / Interior Design &amp; Architectural Visualization &mdash; 2016 &middot; Private Client</span>
+      <h1 class="project-page-title">Alexander</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/alexander/alexander-1.jpg" alt="Visualization of the street frontage: two white flat-roofed villas behind a paved driveway, cars parked under a slatted carport, clipped shrubs and a heavy cloud-filled blue sky, studio watermark in the lower corner." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Alexander is a set of ten visualizations and interior design studies made in 2016 for a proposed private housing development in Accra, Ghana, covering white cubic villas, their pools and terraces, and the furnished interiors that sell them.</p>
+
+        <div class="project-body-text">
+          <p>The brief was marketing imagery for a real estate proposal that had not yet broken ground, so every frame had to argue for a completed building. RDVS. DESIGN supplied the interior design as well as the renders, presenting the scheme as a small group of detached villas around shared driveways, gardens and a pool.</p>
+          <p>Flat-roofed white volumes are stacked and offset to create covered parking, deep terraces and roof decks, with slatted timber screens marking the boundary between private lawn and shared ground. Interiors are open, with dining and living running straight out to the pool deck, and a separate gym and media room for residents.</p>
+          <p>The palette is deliberately restrained: white render, pale stone floors, dark timber doors and grey upholstery, warmed by cove lighting and by the blue of the pool at dusk. Kitchen and dining walls carry small accents, a mosaic splashback, a gallery of framed prints, a single figurative canvas in strong yellow.</p>
+          <p>Ten plates were released as a single gallery in 2016, moving from street frontage and long elevation views through dusk pool and terrace scenes to the gym, kitchen, dining room, snug and main living room. The sequence reads as a brochure: exterior first, proof of the interiors second.</p>
+          <p>The project was published as <em>ALEXANDER &mdash; 3D VISUALIZATION &mdash; RDVS. DESIGN</em>; the full set is <a href="https://www.behance.net/gallery/34728895" target="_blank" rel="noopener noreferrer">on Behance</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2016</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design for the show units and shared amenities, and the complete set of photorealistic exterior and interior visualizations used to market the proposed development.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">RDVS. DESIGN</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">10 plates &middot; up to 1400 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-1.jpg" alt="Visualization of the street frontage: two white flat-roofed villas behind a paved driveway, cars parked under a slatted carport, clipped shrubs and a heavy cloud-filled blue sky, studio watermark in the lower corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-2.jpg" alt="Wide horizontal elevation of the development seen across a lawn, a long band of low white volumes with deep window openings and flat roofs, set against blue sky with thin cloud and green planting below." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-3.jpg" alt="Rear garden visualization of a single villa: a white cubic box on columns with an open ground-floor terrace, a pergola and daybed above, and a broad lawn of large-leaf planting running to the frame edge." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-4.jpg" alt="Dusk view across a rectangular pool lit pale blue, a white two-storey villa glowing behind it, timber slat screens enclosing both sides and two loungers on the stone coping under a deep evening sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-5.jpg" alt="Covered outdoor room at dusk: warm linear lighting under a white canopy, a long dining table, a backlit bottle shelf on the end wall and the pool edge beyond the columns, floor tiles picking up the blue sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-6.jpg" alt="Gym interior visualization with three treadmills and a cross trainer along a window wall, a bench press and rack on dark plank flooring, ceiling fans overhead and a full-height mural of a bodybuilder on the black feature wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-7.jpg" alt="Kitchen visualization: handleless white cabinets with a breakfast island and timber stools, a grey mosaic splashback, pale patterned stone flooring, dark timber doors at either end and a glass partition to the stair hall beyond." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-8.jpg" alt="Dining room visualization seen from a floating stone staircase with a glass balustrade: a stone-top table with teal upholstered chairs, a drum pendant, a nine-square gallery wall and a glazed screen to the kitchen." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-9.jpg" alt="Snug or media room visualization: a low grey sectional on a dark rug facing a wall-mounted screen, open shelving and a desk to one side, floor-length sheer curtains at the window and a slim black reading lamp." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/alexander/alexander-10.jpg" alt="Living room visualization from a low angle across grey sofas: a large figurative canvas in yellow and black on the white wall, a round marble coffee table on a geometric rug, and the dining set with a woven pendant beyond." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="alexander-signage.html" class="project-nav-link">&larr; Previous: Alexander-Signage</a>
+      <a href="akyea-residence.html" class="project-nav-link">Next: Akyea Residence &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

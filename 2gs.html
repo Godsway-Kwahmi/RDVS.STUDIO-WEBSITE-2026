@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>2GS — RDVS Studios</title>
+  <meta name="description" content="2GS — Identity and branding for 2GS Construction + Logistics by RDVS Studios, 2015.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Identity / Graphic Design &mdash; 2015 &middot; 2GS Construction + Logistics</span>
+      <h1 class="project-page-title">2GS</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/2gs/2gs-5-desktop.jpg" alt="The primary 2GS lockup: an angular sand-coloured monogram beside the stacked 2GS Construction + Logistics wordmark on a near-black ground" class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A 2015 identity for 2GS Construction + Logistics: a monogram built from the idea of the collective, carried from pencil construction studies through stationery, business cards, letterheads and concrete signage.</p>
+        
+        <div class="project-body-text">
+          <p>The brief asked for an identity that embodies the essential ethos of a construction company in every facet &mdash; dynamism, accuracy, efficiency, firmness, refinement and elegance &mdash; beginning with the logo and identity design, which would then inform the letterheads and the rest of the company stationery. The logo was to act as the ideal PR proxy, and a deliberate deviation from construction clich&eacute;s was to shape the first interactions between client and brand.</p>
+          <p>The concept is the collective: to construct is to assemble, so that the resulting synergies work together to produce the most apt of products, and to provide logistics is to provide the apt aide and aid to serve a purpose well. Simple geometric shapes reinforce that idea of a collective and its result, while the accompanying motif &mdash; a labyrinth &mdash; stands metaphorically for the meticulous, complex care a proficient construction pays to detail and accuracy.</p>
+          <p>The palette and textures are drawn from the materials of the business itself: stone, sand and concrete, wood, steel and iron, resolved into five swatches of stone grey, pale gold, copper, taupe and grey, with the system set in Titillium. Bold but iconic elements let a customer interface with the brand at a glance, with no misunderstanding.</p>
+          <p>The plates follow the identity from first principles to finished artefacts: the monogram pencilled in construction lines on gridded paper, six wireframe studies on a construction grid, the lockup matrix in stacked and horizontal arrangements, business cards in white and black variants patterned with the maze motif and a sand chevron, letterheads over a faint maze ground, the full stationery suite with its stamp, and finally the monogram cast as dimensional concrete signage on a slate wall.</p>
+          <p>The gallery was published to Behance in August 2015 as <em>2GS BRANDING &mdash; GRAPHIC DESIGN</em>, credited there to Randy Biney and Jude Nyoagbe for concept and Randy Biney for design; the full set is <a href="https://www.behance.net/gallery/28732807/2GS-BRANDING-GRAPHIC-DESIGN" target="_blank" rel="noopener noreferrer">on Behance</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">2GS Construction + Logistics</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Identity</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Graphic Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Identity and branding: monogram and lockups, labyrinth motif, colour palette and typography, business cards, letterheads and stationery, signage</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Randy Biney (concept + design); Jude Nyoagbe (concept)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">14 plates &middot; up to 2480 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-1.jpg" alt="Identity rationale board: the labyrinth motif beside its written rationale, above a five-swatch colour palette and the material and type specimens for stone, sand and concrete, wood, and steel and iron, set in Titillium" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-2.jpg" alt="The design process: the 2GS monogram pencilled in construction lines on gridded note paper" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-3.jpg" alt="Six construction-grid wireframe studies of the monogram drawn in white line on a dark grid" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-4.jpg" alt="Lockup matrix on black: the monogram paired with the 2GS Construction + Logistics wordmark in stacked and horizontal arrangements at descending scales" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-5.jpg" alt="The primary horizontal lockup: the sand-coloured monogram beside the stacked 2GS Construction + Logistics wordmark on near-black" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-6.jpg" alt="Business card, white variant: front carrying the lockup and a contact block, back patterned with the maze motif and a sand chevron" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-7.jpg" alt="Business card, black variant: the same front and back reversed onto a dark ground with the maze motif worked into it" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-8.jpg" alt="Letterhead: lockup at the top left and web address at the top right over a faint maze-patterned ground, with the address block in the footer" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-9.jpg" alt="Stationery suite in isometric mockup: stacks of white and black business cards, letterheads, envelopes and a stamp carrying the monogram" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-10.jpg" alt="The monogram as dimensional concrete signage mounted on a dark slate wall" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-11.jpg" alt="A single large construction-line wireframe of the monogram on black" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-12.jpg" alt="The horizontal lockup presented twice, on a black band above and a white band below" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-13.jpg" alt="Business card variant closing with a sand footer band carrying the director line, above the concrete signage mockup" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/2gs/2gs-14.jpg" alt="Letterhead variant closing with a sand footer band and chevron over the maze-patterned ground" class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="41-barham.html" class="project-nav-link">&larr; Previous: 41 Barham</a>
+      <a href="1hive.html" class="project-nav-link">Next: 1Hive &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

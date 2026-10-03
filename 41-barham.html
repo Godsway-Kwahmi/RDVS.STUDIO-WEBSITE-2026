@@ -13,7 +13,7 @@
     })();
   </script>
   <title>41 Barham — RDVS Studios</title>
-  <meta name="description" content="41 Barham — Residential project by Architect Kofi Amankwah with interior design and 3D visualization by RDVS. Commissioned by Imperial Homes (2016/2017).">
+  <meta name="description" content="41 Barham — Residential project by Architect Kofi Amankwah with interior design, 3D visualization and an interactive 360° walkthrough by RDVS. Commissioned by Imperial Homes (2017).">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,12 +80,26 @@
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
     <header class="project-hero-header">
-      <span class="project-meta-line">Residential / Architecture &mdash; 2016/2017 &middot; Studio Commission</span>
+      <span class="project-meta-line">Residential / Architectural Design &mdash; 2017 &middot; Imperial Homes</span>
       <h1 class="project-page-title">41 Barham</h1>
     </header>
 
-    <div class="project-hero-media">
-      <img src="assets/images/barham/barham-courtyard.jpg" alt="41 Barham Primary View" class="project-hero-img">
+    <div class="project-hero-media vr-hero-media">
+      <div id="barham360Viewer" class="vr-360-container" style="width: 100%; aspect-ratio: 16/9; min-height: 520px; border-radius: 4px; overflow: hidden; background: #0a0a0a;"></div>
+      <div class="vr-playback-bar" id="barhamPlaybackBar">
+        <button type="button" class="vr-play-pause-btn" id="barhamPlayPauseBtn" aria-label="Play or Pause 360 Video" title="Play / Pause">
+          <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display: none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="vr-progress-track" id="barhamProgressTrack" role="slider" aria-label="Seek video">
+          <div class="vr-progress-fill" id="barhamProgressFill" style="width: 0%;"></div>
+        </div>
+        <span class="vr-time-display" id="barhamTimeDisplay">00:00 / 00:00</span>
+        <button type="button" class="vr-mute-btn" id="barhamMuteBtn" aria-label="Mute or Unmute" title="Mute / Unmute">
+          <svg class="icon-vol-on" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          <svg class="icon-vol-off" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+      </div>
     </div>
 
     <div class="project-content-grid">
@@ -93,8 +107,9 @@
         <p class="project-lead-text">Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for 41 Barham.</p>
 
         <div class="project-body-text">
-          <p>41 Barham forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2016/2017, the project investigates tactile material boundaries and volumetric precision.</p>
+          <p>41 Barham forms part of RDVS Studios' enduring catalogue of architectural, interior, and computational spatial explorations. Completed in 2017, the project investigates tactile material boundaries and volumetric precision.</p>
           <p>Architecture by Architect Kofi Amankwah, with interior design and 3D visualization by RDVS. The project was commissioned by Imperial Homes and represents a collaborative effort between the architect and our multidisciplinary team.</p>
+          <p>The walkthrough above is a full 360&deg; capture rather than a fixed edit, so the direction of view is yours to choose. Drag to look around, scroll or pinch to zoom, or use the on-screen compass to turn toward the arched entrance hall, the open-plan living and dining space, the curved kitchen island, the library with its grand piano, or the skylighted bedroom.</p>
         </div>
       </div>
 
@@ -110,7 +125,7 @@
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Completion</span>
-            <span class="project-spec-val">2016/2017</span>
+            <span class="project-spec-val">2017</span>
           </div>
           <div class="project-spec-item">
             <span class="project-spec-label">Typology</span>
@@ -123,6 +138,10 @@
           <div class="project-spec-item">
             <span class="project-spec-label">Interior Design &amp; 3D Visualization</span>
             <span class="project-spec-val">RDVS</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">360&deg; Walkthrough</span>
+            <span class="project-spec-val">Interactive capture &mdash; 50 seconds</span>
           </div>
         </div>
       </aside>
@@ -142,8 +161,8 @@
     </section>
 
     <nav class="project-nav-footer" aria-label="Project pagination">
-      <a href="imperial-square.html" class="project-nav-link">&larr; Previous: Imperial Square</a>
-      <a href="frontier-filling-station.html" class="project-nav-link">Next: Frontier Filling Station &rarr;</a>
+      <a href="5aap.html" class="project-nav-link">&larr; Previous: 5AAP</a>
+      <a href="2gs.html" class="project-nav-link">Next: 2GS &rarr;</a>
     </nav>
   </main>
 
@@ -168,6 +187,87 @@
     </div>
   </footer>
 
+  <script src="js/vr-360-player.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('barham360Viewer');
+      const playPauseBtn = document.getElementById('barhamPlayPauseBtn');
+      const iconPlay = playPauseBtn ? playPauseBtn.querySelector('.icon-play') : null;
+      const iconPause = playPauseBtn ? playPauseBtn.querySelector('.icon-pause') : null;
+      const progressTrack = document.getElementById('barhamProgressTrack');
+      const progressFill = document.getElementById('barhamProgressFill');
+      const timeDisplay = document.getElementById('barhamTimeDisplay');
+      const muteBtn = document.getElementById('barhamMuteBtn');
+      const iconVolOn = muteBtn ? muteBtn.querySelector('.icon-vol-on') : null;
+      const iconVolOff = muteBtn ? muteBtn.querySelector('.icon-vol-off') : null;
+
+      function formatTime(sec) {
+        if (!sec || isNaN(sec)) return '00:00';
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+      }
+
+      if (!container || !window.VR360) return;
+
+      const viewer = window.VR360.create(container, {
+        src: 'assets/videos/41-barham/barham-360-walkthrough.mp4',
+        isVideo: true,
+        autoplay: false,
+        muted: true,
+        loop: true,
+        autoRotate: true,
+        autoRotateSpeed: 0.04,
+        showControls: true,
+        showDpad: true,
+        showZoom: true,
+        showBadge: true,
+        showDragHint: true,
+        onTimeUpdate: (vid) => {
+          if (!vid) return;
+          const cur = vid.currentTime;
+          const dur = vid.duration || 1;
+          if (progressFill) progressFill.style.width = ((cur / dur) * 100) + '%';
+          if (timeDisplay) timeDisplay.textContent = formatTime(cur) + ' / ' + formatTime(dur);
+        }
+      });
+
+      const video = viewer.video;
+
+      if (playPauseBtn && video) {
+        playPauseBtn.addEventListener('click', () => {
+          if (video.paused) {
+            video.play().then(() => {
+              if (iconPlay) iconPlay.style.display = 'none';
+              if (iconPause) iconPause.style.display = 'block';
+            }).catch(() => {});
+          } else {
+            video.pause();
+            if (iconPlay) iconPlay.style.display = 'block';
+            if (iconPause) iconPause.style.display = 'none';
+          }
+        });
+      }
+
+      if (progressTrack && video) {
+        progressTrack.addEventListener('click', (e) => {
+          const rect = progressTrack.getBoundingClientRect();
+          const clickPos = (e.clientX - rect.left) / rect.width;
+          if (video.duration) video.currentTime = clickPos * video.duration;
+        });
+      }
+
+      if (muteBtn && video) {
+        muteBtn.addEventListener('click', () => {
+          video.muted = !video.muted;
+          if (iconVolOn && iconVolOff) {
+            iconVolOn.style.display = video.muted ? 'none' : 'block';
+            iconVolOff.style.display = video.muted ? 'block' : 'none';
+          }
+        });
+      }
+    });
+  </script>
   <script src="js/lightbox.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/sanity-client.js"></script>

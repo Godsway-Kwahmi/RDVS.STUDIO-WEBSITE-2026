@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>J&amp;M Spots — RDVS Studios</title>
+  <meta name="description" content="J&amp;M Spots — a 2015 web advertising film by RDVS Studios for J&amp;M Décor, a wallpaper retail shop in Accra: an animated logotype build followed by four furnished rooms.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="18.36"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Motion Design / 3D Visualization &mdash; 2015 &middot; J&amp;M D&eacute;cor</span>
+      <h1 class="project-page-title">J&amp;M Spots</h1>
+    </header>
+
+    <!-- Video Header -->
+    <div class="project-hero-media has-video">
+      <video class="project-hero-video" src="assets/videos/jm-spots/jm-spots-film.mp4" controls autoplay muted loop playsinline preload="metadata" poster="assets/images/jm-spots/jm-spots-04.jpg">
+        <source src="assets/videos/jm-spots/jm-spots-film.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A web advertising film for J&amp;M D&eacute;cor, a wallpaper retail shop in Accra &mdash; an animated build of the shop&rsquo;s logotype, then four furnished rooms that put its paper to work.</p>
+        
+        <div class="project-body-text">
+          <p>J&amp;M D&eacute;cor sells wall covering, and the difficulty of advertising it is that the product is only ever seen on a wall somebody else owns. The film answers that by building the brand first and then spending most of its two minutes and forty-one seconds on interiors where the paper is the thing being shown.</p>
+          <p>It opens on black. A yellow script monogram &mdash; the letters J and M joined by an ampersand &mdash; appears alone, small in the centre of frame. A thin teal oval draws itself around it, then matched scrollwork grows out of the ring&rsquo;s crown and base: mirrored damask curls with a stylised leaf at each axis. Only when the crest is complete does the word D&eacute;cor resolve beneath it in the same yellow script, followed last by the tagline in fine grey capitals: DEFINE YOUR SPACE.</p>
+          <p>The film then runs through four sections, each announced by a caption set low at the left of frame and each given three shots &mdash; a wide view, a close detail, and an unusual overhead that looks straight down into the room.</p>
+          <p><strong>Living room.</strong> A charcoal fish-scale lattice paper over the main wall, a panel of acid yellow at the far end, a grey sectional on a red rug printed with concentric circles, and two red shell chairs. The overhead flattens the arrangement into a plan: the L of the sofa, the rectangle of the rug, the tables and stacked books around its edge.</p>
+          <p><strong>Reception.</strong> Deep red vertical-stripe paper behind a grey sofa and two silver frames, over a dark veined marble floor, with a ribbed red ceiling above. The shop-front wall carries the Emerge Limited mark, whose studio voices the film.</p>
+          <p><strong>Bedroom.</strong> A grey-and-white damask run floor to ceiling, held back behind the headboard by a band of concealed uplight that picks out the repeat. A timber ceiling feature floats over the bed with cove lighting at its edge, and the same paper returns in a smaller scale at the far wall.</p>
+          <p><strong>Kitchen.</strong> A pale grey quatrefoil lattice behind white and oak cabinetry, a moulded wood table set against it, and an overhead of the sink run with boards, pans and cut vegetables laid out on the worktop under a row of skylights.</p>
+          <p>Every room is a computer-built interior rather than a photograph of one, so the paper can be shown in a space that does not exist yet and lit to make a pattern read. Each frame carries a faint corner mark for the studio&rsquo;s former name.</p>
+          <p>Team: Interior Design and Modelling &mdash; Jude Abbey, Jude Nyoagbe. Title Animation &mdash; Randy Biney, Jude Nyoagbe. Shading and Texturing, 3D Animation and Direction &mdash; Jude Nyoagbe. Voice Over &mdash; Emerge Ltd.</p>
+          <p>Published October 2015. <a href="https://www.behance.net/gallery/30604591/J-M-SPOTS-MOTION-DESIGN" target="_blank" rel="noopener noreferrer">View the original project on Behance</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">J&amp;M D&eacute;cor</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Motion Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">3D Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Title Animation, Interior Modelling, Shading + Texturing, Lighting, 3D Animation &amp; Direction</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1280&times;720 HD &middot; 2 min 41 s</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Modelling + Interior Design: Jude Abbey, Jude Nyoagbe | Title Animation: Randy Biney, Jude Nyoagbe | Shading + Texturing, 3D Animation + Direction: Jude Nyoagbe | Voice Over: Emerge Ltd</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Title Build</h2>
+        <p class="gallery-section-subtitle">Monogram, ring, crest, then the tagline</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-01.jpg" alt="The yellow J and M script monogram alone on black, before the ring is drawn" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-02.jpg" alt="The monogram held inside a thin teal oval ring on black" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-03.jpg" alt="Damask scrollwork growing from the crown and base of the teal ring" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-04.jpg" alt="The completed lockup: crested ring and monogram, D&eacute;cor in yellow script, and the tagline Define Your Space in grey capitals" class="gallery-img" loading="lazy">
+      </div>
+
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Living Room</h2>
+        <p class="gallery-section-subtitle">Charcoal fish-scale lattice, a yellow end panel, and the plan view of the arrangement</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-05.jpg" alt="Living room wide: a grey sectional on a red concentric-circle rug against a charcoal fish-scale patterned wall, with an acid yellow panel at the far end and a glass partition to the left" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-06.jpg" alt="Living room from directly overhead: the L of the grey sofa, the red rug, two red shell chairs and side tables of books and glassware" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-07.jpg" alt="Living room detail: a pale stone counter with a vase and stacked books in front of the grey lattice paper, a light oak table edge in the foreground" class="gallery-img" loading="lazy">
+      </div>
+
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Reception</h2>
+        <p class="gallery-section-subtitle">Red stripe over a dark marble floor, with the Emerge mark on the shop-front wall</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-08.jpg" alt="Reception wide: a grey sofa and two silver frames against deep red vertical-stripe paper, the Emerge Limited logo on the grey wall to the left, a paper shade floor lamp at the right" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-09.jpg" alt="Reception from above: the ribbed red ceiling, a dark veined marble floor and the reception desk set into the corner" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-10.jpg" alt="Reception detail: the grey sofa with dark cushions under two silver frames on red stripe paper, a bonsai on the low table and a tripod lamp at the right" class="gallery-img" loading="lazy">
+      </div>
+
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Bedroom</h2>
+        <p class="gallery-section-subtitle">Damask held back behind the headboard by concealed uplight</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-11.jpg" alt="Bedroom wide: a low bed under a floating timber ceiling feature with cove light, grey damask walls lit from behind the headboard, two chairs at the far window" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-12.jpg" alt="Bedroom detail: the timber headboard against damask picked out by uplight, brown throws and a deep shag rug, the arm of a chair at the right" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-13.jpg" alt="Bedroom from the foot of the bed: sheer curtains at the window, a framed print and floor lamp, the timber ceiling feature running over the headboard" class="gallery-img" loading="lazy">
+      </div>
+
+      <div class="gallery-section-divider">
+        <h2 class="gallery-section-title">Kitchen</h2>
+        <p class="gallery-section-subtitle">Pale quatrefoil lattice behind white and oak cabinetry</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-14.jpg" alt="Kitchen from directly overhead: the sink and tap in a dark worktop ringed by boards, pans and cut vegetables, skylights and planting above" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-15.jpg" alt="Kitchen detail: a moulded wood chair at a round table set with coffee and bread against the grey quatrefoil paper, a white sideboard with books and a lamp behind" class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jm-spots/jm-spots-16.jpg" alt="Kitchen wide: white base units and oak wall cabinets, a hob and extractor, a washing machine at the end of the run, a black pendant over a small table" class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="jhk-investment.html" class="project-nav-link">&larr; Previous: JHK</a>
+      <a href="imperial-square.html" class="project-nav-link">Next: Imperial Square &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

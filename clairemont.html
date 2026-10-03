@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Clairemont &mdash; RDVS Studios</title>
+  <meta name="description" content="Clairemont - 2011 brochure project in Accra, Ghana: architectural visualization &amp; graphic design for Private Client by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Brochure / Architectural Visualization &amp; Graphic Design &mdash; 2011 &middot; Private Client</span>
+      <h1 class="project-page-title">Clairemont</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/clairemont/clairemont-1.jpg" alt="Brochure cover: sepia render of a modern apartment block behind a bold orange diagonal band with halftone dot texture, the white CLAIREMONT wordmark set low right against the stripe." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A seventeen-plate brochure RDVS. Design created in 2011 for an architecture firm marketing Clairemont, a contemporary apartment development in Accra, blending graphic design, wayfinding maps and furnished floor plans with architectural visualization renders.</p>
+
+        <div class="project-body-text">
+          <p>Clairemont is a sales brochure RDVS. Design produced in 2011 for an architecture firm promoting a new apartment development in Accra. The brief called for a printed document that could present an unbuilt project persuasively: explaining where it sits, what it offers and how the unit types work, long before any resident moved in.</p>
+          <p>The set is organized like a small publication: cover, contents, an introduction spread, an orange wayfinding map of the site among Accra landmarks, feature and amenity pages, then interior and exterior visualization spreads. A second half carries furnished floor plans for the Xara, Maisha, Penthouse and Triplex modules, closing with contact and back cover pages.</p>
+          <p>Graphically the brochure runs on a single saturated orange against white, cut by diagonal bands and softened with halftone dot gradients. The same stripe system ties photo-style renders, flat maps and technical plans into one voice, while bold sans-serif headings for CONTENT, FEATURES, INTERIORS and EXTERIORS give the reader fast landmarks when flipping through.</p>
+          <p>The finished document combines RDVS. Design&rsquo;s own architectural visualization with its graphic layout, giving the firm a ready-to-print marketing tool for pitching Clairemont to prospective buyers. Published plate by plate, the gallery shows how cover, map, feature pages, plan set and back matter hold together as one continuous printed piece.</p>
+          <p>The project was published as <em>CLAIREMONT APARTMENTS BROCHURE &mdash; RDVS. DESIGN</em>; the full set is <a href="https://www.behance.net/gallery/2272088" target="_blank" rel="noopener noreferrer">on Behance</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2011</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Brochure</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization &amp; Graphic Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Brochure design and layout, location map illustration, furnished floor plan presentation and architectural visualization for the Clairemont apartment development.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">RDVS. DESIGN</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">17 plates &middot; up to 900 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-1.jpg" alt="Brochure cover: sepia render of a modern apartment block behind a bold orange diagonal band with halftone dot texture, the white CLAIREMONT wordmark set low right against the stripe." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-2.jpg" alt="Contents page: full orange spread with a fine dot gradient, a large CONTENT heading, and a single column listing sections from Introduction, Site Location and Features through the apartment modules to Contact." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-3.jpg" alt="Intro spread: warm sepia-toned interior render with pendant lighting, sliced by an orange diagonal panel carrying the white caption A luxurious modern contemporary development of high quality homes." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-4.jpg" alt="Site location map: flat orange street diagram naming North Dzorwulu, Airport West hostel, Accra Mall and the Accra-Tema Motorway, with a Clairemont pin and a caption on the serene setting near schools, mall, hospital and airport." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-5.jpg" alt="Features page: white ground framed by orange diagonals and dot texture, a FEATURES heading over a list promising a swimming pool, gym, manicured landscape, parking, laundry, generators, water tanks and estate management services." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-6.jpg" alt="Amenity render: wood-paneled bar counter under a red ceiling bulkhead with pendant lights, dark flooring and a black rug, framed by an orange band and dot pattern along the lower edge." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-7.jpg" alt="Interiors page: lounge render with red slatted feature wall and purple stone column beside an orange text panel reading INTERIORS, describing stylish spacious apartments with excellent finishes, ample parking and full time security." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-8.jpg" alt="Exterior render, daytime: three-story apartment blocks with stone cladding, timber screen panels and balconies around a parking court, two cars parked on the paving under an overcast sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-9.jpg" alt="Exterior render at dusk: the same stone-and-timber blocks glowing from interior and post-top lights against a deep blue sky, EXTERIORS captioned in white over a dotted orange strip at the foot." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-10.jpg" alt="Furnished floor plan titled XARA MODULE: three bedrooms, living and dining room, kitchen, store and terrace laid out in warm wood tones with red and gray furniture symbols on a gray gradient ground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-11.jpg" alt="Furnished floor plan titled MAISHA MODULE: three bedrooms off a central living room with red seating, kitchen, dining, store, washrooms and a terrace, set on a gray field with an orange dotted base band." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-12.jpg" alt="Furnished floor plan titled PENTHOUSE: three bedrooms, a combined living and dining area with green seating, kitchen, store and wraparound terrace, drawn in wood tones on the same gray gradient background." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-13.jpg" alt="Floor plan titled TRIPLEX ground floor: open-plan living room and dining space with green seating, kitchen, store and terrace, with the orange TRIPLEX label anchored on a dotted band below." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-14.jpg" alt="Floor plan titled TRIPLEX second floor: master bedroom with bed symbols, a family gallery space with blue seating, washroom and stair core, again on the gray gradient with the orange TRIPLEX caption." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-15.jpg" alt="Aerial render: the U-shaped apartment complex seen from above, white roofs over stone and timber facades, a courtyard lawn and a parked car framed by dense green trees." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-16.jpg" alt="Contact page: full orange spread with a dot gradient and the heading CONTACT above two small lines of mobile and office phone numbers, kept as quiet as the rest of the minimal back matter." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/clairemont/clairemont-17.jpg" alt="Back cover: white field cut by a single broad orange diagonal stripe with a dotted edge, the words Designed by R.D.V.S in small type at the lower right corner." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="college-invasion.html" class="project-nav-link">&larr; Previous: College Invasion</a>
+      <a href="chocolate.html" class="project-nav-link">Next: Chocolate &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>
