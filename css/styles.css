@@ -958,6 +958,64 @@ button {
   color: var(--foreground);
 }
 
+/* Service groups — the parent button is both the filter and the disclosure toggle */
+.filter-group {
+  position: relative;
+  display: inline-flex;
+}
+
+.filter-group-btn.group-active {
+  color: var(--foreground);
+}
+
+.filter-caret {
+  display: inline-block;
+  margin-left: 6px;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-top: 4px solid currentColor;
+  opacity: 0.55;
+  vertical-align: 2px;
+  transition: transform var(--transition-speed) var(--transition-ease);
+}
+
+.filter-group.open .filter-caret {
+  transform: rotate(180deg);
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  min-width: 232px;
+  padding: 18px;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border-hairline);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity var(--transition-speed) var(--transition-ease),
+              transform var(--transition-speed) var(--transition-ease),
+              visibility var(--transition-speed) var(--transition-ease);
+}
+
+.filter-group.open .filter-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.filter-subbtn {
+  text-align: left;
+  font-size: 0.82rem;
+}
+
 /* Sort Controls */
 .sort-nav {
   display: flex;
@@ -1231,6 +1289,24 @@ button {
   color: var(--foreground);
 }
 
+/* Design carries its six disciplines as indented sub-rows */
+.expertise-subrow {
+  margin-top: 22px;
+  padding-left: 16px;
+  border-left: 1px solid var(--border-hairline);
+}
+
+.expertise-subname {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.expertise-subrow p {
+  font-size: 0.9375rem;
+}
+
 .expertise-subservices {
   display: flex;
   flex-wrap: wrap;
@@ -1252,6 +1328,16 @@ button {
 
 .subservice-item {
   color: var(--text-secondary);
+}
+
+a.subservice-item {
+  text-decoration: none;
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+a.subservice-item:hover {
+  color: var(--foreground);
+  text-decoration: underline;
 }
 
 .subservice-sep {
@@ -1505,6 +1591,31 @@ button {
 .project-spec-val {
   font-size: 0.9375rem;
   color: var(--foreground);
+}
+
+/* Service tags — one link per service the project is tagged under on work.html */
+.project-services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.project-service {
+  color: var(--foreground);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-bottom: 1px;
+  transition: border-color var(--transition-speed) var(--transition-ease);
+}
+
+.project-service:hover {
+  border-bottom-color: var(--foreground);
+}
+
+.project-service-sep {
+  color: var(--text-secondary);
+  opacity: 0.55;
 }
 
 /* Gallery Grid — Uncropped & Natural Proportions */
@@ -1906,6 +2017,33 @@ button {
     content: '';
     flex-shrink: 0;
     width: 12px;
+  }
+
+  /* .filter-nav scrolls horizontally here, which would clip an absolutely
+     positioned panel — so the sub-services expand inline in the same row. */
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+  }
+
+  .filter-dropdown {
+    position: static;
+    display: none;
+    flex-direction: row;
+    gap: 14px;
+    min-width: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    opacity: 1;
+    transform: none;
+  }
+
+  .filter-group.open .filter-dropdown {
+    display: flex;
   }
 
   .sort-nav {

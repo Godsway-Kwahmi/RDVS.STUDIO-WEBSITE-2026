@@ -27,7 +27,7 @@
 
           const metaEl = document.querySelector('.project-meta-line');
           if (metaEl && (project.category || project.year)) {
-            metaEl.textContent = `${project.category || 'Architecture'} — ${project.year || ''} · ${project.location || 'Studio'}`;
+            metaEl.textContent = `${project.category || 'Architectural Design'} — ${project.year || ''} · ${project.location || 'Studio'}`;
           }
 
           const heroImg = document.querySelector('.project-hero-img');
@@ -40,25 +40,34 @@
             leadText.textContent = project.leadText;
           }
 
-          // Specs hydration
+          // Specs hydration. Looked up by label rather than position: the row set
+          // and order differ between pages, and a generated Services row sits
+          // between Typology and Discipline on the current template.
+          const specVal = label => {
+            const item = [...document.querySelectorAll('.project-spec-item')].find(i => {
+              const l = i.querySelector('.project-spec-label');
+              return l && l.textContent.trim().toLowerCase() === label.toLowerCase();
+            });
+            return item && item.querySelector('.project-spec-val');
+          };
           if (project.client) {
-            const clientVal = document.querySelector('.project-spec-item:nth-child(1) .project-spec-val');
+            const clientVal = specVal('Client');
             if (clientVal) clientVal.textContent = project.client;
           }
           if (project.location) {
-            const locVal = document.querySelector('.project-spec-item:nth-child(2) .project-spec-val');
+            const locVal = specVal('Location');
             if (locVal) locVal.textContent = project.location;
           }
           if (project.year) {
-            const yearVal = document.querySelector('.project-spec-item:nth-child(3) .project-spec-val');
+            const yearVal = specVal('Completion') || specVal('Year');
             if (yearVal) yearVal.textContent = String(project.year);
           }
           if (project.scope) {
-            const scopeVal = document.querySelector('.project-spec-item:nth-child(5) .project-spec-val');
+            const scopeVal = specVal('Scope of Services') || specVal('Scope');
             if (scopeVal) scopeVal.textContent = project.scope;
           }
           if (project.team) {
-            const teamVal = document.querySelector('.project-spec-item:nth-child(6) .project-spec-val');
+            const teamVal = specVal('Team');
             if (teamVal) teamVal.textContent = Array.isArray(project.team) ? project.team.join(', ') : project.team;
           }
 
