@@ -1,6 +1,11 @@
 /**
  * RDVS STUDIOS — Sanity CDN Client & GROQ Query Service
  * Headless integration for architecture portfolio, news, project details, and editorial content.
+ *
+ * Every projection here names fields that studio/schemas/ actually defines, and every `_type`
+ * names a schema that exists. Both had drifted: the client used to ask for `_type == "article"`
+ * (the news schema is called `post`) and `_type == "page"` (no such type is defined), so those
+ * paths could never resolve however full the dataset got.
  */
 
 const RDVSSanity = (() => {
@@ -67,91 +72,130 @@ const RDVSSanity = (() => {
     return null;
   }
 
+  // The shared projection for one project. `pageFile` is the canonical key — the site renames
+  // display titles but keeps its live URLs, so a project's HTML file is not always its slug
+  // ("Senseble" is served from home-automation-system-presentation.html). `disciplines` is what
+  // the slide caption rolls up to main services; `category`/`discipline` are kept as fallbacks
+  // for callers that predate the taxonomy.
+  const PROJECT_FIELDS = `{
+      _id,
+      title,
+      pageFile,
+      "slug": slug.current,
+      "category": coalesce(typology, cardLabel),
+      typology,
+      "discipline": primaryDiscipline,
+      disciplines,
+      "year": publishedAt,
+      "imageUrl": cardImage.asset->url,
+      "heroImageUrl": heroImage.asset->url,
+      "description": excerpt,
+      "lead": lead,
+      "client": specs.client,
+      "location": specs.location,
+      "area": specs.area,
+      "scope": specs.scope,
+      "team": specs.team,
+      "gallery": gallery[]{ "url": asset->url, alt },
+      visibility
+    }`;
+
   /**
-   * Fetch 10 featured projects for the hero slideshow
+   * Fetch 10 projects for the hero slideshow.
+   *
+   * `visibility != "archived"` also matches documents where the field was never set. Ordering by
+   * `featured` only biases the pre-JS paint: js/main.js re-draws the deck at random per load, and
+   * a slide may only use a frame its own project page leads with.
    */
   async function getHeroProjects() {
-    const groq = `*[_type == "project" && (featuredOnHero == true || defined(order))] | order(order asc, year desc)[0...10] {
-      _id,
-      title,
-      "slug": slug.current,
-      category,
-      discipline,
-      "imageUrl": coverImage.asset->url,
-      description,
-      client,
-      location,
-      year,
-      area,
-      scope,
-      disciplines
-    }`;
+    const groq = `*[_type == "project" && visibility != "archived"] | order(featured desc, publishedAt desc)[0...10] ${PROJECT_FIELDS}`;
     const remoteProjects = await query(groq);
     return remoteProjects && remoteProjects.length > 0 ? remoteProjects : null;
   }
 
   /**
-   * Fetch all portfolio projects for work.html
+   * Fetch portfolio projects for work.html — live only, by definition.
+   * Archived work stays reachable through archive.html, which queries without the filter.
    */
   async function getWorkProjects() {
-    const groq = `*[_type == "project"] | order(order asc, year desc) {
-      _id,
-      title,
-      "slug": slug.current,
-      category,
-      discipline,
-      year,
-      typology,
-      "imageUrl": coverImage.asset->url,
-      description
-    }`;
+    const groq = `*[_type == "project" && visibility != "archived"] | order(publishedAt desc) ${PROJECT_FIELDS}`;
     const remoteProjects = await query(groq);
     return remoteProjects && remoteProjects.length > 0 ? remoteProjects : null;
   }
 
   /**
-   * Fetch a single project by slug for dedicated project pages
+   * Fetch every project including archived ones, for archive.html.
+   */
+  async function getAllProjects() {
+    const groq = `*[_type == "project"] | order(publishedAt desc) ${PROJECT_FIELDS}`;
+    const remoteProjects = await query(groq);
+    return remoteProjects && remoteProjects.length > 0 ? remoteProjects : null;
+  }
+
+  /**
+   * Fetch a single project by the HTML file it is served from.
+   * Not visibility-filtered on purpose: an archived project's own page must still render
+   * when it is reached from the archive. Falls back to the slug so a page whose file name and
+   * slug still agree keeps working, and so a document without `pageFile` is not invisible.
    */
   async function getProjectBySlug(slug) {
-    const groq = `*[_type == "project" && slug.current == "${slug}"][0] {
-      _id,
-      title,
-      "slug": slug.current,
-      category,
-      discipline,
-      year,
-      client,
-      location,
-      area,
-      scope,
-      leadText,
-      description,
-      "coverImageUrl": coverImage.asset->url,
-      "galleryUrls": gallery[].asset->url
-    }`;
+    const key = String(slug).replace(/\.html$/, '');
+    // The key is interpolated straight into GROQ, so it has to be a bare file stem. A page name can
+    // only ever be [a-z0-9-]; anything else is a malformed URL or an attempt to close the string.
+    if (!/^[a-z0-9-]+$/.test(key)) {
+      return null;
+    }
+    const groq = `*[(_type == "project") && (pageFile == "${key}.html" || slug.current == "${key}")][0] ${PROJECT_FIELDS}`;
     return await query(groq);
   }
 
   /**
    * Fetch editorial content for standard pages (about, expertise, contact, etc.)
+   *
+   * There is no `page` document type in studio/schemas/, so this used to be a guaranteed null.
+   * It now reads the siteSettings singleton, which is where studio-level prose actually lives.
+   * Callers that want per-page copy need a `page` type added to the schema first.
    */
-  async function getPageContent(pageKey) {
-    const groq = `*[_type == "page" && slug.current == "${pageKey}"][0]`;
+  async function getPageContent() {
+    return await getSiteSettings();
+  }
+
+  /**
+   * Fetch the siteSettings singleton (structure.ts pins it to the id "siteSettings").
+   */
+  async function getSiteSettings() {
+    const groq = `*[_type == "siteSettings"][0] {
+      studioName,
+      tagline,
+      description,
+      foundedYear,
+      archiveStartYear,
+      archiveEndYear,
+      email,
+      phone,
+      address,
+      socialLinks,
+      "ogImageUrl": ogImage.asset->url,
+      footerLinks,
+      copyrightYear
+    }`;
     return await query(groq);
   }
 
   /**
-   * Fetch news monographs for news.html
+   * Fetch news articles for news.html.
+   * The schema type is `post`; the old query asked for `article`, which nothing defines.
    */
   async function getNewsArticles() {
-    const groq = `*[_type == "article"] | order(publishedAt desc) {
+    const groq = `*[_type == "post" && visibility != "archived"] | order(publishedAt desc) {
       _id,
       title,
       "slug": slug.current,
       category,
       publishedAt,
       "imageUrl": coverImage.asset->url,
-      excerpt
+      excerpt,
+      visibility
     }`;
     const remoteArticles = await query(groq);
     return remoteArticles && remoteArticles.length > 0 ? remoteArticles : null;
@@ -164,8 +208,10 @@ const RDVSSanity = (() => {
     urlForImage,
     getHeroProjects,
     getWorkProjects,
+    getAllProjects,
     getProjectBySlug,
     getPageContent,
+    getSiteSettings,
     getNewsArticles
   };
 })();

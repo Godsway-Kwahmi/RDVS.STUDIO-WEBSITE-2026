@@ -1,15 +1,22 @@
 import {defineType, defineField, defineArrayMember} from 'sanity'
+import DocumentTextIcon from '@sanity/icons/DocumentText'
+import {VISIBILITY} from '../taxonomy'
 
 export default defineType({
+  // The runtime used to query `_type == "article"`, which no schema defined, so news.html could
+  // never be fed from the CMS. The type name is `post`; js/sanity-client.js now asks for `post`.
   name: 'post',
   title: 'News & Journal Post',
   type: 'document',
-  icon: () => '📰',
+  icon: DocumentTextIcon,
   fields: [
     defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
+      description:
+        'News items lead the homepage deck, and a slide\'s title must match the headline this ' +
+        'article is published under on news.html.',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -23,6 +30,21 @@ export default defineType({
       name: 'publishedAt',
       title: 'Published Date',
       type: 'datetime',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'visibility',
+      title: 'Site Visibility',
+      type: 'string',
+      description: 'Draft items stay out of the news listing and the homepage deck.',
+      options: {
+        layout: 'radio',
+        list: [
+          {title: 'Published', value: VISIBILITY.LIVE},
+          {title: 'Draft', value: VISIBILITY.ARCHIVED},
+        ],
+      },
+      initialValue: VISIBILITY.LIVE,
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -90,13 +112,15 @@ export default defineType({
       title: 'title',
       publishedAt: 'publishedAt',
       category: 'category',
+      visibility: 'visibility',
       media: 'coverImage',
     },
-    prepare({title, publishedAt, category, media}) {
+    prepare({title, publishedAt, category, visibility, media}) {
       const date = publishedAt ? new Date(publishedAt).getFullYear() : ''
+      const state = visibility === VISIBILITY.ARCHIVED ? ' · Draft' : ''
       return {
         title,
-        subtitle: `${date} · ${category || 'Uncategorised'}`,
+        subtitle: `${date} · ${category || 'Uncategorised'}${state}`,
         media,
       }
     },

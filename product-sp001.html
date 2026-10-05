@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>SP001 &mdash; RDVS Studios</title>
+  <meta name="description" content="SP001, a 2019 sleeping pod designed by RDVS for the MIG line: a low, deep pod for a power nap at work, with a slatted top and a hardwood frame, 1.9 x 0.8 x 0.9 m.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="18.36"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-detail-container">
+    <a href="product.html" class="project-back-link">&larr; Back to Product</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">MIG / Furniture / Sleeping pod &mdash; 2019</span>
+      <h1 class="product-page-title">SP001</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img width="2048" height="1152" src="assets/images/mig/mig-sp001-1.jpg" alt="Labelled SP001 plate: the sleeping pod lit from above on black." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.</p>
+
+        <div class="project-body-text">
+          <p>SP001 is furniture design, product visualization and in-house work at once: RDVS designed the pod for the studio&rsquo;s own MIG line and presented it as a product visualization.</p>
+          <p>SP001 is the only piece in the line that encloses a person rather than carrying a task. The form is a low pod, and the plates give its size against the body: 1.9 m long, 0.8 m wide, 0.9 m high.</p>
+          <p>Three plates cover it: the pod lit from above on black, the pod dressed with pillows against a dark green wall, and an exploded assembly view that separates the slatted top from the hardwood frame beside the dimension callout.</p>
+          <p>The third plate carries the studio&rsquo;s own line on the piece: &ldquo;The sleeping pod one (SP001) is thoughtfully designed to help you get that power nap in at work while maintaining some privacy.&rdquo;</p>
+          <p>2019 is the date the studio records for SP001. The image files carry a later export stamp, which is not the design date.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Line</span>
+            <span class="project-spec-val">MIG</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Type</span>
+            <span class="project-spec-val">Furniture</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2019</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Dimensions</span>
+            <span class="project-spec-val">1.9 &times; 0.8 &times; 0.9 m</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Materials</span>
+            <span class="project-spec-val">Plywood, hardwood, accessories</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Finish</span>
+            <span class="project-spec-val">White + orange</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val"><span class="project-services"><a class="project-service" href="work.html?service=industrial-design">Industrial &amp; Furniture Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=product-visualization">Product Visualization</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">3 plates &middot; up to 2,048 px long edge</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Product plates">
+      <div class="gallery-item gallery-item-full">
+        <img width="2048" height="1152" src="assets/images/mig/mig-sp001-1.jpg" alt="Labelled SP001 plate: the sleeping pod lit from above on black." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="2048" height="1152" src="assets/images/mig/mig-sp001-2.jpg" alt="The sleeping pod dressed with pillows against a dark green wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="2048" height="1152" src="assets/images/mig/mig-sp001-3.jpg" alt="SP001 exploded assembly view with the slatted top, hardwood frame and dimension callout." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="product-nav-footer" aria-label="Product pagination">
+      <a href="product-s-age.html" class="project-nav-link">&larr; Previous: S-AGE</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

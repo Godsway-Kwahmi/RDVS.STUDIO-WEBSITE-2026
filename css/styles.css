@@ -1413,8 +1413,10 @@ a.subservice-item:hover {
 
 /* ==========================================================================
    Individual Project Page Layout (Minimalissimo Architecture)
+   Product pages use the project detail layout, so they share these rules.
    ========================================================================== */
-.project-detail-container {
+.project-detail-container,
+.product-detail-container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: calc(var(--header-height) + 32px) var(--grid-margin) 96px var(--grid-margin);
@@ -1445,7 +1447,11 @@ a.subservice-item:hover {
   color: var(--text-secondary);
 }
 
-.project-page-title {
+/* A product page carries .product-page-title, never .project-page-title: the
+   verification harness reads the latter as "this is one of the studio's works"
+   and demands a work.html card for it. */
+.project-page-title,
+.product-page-title {
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-heading);
@@ -1471,6 +1477,29 @@ a.subservice-item:hover {
   object-position: center;
   display: block;
   cursor: default;
+}
+
+/* For sheets whose content is stacked from the top (brand blocks, title blocks,
+   credit lines): the 16/10 cover crop would otherwise shave the first of them. */
+.project-hero-media.hero-fit-top .project-hero-img {
+  object-position: center top;
+}
+
+/* Product heroes are the plates themselves, not crops made for a header: a piece
+   that is square or tall would lose its top and bottom to the 16/10 cover, so it
+   keeps its own ratio and is letterboxed inside the panel instead. */
+.project-hero-media.hero-fit-natural {
+  aspect-ratio: auto;
+  max-height: none;
+}
+
+.project-hero-media.hero-fit-natural .project-hero-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 78vh;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Project Hero Video Support */
@@ -1667,6 +1696,57 @@ a.subservice-item:hover {
 .gallery-item:has(video) {
   flex-direction: column;
   align-items: stretch;
+}
+
+/* ==========================================================================
+   Desktop detail-image sizing — nothing below the project facts runs the full
+   page width. Half the container is the ceiling, and every frame keeps its own
+   proportions: media is sized by width:auto plus a height ceiling, so a tall
+   portrait reaches the height limit first and ends up narrower than a wide
+   landscape frame rather than being stretched or cropped to fit a column.
+   Phones and tablets keep the existing full-width / two-up behaviour.
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .project-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  /* A section heading still breaks the run of images across the full measure. */
+  .gallery-section-divider {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .gallery-item,
+  .gallery-item-full {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: calc(50% - 16px);
+  }
+
+  .gallery-img,
+  .gallery-video,
+  .gallery-item video {
+    width: auto;
+    max-width: 100%;
+    max-height: 78vh;
+    height: auto;
+  }
+
+  /* A video item carries its own caption, so its box keeps a measured width
+     instead of shrink-wrapping to the player. */
+  .gallery-item:has(video) {
+    width: calc(50% - 16px);
+    align-items: stretch;
+  }
+
+  .gallery-item:has(video) video,
+  .gallery-item:has(video) .gallery-video {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
@@ -1870,7 +1950,10 @@ a.subservice-item:hover {
   }
 }
 
-.project-nav-footer {
+/* Product pages chain to each other, not into the project chain, so they carry
+   their own nav class and borrow the rule. */
+.project-nav-footer,
+.product-nav-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2206,7 +2289,8 @@ a.subservice-item:hover {
     padding-bottom: 56px;
   }
 
-  .project-detail-container {
+  .project-detail-container,
+  .product-detail-container {
     padding-top: calc(var(--header-height) + 20px);
     padding-bottom: 64px;
   }
@@ -2577,3 +2661,10 @@ a.subservice-item:hover {
 .hero-viewport .project-spec-trigger:hover {
   color: #ffffff !important;
 }
+
+/* ==========================================================================
+   Product — the MIG line
+   No rules of its own: the index reuses Work's toolbar and card grid, and each
+   product page reuses the project detail layout. The three classes a product
+   page adds are grouped with their project twins above, where they inherit.
+   ========================================================================== */

@@ -1,0 +1,1275 @@
+{
+  "generated": "from work.html + archive.html by scripts/build_project_status.py",
+  "contract": "visibility live = work page + archive page + homepage slideshow; archived = archive page only",
+  "projects": {
+    "yao-yaa.html": {
+      "slug": "yao-yaa",
+      "title": "Yao + Yaa",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "yah-kumasi-mall.html": {
+      "slug": "yah-kumasi-mall",
+      "title": "Yah!",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "white-fleece.html": {
+      "slug": "white-fleece",
+      "title": "White Fleece",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "west-cantonments-igl-presentation.html": {
+      "slug": "west-cantonments-igl-presentation",
+      "title": "West Cantonments Residence",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 17
+    },
+    "weldment-panels.html": {
+      "slug": "weldment-panels",
+      "title": "Weldment Panels",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "watsons-place.html": {
+      "slug": "watsons-place",
+      "title": "Watson&rsquo;s Place",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "vodafone-red-hse.html": {
+      "slug": "vodafone-red-hse",
+      "title": "Vodafone Red Hse",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "villa-aggregate.html": {
+      "slug": "villa-aggregate",
+      "title": "Villa Aggregate",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "viasat1-breakfast-show.html": {
+      "slug": "viasat1-breakfast-show",
+      "title": "Viasat1 Breakfast Show",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 9
+    },
+    "victoria-island-naija-project.html": {
+      "slug": "victoria-island-naija-project",
+      "title": "VI",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "trumpet-africa-ident.html": {
+      "slug": "trumpet-africa-ident",
+      "title": "Trumpet Africa Productions Ident",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 26
+    },
+    "tower-cascades.html": {
+      "slug": "tower-cascades",
+      "title": "Tower Cascades",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 25
+    },
+    "the-tea-house.html": {
+      "slug": "the-tea-house",
+      "title": "The Tea House",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 19
+    },
+    "the-saddle.html": {
+      "slug": "the-saddle",
+      "title": "The Saddle",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "the-hamlet-presentation.html": {
+      "slug": "the-hamlet-presentation",
+      "title": "The Hamlet",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "the-address.html": {
+      "slug": "the-address",
+      "title": "The Address",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "tedxharambee.html": {
+      "slug": "tedxharambee",
+      "title": "TEDxHarambee",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "asante-interior-design-presentation.html": {
+      "slug": "asante-interior-design-presentation",
+      "title": "TAI",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "swipe.html": {
+      "slug": "swipe",
+      "title": "Swipe",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "stephen-yvonne.html": {
+      "slug": "stephen-yvonne",
+      "title": "Stephen + Yvonne",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "stellar-bar.html": {
+      "slug": "stellar-bar",
+      "title": "Stellar Bar",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "stark-glaube.html": {
+      "slug": "stark-glaube",
+      "title": "Stark Glaube",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "stanchart-hq.html": {
+      "slug": "stanchart-hq",
+      "title": "Stanchart HQ",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "smsgh.html": {
+      "slug": "smsgh",
+      "title": "SMSGH",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "six-acres-company-profile.html": {
+      "slug": "six-acres-company-profile",
+      "title": "Six Acres Company Profile",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 13
+    },
+    "sinopec-ghana-interiors.html": {
+      "slug": "sinopec-ghana-interiors",
+      "title": "Sinopec Ghana Interiors",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "senya-resort.html": {
+      "slug": "senya-resort",
+      "title": "Senya Resort",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "samsung-branding-proposal.html": {
+      "slug": "samsung-branding-proposal",
+      "title": "Samsung Branding Proposal",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "safo-adu-residence.html": {
+      "slug": "safo-adu-residence",
+      "title": "Safo Adu Townhouses",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "rlg.html": {
+      "slug": "rlg",
+      "title": "RLG",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "rdvs-ident.html": {
+      "slug": "rdvs-ident",
+      "title": "RDVS Ident",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "purc.html": {
+      "slug": "purc",
+      "title": "PURC",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "provident-insurance.html": {
+      "slug": "provident-insurance",
+      "title": "Provident Insurance",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "project-mount.html": {
+      "slug": "project-mount",
+      "title": "Project Mount",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "premier-place.html": {
+      "slug": "premier-place",
+      "title": "Premier Place",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 11
+    },
+    "premier-lodge-2.html": {
+      "slug": "premier-lodge-2",
+      "title": "Premier Lodge 2",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "poconos-bar-grill.html": {
+      "slug": "poconos-bar-grill",
+      "title": "Poconos Bar + Grill",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "pine-square.html": {
+      "slug": "pine-square",
+      "title": "Pine Square",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "petrus.html": {
+      "slug": "petrus",
+      "title": "Petrus",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "palazzo.html": {
+      "slug": "palazzo",
+      "title": "Palazzo",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "osu-tower.html": {
+      "slug": "osu-tower",
+      "title": "Osu Tower",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "osu-apartments.html": {
+      "slug": "osu-apartments",
+      "title": "Osu Apartments",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "of-sunsets.html": {
+      "slug": "of-sunsets",
+      "title": "Of Sunsets",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 28
+    },
+    "odade3.html": {
+      "slug": "odade3",
+      "title": "Odade3",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "octagon-mews.html": {
+      "slug": "octagon-mews",
+      "title": "Octagon Mews",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "octagon-interiors.html": {
+      "slug": "octagon-interiors",
+      "title": "Octagon",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 14
+    },
+    "oak-tree-apartments.html": {
+      "slug": "oak-tree-apartments",
+      "title": "Oak Tree Apartments",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "nyla-court.html": {
+      "slug": "nyla-court",
+      "title": "Nyla Court",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 44
+    },
+    "npa-reception-renders.html": {
+      "slug": "npa-reception-renders",
+      "title": "NPA",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "nissa-offices-2010.html": {
+      "slug": "nissa-offices-2010",
+      "title": "Nissa Offices 2010",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "nest-apt.html": {
+      "slug": "nest-apt",
+      "title": "Nest",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "ndaba-restaurant-whm.html": {
+      "slug": "ndaba-restaurant-whm",
+      "title": "Ndaba Restaurant, WHM",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "naadei-villas.html": {
+      "slug": "naadei-villas",
+      "title": "Naadei Villas",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 23
+    },
+    "mtn.html": {
+      "slug": "mtn",
+      "title": "MTN HQ",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 20
+    },
+    "moty.html": {
+      "slug": "moty",
+      "title": "MOTY",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "maurice-abena.html": {
+      "slug": "maurice-abena",
+      "title": "Maurice + Abena",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "marble-bath.html": {
+      "slug": "marble-bath",
+      "title": "Marble & Bath",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "maple-court.html": {
+      "slug": "maple-court",
+      "title": "Maple Court",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "map-folder-design.html": {
+      "slug": "map-folder-design",
+      "title": "MAP",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "mankata.html": {
+      "slug": "mankata",
+      "title": "Mankata",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "macord.html": {
+      "slug": "macord",
+      "title": "Macord International School",
+      "year": "2024",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "link-drive-road.html": {
+      "slug": "link-drive-road",
+      "title": "Link Drive Rd.",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 9
+    },
+    "lase-icon.html": {
+      "slug": "lase-icon",
+      "title": "Lase",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "la-palm-2008-christmas-party-posters.html": {
+      "slug": "la-palm-2008-christmas-party-posters",
+      "title": "La Palm 2008 Christmas Party Poster",
+      "year": "2008",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "la-beach-towers.html": {
+      "slug": "la-beach-towers",
+      "title": "La Beach Towers",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "kdmrd.html": {
+      "slug": "kdmrd",
+      "title": "KDMRD",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "jhk-investment.html": {
+      "slug": "jhk-investment",
+      "title": "JHK",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "jm-spots.html": {
+      "slug": "jm-spots",
+      "title": "J&M Spots",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "imperial-square.html": {
+      "slug": "imperial-square",
+      "title": "Imperial Square",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "ike.html": {
+      "slug": "ike",
+      "title": "Ike",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "hvl.html": {
+      "slug": "hvl",
+      "title": "HVL",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "hubtel.html": {
+      "slug": "hubtel",
+      "title": "Hubtel Nairobi",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "hot-gossip.html": {
+      "slug": "hot-gossip",
+      "title": "Hot Gossip",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "home-automation-system-presentation.html": {
+      "slug": "home-automation-system-presentation",
+      "title": "Senseble",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 23
+    },
+    "his-grace-garden-presentation.html": {
+      "slug": "his-grace-garden-presentation",
+      "title": "HGG",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "hfc-tvc.html": {
+      "slug": "hfc-tvc",
+      "title": "HFC TVC",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "hfa.html": {
+      "slug": "hfa",
+      "title": "HFA",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "haven-project.html": {
+      "slug": "haven-project",
+      "title": "Haven",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "haustalks.html": {
+      "slug": "haustalks",
+      "title": "Haustalks",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "harbour-pointe.html": {
+      "slug": "harbour-pointe",
+      "title": "Harbour Pointe",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "glow-in-the-dark.html": {
+      "slug": "glow-in-the-dark",
+      "title": "Glow in the Dark",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "ghana-bbq-beer-festival.html": {
+      "slug": "ghana-bbq-beer-festival",
+      "title": "Ghana BBQ & Beer Festival",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "gh-phot-awards.html": {
+      "slug": "gh-phot-awards",
+      "title": "Gh Photography Awards",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "funko-ridge.html": {
+      "slug": "funko-ridge",
+      "title": "Funko Ridge Residence",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 38
+    },
+    "fule.html": {
+      "slug": "fule",
+      "title": "Fule",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "frontier-filling-station.html": {
+      "slug": "frontier-filling-station",
+      "title": "Frontier Filling Station",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "fizzles-pub.html": {
+      "slug": "fizzles-pub",
+      "title": "Fizzles Pub",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 18
+    },
+    "ert.html": {
+      "slug": "ert",
+      "title": "ERT",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "enda-whm.html": {
+      "slug": "enda-whm",
+      "title": "Enda WHM",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "enda-acm.html": {
+      "slug": "enda-acm",
+      "title": "Enda ACM",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "enda-accra-mall.html": {
+      "slug": "enda-accra-mall",
+      "title": "Enda - Accra Mall",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "empire-tower.html": {
+      "slug": "empire-tower",
+      "title": "Empire Tower",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "emerge-ident.html": {
+      "slug": "emerge-ident",
+      "title": "Emerge Co. Ltd Showreel",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 22
+    },
+    "elo-tv.html": {
+      "slug": "elo-tv",
+      "title": "ELO TV",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 17
+    },
+    "elo-identity.html": {
+      "slug": "elo-identity",
+      "title": "ELO Identity",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 11
+    },
+    "elo-conference.html": {
+      "slug": "elo-conference",
+      "title": "ELO Conference",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "ela-b.html": {
+      "slug": "ela-b",
+      "title": "Ela B",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "el-dor.html": {
+      "slug": "el-dor",
+      "title": "El Dor",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "eic-competition.html": {
+      "slug": "eic-competition",
+      "title": "EIC Competition",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "ehr.html": {
+      "slug": "ehr",
+      "title": "EHR",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "dyv.html": {
+      "slug": "dyv",
+      "title": "DYV",
+      "year": "2023",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "drw-furnart.html": {
+      "slug": "drw-furnart",
+      "title": "DRW Furnart",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 19
+    },
+    "d-e-t-a-i-l-s.html": {
+      "slug": "d-e-t-a-i-l-s",
+      "title": "Details",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "dela-anyaa.html": {
+      "slug": "dela-anyaa",
+      "title": "Dela Anyaa",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 11
+    },
+    "daawat-sweets.html": {
+      "slug": "daawat-sweets",
+      "title": "Daawat Sweets",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "csm.html": {
+      "slug": "csm",
+      "title": "CSM",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "college-invasion.html": {
+      "slug": "college-invasion",
+      "title": "College Invasion",
+      "year": "2009",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "clairemont.html": {
+      "slug": "clairemont",
+      "title": "Clairemont",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 17
+    },
+    "chocolate.html": {
+      "slug": "chocolate",
+      "title": "Chocolate",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "ceeander.html": {
+      "slug": "ceeander",
+      "title": "Ceeander Ident",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "campions-renderings.html": {
+      "slug": "campions-renderings",
+      "title": "Campions Renderings",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 53
+    },
+    "c25.html": {
+      "slug": "c25",
+      "title": "C25",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "brownies-place.html": {
+      "slug": "brownies-place",
+      "title": "Brownie&rsquo;s Place",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 39
+    },
+    "bfa.html": {
+      "slug": "bfa",
+      "title": "BFA",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 13
+    },
+    "beautiful-choices.html": {
+      "slug": "beautiful-choices",
+      "title": "Beautiful Choices",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "baobab-hotel-interiors.html": {
+      "slug": "baobab-hotel-interiors",
+      "title": "Baobab Hotel - Interiors",
+      "year": "2024",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "baobab-hotel-exteriors.html": {
+      "slug": "baobab-hotel-exteriors",
+      "title": "Baobab Hotel - Exteriors",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "b1-hq-lagos-ave.html": {
+      "slug": "b1-hq-lagos-ave",
+      "title": "B1 HQ Lagos Ave",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "apartment-in-takoradi.html": {
+      "slug": "apartment-in-takoradi",
+      "title": "Apartment In Takoradi",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "anyigbanua.html": {
+      "slug": "anyigbanua",
+      "title": "Anyigbanua",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "ameyaw-sarah.html": {
+      "slug": "ameyaw-sarah",
+      "title": "Ameyaw + Sarah",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "alexander-signage.html": {
+      "slug": "alexander-signage",
+      "title": "Alexander-Signage",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "alexander.html": {
+      "slug": "alexander",
+      "title": "Alexander",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "akyea-residence.html": {
+      "slug": "akyea-residence",
+      "title": "Akyea Residence",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "airport-hills-residence.html": {
+      "slug": "airport-hills-residence",
+      "title": "Airport Hills Residence",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "aika-osu.html": {
+      "slug": "aika-osu",
+      "title": "Aika",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "afg.html": {
+      "slug": "afg",
+      "title": "AFG Offices",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 101
+    },
+    "aelius.html": {
+      "slug": "aelius",
+      "title": "Aelius Consult Brand System",
+      "year": "2023",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "advantage-place.html": {
+      "slug": "advantage-place",
+      "title": "Advantage Place",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "adolph-s-wedding-invite.html": {
+      "slug": "adolph-s-wedding-invite",
+      "title": "Adolph's Wedding Invite",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "adentan-townhouses.html": {
+      "slug": "adentan-townhouses",
+      "title": "Adentan Townhouses",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 47
+    },
+    "aces-re-up.html": {
+      "slug": "aces-re-up",
+      "title": "Aces Re-Up",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "access-bank-iris.html": {
+      "slug": "access-bank-iris",
+      "title": "Access Bank Iris",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "abl-reception.html": {
+      "slug": "abl-reception",
+      "title": "ABL Reception",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "94-laurel.html": {
+      "slug": "94-laurel",
+      "title": "94 Laurel",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "5aap.html": {
+      "slug": "5aap",
+      "title": "5AAP",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 21
+    },
+    "41-barham.html": {
+      "slug": "41-barham",
+      "title": "41 Barham",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "2gs.html": {
+      "slug": "2gs",
+      "title": "2GS",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 15
+    },
+    "1hive.html": {
+      "slug": "1hive",
+      "title": "1Hive",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "1981.html": {
+      "slug": "1981",
+      "title": "1981",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "1957.html": {
+      "slug": "1957",
+      "title": "1957 Apartments and Retail",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    }
+  }
+}

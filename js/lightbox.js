@@ -13,7 +13,7 @@
 
     const sourceImages = candidateImages.length > 0
       ? candidateImages
-      : Array.from(document.querySelectorAll('.project-detail-container img'));
+      : Array.from(document.querySelectorAll('.project-detail-container img, .product-detail-container img'));
 
     // Filter out any hero image (.project-hero-img or inside .project-hero-media)
     const filteredImages = sourceImages.filter(img => 
@@ -33,15 +33,17 @@
 
     if (projectImages.length === 0) return;
 
-    // Extract project title if present
-    const projectTitleEl = document.querySelector('.project-page-title');
-    const projectTitle = projectTitleEl ? projectTitleEl.textContent.trim() : 'Project Photography';
+    // The deck is named by the page it sits on: a project page titles itself
+    // .project-page-title, a product page .product-page-title.
+    const pageTitleEl = document.querySelector('.project-page-title, .product-page-title');
+    const pageTitle = pageTitleEl ? pageTitleEl.textContent.trim() : 'Project Photography';
 
     // Build image catalog
     const imagesData = projectImages.map((img, idx) => ({
       index: idx,
       src: img.getAttribute('src'),
-      alt: img.getAttribute('alt') || `${projectTitle} — View ${idx + 1}`,
+      alt: img.getAttribute('alt') || `${pageTitle} — View ${idx + 1}`,
+      title: pageTitle,
       element: img
     }));
 
@@ -60,7 +62,7 @@
           <div class="lightbox-meta">
             <span class="lightbox-counter">01 / ${String(imagesData.length).padStart(2, '0')}</span>
             <span class="lightbox-divider">&mdash;</span>
-            <span class="lightbox-title">${projectTitle}</span>
+            <span class="lightbox-title"></span>
           </div>
           <button type="button" class="lightbox-close-btn" aria-label="Close fullscreen view">Close &times;</button>
         </div>
@@ -95,6 +97,7 @@
     const activeImg = lightboxEl.querySelector('.lightbox-active-img');
     const counterEl = lightboxEl.querySelector('.lightbox-counter');
     const captionEl = lightboxEl.querySelector('.lightbox-caption-text');
+    const titleEl = lightboxEl.querySelector('.lightbox-title');
     const closeBtn = lightboxEl.querySelector('.lightbox-close-btn');
     const prevBtn = lightboxEl.querySelector('.lightbox-arrow.prev');
     const nextBtn = lightboxEl.querySelector('.lightbox-arrow.next');
@@ -117,6 +120,7 @@
       currentIndex = idx;
 
       const item = imagesData[currentIndex];
+      if (titleEl) titleEl.textContent = item.title;
 
       if (currentVrViewer) {
         currentVrViewer.destroy();

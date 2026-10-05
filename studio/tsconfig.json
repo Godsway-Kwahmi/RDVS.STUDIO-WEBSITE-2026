@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2022",
     "module": "preserve",
     "moduleResolution": "bundler",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "strict": true,
-    "lib": ["dom", "ES2017"],
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "types": ["node"],
     "skipLibCheck": true,
     "noEmit": true
   },

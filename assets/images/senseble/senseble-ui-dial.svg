@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1006 375 434.85 254.79">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-DEVICE_SELECTED_CIRCLE);
+      }
+
+      .cls-10, .cls-12, .cls-13, .cls-15, .cls-18, .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #acb0b3;
+        stroke-width: 0.3px;
+      }
+
+      .cls-14, .cls-3 {
+        fill: #b3b3b3;
+      }
+
+      .cls-4 {
+        font-size: 3.5px;
+        font-family: HelveticaNeueLTStd-Lt, Helvetica Neue LT Std;
+      }
+
+      .cls-5 {
+        fill: #e6e6e6;
+      }
+
+      .cls-16, .cls-6, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-16, .cls-6 {
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        stroke-width: 8px;
+      }
+
+      .cls-17, .cls-7 {
+        fill: gray;
+      }
+
+      .cls-8 {
+        stroke: #95989a;
+      }
+
+      .cls-10 {
+        font-size: 5px;
+      }
+
+      .cls-10, .cls-15 {
+        font-family: HelveticaNeueLTStd-Roman, Helvetica Neue LT Std;
+      }
+
+      .cls-11, .cls-13, .cls-14 {
+        opacity: 0.9;
+      }
+
+      .cls-15 {
+        font-size: 6px;
+      }
+
+      .cls-17 {
+        font-size: 7px;
+      }
+
+      .cls-17, .cls-18, .cls-19 {
+        font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std;
+      }
+
+      .cls-18 {
+        font-size: 21px;
+      }
+
+      .cls-19 {
+        font-size: 10px;
+      }
+
+      .cls-20 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-DEVICE_SELECTED_CIRCLE">
+      <rect x="1006" y="375" width="434.85" height="254.79"/>
+    </clipPath>
+  </defs>
+  <g id="DEVICE_SELECTED_CIRCLE" data-name="DEVICE SELECTED_CIRCLE" class="cls-1">
+    <rect class="cls-12" x="1006" y="375" width="434.85" height="254.79"/>
+    <g id="Group_429" data-name="Group 429" transform="translate(1005.558 373)">
+      <g id="Group_402" data-name="Group 402" transform="translate(0 -5)">
+        <g id="Group_318" data-name="Group 318" transform="translate(139.442 188.792)">
+          <g id="Rectangle_165" data-name="Rectangle 165" class="cls-2">
+            <rect class="cls-20" width="156.174" height="1.587"/>
+            <rect class="cls-9" x="0.15" y="0.15" width="155.874" height="1.287"/>
+          </g>
+          <path id="Path_87" data-name="Path 87" class="cls-3" d="M0,0H45.519V1.587H0Z"/>
+        </g>
+        <g id="Group_401" data-name="Group 401" transform="translate(-1 -4)">
+          <path id="Path_91" data-name="Path 91" class="cls-3" d="M1.893-.712H33.258l.882-1.043.948,1.043h1.3a1.6,1.6,0,0,1,1.6,1.6V4.986a1.6,1.6,0,0,1-1.6,1.6H1.893a1.6,1.6,0,0,1-1.6-1.6V.892A1.6,1.6,0,0,1,1.893-.712Z" transform="translate(151.46 197.855)"/>
+          <g id="Group_385" data-name="Group 385" transform="translate(156.465 197.867)">
+            <text id="brightness_30_" data-name="brightness 30%" class="cls-4" transform="translate(14 4)"><tspan x="-11.83" y="0">brightness 30%</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_432" data-name="Group 432" transform="translate(1102.224 381.072)">
+      <path id="Subtraction_9" data-name="Subtraction 9" class="cls-5" d="M241.593,117.762H167.531a46.837,46.837,0,0,0-93.471,0H0A120.837,120.837,0,0,1,205.224,34.387a120.132,120.132,0,0,1,36.368,83.374Z" transform="translate(0 0.672)"/>
+      <g id="Group_410" data-name="Group 410" transform="translate(28.483 0)">
+        <path id="Path_101" data-name="Path 101" class="cls-6" d="M0,85.074,85.074,0" transform="translate(31.648 60.156) rotate(-45)"/>
+        <line id="Line_16" data-name="Line 16" class="cls-6" x1="88.486" y1="86.033" transform="translate(3.293 35.428)"/>
+        <line id="Line_17" data-name="Line 17" class="cls-6" y1="86.033" x2="91.514" transform="translate(91.779 35.428)"/>
+      </g>
+    </g>
+    <path id="rectangle" class="cls-7" d="M-.2.008,254.238,0V10.692L-.2,10.7Z" transform="translate(1096.2 497)"/>
+    <path id="Path_106" data-name="Path 106" class="cls-8" d="M127.395,0A127.395,127.395,0,1,1,0,127.395,127.4,127.4,0,0,1,127.395,0Z" transform="translate(1096 375.5)"/>
+    <g id="Group_433" data-name="Group 433" transform="translate(1070.5 497)">
+      <rect id="sysbar" class="cls-9" width="50.109" height="10.192" transform="translate(195.681)"/>
+      <g id="Group_353" data-name="Group 353">
+        <g id="Group_352" data-name="Group 352" transform="translate(195.681 0.301)">
+          <rect id="Rectangle_156" data-name="Rectangle 156" class="cls-9" width="20.986" height="5.794" transform="translate(31.527 2.123)"/>
+          <text id="_12:47_PM" data-name="12:47 PM" class="cls-10" transform="translate(52.424 6.699)"><tspan x="-21.495" y="0">12:47 PM</tspan></text>
+        </g>
+        <g id="sysbar_wifi" data-name="sysbar wifi" transform="translate(209.132 1.699)">
+          <g id="Group_285" data-name="Group 285" class="cls-11" transform="translate(0 0.425)">
+            <path id="Path_78" data-name="Path 78" class="cls-12" d="M3.737,6.945,7.474,2.316A5.962,5.962,0,0,0,0,2.316L3.737,6.945Z" transform="translate(0 -1)"/>
+            <path id="Path_89" data-name="Path 89" class="cls-3" d="M1.614,3.568l1.614-2A2.576,2.576,0,0,0,0,1.569l1.614,2Z" transform="translate(2.123 2.377)"/>
+          </g>
+          <rect id="Rectangle_157" data-name="Rectangle 157" class="cls-9" width="6.794" height="6.794" transform="translate(0.34)"/>
+        </g>
+        <g id="sysbar_battery" data-name="sysbar battery" transform="translate(218.612 1.699)">
+          <rect id="Rectangle_159" data-name="Rectangle 159" class="cls-9" width="6.794" height="6.794" transform="translate(0)"/>
+          <path id="Path_80" data-name="Path 80" class="cls-13" d="M45.348,1.425V1H44.074v.425H42.8v5.52h3.822V1.425Z" transform="translate(-41.101 -0.575)"/>
+          <path id="Path_90" data-name="Path 90" class="cls-14" d="M42.8,1.333V5.5h3.822V1.333Z" transform="translate(-41.101 0.868)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_434" data-name="Group 434" transform="translate(669.5 -7.8)">
+      <path id="Path_103" data-name="Path 103" class="cls-9" d="M0,0H19V8.2H0Z" transform="translate(477.4 505.8)"/>
+      <text id="MENU" class="cls-15" transform="translate(496.105 512)"><tspan x="-17.556" y="0">MENU</tspan></text>
+    </g>
+    <g id="Group_430" data-name="Group 430" transform="translate(500.794 -61)">
+      <g id="Group_404" data-name="Group 404" transform="translate(505 439)">
+        <ellipse id="Ellipse_22" data-name="Ellipse 22" class="cls-7" cx="8.253" cy="8.253" rx="8.253" ry="8.253" transform="translate(209 225)"/>
+        <g id="Group_394" data-name="Group 394" transform="translate(-889 -1051)">
+          <rect id="Rectangle_194" data-name="Rectangle 194" class="cls-9" width="8.493" height="8.493" transform="translate(1102 1280)"/>
+          <g id="Group_390" data-name="Group 390" transform="translate(3.28 48.1)">
+            <path id="Path_98" data-name="Path 98" class="cls-16" d="M2.878,7,0,3.5,2.878,0" transform="translate(1106.471 1233.7) rotate(90)"/>
+            <path id="Path_95" data-name="Path 95" class="cls-16" d="M0,4.058H3.3V0H0" transform="translate(1105.058 1235.302) rotate(90)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_407" data-name="Group 407" transform="translate(505 438)">
+        <text id="menu-2" data-name="menu" class="cls-17" transform="translate(262 225)"><tspan x="0" y="0">menu</tspan></text>
+        <g id="Group_405" data-name="Group 405">
+          <ellipse id="Ellipse_23" data-name="Ellipse 23" class="cls-7" cx="8.253" cy="8.253" rx="8.253" ry="8.253" transform="translate(244.192 219.9)"/>
+          <g id="Group_393" data-name="Group 393" transform="translate(-844 -1056)">
+            <rect id="Rectangle_193" data-name="Rectangle 193" class="cls-9" width="8.493" height="8.493" transform="translate(1092 1280)"/>
+            <path id="Path_99" data-name="Path 99" class="cls-16" d="M1154.277,1214.446l-3.346-3.346,3.346-3.347" transform="translate(-56.419 73.147)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_406" data-name="Group 406" transform="translate(505 438)">
+        <text id="options" class="cls-17" transform="translate(173 225)"><tspan x="-21.399" y="0">options</tspan></text>
+        <g id="Group_403" data-name="Group 403">
+          <ellipse id="Ellipse_24" data-name="Ellipse 24" class="cls-7" cx="8.253" cy="8.253" rx="8.253" ry="8.253" transform="translate(174 220)"/>
+          <g id="Group_392" data-name="Group 392" transform="translate(-904 -1056)">
+            <rect id="Rectangle_195" data-name="Rectangle 195" class="cls-9" width="8.493" height="8.493" transform="translate(1082 1280)"/>
+            <g id="Group_391" data-name="Group 391" transform="translate(36.261 72.859)">
+              <path id="Path_95-2" data-name="Path 95" class="cls-16" d="M1051.985,1213.834H1046" transform="translate(0.993 -0.193)"/>
+              <path id="Path_96" data-name="Path 96" class="cls-16" d="M1051.985,1213.834H1046" transform="translate(0.993 -2.447)"/>
+              <path id="Path_97" data-name="Path 97" class="cls-16" d="M1051.985,1213.834H1046" transform="translate(0.993 -4.701)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <path id="Path_105" data-name="Path 105" class="cls-9" d="M-.2.894H136.894" transform="translate(653.906 669.188)"/>
+    </g>
+    <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-3" cx="39.043" cy="39.043" r="39.043" transform="translate(1183.5 463)"/>
+    <text id="ON" class="cls-18" transform="translate(1223 510)"><tspan x="-14.899" y="0">ON</tspan></text>
+    <text id="Sync_with_music" data-name="Sync 
+with
+music" class="cls-19" transform="translate(1140 464)"><tspan x="-11.95" y="0">Sync </tspan><tspan x="-8.25" y="10">with</tspan><tspan x="-12.415" y="20">music</tspan></text>
+    <text id="Bedtime_scene" data-name="Bedtime
+scene" class="cls-19" transform="translate(1189 422)"><tspan x="-17.235" y="0">Bedtime</tspan><tspan x="-12.785" y="10">scene</tspan></text>
+    <text id="Party_scene" data-name="Party
+scene" class="cls-19" transform="translate(1253 422)"><tspan x="-10.36" y="0">Party</tspan><tspan x="-12.785" y="10">scene</tspan></text>
+    <text id="Stream_to_all_rooms" data-name="Stream 
+to all 
+rooms" class="cls-19" transform="translate(1306 464)"><tspan x="-16.3" y="0">Stream </tspan><tspan x="-10.94" y="10">to all </tspan><tspan x="-13.145" y="20">rooms</tspan></text>
+  </g>
+</svg>

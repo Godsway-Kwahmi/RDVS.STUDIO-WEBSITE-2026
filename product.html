@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Product &mdash; RDVS Studios</title>
+  <meta name="description" content="Products designed by RDVS: the studio&rsquo;s own MIG line of furniture, lighting and accessories, plus client product work, each piece on its own page.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="18.36"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">Product</h1>
+      <p class="page-subtitle">The products RDVS has designed &mdash; the studio&rsquo;s own MIG line of furniture, lighting and accessories, alongside client product work. Filter by type, then open a piece for its plates and its facts.</p>
+    </header>
+
+    <!-- Minimalist Filter Toolbar -->
+    <div class="work-toolbar">
+      <div class="filter-nav" role="toolbar" aria-label="Filter products by type">
+        <span class="toolbar-label">Types:</span>
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="accessories">Accessories</button>
+        <button type="button" class="filter-btn" data-filter="electronics">Electronics</button>
+        <button type="button" class="filter-btn" data-filter="furniture">Furniture</button>
+        <button type="button" class="filter-btn" data-filter="lights">Lights</button>
+      </div>
+    </div>
+
+    <section class="minimal-grid" id="productGrid" aria-label="Products">
+
+      <!-- Product: 1H -->
+      <a href="product-1h.html" class="grid-card"
+         data-title="1H"
+         data-year="2016"
+         data-typology="Media wall"
+         data-category="furniture">
+        <div class="card-media-wrapper">
+          <img width="1123" height="1077" src="assets/images/mig/mig-1h-1.jpg" alt="1H as a tall run in a dark-stained finish: open bays and closed volumes around a curved screen, styled with books and pale vases on black." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">1H</h2>
+        <span class="card-year">2016</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Media wall</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Furniture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: HG-DESK -->
+      <a href="product-hg-desk.html" class="grid-card"
+         data-title="HG-DESK"
+         data-year="2020"
+         data-typology="Desk"
+         data-category="furniture">
+        <div class="card-media-wrapper">
+          <img width="2048" height="1152" src="assets/images/mig/mig-hg-desk-1.jpg" alt="Black-stained desk with trestle legs in a studio, the MIG mark printed on the returned edge of the top." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">HG-DESK</h2>
+        <span class="card-year">2020</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Desk</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Furniture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: LINE E FLOAT I -->
+      <a href="product-line-e-float-i.html" class="grid-card"
+         data-title="LINE E FLOAT I"
+         data-typology="Floating media unit"
+         data-category="furniture">
+        <div class="card-media-wrapper">
+          <img width="752" height="752" src="assets/images/mig/mig-line-e-float-i-2.jpg" alt="Detail of the blush unit&rsquo;s open cubby and its sliding front with a vertical pull slot, an amber vase on top." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">LINE E FLOAT I</h2>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Floating media unit</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Furniture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: MLKY -->
+      <a href="product-mlky.html" class="grid-card"
+         data-title="MLKY"
+         data-year="2021"
+         data-typology="Experimental lighting"
+         data-category="lights">
+        <div class="card-media-wrapper">
+          <img width="1080" height="1080" src="assets/images/mig/mig-mlky-1.jpg" alt="MLKY-FLR: a tall reeded floor column glowing warm just under a dark cap and falling to black at its base." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">MLKY</h2>
+        <span class="card-year">2021</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Experimental lighting</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Lights</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: MOUND -->
+      <a href="product-mound.html" class="grid-card"
+         data-title="MOUND"
+         data-year="2016"
+         data-typology="Tray &amp; bench"
+         data-category="accessories">
+        <div class="card-media-wrapper">
+          <img width="1280" height="720" src="assets/images/mig/mig-mound-1.jpg" alt="Labelled MOUND plate: a shallow grey tray carrying fruit and a wristwatch." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">MOUND</h2>
+        <span class="card-year">2016</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Tray &amp; bench</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Accessories</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: S-AGE -->
+      <a href="product-s-age.html" class="grid-card"
+         data-title="S-AGE"
+         data-year="2018"
+         data-typology="Reception desk"
+         data-category="furniture">
+        <div class="card-media-wrapper">
+          <img width="2048" height="1152" src="assets/images/mig/mig-s-age-1.jpg" alt="Labelled S-AGE plate: a curved white reception desk with two screens and a vase of greenery." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">S-AGE</h2>
+        <span class="card-year">2018</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Reception desk</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Furniture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: Senseble -->
+      <a href="home-automation-system-presentation.html" class="grid-card"
+         data-title="Senseble"
+         data-year="2017"
+         data-typology="Wall control panel"
+         data-category="electronics">
+        <div class="card-media-wrapper">
+          <img width="2400" height="1350" src="assets/images/senseble/senseble-hero.jpg" alt="Senseble control panel seen from the socket side: white body, oak cheek carrying the connectors, switch wells moulded into the wedge and the dial laid into its slot." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">Senseble</h2>
+        <span class="card-year">2017</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Wall control panel</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Electronics</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Product: SP001 -->
+      <a href="product-sp001.html" class="grid-card"
+         data-title="SP001"
+         data-year="2019"
+         data-typology="Sleeping pod"
+         data-category="furniture">
+        <div class="card-media-wrapper">
+          <img width="2048" height="1152" src="assets/images/mig/mig-sp001-1.jpg" alt="Labelled SP001 plate: the sleeping pod lit from above on black." class="card-img" loading="lazy">
+        </div>
+        <div class="card-meta">
+          <div class="card-meta-main">
+            <h2 class="card-title">SP001</h2>
+        <span class="card-year">2019</span>
+          </div>
+          <div class="card-meta-sub">
+            <span class="card-typology">Sleeping pod</span>
+            <span class="meta-sep">/</span>
+            <span class="card-category">Furniture</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
+      const cards = Array.from(document.querySelectorAll('.grid-card'));
+
+      // The product index filters on one flat key per piece, so it reads
+      // ?type= and keeps work.html's own ?filter=/?service= contract intact.
+      const urlType = (new URLSearchParams(window.location.search).get('type') || '').toLowerCase();
+
+      let currentFilter = 'all';
+
+      function markFilterActive(btn) {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+
+      function applyFilter() {
+        cards.forEach(card => {
+          const hit = currentFilter === 'all' || card.getAttribute('data-category') === currentFilter;
+          card.style.display = hit ? '' : 'none';
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentFilter = btn.getAttribute('data-filter');
+          markFilterActive(btn);
+          applyFilter();
+          const url = new URL(window.location.href);
+          if (currentFilter === 'all') url.searchParams.delete('type');
+          else url.searchParams.set('type', currentFilter);
+          window.history.replaceState({}, '', url);
+        });
+      });
+
+      const urlBtn = document.querySelector(`.filter-btn[data-filter="${urlType}"]`);
+      if (urlBtn) {
+        currentFilter = urlType;
+        markFilterActive(urlBtn);
+        applyFilter();
+      }
+    });
+  </script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

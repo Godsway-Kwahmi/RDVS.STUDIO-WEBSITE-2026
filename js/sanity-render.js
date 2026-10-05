@@ -25,19 +25,35 @@
           const titleEl = document.querySelector('.project-page-title');
           if (titleEl && project.title) titleEl.textContent = project.title;
 
+          // The meta line is read back by js/main.js's slide sync — "Typology / Service — Year ·
+          // Client" — so rebuilding it here has to keep that shape and must not invent a default
+          // service. It used to fall back to the literal string 'Architectural Design', which
+          // would have relabelled every un-typed project on the page AND on its homepage slide.
           const metaEl = document.querySelector('.project-meta-line');
-          if (metaEl && (project.category || project.year)) {
-            metaEl.textContent = `${project.category || 'Architectural Design'} — ${project.year || ''} · ${project.location || 'Studio'}`;
+          if (metaEl && (project.typology || project.category || project.year)) {
+            const typology = project.typology || project.category || '';
+            // `disciplines` stores filter TOKENS ("architecture-planning"); the page shows the bar
+            // LABEL ("Architectural Design"). Joining the raw tokens printed slugs in the meta line,
+            // and js/main.js reads this line back as the slide's service, so the tokens leaked onto
+            // the homepage too. The labels come from js/sanity-taxonomy.js, which is generated from
+            // the same filter bar the tokens belong to.
+            const tax = window.RDVSSanityTaxonomy;
+            const list = Array.isArray(project.disciplines) && project.disciplines.length
+              ? project.disciplines
+              : (project.cardLabel ? [project.cardLabel] : []);
+            const services = list.map(t => (tax ? tax.label(t) : t)).filter(Boolean).join(', ');
+            const head = services ? `${typology} / ${services}` : typology;
+            metaEl.textContent = `${head} — ${project.year || ''} · ${project.client || project.location || 'Studio'}`;
           }
 
           const heroImg = document.querySelector('.project-hero-img');
-          if (heroImg && project.coverImageUrl) {
-            heroImg.src = project.coverImageUrl;
+          if (heroImg && project.heroImageUrl) {
+            heroImg.src = project.heroImageUrl;
           }
 
           const leadText = document.querySelector('.project-lead-text');
-          if (leadText && project.leadText) {
-            leadText.textContent = project.leadText;
+          if (leadText && project.lead) {
+            leadText.textContent = project.lead;
           }
 
           // Specs hydration. Looked up by label rather than position: the row set
@@ -71,13 +87,19 @@
             if (teamVal) teamVal.textContent = Array.isArray(project.team) ? project.team.join(', ') : project.team;
           }
 
-          // Gallery hydration (skip pages that lock the static markup)
-          if (project.galleryUrls && project.galleryUrls.length > 0) {
+          // Gallery hydration is opt-IN, not opt-out.
+          //
+          // It used to fire on every project page that did NOT carry `data-static-gallery`, and
+          // only 2 of 142 pages did — so the first populated dataset would have replaced 140
+          // curated galleries with `<img alt="… Architectural Detail">`, destroying the per-plate
+          // alt text, the section dividers, the width/height attributes and the plate numbering
+          // the Format row is checked against. A page now has to ask for it.
+          if (Array.isArray(project.gallery) && project.gallery.length > 0) {
             const gallerySection = document.querySelector('.project-gallery-grid');
-            if (gallerySection && gallerySection.getAttribute('data-static-gallery') !== 'true') {
-              gallerySection.innerHTML = project.galleryUrls.map(url => `
+            if (gallerySection && gallerySection.getAttribute('data-cms-gallery') === 'true') {
+              gallerySection.innerHTML = project.gallery.map(item => `
                 <div class="gallery-item">
-                  <img src="${url}" alt="${project.title} Architectural Detail" class="gallery-img" loading="lazy">
+                  <img src="${item.url}" alt="${item.alt || project.title}" class="gallery-img" loading="lazy">
                 </div>
               `).join('');
             }
@@ -106,11 +128,16 @@
       }
 
       // 4. About Page Editorial Hydration
+      //
+      // Removed. It called getPageContent('about'), which queried `_type == "page"` — a document
+      // type studio/schemas/ never defines — and then wrote to `.about-lead-statement`, a selector
+      // that does not exist on about.html. Both halves were dead. If per-page editorial copy is
+      // wanted, add a `page` type to the schema and a real hook element to the page first.
       if (isAbout) {
-        const aboutContent = await window.RDVSSanity.getPageContent('about');
-        if (aboutContent && aboutContent.leadText) {
-          const lead = document.querySelector('.about-lead-statement');
-          if (lead) lead.textContent = aboutContent.leadText;
+        const settings = await window.RDVSSanity.getSiteSettings();
+        if (settings && settings.studioName) {
+          const brand = document.querySelector('.brand-link');
+          if (brand) brand.setAttribute('aria-label', settings.studioName);
         }
       }
 

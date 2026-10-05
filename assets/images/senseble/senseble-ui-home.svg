@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 434.85 254.79">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-HOME_LANDSCAPE);
+      }
+
+      .cls-2, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #95989a;
+        stroke-width: 0.2px;
+      }
+
+      .cls-3 {
+        fill: #e6e6e6;
+      }
+
+      .cls-4 {
+        font-size: 11px;
+      }
+
+      .cls-12, .cls-4, .cls-6, .cls-7 {
+        font-family: HelveticaNeueLTStd-Th, Helvetica Neue LT Std;
+      }
+
+      .cls-5, .cls-7 {
+        font-size: 12px;
+      }
+
+      .cls-5 {
+        font-family: HelveticaNeueLTStd-Roman, Helvetica Neue LT Std;
+      }
+
+      .cls-6 {
+        font-size: 15px;
+      }
+
+      .cls-11, .cls-9 {
+        fill: #b3b3b3;
+      }
+
+      .cls-10 {
+        opacity: 0.9;
+      }
+
+      .cls-11 {
+        fill-rule: evenodd;
+      }
+
+      .cls-12 {
+        font-size: 40px;
+      }
+
+      .cls-13 {
+        font-size: 20px;
+        font-family: HelveticaNeueLTStd-Lt, Helvetica Neue LT Std;
+      }
+
+      .cls-14 {
+        stroke: none;
+      }
+
+      .cls-15 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-HOME_LANDSCAPE">
+      <rect width="434.85" height="254.79"/>
+    </clipPath>
+  </defs>
+  <g id="HOME_LANDSCAPE" class="cls-1">
+    <rect class="cls-15" width="434.85" height="254.79"/>
+    <g id="Rectangle_168" data-name="Rectangle 168" class="cls-2">
+      <rect class="cls-14" width="434.842" height="254.79"/>
+      <rect class="cls-8" x="0.1" y="0.1" width="434.642" height="254.59"/>
+    </g>
+    <rect id="Rectangle_183" data-name="Rectangle 183" class="cls-3" width="141.143" height="141.143" transform="translate(416.143 18) rotate(90)"/>
+    <rect id="Rectangle_184" data-name="Rectangle 184" class="cls-3" width="63.143" height="63.143" transform="translate(416.703 173) rotate(90)"/>
+    <rect id="Rectangle_185" data-name="Rectangle 185" class="cls-3" width="63.143" height="63.143" transform="translate(338.143 173) rotate(90)"/>
+    <text id="home" class="cls-4" transform="translate(346 93)"><tspan x="-13.04" y="0">home</tspan></text>
+    <g id="Group_445" data-name="Group 445">
+      <rect id="Rectangle_187" data-name="Rectangle 187" class="cls-3" width="31.143" height="31.143" transform="translate(48.143 205) rotate(90)"/>
+      <text id="reset" class="cls-4" transform="translate(33 224)"><tspan x="-11.308" y="0">reset</tspan></text>
+    </g>
+    <g id="Group_446" data-name="Group 446" transform="translate(41)">
+      <rect id="Rectangle_187-2" data-name="Rectangle 187" class="cls-3" width="31.143" height="31.143" transform="translate(48.143 205) rotate(90)"/>
+      <text id="alarm" class="cls-4" transform="translate(33 224)"><tspan x="-12.331" y="0">alarm</tspan></text>
+    </g>
+    <text id="help" class="cls-4" transform="translate(385 209)"><tspan x="-9.691" y="0">help</tspan></text>
+    <text id="settings" class="cls-4" transform="translate(307 209)"><tspan x="-17.726" y="0">settings</tspan></text>
+    <g id="Group_347" data-name="Group 347" transform="translate(0 2)">
+      <g id="Group_338" data-name="Group 338" transform="translate(19.077 16)">
+        <text id="SENSEBLE" class="cls-5" transform="translate(25.626 13.957)"><tspan x="0" y="0">SENSEBLE</tspan></text>
+        <rect id="Rectangle_11" data-name="Rectangle 11" width="18.727" height="23.655"/>
+      </g>
+      <text id="Wed_October_18" data-name="Wed, October 18" class="cls-6" transform="translate(19.597 121.677)"><tspan x="0" y="0">Wed, October 18</tspan></text>
+      <g id="Group_339" data-name="Group 339" transform="translate(18.481 139.283)">
+        <g id="Group_287" data-name="Group 287" transform="translate(23.807)">
+          <text id="_75_" data-name="75%" class="cls-7" transform="translate(30.454 14.202)"><tspan x="-11.34" y="0">75%</tspan></text>
+          <g id="sysbar_battery" data-name="sysbar battery" transform="translate(0)">
+            <rect id="Rectangle_159" data-name="Rectangle 159" class="cls-8" width="16.854" height="16.854" transform="translate(0)"/>
+            <path id="Path_80" data-name="Path 80" class="cls-9" d="M49.12,2.053V1H45.96V2.053H42.8V15.748h9.481V2.053Z" transform="translate(-38.586 0.053)"/>
+            <path id="Path_81" data-name="Path 81" class="cls-10" d="M42.8,1.707v9.684h9.481V1.707Z" transform="translate(-38.586 4.41)"/>
+          </g>
+        </g>
+        <g id="Group_286" data-name="Group 286" transform="translate(0 1.053)">
+          <path id="path" class="cls-11" d="M9.382,15.011,18.764,3.3A15.17,15.17,0,0,0,9.382,0,15.17,15.17,0,0,0,0,3.3L9.382,15.011Z" transform="translate(0 0)"/>
+          <path id="path-2" data-name="path" d="M6.346,9.914l3.063-3.83A5.484,5.484,0,0,0,6.289,5.011,4.692,4.692,0,0,0,3.345,6.163l3,3.751.156,0Z" transform="translate(3.093 5.102)"/>
+        </g>
+      </g>
+      <text id="_12:47PM" data-name="12:47PM" class="cls-12" transform="translate(14.438 100.453)"><tspan x="0" y="0">12:47</tspan><tspan class="cls-13" y="0">PM</tspan></text>
+    </g>
+  </g>
+</svg>

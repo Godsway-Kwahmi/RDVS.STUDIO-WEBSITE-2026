@@ -1,10 +1,17 @@
 import {defineType, defineField, defineArrayMember} from 'sanity'
+import UserIcon from '@sanity/icons/User'
+import {SERVICES} from '../taxonomy'
+
+// Same generated token list the projects use, so a person is tagged with services the site can
+// actually name. This used to be a typed-out list of free-text labels ("Architecture",
+// "VFX & CGI", "Masterplanning") that matched no filter token anywhere on the site.
+const SERVICE_OPTIONS = SERVICES.map((s) => ({title: s.label, value: s.value}))
 
 export default defineType({
   name: 'teamMember',
   title: 'Team Member',
   type: 'document',
-  icon: () => '👤',
+  icon: UserIcon,
   fields: [
     defineField({
       name: 'name',
@@ -32,6 +39,12 @@ export default defineType({
       description: 'Lower numbers appear first on the About page',
     }),
     defineField({
+      name: 'active',
+      title: 'Show on About Page',
+      type: 'boolean',
+      initialValue: true,
+    }),
+    defineField({
       name: 'photo',
       title: 'Photo',
       type: 'image',
@@ -50,21 +63,9 @@ export default defineType({
       name: 'disciplines',
       title: 'Disciplines',
       type: 'array',
-      description: 'Areas this person works across',
+      description: 'Service tokens this person works across',
       of: [defineArrayMember({type: 'string'})],
-      options: {
-        list: [
-          'Architecture',
-          'Interior Design',
-          'VFX & CGI',
-          'Motion Design',
-          'Graphic Design',
-          'Industrial Design',
-          'Web Design',
-          'Design + Build',
-          'Masterplanning',
-        ],
-      },
+      options: {list: SERVICE_OPTIONS},
     }),
     defineField({
       name: 'linkedin',
@@ -82,12 +83,13 @@ export default defineType({
       title: 'name',
       role: 'role',
       order: 'order',
+      active: 'active',
       media: 'photo',
     },
-    prepare({title, role, order, media}) {
+    prepare({title, role, order, active, media}) {
       return {
         title,
-        subtitle: `${order ? '#' + order + ' · ' : ''}${role}`,
+        subtitle: `${order ? '#' + order + ' · ' : ''}${role}${active === false ? ' · hidden' : ''}`,
         media,
       }
     },

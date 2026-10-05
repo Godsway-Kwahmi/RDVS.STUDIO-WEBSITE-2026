@@ -1,24 +1,30 @@
 {
   "name": "rdvs-studio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "Sanity Studio for RDVS.studio website content management",
+  "description": "Sanity Studio for the RDVS.studio website — projects, news, services, team and site settings",
+  "engines": {
+    "node": ">=22.12"
+  },
   "scripts": {
     "dev": "sanity dev --port 3333",
     "build": "sanity build",
-    "start": "sanity start",
     "deploy": "sanity deploy",
-    "manage": "sanity manage"
+    "manage": "sanity manage",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@sanity/vision": "^3.70.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sanity": "^3.70.1",
-    "styled-components": "^6.1.14"
+    "@sanity/icons": "^5.2.3",
+    "@sanity/vision": "^6.17.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.17.0",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^4.0.0",
-    "eslint": "^8.57.0"
+    "@sanity/eslint-config-studio": "^7.0.0",
+    "@types/node": "^24.10.1",
+    "eslint": "^10.12.0",
+    "typescript": "^5.9.3"
   }
 }

@@ -12,8 +12,8 @@
       } catch (e) {}
     })();
   </script>
-  <title>Project Archive (2009–2026) — RDVS Studios</title>
-  <meta name="description" content="Complete chronological project directory of RDVS Studios spanning 2009 to 2026. Architecture, Interiors, Visual Effects, and Digital Art.">
+  <title>Project Archive (2008–2024) — RDVS Studios</title>
+  <meta name="description" content="Complete chronological project directory of RDVS Studios spanning 2008 to 2024. Architecture, Interiors, Visual Effects, and Digital Art.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,6 +102,94 @@
       border-bottom: 1px solid var(--border-hairline);
       color: var(--text-secondary, rgba(255,255,255,0.7));
     }
+    .archive-year-heading th {
+      text-align: left;
+      padding: 1.9rem 0 0.55rem;
+      border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.14));
+      font-weight: 600;
+    }
+
+    .archive-year-group + .archive-year-group .archive-year-heading th {
+      padding-top: 2.6rem;
+    }
+
+    .archive-year-label {
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      color: var(--text-primary, inherit);
+    }
+
+    .archive-year-count {
+      margin-left: 0.7rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary, rgba(0, 0, 0, 0.55));
+      vertical-align: 0.12em;
+    }
+
+    /* Collapsible groups: the heading is a button, the caret shows the state, and a
+       folded tbody hides its rows. Filtered-out rows carry an inline display:none, which
+       still wins here, so the two mechanisms never fight each other. */
+    .archive-group-toggle {
+      display: flex;
+      align-items: baseline;
+      min-height: 1.4rem;
+      gap: 0.55rem;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: 0;
+      font: inherit;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .archive-group-caret {
+      flex: 0 0 auto;
+      font-size: 0.9em;
+      line-height: 1;
+      opacity: 0.55;
+      color: var(--text-secondary, rgba(0, 0, 0, 0.5));
+      transform-origin: 50% 55%;
+      transition: transform 0.18s ease;
+    }
+
+    .archive-year-group.collapsed .archive-group-caret {
+      transform: rotate(-90deg);
+    }
+
+    .archive-year-group.collapsed .archive-row {
+      display: none;
+    }
+
+    .archive-group-toggle:hover .archive-year-label,
+    .archive-group-toggle:focus-visible .archive-year-label {
+      color: var(--foreground);
+    }
+
+    .archive-group-toggle:focus-visible {
+      outline: 1px solid var(--text-secondary, rgba(0, 0, 0, 0.4));
+      outline-offset: 4px;
+    }
+
+    .archive-collapse-group {
+      gap: 18px;
+    }
+
+    .archive-collapse-btn.is-inert {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .archive-group-caret {
+        transition: none;
+      }
+    }
+
     .archive-row:hover td {
       background: var(--hover-bg);
       color: var(--foreground);
@@ -155,6 +243,7 @@
       <div class="header-right">
         <nav class="primary-nav" aria-label="Primary navigation">
           <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
           <a href="about.html" class="nav-link">About</a>
           <a href="news.html" class="nav-link">News</a>
           <a href="expertise.html" class="nav-link">Expertise</a>
@@ -198,9 +287,9 @@
 
   <main class="page-container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
     <section class="archive-header-section">
-      <span class="project-meta-line" style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-secondary);">Catalogue &amp; Chronology &middot; 2009&ndash;2024</span>
+      <span class="project-meta-line" style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: var(--text-secondary);">Catalogue &amp; Chronology &middot; 2008&ndash;2024</span>
       <h1 class="archive-headline">Project Archive</h1>
-      <p class="archive-intro">A comprehensive chronological directory of all 146 studio works, architectural commissions, spatial interiors, and computational designs spanning 2009 to 2024.</p>
+      <p class="archive-intro">A comprehensive chronological directory of all 141 studio works, architectural commissions, spatial interiors, and computational designs spanning 2008 to 2024.</p>
     </section>
 
     <div class="archive-controls">
@@ -211,7 +300,11 @@
           <button type="button" class="sort-btn archive-sort-btn" data-sort="year-desc" aria-pressed="false">Newest first</button>
           <button type="button" class="sort-btn archive-sort-btn" data-sort="title" aria-pressed="false">A&ndash;Z</button>
         </div>
-        <span class="archive-count-badge" id="archiveCountBadge">Showing 146 works</span>
+        <div class="sort-group archive-collapse-group" role="group" aria-label="Collapse or expand the archive groups">
+          <button type="button" class="sort-btn archive-collapse-btn" data-collapse="collapse" title="Fold up every group">Collapse all</button>
+          <button type="button" class="sort-btn archive-collapse-btn" data-collapse="expand" title="Open every group">Expand all</button>
+        </div>
+        <span class="archive-count-badge" id="archiveCountBadge">Showing 141 works</span>
       </div>
     </div>
 
@@ -225,23 +318,17 @@
         </tr>
       </thead>
       <tbody>
+        <tr class="archive-row" data-year="2008" data-title="la palm 2008 christmas party poster" data-typology="event poster" data-discipline="graphic design &amp; illustration" data-client="la palm royal beach hotel" data-location="accra, ghana">
+          <td class="archive-col-year">2008</td>
+          <td class="archive-col-title"><a href="la-palm-2008-christmas-party-posters.html" class="archive-project-link">La Palm 2008 Christmas Party Poster</a></td>
+          <td class="archive-col-typology">Event Poster</td>
+          <td class="archive-col-discipline">Graphic Design &amp; Illustration</td>
+        </tr>
         <tr class="archive-row" data-year="2009" data-title="college invasion" data-typology="event poster" data-discipline="graphic design" data-client="lockd down entertainment" data-location="accra, ghana">
           <td class="archive-col-year">2009</td>
           <td class="archive-col-title"><a href="college-invasion.html" class="archive-project-link">College Invasion</a></td>
           <td class="archive-col-typology">Event Poster</td>
           <td class="archive-col-discipline">Graphic Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2009" data-title="la palm 2008 christmas party posters" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2009</td>
-          <td class="archive-col-title"><a href="la-palm-2008-christmas-party-posters.html" class="archive-project-link">La Palm 2008 Christmas Party Posters</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2009" data-title="web design design" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2009</td>
-          <td class="archive-col-title"><a href="web-design-design.html" class="archive-project-link">Web Design Design</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
         </tr>
         <tr class="archive-row" data-year="2010" data-title="apartment in takoradi" data-typology="residential interior" data-discipline="interior design &amp; architectural visualization" data-client="stephen morgan" data-location="takoradi, ghana">
           <td class="archive-col-year">2010</td>
@@ -254,12 +341,6 @@
           <td class="archive-col-title"><a href="nissa-offices-2010.html" class="archive-project-link">Nissa Offices 2010</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2010" data-title="nyla court" data-typology="residential" data-discipline="interior design &amp; architectural visualization" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2010</td>
-          <td class="archive-col-title"><a href="nyla-court.html" class="archive-project-link">Nyla Court</a></td>
-          <td class="archive-col-typology">Residential</td>
-          <td class="archive-col-discipline">Interior Design &amp; Architectural Visualization</td>
         </tr>
         <tr class="archive-row" data-year="2010" data-title="rdvs ident" data-typology="motion design" data-discipline="motion design" data-client="rdvs studios" data-location="accra, ghana">
           <td class="archive-col-year">2010</td>
@@ -278,12 +359,6 @@
           <td class="archive-col-title"><a href="stanchart-hq.html" class="archive-project-link">Stanchart HQ</a></td>
           <td class="archive-col-typology">Commercial</td>
           <td class="archive-col-discipline">3D Visualization</td>
-        </tr>
-                <tr class="archive-row" data-year="2010" data-title="vodafone red hse" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2010</td>
-          <td class="archive-col-title"><a href="vodafone-red-hse.html" class="archive-project-link">Vodafone Red Hse</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
         </tr>
         <tr class="archive-row" data-year="2011" data-title="clairemont" data-typology="graphic design" data-discipline="architectural visualization &amp; graphic design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2011</td>
@@ -308,6 +383,12 @@
           <td class="archive-col-title"><a href="octagon-mews.html" class="archive-project-link">Octagon Mews</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Visualization</td>
+        </tr>
+        <tr class="archive-row" data-year="2011" data-title="vodafone red hse" data-typology="architecture" data-discipline="architectural design" data-client="vodafone" data-location="accra, ghana">
+          <td class="archive-col-year">2011</td>
+          <td class="archive-col-title"><a href="vodafone-red-hse.html" class="archive-project-link">Vodafone Red Hse</a></td>
+          <td class="archive-col-typology">Architecture</td>
+          <td class="archive-col-discipline">Architectural Design</td>
         </tr>
         <tr class="archive-row" data-year="2012" data-title="anyigbanua" data-typology="residential interior" data-discipline="interior design &amp; architectural visualization" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2012</td>
@@ -361,12 +442,6 @@
           <td class="archive-col-year">2012</td>
           <td class="archive-col-title"><a href="purc.html" class="archive-project-link">PURC</a></td>
           <td class="archive-col-typology">Institutional</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2012" data-title="rdvs branding" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2012</td>
-          <td class="archive-col-title"><a href="rdvs-branding.html" class="archive-project-link">RDVS Branding</a></td>
-          <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design</td>
         </tr>
         <tr class="archive-row" data-year="2013" data-title="94 laurel" data-typology="residential cgi" data-discipline="visual effects (vfx) &amp; cgi" data-client="brent hughes" data-location="laurel, canada">
@@ -438,12 +513,6 @@
         <tr class="archive-row" data-year="2013" data-title="premier lodge 2" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2013</td>
           <td class="archive-col-title"><a href="premier-lodge-2.html" class="archive-project-link">Premier Lodge 2</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2013" data-title="project mount" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2013</td>
-          <td class="archive-col-title"><a href="project-mount.html" class="archive-project-link">Project Mount</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design</td>
         </tr>
@@ -560,12 +629,6 @@
           <td class="archive-col-title"><a href="lase-icon.html" class="archive-project-link">Lase</a></td>
           <td class="archive-col-typology">Icon Design</td>
           <td class="archive-col-discipline">Art</td>
-        </tr>
-        <tr class="archive-row" data-year="2014" data-title="mig.rdvs" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2014</td>
-          <td class="archive-col-title"><a href="mig-rdvs.html" class="archive-project-link">Mig.rdvs</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
         </tr>
         <tr class="archive-row" data-year="2014" data-title="ndaba restaurant, whm" data-typology="hospitality" data-discipline="3d visualization" data-client="architect emmanuel ampaabeng" data-location="west hills mall, accra, ghana">
           <td class="archive-col-year">2014</td>
@@ -747,15 +810,9 @@
           <td class="archive-col-typology">Commercial / TVC</td>
           <td class="archive-col-discipline">Visual Effects (VFX) &amp; Motion Design</td>
         </tr>
-        <tr class="archive-row" data-year="2016" data-title="his grace garden presentation" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
+        <tr class="archive-row" data-year="2016" data-title="hgg" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
           <td class="archive-col-year">2016</td>
-          <td class="archive-col-title"><a href="his-grace-garden-presentation.html" class="archive-project-link">His Grace Garden Presentation</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
-        <tr class="archive-row" data-year="2016" data-title="home automation system presentation" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2016</td>
-          <td class="archive-col-title"><a href="home-automation-system-presentation.html" class="archive-project-link">Home Automation System Presentation</a></td>
+          <td class="archive-col-title"><a href="his-grace-garden-presentation.html" class="archive-project-link">HGG</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design</td>
         </tr>
@@ -903,6 +960,12 @@
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design, Landscape Design, Interior Design &amp; 3D Visualization</td>
         </tr>
+        <tr class="archive-row" data-year="2017" data-title="senseble" data-typology="product design" data-discipline="industrial &amp; furniture design, graphic design, digital &amp; web design &amp; product visualization" data-client="clearspace ltd" data-location="accra, ghana">
+          <td class="archive-col-year">2017</td>
+          <td class="archive-col-title"><a href="home-automation-system-presentation.html" class="archive-project-link">Senseble</a></td>
+          <td class="archive-col-typology">Product Design</td>
+          <td class="archive-col-discipline">Industrial &amp; Furniture Design, Graphic Design, Digital &amp; Web Design &amp; Product Visualization</td>
+        </tr>
         <tr class="archive-row" data-year="2017" data-title="six acres company profile" data-typology="corporate profile" data-discipline="graphic design &amp; 3d visualization" data-client="six acres limited" data-location="accra, ghana">
           <td class="archive-col-year">2017</td>
           <td class="archive-col-title"><a href="six-acres-company-profile.html" class="archive-project-link">Six Acres Company Profile</a></td>
@@ -920,6 +983,12 @@
           <td class="archive-col-title"><a href="access-bank-iris.html" class="archive-project-link">Access Bank Iris</a></td>
           <td class="archive-col-typology">Workplace &amp; Office</td>
           <td class="archive-col-discipline">Interior Design &amp; Architectural Visualization</td>
+        </tr>
+        <tr class="archive-row" data-year="2018" data-title="adolph&rsquo;s wedding invite" data-typology="wedding invitation" data-discipline="graphic design" data-client="adolph kwabla amevor &amp; theresah korkor boatey" data-location="odumase krobo, ghana">
+          <td class="archive-col-year">2018</td>
+          <td class="archive-col-title"><a href="adolph-s-wedding-invite.html" class="archive-project-link">Adolph&rsquo;s Wedding Invite</a></td>
+          <td class="archive-col-typology">Wedding Invitation</td>
+          <td class="archive-col-discipline">Graphic Design</td>
         </tr>
         <tr class="archive-row" data-year="2018" data-title="bfa" data-typology="residential" data-discipline="interior design &amp; 3d visualization" data-client="homes direct" data-location="accra, ghana">
           <td class="archive-col-year">2018</td>
@@ -963,6 +1032,12 @@
           <td class="archive-col-typology">Residential</td>
           <td class="archive-col-discipline">Interior Design &amp; 3D Visualization</td>
         </tr>
+        <tr class="archive-row" data-year="2018" data-title="project mount" data-typology="residential" data-discipline="interior design &amp; 3d visualization" data-client="private client" data-location="accra, ghana">
+          <td class="archive-col-year">2018</td>
+          <td class="archive-col-title"><a href="project-mount.html" class="archive-project-link">Project Mount</a></td>
+          <td class="archive-col-typology">Residential</td>
+          <td class="archive-col-discipline">Interior Design &amp; 3D Visualization</td>
+        </tr>
         <tr class="archive-row" data-year="2018" data-title="senya resort" data-typology="hospitality" data-discipline="3d visualization" data-client="leonie badger" data-location="senya, ghana">
           <td class="archive-col-year">2018</td>
           <td class="archive-col-title"><a href="senya-resort.html" class="archive-project-link">Senya Resort</a></td>
@@ -999,12 +1074,6 @@
           <td class="archive-col-typology">Workplace</td>
           <td class="archive-col-discipline">Interior Design, 3D Visualization, Graphic Design, Industrial &amp; Furniture Design, Construction</td>
         </tr>
-        <tr class="archive-row" data-year="2019" data-title="carmenbasin" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2019</td>
-          <td class="archive-col-title"><a href="carmenbasin.html" class="archive-project-link">Carmenbasin</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
         <tr class="archive-row" data-year="2019" data-title="funko ridge residence" data-typology="residential" data-discipline="architectural design" data-client="ridge estates / private client" data-location="accra, ghana">
           <td class="archive-col-year">2019</td>
           <td class="archive-col-title"><a href="funko-ridge.html" class="archive-project-link">Funko Ridge Residence</a></td>
@@ -1028,6 +1097,12 @@
           <td class="archive-col-title"><a href="b1-hq-lagos-ave.html" class="archive-project-link">B1 HQ Lagos Ave</a></td>
           <td class="archive-col-typology">Architecture</td>
           <td class="archive-col-discipline">Architectural Design</td>
+        </tr>
+        <tr class="archive-row" data-year="2020" data-title="nyla court" data-typology="residential" data-discipline="interior design &amp; architectural visualization" data-client="private client" data-location="accra, ghana">
+          <td class="archive-col-year">2020</td>
+          <td class="archive-col-title"><a href="nyla-court.html" class="archive-project-link">Nyla Court</a></td>
+          <td class="archive-col-typology">Residential</td>
+          <td class="archive-col-discipline">Interior Design &amp; Architectural Visualization</td>
         </tr>
                 <tr class="archive-row" data-year="2020" data-title="swipe" data-typology="workplace" data-discipline="interior design, graphic design, bim &amp; architectural visualization" data-client="swipe" data-location="accra, ghana">
           <td class="archive-col-year">2020</td>
@@ -1059,12 +1134,6 @@
           <td class="archive-col-typology">Residential</td>
           <td class="archive-col-discipline">Interior Design &amp; Architectural Visualization</td>
         </tr>
-<tr class="archive-row" data-year="2022" data-title="adolph&rsquo;s wedding invite" data-typology="architecture" data-discipline="architectural design" data-client="private client" data-location="accra, ghana">
-          <td class="archive-col-year">2022</td>
-          <td class="archive-col-title"><a href="adolph-s-wedding-invite.html" class="archive-project-link">Adolph&rsquo;s Wedding Invite</a></td>
-          <td class="archive-col-typology">Architecture</td>
-          <td class="archive-col-discipline">Architectural Design</td>
-        </tr>
         <tr class="archive-row" data-year="2022" data-title="npa" data-typology="workplace" data-discipline="architectural visualization &amp; bim" data-client="national petroleum authority" data-location="accra, ghana">
           <td class="archive-col-year">2022</td>
           <td class="archive-col-title"><a href="npa-reception-renders.html" class="archive-project-link">NPA</a></td>
@@ -1083,13 +1152,7 @@
           <td class="archive-col-typology">Mixed-Use</td>
           <td class="archive-col-discipline">Architectural Design</td>
         </tr>
-        <tr class="archive-row" data-year="2023" data-title="rdvs studio digital platform" data-typology="digital" data-discipline="digital &amp; web design" data-client="rdvs studios" data-location="accra, ghana">
-          <td class="archive-col-year">2023</td>
-          <td class="archive-col-title"><a href="rdvs-website.html" class="archive-project-link">RDVS Studio Digital Platform</a></td>
-          <td class="archive-col-typology">Digital</td>
-          <td class="archive-col-discipline">Digital &amp; Web Design</td>
-        </tr>
-                <tr class="archive-row" data-year="2024" data-title="baobab hotel - interiors" data-typology="hospitality" data-discipline="interior design" data-client="k-line architects" data-location="accra, ghana">
+        <tr class="archive-row" data-year="2024" data-title="baobab hotel - interiors" data-typology="hospitality" data-discipline="interior design" data-client="k-line architects" data-location="accra, ghana">
           <td class="archive-col-year">2024</td>
           <td class="archive-col-title"><a href="baobab-hotel-interiors.html" class="archive-project-link">Baobab Hotel - Interiors</a></td>
           <td class="archive-col-typology">Hospitality</td>
@@ -1134,9 +1197,17 @@
       const rows = Array.from(document.querySelectorAll('.archive-row'));
       const badge = document.getElementById('archiveCountBadge');
       const emptyMsg = document.getElementById('archiveEmptyMsg');
-      const tbody = document.querySelector('#archiveTable tbody');
+      const table = document.getElementById('archiveTable');
       const sortBtns = Array.from(document.querySelectorAll('.archive-sort-btn'));
+      const collapseBtns = Array.from(document.querySelectorAll('.archive-collapse-btn'));
+      const headingCells = table.querySelectorAll('thead th').length || 4;
       let currentSort = 'year-asc';
+      let panelSeq = 0;
+
+      // Groups the visitor has folded up. Keys are namespaced by grouping mode
+      // ("year:2012" / "letter:M") so switching between the chronological and the A-Z
+      // read never applies a stale state from the other one.
+      const collapsed = new Set();
 
       function yearOf(row) {
         return parseInt(row.getAttribute('data-year'), 10) || 0;
@@ -1145,16 +1216,113 @@
         return row.getAttribute('data-title') || '';
       }
 
+      // What a row is filed under follows the sort: years when reading chronologically,
+      // initial letters when reading A-Z (anything not starting A-Z lands in "#").
+      function groupOf(row) {
+        if (currentSort === 'title') {
+          const first = (titleOf(row).charAt(0) || '').toUpperCase();
+          if (first >= 'A' && first <= 'Z') {
+            return { key: 'letter:' + first, label: first };
+          }
+          return { key: 'letter:#', label: '#' };
+        }
+        const year = yearOf(row) || 'Undated';
+        return { key: 'year:' + year, label: String(year) };
+      }
+
+      function unitNoun(n) {
+        return n + (n === 1 ? ' work' : ' works');
+      }
+
+      const FILTERED_ATTRS = ['data-title', 'data-year', 'data-typology', 'data-discipline',
+                              'data-client', 'data-location'];
+
+      function matches(row, query) {
+        if (!query) return true;
+        return FILTERED_ATTRS.some(attr => (row.getAttribute(attr) || '').includes(query));
+      }
+
       function sortArchive() {
         rows.sort((a, b) => {
           if (currentSort === 'year-desc') return yearOf(b) - yearOf(a) || titleOf(a).localeCompare(titleOf(b));
           if (currentSort === 'title') return titleOf(a).localeCompare(titleOf(b));
           return yearOf(a) - yearOf(b) || titleOf(a).localeCompare(titleOf(b));
         });
+      }
 
-        const frag = document.createDocumentFragment();
-        rows.forEach(row => frag.appendChild(row));
-        tbody.appendChild(frag);
+      // One tbody per group, heading row first. Rebuilt on every sort change; the filter
+      // only toggles rows, so typing never rebuilds the DOM.
+      function buildGroups() {
+        Array.from(table.querySelectorAll('tbody')).forEach(body => body.remove());
+        const buckets = new Map();
+        rows.forEach(row => {
+          const g = groupOf(row);
+          if (!buckets.has(g.key)) buckets.set(g.key, { label: g.label, rows: [] });
+          buckets.get(g.key).rows.push(row);
+        });
+
+        buckets.forEach((group, key) => {
+          const body = document.createElement('tbody');
+          const panelId = 'archive-group-' + (++panelSeq);
+          body.className = 'archive-year-group';
+          body.setAttribute('data-group-key', key);
+          body.id = panelId;
+
+          const head = document.createElement('tr');
+          head.className = 'archive-year-heading';
+          const cell = document.createElement('th');
+          cell.setAttribute('colspan', String(headingCells));
+          cell.setAttribute('scope', 'colgroup');
+
+          const toggle = document.createElement('button');
+          toggle.type = 'button';
+          toggle.className = 'archive-group-toggle';
+          toggle.setAttribute('aria-controls', panelId);
+
+          const caret = document.createElement('span');
+          caret.className = 'archive-group-caret';
+          caret.setAttribute('aria-hidden', 'true');
+          caret.textContent = '▾';
+
+          const label = document.createElement('span');
+          label.className = 'archive-year-label';
+          label.textContent = group.label;
+
+          const count = document.createElement('span');
+          count.className = 'archive-year-count';
+          // Margin keeps the two spans apart visually, which leaves textContent reading as
+          // one number ("201210 works"); assistive tech gets the labelled button instead.
+
+          toggle.appendChild(caret);
+          toggle.appendChild(label);
+          toggle.appendChild(count);
+          cell.appendChild(toggle);
+          head.appendChild(cell);
+          body.appendChild(head);
+          group.rows.forEach(row => body.appendChild(row));
+          table.appendChild(body);
+        });
+      }
+
+      function groupKeys() {
+        return Array.from(table.querySelectorAll('tbody')).map(b => b.getAttribute('data-group-key'));
+      }
+
+      function setAllCollapsed(wantCollapsed) {
+        collapsed.clear();
+        if (wantCollapsed) groupKeys().forEach(k => collapsed.add(k));
+        filterArchive();
+      }
+
+      function updateCollapseButtons() {
+        const keys = groupKeys();
+        const openCount = keys.filter(k => !collapsed.has(k)).length;
+        collapseBtns.forEach(btn => {
+          const wantsCollapse = btn.getAttribute('data-collapse') === 'collapse';
+          const nothingToDo = wantsCollapse ? openCount === 0 : openCount === keys.length;
+          btn.disabled = nothingToDo;
+          btn.classList.toggle('is-inert', nothingToDo);
+        });
       }
 
       function filterArchive() {
@@ -1162,22 +1330,7 @@
         let visibleCount = 0;
 
         rows.forEach(row => {
-          const title = row.getAttribute('data-title') || '';
-          const year = row.getAttribute('data-year') || '';
-          const typology = row.getAttribute('data-typology') || '';
-          const discipline = row.getAttribute('data-discipline') || '';
-          const client = row.getAttribute('data-client') || '';
-          const location = row.getAttribute('data-location') || '';
-
-          const matches = !query || 
-            title.includes(query) || 
-            year.includes(query) || 
-            typology.includes(query) || 
-            discipline.includes(query) || 
-            client.includes(query) || 
-            location.includes(query);
-
-          if (matches) {
+          if (matches(row, query)) {
             row.style.display = '';
             visibleCount++;
           } else {
@@ -1185,16 +1338,60 @@
           }
         });
 
+        Array.from(table.querySelectorAll('tbody')).forEach(body => {
+          const key = body.getAttribute('data-group-key');
+          let shown = 0;
+          body.querySelectorAll('tr.archive-row').forEach(row => {
+            if (row.style.display !== 'none') shown++;
+          });
+
+          const label = (body.querySelector('.archive-year-label') || {}).textContent || '';
+          const count = body.querySelector('.archive-year-count');
+          const toggle = body.querySelector('.archive-group-toggle');
+          const open = !collapsed.has(key);
+
+          if (count) count.textContent = unitNoun(shown);
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            toggle.setAttribute('aria-label', label + ' group, ' + unitNoun(shown) +
+              (open ? ', collapse' : ', expand'));
+            toggle.title = (open ? 'Collapse ' : 'Expand ') + label;
+          }
+          body.classList.toggle('collapsed', !open);
+          // A group with no match contributes nothing to this result set, so its heading
+          // goes with it rather than sitting above an empty gap.
+          body.style.display = shown === 0 ? 'none' : '';
+        });
+
         if (badge) {
-          badge.textContent = 'Showing ' + visibleCount + ' of ' + rows.length + ' works';
+          if (query) {
+            badge.textContent = 'Showing ' + visibleCount + ' of ' + rows.length + ' works';
+          } else {
+            const unit = currentSort === 'title' ? 'letters' : 'years';
+            badge.textContent = 'Showing ' + rows.length + ' works across ' +
+              new Set(rows.map(row => groupOf(row).key)).size + ' ' + unit;
+          }
         }
         if (emptyMsg) {
           emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
         }
+        updateCollapseButtons();
+      }
+
+      function render() {
+        sortArchive();
+        buildGroups();
+        filterArchive();
       }
 
       if (filterInput) {
-        filterInput.addEventListener('input', filterArchive);
+        filterInput.addEventListener('input', () => {
+          // A search is a request to see results, so typing opens every group. The fold
+          // state is dropped rather than remembered, because a match hidden behind a
+          // closed heading reads as a broken filter.
+          if (filterInput.value.trim() && collapsed.size) collapsed.clear();
+          filterArchive();
+        });
       }
 
       sortBtns.forEach(btn => {
@@ -1205,13 +1402,36 @@
             other.classList.toggle('active', active);
             other.setAttribute('aria-pressed', active ? 'true' : 'false');
           });
-          sortArchive();
+          render();
         });
       });
+
+      collapseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          setAllCollapsed(btn.getAttribute('data-collapse') === 'collapse');
+        });
+      });
+
+      // One delegated listener covers every heading, including the ones rebuilt on sort.
+      table.addEventListener('click', (e) => {
+        const toggle = e.target && e.target.closest ? e.target.closest('.archive-group-toggle') : null;
+        if (!toggle || !table.contains(toggle)) return;
+        const body = toggle.closest('tbody');
+        const key = body.getAttribute('data-group-key');
+        if (collapsed.has(key)) {
+          collapsed.delete(key);
+        } else {
+          collapsed.add(key);
+        }
+        filterArchive();
+      });
+
+      render();
     });
   </script>
   <script src="js/nav.js"></script>
-  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
   <script src="js/sanity-render.js"></script>
 </body>
 </html>
