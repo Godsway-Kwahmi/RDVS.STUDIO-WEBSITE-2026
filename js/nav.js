@@ -128,8 +128,14 @@
       }
     });
 
-    // Automatically highlight active page link
-    const currentPath = window.location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
+    // Automatically highlight active page link.
+    // vercel.json now serves every page at BOTH /x and /x.html with no redirect, and the nav links
+    // are written with the extension, so the pathname has to be normalised back to a file name —
+    // otherwise landing on a clean URL like /work silently loses the active-page highlight.
+    let currentPath = window.location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
+    if (!currentPath.endsWith('.html')) {
+      currentPath += '.html';
+    }
     primaryNav.querySelectorAll('.nav-link').forEach(link => {
       const href = link.getAttribute('href');
       if (href) {
