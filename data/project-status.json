@@ -245,15 +245,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "samsung-branding-proposal.html": {
-      "slug": "samsung-branding-proposal",
-      "title": "Samsung Branding Proposal",
-      "year": "2010",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "safo-adu-residence.html": {
       "slug": "safo-adu-residence",
       "title": "Safo Adu Townhouses",
@@ -1270,6 +1261,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 16
+    },
+    "samsung-branding-proposal.html": {
+      "slug": "samsung-branding-proposal",
+      "title": "Samsung Branding Proposal",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
     }
   }
 }

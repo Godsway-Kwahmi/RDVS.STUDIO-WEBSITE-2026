@@ -69,6 +69,38 @@ def card_attrs(work, page):
     return out
 
 
+def archive_attrs(arch, page):
+    """The same descriptive fields for a project that has NO work-page card.
+
+    An archived project is archive-only by definition -- scripts/build_project_status.py derives
+    `visibility` from the presence of a `.grid-card` -- so once a project is archived the card lookup
+    above returns {} and the seed would otherwise crash or ship an empty record for work that still
+    has a page and still shows on archive.html.
+
+    The row's *display* cells are used rather than its data-* attributes: those attributes are
+    deliberately lowercase so the archive's own search can substring them, and copying them into the
+    CMS would put "brand identity" in a field the page writes "Brand Identity".
+    """
+    i = arch.find('<a href="%s" class="archive-project-link"' % page)
+    if i < 0:
+        return {}
+    start = arch.rfind('<tr class="archive-row"', 0, i)
+    end = arch.find('</tr>', i)
+    if start < 0 or end < 0:
+        return {}
+    seg = arch[start:end]
+    out = {}
+    m = re.search(r'class="archive-project-link"[^>]*>(.*?)</a>', seg, re.S)
+    out['title'] = clean(m.group(1)) if m else ''
+    for cls in ('year', 'typology', 'discipline'):
+        m = re.search(r'class="archive-col-%s"[^>]*>([^<]*)<' % cls, seg)
+        out[cls] = clean(m.group(1)) if m else ''
+    for key in ('client', 'location'):
+        m = re.search(r'data-%s="([^"]*)"' % key, seg)
+        out[key] = clean(m.group(1)) if m else ''
+    return out
+
+
 def spec_rows(src):
     """{label: value} for the page's own spec panel."""
     out = {}
@@ -116,6 +148,7 @@ def bar_ordered(tokens):
 
 def project_records():
     work = read('work.html')
+    arch = read('archive.html')
     registry = json.loads(read(os.path.join('data', 'project-status.json')))['projects']
     records, problems = [], []
     for page, info in sorted(registry.items()):
@@ -124,16 +157,22 @@ def project_records():
             continue
         src = read(page)
         card = card_attrs(work, page)
+        # Archived work has no card, so describe it from its archive row instead. `card or archive`
+        # keeps the live path byte-identical: a live page has a card and never consults the row.
+        listed = card or archive_attrs(arch, page)
+        if not card and not listed:
+            problems.append('%s is on neither the work page nor the archive' % page)
         specs = spec_rows(src)
         typology, _services, _year = meta_parts(src)
         tokens = bar_ordered(page_service_keys(page))
         if not tokens:
             problems.append('%s tags no service the filter bar owns' % page)
-        discipline = specs.get('Discipline') or card['discipline']
+        discipline = specs.get('Discipline') or listed.get('discipline') or ''
         h1 = clean(re.search(r'class="project-page-title"[^>]*>(.*?)</h1>', src, re.S).group(1))
-        if h1 != card['title']:
-            problems.append('%s: card title %r != page h1 %r' % (page, card['title'], h1))
-        year = card['year'] or _year
+        if h1 != listed.get('title', ''):
+            problems.append('%s: listing title %r != page h1 %r'
+                            % (page, listed.get('title', ''), h1))
+        year = listed.get('year') or _year
         rec = {
             '_id': page[:-5],
             '_type': 'project',
@@ -144,14 +183,14 @@ def project_records():
             'visibility': info['visibility'],
             'featured': False,
             'publishedAt': int(year),
-            'typology': card['typology'] or typology,
+            'typology': listed.get('typology') or typology,
             'primaryDiscipline': primary_token(tokens, discipline),
             'disciplines': tokens,
-            'cardLabel': card['cardLabel'],
+            'cardLabel': listed.get('cardLabel') or '',
             'excerpt': lead(src),
             'specs': {k: v for k, v in (
-                ('client', specs.get('Client') or card['client']),
-                ('location', specs.get('Location') or card['location']),
+                ('client', specs.get('Client') or listed.get('client')),
+                ('location', specs.get('Location') or listed.get('location')),
                 ('area', specs.get('Area') or specs.get('Area / Scale') or ''),
                 ('scope', specs.get('Scope of Services') or specs.get('Scope') or ''),
                 ('team', specs.get('Team') or ''),

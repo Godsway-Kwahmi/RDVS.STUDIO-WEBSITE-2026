@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'rdvs-ident.html': ['design', 'studio-projects'],
     'rlg.html': ['design', 'vfx-cgi'],
     'safo-adu-residence.html': ['design', 'vfx-cgi'],
-    'samsung-branding-proposal.html': ['competitions', 'design', 'photography'],
     'senya-resort.html': ['vfx-cgi'],
     'sinopec-ghana-interiors.html': ['vfx-cgi'],
     'six-acres-company-profile.html': ['design', 'vfx-cgi'],
@@ -4893,63 +4892,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2018',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'samsung-branding-proposal-plate1',
-        title: 'Samsung Branding Proposal',
-        category: 'Graphic Design — 2010',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-1.jpg',
-        imageUrlDesktop: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-1.jpg',
-        imageMobileUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-1.jpg',
-        projectUrl: 'samsung-branding-proposal.html',
-        desc: 'A street branding proposal in graphic design, prepared by RDVS. Design for Samsung in 2009, mapping an out-of-home identity rollout at Circle Ridge, Accra, across bus shelters, billboards, flags and totem light boxes.',
-        specs: {
-          client: 'Samsung',
-          scope: 'Out-of-home branding proposal: street furniture and signage design, billboard and flag artwork, and in-context mockup visuals for Samsung in Accra.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'samsung-branding-proposal-plate2',
-        title: 'Samsung Branding Proposal',
-        category: 'Graphic Design — 2010',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-2.jpg',
-        imageUrlDesktop: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-2.jpg',
-        imageMobileUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-2.jpg',
-        projectUrl: 'samsung-branding-proposal.html',
-        desc: 'A street branding proposal in graphic design, prepared by RDVS. Design for Samsung in 2009, mapping an out-of-home identity rollout at Circle Ridge, Accra, across bus shelters, billboards, flags and totem light boxes.',
-        specs: {
-          client: 'Samsung',
-          scope: 'Out-of-home branding proposal: street furniture and signage design, billboard and flag artwork, and in-context mockup visuals for Samsung in Accra.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'samsung-branding-proposal-plate3',
-        title: 'Samsung Branding Proposal',
-        category: 'Graphic Design — 2010',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-3.jpg',
-        imageUrlDesktop: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-3.jpg',
-        imageMobileUrl: 'assets/images/samsung-branding-proposal/samsung-branding-proposal-3.jpg',
-        projectUrl: 'samsung-branding-proposal.html',
-        desc: 'A street branding proposal in graphic design, prepared by RDVS. Design for Samsung in 2009, mapping an out-of-home identity rollout at Circle Ridge, Accra, across bus shelters, billboards, flags and totem light boxes.',
-        specs: {
-          client: 'Samsung',
-          scope: 'Out-of-home branding proposal: street furniture and signage design, billboard and flag artwork, and in-context mockup visuals for Samsung in Accra.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Graphic Design\']'
         }
       },
       {
