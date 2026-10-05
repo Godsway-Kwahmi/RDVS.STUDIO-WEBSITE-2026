@@ -1,7 +1,17 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
   "framework": null,
   "buildCommand": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "cleanUrls": false,
+  "rewrites": [
+    { "source": "/:path", "destination": "/:path.html" }
+  ],
+  "routes": [
+    { "src": "^/scripts/.*$", "status": 404 },
+    { "src": "^/studio/.*$", "status": 404 },
+    { "src": "^/scratch/.*$", "status": 404 },
+    { "src": "^/SANITY-SETUP\\.md$", "status": 404 },
+    { "src": "^/[^/]+\\.py$", "status": 404 }
+  ]
 }

@@ -18,10 +18,34 @@ const RDVSSanity = (() => {
   };
 
   /**
-   * Check if Sanity credentials have been configured
+   * Remote GROQ is opt-IN, not on-by-default, and that is load-bearing for the live site.
+   *
+   * `config` above falls back to the real project id, so the old `isConfigured()` was always true and
+   * every page load fired two unauthenticated GETs at lqnpv8ns.apicdn.sanity.io. Two things made them
+   * certain to fail in production: the dataset is empty (nothing imported yet), and www.rdvs.studio is
+   * not listed under Sanity's Project settings -> CORS, so the browser refused the responses outright.
+   * The homepage console logged "blocked by CORS policy" twice plus two `net::ERR_FAILED`, while the
+   * baked local pools in js/main.js rendered the deck exactly as intended.
+   *
+   * Both consumers already branch on `isConfigured()` (js/main.js before merging remote heroes,
+   * js/sanity-render.js at the top of its DOMContentLoaded handler), so leaving it false changes
+   * nothing on screen — it just stops the doomed requests and clears the console.
+   *
+   * To switch the CMS on for real: import the catalogue, register the site origin in Sanity's CORS
+   * settings, then either set `window.RDVS_SANITY_REMOTE = true` in the page before this script loads
+   * or inject a real `window.SANITY_PROJECT_ID`. Flipping it on without the CORS entry only brings
+   * the console errors back.
+   */
+  const remoteOptIn = window.RDVS_SANITY_REMOTE === true
+    || (typeof window.SANITY_PROJECT_ID === 'string' && window.SANITY_PROJECT_ID !== '');
+
+  /**
+   * Check if Sanity credentials have been configured AND remote queries have been opted in.
    */
   function isConfigured() {
-    return Boolean(config.projectId && config.projectId !== 'your-project-id');
+    return remoteOptIn
+      && Boolean(config.projectId)
+      && config.projectId !== 'your-project-id';
   }
 
   /**
@@ -203,6 +227,7 @@ const RDVSSanity = (() => {
 
   return {
     config,
+    remoteOptIn,
     isConfigured,
     query,
     urlForImage,

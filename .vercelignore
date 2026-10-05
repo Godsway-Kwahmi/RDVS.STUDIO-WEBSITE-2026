@@ -1,0 +1,27 @@
+# Local tooling and data dumps — never part of the deployed site.
+#
+# READ THIS BEFORE TRUSTING THIS FILE: Vercel only applies .vercelignore to CLI uploads
+# (`vercel deploy`). A git-based deploy clones the repo and serves the whole `outputDirectory`,
+# which for this project is "." — so everything below was still reachable on www.rdvs.studio
+# (measured 2026-10-05: /scripts/build_sanity_seed.py, /studio/projects.ndjson, /studio/.env.example,
+# /SANITY-SETUP.md and /fetch_behance.py all answered 200). Kept here so a manual CLI upload from a
+# laptop behaves the same as production.
+#
+# The rule that actually protects the live site is the `routes` array in vercel.json, which answers
+# 404 for these paths at the edge. If you add another tooling folder to the repo root, add a route
+# for it there as well.
+scripts/
+scratch/
+studio/
+node_modules/
+
+# Working notes and the Behance index of record.
+behance_all.txt
+SANITY-SETUP.md
+
+# Credentials (already git-ignored; listed so a manual upload cannot include them).
+.env
+.env.local
+studio/.env
+studio/.env.local
+studio/.env.example

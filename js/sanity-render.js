@@ -10,7 +10,14 @@
       return;
     }
 
-    const currentFile = window.location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
+    // vercel.json serves every page at BOTH /x and /x.html without a redirect (cleanUrls is off and a
+    // rewrite maps the extensionless form), so the pathname cannot be trusted to carry ".html" — and
+    // isHomepage/isNews/isDetail below all compare against file names. Restore the extension first, or
+    // a visitor who lands on a clean URL like /news or / simply skips hydration.
+    let currentFile = window.location.pathname.replace(/\/$/, '').split('/').pop() || 'index';
+    if (!currentFile.endsWith('.html')) {
+      currentFile += '.html';
+    }
     const isHomepage = currentFile === 'index.html' || currentFile === '';
     const isDetail = document.querySelector('.project-detail-container') !== null;
     const isNews = currentFile === 'news.html';
