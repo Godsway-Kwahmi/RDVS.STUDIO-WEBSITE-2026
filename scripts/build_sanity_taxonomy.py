@@ -29,6 +29,7 @@ def read(path):
 
 
 work = read('work.html')
+arch = read('archive.html')
 main = read(os.path.join('js', 'main.js'))
 
 # --- the filter bar, in bar order: (token, visible label) -----------------------
@@ -53,8 +54,17 @@ main_names = dict(re.findall(r"'([a-z0-9-]+)': '([^']+)'", names_block))
 mains = [(t, l) for t, l in bar if t not in parents]
 subs = [(t, l, parents[t]) for t, l in bar if t in parents]
 
-# --- typologies the cards actually carry ----------------------------------------
-typologies = sorted({html.unescape(t) for t in re.findall(r'data-typology="([^"]*)"', work) if t})
+# --- typologies the catalogue actually carries ----------------------------------
+# Cards define the vocabulary, but the archive page lists every work the studio has ever shipped,
+# live or archived. Reading cards alone made the vocabulary shrink when a work was archived (the
+# owner's Live/Archived rule takes its card away), which would then refuse to import the archived
+# document that still carries that typology — and re-living the work would need the token added
+# back by hand. Case comes from the archive row's display cell, not its lowercase data- attribute.
+card_typologies = {html.unescape(t) for t in re.findall(r'data-typology="([^"]*)"', work) if t}
+archive_typologies = {html.unescape(re.sub(r'<[^>]+>', '', t)).strip()
+                      for t in re.findall(r'<td class="archive-col-typology">(.*?)</td>',
+                                          arch, re.S) if t.strip()}
+typologies = sorted(card_typologies | archive_typologies)
 
 # --- the in-house product line, which work.html never lists ----------------------
 # A product page's meta line is `Line / Type / Kind — Year` ("MIG / Furniture / Desk — 2020"), and

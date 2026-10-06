@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>ASAG Design Week &mdash; RDVS Studios</title>
+  <meta name="description" content="ASAG Design Week - 2011 graphic design by RDVS Studios for the Architecture Students Association of Ghana: the poster for the association&rsquo;s first design week, a stacked SUSTAINABLE ARCHITECTURE word-block over a bamboo field, carrying the theme, the dates and the designweek_2011 lockup.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Event Poster / Graphic Design &mdash; 2011 &middot; ASAG</span>
+      <h1 class="project-page-title">ASAG Design Week</h1>
+    </header>
+
+    <!-- The sheet is portrait; the default 16/10 cover would cut off the lockup and the credit line, so the plate keeps its own ratio. -->
+    <div class="project-hero-media hero-fit-natural">
+      <img src="assets/images/asag-design-week/asag-design-week-1.jpg" alt="A poster set over a photograph of bamboo: pale green culms and leaves fill the sheet with a soft haze behind the type. The theme is stacked down the upper half as six short lines &mdash; SUS, TAIN, ABLE in chartreuse capitals over ARCH, ITEC, TURE in olive &mdash; so the two words read as one block. Under it, in white capitals set tight across the width, ITS RELEVANCE TO GHANA&rsquo;S BUILT ENVIRONMENT. The dates follow in chartreuse, 2nd march - 5th march. A black bar near the foot carries the event lockup: design in bold olive, week in a thin olive weight and _2011 in white. The last line, small on the bamboo, reads organized by ASAG with a pointer to the association&rsquo;s own site, www.asagdesignweek.wordpress.com." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">The poster RDVS designed for ASAG Design Week &mdash; a week on &ldquo;Sustainable Architecture: Its Relevance to Ghana&rsquo;s Built Environment&rdquo; that the Architecture Students Association of Ghana held on 2 to 5 March 2011.</p>
+
+        <div class="project-body-text">
+          <p>The sheet is one idea carried by type. The theme is stacked down the top half in six short lines &mdash; SUS, TAIN, ABLE in chartreuse over ARCH, ITEC, TURE in olive &mdash; so that two words break into syllables and read as a single block, while the explanatory line, <em>its relevance to Ghana&rsquo;s built environment</em>, sits under it in white capitals set tight across the measure. The dates run in chartreuse again, then a black bar carries the event lockup near the foot: <em>design</em> bold, <em>week</em> thin, <em>_2011</em> in white. Behind all of it is a photograph of bamboo, hazed so the culms read as texture rather than scenery, and the association&rsquo;s credit and web address close the sheet small along the bottom.</p>
+          <p>The date on the listing comes from the work and from the client, not from the blog. The poster prints <em>designweek_2011</em> and <em>2nd march - 5th march</em>; the association&rsquo;s own site, which calls itself &ldquo;the official blog for the DESIGN WEEK organized by ASAG&rdquo;, announced it in January 2011 as &ldquo;this year in march ASAG will organize a design week with the theme &mdash; &lsquo;SUSTAINABLE ARCHITECTURE- Its Relevance to Ghana&rsquo;s Built Environment&rsquo;&rdquo;. The studio published the poster a year later, on 7 June 2012, under the title <em>ASAG DESIGN WEEK POSTER - GRAPHIC DESIGN</em>, and that post is where the client and the tools come from: the client is named as the Architecture Students Association of Ghana and the software as Adobe Illustrator and Adobe Photoshop. The owner&rsquo;s title for this listing names the event rather than the deliverable the blog titled, and the client&rsquo;s own site uses the same wording.</p>
+          <p>The association&rsquo;s site never went past its opening post, so no venue, programme or speaker list is recorded here &mdash; the poster is the whole surviving record of the week, and it does not name a town, so this listing carries only the bare Ghana the association works from.</p>
+          <p>The studio had already worked for the same client twice before. In February 2009 it published <a href="asag-constitution-cover.html">the ASAG constitution cover</a> &mdash; a document spread, front and back in one blue field. That is a different job on a different format for the same association: the two share a client and nothing else, and the frames are proved apart. The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2012/06/asag-design-week-poster-graphic-design.html" target="_blank" rel="noopener noreferrer">ASAG design week poster, 7 June 2012</a> &mdash; and the association&rsquo;s own announcement is at <a href="https://asagdesignweek.wordpress.com/" target="_blank" rel="noopener noreferrer">asagdesignweek.wordpress.com</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Architecture Students Association of Ghana (ASAG)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2011</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Event Poster</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val"><span class="project-services"><a class="project-service" href="work.html?service=graphic-design">Graphic Design</a></span></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Graphic Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">Adobe Illustrator, Adobe Photoshop</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Poster design for the association&rsquo;s first design week: the theme set as a stacked word-block over a bamboo field, with the dates, the event lockup and the association&rsquo;s credit line.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 800 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="800" height="1131" src="assets/images/asag-design-week/asag-design-week-1.jpg" alt="A poster set over a photograph of bamboo: pale green culms and leaves fill the sheet with a soft haze behind the type. The theme is stacked down the upper half as six short lines &mdash; SUS, TAIN, ABLE in chartreuse capitals over ARCH, ITEC, TURE in olive &mdash; so the two words read as one block. Under it, in white capitals set tight across the width, ITS RELEVANCE TO GHANA&rsquo;S BUILT ENVIRONMENT. The dates follow in chartreuse, 2nd march - 5th march. A black bar near the foot carries the event lockup: design in bold olive, week in a thin olive weight and _2011 in white. The last line, small on the bamboo, reads organized by ASAG with a pointer to the association&rsquo;s own site, www.asagdesignweek.wordpress.com." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="stanchart-hq.html" class="project-nav-link">&larr; Previous: Stanchart HQ</a>
+      <a href="hvl.html" class="project-nav-link">Next: HVL &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

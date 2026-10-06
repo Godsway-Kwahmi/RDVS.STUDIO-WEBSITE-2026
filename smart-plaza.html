@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Smart Plaza &mdash; RDVS Studios</title>
+  <meta name="description" content="Smart Plaza - a 2009 architectural visualization by RDVS Studios for an eight- to nine-storey commercial building, left as the single work-in-progress rendering the studio published on 7 March 2009.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Commercial / Architectural Visualization &mdash; 2009 &middot; Private Client</span>
+      <h1 class="project-page-title">Smart Plaza</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/smart-plaza/smart-plaza-1.jpg" alt="A low-angle corner view of a rendered eight- to nine-storey commercial block: a curved cream concrete frame wraps the roofline and sweeps down the right edge, the left face is a full-height glass curtain wall broken by a tall red-and-pink panel and a red louvered fin, the right face is banded in dark glazing and white panels, and the tower rises out of a sculpted cream podium whose cantilevered canopy frames a glazed entrance lobby, a planted first-floor terrace with glass balustrades and a ramped entry. A blue saloon and a dark grey coupe sit on the street in the foreground with two small trees at either side under a clear sky, and the frame carries the studio&rsquo;s the.SEED.v1.0 / 2009 mark at the lower left and its revivalgh.blogspot.com logo lock-up at the lower right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A single work-in-progress rendering of Smart Plaza, an eight- to nine-storey commercial building, posted on the studio&rsquo;s blog on 7 March 2009 while the set was still being made. The final renderings the post promised were never published, so this frame is all the project leaves behind.</p>
+
+        <div class="project-body-text">
+          <p>The post is titled <em>WIP - SMART PLAZA</em> and its own body is the only record of the project: &ldquo;We are currently working hard on the final renderings of an 8 - 9 floor commercial building which construction should start later this year. We are close to completion and we&rsquo;d like to share some of what we&rsquo;ve done so far. Hope you enjoy and you comment.&rdquo; It carries one image and no labels.</p>
+          <p>That image is this listing&rsquo;s only plate. The studio said it was close to completion and would post the finals, but the finals never appeared: across all 122 entries on the blog this is the single post that mentions Smart Plaza, and no later entry returns to it. The listing therefore holds the one frame that exists rather than the set that was promised, and it is filed as a work in progress.</p>
+          <p>What the frame shows is a corner view looking up at the block. A curved cream concrete frame wraps the roofline and turns down the right edge of the building; the left face is a full-height glass curtain wall picked out by a tall red-and-pink panel and a red louvered fin, while the right face is banded in dark glazing and white spandrel panels. Below, the tower rises out of a sculpted cream podium: a cantilevered canopy frames the glazed entrance lobby, a planted first-floor terrace with glass balustrades runs above it, and a ramp leads in from the street, where two saloons and a coupe are parked.</p>
+          <p>The date is stated twice over. The lower left of the frame carries the studio&rsquo;s <em>the.SEED.v1.0</em> mark with <em>2009</em> beneath it &mdash; the same series line that dates ADM Cocoa and the GOIL re-branding &mdash; and the lower right carries <em>revivalgh.blogspot.com</em> with the Revival Design + VFX Studios lock-up. The post went up on 7 March 2009.</p>
+          <p>Nothing names a client, an architect, a town or a site, and the building itself carries no legible signage, so the listing keeps <em>Private Client</em> and the bare <em>Ghana</em> the studio works from, and the construction start the post expects &mdash; &ldquo;later this year&rdquo; &mdash; is reported as the studio&rsquo;s expectation rather than as something that happened.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/03/wip-smart-plaza.html" target="_blank" rel="noopener noreferrer">WIP - SMART PLAZA, 7 March 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Commercial</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Exterior visualization of an eight- to nine-storey commercial building: one work-in-progress rendering published 7 March 2009, the final set never having been posted.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1024 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1024" height="1280" src="assets/images/smart-plaza/smart-plaza-1.jpg" alt="A low-angle corner view of a rendered eight- to nine-storey commercial block: a curved cream concrete frame wraps the roofline and sweeps down the right edge, the left face is a full-height glass curtain wall broken by a tall red-and-pink panel and a red louvered fin, the right face is banded in dark glazing and white panels, and the tower rises out of a sculpted cream podium whose cantilevered canopy frames a glazed entrance lobby, a planted first-floor terrace with glass balustrades and a ramped entry. A blue saloon and a dark grey coupe sit on the street in the foreground with two small trees at either side under a clear sky, and the frame carries the studio&rsquo;s the.SEED.v1.0 / 2009 mark at the lower left and its revivalgh.blogspot.com logo lock-up at the lower right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

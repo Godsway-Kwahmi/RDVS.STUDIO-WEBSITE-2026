@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>White and Unassuming &mdash; RDVS Studios</title>
+  <meta name="description" content="White and Unassuming - 2009 interior design and architectural visualization by RDVS Studios for a house to be built at Tema: five renders of a white two-storey residence, its kitchen, study, bedroom and double-height living room, and the street elevation.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2009 &middot; Private Client</span>
+      <h1 class="project-page-title">White and Unassuming</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/white-and-unassuming/white-and-unassuming-1.png" alt="A rendered kitchen seen from one end, lit by cove lighting and a strip under the wall units. Cream slab-fronted base cabinets with slim brass handles run the right hand wall and turn the corner under a beige stone worktop and a small sink set below a wide sliding window onto trees; above them hang gilt-framed wall cabinets with frosted doors. On the left a white range cooker with a black glass oven door sits under a stainless canopy, a kettle on the hob, a microwave and a blender beyond it, utensils on a hanging rail, and a mosaic-tiled back splash the length of the run. A tall frost-door refrigerator closes the right of the frame, a potted plant and a bowl of fruit sit by the window, and the floor is large high-gloss yellow-veined tile. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Five renders of a white two-storey house the studio published in May 2009 as its latest job: a kitchen, a study, a bedroom and a double-height living room, and the street elevation that explains the title. The post says the house was still to be built, somewhere in Tema.</p>
+
+        <div class="project-body-text">
+          <p>The whole written record is two sentences. &ldquo;This is the latest project we are working on. Almost done with all renders.&rdquo; and &ldquo;This would be built somewhere in Tema and we are excited with the outcome of the renders.&rdquo; That is everything <a href="https://revivalgh.blogspot.com/2009/05/white-and-unassuming.html" target="_blank" rel="noopener noreferrer">WHITE AND UNASSUMING</a> of 15 May 2009, revised a week later, has to say about the job. No client is named, no designer is credited, no software is listed and the post carries no labels at all, so the five pictures are the primary evidence and this page reads them as such. Searching the studio&rsquo;s blog for the word &ldquo;unassuming&rdquo; returns this post alone out of a hundred and twenty-two, and all five upload filenames occur in no other post either.</p>
+          <p>The title belongs to the elevation rather than to the interiors. The house is a long, low two-storey plan in white render under a grey hipped roof with deep eaves, a first-floor balcony running most of the frontage behind a plain metal balustrade, a roller-shutter garage punched into the ground floor, and a boundary of white metalwork with scroll panels between piers capped with globe lights. It is a modest building on an ordinary street, and &ldquo;unassuming&rdquo; is the studio being honest about that. Everything it finds interesting is inside.</p>
+          <p>Four interiors were rendered and they share one vocabulary: pale walls, high-gloss yellow-veined floor tile, dark stained joinery, and cove lighting run continuously where the wall meets the ceiling. The kitchen is cream slab-fronted cabinetry under gilt-framed wall units with a mosaic back splash the whole length of the run. The study is the darkest room of the four, a wall of wide timber boards, a desk with a chrome-based leather chair, and a tall etched-glass floor lamp glowing like a lantern. The bedroom sets a low platform bed under a ceiling medallion of stamped stars, with sliding doors onto a balcony. The living room is the ambitious one: a double-height space ringed with clerestory glazing, seen from the stair landing, with a white sectional and a chrome arc lamp on yellow tile and a low city and treeline visible all the way round.</p>
+          <p>Every frame carries the studio&rsquo;s own signature, which is what makes the attribution and the date safe to state rather than guessed. Bottom left reads <em>the.SEED.v1.0</em> with 2009 beneath it; bottom right carries revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup. That puts this job inside the same signature run as <a href="the-seed.html">The SEED wallpaper</a> of October 2009 and <a href="somewhere-in-east-legon.html">Somewhere in East Legon</a>, published twelve days after this post and described in almost exactly the same way &mdash; a house to be built, placed in a district rather than a city, with the renders finished and the building not.</p>
+          <p>Five frames were published and all five are plated, because none of them is a duplicate of another. Only two share a canvas &mdash; the bedroom and the living room, both 1276 by 683 &mdash; and measured pixel for pixel those two differ by a mean of 58 levels, which is two different rooms rather than one room twice. Three of the uploads carry an alpha channel, but it is vestigial: the least opaque pixel in any of them sits at 227 of 255 and the mean is 255.0, so these are opaque images and none of them will read differently against the site&rsquo;s light theme. They are held at their published size, 1276 pixels wide except the study at 1000.</p>
+          <p>Nothing says the house was ever built. The only later post that could refer to it is an imageless teaser on 9 July 2009 headed &ldquo;coming soon! - WHITEHOUSE&rdquo;, which promises renderings and shows none, and nothing after it resolves the name; the connection is plausible and unprovable, so this listing does not make it. The site is given as Tema because the post gives Tema, and Greater Accra because that is the region Tema sits in &mdash; the same district-then-region pattern the archive already uses for Sakumono, Cantonments and Aburi. The client is named nowhere, so the row carries a Private Client, and there is no Team row and no Software row because the post supplies neither.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Tema, Greater Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Published 15 May 2009 as a project still to be built; no later post records it built</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 blogspot post &middot; 15 May 2009, revised 22 May &middot; 5 frames, 5 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design and 3D visualization of a house proposed at Tema: kitchen, study, bedroom and double-height living room rendered, with the street elevation.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">5 plates &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="666" src="assets/images/white-and-unassuming/white-and-unassuming-1.png" alt="A rendered kitchen seen from one end, lit by cove lighting and a strip under the wall units. Cream slab-fronted base cabinets with slim brass handles run the right hand wall and turn the corner under a beige stone worktop and a small sink set below a wide sliding window onto trees; above them hang gilt-framed wall cabinets with frosted doors. On the left a white range cooker with a black glass oven door sits under a stainless canopy, a kettle on the hob, a microwave and a blender beyond it, utensils on a hanging rail, and a mosaic-tiled back splash the length of the run. A tall frost-door refrigerator closes the right of the frame, a potted plant and a bowl of fruit sit by the window, and the floor is large high-gloss yellow-veined tile. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="765" src="assets/images/white-and-unassuming/white-and-unassuming-2.png" alt="A rendered study at dusk, its far wall panelled floor to ceiling in wide dark timber boards lit from a concealed strip at the cornice. A rectangular desk with a brushed metal front panel stands in the middle of the room carrying an open laptop and a telephone, with a high brown leather executive chair on a chrome base drawn up to it and a second chair behind. A tall rectangular floor lamp with an etched scrolling glass shade glows against the panelling; an open white shelving unit at the left holds books and boxes, a potted tree in a blue drum planter stands beside it, and two windows with lowered blinds on the right look out onto a lit balustrade and lawn. The floor is dark timber. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/white-and-unassuming/white-and-unassuming-3.png" alt="A rendered bedroom seen across the foot of the bed. A low platform bed with a quilted cream base and a dark throw runs to the right, dressed with dark and patterned cushions under a large framed picture, a chrome wall sconce and a small telephone on a floating nightstand beside it. The ceiling carries a circular medallion of stamped stars over concealed cove lighting. Full-height sliding doors in dark frames open onto a balcony with potted plants and a distant roofline, dressed with pale patterned curtains and lowered blinds, and a metal balustrade crosses the left of the frame. Two tall terracotta vases stand on a large pale rug over high-gloss yellow tile, and a dark panelled door sits in the right hand wall. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/white-and-unassuming/white-and-unassuming-4.png" alt="A rendered double-height living room seen down from a stair landing. A white L-shaped sectional with dark cushions sits on high-gloss yellow-veined tile around a low dark coffee table, with a white moulded lounge chair, a low white ottoman and a large chrome arc lamp sweeping over the group, and a potted plant in a terracotta pot at the right. A plain metal balustrade with square section posts runs across the foreground and turns down to the floor below, where a grey sofa is partly visible. Glazing wraps the room on two sides at high level, banded with rolled blinds, and looks out over a low city and treeline under a pale sky. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="676" src="assets/images/white-and-unassuming/white-and-unassuming-5.png" alt="A rendered street elevation of a two-storey house in white render under a grey hipped roof with deep eaves. A first-floor balcony with a plain metal balustrade runs most of the frontage in front of glazed doors, with small punched windows to the left and a flat-roofed single-storey bay at the near end; the ground floor carries a wide roller-shutter garage door between tall narrow windows. A boundary of white metalwork with scroll panels runs between pale piers capped with globe lights, with an ornamental sliding gate at the drive and a paved forecourt inside. Leafy trees frame the composition left and right against a pale sky and a dark road surface crosses the foreground. Only the studio lockup is signed here, at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="the-seed.html" class="project-nav-link">&larr; Previous: The SEED</a>
+      <a href="amoabeng-villa.html" class="project-nav-link">Next: Amoabeng Villa &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

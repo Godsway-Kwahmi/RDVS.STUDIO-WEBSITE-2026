@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Penta &mdash; RDVS Studios</title>
+  <meta name="description" content="Penta - 2009 architectural visualization by RDVS Studios of a pair of matching houses at the Buena Vista development: one wide daylight street view, credited to the studio for rendering and post-processing.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential / Architectural Visualization &mdash; 2009 &middot; Buena Vista Homes</span>
+      <h1 class="project-page-title">Penta</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/penta/penta-1.png" alt="A wide daylight street view of two matching two-storey houses standing side by side: cream rendered walls with tan trim under brown tiled hip roofs, each broken by a tall front gable framing a deep arched first-floor recess behind a dark cross-railed balcony. A low white boundary wall with tan capping and arched metal railings runs across the frontage, broken by black metal gates, with ornate twin-head lamp posts at the shared pier. Young trees, ferns and clipped shrubs fill the beds, a leafy branch overhangs the top left of the frame, two figures stand on the pavement at the left, and a silver car passes in motion blur across the asphalt foreground under a bright hazy sky." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Eighteen minutes before Avenda, the studio posted Penta &mdash; one wide daylight street view of a pair of matching houses at the Buena Vista development, with the studio credited only for rendering and post-processing.</p>
+
+        <div class="project-body-text">
+          <p>The commentary is two words. Under the title <em>PENTA - BUENA VISTA, RENDERING AND POST PROCESSING</em>, published at 15:36 on 17 September 2009, the studio&rsquo;s entire note on the work reads <em>&ldquo;Another one.&rdquo;</em> There are no labels, and on its own the post names nobody &mdash; no client, no designer, no software list, no account of the site. What this record knows of the commission comes from the title, from the caption strip printed along the bottom of the image, and from the Buena Vista posts that came before it, which supply all of that and more.</p>
+          <p>That position is exact. Avenda went up at 15:54 the same afternoon, eighteen minutes after this one, and the two close a sequence running from December 2008 that also includes the posts titled <em>Buena Vista Homes</em>, <em>Buena Vista Beach Road</em> and <em>Buena Vista 3</em>. Those earlier posts are where the attribution comes from: Jeff Doe, a friend and talented designer, called the studio to help model and render two-bedroom and three-bedroom houses for Buena Vista Homes, and the June 2009 post spells out the split &mdash; the design, model and some texturing were Jeff&rsquo;s, while the studio did &ldquo;the final texturing, final rendering and post processing in photoshop&rdquo;. The same post puts the development at Sakumono in Greater Accra. Most of the titles end in &ldquo;rendering and post processing&rdquo; because that is precisely the half of the work the studio was showing.</p>
+          <p>Unlike Avenda&rsquo;s single elevation, this frame is built around a pair. Two houses of the same plan stand side by side behind a shared frontage, each a two-storey mass of cream rendered wall picked out in tan, under a brown tiled hip roof broken by a tall front gable. The gable is the identifying feature &mdash; it shelters a deep arched recess at first floor level, opened onto a balcony in a dark cross-railed balustrade, and the repetition of that one motif across the two roofs is what gives the street its composition. A low white wall with tan capping and arched metal railings runs the length of the frontage, broken by black metal gates, with ornate twin-head lamp posts marking the shared pier and young trees, ferns and clipped shrubs doing the selling.</p>
+          <p>The plate is cropped wider than Avenda&rsquo;s, so the road in front occupies about a fifth of the picture and carries dappled tree shadow across the asphalt. Two figures stand on the pavement at the left and a silver car goes past in motion blur at the right, both conventions of period marketing imagery used to hold the scale and imply life rather than to record either. A leafy branch hangs into the top of the frame. The strip along the bottom edge reads <em>PENTA_BUENA VISTA / 2009 / THE.SEED.V1.0</em> at one end and <em>REVIVAL DESIGN+VFX STUDIOS / REVIVALGH.BLOGSPOT.COM</em> at the other &mdash; the earliest watermark series the archive holds, shared with <em>Deneese</em> and <em>Avenda</em>, and unlike Avenda&rsquo;s it names the development and carries no daylight-pass marker. The post is <a href="https://revivalgh.blogspot.com/2009/09/penta-buena-vista-rendering-and-post.html" target="_blank" rel="noopener noreferrer">on blogspot</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Buena Vista Homes</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Sakumono, Greater Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Final texturing, rendering and post-processing of one daylight street elevation of the Penta pair at Buena Vista; design and model by Jeff Doe.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Jeff Doe (design and model) with R.D+V.S (rendering and post-processing)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="600" src="assets/images/penta/penta-1.png" alt="A wide daylight street view of two matching two-storey houses standing side by side: cream rendered walls with tan trim under brown tiled hip roofs, each broken by a tall front gable framing a deep arched first-floor recess behind a dark cross-railed balcony. A low white boundary wall with tan capping and arched metal railings runs across the frontage, broken by black metal gates, with ornate twin-head lamp posts at the shared pier. Young trees, ferns and clipped shrubs fill the beds, a leafy branch overhangs the top left of the frame, two figures stand on the pavement at the left, and a silver car passes in motion blur across the asphalt foreground under a bright hazy sky." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="deneese.html" class="project-nav-link">&larr; Previous: Deneese</a>
+      <a href="amoabeng-villa.html" class="project-nav-link">Next: Amoabeng Villa &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

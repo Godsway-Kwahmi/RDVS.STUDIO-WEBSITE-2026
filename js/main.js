@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'access-bank-iris.html': ['design', 'vfx-cgi'],
     'aces-re-up.html': ['design'],
     'adentan-townhouses.html': ['design', 'vfx-cgi'],
-    'adolph-s-wedding-invite.html': ['design'],
     'advantage-place.html': ['design', 'vfx-cgi'],
     'aelius.html': ['design'],
     'afg.html': ['design', 'turnkey-build', 'vfx-cgi'],
@@ -69,88 +68,59 @@ document.addEventListener('DOMContentLoaded', async () => {
     'airport-hills-residence.html': ['vfx-cgi'],
     'akyea-residence.html': ['vfx-cgi'],
     'alexander-signage.html': ['design'],
-    'alexander.html': ['design', 'vfx-cgi'],
     'ameyaw-sarah.html': ['design'],
-    'anyigbanua.html': ['design', 'vfx-cgi'],
-    'apartment-in-takoradi.html': ['design', 'vfx-cgi'],
     'asante-interior-design-presentation.html': ['design', 'vfx-cgi'],
     'b1-hq-lagos-ave.html': ['design'],
     'baobab-hotel-exteriors.html': ['vfx-cgi'],
-    'beautiful-choices.html': ['vfx-cgi'],
     'bfa.html': ['design', 'vfx-cgi'],
     'brownies-place.html': ['design', 'vfx-cgi'],
-    'c25.html': ['design', 'vfx-cgi'],
-    'campions-renderings.html': ['design', 'vfx-cgi'],
     'ceeander.html': ['design', 'vfx-cgi'],
     'chocolate.html': ['design'],
-    'clairemont.html': ['design', 'vfx-cgi'],
-    'college-invasion.html': ['design'],
     'csm.html': ['design', 'vfx-cgi'],
     'd-e-t-a-i-l-s.html': ['studio-projects', 'vfx-cgi'],
-    'daawat-sweets.html': ['vfx-cgi'],
     'dela-anyaa.html': ['design'],
+    'design-express.html': ['vfx-cgi'],
     'drw-furnart.html': ['design', 'vfx-cgi'],
     'dyv.html': ['design', 'vfx-cgi'],
+    'e-zone.html': ['design'],
     'ehr.html': ['design', 'vfx-cgi'],
-    'eic-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'el-dor.html': ['design', 'vfx-cgi'],
     'ela-b.html': ['design', 'vfx-cgi'],
-    'elo-conference.html': ['design'],
-    'elo-identity.html': ['design'],
     'elo-tv.html': ['design'],
-    'emerge-ident.html': ['design', 'vfx-cgi'],
-    'empire-tower.html': ['design'],
+    'empire-tower.html': ['design', 'vfx-cgi'],
     'enda-accra-mall.html': ['art', 'design', 'vfx-cgi'],
     'enda-acm.html': ['design', 'vfx-cgi'],
     'enda-whm.html': ['design'],
     'ert.html': ['design'],
-    'fizzles-pub.html': ['design'],
     'frontier-filling-station.html': ['design', 'vfx-cgi'],
     'fule.html': ['vfx-cgi'],
     'funko-ridge.html': ['design'],
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
-    'ghana-bbq-beer-festival.html': ['design'],
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
-    'harbour-pointe.html': ['design', 'vfx-cgi'],
-    'haustalks.html': ['design'],
-    'haven-project.html': ['design', 'vfx-cgi'],
     'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'his-grace-garden-presentation.html': ['design'],
     'home-automation-system-presentation.html': ['design', 'vfx-cgi'],
-    'hot-gossip.html': ['design'],
+    'hot-gossip.html': ['design', 'vfx-cgi'],
     'hubtel.html': ['design', 'vfx-cgi'],
     'hvl.html': ['design'],
     'ike.html': ['design', 'vfx-cgi'],
     'imperial-square.html': ['design'],
-    'jhk-investment.html': ['vfx-cgi'],
     'jm-spots.html': ['design', 'vfx-cgi'],
     'kdmrd.html': ['vfx-cgi'],
     'la-beach-towers.html': ['design', 'vfx-cgi'],
     'la-palm-2008-christmas-party-posters.html': ['design'],
-    'lase-icon.html': ['art', 'design'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
-    'mankata.html': ['vfx-cgi'],
-    'map-folder-design.html': ['design'],
-    'maple-court.html': ['design', 'vfx-cgi'],
     'marble-bath.html': ['vfx-cgi'],
-    'maurice-abena.html': ['design'],
     'moty.html': ['design', 'vfx-cgi'],
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
-    'ndaba-restaurant-whm.html': ['vfx-cgi'],
-    'nest-apt.html': ['vfx-cgi'],
-    'nissa-offices-2010.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
     'nyla-court.html': ['design', 'vfx-cgi'],
-    'oak-tree-apartments.html': ['design', 'vfx-cgi'],
-    'octagon-interiors.html': ['design', 'vfx-cgi'],
-    'octagon-mews.html': ['vfx-cgi'],
     'odade3.html': ['vfx-cgi'],
     'of-sunsets.html': ['design', 'vfx-cgi'],
     'osu-apartments.html': ['vfx-cgi'],
-    'osu-tower.html': ['vfx-cgi'],
     'palazzo.html': ['vfx-cgi'],
     'petrus.html': ['design', 'vfx-cgi'],
     'pine-square.html': ['design', 'vfx-cgi'],
@@ -164,38 +134,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     'product-mound.html': ['design', 'vfx-cgi'],
     'product-s-age.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-sp001.html': ['design', 'studio-projects', 'vfx-cgi'],
-    'project-mount.html': ['design', 'vfx-cgi'],
-    'provident-insurance.html': ['vfx-cgi'],
+    'protea-hotel-airport.html': ['vfx-cgi'],
     'purc.html': ['design', 'turnkey-build'],
-    'rdvs-ident.html': ['design', 'studio-projects'],
     'rlg.html': ['design', 'vfx-cgi'],
     'safo-adu-residence.html': ['design', 'vfx-cgi'],
     'senya-resort.html': ['vfx-cgi'],
-    'sinopec-ghana-interiors.html': ['vfx-cgi'],
-    'six-acres-company-profile.html': ['design', 'vfx-cgi'],
     'smsgh.html': ['art', 'design', 'photography', 'vfx-cgi'],
     'stanchart-hq.html': ['vfx-cgi'],
     'stark-glaube.html': ['design'],
     'stellar-bar.html': ['design', 'vfx-cgi'],
-    'stephen-yvonne.html': ['art', 'design'],
     'swipe.html': ['bim', 'design', 'vfx-cgi'],
-    'tedxharambee.html': ['design'],
     'the-address.html': ['design', 'vfx-cgi'],
     'the-hamlet-presentation.html': ['design', 'vfx-cgi'],
     'the-saddle.html': ['design', 'vfx-cgi'],
     'the-tea-house.html': ['design'],
     'tower-cascades.html': ['design', 'vfx-cgi'],
     'trumpet-africa-ident.html': ['design'],
-    'viasat1-breakfast-show.html': ['design'],
-    'victoria-island-naija-project.html': ['design', 'vfx-cgi'],
     'villa-aggregate.html': ['design', 'vfx-cgi'],
-    'vodafone-red-hse.html': ['design'],
     'watsons-place.html': ['design', 'vfx-cgi'],
-    'weldment-panels.html': ['vfx-cgi'],
     'west-cantonments-igl-presentation.html': ['design', 'vfx-cgi'],
     'white-fleece.html': ['design'],
     'yah-kumasi-mall.html': ['design', 'vfx-cgi'],
-    'yao-yaa.html': ['art', 'design']
   };
 
   function rollUpMainServices(serviceKeys) {
@@ -294,9 +253,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/barham/barham-courtyard.jpg',
-        imageUrlDesktop: 'assets/images/barham/barham-courtyard.jpg',
-        imageMobileUrl: 'assets/images/barham/barham-courtyard.jpg',
+        imageUrl: 'assets/images/barham/barham-residence.jpg',
+        imageUrlDesktop: 'assets/images/barham/barham-residence.jpg',
+        imageMobileUrl: 'assets/images/barham/barham-residence.jpg',
         projectUrl: '41-barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
         specs: {
@@ -485,44 +444,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'b1-hq-lagos-ave.html'
       },
       {
-        id: 'hot-gossip',
-        title: 'Hot Gossip',
-        category: 'Architectural Design — 2015',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
-        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-1.jpg',
-        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-1-mobile.jpg',
-        projectUrl: 'hot-gossip.html',
-        desc: 'Fast-paced, colorful entertainment broadcast titles and transition cards designed for prime-time programming.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: ['Motion Design', 'Entertainment Graphics', 'Kinetic Design']
-        }
-      },
-      {
-        id: 'vodafone-red-hse-plate1',
-        title: 'Vodafone Red Hse',
-        category: 'Architectural Design — 2011',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/vodafone-red-hse/vodafone-red-hse-1.jpg',
-        imageUrlDesktop: 'assets/images/vodafone-red-hse/vodafone-red-hse-1.jpg',
-        imageMobileUrl: 'assets/images/vodafone-red-hse/vodafone-red-hse-1.jpg',
-        projectUrl: 'vodafone-red-hse.html',
-        desc: 'An initial design proposal for a Vodafone Red House, drawn in July 2011 with Steven Ntow — the brand lockup and the building\'s corner set side by side on one sheet.',
-        specs: {
-          client: 'Vodafone',
-          scope: 'Initial design proposal: corner massing and louvered facade, signage and brand application, and the Red House wordmark lockup.',
-          team: 'Steven Ntow + RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
         id: 'the-saddle-plate1',
         title: 'The Saddle',
         category: 'Architectural Design & Architectural Visualization — 2018',
@@ -690,63 +611,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
           team: 'RDVS Team',
           year: '2013',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
-        id: 'nissa-offices-2010-plate1',
-        title: 'Nissa Offices 2010',
-        category: 'Architectural Design — 2010',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/abl/abl-1.jpg',
-        imageUrlDesktop: 'assets/images/abl/abl-1.jpg',
-        imageMobileUrl: 'assets/images/abl/abl-1.jpg',
-        projectUrl: 'nissa-offices-2010.html',
-        desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Nissa Offices 2010.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2010',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
-        id: 'hot-gossip-plate1',
-        title: 'Hot Gossip',
-        category: 'Architectural Design — 2015',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-4.jpg',
-        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-4.jpg',
-        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-4.jpg',
-        projectUrl: 'hot-gossip.html',
-        desc: 'Fast-paced, colorful entertainment broadcast titles and transition cards designed for prime-time programming.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
-        id: 'hot-gossip-plate2',
-        title: 'Hot Gossip',
-        category: 'Architectural Design — 2015',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-2.jpg',
-        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-2.jpg',
-        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-2.jpg',
-        projectUrl: 'hot-gossip.html',
-        desc: 'Fast-paced, colorful entertainment broadcast titles and transition cards designed for prime-time programming.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2015',
           disciplines: '[\'Architectural Design\']'
         }
       },
@@ -921,25 +785,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Architectural Design\']'
         }
       },
-      {
-        id: 'empire-tower-plate2',
-        title: 'Empire Tower',
-        category: 'Architectural Design — 2017',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/empire-tower/empire-tower-2.jpg',
-        imageUrlDesktop: 'assets/images/empire-tower/empire-tower-2.jpg',
-        imageMobileUrl: 'assets/images/empire-tower/empire-tower-2.jpg',
-        projectUrl: 'empire-tower.html',
-        desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
+
       {
         id: 'dyv-dawn-plate1',
         title: 'DYV',
@@ -1118,48 +964,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   interiors: {
     name: 'Interior Design',
     videos: [
-      {
-        id: 'advantage-place',
-        title: 'Advantage Place',
-        category: '3D Visualization — 2015',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        videoUrl: 'assets/videos/advantage-place/advantage-place-anim.mp4',
-        videoUrlDesktop: 'assets/videos/advantage-place/advantage-place-anim.mp4',
-        imageUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
-        imageUrlDesktop: 'assets/images/advantage-place/advantage-place-01.jpg',
-        imageMobileUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
-        projectUrl: 'advantage-place.html',
-        desc: 'A 2015 interior design and 3D visualization presentation of the Advantage Place commercial development in Accra — lobby, workplace floors, and amenities rendered in photoreal detail alongside a full 3D animation.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
-        }
-      },
-      {
-        id: 'advantage-place-film',
-        title: 'Advantage Place',
-        category: '3D Visualization — 2015',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        videoUrl: 'assets/videos/advantage-place/advantage-place-anim.mp4',
-        videoUrlDesktop: 'assets/videos/advantage-place/advantage-place-anim.mp4',
-        imageUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
-        imageUrlDesktop: 'assets/images/advantage-place/advantage-place-01.jpg',
-        imageMobileUrl: 'assets/images/advantage-place/advantage-place-01.jpg',
-        projectUrl: 'advantage-place.html',
-        desc: 'A 2015 interior design and 3D visualization presentation of the Advantage Place commercial development in Accra — lobby, workplace floors, and amenities rendered in photoreal detail alongside a full 3D animation.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
 
     ],
     images: [
@@ -1314,25 +1118,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Jude Abbey, Jude Nyoagbe, Nana Afua Boateng',
           year: '2017',
           disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'c25-interior',
-        title: 'C25',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/c25/c25-1.jpg',
-        imageUrlDesktop: 'assets/images/c25/c25-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/c25/c25-1-mobile.jpg',
-        projectUrl: 'c25.html',
-        desc: 'Warm neutral palette interior utilizing micro-cement, acoustic fluting, and tailored concealed storage joinery.',
-        specs: {
-          client: 'Devtraco',
-          scope: 'RDVS delivered interior design direction and full 3D architectural visualization, modeling the interiors, the exterior elevations, lighting and the final rendered presentation set.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: ['Interior Design', 'Custom Millwork', 'Lighting']
         }
       },
       {
@@ -1644,63 +1429,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'victoria-island-naija-project-plate1',
-        title: 'VI',
-        category: 'Interior Design & 3D Visualization — 2013',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/vi/vi-1.jpg',
-        imageUrlDesktop: 'assets/images/vi/vi-1.jpg',
-        imageMobileUrl: 'assets/images/vi/vi-1.jpg',
-        projectUrl: 'victoria-island-naija-project.html',
-        desc: 'Four interior visualization plates from 2013 for an apartment on Victoria Island, Lagos, made for a Nigerian architectural firm: a calm living room shown from three cameras plus its kitchen, as interior design and 3D visualization.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design of the living room and kitchen scheme, styling of the views, and four finished 3D visualization plates with title and credit overlays.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'victoria-island-naija-project-plate2',
-        title: 'VI',
-        category: 'Interior Design & 3D Visualization — 2013',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/vi/vi-2.jpg',
-        imageUrlDesktop: 'assets/images/vi/vi-2.jpg',
-        imageMobileUrl: 'assets/images/vi/vi-2.jpg',
-        projectUrl: 'victoria-island-naija-project.html',
-        desc: 'Four interior visualization plates from 2013 for an apartment on Victoria Island, Lagos, made for a Nigerian architectural firm: a calm living room shown from three cameras plus its kitchen, as interior design and 3D visualization.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design of the living room and kitchen scheme, styling of the views, and four finished 3D visualization plates with title and credit overlays.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'victoria-island-naija-project-plate3',
-        title: 'VI',
-        category: 'Interior Design & 3D Visualization — 2013',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/vi/vi-3.jpg',
-        imageUrlDesktop: 'assets/images/vi/vi-3.jpg',
-        imageMobileUrl: 'assets/images/vi/vi-3.jpg',
-        projectUrl: 'victoria-island-naija-project.html',
-        desc: 'Four interior visualization plates from 2013 for an apartment on Victoria Island, Lagos, made for a Nigerian architectural firm: a calm living room shown from three cameras plus its kitchen, as interior design and 3D visualization.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design of the living room and kitchen scheme, styling of the views, and four finished 3D visualization plates with title and credit overlays.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   3D Visualization\']'
-        }
-      },
-      {
         id: 'tower-cascades-plate1',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -1967,63 +1695,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'project-mount-plate1',
-        title: 'Project Mount',
-        category: 'Interior Design & 3D Visualization — 2018',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/project-mount/project-mount-1.jpg',
-        imageUrlDesktop: 'assets/images/project-mount/project-mount-1.jpg',
-        imageMobileUrl: 'assets/images/project-mount/project-mount-1.jpg',
-        projectUrl: 'project-mount.html',
-        desc: 'Four presentation boards from 2018 for Project Mount, each pairing a photoreal render with the ground-floor plan: two exterior angles of the house and interiors of the living room and dining area.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Interior Design & 3D Visualization\']'
-        }
-      },
-      {
-        id: 'project-mount-plate2',
-        title: 'Project Mount',
-        category: 'Interior Design & 3D Visualization — 2018',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/project-mount/project-mount-2.jpg',
-        imageUrlDesktop: 'assets/images/project-mount/project-mount-2.jpg',
-        imageMobileUrl: 'assets/images/project-mount/project-mount-2.jpg',
-        projectUrl: 'project-mount.html',
-        desc: 'Four presentation boards from 2018 for Project Mount, each pairing a photoreal render with the ground-floor plan: two exterior angles of the house and interiors of the living room and dining area.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Interior Design & 3D Visualization\']'
-        }
-      },
-      {
-        id: 'project-mount-plate3',
-        title: 'Project Mount',
-        category: 'Interior Design & 3D Visualization — 2018',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/project-mount/project-mount-3.jpg',
-        imageUrlDesktop: 'assets/images/project-mount/project-mount-3.jpg',
-        imageMobileUrl: 'assets/images/project-mount/project-mount-3.jpg',
-        projectUrl: 'project-mount.html',
-        desc: 'Four presentation boards from 2018 for Project Mount, each pairing a photoreal render with the ground-floor plan: two exterior angles of the house and interiors of the living room and dining area.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Interior Design & 3D Visualization\']'
-        }
-      },
-      {
         id: 'premier-place-plate1',
         title: 'Premier Place',
         category: 'Interior Design & Architectural Visualization — 2012',
@@ -2214,120 +1885,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'octagon-interiors-plate1',
-        title: 'Octagon',
-        category: 'Interior Design & Architectural Visualization — 2014',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/octagon-interiors/octagon-interiors-9.jpg',
-        imageUrlDesktop: 'assets/images/octagon-interiors/octagon-interiors-9.jpg',
-        imageMobileUrl: 'assets/images/octagon-interiors/octagon-interiors-9.jpg',
-        projectUrl: 'octagon-interiors.html',
-        desc: 'Interior design and 3D visualization for the Octagon apartment in Accra, Ghana: fourteen plates that move through the dining room, kitchens, bedrooms and lounges before stepping outside to the stone-and-white apartment blocks, their pool deck and a dusk view.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment, furniture and finish selection, and a full set of 3D visualizations covering the rooms, the building exteriors and the pool deck.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'octagon-interiors-plate2',
-        title: 'Octagon',
-        category: 'Interior Design & Architectural Visualization — 2014',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/octagon-interiors/octagon-interiors-1.jpg',
-        imageUrlDesktop: 'assets/images/octagon-interiors/octagon-interiors-1.jpg',
-        imageMobileUrl: 'assets/images/octagon-interiors/octagon-interiors-1.jpg',
-        projectUrl: 'octagon-interiors.html',
-        desc: 'Interior design and 3D visualization for the Octagon apartment in Accra, Ghana: fourteen plates that move through the dining room, kitchens, bedrooms and lounges before stepping outside to the stone-and-white apartment blocks, their pool deck and a dusk view.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment, furniture and finish selection, and a full set of 3D visualizations covering the rooms, the building exteriors and the pool deck.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'octagon-interiors-plate3',
-        title: 'Octagon',
-        category: 'Interior Design & Architectural Visualization — 2014',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/octagon-interiors/octagon-interiors-2.jpg',
-        imageUrlDesktop: 'assets/images/octagon-interiors/octagon-interiors-2.jpg',
-        imageMobileUrl: 'assets/images/octagon-interiors/octagon-interiors-2.jpg',
-        projectUrl: 'octagon-interiors.html',
-        desc: 'Interior design and 3D visualization for the Octagon apartment in Accra, Ghana: fourteen plates that move through the dining room, kitchens, bedrooms and lounges before stepping outside to the stone-and-white apartment blocks, their pool deck and a dusk view.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment, furniture and finish selection, and a full set of 3D visualizations covering the rooms, the building exteriors and the pool deck.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'oak-tree-apartments-plate1',
-        title: 'Oak Tree Apartments',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-1.jpg',
-        imageUrlDesktop: 'assets/images/oak-tree-apartments/oak-tree-apartments-1.jpg',
-        imageMobileUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-1.jpg',
-        projectUrl: 'oak-tree-apartments.html',
-        desc: 'Eight visualization plates from 2013 for Oak Tree Apartments in Accra, moving between the exterior approach and the furnished unit interiors, delivered as interior design and 3D visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and styling of the apartment rooms, plus the complete set of exterior and interior 3D visualizations with titled, credit-marked plates.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'oak-tree-apartments-plate2',
-        title: 'Oak Tree Apartments',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-2.jpg',
-        imageUrlDesktop: 'assets/images/oak-tree-apartments/oak-tree-apartments-2.jpg',
-        imageMobileUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-2.jpg',
-        projectUrl: 'oak-tree-apartments.html',
-        desc: 'Eight visualization plates from 2013 for Oak Tree Apartments in Accra, moving between the exterior approach and the furnished unit interiors, delivered as interior design and 3D visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and styling of the apartment rooms, plus the complete set of exterior and interior 3D visualizations with titled, credit-marked plates.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'oak-tree-apartments-plate3',
-        title: 'Oak Tree Apartments',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-3.jpg',
-        imageUrlDesktop: 'assets/images/oak-tree-apartments/oak-tree-apartments-3.jpg',
-        imageMobileUrl: 'assets/images/oak-tree-apartments/oak-tree-apartments-3.jpg',
-        projectUrl: 'oak-tree-apartments.html',
-        desc: 'Eight visualization plates from 2013 for Oak Tree Apartments in Accra, moving between the exterior approach and the furnished unit interiors, delivered as interior design and 3D visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and styling of the apartment rooms, plus the complete set of exterior and interior 3D visualizations with titled, credit-marked plates.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
         id: 'nyla-court-plate1',
         title: 'Nyla Court',
         category: 'Interior Design & Architectural Visualization — 2020',
@@ -2439,63 +1996,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2016',
           disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'maple-court-plate1',
-        title: 'Maple Court',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/maple-court/maple-court-1.jpg',
-        imageUrlDesktop: 'assets/images/maple-court/maple-court-1.jpg',
-        imageMobileUrl: 'assets/images/maple-court/maple-court-1.jpg',
-        projectUrl: 'maple-court.html',
-        desc: 'A 2013 interior design and 3D visualization package for Maple Court, a low-rise apartment scheme in Accra, Ghana: street elevation, roof plan, courtyard pool and three furnished interiors, released as a Living set in May 2013.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment units, plus 3D visualization of the street elevation, roof plan, courtyard and interiors.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'maple-court-plate2',
-        title: 'Maple Court',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/maple-court/maple-court-2.jpg',
-        imageUrlDesktop: 'assets/images/maple-court/maple-court-2.jpg',
-        imageMobileUrl: 'assets/images/maple-court/maple-court-2.jpg',
-        projectUrl: 'maple-court.html',
-        desc: 'A 2013 interior design and 3D visualization package for Maple Court, a low-rise apartment scheme in Accra, Ghana: street elevation, roof plan, courtyard pool and three furnished interiors, released as a Living set in May 2013.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment units, plus 3D visualization of the street elevation, roof plan, courtyard and interiors.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'maple-court-plate3',
-        title: 'Maple Court',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/maple-court/maple-court-3.jpg',
-        imageUrlDesktop: 'assets/images/maple-court/maple-court-3.jpg',
-        imageMobileUrl: 'assets/images/maple-court/maple-court-3.jpg',
-        projectUrl: 'maple-court.html',
-        desc: 'A 2013 interior design and 3D visualization package for Maple Court, a low-rise apartment scheme in Accra, Ghana: street elevation, roof plan, courtyard pool and three furnished interiors, released as a Living set in May 2013.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the apartment units, plus 3D visualization of the street elevation, roof plan, courtyard and interiors.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
       },
       {
@@ -2802,139 +2302,9 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
       },
-      {
-        id: 'haven-project-plate1',
-        title: 'Haven',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/haven-project/haven-project-1.jpg',
-        imageUrlDesktop: 'assets/images/haven-project/haven-project-1.jpg',
-        imageMobileUrl: 'assets/images/haven-project/haven-project-1.jpg',
-        projectUrl: 'haven-project.html',
-        desc: 'An eight-plate interior design and 3D visualization set from 2013 for the Haven Project, a show apartment in Ghana produced as marketing material for a real estate company, touring a bar, dining room, kitchen, bathrooms and a bedroom study.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for apartment marketing material.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'haven-project-plate2',
-        title: 'Haven',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/haven-project/haven-project-2.jpg',
-        imageUrlDesktop: 'assets/images/haven-project/haven-project-2.jpg',
-        imageMobileUrl: 'assets/images/haven-project/haven-project-2.jpg',
-        projectUrl: 'haven-project.html',
-        desc: 'An eight-plate interior design and 3D visualization set from 2013 for the Haven Project, a show apartment in Ghana produced as marketing material for a real estate company, touring a bar, dining room, kitchen, bathrooms and a bedroom study.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for apartment marketing material.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'haven-project-plate3',
-        title: 'Haven',
-        category: 'Interior Design & Architectural Visualization — 2013',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/haven-project/haven-project-3.jpg',
-        imageUrlDesktop: 'assets/images/haven-project/haven-project-3.jpg',
-        imageMobileUrl: 'assets/images/haven-project/haven-project-3.jpg',
-        projectUrl: 'haven-project.html',
-        desc: 'An eight-plate interior design and 3D visualization set from 2013 for the Haven Project, a show apartment in Ghana produced as marketing material for a real estate company, touring a bar, dining room, kitchen, bathrooms and a bedroom study.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for apartment marketing material.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'harbour-pointe-plate1',
-        title: 'Harbour Pointe',
-        category: 'Interior Design & 3D Visualization — 2015',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        imageUrlDesktop: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        imageMobileUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        projectUrl: 'harbour-pointe.html',
-        desc: 'Collaborative interior design and photorealistic 3D visualization for Harbour Pointe, a mixed-use waterfront development completed in 2015.',
-        specs: {
-          client: 'Infinite Group Ltd',
-          scope: '',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'Interior Design\', \'3D Visualization\']'
-        }
-      },
-      {
-        id: 'fizzles-pub-plate1',
-        title: 'Fizzles Pub',
-        category: 'Interior Design — 2013',
-        service: 'Interior Design',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/fizzles-pub/fizzles-pub-8.jpg',
-        imageUrlDesktop: 'assets/images/fizzles-pub/fizzles-pub-8.jpg',
-        imageMobileUrl: 'assets/images/fizzles-pub/fizzles-pub-8.jpg',
-        projectUrl: 'fizzles-pub.html',
-        desc: 'Fizzles Pub is an interior design and 3D visualization project RDVS completed for the Fizzles brand in March 2012, imagining an after-work lounge in Accra that blends a bar, eatery and three lounges under moody colored lighting.',
-        specs: {
-          client: 'Fizzles',
-          scope: 'RDVS delivered the interior design concept and full 3D visualization package, covering space planning, lighting design, material and color selection, rendered views, and the technical drawing set.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design\']'
-        }
-      },
-      {
-        id: 'fizzles-pub-plate2',
-        title: 'Fizzles Pub',
-        category: 'Interior Design — 2013',
-        service: 'Interior Design',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/fizzles-pub/fizzles-pub-1.jpg',
-        imageUrlDesktop: 'assets/images/fizzles-pub/fizzles-pub-1.jpg',
-        imageMobileUrl: 'assets/images/fizzles-pub/fizzles-pub-1.jpg',
-        projectUrl: 'fizzles-pub.html',
-        desc: 'Fizzles Pub is an interior design and 3D visualization project RDVS completed for the Fizzles brand in March 2012, imagining an after-work lounge in Accra that blends a bar, eatery and three lounges under moody colored lighting.',
-        specs: {
-          client: 'Fizzles',
-          scope: 'RDVS delivered the interior design concept and full 3D visualization package, covering space planning, lighting design, material and color selection, rendered views, and the technical drawing set.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design\']'
-        }
-      },
-      {
-        id: 'fizzles-pub-plate3',
-        title: 'Fizzles Pub',
-        category: 'Interior Design — 2013',
-        service: 'Interior Design',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/fizzles-pub/fizzles-pub-2.jpg',
-        imageUrlDesktop: 'assets/images/fizzles-pub/fizzles-pub-2.jpg',
-        imageMobileUrl: 'assets/images/fizzles-pub/fizzles-pub-2.jpg',
-        projectUrl: 'fizzles-pub.html',
-        desc: 'Fizzles Pub is an interior design and 3D visualization project RDVS completed for the Fizzles brand in March 2012, imagining an after-work lounge in Accra that blends a bar, eatery and three lounges under moody colored lighting.',
-        specs: {
-          client: 'Fizzles',
-          scope: 'RDVS delivered the interior design concept and full 3D visualization package, covering space planning, lighting design, material and color selection, rendered views, and the technical drawing set.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Interior Design\']'
-        }
-      },
+
+
+
       {
         id: 'enda-acm-plate1',
         title: 'Enda ACM',
@@ -3126,63 +2496,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'eic-competition-plate1',
-        title: 'EIC Competition',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/eic-competition/eic-competition-1.jpg',
-        imageUrlDesktop: 'assets/images/eic-competition/eic-competition-1.jpg',
-        imageMobileUrl: 'assets/images/eic-competition/eic-competition-1.jpg',
-        projectUrl: 'eic-competition.html',
-        desc: 'A 2012 competition entry of interior design and 3D visualization for Enterprise Insurance Company, reimagining its office as a warm contemporary workplace through a boardroom, an executive suite, open-plan workstations and a double-height reception.',
-        specs: {
-          client: 'Enterprise Insurance Company',
-          scope: 'Interior design concept and photorealistic 3D visualization for a competition office proposal.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'eic-competition-plate2',
-        title: 'EIC Competition',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/eic-competition/eic-competition-2.jpg',
-        imageUrlDesktop: 'assets/images/eic-competition/eic-competition-2.jpg',
-        imageMobileUrl: 'assets/images/eic-competition/eic-competition-2.jpg',
-        projectUrl: 'eic-competition.html',
-        desc: 'A 2012 competition entry of interior design and 3D visualization for Enterprise Insurance Company, reimagining its office as a warm contemporary workplace through a boardroom, an executive suite, open-plan workstations and a double-height reception.',
-        specs: {
-          client: 'Enterprise Insurance Company',
-          scope: 'Interior design concept and photorealistic 3D visualization for a competition office proposal.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'eic-competition-plate3',
-        title: 'EIC Competition',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/eic-competition/eic-competition-3.jpg',
-        imageUrlDesktop: 'assets/images/eic-competition/eic-competition-3.jpg',
-        imageMobileUrl: 'assets/images/eic-competition/eic-competition-3.jpg',
-        projectUrl: 'eic-competition.html',
-        desc: 'A 2012 competition entry of interior design and 3D visualization for Enterprise Insurance Company, reimagining its office as a warm contemporary workplace through a boardroom, an executive suite, open-plan workstations and a double-height reception.',
-        specs: {
-          client: 'Enterprise Insurance Company',
-          scope: 'Interior design concept and photorealistic 3D visualization for a competition office proposal.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
         id: 'ehr-plate1',
         title: 'EHR',
         category: 'Architectural Design, Interior Design & Architectural Visualization — 2017',
@@ -3277,82 +2590,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Interior Design   3D Visualization\']'
         }
       },
-      {
-        id: 'campions-estate-plate1',
-        title: 'Campions Renderings',
-        category: 'Architectural Design, Interior Design & Architectural Visualization — 2015',
-        service: 'Architectural Design, Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        projectUrl: 'campions-renderings.html',
-        desc: 'Terraced houses grouped around a shared pool courtyard, drawn in several exterior colourways and carried through to the interiors.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Architectural design, Interior design, 3D visualization',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'Architectural Design\', \'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'campions-estate-plate2',
-        title: 'Campions Renderings',
-        category: 'Architectural Design, Interior Design & Architectural Visualization — 2015',
-        service: 'Architectural Design, Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/campions-renderings/campions-renderings-01.jpg',
-        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-01.jpg',
-        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-01-mobile.jpg',
-        projectUrl: 'campions-renderings.html',
-        desc: 'Terraced houses grouped around a shared pool courtyard, drawn in several exterior colourways and carried through to the interiors.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Architectural design, Interior design, 3D visualization',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'Architectural Design\', \'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'c25-interior-plate1',
-        title: 'C25',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/c25/c25-2.jpg',
-        imageUrlDesktop: 'assets/images/c25/c25-2.jpg',
-        imageMobileUrl: 'assets/images/c25/c25-2.jpg',
-        projectUrl: 'c25.html',
-        desc: 'Warm neutral palette interior utilizing micro-cement, acoustic fluting, and tailored concealed storage joinery.',
-        specs: {
-          client: 'Devtraco',
-          scope: 'RDVS delivered interior design direction and full 3D architectural visualization, modeling the interiors, the exterior elevations, lighting and the final rendered presentation set.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'c25-interior-plate2',
-        title: 'C25',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/c25/c25-3.jpg',
-        imageUrlDesktop: 'assets/images/c25/c25-3.jpg',
-        imageMobileUrl: 'assets/images/c25/c25-3.jpg',
-        projectUrl: 'c25.html',
-        desc: 'Warm neutral palette interior utilizing micro-cement, acoustic fluting, and tailored concealed storage joinery.',
-        specs: {
-          client: 'Devtraco',
-          scope: 'RDVS delivered interior design direction and full 3D architectural visualization, modeling the interiors, the exterior elevations, lighting and the final rendered presentation set.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
+
+
       {
         id: 'brownies-place-plate1',
         title: 'Brownie’s Place',
@@ -3467,120 +2706,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Interior Design\', \'3D Visualization — 2018 · Commissioned Work\']'
         }
       },
-      {
-        id: 'apartment-in-takoradi-plate1',
-        title: 'Apartment In Takoradi',
-        category: 'Interior Design & Architectural Visualization — 2010',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg',
-        imageUrlDesktop: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg',
-        imageMobileUrl: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-1.jpg',
-        projectUrl: 'apartment-in-takoradi.html',
-        desc: 'A 2010 interior design and visualization study for Stephen Morgan: two rooms of a proposed apartment in Takoradi, Ghana, shown as a living room opening onto a balcony and an open-plan kitchen with a dark breakfast island.',
-        specs: {
-          client: 'Stephen Morgan',
-          scope: 'Interior design and 3D visualization of the living room and the open-plan kitchen for the proposed apartment.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'apartment-in-takoradi-plate2',
-        title: 'Apartment In Takoradi',
-        category: 'Interior Design & Architectural Visualization — 2010',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-2.jpg',
-        imageUrlDesktop: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-2.jpg',
-        imageMobileUrl: 'assets/images/apartment-in-takoradi/apartment-in-takoradi-2.jpg',
-        projectUrl: 'apartment-in-takoradi.html',
-        desc: 'A 2010 interior design and visualization study for Stephen Morgan: two rooms of a proposed apartment in Takoradi, Ghana, shown as a living room opening onto a balcony and an open-plan kitchen with a dark breakfast island.',
-        specs: {
-          client: 'Stephen Morgan',
-          scope: 'Interior design and 3D visualization of the living room and the open-plan kitchen for the proposed apartment.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'anyigbanua-plate1',
-        title: 'Anyigbanua',
-        category: 'Interior Design & Architectural Visualization — 2012',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/anyigbanua/anyigbanua-1.jpg',
-        imageUrlDesktop: 'assets/images/anyigbanua/anyigbanua-1.jpg',
-        imageMobileUrl: 'assets/images/anyigbanua/anyigbanua-1.jpg',
-        projectUrl: 'anyigbanua.html',
-        desc: 'A 2012 interior design and visualization study for the Anyigbanua Residence in Accra, Ghana: a single double-height living room in which RDVS tested a cream modular sectional, an orange feature wall and a mezzanine gallery above it.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design of the double-height living room and a 3D visualization of the proposed seating scheme.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'alexander-plate1',
-        title: 'Alexander',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/alexander/alexander-1.jpg',
-        imageUrlDesktop: 'assets/images/alexander/alexander-1.jpg',
-        imageMobileUrl: 'assets/images/alexander/alexander-1.jpg',
-        projectUrl: 'alexander.html',
-        desc: 'Alexander is a set of ten visualizations and interior design studies made in 2016 for a proposed private housing development in Accra, Ghana, covering white cubic villas, their pools and terraces, and the furnished interiors that sell them.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the show units and shared amenities, and the complete set of photorealistic exterior and interior visualizations used to market the proposed development.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'alexander-plate2',
-        title: 'Alexander',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/alexander/alexander-2.jpg',
-        imageUrlDesktop: 'assets/images/alexander/alexander-2.jpg',
-        imageMobileUrl: 'assets/images/alexander/alexander-2.jpg',
-        projectUrl: 'alexander.html',
-        desc: 'Alexander is a set of ten visualizations and interior design studies made in 2016 for a proposed private housing development in Accra, Ghana, covering white cubic villas, their pools and terraces, and the furnished interiors that sell them.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the show units and shared amenities, and the complete set of photorealistic exterior and interior visualizations used to market the proposed development.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'alexander-plate3',
-        title: 'Alexander',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/alexander/alexander-3.jpg',
-        imageUrlDesktop: 'assets/images/alexander/alexander-3.jpg',
-        imageMobileUrl: 'assets/images/alexander/alexander-3.jpg',
-        projectUrl: 'alexander.html',
-        desc: 'Alexander is a set of ten visualizations and interior design studies made in 2016 for a proposed private housing development in Accra, Ghana, covering white cubic villas, their pools and terraces, and the furnished interiors that sell them.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design for the show units and shared amenities, and the complete set of photorealistic exterior and interior visualizations used to market the proposed development.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
+
       {
         id: 'aika-osu-plate1',
         title: 'Aika',
@@ -3828,44 +2954,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
       },
-      {
-        id: 'barham-residence-plate1',
-        title: '41 Barham',
-        category: 'Architectural Design — 2017',
-        service: 'Architectural Design',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/barham/barham-courtyard.jpg',
-        imageUrlDesktop: 'assets/images/barham/barham-courtyard.jpg',
-        imageMobileUrl: 'assets/images/barham/barham-courtyard.jpg',
-        projectUrl: '41-barham.html',
-        desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Architectural Design',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
-        id: 'barham-residence-plate2',
-        title: '41 Barham',
-        category: 'Architectural Design — 2017',
-        service: 'Architectural Design',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/barham/barham-pavilion.jpg',
-        imageUrlDesktop: 'assets/images/barham/barham-pavilion.jpg',
-        imageMobileUrl: 'assets/images/barham/barham-pavilion.jpg',
-        projectUrl: '41-barham.html',
-        desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Architectural Design',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
+
+
       {
         id: '1hive-plate1',
         title: '1Hive',
@@ -3962,6 +3052,64 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
 
+      {
+        id: 'hot-gossip',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-1-mobile.jpg',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Interior design and 3D visualization of a nightlife venue: a lounge walled in backlit discs, a lit bar counter, a billiards hall and a dance floor of illuminated photo tiles, rendered out of a March 2012 model.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Caleb Sackey, Jude Abbey, Jude Nyoagbe, Joshua Doodo, Nii Okpoti, Kofi Tetteh, Edem Tamakloe',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate1',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-4.jpg',
+        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-4.jpg',
+        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-4.jpg',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Interior design and 3D visualization of a nightlife venue: a lounge walled in backlit discs, a lit bar counter, a billiards hall and a dance floor of illuminated photo tiles, rendered out of a March 2012 model.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Caleb Sackey, Jude Abbey, Jude Nyoagbe, Joshua Doodo, Nii Okpoti, Kofi Tetteh, Edem Tamakloe',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate2',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-2.jpg',
+        imageUrlDesktop: 'assets/images/hot-gossip/hot-gossip-2.jpg',
+        imageMobileUrl: 'assets/images/hot-gossip/hot-gossip-2.jpg',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Interior design and 3D visualization of a nightlife venue: a lounge walled in backlit discs, a lit bar counter, a billiards hall and a dance floor of illuminated photo tiles, rendered out of a March 2012 model.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Caleb Sackey, Jude Abbey, Jude Nyoagbe, Joshua Doodo, Nii Okpoti, Kofi Tetteh, Edem Tamakloe',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+
     ]
   },
 
@@ -3989,70 +3137,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           location: 'Accra, Ghana',
           year: '2015',
           disciplines: ['3D Visualization', 'Retail Interior']
-        }
-      },
-      {
-        id: 'beautiful-choices-anim',
-        title: 'Beautiful Choices',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        videoUrl: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
-        videoUrlDesktop: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
-        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageMobileUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        projectUrl: 'beautiful-choices.html',
-        desc: 'Rendering and animation for a poster series designed by Dela Anyaa — five colourways of the same sheet modelled as printed panels and fanned through a seamless white set.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: '3D Modelling, Animation, Rendering, Post Processing & Compositing',
-          team: 'Concept: Dela Anyaa | Modelling + Animation + Rendering: Jude Nyoagbe | Post Processing + Compositing: Randy Biney',
-          location: 'Accra, Ghana',
-          year: '2014',
-          disciplines: ['3D Visualization', 'Product Visualization', 'Animation']
-        }
-      },
-      {
-        id: 'six-acres-company-profile-film',
-        title: 'Six Acres Company Profile',
-        category: 'Graphic Design & 3D Visualization — 2017',
-        service: 'Graphic Design & 3D Visualization',
-        discipline: 'vfx',
-        videoUrl: 'assets/videos/six-acres/six-acres-film.mp4',
-        videoUrlDesktop: 'assets/videos/six-acres/six-acres-film.mp4',
-        imageUrl: 'assets/images/six-acres/six-acres-1.jpg',
-        imageUrlDesktop: 'assets/images/six-acres/six-acres-1.jpg',
-        imageMobileUrl: 'assets/images/six-acres/six-acres-1.jpg',
-        projectUrl: 'six-acres-company-profile.html',
-        desc: 'A twenty-two-page company profile for Six Acres Limited, a Ghanaian real-estate developer: editorial design and art direction, the architectural renders that carry its housing product, and photoreal mockups of every spread.',
-        specs: {
-          client: 'Six Acres Limited',
-          scope: 'Company profile design and art direction: cover and page architecture, wordmark and pattern system, architectural renders of the housing product, partner and contact spreads, photoreal mockups of every spread and a short animated flip-through',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Graphic Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'beautiful-choices-anim-film',
-        title: 'Beautiful Choices',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        videoUrl: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
-        videoUrlDesktop: 'assets/videos/beautiful-choices/beautiful-choices-anim.mp4',
-        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageMobileUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        projectUrl: 'beautiful-choices.html',
-        desc: 'Rendering and animation for a poster series designed by Dela Anyaa — five colourways of the same sheet modelled as printed panels and fanned through a seamless white set.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: '3D Modelling, Animation, Rendering, Post Processing & Compositing',
-          team: 'Concept: Dela Anyaa | Modelling + Animation + Rendering: Jude Nyoagbe | Post Processing + Compositing: Randy Biney',
-          year: '2014',
-          disciplines: '[\'3D Visualization\']'
         }
       },
       {
@@ -4100,24 +3184,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['VFX + CGI', '3D Photoreal Rendering']
         }
       },
-      {
-        id: 'campions-estate',
-        title: 'Campions Renderings',
-        category: 'Architectural Design, Interior Design & Architectural Visualization — 2015',
-        service: 'Architectural Design, Interior Design & Architectural Visualization',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        imageUrlDesktop: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        imageMobileUrl: 'assets/images/campions-renderings/campions-renderings-01-desktop.jpg',
-        projectUrl: 'campions-renderings.html',
-        desc: 'Terraced houses grouped around a shared pool courtyard, drawn in several exterior colourways and carried through to the interiors.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Architectural design, Interior design, 3D visualization',
-          year: '2015',
-          disciplines: ['Architectural Design', 'Interior Design', '3D Visualization']
-        }
-      },
+
       {
         id: 'chocolate',
         title: 'Chocolate',
@@ -4178,30 +3245,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'stephen-yvonne',
-        title: 'Stephen + Yvonne',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
-        projectUrl: 'stephen-yvonne.html',
-        desc: 'Wedding invitation suite for Stephen + Yvonne Ntow — a pair of gold lovebirds whose wings meet as a heart, their plumage then opened out into a feather macro that carries the verse, the invitation and a gold-on-grey location card.',
-        specs: {
-          client: 'Stephen & Yvonne Ntow',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'Randy Biney',
-          location: 'Accra, Ghana',
-          year: '2014',
-          disciplines: ['Graphic Design', 'Digital Art', 'Illustration']
-        }
-      },
-      {
         id: 'stanchart-hq',
         title: 'Stanchart HQ',
-        category: '3D Visualization — 2010',
-        service: '3D Visualization',
+        category: 'Architectural Visualization — 2010',
+        service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
         imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
@@ -4209,50 +3256,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'stanchart-hq.html',
         desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
         specs: {
-          client: 'Private Client',
-          scope: '3D Visualization',
-          team: 'RDVS Team',
+          client: 'Standard Chartered Bank',
+          scope: 'Architectural visualization: three street-level views of the proposed head office tower — two daylight studies and a dusk long-exposure.',
+          team: 'Vista (design and modelling); R.D+V.S (visualization)',
           year: '2010',
           disciplines: ['3D Visualization']
-        }
-      },
-      {
-        id: 'harbour-pointe',
-        title: 'Harbour Pointe',
-        category: 'Interior Design & 3D Visualization — 2015',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interior-design',
-        imageUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        imageUrlDesktop: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        imageMobileUrl: 'assets/images/harbour-pointe/harbour-pointe-1.jpg',
-        projectUrl: 'harbour-pointe.html',
-        desc: 'Collaborative interior design and photorealistic 3D visualization for Harbour Pointe, a mixed-use waterfront development completed in 2015.',
-        specs: {
-          client: 'Infinite Group Ltd',
-          scope: 'Interior Design, 3D Visualization',
-          team: 'Kwadwo Boadi (Infinite Group Ltd), Annabella Boadi-Misa (RDVS), Jude Nyoagbe (RDVS)',
-          year: '2015',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'ghana-bbq-beer-festival',
-        title: 'Ghana BBQ & Beer Festival',
-        category: 'Graphic Design — 2017',
-        service: 'Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-desktop.jpg',
-        imageMobileUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-desktop.jpg',
-        projectUrl: 'ghana-bbq-beer-festival.html',
-        desc: 'Event poster for a barbecue and beer festival at Bermuda Gardens, Accra — a mustard A4 sheet torn open onto a white-lined street plan, with the title set in a face whose letters are themselves torn.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Graphic Design & Digital Art',
-          team: 'RDVS Team',
-          location: 'Accra, Ghana',
-          year: '2017',
-          disciplines: ['Graphic Design', 'Digital Art']
         }
       },
       {
@@ -4275,26 +3283,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'haustalks',
-        title: 'Haustalks',
-        category: 'Graphic Design — 2019',
-        service: 'Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/haustalks/haustalks-desktop.jpg',
-        imageUrlDesktop: 'assets/images/haustalks/haustalks-desktop.jpg',
-        imageMobileUrl: 'assets/images/haustalks/haustalks-desktop.jpg',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that connects a client with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and of stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity, Graphic Design & 3D Visualization',
-          team: 'RDVS Team',
-          location: 'Accra, Ghana',
-          year: '2019',
-          disciplines: ['Graphic Design', '3D Visualization']
-        }
-      },
-      {
         id: 'mtn-hq',
         title: 'MTN HQ',
         category: 'Graphic Design & 3D Visualization — 2017',
@@ -4311,26 +3299,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: ['Environmental Graphics', 'Way-Finding', '3D Visualization']
-        }
-      },
-      {
-        id: 'yao-yaa',
-        title: 'Yao + Yaa',
-        category: 'Graphic Design & Digital Art — 2013',
-        service: 'Graphic Design & Digital Art',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/yao-yaa/yao-yaa-1-desktop.jpg',
-        projectUrl: 'yao-yaa.html',
-        desc: 'Wedding invitation for Yao Tettey and Yaa Lamptey — a sea-green paisley field with the couple\u2019s day-names worked into it tone-on-tone, geometric-sans type panels and redrawn Tema venue maps.',
-        specs: {
-          client: 'Nunya Yao Tettey & Rebecca Yaa Effaah Lamptey',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'RDVS Team',
-          location: 'Tema, Ghana',
-          year: '2013',
-          disciplines: ['Graphic Design', 'Digital Art', 'Illustration']
         }
       },
       {
@@ -4394,28 +3362,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'maurice-abena',
-        title: 'Maurice + Abena',
-        category: 'Graphic Design — 2013',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/maurice-abena/maurice-abena-4-desktop.jpg',
-        imageUrlDesktop: 'assets/images/maurice-abena/maurice-abena-4-desktop.jpg',
-        imageMobileUrl: 'assets/images/maurice-abena/maurice-abena-4-desktop.jpg',
-        projectUrl: 'maurice-abena.html'
-      },
-      {
-        id: 'ndaba-restaurant-whm',
-        title: 'Ndaba Restaurant, WHM',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1-desktop.jpg',
-        projectUrl: 'ndaba-restaurant-whm.html'
-      },
-      {
         id: '2gs',
         title: '2GS',
         category: 'Graphic Design — 2015',
@@ -4460,17 +3406,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'drw-furnart.html'
       },
       {
-        id: 'weldment-panels',
-        title: 'Weldment Panels',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/weldment-panels/weldment-panels-5.jpg',
-        imageUrlDesktop: 'assets/images/weldment-panels/weldment-panels-5.jpg',
-        imageMobileUrl: 'assets/images/weldment-panels/weldment-panels-5.jpg',
-        projectUrl: 'weldment-panels.html'
-      },
-      {
         id: 'airport-hills-residence',
         title: 'Airport Hills Residence',
         category: '3D Visualization — 2017',
@@ -4513,44 +3448,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/aelius/aelius-brand.jpg',
         imageMobileUrl: 'assets/images/aelius/aelius-brand.jpg',
         projectUrl: 'aelius.html'
-      },
-      {
-        id: 'yao-yaa-plate1',
-        title: 'Yao + Yaa',
-        category: 'Graphic Design & Digital Art — 2013',
-        service: 'Graphic Design & Digital Art',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/yao-yaa/yao-yaa-1.jpg',
-        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-1.jpg',
-        imageMobileUrl: 'assets/images/yao-yaa/yao-yaa-1-mobile.jpg',
-        projectUrl: 'yao-yaa.html',
-        desc: 'Wedding invitation for Yao Tettey and Yaa Lamptey — a sea-green paisley field with the couple\\u2019s day-names worked into it tone-on-tone, geometric-sans type panels and redrawn Tema venue maps.',
-        specs: {
-          client: 'Nunya Yao Tettey & Rebecca Yaa Effaah Lamptey',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'RDVS Team',
-          year: '2013',
-          disciplines: '[\'Graphic Design   Digital Art\']'
-        }
-      },
-      {
-        id: 'yao-yaa-plate2',
-        title: 'Yao + Yaa',
-        category: 'Graphic Design & Digital Art — 2013',
-        service: 'Graphic Design & Digital Art',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/yao-yaa/yao-yaa-2.jpg',
-        imageUrlDesktop: 'assets/images/yao-yaa/yao-yaa-2.jpg',
-        imageMobileUrl: 'assets/images/yao-yaa/yao-yaa-2.jpg',
-        projectUrl: 'yao-yaa.html',
-        desc: 'Wedding invitation for Yao Tettey and Yaa Lamptey — a sea-green paisley field with the couple\\u2019s day-names worked into it tone-on-tone, geometric-sans type panels and redrawn Tema venue maps.',
-        specs: {
-          client: 'Nunya Yao Tettey & Rebecca Yaa Effaah Lamptey',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'RDVS Team',
-          year: '2013',
-          disciplines: '[\'Graphic Design   Digital Art\']'
-        }
       },
       {
         id: 'white-fleece-plate1',
@@ -4607,44 +3504,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2014',
           disciplines: '[\'Graphic Design   Identity\']'
-        }
-      },
-      {
-        id: 'weldment-panels-plate1',
-        title: 'Weldment Panels',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        imageUrlDesktop: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        imageMobileUrl: 'assets/images/weldment-panels/weldment-panels-1.jpg',
-        projectUrl: 'weldment-panels.html',
-        desc: 'Renders of a graffiti-proof wall panel system, made in 2016 as part of a client s presentation material.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D modelling of the panel cladding and the road structures it is fixed to, rendered in daylight, dusk and night lighting for a client presentation.',
-          team: 'RDVS Team',
-          year: '2016',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'weldment-panels-plate2',
-        title: 'Weldment Panels',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/weldment-panels/weldment-panels-2.jpg',
-        imageUrlDesktop: 'assets/images/weldment-panels/weldment-panels-2.jpg',
-        imageMobileUrl: 'assets/images/weldment-panels/weldment-panels-2.jpg',
-        projectUrl: 'weldment-panels.html',
-        desc: 'Renders of a graffiti-proof wall panel system, made in 2016 as part of a client s presentation material.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D modelling of the panel cladding and the road structures it is fixed to, rendered in daylight, dusk and night lighting for a client presentation.',
-          team: 'RDVS Team',
-          year: '2016',
-          disciplines: '[\'3D Visualization\']'
         }
       },
       {
@@ -4705,44 +3564,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'stephen-yvonne-plate1',
-        title: 'Stephen + Yvonne',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1.jpg',
-        imageUrlDesktop: 'assets/images/stephen-yvonne/stephen-yvonne-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/stephen-yvonne/stephen-yvonne-1-mobile.jpg',
-        projectUrl: 'stephen-yvonne.html',
-        desc: 'Wedding invitation suite for Stephen + Yvonne Ntow — a pair of gold lovebirds whose wings meet as a heart, their plumage then opened out into a feather macro that carries the verse, the invitation and a gold-on-grey location card.',
-        specs: {
-          client: 'Stephen & Yvonne Ntow',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'Randy Biney',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'stephen-yvonne-plate2',
-        title: 'Stephen + Yvonne',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stephen-yvonne/stephen-yvonne-2.jpg',
-        imageUrlDesktop: 'assets/images/stephen-yvonne/stephen-yvonne-2.jpg',
-        imageMobileUrl: 'assets/images/stephen-yvonne/stephen-yvonne-2.jpg',
-        projectUrl: 'stephen-yvonne.html',
-        desc: 'Wedding invitation suite for Stephen + Yvonne Ntow — a pair of gold lovebirds whose wings meet as a heart, their plumage then opened out into a feather macro that carries the verse, the invitation and a gold-on-grey location card.',
-        specs: {
-          client: 'Stephen & Yvonne Ntow',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'Randy Biney',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'stark-glaube-plate1',
         title: 'Stark Glaube',
         category: 'Graphic Design — 2014',
@@ -4778,82 +3599,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Paa Kofi Tetteh',
           year: '2014',
           disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'six-acres-company-profile-plate1',
-        title: 'Six Acres Company Profile',
-        category: 'Graphic Design & 3D Visualization — 2017',
-        service: 'Graphic Design & 3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/six-acres/six-acres-1.jpg',
-        imageUrlDesktop: 'assets/images/six-acres/six-acres-1.jpg',
-        imageMobileUrl: 'assets/images/six-acres/six-acres-1.jpg',
-        projectUrl: 'six-acres-company-profile.html',
-        desc: 'A twenty-two-page company profile for Six Acres Limited, a Ghanaian real-estate developer: editorial design and art direction, the architectural renders that carry its housing product, and photoreal mockups of every spread.',
-        specs: {
-          client: 'Six Acres Limited',
-          scope: 'Company profile design and art direction: cover and page architecture, wordmark and pattern system, architectural renders of the housing product, partner and contact spreads, photoreal mockups of every spread and a short animated flip-through',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Graphic Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'six-acres-company-profile-plate2',
-        title: 'Six Acres Company Profile',
-        category: 'Graphic Design & 3D Visualization — 2017',
-        service: 'Graphic Design & 3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/six-acres/six-acres-2.jpg',
-        imageUrlDesktop: 'assets/images/six-acres/six-acres-2.jpg',
-        imageMobileUrl: 'assets/images/six-acres/six-acres-2.jpg',
-        projectUrl: 'six-acres-company-profile.html',
-        desc: 'A twenty-two-page company profile for Six Acres Limited, a Ghanaian real-estate developer: editorial design and art direction, the architectural renders that carry its housing product, and photoreal mockups of every spread.',
-        specs: {
-          client: 'Six Acres Limited',
-          scope: 'Company profile design and art direction: cover and page architecture, wordmark and pattern system, architectural renders of the housing product, partner and contact spreads, photoreal mockups of every spread and a short animated flip-through',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Graphic Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'sinopec-ghana-interiors-plate1',
-        title: 'Sinopec Ghana Interiors',
-        category: 'Architectural Visualization — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-1.jpg',
-        imageUrlDesktop: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-1.jpg',
-        imageMobileUrl: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-1.jpg',
-        projectUrl: 'sinopec-ghana-interiors.html',
-        desc: 'A 2013 pair of 3D interior visualizations for the Sinopec office in Accra, in which RDVS Studios modeled a bold red reception lounge and a green-accented open-plan workspace to present the corporate fit-out.',
-        specs: {
-          client: 'Sinopec',
-          scope: '3D interior visualization of the office lounge and open-plan workspace, modeled and rendered to present the corporate fit-out.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'sinopec-ghana-interiors-plate2',
-        title: 'Sinopec Ghana Interiors',
-        category: 'Architectural Visualization — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-2.jpg',
-        imageUrlDesktop: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-2.jpg',
-        imageMobileUrl: 'assets/images/sinopec-ghana-interiors/sinopec-ghana-interiors-2.jpg',
-        projectUrl: 'sinopec-ghana-interiors.html',
-        desc: 'A 2013 pair of 3D interior visualizations for the Sinopec office in Accra, in which RDVS Studios modeled a bold red reception lounge and a green-accented open-plan workspace to present the corporate fit-out.',
-        specs: {
-          client: 'Sinopec',
-          scope: '3D interior visualization of the office lounge and open-plan workspace, modeled and rendered to present the corporate fit-out.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Architectural Visualization\']'
         }
       },
       {
@@ -4895,63 +3640,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'provident-insurance-plate1',
-        title: 'Provident Insurance',
-        category: 'Architectural Visualization — 2015',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/provident-insurance/provident-insurance-1.jpg',
-        imageUrlDesktop: 'assets/images/provident-insurance/provident-insurance-1.jpg',
-        imageMobileUrl: 'assets/images/provident-insurance/provident-insurance-1.jpg',
-        projectUrl: 'provident-insurance.html',
-        desc: 'A 2015 set of 3D interior visualizations for the Provident Insurance office in Accra, made for an architect, in which RDVS Studios rendered a reception, an open-plan floor and an executive suite in the company s blue and white palette.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D interior visualization of the office reception, open-plan floor and executive suite, produced for an architect’s client presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'provident-insurance-plate2',
-        title: 'Provident Insurance',
-        category: 'Architectural Visualization — 2015',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/provident-insurance/provident-insurance-2.jpg',
-        imageUrlDesktop: 'assets/images/provident-insurance/provident-insurance-2.jpg',
-        imageMobileUrl: 'assets/images/provident-insurance/provident-insurance-2.jpg',
-        projectUrl: 'provident-insurance.html',
-        desc: 'A 2015 set of 3D interior visualizations for the Provident Insurance office in Accra, made for an architect, in which RDVS Studios rendered a reception, an open-plan floor and an executive suite in the company s blue and white palette.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D interior visualization of the office reception, open-plan floor and executive suite, produced for an architect’s client presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'provident-insurance-plate3',
-        title: 'Provident Insurance',
-        category: 'Architectural Visualization — 2015',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/provident-insurance/provident-insurance-3.jpg',
-        imageUrlDesktop: 'assets/images/provident-insurance/provident-insurance-3.jpg',
-        imageMobileUrl: 'assets/images/provident-insurance/provident-insurance-3.jpg',
-        projectUrl: 'provident-insurance.html',
-        desc: 'A 2015 set of 3D interior visualizations for the Provident Insurance office in Accra, made for an architect, in which RDVS Studios rendered a reception, an open-plan floor and an executive suite in the company s blue and white palette.',
-        specs: {
-          client: 'Private Client',
-          scope: '3D interior visualization of the office reception, open-plan floor and executive suite, produced for an architect’s client presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'palazzo-plate1',
         title: 'Palazzo',
         category: '3D Visualization — 2017',
@@ -4987,63 +3675,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Jude Abbey, Jude Nyoagbe',
           year: '2017',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'osu-tower-plate1',
-        title: 'Osu Tower',
-        category: 'Architectural Visualization — 2012',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/osu-tower/osu-tower-12.jpg',
-        imageUrlDesktop: 'assets/images/osu-tower/osu-tower-12.jpg',
-        imageMobileUrl: 'assets/images/osu-tower/osu-tower-12.jpg',
-        projectUrl: 'osu-tower.html',
-        desc: 'Twelve visualization plates from 2012 showing the interiors of an apartment in Osu, Accra, together with the tower elevation and its rooftop deck, modelled and rendered as architectural visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization of the apartment interiors, the tower elevation and the rooftop amenity deck, including modelling, material and furniture assignment, lighting and camera work.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'osu-tower-plate2',
-        title: 'Osu Tower',
-        category: 'Architectural Visualization — 2012',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/osu-tower/osu-tower-1.jpg',
-        imageUrlDesktop: 'assets/images/osu-tower/osu-tower-1.jpg',
-        imageMobileUrl: 'assets/images/osu-tower/osu-tower-1.jpg',
-        projectUrl: 'osu-tower.html',
-        desc: 'Twelve visualization plates from 2012 showing the interiors of an apartment in Osu, Accra, together with the tower elevation and its rooftop deck, modelled and rendered as architectural visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization of the apartment interiors, the tower elevation and the rooftop amenity deck, including modelling, material and furniture assignment, lighting and camera work.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'osu-tower-plate3',
-        title: 'Osu Tower',
-        category: 'Architectural Visualization — 2012',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/osu-tower/osu-tower-2.jpg',
-        imageUrlDesktop: 'assets/images/osu-tower/osu-tower-2.jpg',
-        imageMobileUrl: 'assets/images/osu-tower/osu-tower-2.jpg',
-        projectUrl: 'osu-tower.html',
-        desc: 'Twelve visualization plates from 2012 showing the interiors of an apartment in Osu, Accra, together with the tower elevation and its rooftop deck, modelled and rendered as architectural visualization by RDVS Studio for a private client.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization of the apartment interiors, the tower elevation and the rooftop amenity deck, including modelling, material and furniture assignment, lighting and camera work.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Architectural Visualization\']'
         }
       },
       {
@@ -5104,63 +3735,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'octagon-mews-plate1',
-        title: 'Octagon Mews',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/octagon-mews/octagon-mews-1.jpg',
-        imageUrlDesktop: 'assets/images/octagon-mews/octagon-mews-1.jpg',
-        imageMobileUrl: 'assets/images/octagon-mews/octagon-mews-1.jpg',
-        projectUrl: 'octagon-mews.html',
-        desc: 'Three exterior visualizations from 2011 for Octagon Mews, a group of apartment blocks planned for Accra, Ghana: architectural visualization that sells the scheme through a shaded pool court, a street view and a pergola-shaded approach.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization: three exterior render views of the apartment blocks, the pool court and the paved approach.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'octagon-mews-plate2',
-        title: 'Octagon Mews',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/octagon-mews/octagon-mews-2.jpg',
-        imageUrlDesktop: 'assets/images/octagon-mews/octagon-mews-2.jpg',
-        imageMobileUrl: 'assets/images/octagon-mews/octagon-mews-2.jpg',
-        projectUrl: 'octagon-mews.html',
-        desc: 'Three exterior visualizations from 2011 for Octagon Mews, a group of apartment blocks planned for Accra, Ghana: architectural visualization that sells the scheme through a shaded pool court, a street view and a pergola-shaded approach.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization: three exterior render views of the apartment blocks, the pool court and the paved approach.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'octagon-mews-plate3',
-        title: 'Octagon Mews',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/octagon-mews/octagon-mews-3.jpg',
-        imageUrlDesktop: 'assets/images/octagon-mews/octagon-mews-3.jpg',
-        imageMobileUrl: 'assets/images/octagon-mews/octagon-mews-3.jpg',
-        projectUrl: 'octagon-mews.html',
-        desc: 'Three exterior visualizations from 2011 for Octagon Mews, a group of apartment blocks planned for Accra, Ghana: architectural visualization that sells the scheme through a shaded pool court, a street view and a pergola-shaded approach.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural visualization: three exterior render views of the apartment blocks, the pool court and the paved approach.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'npa-reception-renders-plate1',
         title: 'NPA',
         category: 'Architectural Visualization & BIM — 2022',
@@ -5196,82 +3770,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2022',
           disciplines: '[\'Architectural Visualization   BIM\']'
-        }
-      },
-      {
-        id: 'nest-apt-plate1',
-        title: 'Nest',
-        category: 'Architectural Visualization — 2014',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/nest-apt/nest-apt-1.jpg',
-        imageUrlDesktop: 'assets/images/nest-apt/nest-apt-1.jpg',
-        imageMobileUrl: 'assets/images/nest-apt/nest-apt-1.jpg',
-        projectUrl: 'nest-apt.html',
-        desc: 'Nest is an architectural visualization project RDVS delivered in 2014, producing exterior renders of an apartment block under construction in Accra, showing its white modern facade, balconies and ground-floor parking from two street-facing angles.',
-        specs: {
-          client: 'Private Client',
-          scope: 'RDVS delivered 3D architectural visualization: modeling the apartment block and its street setting and producing the two exterior rendered views.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'nest-apt-plate2',
-        title: 'Nest',
-        category: 'Architectural Visualization — 2014',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/nest-apt/nest-apt-2.jpg',
-        imageUrlDesktop: 'assets/images/nest-apt/nest-apt-2.jpg',
-        imageMobileUrl: 'assets/images/nest-apt/nest-apt-2.jpg',
-        projectUrl: 'nest-apt.html',
-        desc: 'Nest is an architectural visualization project RDVS delivered in 2014, producing exterior renders of an apartment block under construction in Accra, showing its white modern facade, balconies and ground-floor parking from two street-facing angles.',
-        specs: {
-          client: 'Private Client',
-          scope: 'RDVS delivered 3D architectural visualization: modeling the apartment block and its street setting and producing the two exterior rendered views.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'ndaba-restaurant-whm-plate1',
-        title: 'Ndaba Restaurant, WHM',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1.jpg',
-        imageUrlDesktop: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1.jpg',
-        imageMobileUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-1.jpg',
-        projectUrl: 'ndaba-restaurant-whm.html',
-        desc: '',
-        specs: {
-          client: 'Architect Emmanuel Ampaabeng',
-          scope: '3D Visualization, Modelling, Texturing, Rendering & Post-Processing (interior design by Architect Emmanuel Ampaabeng)',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2014',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'ndaba-restaurant-whm-plate2',
-        title: 'Ndaba Restaurant, WHM',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-4.jpg',
-        imageUrlDesktop: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-4.jpg',
-        imageMobileUrl: 'assets/images/ndaba-restaurant-whm/ndaba-restaurant-whm-4.jpg',
-        projectUrl: 'ndaba-restaurant-whm.html',
-        desc: '',
-        specs: {
-          client: 'Architect Emmanuel Ampaabeng',
-          scope: '3D Visualization, Modelling, Texturing, Rendering & Post-Processing (interior design by Architect Emmanuel Ampaabeng)',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2014',
-          disciplines: '[\'3D Visualization\']'
         }
       },
       {
@@ -5313,44 +3811,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'maurice-abena-plate1',
-        title: 'Maurice + Abena',
-        category: 'Graphic Design — 2013',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/maurice-abena/maurice-abena-1.jpg',
-        imageUrlDesktop: 'assets/images/maurice-abena/maurice-abena-1.jpg',
-        imageMobileUrl: 'assets/images/maurice-abena/maurice-abena-1.jpg',
-        projectUrl: 'maurice-abena.html',
-        desc: 'Wedding invitation and programme for Maurice Abbey and Abena Asante, built on a script logotype drawn from scratch and a pair of gold bands knotted onto a length of rope.',
-        specs: {
-          client: 'Maurice Abbey & Abena Asante',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'Randy Biney',
-          year: '2013',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'maurice-abena-plate2',
-        title: 'Maurice + Abena',
-        category: 'Graphic Design — 2013',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/maurice-abena/maurice-abena-2.jpg',
-        imageUrlDesktop: 'assets/images/maurice-abena/maurice-abena-2.jpg',
-        imageMobileUrl: 'assets/images/maurice-abena/maurice-abena-2.jpg',
-        projectUrl: 'maurice-abena.html',
-        desc: 'Wedding invitation and programme for Maurice Abbey and Abena Asante, built on a script logotype drawn from scratch and a pair of gold bands knotted onto a length of rope.',
-        specs: {
-          client: 'Maurice Abbey & Abena Asante',
-          scope: 'Graphic Design, Illustration, Digital Art & Print',
-          team: 'Randy Biney',
-          year: '2013',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'marble-bath-plate1',
         title: 'Marble & Bath',
         category: '3D Visualization — 2015',
@@ -5386,120 +3846,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'R.D+V.S (Revival Design + VFX Studios)',
           year: '2015',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'map-folder-design-plate1',
-        title: 'MAP',
-        category: 'Graphic Design — 2012',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/map-folder-design/map-folder-design-1.jpg',
-        imageUrlDesktop: 'assets/images/map-folder-design/map-folder-design-1.jpg',
-        imageMobileUrl: 'assets/images/map-folder-design/map-folder-design-1.jpg',
-        projectUrl: 'map-folder-design.html',
-        desc: 'A 2012 graphic design job for MAP: RDVS Studios took the company s logo apart and rebuilt it as an A5 folder for inserts, presenting three fully resolved options, each laid out on its own grey presentation board.',
-        specs: {
-          client: 'MAP',
-          scope: 'Print and packaging design: three deconstructed-logo concepts for an A5 insert folder, each resolved as a presentation board with its own construction formula.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'map-folder-design-plate2',
-        title: 'MAP',
-        category: 'Graphic Design — 2012',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/map-folder-design/map-folder-design-2.jpg',
-        imageUrlDesktop: 'assets/images/map-folder-design/map-folder-design-2.jpg',
-        imageMobileUrl: 'assets/images/map-folder-design/map-folder-design-2.jpg',
-        projectUrl: 'map-folder-design.html',
-        desc: 'A 2012 graphic design job for MAP: RDVS Studios took the company s logo apart and rebuilt it as an A5 folder for inserts, presenting three fully resolved options, each laid out on its own grey presentation board.',
-        specs: {
-          client: 'MAP',
-          scope: 'Print and packaging design: three deconstructed-logo concepts for an A5 insert folder, each resolved as a presentation board with its own construction formula.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'map-folder-design-plate3',
-        title: 'MAP',
-        category: 'Graphic Design — 2012',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/map-folder-design/map-folder-design-3.jpg',
-        imageUrlDesktop: 'assets/images/map-folder-design/map-folder-design-3.jpg',
-        imageMobileUrl: 'assets/images/map-folder-design/map-folder-design-3.jpg',
-        projectUrl: 'map-folder-design.html',
-        desc: 'A 2012 graphic design job for MAP: RDVS Studios took the company s logo apart and rebuilt it as an A5 folder for inserts, presenting three fully resolved options, each laid out on its own grey presentation board.',
-        specs: {
-          client: 'MAP',
-          scope: 'Print and packaging design: three deconstructed-logo concepts for an A5 insert folder, each resolved as a presentation board with its own construction formula.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'mankata-plate1',
-        title: 'Mankata',
-        category: 'Architectural Visualization — 2012',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/mankata/mankata-1.jpg',
-        imageUrlDesktop: 'assets/images/mankata/mankata-1.jpg',
-        imageMobileUrl: 'assets/images/mankata/mankata-1.jpg',
-        projectUrl: 'mankata.html',
-        desc: 'A single exterior visualization made in 2012 for Mankata Apartments in Accra, a late afternoon view across the lawn at a white residential block with a glazed entrance portal, with architecture by Arch Xenu and 3D visualization by RDVS Studio.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Exterior 3D visualization: camera and composition studies, material and colour assignment, daylight setup and one finished marketing render.',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'lase-icon-plate1',
-        title: 'Lase',
-        category: 'Art — 2014',
-        service: 'Art',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/lase-icon/lase-icon-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/lase-icon/lase-icon-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/lase-icon/lase-icon-1-desktop.jpg',
-        projectUrl: 'lase-icon.html',
-        desc: 'An icon for Lase, a piece of software: a point-of-sale terminal drawn as one glossy 3D illustration and produced in two colourways.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: 'Icon & Logo Design, Digital Illustration',
-          team: 'Kofi Tetteh (Concept + Design)',
-          year: '2014',
-          disciplines: '[\'Art\']'
-        }
-      },
-      {
-        id: 'lase-icon-plate2',
-        title: 'Lase',
-        category: 'Art — 2014',
-        service: 'Art',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/lase-icon/lase-icon-1.jpg',
-        imageUrlDesktop: 'assets/images/lase-icon/lase-icon-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/lase-icon/lase-icon-1-desktop.jpg',
-        projectUrl: 'lase-icon.html',
-        desc: 'An icon for Lase, a piece of software: a point-of-sale terminal drawn as one glossy 3D illustration and produced in two colourways.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: 'Icon & Logo Design, Digital Illustration',
-          team: 'Kofi Tetteh (Concept + Design)',
-          year: '2014',
-          disciplines: '[\'Art\']'
         }
       },
       {
@@ -5560,63 +3906,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'jhk-investment-plate1',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-1.jpg',
-        imageUrlDesktop: 'assets/images/jhk-investment/jhk-investment-1.jpg',
-        imageMobileUrl: 'assets/images/jhk-investment/jhk-investment-1.jpg',
-        projectUrl: 'jhk-investment.html',
-        desc: 'JHK is an architectural visualization project RDVS produced in 2011 for JHK Investments, presenting several modern one- and two-storey houses through exterior renders that model, texture and light the homes and their landscaped gardens.',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'RDVS delivered 3D architectural visualization only: modeling, texturing, lighting, rendering and post-production of the exterior images, using SketchUp, V-Ray and Photoshop.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'jhk-investment-plate2',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-2.jpg',
-        imageUrlDesktop: 'assets/images/jhk-investment/jhk-investment-2.jpg',
-        imageMobileUrl: 'assets/images/jhk-investment/jhk-investment-2.jpg',
-        projectUrl: 'jhk-investment.html',
-        desc: 'JHK is an architectural visualization project RDVS produced in 2011 for JHK Investments, presenting several modern one- and two-storey houses through exterior renders that model, texture and light the homes and their landscaped gardens.',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'RDVS delivered 3D architectural visualization only: modeling, texturing, lighting, rendering and post-production of the exterior images, using SketchUp, V-Ray and Photoshop.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'jhk-investment-plate3',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
-        imageUrlDesktop: 'assets/images/jhk-investment/jhk-investment-3.jpg',
-        imageMobileUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
-        projectUrl: 'jhk-investment.html',
-        desc: 'JHK is an architectural visualization project RDVS produced in 2011 for JHK Investments, presenting several modern one- and two-storey houses through exterior renders that model, texture and light the homes and their landscaped gardens.',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'RDVS delivered 3D architectural visualization only: modeling, texturing, lighting, rendering and post-production of the exterior images, using SketchUp, V-Ray and Photoshop.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'hvl-plate1',
         title: 'HVL',
         category: 'Graphic Design — 2011',
@@ -5651,82 +3940,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Brochure design and layout: cover and typographic identity, photograph selection and placement, and the typesetting of the services, facilities, rooms and location columns.',
           team: 'RDVS. DESIGN',
           year: '2011',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'haustalks-plate1',
-        title: 'Haustalks',
-        category: 'Graphic Design — 2019',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/haustalks/haustalks-1.jpg',
-        imageUrlDesktop: 'assets/images/haustalks/haustalks-1.jpg',
-        imageMobileUrl: 'assets/images/haustalks/haustalks-1.jpg',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that connects a client with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and of stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity, Graphic Design & 3D Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'haustalks-plate2',
-        title: 'Haustalks',
-        category: 'Graphic Design — 2019',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/haustalks/haustalks-2.jpg',
-        imageUrlDesktop: 'assets/images/haustalks/haustalks-2.jpg',
-        imageMobileUrl: 'assets/images/haustalks/haustalks-2.jpg',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that connects a client with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and of stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity, Graphic Design & 3D Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'ghana-bbq-beer-festival-plate1',
-        title: 'Ghana BBQ & Beer Festival',
-        category: 'Graphic Design — 2017',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-1.jpg',
-        imageUrlDesktop: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-1.jpg',
-        imageMobileUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-1.jpg',
-        projectUrl: 'ghana-bbq-beer-festival.html',
-        desc: 'Event poster for a barbecue and beer festival at Bermuda Gardens, Accra — a mustard A4 sheet torn open onto a white-lined street plan, with the title set in a face whose letters are themselves torn.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Graphic Design & Digital Art',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'ghana-bbq-beer-festival-plate2',
-        title: 'Ghana BBQ & Beer Festival',
-        category: 'Graphic Design — 2017',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-2.jpg',
-        imageUrlDesktop: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-2.jpg',
-        imageMobileUrl: 'assets/images/ghana-bbq-beer-festival/ghana-bbq-beer-festival-2.jpg',
-        projectUrl: 'ghana-bbq-beer-festival.html',
-        desc: 'Event poster for a barbecue and beer festival at Bermuda Gardens, Accra — a mustard A4 sheet torn open onto a white-lined street plan, with the title set in a face whose letters are themselves torn.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Graphic Design & Digital Art',
-          team: 'RDVS Team',
-          year: '2017',
           disciplines: '[\'Graphic Design\']'
         }
       },
@@ -5826,63 +4039,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'elo-identity-plate1',
-        title: 'ELO Identity',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/elo-identity/elo-identity-6.jpg',
-        imageUrlDesktop: 'assets/images/elo-identity/elo-identity-6.jpg',
-        imageMobileUrl: 'assets/images/elo-identity/elo-identity-6.jpg',
-        projectUrl: 'elo-identity.html',
-        desc: 'A full graphic and brand identity for the Exceed League Organisation, delivered by RDVS. Design in 2015: logotype and concept plates, a colour and type system, business card, letterhead and a desktop wallpaper.',
-        specs: {
-          client: 'Exceed League Organisation',
-          scope: 'Identity design: concept development, logotype and lockup variations, colour palette and corporate typeface specification, business card design with colour variants, letterhead, and a branded desktop wallpaper.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'elo-identity-plate2',
-        title: 'ELO Identity',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/elo-identity/elo-identity-1.jpg',
-        imageUrlDesktop: 'assets/images/elo-identity/elo-identity-1.jpg',
-        imageMobileUrl: 'assets/images/elo-identity/elo-identity-1.jpg',
-        projectUrl: 'elo-identity.html',
-        desc: 'A full graphic and brand identity for the Exceed League Organisation, delivered by RDVS. Design in 2015: logotype and concept plates, a colour and type system, business card, letterhead and a desktop wallpaper.',
-        specs: {
-          client: 'Exceed League Organisation',
-          scope: 'Identity design: concept development, logotype and lockup variations, colour palette and corporate typeface specification, business card design with colour variants, letterhead, and a branded desktop wallpaper.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'elo-identity-plate3',
-        title: 'ELO Identity',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/elo-identity/elo-identity-2.jpg',
-        imageUrlDesktop: 'assets/images/elo-identity/elo-identity-2.jpg',
-        imageMobileUrl: 'assets/images/elo-identity/elo-identity-2.jpg',
-        projectUrl: 'elo-identity.html',
-        desc: 'A full graphic and brand identity for the Exceed League Organisation, delivered by RDVS. Design in 2015: logotype and concept plates, a colour and type system, business card, letterhead and a desktop wallpaper.',
-        specs: {
-          client: 'Exceed League Organisation',
-          scope: 'Identity design: concept development, logotype and lockup variations, colour palette and corporate typeface specification, business card design with colour variants, letterhead, and a branded desktop wallpaper.',
-          team: 'RDVS. DESIGN',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'drw-furnart-plate1',
         title: 'DRW Furnart',
         category: '3D Visualization — 2016',
@@ -5918,6 +4074,63 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Kuukuwa Manful & Emmanuel Sarpong (furniture design, DRW); RDVS (3D visualization)',
           year: '2016',
           disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'design-express',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-1.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-1.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-1.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'Five product visualizations from 2012 for Design Express: a wardrobe, a low sideboard, a shelving cabinet, a drawer unit and a four-seat bench desk, each rendered on a seamless white ground.',
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of a furniture collection: five renders — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk.',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: '[\'Product Visualization\']'
+        }
+      },
+      {
+        id: 'design-express-plate1',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-2.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-2.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-2.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'Five product visualizations from 2012 for Design Express: a wardrobe, a low sideboard, a shelving cabinet, a drawer unit and a four-seat bench desk, each rendered on a seamless white ground.',
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of a furniture collection: five renders — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk.',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: '[\'Product Visualization\']'
+        }
+      },
+      {
+        id: 'design-express-plate2',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-3.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-3.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-3.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'Five product visualizations from 2012 for Design Express: a wardrobe, a low sideboard, a shelving cabinet, a drawer unit and a four-seat bench desk, each rendered on a seamless white ground.',
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of a furniture collection: five renders — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk.',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: '[\'Product Visualization\']'
         }
       },
       {
@@ -5997,44 +4210,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'daawat-sweets-plate1',
-        title: 'Daawat Sweets',
-        category: 'Architectural Visualization — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/daawat-sweets/daawat-sweets-1.jpg',
-        imageUrlDesktop: 'assets/images/daawat-sweets/daawat-sweets-1.jpg',
-        imageMobileUrl: 'assets/images/daawat-sweets/daawat-sweets-1.jpg',
-        projectUrl: 'daawat-sweets.html',
-        desc: 'Two interior visualizations from 2013 for Daawat Sweets, a sweet shop in Brampton, Ontario, Canada, showing the counter and refrigerated display-case hall, produced by RDVS as 3D renders for an interior design led by other studios.',
-        specs: {
-          client: 'Daawat Sweets',
-          scope: 'Photorealistic 3D interior visualization of the shop counter and display-case areas.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'daawat-sweets-plate2',
-        title: 'Daawat Sweets',
-        category: 'Architectural Visualization — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/daawat-sweets/daawat-sweets-2.jpg',
-        imageUrlDesktop: 'assets/images/daawat-sweets/daawat-sweets-2.jpg',
-        imageMobileUrl: 'assets/images/daawat-sweets/daawat-sweets-2.jpg',
-        projectUrl: 'daawat-sweets.html',
-        desc: 'Two interior visualizations from 2013 for Daawat Sweets, a sweet shop in Brampton, Ontario, Canada, showing the counter and refrigerated display-case hall, produced by RDVS as 3D renders for an interior design led by other studios.',
-        specs: {
-          client: 'Daawat Sweets',
-          scope: 'Photorealistic 3D interior visualization of the shop counter and display-case areas.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'la-palm-2008-christmas-party-posters-plate1',
         title: 'La Palm 2008 Christmas Party Poster',
         category: 'Graphic Design & Illustration — 2008',
@@ -6051,82 +4226,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Studios',
           year: '2008',
           disciplines: '[\'Graphic Design & Illustration\']'
-        }
-      },
-      {
-        id: 'college-invasion-plate1',
-        title: 'College Invasion',
-        category: 'Graphic Design — 2009',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/college-invasion/college-invasion-1.jpg',
-        imageUrlDesktop: 'assets/images/college-invasion/college-invasion-1.jpg',
-        imageMobileUrl: 'assets/images/college-invasion/college-invasion-1.jpg',
-        projectUrl: 'college-invasion.html',
-        desc: 'A single event poster designed in 2009 for Lockd Down Entertainment, promoting the College Invasion party at the Mirage Club in Osu, Accra, combining graphic design, illustration and typography for a youth nightlife promotion.',
-        specs: {
-          client: 'Lockd Down Entertainment',
-          scope: 'Poster design and artwork preparation for a single nightlife event promotion.',
-          team: 'RDVS. DESIGN',
-          year: '2009',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'clairemont-plate1',
-        title: 'Clairemont',
-        category: 'Architectural Visualization & Graphic Design — 2011',
-        service: 'Architectural Visualization & Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/clairemont/clairemont-1.jpg',
-        imageUrlDesktop: 'assets/images/clairemont/clairemont-1.jpg',
-        imageMobileUrl: 'assets/images/clairemont/clairemont-1.jpg',
-        projectUrl: 'clairemont.html',
-        desc: 'A seventeen-plate brochure RDVS. Design created in 2011 for an architecture firm marketing Clairemont, a contemporary apartment development in Accra, blending graphic design, wayfinding maps and furnished floor plans with architectural visualization renders.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Brochure design and layout, location map illustration, furnished floor plan presentation and architectural visualization for the Clairemont apartment development.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization   Graphic Design\']'
-        }
-      },
-      {
-        id: 'clairemont-plate2',
-        title: 'Clairemont',
-        category: 'Architectural Visualization & Graphic Design — 2011',
-        service: 'Architectural Visualization & Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/clairemont/clairemont-2.jpg',
-        imageUrlDesktop: 'assets/images/clairemont/clairemont-2.jpg',
-        imageMobileUrl: 'assets/images/clairemont/clairemont-2.jpg',
-        projectUrl: 'clairemont.html',
-        desc: 'A seventeen-plate brochure RDVS. Design created in 2011 for an architecture firm marketing Clairemont, a contemporary apartment development in Accra, blending graphic design, wayfinding maps and furnished floor plans with architectural visualization renders.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Brochure design and layout, location map illustration, furnished floor plan presentation and architectural visualization for the Clairemont apartment development.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization   Graphic Design\']'
-        }
-      },
-      {
-        id: 'clairemont-plate3',
-        title: 'Clairemont',
-        category: 'Architectural Visualization & Graphic Design — 2011',
-        service: 'Architectural Visualization & Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/clairemont/clairemont-3.jpg',
-        imageUrlDesktop: 'assets/images/clairemont/clairemont-3.jpg',
-        imageMobileUrl: 'assets/images/clairemont/clairemont-3.jpg',
-        projectUrl: 'clairemont.html',
-        desc: 'A seventeen-plate brochure RDVS. Design created in 2011 for an architecture firm marketing Clairemont, a contemporary apartment development in Accra, blending graphic design, wayfinding maps and furnished floor plans with architectural visualization renders.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Brochure design and layout, location map illustration, furnished floor plan presentation and architectural visualization for the Clairemont apartment development.',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: '[\'Architectural Visualization   Graphic Design\']'
         }
       },
       {
@@ -6165,25 +4264,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'beautiful-choices-anim-plate1',
-        title: 'Beautiful Choices',
-        category: '3D Visualization — 2014',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageUrlDesktop: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        imageMobileUrl: 'assets/images/beautiful-choices/beautiful-choices-1.jpg',
-        projectUrl: 'beautiful-choices.html',
-        desc: 'Rendering and animation for a poster series designed by Dela Anyaa — five colourways of the same sheet modelled as printed panels and fanned through a seamless white set.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: '3D Modelling, Animation, Rendering, Post Processing & Compositing',
-          team: 'Concept: Dela Anyaa | Modelling + Animation + Rendering: Jude Nyoagbe | Post Processing + Compositing: Randy Biney',
-          year: '2014',
-          disciplines: '[\'3D Visualization\']'
         }
       },
       {
@@ -6358,63 +4438,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'adolph-s-wedding-invite-plate1',
-        title: 'Adolph\'s Wedding Invite',
-        category: 'Graphic Design — 2018',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg',
-        imageUrlDesktop: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg',
-        imageMobileUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-1.jpg',
-        projectUrl: 'adolph-s-wedding-invite.html',
-        desc: 'Wedding invitation for Adolph Kwabla Amevor and Theresah Korkor Boatey, built on one device — the couple\'s initials joined into a single stacked letterform and cut in gold over washed white lilies.',
-        specs: {
-          client: 'Adolph Kwabla Amevor & Theresah Korkor Boatey',
-          scope: 'Graphic Design, Lettering & Print',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'adolph-s-wedding-invite-plate2',
-        title: 'Adolph\'s Wedding Invite',
-        category: 'Graphic Design — 2018',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-2.jpg',
-        imageUrlDesktop: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-2.jpg',
-        imageMobileUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-2.jpg',
-        projectUrl: 'adolph-s-wedding-invite.html',
-        desc: 'Wedding invitation for Adolph Kwabla Amevor and Theresah Korkor Boatey, built on one device — the couple\'s initials joined into a single stacked letterform and cut in gold over washed white lilies.',
-        specs: {
-          client: 'Adolph Kwabla Amevor & Theresah Korkor Boatey',
-          scope: 'Graphic Design, Lettering & Print',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'adolph-s-wedding-invite-plate3',
-        title: 'Adolph\'s Wedding Invite',
-        category: 'Graphic Design — 2018',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-3.jpg',
-        imageUrlDesktop: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-3.jpg',
-        imageMobileUrl: 'assets/images/adolph-s-wedding-invite/adolph-s-wedding-invite-3.jpg',
-        projectUrl: 'adolph-s-wedding-invite.html',
-        desc: 'Wedding invitation for Adolph Kwabla Amevor and Theresah Korkor Boatey, built on one device — the couple\'s initials joined into a single stacked letterform and cut in gold over washed white lilies.',
-        specs: {
-          client: 'Adolph Kwabla Amevor & Theresah Korkor Boatey',
-          scope: 'Graphic Design, Lettering & Print',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'aces-re-up-plate1',
         title: 'Aces Re-Up',
         category: 'Graphic Design — 2013',
@@ -6509,6 +4532,29 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'3D Visualization\']'
         }
       },
+      {
+        id: 'protea-hotel-airport',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/protea-hotel-airport-1.jpg',
+        imageUrlDesktop: 'assets/images/protea-hotel-airport/protea-hotel-airport-1.jpg',
+        imageMobileUrl: 'assets/images/protea-hotel-airport/protea-hotel-airport-1.jpg',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'e-zone',
+        title: 'E-Zone',
+        category: 'Graphic Design — 2012',
+        service: 'Graphic Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/e-zone/e-zone-1.jpg',
+        imageUrlDesktop: 'assets/images/e-zone/e-zone-1.jpg',
+        imageMobileUrl: 'assets/images/e-zone/e-zone-1.jpg',
+        projectUrl: 'e-zone.html'
+      }
+
 
     ]
   },
@@ -6583,28 +4629,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'viasat1-titles-motion',
-        title: 'Viasat1 Breakfast Show',
-        category: 'Graphic Design & Motion Design — 2013',
-        service: 'Graphic Design & Motion Design',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/viasat1-breakfast-show/viasat1-titles.mp4',
-        videoUrlDesktop: 'assets/videos/viasat1-breakfast-show/viasat1-titles.mp4',
-        videoMobileUrl: 'assets/videos/viasat1-breakfast-show/viasat1-titles-mobile.mp4',
-        imageUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        imageUrlDesktop: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        imageMobileUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        projectUrl: 'viasat1-breakfast-show.html',
-        desc: 'Vibrant morning broadcast identity package featuring 3D graphic ribbons, geometric layout transitions, and dynamic typography.',
-        specs: {
-          client: 'Viasat 1',
-          scope: 'Concept and identity design for the programme, covering logotype, colour palette, typeface specification, on-screen graphics and idents, and a storyboarded animated opening sequence.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: ['Motion Design', 'Broadcast Packaging']
-        }
-      },
-      {
         id: 'jm-spots',
         title: 'J&M Spots',
         category: '3D Visualization — 2015',
@@ -6673,27 +4697,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'3D Visualization\']'
         }
       },
-      {
-        id: 'emerge-ident-film',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/emerge-ident/emerge-showreel.mp4',
-        videoUrlDesktop: 'assets/videos/emerge-ident/emerge-showreel.mp4',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'A 3D animated showreel for Emerge Co. Ltd \\u2014 goldfish leap out of a bowl on white, each jump carrying an orange service heading after it: Clientele, Production, Events, Advertising.',
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Concept, 3D Animation & Motion Design',
-          team: 'RDVS Studios',
-          year: '2015',
-          disciplines: '[\'3D Animation\']'
-        }
-      },
+
       {
         id: 'ceeander-motion-film',
         title: 'Ceeander Ident',
@@ -6776,26 +4780,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
     ],
     images: [
-      {
-        id: 'emerge-ident',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'A 3D animated showreel for Emerge Co. Ltd \u2014 goldfish leap out of a bowl on white, each jump carrying an orange service heading after it: Clientele, Production, Events, Advertising.',
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Concept, 3D Animation & Motion Design',
-          team: 'RDVS Studios',
-          location: 'Accra, Ghana',
-          year: '2015',
-          disciplines: ['Motion Design', '3D Animation']
-        }
-      },
+
       {
         id: 'elo-tv',
         title: 'ELO TV',
@@ -6835,44 +4820,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'viasat1-titles-motion-plate1',
-        title: 'Viasat1 Breakfast Show',
-        category: 'Graphic Design & Motion Design — 2013',
-        service: 'Graphic Design & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        imageUrlDesktop: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        imageMobileUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-1.jpg',
-        projectUrl: 'viasat1-breakfast-show.html',
-        desc: 'Vibrant morning broadcast identity package featuring 3D graphic ribbons, geometric layout transitions, and dynamic typography.',
-        specs: {
-          client: 'Viasat 1',
-          scope: 'Concept and identity design for the programme, covering logotype, colour palette, typeface specification, on-screen graphics and idents, and a storyboarded animated opening sequence.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Graphic Design   Motion Design\']'
-        }
-      },
-      {
-        id: 'viasat1-titles-motion-plate2',
-        title: 'Viasat1 Breakfast Show',
-        category: 'Graphic Design & Motion Design — 2013',
-        service: 'Graphic Design & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-2.jpg',
-        imageUrlDesktop: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-2.jpg',
-        imageMobileUrl: 'assets/images/viasat1-breakfast-show/viasat1-breakfast-show-2.jpg',
-        projectUrl: 'viasat1-breakfast-show.html',
-        desc: 'Vibrant morning broadcast identity package featuring 3D graphic ribbons, geometric layout transitions, and dynamic typography.',
-        specs: {
-          client: 'Viasat 1',
-          scope: 'Concept and identity design for the programme, covering logotype, colour palette, typeface specification, on-screen graphics and idents, and a storyboarded animated opening sequence.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Graphic Design   Motion Design\']'
-        }
-      },
-      {
         id: 'trumpet-africa-motion-plate1',
         title: 'Trumpet Africa Productions Ident',
         category: 'Broadcast — 2014',
@@ -6889,82 +4836,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'Broadcast\']'
-        }
-      },
-      {
-        id: 'tedxharambee-plate1',
-        title: 'TEDxHarambee',
-        category: 'Motion Design — 2013',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/tedxharambee/tedxharambee-poster.jpg',
-        imageUrlDesktop: 'assets/images/tedxharambee/tedxharambee-poster.jpg',
-        imageMobileUrl: 'assets/images/tedxharambee/tedxharambee-poster.jpg',
-        projectUrl: 'tedxharambee.html',
-        desc: 'An eight-frame motion design intro made for TEDxHarambee, the event dated 4th November 2010 on screen: black titles, red and white event typography, speaker cards and sponsor billboards, all cut by a turning metal gear.',
-        specs: {
-          client: 'TEDxHarambee',
-          scope: 'Motion design for the event intro film: titles, time and date cards, speaker cards and sponsor billboards.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'tedxharambee-plate2',
-        title: 'TEDxHarambee',
-        category: 'Motion Design — 2013',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/tedxharambee/tedxharambee-1.jpg',
-        imageUrlDesktop: 'assets/images/tedxharambee/tedxharambee-1.jpg',
-        imageMobileUrl: 'assets/images/tedxharambee/tedxharambee-1.jpg',
-        projectUrl: 'tedxharambee.html',
-        desc: 'An eight-frame motion design intro made for TEDxHarambee, the event dated 4th November 2010 on screen: black titles, red and white event typography, speaker cards and sponsor billboards, all cut by a turning metal gear.',
-        specs: {
-          client: 'TEDxHarambee',
-          scope: 'Motion design for the event intro film: titles, time and date cards, speaker cards and sponsor billboards.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'tedxharambee-plate3',
-        title: 'TEDxHarambee',
-        category: 'Motion Design — 2013',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/tedxharambee/tedxharambee-2.jpg',
-        imageUrlDesktop: 'assets/images/tedxharambee/tedxharambee-2.jpg',
-        imageMobileUrl: 'assets/images/tedxharambee/tedxharambee-2.jpg',
-        projectUrl: 'tedxharambee.html',
-        desc: 'An eight-frame motion design intro made for TEDxHarambee, the event dated 4th November 2010 on screen: black titles, red and white event typography, speaker cards and sponsor billboards, all cut by a turning metal gear.',
-        specs: {
-          client: 'TEDxHarambee',
-          scope: 'Motion design for the event intro film: titles, time and date cards, speaker cards and sponsor billboards.',
-          team: 'RDVS. DESIGN',
-          year: '2013',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'rdvs-ident-plate1',
-        title: 'RDVS Ident',
-        category: 'Motion Design — 2010',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/rdvs-ident/rdvs-ident-poster.jpg',
-        imageUrlDesktop: 'assets/images/rdvs-ident/rdvs-ident-poster.jpg',
-        imageMobileUrl: 'assets/images/rdvs-ident/rdvs-ident-poster.jpg',
-        projectUrl: 'rdvs-ident.html',
-        desc: 'RDVS Ident is the studio s first After Effects experiment   a 2010 motion piece that animates the running-figure mark over a blue gradient field, made as an in-house study rather than for a client.',
-        specs: {
-          client: 'RDVS Studios',
-          scope: 'Self-initiated motion design and animation: logo build, type animation and render of a studio ident.',
-          team: 'RDVS. DESIGN',
-          year: '2010',
-          disciplines: '[\'Motion Design\']'
         }
       },
       {
@@ -7081,25 +4952,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'Graphic Design\']'
         }
       },
-      {
-        id: 'emerge-ident-plate1',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-01.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-01.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-01.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'A 3D animated showreel for Emerge Co. Ltd \\u2014 goldfish leap out of a bowl on white, each jump carrying an orange service heading after it: Clientele, Production, Events, Advertising.',
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Concept, 3D Animation & Motion Design',
-          team: 'RDVS Studios',
-          year: '2015',
-          disciplines: '[\'3D Animation\']'
-        }
-      },
+
       {
         id: 'elo-tv-plate1',
         title: 'ELO TV',
@@ -7135,63 +4988,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Graphic Design & Motion Design (Brand Identity, Stationery & Broadcast Ident)',
           team: 'RDVS Team',
           year: '2015',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'elo-conference-plate1',
-        title: 'ELO Conference',
-        category: 'Motion Design — 2014',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/elo-conference/elo-conference-poster.jpg',
-        imageUrlDesktop: 'assets/images/elo-conference/elo-conference-poster.jpg',
-        imageMobileUrl: 'assets/images/elo-conference/elo-conference-poster.jpg',
-        projectUrl: 'elo-conference.html',
-        desc: 'A 2014 motion design piece for ELO, the ExceedLeague Organisation: a web advertisement for the Mission Possible conference built from a chrome logo reveal, blue particle bursts and a rotating wireframe globe carrying speaker captions.',
-        specs: {
-          client: 'ELO',
-          scope: 'Motion design and animation for the conference web advertisement, covering the logo reveal, particle effects, globe sequence, speaker captions and end card.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'elo-conference-plate2',
-        title: 'ELO Conference',
-        category: 'Motion Design — 2014',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/elo-conference/elo-conference-1.jpg',
-        imageUrlDesktop: 'assets/images/elo-conference/elo-conference-1.jpg',
-        imageMobileUrl: 'assets/images/elo-conference/elo-conference-1.jpg',
-        projectUrl: 'elo-conference.html',
-        desc: 'A 2014 motion design piece for ELO, the ExceedLeague Organisation: a web advertisement for the Mission Possible conference built from a chrome logo reveal, blue particle bursts and a rotating wireframe globe carrying speaker captions.',
-        specs: {
-          client: 'ELO',
-          scope: 'Motion design and animation for the conference web advertisement, covering the logo reveal, particle effects, globe sequence, speaker captions and end card.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Motion Design\']'
-        }
-      },
-      {
-        id: 'elo-conference-plate3',
-        title: 'ELO Conference',
-        category: 'Motion Design — 2014',
-        service: 'Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/elo-conference/elo-conference-2.jpg',
-        imageUrlDesktop: 'assets/images/elo-conference/elo-conference-2.jpg',
-        imageMobileUrl: 'assets/images/elo-conference/elo-conference-2.jpg',
-        projectUrl: 'elo-conference.html',
-        desc: 'A 2014 motion design piece for ELO, the ExceedLeague Organisation: a web advertisement for the Mission Possible conference built from a chrome logo reveal, blue particle bursts and a rotating wireframe globe carrying speaker captions.',
-        specs: {
-          client: 'ELO',
-          scope: 'Motion design and animation for the conference web advertisement, covering the logo reveal, particle effects, globe sequence, speaker captions and end card.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
           disciplines: '[\'Motion Design\']'
         }
       },

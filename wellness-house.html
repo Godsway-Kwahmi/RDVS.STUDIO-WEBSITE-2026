@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Wellness House &mdash; RDVS Studios</title>
+  <meta name="description" content="Wellness House - 2010 architectural design concept in Tema, Greater Accra, Ghana: a single-storey pavilion around a water courtyard under one deep overhanging roof, by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Architecture / Architectural Design &mdash; 2010 &middot; Private Client</span>
+      <h1 class="project-page-title">Wellness House</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/wellness-house/wellness-house-1.jpg" alt="Concept elevation of a single-storey pavilion at dusk: one deep flat roof on slender white columns shelters a white grid lattice screen, dark grey wall volumes and a stone-clad bay, with a red interior accent visible behind glazing and a glass balustrade with a timber handrail, beside an untextured white massing block." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Wellness House is a conceptual architectural design RDVS developed in 2010 for a site in Tema, Greater Accra: a low single-storey pavilion organized around a long water courtyard and shaded by one deep overhanging roof.</p>
+
+        <div class="project-body-text">
+          <p>The studio was its own client here. Wellness House began as an internal exploration rather than a commission, and it was posted to the blog on 26 August 2010 as a work in progress &mdash; a design still being worked on for a site in Tema, Greater Accra, and left open to comment: &ldquo;Still at the conceptual stage but we would want to know what you guys think.&rdquo; Every frame carries a large R.D+V.S PROGRESS watermark across the lower half and a black Wellness House block in the corner, marking the set as unfinished business offered for critique.</p>
+          <p>The plan is a single low volume under one flat roof that cantilevers well beyond its supports on slim white columns. Beneath that canopy the composition is built from contrasting planes: a white grid lattice screen that filters the approach, solid dark grey wall volumes, a bay faced in stacked stone and, at one end, a board-formed concrete wall. A saturated red volume sits behind the lattice and repeats inside, the only fully coloured element in an otherwise neutral palette.</p>
+          <p>Water does the organizing. A long reflecting pool runs through the courtyard, crossed by pale stepping pads and punctuated by two square concrete planters, so that moving through the house means walking between water and screen. Deep roof beams span overhead, glazed partitions keep the courts bright, and a colour-banded wall in red, green and yellow closes one walk, where a standing scale figure gives the sequence its human measure.</p>
+          <p>The four plates record the design at four different pitches of resolution: the front elevation at dusk, the water courtyard from inside, the same corner resolved by daylight with materials and colour in place, and finally the bare white massing model with nothing applied at all. Read together they show how the idea was tested &mdash; envelope first, then the screen and the red accent, then water, planting and light. No built work by this name appears later in the studio&rsquo;s record, so the set stands as the project&rsquo;s published outcome.</p>
+          <p>The project was published as <em>WELLNESS HOUSE | WIP</em>; the post is <a href="https://revivalgh.blogspot.com/2010/08/wellness-house-wip.html" target="_blank" rel="noopener noreferrer">on blogspot</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Tema, Greater Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2010</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Architecture</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architecture-planning">Architectural Design</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Conceptual architectural design of a single-storey pavilion for a site in Tema: massing, elevation and courtyard studies carried from a bare white model through to material, colour and lighting studies.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">RDVS. DESIGN</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">4 plates &middot; up to 1600 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1548" height="682" src="assets/images/wellness-house/wellness-house-1.jpg" alt="Concept elevation of a single-storey pavilion at dusk: one deep flat roof on slender white columns shelters a white grid lattice screen, dark grey wall volumes and a stone-clad bay, with a red interior accent visible behind glazing and a glass balustrade with a timber handrail, beside an untextured white massing block." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1600" height="1205" src="assets/images/wellness-house/wellness-house-2.jpg" alt="Interior courtyard study: a long reflecting pool with two square concrete planters and pale stepping pads runs between a stacked-stone wall and a white grid screen, deep roof beams span overhead, a glazed partition stands at the right and a colour-banded red, green and yellow wall closes the left walk where a scale figure stands." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1456" height="730" src="assets/images/wellness-house/wellness-house-3.jpg" alt="Corner perspective of the same pavilion by day: the deep overhanging roof on its exposed fascia, a bright red volume behind the white lattice screen, a board-formed concrete wall at the right, a dark grey portal with a single small window, and stepping pads leading to the entrance under a pale sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1128" height="646" src="assets/images/wellness-house/wellness-house-4.jpg" alt="Bare massing study: the same corner rendered as an untextured white model, showing only the roof plane, the supporting walls and the recessed volumes before any material, glazing or landscape was applied." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="stanchart-hq.html" class="project-nav-link">&larr; Previous: Stanchart HQ</a>
+      <a href="cal-bank-interiors.html" class="project-nav-link">Next: Cal Bank Interiors &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

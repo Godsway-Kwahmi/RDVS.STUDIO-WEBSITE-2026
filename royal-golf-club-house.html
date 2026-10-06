@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Royal Golf Club House &mdash; RDVS Studios</title>
+  <meta name="description" content="Royal Golf Club House - 2010 architectural visualization by RDVS Studios with Mawufemor Kwadjo of the refurbished golf club house in Kumasi, Ghana: a white two-storey volume on a colonnaded podium, opened onto the course by a spiral stair and a glass-balustraded terrace.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Hospitality / Architectural Visualization &mdash; 2010 &middot; Royal Golf Club</span>
+      <h1 class="project-page-title">Royal Golf Club House</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/royal-golf-club-house/royal-golf-club-house-1.jpg" alt="A low angle across the course at a two-storey white club house set on a raised stone podium: an open ground-floor colonnade of slender square columns runs along the left with dark glazing behind it and a strip of flowers at its base, and a white spiral stair rises to the terrace at the centre. Above, the upper volume is a plain white box with a long band of full-height glazing to the right and a recessed balcony behind a glass balustrade to the left, screened with warm timber slats. A dark stone wall patterned with pale zigzags and a slot of small square windows closes the right, palms and mature trees frame both ends under a clear blue sky, and a wide mown lawn fills the foreground with the sun flaring at the upper right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A single 2010 exterior visualization of the refurbished golf club house in Kumasi, made with Mawufemor Kwadjo: a white two-storey volume dropped onto a colonnaded podium, opened onto the course by a spiral stair and a glass-balustraded terrace.</p>
+
+        <div class="project-body-text">
+          <p>The studio published the frame on 20 May 2010 as <em>ROYAL GOLF CLUB HOUSE, KUMASI (GHANA)</em>, under a single line of text: that R.D+V.S <em>&ldquo;teamed up with Mawufemor Kwadjo to model and render the refurbished Golf Club House in Kumasi Ghana&rdquo;</em>. It is one of very few entries in the archive where the collaboration is on the visualization itself rather than a studio rendering somebody else&rsquo;s design &mdash; both parties are credited with the modelling and the rendering, and no architect is named at all. The post carries no labels.</p>
+          <p>What the refurbishment did, as far as this one view shows, was put a new box on an old base. The ground floor stays low and open, a colonnade of slender square white columns with dark glazing behind it, while the upper storey is a crisp white volume set back on top: a long band of full-height glazing along the right, and a recessed terrace behind a frameless glass balustrade on the left, screened to the weather with warm timber slats. The join between the two is made conspicuous rather than hidden, a white spiral stair rising in full view at the centre of the composition, doing the work of an ornament as much as a circulation.</p>
+          <p>The camera is set low and far, so the lawn of the course occupies the whole foreground and the building reads as a long, low object placed across it. A pale stone retaining wall runs the width of the podium, a strip of shrubs and flowers softens the base of the colonnade, and at the right a darker note is struck by a stone wall patterned with pale zigzags and pierced by a slot of small square windows. Palms and mature trees frame both ends against a cloudless sky, with the sun flaring in at the upper right.</p>
+          <p>The upload is named <em>exteriored3</em> &mdash; a third exterior edit &mdash; and the single frame is signed bottom-right with the studio&rsquo;s <em>the SEED. V.1.1 / 2010</em> series mark, www.rdvstudiosgh.com and the Revival Design + VFX Studios logo. The post is <a href="https://revivalgh.blogspot.com/2010/05/royal-golf-club-house-kumasi-ghana.html" target="_blank" rel="noopener noreferrer">on blogspot</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Royal Golf Club</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Kumasi, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2010</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Hospitality</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Architectural visualization: one exterior view of the refurbished club house, modelled and rendered jointly with Mawufemor Kwadjo.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">R.D+V.S with Mawufemor Kwadjo (modelling and rendering)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1030 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1030" height="701" src="assets/images/royal-golf-club-house/royal-golf-club-house-1.jpg" alt="A low angle across the course at a two-storey white club house set on a raised stone podium: an open ground-floor colonnade of slender square columns runs along the left with dark glazing behind it and a strip of flowers at its base, and a white spiral stair rises to the terrace at the centre. Above, the upper volume is a plain white box with a long band of full-height glazing to the right and a recessed balcony behind a glass balustrade to the left, screened with warm timber slats. A dark stone wall patterned with pale zigzags and a slot of small square windows closes the right, palms and mature trees frame both ends under a clear blue sky, and a wide mown lawn fills the foreground with the sun flaring at the upper right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="rdvs-ident.html" class="project-nav-link">&larr; Previous: RDVS Ident</a>
+      <a href="samsung-branding-proposal.html" class="project-nav-link">Next: Samsung Branding Proposal &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Somewhere in Gambia &mdash; RDVS Studios</title>
+  <meta name="description" content="Somewhere in Gambia - 2009 interior design and architectural visualization by RDVS Studios: the bedroom of an apartment to be built in Gambia, published as the second of two frames in a post that says the first was only for fun.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2009 &middot; Private Client</span>
+      <h1 class="project-page-title">Somewhere in Gambia</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/somewhere-in-gambia/somewhere-in-gambia-1.png" alt="A rendered bedroom in dark and silver. A low platform bed with a grey patterned cover and a striped throw runs across the centre, its headboard four large upholstered panels fixed onto a wider panel of pale damask wallpaper that fills the middle of the wall like a framed picture, the rest of that wall paneled floor to ceiling in dark timber. Two white paper lanterns hang on long drops either side of the bed instead of bedside lamps. At the left a pale pine unit combines open shelving stacked with folded linen, a hanging rail with white shirts and a bank of dark drawer fronts; at the right a matching pine desk carries an open laptop and a small chrome task lamp, with a tan leather chair on slim steel legs tucked under it, and a second tan lounge chair angles in near a window dressed with dark curtains. The floor is large glossy white tile and the ceiling is coffered with recessed spots. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">One bedroom rendered for an apartment the studio was designing for a client in Gambia, published on 1 July 2009 as the second of two frames in a post that says plainly that the first one was only for fun. The apartment was still to be built, and nothing later returns to it.</p>
+
+        <div class="project-body-text">
+          <p>The post is titled SPANKIN NEW RENDERINGS and its entire text is one line: &ldquo;The first one is for fun but the second one is part of the interiors we are doing for an apartment to be built in Gambia.&rdquo; It went up on 1 July 2009 and was revised the same morning. Unusually for the studio&rsquo;s 2009 output it carries labels &mdash; <em>3d visualization, architecture, portfolio, sketchup, v ray</em> &mdash; which is where the Software row comes from. The prose itself names no client, no designer, no city and no piece of software.</p>
+          <p>Two frames were published and one is plated, because the post separates them. The first is a living room at 700 by 374, and the studio calls it a diversion &mdash; something done &ldquo;for fun&rdquo;. This frame is the one it attributes to the Gambia apartment. Putting both on one project page would claim a living room the source explicitly says is not part of the job, so the other frame is left out and named here instead.</p>
+          <p>The room is built on a dark-and-silver palette. A low platform bed sits against a headboard of four large upholstered panels, fixed onto a wider panel of pale damask wallpaper that fills the middle of the wall like a framed picture, with dark timber-look panelling running floor to ceiling around it. Two white paper lanterns hang on long drops either side in place of bedside lamps. A pale pine unit at the left combines open shelving stacked with folded linen, a hanging rail with shirts and a bank of dark drawer fronts; at the right a matching pine desk carries an open laptop and a small chrome task lamp, with a tan leather chair on slim steel legs tucked under it and a second tan lounge chair angling in near the window. The floor is large glossy white tile and the ceiling is coffered with recessed spots.</p>
+          <p>The frame carries the studio&rsquo;s own signature, which is what dates it: bottom left reads <em>the.SEED.v1.0</em> over 2009, bottom right revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup. That puts it in the same signature run as <a href="white-and-unassuming.html">White and Unassuming</a> of 15 May 2009 and <a href="somewhere-in-east-legon.html">Somewhere in East Legon</a> of 27 May, both published in the weeks before this post, and the furniture vocabulary is shared across all three &mdash; low platform beds, paper lanterns, chrome task and arc lamps, high-gloss pale floors, dark feature panelling. East Legon&rsquo;s bedroom carries a large mauve damask behind its bed, so the two jobs use the same device even where the pattern differs.</p>
+          <p>Nothing after this post mentions Gambia: searching the studio&rsquo;s hundred-and-twenty-two surviving entries for the word returns this one alone, and this frame&rsquo;s filename occurs nowhere else either. The phrase &ldquo;part of the interiors we are doing&rdquo; promises a set, and only this one frame of it was ever published, so the page carries a single plate and a Status row saying the building is not recorded. The country is given as Gambia because the post gives Gambia; no city, district or street is named anywhere, so none is invented, and the client is named nowhere, so the row carries a Private Client. The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/07/spankin-new-renderings.html" target="_blank" rel="noopener noreferrer">SPANKIN NEW RENDERINGS, 1 July 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Gambia</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">SketchUp and V-Ray (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Published 1 July 2009 as interiors for an apartment still to be built; no later post returns to it</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 blogspot post &middot; 1 July 2009 &middot; 2 frames, 1 plated &mdash; the other the studio calls &ldquo;for fun&rdquo;</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design and 3D visualization for an apartment proposed for Gambia: the bedroom rendered and published; no further frame from the set appeared on the blog.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="681" src="assets/images/somewhere-in-gambia/somewhere-in-gambia-1.png" alt="A rendered bedroom in dark and silver. A low platform bed with a grey patterned cover and a striped throw runs across the centre, its headboard four large upholstered panels fixed onto a wider panel of pale damask wallpaper that fills the middle of the wall like a framed picture, the rest of that wall paneled floor to ceiling in dark timber. Two white paper lanterns hang on long drops either side of the bed instead of bedside lamps. At the left a pale pine unit combines open shelving stacked with folded linen, a hanging rail with white shirts and a bank of dark drawer fronts; at the right a matching pine desk carries an open laptop and a small chrome task lamp, with a tan leather chair on slim steel legs tucked under it, and a second tan lounge chair angles in near a window dressed with dark curtains. The floor is large glossy white tile and the ceiling is coffered with recessed spots. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="somewhere-in-east-legon.html" class="project-nav-link">&larr; Previous: Somewhere in East Legon</a>
+      <a href="the-brightest-idea.html" class="project-nav-link">Next: The Brightest Idea &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

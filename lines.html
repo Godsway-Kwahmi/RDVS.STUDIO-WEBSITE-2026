@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Lines &mdash; RDVS Studios</title>
+  <meta name="description" content="Lines — a 2015 in-house photography series by RDVS Studios: seven dusk frames of rebar-crowned concrete stubs, power cables and birds against a sky running from orange to near-black, published as a single Behance gallery.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Photography / Architectural Photography &mdash; 2015 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">Lines</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/lines/lines-1.jpg" alt="A sunset seen over a low, unfinished structure, the sun a small white disc sitting just above the black roofline left of centre. The sky runs from saturated orange at the horizon to a dusty violet at the top. Rising through it are three clusters of bare vertical steel &mdash; concrete columns stopped short of their floor, their crowns of protruding rebar tied with a single hoop &mdash; and a leafy sapling at the lower left with two tall conical trees at the right. Two power cables cross the upper third diagonally, and a single bird sits on the further one. The corner of a dark slab intrudes at the top-left edge. Red RDVSIMAGING badge, bottom right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Lines is a 2015 in-house series of seven dusk frames: rebar-crowned concrete stubs, power cables and birds read as pure line against a sky running from orange to near-black, with a window screen dropped in at the middle.</p>
+
+        <div class="project-body-text">
+          <p>The gallery is titled LINES - EXPERIMENTAL PHOTOGRAPHY and was published on 26 July 2015 from the studio&rsquo;s RDVS. DESIGN Behance account. Unlike Airport City three weeks earlier, it carries no statement of intent and no credits line, and no licence is recorded against it, so this page has neither a Team row nor a quoted manifesto &mdash; the title is all the studio wrote about what it was doing. Seven modules were published and all seven are plated here. Every one of them came back from the CDN&rsquo;s top rung at exactly 1000 by 667 pixels, so the set was finished to a single frame size rather than collected at whatever the files happened to be, and every one carries the same red RDVSIMAGING badge in its lower-right corner. The badge is not a camera watermark: a Photoshop text layer named and typed RDVSIMAGING survives in the XMP of all seven files, so it was laid on in post, which is why it sits identically placed and identically bright across frames whose shutter settings span thirteen stops.</p>
+          <p>What the series looks at is one view, held for an hour and a quarter on a July evening and then returned to eighteen days later. Plates four and five are the same stretch of skyline in the last minutes before the sun goes down: a tall wooden distribution pole at the left fanning out service drops, several of those rebar-crowned concrete prods standing at different heights, a stand of narrow trees, and a low lens of cloud lit from underneath. Plate one is the same subject with the sun still a disc above the roofline, and plate two takes everything away but the sky &mdash; four parallel cables run down across a flat blue field with a single bird perched on one of them, the most reduced picture in the set. Plate three is the outlier and the hinge: a window screen held close enough that the woven grid is sharp only in a band across the middle, with a blue dusk and a cluster of out-of-focus lights burning red-orange through the mesh below it. Plates six and seven are what is left when the light has gone &mdash; near-total silhouettes of pitched roofs, with the afterglow surviving only as a thin orange slot at the horizon.</p>
+          <p>The treatment is a single exposure ramp that ends in long exposures, and the files document it. All seven were shot on a Canon EOS 60D with the kit EF-S 18-55mm f/3.5-5.6 IS II, on evaluative metering with the exposure compensation left at zero, and every one went the same route out: raw CR2 converted to TIFF, composited in Adobe Photoshop CC 2015 for Windows, flattened to JPEG. The shutter walks through that hour and a quarter from 1/5000 second at ISO 100 while the sun is still up, to one second for the screen, to 1.6 seconds at ISO 200 for the two night roofs. The zoom walks the other way: 33 millimetres for the first frame of the evening, then 42, then 41, then 18 for the two darkest, so the series ends holding the whole width of two houses. The later evening was shot tighter, at 55 millimetres for both of its frames. Between plates four and five the sun drops behind the roofline, and after plate five the only light left in any of the frames is a thin orange slot low on the horizon.</p>
+          <p>The order the gallery chose is not the order the photographs were made, and the two disagree in a way worth setting out. Five frames were exposed on the evening of 11 July 2015, between 17:53 and 19:09, and two on the evening of 29 July, between 18:07 and 18:28 &mdash; two sittings eighteen days apart, the first spanning one hour and sixteen minutes and the second twenty minutes. The gallery opens with the two later frames and puts the five earlier ones behind them, and inside that earlier group the display order is 19:00, 17:55, 17:53, 19:09, 19:09, so the two first exposures of the night sit in the middle of the run. The retouching dates pull the same way as the display order rather than the capture order: five files carry Photoshop modification stamps of 25 and 26 July, on or before the stated publication date, while plates one and two were finished at 16:37 and 16:52 on 30 July &mdash; four days after the gallery says it went up. The CDN adds a third date again, with all seven files uploaded on the morning of 2 November 2015 within two and a half hours of each other, the same November sitting already recorded for Airport City and West Hills Mall. The listing reads 2015, which every one of these dates supports.</p>
+          <p>Location is the one thing this page cannot state, and the spec row says so rather than guessing. The gallery names no place, the enumeration records no description, and no GPS block survives the Photoshop export on any of the seven. What can be said is circumstantial: every file records its own timestamps at a +00:00 offset, which is Ghana mean time and the studio&rsquo;s own, the frames show a low-rise development under construction with bare column starters and an overhead distribution network, and the two galleries from the same run already in this archive, Airport City and West Hills Mall, are both Accra subjects. That is an argument for the same place, not a source statement, so it stays in the prose. LINES - EXPERIMENTAL PHOTOGRAPHY is the last of the studio&rsquo;s 2015 photography run, which was dense: LA MAISON - PHOTOGRAPHY on 11 June, WEST HILLS MALL - PHOTOGRAPHY on 14 June, AIRPORT CITY,ACCRA - PHOTOGRAPHY EXPERIMENT on 5 July, VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT on 9 July and this gallery on 26 July &mdash; five galleries in six weeks. The source is on Behance &mdash; <a href="https://www.behance.net/gallery/28214117/LINES-EXPERIMENTAL-PHOTOGRAPHY" target="_blank" rel="noopener noreferrer">LINES - EXPERIMENTAL PHOTOGRAPHY, gallery 28214117, 26 July 2015</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Not stated by the source &mdash; an unfinished low-rise site, no place named in the gallery and no GPS in any of the seven files.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-photography">Architectural Photography</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Seven frames shot in two sittings eighteen days apart; the two that open the gallery were exposed three weeks after the other five and retouched after the gallery&rsquo;s own publish stamp.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">LINES - EXPERIMENTAL PHOTOGRAPHY &middot; Behance gallery 28214117 &middot; 26 July 2015 &middot; 7 frames, 7 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated experimental photography: shooting, Photoshop finishing and curation, published as a single gallery under the studio&rsquo;s RDVSIMAGING tag.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">7 plates &middot; up to 1000 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-1.jpg" alt="A sunset seen over a low, unfinished structure, the sun a small white disc sitting just above the black roofline left of centre. The sky runs from saturated orange at the horizon to a dusty violet at the top. Rising through it are three clusters of bare vertical steel &mdash; concrete columns stopped short of their floor, their crowns of protruding rebar tied with a single hoop &mdash; and a leafy sapling at the lower left with two tall conical trees at the right. Two power cables cross the upper third diagonally, and a single bird sits on the further one. The corner of a dark slab intrudes at the top-left edge. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-2.jpg" alt="The most reduced frame in the set: an almost empty sky, deep blue at the corners and lightening to a pale blue-grey band across the middle, with no horizon and no cloud. Four parallel cables run diagonally down from the left edge toward the lower right, evenly spaced, and a single small bird sits on the second cable from the top a little left of centre. An unidentifiable dark shape &mdash; the head of another bird or the tip of a leaf &mdash; intrudes at the very bottom-left corner. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-3.jpg" alt="A window screen held close and tilted, so the woven fibreglass mesh fills the whole frame. The grid is tack-sharp only in a band across the middle and upper right, where the squares read as a clean dark lattice against blue, and it dissolves into a soft moire at the left edge and across the top. Behind the mesh the upper half is a deep blue dusk sky grading to a dull band of cloud, while the lower half is near black with out-of-focus lights burning through: a bright white-yellow orb left of centre with red-orange smears hanging below it and a second, dimmer disc to its right. The only close-up and the only frame whose subject is a texture rather than a view. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-4.jpg" alt="The same skyline minutes before the sun is gone, with a bright yellow-white band of sky along the horizon and heavy blue above. The sun itself is half swallowed by a low bank of cloud. A flock of small birds is strung along the cables at the left, some in flight and some settled, and two more cross the open sky near the centre. Four or five rebar-crowned concrete prods of different heights stand along the black roofline, a tight group of tall conical trees fills the middle of the frame, and a further prod cluster sits at the right. The dark underside of an eave cuts in at the top-left corner and the edge of a wall closes the right side. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-5.jpg" alt="Immediately after sunset: a tall blue sky with a thin lens of cloud low down, lit from underneath, and the sun reduced to a bright slit behind a black roofline. A tall wooden utility pole stands at the left with a fan of service drops running out of its crossarm and off the top-left corner of the frame, and a single cable spans the whole width from it to the right. Three concrete column starters with their crowns of exposed rebar rise at different heights across the middle, a leafy shrub sits at the lower left, and a stand of narrow trees fills the right. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-6.jpg" alt="Almost entirely silhouette: a deep blue post-sunset sky, darkest at the top, with three small points of light in the upper right. A two-storey house with a hipped roof and a wide eave stands black and unreadable in the centre, its only detail a faint rectangle of louvered shutter. The corner of a roof cuts in at the left with a lattice of roof trusses or a solar frame below it, and the gable end of a third building closes the right edge. Between the house and that gable the horizon survives as a narrow slot of orange afterglow, in front of which stand a line of rebar-crowned prods, a utility pole and a single tree. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="667" src="assets/images/lines/lines-7.jpg" alt="The darkest frame, twenty-six seconds after the previous one and from a step to the side. Two enormous black building masses now fill the left and right thirds &mdash; a hipped roof with a sliver of louvered shutter at the left, a gable with a bracketed eave at the right &mdash; leaving a vertical gap down the centre of the image. Through that gap the last orange afterglow sits on the horizon behind a cluster of tall conical trees, a run of rebar-crowned concrete prods and two crossing cables. Three faint points of light hang in the blue sky at the upper left. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="jm-spots.html" class="project-nav-link">&larr; Previous: J&amp;M Spots</a>
+      <a href="marble-bath.html" class="project-nav-link">Next: Marble &amp; Bath &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

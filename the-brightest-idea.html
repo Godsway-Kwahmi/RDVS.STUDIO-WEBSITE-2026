@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>The Brightest Idea &mdash; RDVS Studios</title>
+  <meta name="description" content="The Brightest Idea - 2009 in-house wallpaper work by RDVS Studios: one lit bulb render on two textured grounds, blue and gold, carrying the studio&rsquo;s own line that every good design starts with a very bright idea.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Wallpaper / Art &amp; Graphic Design &mdash; 2009 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">The Brightest Idea</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/the-brightest-idea/the-brightest-idea-1.jpg" alt="A desktop wallpaper of a single lit filament bulb standing at the centre of a blue field whose whole surface is a fine cracked-ice texture, lighter around the bulb where its own glow washes the colour out to near-white and deepening towards the corners. The bulb is drawn clear-glass with a white spiral of light for a filament and a silver screw cap, and it sits on a small reflective patch. Beneath it, in white lowercase of the same squarish face, two lines read every design starts with an idea and every good design starts with a very bright idea, with the words bright idea set glowing brighter than the rest, and below those the address www.revivalgh.blogspot.com widely letter-spaced. A thin ground line runs the full width near the foot of the frame carrying revival design+vfx studios at the right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Two desktop wallpapers the studio made for itself in September 2009, one bulb render on two textured grounds, blue and gold. The artwork carries the whole message: every design starts with an idea, every good design starts with a very bright idea, with the last two words lit like the filament and the studio&rsquo;s own address underneath. It is advertising for a method rather than a client job, and the client row says so.</p>
+
+        <div class="project-body-text">
+          <p>The post is two captions long. It was filed as &ldquo;the BRIGHTEST IDEA - WALLPAPERS&rdquo; on 27 September 2009 under the labels graphic design, photoshop, portfolio and wallpapers, and its only text reads &ldquo;the BIGHTEST IDEA blue wallpaper&rdquo; and &ldquo;the BIGHTEST IDEA gold wallpaper&rdquo;. The missing R is the studio&rsquo;s own, in both captions, while the title and the artwork spell it correctly; it is reproduced here rather than tidied, because it is what the entry actually says.</p>
+          <p>The idea being advertised is stated on the images themselves. Under the bulb, in a squarish lowercase face, two lines read every design starts with an idea and every good design starts with a very bright idea, and the words bright idea are set glowing while the rest of the sentence stays flat white -- the pun is carried by the light. Below that the address www.revivalgh.blogspot.com is letter-spaced across the middle, and a thin ground line runs the full width of the wallpaper carrying revival design+vfx studios at the right. There is no client in the picture because the picture is the client: this is the studio promoting the way it works, which is why the listing is filed to RDVS Studios with the In-house service, the same way the studio&rsquo;s own ident and its in-house interiors are filed.</p>
+          <p>Two files, one composition. The bulb, its halo, the strapline and the credit are identical in both; what changes is the ground. The blue version puts the lamp in a cool cracked-ice field that washes out to near-white immediately around the glass and deepens towards the corners, and lets the artwork run to the edges of the file. The gold version repeats the composition on an ochre field of the same texture and encloses it in a black rounded frame, so the wallpaper arrives with its own border. Both are 1280 by 800, the size the studio made all of its wallpapers at.</p>
+          <p>It belongs to a concentrated run. OUT OF THE DARKNESS went up in May 2009, these two on 27 September, and <a href="the-seed.html">the.SEED</a> followed on 1 October -- three posts in five months, each a single motif on a textured field with the blog address letter-spaced underneath, and <a href="out-of-darkness.html">the first of them</a> is the only one the post credited to a named designer. Of the three this is the only one that comes in colourways, and the only one made for no audience but the studio&rsquo;s own.</p>
+          <p>Nothing else is claimed. No designer is named in this post, so no Team row appears; the software line records only Photoshop, which is the single tool the labels name; and no distribution is described beyond the wallpapers label. Both masters re-encode far smaller than they were uploaded, so the plates here are the house bake rather than the originals.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/09/brightest-idea-wallpapers.html" target="_blank" rel="noopener noreferrer">the BRIGHTEST IDEA - WALLPAPERS, 27 September 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Wallpaper</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=art">Art</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=graphic-design">Graphic Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Digital Art &amp; Graphic Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">Photoshop (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Colourways</span>
+            <span class="project-spec-val">Blue and gold -- one bulb render on two textured grounds</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Strapline</span>
+            <span class="project-spec-val">every design starts with an idea / every good design starts with a very bright idea</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated desktop wallpapers promoting the studio&rsquo;s own design method.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">2 plates &middot; up to 1280 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1280" height="800" src="assets/images/the-brightest-idea/the-brightest-idea-1.jpg" alt="A desktop wallpaper of a single lit filament bulb standing at the centre of a blue field whose whole surface is a fine cracked-ice texture, lighter around the bulb where its own glow washes the colour out to near-white and deepening towards the corners. The bulb is drawn clear-glass with a white spiral of light for a filament and a silver screw cap, and it sits on a small reflective patch. Beneath it, in white lowercase of the same squarish face, two lines read every design starts with an idea and every good design starts with a very bright idea, with the words bright idea set glowing brighter than the rest, and below those the address www.revivalgh.blogspot.com widely letter-spaced. A thin ground line runs the full width near the foot of the frame carrying revival design+vfx studios at the right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1280" height="800" src="assets/images/the-brightest-idea/the-brightest-idea-2.jpg" alt="The same wallpaper as the blue version -- the identical lit bulb, halo, two-line strapline and letter-spaced address -- set instead on a gold and ochre field with the same fine cracked texture, and this time the whole composition is enclosed by a black rounded frame that leaves black margins at the edges of the file." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

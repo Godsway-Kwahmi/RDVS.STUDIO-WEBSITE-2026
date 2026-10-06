@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Cal Bank Interiors &mdash; RDVS Studios</title>
+  <meta name="description" content="Cal Bank Interiors - 2011 architectural visualization by RDVS Studios of a CAL Bank floor designed by Arc Jerry: the banking hall with a curved yellow teller line and an amber exchange-rate board, and the open-plan back office, modelled in SketchUp and rendered in V-Ray.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Workplace &amp; Office / Architectural Visualization &mdash; 2011 &middot; CAL Bank</span>
+      <h1 class="project-page-title">Cal Bank Interiors</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/cal-bank-interiors/cal-bank-interiors-1.jpg" alt="A render of a bank&rsquo;s banking hall: a curved counter in glossy yellow with a dark worktop stands in the near foreground beside a grey task chair on dark carpet, and behind it a pale service counter runs beneath a row of glass-screened teller bays labelled TELLER. An amber LED board above the counter reads out an exchange rate. Daylight slants through venetian blinds at the left onto a polished floor, a trained plant and a pot of tulips soften the window wall, and a large yellow-and-black ring luminaire hangs from the tiled lift-ceiling at the upper right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A 2011 visualization pair for a CAL Bank floor designed by Arc Jerry: the banking hall, with its curved yellow teller line and amber exchange-rate board, and the open-plan back office that runs behind it.</p>
+
+        <div class="project-body-text">
+          <p>The studio published the two views as <em>CAL BANK INTERIORS</em> on 16 May 2011, crediting the design to Arc Jerry and the visualization to R.D+V.S. The tool chain is spelled out in the post &mdash; SketchUp for the model detail and texturing, 3ds Max for further texturing, V-Ray for lighting and rendering, and Photoshop for textures and post-processing &mdash; which makes this one of the studio&rsquo;s few interior sets where Max sits alongside SketchUp rather than replacing it.</p>
+          <p>The post carries a single caption, <em>BACK OFFICE</em>, but the two frames cover both halves of a branch. The first is the public end: a teller line of glass-screened bays behind a long pale counter, with an amber LED board above it quoting the dollar rate, and a big yellow-and-black ring luminaire dropped from the tiled ceiling. The second is the working end behind that counter &mdash; bays of pale maple desk with grey privacy screens and drawer pedestals under a run of dark overhead cabinets, a recessed wood panel and downlights overhead, and a striped runner of carpet leading the eye down the room.</p>
+          <p>Yellow does the branding. It is CAL Bank&rsquo;s own colour, and the interior lets it sit in two loud places &mdash; the curved counter in the hall and the ring above it &mdash; while everything else stays neutral: white walls, grey ceilings and task chairs, pale desk fronts. The back office answers it more quietly, with the mustard, red and grey stripes of its carpet runner and a pair of framed abstract panels on the side wall.</p>
+          <p>Both frames are signed bottom-right with the studio&rsquo;s <em>the SEED. V.1.1 / 2010</em> series mark, www.rdvstudiosgh.com and the Revival Design + VFX Studios logo &mdash; the same watermark series as the Zipnet Takoradi set, published three days later and built the same way, with an outside designer credited and the studio doing only the visualization. The uploads are named <em>3_small</em> and <em>4_small</em>, so what reached the blog is two frames from a longer set; the full post is <a href="https://revivalgh.blogspot.com/2011/05/cal-bank-interiors.html" target="_blank" rel="noopener noreferrer">on blogspot</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">CAL Bank</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2011</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Workplace &amp; Office</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Architectural visualization of two interior views of the CAL Bank floor &mdash; the banking hall and teller line, and the open-plan back office behind it.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Arc Jerry (design); R.D+V.S (visualization)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">2 plates &middot; up to 900 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="900" height="551" src="assets/images/cal-bank-interiors/cal-bank-interiors-1.jpg" alt="A render of a bank&rsquo;s banking hall: a curved counter in glossy yellow with a dark worktop stands in the near foreground beside a grey task chair on dark carpet, and behind it a pale service counter runs beneath a row of glass-screened teller bays labelled TELLER. An amber LED board above the counter reads out an exchange rate. Daylight slants through venetian blinds at the left onto a polished floor, a trained plant and a pot of tulips soften the window wall, and a large yellow-and-black ring luminaire hangs from the tiled lift-ceiling at the upper right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="900" height="493" src="assets/images/cal-bank-interiors/cal-bank-interiors-2.jpg" alt="The open-plan back office: bays of pale maple desk with grey privacy screens and drawer pedestals, each set with a black monitor and telephone, run beneath a long band of dark grey overhead cabinets. A chrome-framed grey task chair stands at the nearest bay and a chrome post rises in the right foreground. A striped runner of mustard, red and grey carpet leads down the left side past two framed abstract panels and a plant in a tall pot, under a recessed dark wood ceiling panel set with downlights." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="stanchart-hq.html" class="project-nav-link">&larr; Previous: Stanchart HQ</a>
+      <a href="clairemont.html" class="project-nav-link">Next: Clairemont &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

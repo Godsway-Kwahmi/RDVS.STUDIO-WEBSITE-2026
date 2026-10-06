@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>House Dominic &mdash; RDVS Studios</title>
+  <meta name="description" content="House Dominic - 2009 residential design and visualization by RDVS Studios for Adolph Amevor and his brother Dominic Amevor: a white two-storey house with stone-clad piers and a pergola entrance, published as a single dusk render before construction began.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential / Architectural Design &amp; Architectural Visualization &mdash; 2009 &middot; Adolph Amevor &amp; Dominic Amevor</span>
+      <h1 class="project-page-title">House Dominic</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/house-dominic/house-dominic-1.jpg" alt="A wide dusk visualization of a modern two-storey house seen from its front drive. A black band runs across the top of the frame carrying the.SEED.v1.0 in white and gold over a hairline rule with the year 2009 beneath it at the left, and revivalgh.blogspot.com, the gold rounded studio mark and the REVIVAL wordmark at the right. The house is white and cuboid with flat roof lines, its facade broken by two piers of rough honey-coloured stone and by dark brown banding; a slatted brown garage door sits at the left under a white wall, a brown pergola shades the entrance at the centre where two yellow chairs are set on a paved step, first-floor windows run behind metal railings and a balcony projects at the right. Interlock paving fills the foreground, a red-orange hatchback is parked at the right, low plants line the front of the house and leafy branches frame the image at both sides against a grey evening sky." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A house the studio designed and visualized with and for two brothers, Adolph and Dominic Amevor, published on 2 June 2009 as a single dusk render while the building was still only a design. The studio called it &ldquo;something we did with and for a good friend&rdquo; and asked its readers to see the design before construction, which is why the archive holds one render and no completion.</p>
+
+        <div class="project-body-text">
+          <p>The post is two sentences long and was filed as &ldquo;SOMETHING FOR A GOOD FRIEND&rdquo; on 2 June 2009, revised eight minutes later, with no labels. It reads, exactly: &ldquo;Almost forgot to share this project. This is something we did with and for a good friend of ours Adolph Amevor and his brother Dominic Amevor sometime in 2008.&rdquo; and &ldquo;Construction should start soon and we are excited with the design we want you to see it before it&rsquo;s built.&rdquo; Nothing else about the commission was ever published.</p>
+          <p>The name is the studio&rsquo;s, not the post&rsquo;s. The blog never titles this project &mdash; &ldquo;something for a good friend&rdquo; is all it is called there &mdash; and it is listed here as <em>House Dominic</em>, after Dominic Amevor, the brother the work was done with and for. Adolph Amevor is named first in the post as the studio&rsquo;s friend, so both brothers are carried as clients rather than one.</p>
+          <p>Three dates are in play and all three are kept. The prose says the work was done &ldquo;sometime in 2008&rdquo;; the render itself is stamped 2009 under its signature band; the post is 2 June 2009. The listing is filed to 2009, the year the studio printed on the drawing and the year it published, and the 2008 line is recorded here as the studio&rsquo;s own recollection of when the work happened rather than quietly dropped.</p>
+          <p>The single image is a front view at dusk, and it is framed like a plate rather than a photograph: a black band across the top carries <em>the.SEED.v1.0</em> over a hairline rule with 2009 beneath it at the left, and revivalgh.blogspot.com, the gold rounded mark and the REVIVAL wordmark at the right. Below it the house is white and cuboid with flat roof lines, its front broken by two piers of rough honey-coloured stone, dark brown banding, a slatted brown garage door, a brown pergola over the entrance where two yellow chairs sit on a paved step, railed first-floor windows and a balcony to the right. Interlock paving fills the foreground, a red-orange hatchback is parked at the right, and branches frame both sides.</p>
+          <p>That signature band ties this to the studio&rsquo;s own identity work of the same months. The seed mark appears as <a href="the-seed.html">the.SEED.v1.0 wallpaper</a> of 1 October 2009, as THE SEED.1.1 across the <a href="goil-rebranding.html">GOIL frames</a>, watermarked as the.SEED.V.1.1 / 2010 on the <a href="apartment-in-takoradi.html">Takoradi renders</a>, and printed as the SEED.V.1.1 in the footer of <a href="rdvsstudiosgh-com.html">the studio&rsquo;s own homepage</a>. This is the earliest of the five to carry the v1.0 mark on a client commission.</p>
+          <p>The surname is already in this archive, and the two are not merged. <a href="adolph-s-wedding-invite.html">Adolph&rsquo;s Wedding Invite</a> is a 2018 commission for Adolph Kwabla Amevor and Theresah Korkor Boatey at Odumase Krobo. This post gives no middle name, no city and no family connection, so the invite is listed as a possible sighting of the same friend rather than as the same client record.</p>
+          <p>Nothing after this post returns to the house. The feed does hold a post of 9 May 2009 called &ldquo;SOMETHING FOR A FRIEND&rdquo; &mdash; one month earlier and one word shorter &mdash; but its entire text is &ldquo;Just a simple flyer we did for a friend&rdquo;, which is a printed graphic and not this building. No designer is credited here, so there is no Team row; the post carries no labels, so there is no Software row either. The plate is the house&rsquo;s own upload, a 1276 by 528 PNG, re-encoded for the web.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/06/something-for-good-friend.html" target="_blank" rel="noopener noreferrer">SOMETHING FOR A GOOD FRIEND, 2 June 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Adolph Amevor &amp; Dominic Amevor</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architecture-planning">Architectural Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Published 2 June 2009 as a design with construction about to start; no later post records the house built</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Named For</span>
+            <span class="project-spec-val">Dominic Amevor, brother of the studio&rsquo;s client and collaborator Adolph Amevor</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Architectural design of a two-storey family house and its visualization: facade composition, materials and the front approach.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="528" src="assets/images/house-dominic/house-dominic-1.jpg" alt="A wide dusk visualization of a modern two-storey house seen from its front drive. A black band runs across the top of the frame carrying the.SEED.v1.0 in white and gold over a hairline rule with the year 2009 beneath it at the left, and revivalgh.blogspot.com, the gold rounded studio mark and the REVIVAL wordmark at the right. The house is white and cuboid with flat roof lines, its facade broken by two piers of rough honey-coloured stone and by dark brown banding; a slatted brown garage door sits at the left under a white wall, a brown pergola shades the entrance at the centre where two yellow chairs are set on a paved step, first-floor windows run behind metal railings and a balcony projects at the right. Interlock paving fills the foreground, a red-orange hatchback is parked at the right, low plants line the front of the house and leafy branches frame the image at both sides against a grey evening sky." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="stanchart-hq.html" class="project-nav-link">Next: Stanchart HQ &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

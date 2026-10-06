@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Clement's Court &mdash; RDVS Studios</title>
+  <meta name="description" content="Clement&rsquo;s Court - 2009 interior design and architectural visualization by RDVS Studios for the architect Ernest Essah: five rendered rooms of an apartment in white, dark cherry and high-gloss grey, announced as a work in progress on 7 March 2009.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2009 &middot; Ernest Essah</span>
+      <h1 class="project-page-title">Clement's Court</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/clements-court/clements-court-1.jpg" alt="A rendered kitchen in white and dark cherry: a tall white fridge stands beside a run of glossy red base units and wall cabinets with frosted glass fronts, a white hob and oven sit under a slim extractor against a small-square mosaic splashback lit by under-cabinet lights, the floor is laid in dark red tiles, and an open door at the left looks through to the spiral stair beyond." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Five interior renderings made in 2009 for the architect Ernest Essah, as presentation material for an apartment he designed: a kitchen, an entrance lobby with a spiral stair, a living room, a bedroom and a dining room, all worked in one palette of white, dark cherry and high-gloss grey with yellow accents.</p>
+
+        <div class="project-body-text">
+          <p>The project is documented by two posts rather than one. The first, on 7 March 2009, is titled <em>CLEMENT&rsquo;S COURT - 5 NEW RENDERINGS ALMOST READY</em> and opens by telling the blog&rsquo;s readers that &ldquo;we have five new renderings almost ready&rdquo;; it gives the brief in a sentence: &ldquo;The renderings were done for an architect (Ernest Essah) here in Ghana as part of a presentation material of an apartment designed by the architect.&rdquo; It carries a single teaser image and warns that &ldquo;final post processing work has to be done on them&hellip; This teaser is what the renderings would look like.&rdquo; Three weeks later, on 29 March, the finished set went up as <em>CLEMENTS COURT - ALL FIVE RENDERINGS</em> with no text at all. The five plates here are that second post, and the listing keeps the apostrophe the announcement writes and the finals post drops.</p>
+          <p>The teaser is not a sixth view. It is a montage of five vertical strips labelled LIVING ROOM, ENTRANCE LOBBY, BEDROOM, KITCHEN and DINING &mdash; the same five rooms, shown before the final grade &mdash; drawn on a 1024 by 768 canvas of its own rather than the 1276 by 683 the five finals share, and carrying the studio&rsquo;s <em>the.SEED.v1.0 / 2009</em> mark at the foot. Those labels are what identify each plate in this listing, since the published set itself is unlabelled.</p>
+          <p>As a set the rooms hold one idea. Everything is white or pale grey with dark cherry joinery and a very glossy floor that reflects the glazing: the kitchen runs red base units under frosted-glass wall cabinets and a mosaic splashback; the lobby doubles as a sitting room with a white open-riser spiral stair; the living room is a media wall of timber shelves and two sofas facing a bank of tall windows; the bedroom puts a low platform bed in yellow and white against a black panelled wall with a large figure painting; and the dining room answers it with red walls, three drum pendants and white shell chairs.</p>
+          <p>It is a period piece as much as a project piece &mdash; the high-gloss floors, the louvre detailing and the sculptural white seating are how a Ghanaian apartment was sold in 2009, and the frames were rendered at a single 1276 by 683 canvas for all five rooms.</p>
+          <p>Nothing states a town, a site or a completion date beyond the posts themselves, so the listing carries Ghana and 2009, and credits Ernest Essah as the architect of the apartment the studio was rendering.</p>
+          <p>Both posts are on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/03/clements-court-5-new-renderings-almost.html" target="_blank" rel="noopener noreferrer">the 7 March announcement</a> and <a href="https://revivalgh.blogspot.com/2009/03/clements-court-renders.html" target="_blank" rel="noopener noreferrer">the 29 March set</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Ernest Essah</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Architect</span>
+            <span class="project-spec-val">Ernest Essah (the apartment design)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Five interior renderings produced as an architect&rsquo;s presentation material for an apartment: kitchen, entrance lobby, living room, bedroom and dining room.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">5 plates &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/clements-court/clements-court-1.jpg" alt="A rendered kitchen in white and dark cherry: a tall white fridge stands beside a run of glossy red base units and wall cabinets with frosted glass fronts, a white hob and oven sit under a slim extractor against a small-square mosaic splashback lit by under-cabinet lights, the floor is laid in dark red tiles, and an open door at the left looks through to the spiral stair beyond." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/clements-court/clements-court-2.jpg" alt="A rendered entrance lobby doubling as a sitting room: two white sofas face each other on a glossy dark floor that mirrors the full-height glazing, a white spiral stair with an open-riser helix rises at the right, louvre vents run along the top of the windows, and a car is visible on the terrace outside." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/clements-court/clements-court-3.jpg" alt="The living room seen along its seating group: two white sofas and a low glass table sit on a polished dark floor against a media wall of dark timber shelves with a television inset, two slim floor lamps stand at either end, and a wall of tall windows with louvres and patterned red curtains looks out onto a balcony with a potted palm in the foreground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/clements-court/clements-court-4.jpg" alt="The bedroom, built around a low platform bed dressed in yellow and white: a black panelled wall behind it carries a large figure painting, a chrome arc lamp sweeps in from the left, the floor is high-gloss grey tile with a white shag rug, and a full-height mirrored wardrobe wall runs down the right side under two bright windows." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/clements-court/clements-court-5.jpg" alt="The dining room: a rectangular timber table with four white sculptural shell chairs stands under three drum pendant lights on a dark tiled floor with a red runner, a deep red wall banded with white panels closes the right side, and full-height glazing with louvres and patterned curtains looks onto a planted terrace, with a large pale floor vase at the left." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

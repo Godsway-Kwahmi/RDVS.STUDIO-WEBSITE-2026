@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Buena Vista Homes &mdash; RDVS Studios</title>
+  <meta name="description" content="Buena Vista Homes - 2008 architectural visualization by RDVS Studios: modelling and rendering of the estate&rsquo;s two-bedroom semi-detached and three-bedroom houses, six frames including a finished exterior, the same view untextured and four furnished cutaway plans.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential / Architectural Visualization &mdash; 2008 &middot; Buena Vista Homes</span>
+      <h1 class="project-page-title">Buena Vista Homes</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/buena-vista-homes/buena-vista-homes-1.jpg" alt="A finished daylight rendering of the two-bedroom semi-detached house: a single-storey pair in cream walls dressed with red-brick quoins, piers and string courses under a hipped terracotta-tiled roof, its two front doors each set under an arched canopy carried on slim columns, brick-dressed windows, narrow lawn strips and a wooden armchair between the two entrances, a paved interlocking drive in the foreground, the nose of a car at the right and a matching neighbour behind the boundary wall, with two leafy trees framing the composition and the title band &ldquo;2 BEDROOM &mdash; SEMI-DETACHED HOUSE&rdquo; across the top." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">The first Buena Vista Homes job: modelling and rendering of the estate&rsquo;s two-bedroom semi-detached and three-bedroom houses, published in December 2008 as six frames &mdash; a finished daylight exterior of the pair, the same exterior shown untextured, and two furnished cutaway plan sheets for each house type.</p>
+
+        <div class="project-body-text">
+          <p>The commission is stated in a single sentence. The studio&rsquo;s own account is that designer Jeff Doe &ldquo;got REVIVAL&rdquo; to help model and render two-bedroom and three-bedroom houses for Buena Vista Homes, and that the pair of house types were the whole brief. That makes this the earliest of the four Buena Vista listings the studio published: the later posts &mdash; Buena Vista 3 (August 2009), Avenda and Penta (both September 2009) &mdash; each name one house at the estate and credit R.D+V.S with rendering and post-processing only, while here the studio is credited with the model as well.</p>
+          <p>Four of the six frames are furnished cutaway plans rather than elevations. The roof is lifted off each model and the camera looks down at an angle, so a bedroom&rsquo;s bed, a bathroom&rsquo;s turquoise floor, a kitchen&rsquo;s hob and a living suite read as one drawing instead of four separate plans. Two sheets carry the three-bedroom house and two carry the two-bedroom pair, each pair showing the same model from two angles, and each frame is titled by the studio itself &mdash; &ldquo;3 BEDROOM HOUSE&rdquo; and &ldquo;2 BEDROOM SEMI-DETACHED HOUSE&rdquo; &mdash; which is how the house types are known.</p>
+          <p>The remaining two frames are the same view of the semi-detached pair from the drive. One is finished: cream walls dressed with red-brick quoins and piers, a hipped terracotta roof, two arched entrance canopies on slim columns, a paved interlocking forecourt, a car at the edge and a matching neighbour over the boundary wall. The other is the identical camera with no materials applied at all &mdash; a flat grey clay model under a dusk sky, which is the only frame in the set without a title band. Published together, they show the modelling and the texturing as the two separate services the brief named.</p>
+          <p>Software is known from the post&rsquo;s own labels &mdash; SketchUp and V-Ray, alongside 3d visualization and architecture. The site is not named in this post: Sakumono, Greater Accra comes from the studio&rsquo;s later Buena Vista posts, which place the estate there, and is carried here for consistency with the three sibling listings rather than as a fact this post states.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2008/12/buena-vista.html" target="_blank" rel="noopener noreferrer">BUENA VISTA HOMES, 14 December 2008</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Buena Vista Homes</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Sakumono, Greater Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2008</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">SketchUp and V-Ray (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Jeff Doe (design) with R.D+V.S (modelling and rendering)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Modelling, texturing and rendering of the estate&rsquo;s two house types: one finished exterior of the two-bedroom pair, the same exterior shown untextured, and two furnished cutaway plan sheets each for the three-bedroom house and the pair.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">6 plates &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1000" height="554" src="assets/images/buena-vista-homes/buena-vista-homes-1.jpg" alt="A finished daylight rendering of the two-bedroom semi-detached house: a single-storey pair in cream walls dressed with red-brick quoins, piers and string courses under a hipped terracotta-tiled roof, its two front doors each set under an arched canopy carried on slim columns, brick-dressed windows, narrow lawn strips and a wooden armchair between the two entrances, a paved interlocking drive in the foreground, the nose of a car at the right and a matching neighbour behind the boundary wall, with two leafy trees framing the composition and the title band &ldquo;2 BEDROOM &mdash; SEMI-DETACHED HOUSE&rdquo; across the top." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/buena-vista-homes/buena-vista-homes-2.jpg" alt="The same camera and the same house shown before any material was applied: an untextured clay model in flat grey, the arched porches, columns, doors, windows, garden chair and car all present as geometry only, set on a bare ground plane under a dusk sky with pink-lit clouds; the frame carries no title band." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="736" src="assets/images/buena-vista-homes/buena-vista-homes-3.jpg" alt="A furnished cutaway plan of the three-bedroom house seen from above and slightly to one side, the roof removed so that three bedrooms with blue bed-linen, two bathrooms, a kitchen with a hob along the rear wall, a dining table with chairs and a living room suite all read at once across white tiled floors picked out with grey accent tiles, with the title band &ldquo;01 &mdash; 3 BEDROOM HOUSE&rdquo; across the top." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="736" src="assets/images/buena-vista-homes/buena-vista-homes-4.jpg" alt="The same three-bedroom plan from a second, squarer angle, the L-shaped outline of the block and the covered patio at the near corner more clearly visible while the bedroom, bathroom, kitchen and living furniture stays in the same positions, on the same white ground, under the title band &ldquo;02 &mdash; 3 BEDROOM HOUSE&rdquo;." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="736" src="assets/images/buena-vista-homes/buena-vista-homes-5.jpg" alt="A furnished cutaway plan of the two-bedroom semi-detached pair, the roof removed to show two mirror-image units side by side behind a shared party wall: a bedroom at each outer corner and another at each front, a bathroom with a turquoise floor in each half, a kitchen with a hob at the rear, a dining table with four chairs mid-plan and a sofa suite facing a television at the front, all on white tiles with grey accents, under the title band &ldquo;01 &mdash; 2 BEDROOM SEMI-DETACHED HOUSE&rdquo;." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="736" src="assets/images/buena-vista-homes/buena-vista-homes-6.jpg" alt="The same mirrored pair from a second angle, the two front entrances and the porch roofs tipped into view below the plan while the four bedrooms, two bathrooms and paired living and dining groups keep their positions, under the title band &ldquo;02 &mdash; 2 BEDROOM SEMI-DETACHED HOUSE&rdquo;." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">Next: La Palm 2008 Christmas Party Poster &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

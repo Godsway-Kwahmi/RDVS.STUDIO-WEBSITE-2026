@@ -161,7 +161,7 @@ button {
 /* Studio Brand Link — strictly "RDVS" */
 .brand-link {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-normal);
   color: var(--brand-blue);
   flex-shrink: 0;
   letter-spacing: -0.01em;

@@ -172,7 +172,10 @@ def project_records():
         if h1 != listed.get('title', ''):
             problems.append('%s: listing title %r != page h1 %r'
                             % (page, listed.get('title', ''), h1))
-        year = listed.get('year') or _year
+        # The meta tail can carry more than the year ('2012 · Institute for Christian Apologetics
+        # Studies'), so take its first four-digit year rather than feeding the whole tail to int().
+        ym = re.search(r'\b(19|20)\d{2}\b', _year)
+        year = listed.get('year') or (ym.group(0) if ym else '')
         rec = {
             '_id': page[:-5],
             '_type': 'project',

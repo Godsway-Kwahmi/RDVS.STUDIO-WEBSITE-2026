@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>RDVStudiosGH.COM &mdash; RDVS Studios</title>
+  <meta name="description" content="RDVStudiosGH.COM - 2010 in-house web design by RDVS Studios: the studio&rsquo;s own homepage, published as a single screenshot in April 2010 while it was still almost done, carrying its company statement, service list, download column and the SEED.V.1.1 signature.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Website / Digital &amp; Web Design &mdash; 2010 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">RDVStudiosGH.COM</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/rdvsstudiosgh-com/rdvsstudiosgh-com-1.jpg" alt="A full-width screenshot of the studio&rsquo;s own homepage, designed as one wide landscape frame. The left two thirds is a blue-grey 3D interior render of a bathroom -- dark tiled walls, a freestanding tub on a bed of pebbles, twin basins on a long counter, mirrors and a window -- overlaid at the left by a blue block carrying the words 2010. a new US in white. At the top right sits the studio&rsquo;s blue rounded-square mark with its registered symbol over the stacked wordmark REVIVAL DESIGN+VFX STUDIOS, and down the right side four blue heading blocks read WHO WE ARE., WHAT WE DO. and CALL ON US. and CLIENT PASS., each with white text under it: the multi-discipline studio statement, the list of web design, 3d visualization, product design and graphic design, and the two addresses info@rdvsstudiosgh.com and revivalgh@gmail.com. The whole composition sits on a solid blue footer band carrying the columns WHAT WE READ, WIP+NEWS, PLAY, WORK, TUTS+DOWNLOADS and FIND US -- the reading links www.psdtuts.com, www.aetuts.com and www.evermotion.org, a 02.01.2010 portfolio release item, the WALLPAPERS / PORTFOLIO / PRINT ADS / VIDEOS list and the six social routes -- with CONCEIVE. DESIGN. REVOLUTIONIZE., the SEED.V.1.1 and HANDCRAFTED IN GHANA FOR GHANA at the far right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">The studio&rsquo;s own website, shown as a single homepage screenshot in April 2010 while it was still nearly finished. The post calls it "our official online studio" and asks readers to visit and tell the studio what they think, so this is the one listing in the archive whose client, subject and audience are the same party: RDVS Studios designing and advertising itself, with the whole company statement printed across the artwork.</p>
+
+        <div class="project-body-text">
+          <p>The post is three lines long. It was filed as &ldquo;R.D+V.S - ONLINE STUDIO |  PROGRESS&rdquo; on 13 April 2010 with no labels at all, and its text reads WWW.RDVStudiosGH.COM, &ldquo;Almost done with our official online studio&rdquo; and &ldquo;You can be part of the design process by visiting the site and telling us what you think&rdquo;. Nothing else about it was ever published: no later post in the blog&rsquo;s 122 entries returns to the studio&rsquo;s own site, so this listing has one screenshot and no launch announcement.</p>
+          <p>The screenshot carries the company&rsquo;s whole self-description, and it is quoted here rather than paraphrased. WHO WE ARE. is answered with &ldquo;We are a multi discipline design studio in Ghana committed to bringing the best solutions to every client&rdquo;; WHAT WE DO. with &ldquo;Web design, 3d visualization, product design, graphic design pretty much anything design&rdquo;; and CALL ON US. with two addresses, info@rdvsstudiosgh.com and revivalgh@gmail.com, above a CLIENT PASS. block. The wordmark is the stacked REVIVAL DESIGN+VFX STUDIOS with the studio mark and its registered symbol over it, and a blue panel at the left announces 2010. a new US over an interior render.</p>
+          <p>The footer is the most informative part of the frame. Six columns run across it: WHAT WE READ links www.psdtuts.com, www.aetuts.com and www.evermotion.org, the tutorial and motion communities a studio like this one would have been reading in 2010; WIP+NEWS carries a single item, 02.01.2010 portfolio release; PLAY and WORK are left as bare headings; TUTS+DOWNLOADS lists WALLPAPERS, PORTFOLIO, PRINT ADS and VIDEOS; and FIND US lists Facebook, Twitter, Flickr, Blogger, Youtube and Vimeo. The right-hand block closes with CONCEIVE. DESIGN. REVOLUTIONIZE., the signature line the SEED.V.1.1, 2010 (C) ALL RIGHTS RESERVED and HANDCRAFTED IN GHANA FOR GHANA.</p>
+          <p>That signature is the third appearance of the same mark on this site. The wallpaper posted on 1 October 2009 went out as <a href="the-seed.html">the.SEED.v1.0</a>, the <a href="goil-rebranding.html">GOIL frames</a> carried THE SEED.1.1, and here the studio put the SEED.V.1.1 in the footer of its own homepage -- the only one of the three where the version number appears on the studio&rsquo;s own property. It sits in the same column as the wallpapers, <a href="out-of-darkness.html">Out of Darkness</a> and <a href="the-brightest-idea.html">The Brightest Idea</a>, and beside the two other listings the studio made for itself: its <a href="rdvs-ident.html">ident</a> and its in-house interiors.</p>
+          <p>It is also the second <em>Website</em> listing in the archive, and the two read against each other. <a href="chyuanchya-com.html">Chyuanchya.com</a> was a client job posted seven months earlier, also shown before it was put on the internet, and its post named the tools it was built with in its labels. This post carries no labels at all and names no tools, so this page has no Software row; no designer is credited in the post or in the artwork, so it has no Team row either. What the two share is the filing: a homepage shown as a single wide screenshot, dated to the post that published it, with no claim that the site ever opened.</p>
+          <p>Nothing beyond the frame is claimed. The 02.01.2010 line is what the artwork displays, not a record that the site opened; the public archive of the web holds no capture of rdvsstudiosgh.com at all, which is an absence of evidence rather than evidence of absence; and the domain is spelled here exactly as the post and the artwork spell it, RDVStudiosGH.COM with the capital GH. The plate is the house bake of the studio&rsquo;s own upload, which arrived as a 1006 by 675 PNG.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2010/04/rdvs-online-studio-progress.html" target="_blank" rel="noopener noreferrer">R.D+V.S - ONLINE STUDIO | PROGRESS, 13 April 2010</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2010</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Website</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=web-design">Digital &amp; Web Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Digital &amp; Web Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Published 13 April 2010 as nearly finished; no later post records the site going online</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Self-Description</span>
+            <span class="project-spec-val">A multi discipline design studio in Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Stated Services</span>
+            <span class="project-spec-val">Web design, 3d visualization, product design, graphic design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Sections</span>
+            <span class="project-spec-val">Play &middot; Work &middot; Tuts+Downloads &middot; Find Us &middot; Client Pass</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Signature</span>
+            <span class="project-spec-val">the SEED.V.1.1 &mdash; the studio mark also carried on the 2009 wallpaper and the GOIL frames</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated design of the studio&rsquo;s own homepage: identity, company statement, service list, reading links, download column and social routes.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1006 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1006" height="675" src="assets/images/rdvsstudiosgh-com/rdvsstudiosgh-com-1.jpg" alt="A full-width screenshot of the studio&rsquo;s own homepage, designed as one wide landscape frame. The left two thirds is a blue-grey 3D interior render of a bathroom -- dark tiled walls, a freestanding tub on a bed of pebbles, twin basins on a long counter, mirrors and a window -- overlaid at the left by a blue block carrying the words 2010. a new US in white. At the top right sits the studio&rsquo;s blue rounded-square mark with its registered symbol over the stacked wordmark REVIVAL DESIGN+VFX STUDIOS, and down the right side four blue heading blocks read WHO WE ARE., WHAT WE DO. and CALL ON US. and CLIENT PASS., each with white text under it: the multi-discipline studio statement, the list of web design, 3d visualization, product design and graphic design, and the two addresses info@rdvsstudiosgh.com and revivalgh@gmail.com. The whole composition sits on a solid blue footer band carrying the columns WHAT WE READ, WIP+NEWS, PLAY, WORK, TUTS+DOWNLOADS and FIND US -- the reading links www.psdtuts.com, www.aetuts.com and www.evermotion.org, a 02.01.2010 portfolio release item, the WALLPAPERS / PORTFOLIO / PRINT ADS / VIDEOS list and the six social routes -- with CONCEIVE. DESIGN. REVOLUTIONIZE., the SEED.V.1.1 and HANDCRAFTED IN GHANA FOR GHANA at the far right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="nissa.html" class="project-nav-link">&larr; Previous: NISSA</a>
+      <a href="stanchart-hq.html" class="project-nav-link">Next: Stanchart HQ &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

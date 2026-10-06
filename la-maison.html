@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>La Maison &mdash; RDVS Studios</title>
+  <meta name="description" content="La Maison — a 2013 in-house set of six dusk photographs of the la Maison showroom in Accra by RDVS Studios, made under the studio's RDVS_IMAGING tag and published as a single Behance gallery two years later, on 11 June 2015.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Photography / Architectural Photography &mdash; 2013 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">La Maison</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/la-maison/la-maison-1.jpg" alt="A single-storey building seen square on across a road at dusk: a steep corrugated steel gable roof spans the whole width against a clear deep blue evening sky, and below it the wall is banded horizontally in earth-toned board-marked concrete. The right half of the facade is a full-height grid of steel-framed glazing lit warm gold from inside, through which chairs, tables, a shaded lamp and a large round wall clock are visible. To the left of the glazing a dark blade sign carries the words la Maison in white, with the first word small and the second larger. A pale grey fence of vertical bars on a low concrete plinth runs the length of the frontage, a palm leans into the frame beside the glazing, and asphalt and a stone kerb fill the foreground. Red RDVSIMAGING badge and a white tag numbered 002 at the bottom right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">La Maison is a 2013 in-house set of six dusk photographs of a board-marked concrete showroom in Accra, made under the studio&rsquo;s RDVS_IMAGING tag and published as one Behance gallery two years later, on 11 June 2015: the same building read from the road, from its courtyard and along its roofline.</p>
+
+        <div class="project-body-text">
+          <p>The gallery is titled LA MAISON - PHOTOGRAPHY and was published on 11 June 2015 as Behance gallery 27038289 from the studio&rsquo;s RDVS. DESIGN account. What the studio wrote about it is a pointer and nothing else: the description reads &ldquo;For more of our photography (RDVS_IMAGING) please go to - https://500px.com/RDVS_IMAGING&rdquo;, which names the studio&rsquo;s own photography handle but says nothing about the building, the place or the intent. There is no credits line and no licence attached, so this page carries no Team row, and unlike the Airport City gallery three weeks later it offers no statement about what the series was for. Six modules were published and all six are plated here.</p>
+          <p>The subject is a single-storey commercial building fronting a road, and it is not a house despite a name that means one. Its walls are banded horizontally in an earth-toned, board-marked material &mdash; shuttered concrete or rammed earth &mdash; and they carry a steep corrugated steel gable roof that overhangs deeply on warm timber-lined rafters. A full-height grid of steel-framed glazing makes up most of the frontage, and what shows through it in plate one is a showroom: chairs, tables, a shaded lamp and a large round wall clock. The name sits on a dark blade sign at the wall, &ldquo;la&rdquo; in small letters before &ldquo;Maison&rdquo; in larger ones, lit white against the concrete, with a second vertical sign of the same words at the return in plate four.</p>
+          <p>All six frames are dusk frames, and the treatment is consistent enough to read as one sitting: a saturated blue evening sky and cold street light held against the warm tungsten coming out of the glazing, so the building is lit from inside by its own contents. Plate two takes the courtyard corner, where an uplighter fans across the banded wall and a ground spot lights the herringbone paving between two timber planters of tall columnar cacti; plate five goes in close to the gable apex, where the roof planes meet at a hard angle and the timber soffit catches the last of the sky; and plate four is a long exposure, a car leaving the frame dragging three unbroken red tail-light streaks across the asphalt. Five of the six files still carry their camera metadata and all five name the same body, an Olympus with serial AAN510448, so the set was shot on one camera rather than assembled. Every frame wears the red RDVSIMAGING badge, the same handle the gallery description points at.</p>
+          <p>The sequence is an approach rather than a survey. Plate one sets the building square on from across the road, plate two steps into the courtyard, plate three tilts up to the eave corner, plate four pulls back for the whole three-quarter view with the traffic and two men at the gate, plate five closes in on the apex, and plate six walks out along the long elevation, where the pavement is in use &mdash; a man in a pink shirt crossing, a child, two more further off &mdash; and a neighbouring white two-storey house shows at the right with a hand-painted board reading XQUISITE SHELTERS, its leading letter lost at the edge of the sign. The corner tags give the studio&rsquo;s own order, and it is not the display order: the six read 002, 003, 004, 006, 005, 007, so the traffic frame is numbered after the apex frame and the gallery shows them the other way round. The series also does not start at one. It starts at 002 because it is continuing a run begun elsewhere: the studio&rsquo;s Osu Apartments presentation plate is tagged 001 in the same corner position with the same red bar, and all six La Maison files still hold a hidden text layer inside them reading OSU APARTMENTS, so this set was laid out on that deck&rsquo;s template and numbered straight on from it. The page follows the gallery&rsquo;s order and lets the tags say which plate was numbered first.</p>
+          <p>Two years separate the negative from the gallery, and the files carry both dates. Five of the six still hold a <em>photoshop:DateCreated</em> stamp, and all five read 20 March 2013, between 18:11:03 and 18:19:20 &mdash; one eight-minute dusk sitting, on a single Olympus body whose serial, AAN510448, every surviving frame names. Plate five keeps its raw reference too, <em>P3202356.JPG</em>, an in-camera Olympus name built from the same 20 March. This page therefore dates the work to 2013, which is when it was made; the 2015 dates are when it was finished and shown. Each file carries its own retouching history, and every save recorded in it falls in June 2015, in sessions running from the 4th to the 12th in Photoshop CS6, Photoshop CC 2014, Lightroom 5.0 and Camera Raw 8.0 on a machine set to UTC+01:00, which is Ghana time. The gallery&rsquo;s own publish stamp, 11 June 2015 at 16:42 UTC, lands inside those sessions rather than at the end of them: plates one and two were last saved on 5 and 9 June, before it, and the other four carry final saves after it, running to the 12th &mdash; so what Behance serves today is a later revision of what went up, not the published set itself. The six modules then reached the CDN together on 1 November 2015 inside a twenty-two-minute window, the same sitting that uploaded West Hills Mall and Airport City, months after all three galleries were dated and two and a half years after these frames were exposed. The source is on Behance &mdash; <a href="https://www.behance.net/gallery/27038289/LA-MAISON-PHOTOGRAPHY" target="_blank" rel="noopener noreferrer">LA MAISON - PHOTOGRAPHY, 11 June 2015</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2013</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-photography">Architectural Photography</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Self-initiated and closed: six plates published as one gallery, numbered 002 to 007 in a series that continues the studio&rsquo;s Osu Apartments deck.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 Behance gallery &middot; id 27038289 &middot; published 11 June 2015 &middot; 6 frames, 6 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated architectural photography of the la Maison showroom at dusk: shooting, retouching and curation, published as a single gallery under RDVS_IMAGING.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">6 plates &middot; up to 1240 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1240" height="979" src="assets/images/la-maison/la-maison-1.jpg" alt="A single-storey building seen square on across a road at dusk: a steep corrugated steel gable roof spans the whole width against a clear deep blue evening sky, and below it the wall is banded horizontally in earth-toned board-marked concrete. The right half of the facade is a full-height grid of steel-framed glazing lit warm gold from inside, through which chairs, tables, a shaded lamp and a large round wall clock are visible. To the left of the glazing a dark blade sign carries the words la Maison in white, with the first word small and the second larger. A pale grey fence of vertical bars on a low concrete plinth runs the length of the frontage, a palm leans into the frame beside the glazing, and asphalt and a stone kerb fill the foreground. Red RDVSIMAGING badge and a white tag numbered 002 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1240" height="690" src="assets/images/la-maison/la-maison-2.jpg" alt="The courtyard corner of the same building at dusk, with the banded earth-toned wall filling the right two-thirds. A tall narrow steel-framed glazed door sits at the centre glowing warm from within, flanked by two timber planters holding clusters of tall columnar cacti. An uplighter washes the wall at the right in a warm fan and a ground spotlight lights the paving, which is laid in grey herringbone blocks. At the left a perforated lattice screen wall rises behind a leafy tree, with an aluminium ladder leaning against it and a board lying on the ground. Two small dark wall lights are fixed high on the concrete. Red RDVSIMAGING badge and a white tag numbered 003 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1240" height="1653" src="assets/images/la-maison/la-maison-3.jpg" alt="A tall frame looking up at the corner of the building at dusk: the corrugated steel roof plane and its deep open eave cut a hard diagonal from the top left down to the right against saturated blue sky, and palm fronds intrude at the top left and along the base. Below the eave the banded earth-toned wall carries an illuminated blade sign reading la Maison, partly hidden by a small palm, and a vertical sign of the same words is clipped at the far left edge. To the right the full-height steel-framed glazing burns warm gold from the interior lighting, and a pale barred fence on a concrete plinth closes the bottom of the frame, with a perforated lattice screen wall standing behind it at the left. Red RDVSIMAGING badge and a white tag numbered 004 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1240" height="930" src="assets/images/la-maison/la-maison-4.jpg" alt="A three-quarter view of the whole building from the road at dusk, made as a long exposure: a car leaving the frame at the right drags three unbroken red tail-light streaks across the asphalt while its headlight flare burns at the kerb. The steep corrugated gable roof runs from the left apex down to the right, the banded earth-toned walls are lit from within by two fields of steel-framed glazing, and the illuminated la Maison blade sign sits at the centre of the frontage with a second vertical sign of the same words at the return. Two men are at the gate on the left, one standing in a pale shirt and one crouched on the kerb, behind a pale barred fence; a leafy tree fills the top left corner and a distant crane and unfinished building stand at the right. Red RDVSIMAGING badge and a white tag numbered 006 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1240" height="1324" src="assets/images/la-maison/la-maison-5.jpg" alt="A near-square detail of the gable apex against clear blue dusk sky: the corrugated steel roof planes meet at a sharp apex in the upper left, and the underside of the deep overhang is lined in warm-toned boards that catch the last of the light. Below the eave the banded earth-toned wall shows its horizontal shuttering marks and a scatter of tie holes, with a small steel-framed window set high in it and a bracket light fixed lower down. A strip of perforated lattice screen is visible at the bottom left and the edge of the blade sign along the bottom right. Red RDVSIMAGING badge and a white tag numbered 005 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1240" height="985" src="assets/images/la-maison/la-maison-6.jpg" alt="The long street elevation seen from the far end at dusk: the corrugated gable roof runs away to the right, where a satellite dish is fixed to the gable end, and a white two-storey neighbouring house with a balcony and a hand-painted board reading XQUISITE SHELTERS, its leading letter gone at the edge of the board, stands at the right edge. The banded earth-toned wall is fronted by a pale barred fence on a low concrete plinth with two gated vehicle openings, and two fields of full-height steel-framed glazing glow warm at the near end. Banana plants and palms fill the compound behind the fence, a tall narrow sign panel stands unreadable at the far left, and four pedestrians are on the pavement in front, one in a pink shirt crossing the centre carrying a bag. A red-roofed tower shows at the far left. Red RDVSIMAGING badge and a white tag numbered 007 at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-beach-towers.html" class="project-nav-link">&larr; Previous: La Beach Towers</a>
+      <a href="maple-court.html" class="project-nav-link">Next: Maple Court &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

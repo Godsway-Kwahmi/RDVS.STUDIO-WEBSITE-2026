@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>West Hills Mall &mdash; RDVS Studios</title>
+  <meta name="description" content="West Hills Mall — a 2015 in-house photograph of the mall’s upper clerestory, published by RDVS Studios on Behance as one exposure in two treatments, colour and monochrome.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Photography / Architectural Photography &mdash; 2015 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">West Hills Mall</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/west-hills-mall/west-hills-mall-1.jpg" alt="A mall interior looking down an upper-level walkway, shot portrait so the corridor runs away from the camera and the ceiling fills the top third. Along the left runs a tall solid parapet whose face is a decorative screen cut with a repeating lattice of elongated hexagons and star shapes, and above it a band of clerestory glazing with visible steel framing lets in flat daylight. On the right is a two-storey retail frontage: a blue fascia sign ending in the letters ACE with a crown device above it, a small black square sign beside it, and lit shopfronts at ground level with a mannequin in the nearest window. The ceiling is a broad angled band of sprayed textured soffit studded with recessed downlights, stepping down toward the far end. The floor is large pale tiles with darker inset strips, a slatted bench sits at the right, two people walk away from the camera in the middle distance and one more is seated further along. A red RDVSIMAGING badge and a small white tag numbered 010 sit in the bottom-right corner." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">West Hills Mall is a 2015 in-house photograph of the mall’s upper clerestory, published on Behance twice over: the same exposure once in colour and once re-graded to monochrome, tagged 010 and 009.</p>
+
+        <div class="project-body-text">
+          <p>The gallery is titled WEST HILLS MALL - PHOTOGRAPHY and was published on 14 June 2015 from the studio&rsquo;s RDVS. DESIGN Behance account. Everything the studio wrote about it is four words long &mdash; &ldquo;West Hills Mall clerestory&rdquo; &mdash; which is also the page&rsquo;s own summary line, and the tags repeat the same four ideas: Ghana, West Hills Mall, interiors, clerestory. Behance files the project under the creative fields Architecture and Photography. There is no description of intent here as there is on the Airport City gallery three weeks later, and no credits line at all, so this page carries no Team row. Two modules were published and both are plated.</p>
+          <p>What was shot is one view, from the upper level, looking along the mall&rsquo;s internal gallery. The frame is portrait rather than the landscape a corridor normally gets, and that choice is the photograph: it holds the parapet and the clerestory above it in the same image as the floor, so the walkway reads as a slot of daylight on the left and a slot of shopfronts on the right, with a broad angled band of sprayed textured ceiling pressing down between them. The balustrade facing is cut into a repeating lattice of elongated hexagons and stars, which gives the near half of the frame a pattern to travel across, and the corridor&rsquo;s vanishing point lands on a blue fascia sign lettered so that only ACE and a crown survive the framing. Two people walk away from the camera and a bench sits empty at the right, which is what keeps a very symmetrical composition from turning into a plan drawing.</p>
+          <p>The two modules are not two photographs. They are one exposure published twice, and that can be measured rather than guessed: both files are 1920 by 2879, and sweeping one against the other in horizontal and vertical offsets puts the minimum difference squarely at offset zero, with the mismatch already rising by a third at four pixels either way &mdash; the frames are pixel-registered, so the camera never moved. Luminances correlate at r = 0.973, and the monochrome file is fitted almost exactly by a single straight line through the colour file&rsquo;s luma, Lb = 1.196 La - 41.0, which halves the residual difference. In other words the second image is the first one re-graded, not a second look at the same place. The people are in the same stride in both.</p>
+          <p>The corner tags give the pair an order, and the gallery does not keep it. The monochrome print carries 009 and the colour print 010, so the studio numbered the colour version second; the upload stamps inside the file names agree, the monochrome reaching the CDN about two minutes before the colour. But the gallery displays 010 first and 009 second, which is why the colour frame is plate one here &mdash; the page follows the source&rsquo;s order and lets the numbers say which was made first. Both frames carry the red RDVSIMAGING badge, so like Airport City this went out under the studio&rsquo;s imaging tag rather than under RDVS itself.</p>
+          <p>The dates disagree, and this time the gap is long. Behance stamps the gallery as published on 14 June 2015, while both files were uploaded on 1 November 2015, a hundred and forty days later. That is not sloppiness on one project: Airport City says it was published on 5 July 2015 and its five files were uploaded between the evening of 1 November and the morning of 2 November 2015. Every module of both galleries therefore landed inside about sixteen hours of one another, months after their stated dates, so the studio appears to have built its June and July photography presence in a single November sitting. The listing keeps the year the gallery claims, which for both is 2015.</p>
+          <p>This is the archive&rsquo;s second photography entry and the second of the studio&rsquo;s 2015 run, which was a dense one: the Behance list puts LA MAISON - PHOTOGRAPHY on 11 June, this gallery on 14 June, Airport City on 5 July, VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT on 9 July and LINES - EXPERIMENTAL PHOTOGRAPHY on 26 July &mdash; five galleries in six weeks. The mall is already in this archive once as a place rather than a subject: <span class="no-wrap">NDABA Restaurant, WHM</span> sits in the 2014 rows as visualisation work for a tenant there, located at the same address. The source is on Behance &mdash; <a href="https://www.behance.net/gallery/27103699/WEST-HILLS-MALL-PHOTOGRAPHY" target="_blank" rel="noopener noreferrer">WEST HILLS MALL - PHOTOGRAPHY, 14 June 2015</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">West Hills Mall, Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-photography">Architectural Photography</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Two treatments of a single exposure, published together; the studio numbered the monochrome 009 and the colour 010 but displayed the colour first.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 Behance gallery &middot; 14 June 2015 &middot; 2 frames, 2 plated &mdash; one exposure, colour and monochrome</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated architectural photography of West Hills Mall: one interior view shot, re-graded, and published in colour and monochrome.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">2 plates &middot; up to 1920 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1920" height="2879" src="assets/images/west-hills-mall/west-hills-mall-1.jpg" alt="A mall interior looking down an upper-level walkway, shot portrait so the corridor runs away from the camera and the ceiling fills the top third. Along the left runs a tall solid parapet whose face is a decorative screen cut with a repeating lattice of elongated hexagons and star shapes, and above it a band of clerestory glazing with visible steel framing lets in flat daylight. On the right is a two-storey retail frontage: a blue fascia sign ending in the letters ACE with a crown device above it, a small black square sign beside it, and lit shopfronts at ground level with a mannequin in the nearest window. The ceiling is a broad angled band of sprayed textured soffit studded with recessed downlights, stepping down toward the far end. The floor is large pale tiles with darker inset strips, a slatted bench sits at the right, two people walk away from the camera in the middle distance and one more is seated further along. A red RDVSIMAGING badge and a small white tag numbered 010 sit in the bottom-right corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1920" height="2879" src="assets/images/west-hills-mall/west-hills-mall-2.jpg" alt="The same view, same framing and the same people in the same positions, printed in black and white: the lattice screen at the left goes from pale grey to near-black in its cut openings, the textured soffit becomes a field of fine grain, the blue fascia sign reads as dark with light lettering, and the daylight through the clerestory blows out to pure white. A red RDVSIMAGING badge and a small white tag numbered 009 sit in the bottom-right corner." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="villagio-vista.html" class="project-nav-link">&larr; Previous: Villagio Vista</a>
+      <a href="1hive.html" class="project-nav-link">Next: 1Hive &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

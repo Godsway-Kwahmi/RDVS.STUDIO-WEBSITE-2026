@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>ICAS &mdash; RDVS Studios</title>
+  <meta name="description" content="ICAS - 2012 identity for the Institute for Christian Apologetics Studies: four patterned blue discs with each letter of ICAS knocked out of one. Graphic design by RDVS Studios.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Identity / Graphic Design &mdash; 2012 &middot; Institute for Christian Apologetics Studies</span>
+      <h1 class="project-page-title">ICAS</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/icas/icas-1.jpg" alt="An identity sheet on a grey vignette field. Four blue discs sit in a row across the middle, each patterned with overlapping circles, wedges and radiating bars in several tones of blue, and each with one letter of ICAS knocked out of it in white: the I is a classical fluted column with its capital, the C a thick crescent, the A an angular form carrying a small latin cross in its lower half, and the S a plain curved letter. To the right, set in a light geometric sans in the same blue, the name reads Institute for Christian Apologetics Studies across two lines. The lockup is repeated small and entirely in black at the top left, and a caption across the bottom right runs INSTITUTE FOR CHRISTIAN APOLOGETICS STUDIES IDENTITY with FOR, APOLOGETICS and IDENTITY set heavier than the words between them." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">An identity for the Institute for Christian Apologetics Studies, built from four patterned blue discs with one letter of ICAS knocked out of each. The studio posted it on 7 June 2012 with the client named in full, the software listed, and nothing else said.</p>
+
+        <div class="project-body-text">
+          <p>ICAS is an abbreviation, and the mark spells it out. Four discs carry the letters I, C, A and S as white knockouts, and two of the four are pictures as well as letters: the I is a fluted classical column complete with its capital, and the A holds a small latin cross in its lower half. The C is a thick crescent and the S is left plain. Each disc is filled with an overlay of circles, wedges and radiating bars in several blues, so the set reads as one family without the four shapes being identical, and the institute&rsquo;s full name stands beside the lockup in a light geometric sans.</p>
+          <p>The plate is composed as a presentation sheet rather than an artwork: the finished colour lockup in the middle of an empty grey field, a small all-black version of the same lockup pinned to the top left to show it holds without colour, and a caption bottom right that runs the whole name followed by the word IDENTITY, with FOR, APOLOGETICS and IDENTITY set heavier than the words around them. Nothing on the sheet is dated.</p>
+          <p>That is the whole record. The post carries no labels, names no designer or team, gives no location, no brief and no process &mdash; one image and two lines of text, the second of which is a software list: PHOTOSHOP &amp; ILLUSTRATOR. So the client row comes from the studio&rsquo;s own expansion of the abbreviation, the discipline comes from the post&rsquo;s title, and the location is the site&rsquo;s default for a job the post does not place, since the studio worked in Accra. There is no Team row because no team is named.</p>
+          <p>ICAS sits in a burst of about thirty-five posts the studio made across June and August 2012, most of them back-catalogue rather than new work, and six other graphic-design jobs went up on 6 and 7 June alongside it. Searching the studio&rsquo;s surviving hundred-and-twenty-two entries for ICAS, apologetics or institute returns this post alone, so nothing later resolves whether the institute adopted the mark.</p>
+          <p>One image was published and one is plated. The upload is a Facebook original &mdash; the filename 467333_10150712612546913_710155347_o.jpg is the CDN&rsquo;s own naming, with the o suffix for original &mdash; and the rendition ladder does not rank by size: the s0 is 2048 by 1448 in 81 KB while the s1600 is 1600 by 1131 in 99 KB, so the smaller frame carries more bits per pixel. Both were decoded and measured at a common width, and the s0 won anyway, with a blockiness ratio of 1.024 against 1.035 and more high-frequency detail surviving, so the larger file is held.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Institute for Christian Apologetics Studies</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2012</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Identity</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=graphic-design">Graphic Design</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Graphic Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 blogspot post &middot; 7 June 2012 &middot; 1 frame, 1 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Identity design: a four-disc logotype reading ICAS, with the column-and-cross letterforms and the institute&rsquo;s full name set beside it.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">PHOTOSHOP &amp; ILLUSTRATOR</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 2048 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="2048" height="1448" src="assets/images/icas/icas-1.jpg" alt="An identity sheet on a grey vignette field. Four blue discs sit in a row across the middle, each patterned with overlapping circles, wedges and radiating bars in several tones of blue, and each with one letter of ICAS knocked out of it in white: the I is a classical fluted column with its capital, the C a thick crescent, the A an angular form carrying a small latin cross in its lower half, and the S a plain curved letter. To the right, set in a light geometric sans in the same blue, the name reads Institute for Christian Apologetics Studies across two lines. The lockup is repeated small and entirely in black at the top left, and a caption across the bottom right runs INSTITUTE FOR CHRISTIAN APOLOGETICS STUDIES IDENTITY with FOR, APOLOGETICS and IDENTITY set heavier than the words between them." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="house-ol.html" class="project-nav-link">&larr; Previous: House Ol</a>
+      <a href="ike.html" class="project-nav-link">Next: Ike &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

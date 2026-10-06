@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Yakubu Interiors &mdash; RDVS Studios</title>
+  <meta name="description" content="Yakubu Interiors - 2008 interior design and architectural visualization by RDVS Studios: five renderings made for INCEPT Ltd, the entrance hall of a house seen twice, plus its kitchen, living room and bedroom.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2008 &middot; INCEPT Ltd</span>
+      <h1 class="project-page-title">Yakubu Interiors</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/yakubu-interiors/yakubu-interiors-1.jpg" alt="The entrance hall seen from floor level: a floating stair with timber treads and a chrome balustrade sweeps up the right-hand side against a curved ochre wall, two tall glazed doors with frosted geometric panels stand on a pale blue-grey wall to the left of it, a tall antelope sculpture and a round pedestal table with a plant sit under the stair, a large narrow vase stands at the far left, three globe pendants hang from the cornice, and the speckled pale floor tiles take the daylight as long reflections; the frame carries only the studio&rsquo;s mark and blog address." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Five interior renderings made for INCEPT Ltd in November 2008, when the studio was working as a team-up: the entrance hall of a house seen twice, from the floor and from the stair landing, then its kitchen, living room and bedroom, all dressed in pale tiles, ochre walls and dark timber.</p>
+
+        <div class="project-body-text">
+          <p>The post is two sentences long and names everyone involved. &ldquo;Revival&rdquo; is described as a team-up of Kwahmi//studios, acethetics studios and PXL PPL &mdash; spelled here exactly as the studio wrote them &mdash; put together to produce five interior designs for INCEPT Ltd, whose own web address the post gives. The client is therefore the same practice behind the studio&rsquo;s Deneese interiors a year later, and the two are kept as separate commissions: Deneese is described by the studio as a mock-up, while nothing here says that, and the rooms are different houses.</p>
+          <p>Two of the five frames are the same entrance hall from opposite ends, which is the set&rsquo;s most informative pair. From the floor, a floating stair with timber treads and a chrome balustrade sweeps up a curved ochre wall past two tall glazed doors and a standing antelope sculpture; from the landing, the same balustrade is seen from above, with the hall opening onto a sunlit sitting area beyond. A red-and-cream Greek-key relief panel appears in both, and so does the round pedestal table, which is how the two are known to be one space.</p>
+          <p>The other three are a kitchen, a living room and a bedroom, and they share one vocabulary rather than three: large pale speckled floor tiles, ochre and blue-grey walls, dark timber joinery, and pattern carried by printed panels &mdash; a three-part floral over the bed, a single wide floral in the living room, an etched floral on the wardrobe. The living room is deliberately canted, the only frame in the set photographed on a diagonal, which suggests it was the one the studio wanted to read as the most dramatic.</p>
+          <p>Software is known from the post&rsquo;s own labels &mdash; SketchUp and V-Ray, alongside 3d visualization, architecture, homes, interiors and portfolio. No town, site or architect is named, so the listing carries the bare Ghana the studio&rsquo;s other INCEPT work uses. The title is the post&rsquo;s own, and the post never explains what Yakubu is: a person, a house name or a client&rsquo;s project title are all equally supported by the record, so nothing is inferred from it.</p>
+          <p>The frames were published at 1000 pixels wide and the two darkest &mdash; the hall from the floor and from the landing &mdash; were uploaded as small JPEGs that compress better than any re-encode of them, so they are served here exactly as the studio uploaded them.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2008/11/yakubu-interiors.html" target="_blank" rel="noopener noreferrer">Yakubu interiors, 25 November 2008</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">INCEPT Ltd</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2008</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">SketchUp and V-Ray (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Kwahmi//studios, acethetics studios and PXL PPL, teamed up as Revival, for INCEPT Ltd</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Five interior visualizations of a house: the entrance hall seen from the floor and from the stair landing, plus the kitchen, living room and bedroom.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">5 plates &middot; up to 1000 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1000" height="535" src="assets/images/yakubu-interiors/yakubu-interiors-1.jpg" alt="The entrance hall seen from floor level: a floating stair with timber treads and a chrome balustrade sweeps up the right-hand side against a curved ochre wall, two tall glazed doors with frosted geometric panels stand on a pale blue-grey wall to the left of it, a tall antelope sculpture and a round pedestal table with a plant sit under the stair, a large narrow vase stands at the far left, three globe pendants hang from the cornice, and the speckled pale floor tiles take the daylight as long reflections; the frame carries only the studio&rsquo;s mark and blog address." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="535" src="assets/images/yakubu-interiors/yakubu-interiors-2.jpg" alt="The same hall from the other end, looking down over the curved chrome balustrade from the stair landing: the timber treads drop away at the left against the ochre wall, the pale tiled floor sweeps round to a glazed double front door at the right and an opening ahead onto a sunlit sitting area with a chair and a plant, the red-and-cream Greek-key relief panel repeats on the pier, and a small round table with a plant and magazines sits at the foot of the stair." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="535" src="assets/images/yakubu-interiors/yakubu-interiors-3.jpg" alt="The kitchen, dressed in dark timber cabinets run along two walls under pale worktops: three windows with venetian blinds light the sink and a bank of wall shelves at the left, a tiled chimney hood and a range cooker with an oven sit at the right, a bowl of flowers stands on the counter, and the floor and splashback are laid in large pale tiles." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="535" src="assets/images/yakubu-interiors/yakubu-interiors-4.jpg" alt="The living room, shown on a deliberate diagonal: a wall of grid-glazed windows and a glazed door looks out on greenery, an ochre wall at the right carries a wide framed floral print above a low dark cabinet, a white sofa and an armchair sit around a glass coffee table on the pale tiled floor, and a tall potted plant stands by the windows." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="532" src="assets/images/yakubu-interiors/yakubu-interiors-5.jpg" alt="The bedroom, built on a dark feature wall panelled with a three-part white floral print above a low timber bed dressed in brown linen: a coffered ceiling with a timber inlay and a run of downlights sits overhead, a window at the left looks out on sky and birds beside a lounge chair and ottoman, a white bench and low table stand at the foot of the bed, and a tall wardrobe with an etched floral pattern closes the right-hand side." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

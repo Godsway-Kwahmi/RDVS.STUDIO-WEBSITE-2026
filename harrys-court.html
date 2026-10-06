@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Harry's Court &mdash; RDVS Studios</title>
+  <meta name="description" content="Harry&rsquo;s Court - 2009 interior design and architectural visualization by RDVS Studios: seven renderings of an ochre residential block with a gated court and pool, and its furnished living room, kitchen and dining room.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential / Interior Design &amp; Architectural Visualization &mdash; 2009 &middot; Private Client</span>
+      <h1 class="project-page-title">Harry's Court</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/harrys-court/harrys-court-1.jpg" alt="A street-level view through the compound&rsquo;s wrought-iron gates at the apartment block: an ochre facade banded in dark brown, with a curved bay on the left crowned by a hipped tiled roof and a broad white eaves, rows of cantilevered balconies with slender rails, and an external spiral stair climbing the far end; two cars sit on the paved court in the foreground, palms frame the left side, and the frame carries the studio&rsquo;s the.SEED.v1.0 / 2009 mark at the top." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Seven renderings of a residential block published in January 2009 &mdash; four exteriors and three interiors &mdash; showing an ochre and dark-brown apartment building with a hipped tiled roof, cantilevered balconies and an external spiral stair, set behind a gated compound with its own court and pool, and furnished with a show-home set of living room, kitchen and dining room in figured cherry wood.</p>
+
+        <div class="project-body-text">
+          <p>The set was published on 24 January 2009 as <em>7 NEW RENDERINGS FROM US</em>, the studio&rsquo;s first portfolio post of the year, and the whole text is a thank-you: &ldquo;Thanks to everybody who&rsquo;s been giving us props on our works&hellip;&rdquo; What it does carry is the studio&rsquo;s own labelling &mdash; 3d visualization, architecture and V-Ray &mdash; which is how the software below is known.</p>
+          <p>Nothing in the post names the development, and nothing on the frames does either: the renders carry only the studio&rsquo;s <em>the.SEED.v1.0 / 2009</em> series mark and blog address, and the dark panel set into the curved bay above the entrance is left blank, where a sign would otherwise sit. The listing therefore keeps the name the studio uses for the project, Harry&rsquo;s Court, and identifies each view by the filenames the frames were uploaded under &mdash; exterior_frmfront, livin, kitchen, dinning &mdash; which are the only labels the set has ever carried.</p>
+          <p>Four of the seven frames are given to the building itself. A street-level view looks in through wrought-iron gates at an ochre facade banded in dark brown, its curved bay crowned by a hipped tiled roof with a broad white eaves, balconies cantilevered in rows and an external spiral stair climbing the far end. A site model seen from above explains the plan: an H-shaped block holding a fenced compound, a parking court, a row of palms along the boundary and a gate house at the corner. Two more frames take the courtyard between the wings &mdash; once from the pool deck, with three striped parasols and loungers, and once from the base of the well looking straight up, the balconies converging and the pool laid out overhead against a black sky.</p>
+          <p>The remaining three are a furnished show set, and they read as one room group: a living room organised on a warm wood media wall with an inset television and an Eames-style lounge chair on parquet, a kitchen of figured cherry fronts and pale tops with a curved breakfast island under angular pendants, and a dining room of white shell chairs around a small round table, lit through a skylight and closed by a dark panel worked in a white Greek-key motif. It is the same 2009 interior language as the studio&rsquo;s Clement&rsquo;s Court apartments a few weeks later &mdash; glossy floors, sculptural white seating and a strong wood grain &mdash; and the two sets were even drawn on the same width of canvas.</p>
+          <p>The frames were published at mixed sizes, from a 672 by 683 site model up to 1276 pixels wide, so the plates here keep each frame at its own dimensions rather than cropping them to agree.</p>
+          <p>No client, architect, town or completion date is stated anywhere in the post or on the frames, so the listing carries Private Client and the bare Ghana the studio works from, and 2009 is held by two signals rather than one: the post went up on 24 January 2009, and every exterior frame is marked <em>the.SEED.v1.0</em> over <em>2009</em>.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/01/7-new-renderings-from-us.html" target="_blank" rel="noopener noreferrer">7 NEW RENDERINGS FROM US, 24 January 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">V-Ray (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Exterior and interior visualization of a residential block: the compound and its court and pool seen four ways, plus a furnished living room, kitchen and dining room.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">7 plates &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1200" height="642" src="assets/images/harrys-court/harrys-court-1.jpg" alt="A street-level view through the compound&rsquo;s wrought-iron gates at the apartment block: an ochre facade banded in dark brown, with a curved bay on the left crowned by a hipped tiled roof and a broad white eaves, rows of cantilevered balconies with slender rails, and an external spiral stair climbing the far end; two cars sit on the paved court in the foreground, palms frame the left side, and the frame carries the studio&rsquo;s the.SEED.v1.0 / 2009 mark at the top." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="672" height="683" src="assets/images/harrys-court/harrys-court-2.jpg" alt="An axonometric site model of the same development set on a black ground: the H-shaped block with its tiled hipped roofs and curved white eaves seen from above and one corner, its external spiral stair at the right, a fenced compound with a parking court and four cars in front, a row of palms along the boundary and a detached gatehouse at the corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1024" height="548" src="assets/images/harrys-court/harrys-court-3.jpg" alt="The courtyard between the two wings seen from ground level: ochre walls with dark brown banding and deep-set windows, balconies stepping up both faces, a paved pool deck with a shaped swimming pool, three striped parasols and a line of palms along the far fence, and two lounge chairs in the foreground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/harrys-court/harrys-court-4.jpg" alt="A worm&rsquo;s-eye view from the base of the courtyard looking straight up the well between the wings, the balconies and windows converging towards the camera, while at the top of the frame the pool deck, parasols and palm crowns are seen laid out below against a black sky." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="635" src="assets/images/harrys-court/harrys-court-5.jpg" alt="The living room, built around a media wall of warm wood panels with a television inset above a long low white cabinet: an Eames-style lounge chair and ottoman in reddish leather sit on a parquet floor at the left, glass shelves and a bank of tall windows with sheer curtains run along the other walls, and a framed photograph is set into the panelling." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="636" src="assets/images/harrys-court/harrys-court-6.jpg" alt="The kitchen, dressed in figured cherry-wood fronts with pale worktops: a run of base and wall units with a hob and extractor under a wide window at the left, and a curved breakfast island with two chrome bar stools under a cluster of angular pendant lights at the right, against a dark textured wall." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="683" src="assets/images/harrys-court/harrys-court-7.jpg" alt="The dining room: a small round table with three white sculptural shell chairs on a striped timber floor, lit by a multi-shade pendant under a skylight, with a dark wall panelled in a white Greek-key motif at the centre, tall windows along the right, and the curve of the kitchen island and a lounge chair visible at either edge." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

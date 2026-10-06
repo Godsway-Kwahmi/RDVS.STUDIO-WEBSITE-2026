@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Edell Place &mdash; RDVS Studios</title>
+  <meta name="description" content="Edell Place - 2011 interior design and 3D visualization for arcINTEGRA: five rendered rooms of a residential interior in Accra, a dark bedroom, dining room, galley kitchen and living room, modelled in SketchUp and 3ds Max with V-Ray.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2011 &middot; arcINTEGRA</span>
+      <h1 class="project-page-title">Edell Place</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/edell-place/edell-place-1.jpg" alt="A low-lit bedroom render: a platform bed dressed in pale grey linen sits on a deep black shag rug, its head wall panelled in horizontal dark timber slats and hung with a three-canvas sunset triptych; a curved ceiling bulkhead studded with recessed downlights sweeps over the bed, a bay window in sheer curtains lights two tan lounge chairs at the far end, and a flat television on a black cabinet with a ribbed planter of grasses closes the left of the view." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A 2011 interior design and 3D visualization commission for arcINTEGRA: five rendered rooms of Edell Place, a residential interior worked up as a dark, timber-panelled scheme and lit entirely by the model.</p>
+
+        <div class="project-body-text">
+          <p>The studio published the set as <em>EDELL PLACE - INTERIOR DESIGN + 3D VISUALIZATION</em> on 6 June 2012, crediting the client and the design to arcINTEGRA and the interior design and 3D visualization to R.D+V.S, with the tools listed as Photoshop, SketchUp, V-Ray, 3ds Max and Illustrator. Every frame carries the studio&rsquo;s own watermark strip &mdash; NEW LIFE V.2.0 /2011, the studio address and the Revival Design + VFX Studios mark &mdash; and the post&rsquo;s credit block repeats that series stamp as NEW_LIFE.2.0.2011.</p>
+          <p>The set is a room tour rather than a massing study. The bedroom opens it in the dark: a platform bed on a black shag rug, its head wall slatted in deep timber and hung with a three-panel sunset canvas, while a curved bulkhead of recessed downlights sweeps over the bed and throws the light straight down. That artificial lighting is the project&rsquo;s signature &mdash; almost every surface in the five frames is lit by fixtures drawn into the model rather than by a window.</p>
+          <p>The dining room goes the other way. A glass-topped table set for six in black leather cantilever chairs stands on a pale rug over light oak boards, hung by a long linear glass pendant, with the right-hand wall banded in mirror so the bay window and its sheer curtains are thrown back into the room twice over. The kitchen is a galley: strongly striped reddish-brown veneer on both runs, grey tile underfoot, a curved glass extractor over the counter and a single panel of red glass behind a red kettle at the far end &mdash; the one note of colour in an otherwise neutral room, answered by the stainless side-by-side refrigerator that fills the near foreground.</p>
+          <p>The living room is where the scheme states itself. Two white sofas face each other across a dark rug with a square orange ottoman between them, set against a full-width glossy orange feature wall into which a dark media unit is recessed, under a lit ceiling cove running the length of the room. Read together with the bedroom&rsquo;s sunset triptych, the orange is the thread: pale furniture, dark timber and one saturated panel.</p>
+          <p>The set closes on a presentation plate rather than a new room &mdash; the same galley kitchen graded to a warm monochrome with a solid black block dropped into the lower left carrying EDELL PLACE in heavy white condensed capitals. It is how the studio signed the work off, and the only frame that names it. The project is <a href="https://revivalgh.blogspot.com/2012/06/edell-place-interior-design-3d.html" target="_blank" rel="noopener noreferrer">on blogspot</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">arcINTEGRA</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2011</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design and 3D visualization: bedroom, dining room, kitchen and living room rendered as a five-plate presentation set.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">arcINTEGRA (design); R.D+V.S (interior design + 3D visualization)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">5 plates &middot; up to 1424 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="900" height="618" src="assets/images/edell-place/edell-place-1.jpg" alt="A low-lit bedroom render: a platform bed dressed in pale grey linen sits on a deep black shag rug, its head wall panelled in horizontal dark timber slats and hung with a three-canvas sunset triptych; a curved ceiling bulkhead studded with recessed downlights sweeps over the bed, a bay window in sheer curtains lights two tan lounge chairs at the far end, and a flat television on a black cabinet with a ribbed planter of grasses closes the left of the view." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="900" height="877" src="assets/images/edell-place/edell-place-2.jpg" alt="A dining room render in pale daylight: a glass-topped table on polished legs is set for six with black leather cantilever chairs on a light grey shag rug over pale oak floorboards, hung with a long linear glass pendant carrying multiple downlights; the right-hand wall is banded in mirror that throws the bay window back into the room, and a tall potted palm in a white square planter stands at left." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="900" height="803" src="assets/images/edell-place/edell-place-3.jpg" alt="A galley kitchen render: dark, strongly striped reddish-brown veneer cabinetry runs both sides of a grey tiled floor under a flat white ceiling with square downlights, ending at a window dressed in a roman blind over a pale worktop; a red glass backsplash panel and a red kettle punctuate the far run, a curved glass extractor hood projects over the near counter, and a stainless steel side-by-side refrigerator with a water dispenser fills the right foreground." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="900" height="611" src="assets/images/edell-place/edell-place-4.jpg" alt="A living room render: two white sofas face each other across a dark shag rug with a square orange ottoman between them and low white tables carrying a flower pot, set against a full-width glossy orange feature wall with a dark media unit and television recessed into it; a lit ceiling cove with downlights runs the length of the room, dark slatted timber panels the wall at left with framed art, and tall plants stand by sheer curtains at right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1424" height="1271" src="assets/images/edell-place/edell-place-5.jpg" alt="The closing title plate: the same galley kitchen view graded to a warm monochrome, with a solid black block dropped into the lower left carrying the words EDELL PLACE in heavy white condensed capitals stacked on two lines." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="clairemont.html" class="project-nav-link">&larr; Previous: Clairemont</a>
+      <a href="elo-conference.html" class="project-nav-link">Next: ELO Conference &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

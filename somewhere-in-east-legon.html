@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Somewhere in East Legon &mdash; RDVS Studios</title>
+  <meta name="description" content="Somewhere in East Legon - 2009 residential interior design and 3D visualization by RDVS Studios with the interior designer Jasmine: two sitting rooms, a dining room in grey and in red, a bedroom in plain and damask walls and a bathroom, published as ten renders across three blogspot posts while the project was still to be built.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Residential Interior / Interior Design &amp; Architectural Visualization &mdash; 2009 &middot; Private Client</span>
+      <h1 class="project-page-title">Somewhere in East Legon</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-1.jpg" alt="A wide rendered view of a modern sitting room lit from a bank of windows at the right. A dark brown feature wall carries a flat television showing a close-up of a woman&rsquo;s face, a column of small framed photographs and a low white floating shelf set with black sculptures; two tall white drum floor lamps stand in front of it. Two white moulded lounge chairs with brown seats and green-and-check cushions face the television across a low dark coffee table on a near-black rug, an arched chrome lamp sweeps over them, a horizontal band of patterned glass blocks is set into the far wall, and a cream sofa with matching cushions runs along the right under the windows. Potted plants stand at intervals on a pale glossy tile floor. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A house interior the studio designed and visualized with the interior designer Jasmine for a site in East Legon, published as ten renderings across three posts in May and June 2009. The studio said the project was still to be built when it put the first post up, and nothing later returns to it, so the archive holds the drawings and no completion.</p>
+
+        <div class="project-body-text">
+          <p>The job was published in three parts and only the first of them has any words. &ldquo;This project to be built somewhere in East Legon was done with Jasmine, an up and coming interior designer here in Ghana.&rdquo; it begins, and then &ldquo;We are done with some parts of the project just left with some few more tweaks on the works then we can share everything.&rdquo; That is the entire text of the record: two sentences under <a href="https://revivalgh.blogspot.com/2009/05/somewhere-in-east-legon.html" target="_blank" rel="noopener noreferrer">SOMEWHERE IN EAST LEGON</a> of 27 May 2009, revised on 2 June. <a href="https://revivalgh.blogspot.com/2009/06/somewhere-in-east-legon-gh-part2.html" target="_blank" rel="noopener noreferrer">Part 2</a> went up on 5 June with four more frames and no text at all, and <a href="https://revivalgh.blogspot.com/2009/06/somwhere-in-east-legon-pt3.html" target="_blank" rel="noopener noreferrer">part 3</a> followed on 11 June with three more and none. Searching the studio&rsquo;s blog for the district returns these three posts out of a hundred and twenty-two, so what is here is everything the studio ever published about the job &mdash; the promised &ldquo;everything&rdquo; never arrived.</p>
+          <p>Part 3&rsquo;s own title is misspelled and is reproduced that way here: &ldquo;SOMWHERE IN EAST LEGON PT3&rdquo;, one M short of the word the other two posts get right. Correcting it in a quotation would leave a quote that no longer matches the page it links to, so the listing keeps the studio&rsquo;s typo and says so.</p>
+          <p>The one credit the studio gives is a first name. Jasmine is described as &ldquo;an up and coming interior designer here in Ghana&rdquo; and the project is said to have been &ldquo;done with&rdquo; her, which is why this page carries a Team row where most of the 2009 listings carry none &mdash; and why it carries nothing beyond what those words support. No surname is given anywhere, no role is divided between the designer and the studio, and none of the three posts names a piece of software, so there is no Software row either.</p>
+          <p>Ten frames were published and eight are shown. Nothing among the ten is a duplicate file: hashed against each other, the closest pair is 42 bits apart and the next is 28 bits, both well clear of the twelve bits that would mean the same picture twice. What the two pairs actually are is the interesting thing. Part 1&rsquo;s first two frames are one camera on one bedroom with the bed dressing and a canvas changed; part 2&rsquo;s two dining frames are one camera with the WALL COLOUR changed from grey to red. The bedroom repeat is left out, because at 800 pixels the two read as the same picture twice; the dining pair is kept together, because the change of scheme is the whole reason a studio renders a room twice. Part 3&rsquo;s third view of its lounge is dropped on the same grounds as the bedroom repeat &mdash; the room is already given wide and from the media wall.</p>
+          <p>The rooms themselves are described by what is in them, because the posts label nothing. There are two sitting rooms &mdash; one black-and-white with an undulating dark media wall and a mirror-gloss tile floor, one lighter with a flat brown television wall, white moulded chairs and a band of patterned glass blocks &mdash; and the source never says whether these are two rooms of one house or one room in two schemes, so this page does not either. The bedroom appears in two plates here, from two cameras: one at the doorway against plain pale walls, and one at the foot of the bed with the same room papered in a large mauve damask. The dining room is shown twice from a single camera, once grey and once red. Then there is a bathroom in pale green tile and white mosaic, with a bath built in under a band of high windows. The furniture vocabulary is consistent across all of them: moulded white shells, chrome arc and drum lamps, high-gloss floors, dark feature panelling and a lot of potted plants.</p>
+          <p>Every frame carries the studio&rsquo;s own signature, which is what makes the attribution safe to state. Bottom left reads <em>the.SEED.v1.0</em> with 2009 beneath it; bottom right carries revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup. Both have to be read at four times zoom &mdash; at thumbnail size they are two grey smudges. That places this job inside the same signature run as <a href="the-seed.html">the.SEED.v1.0 wallpaper</a> of October 2009, the <a href="apartment-in-takoradi.html">Takoradi renders</a> and the studio&rsquo;s own <a href="rdvsstudiosgh-com.html">homepage</a>. The mark is also the reason this listing is not confused with <a href="clements-court.html">Clement&rsquo;s Court</a>, the other 2009 residential interior here: its dining room is drawn with the same three drum pendants and the same white shell chairs, but the room, the glazing, the table and the floor are different, and every frame of this job was hashed against every frame of that one before any plate was chosen.</p>
+          <p>The location is the one place this page goes further than its source. All three posts name a district &mdash; &ldquo;somewhere in East Legon&rdquo; &mdash; and never a city, a street or a site. East Legon is written into the row because the posts write it; Accra is added here as the city East Legon sits in, on the same district-then-city pattern the archive already uses for Sakumono, Cantonments, Aburi and Odumase Krobo. The client is not named at all, so the listing carries a Private Client, and the project is dated 2009 on the strength of the three posts and the year the studio printed on every frame.</p>
+          <p>Nothing after 11 June 2009 comes back to it. The studio&rsquo;s own line was that it was &ldquo;done with some parts of the project&rdquo; and about to share the rest; the rest was two more posts of renders and then silence, and no later entry on the blog, on Behance or in the studio&rsquo;s other channels records a building at East Legon going up. The eight plates here are the uploads themselves at their published size &mdash; two at 1276 pixels wide and six at 800 &mdash; re-encoded for the web at whatever quality each frame needed to stay inside the family&rsquo;s fidelity guard, which for the mosaic-tiled bathroom came out at q97 rather than the house q88.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Private Client</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">East Legon, Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Residential Interior</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=interior-design">Interior Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=architectural-visualization">Architectural Visualization</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Interior Design &amp; Architectural Visualization</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Jasmine (interior design), named in the first post</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Published 27 May 2009 as a project still to be built; no later post records it built</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Series</span>
+            <span class="project-spec-val">the.SEED.v1.0 (2009)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">3 blogspot posts &middot; 27 May, 5 June and 11 June 2009 &middot; 10 frames, 8 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Interior design and 3D visualization of a house: two sitting rooms, a dining room in two colour schemes, a bedroom in two wall finishes and a bathroom.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">8 plates &middot; up to 1276 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1276" height="681" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-1.jpg" alt="A wide rendered view of a modern sitting room lit from a bank of windows at the right. A dark brown feature wall carries a flat television showing a close-up of a woman&rsquo;s face, a column of small framed photographs and a low white floating shelf set with black sculptures; two tall white drum floor lamps stand in front of it. Two white moulded lounge chairs with brown seats and green-and-check cushions face the television across a low dark coffee table on a near-black rug, an arched chrome lamp sweeps over them, a horizontal band of patterned glass blocks is set into the far wall, and a cream sofa with matching cushions runs along the right under the windows. Potted plants stand at intervals on a pale glossy tile floor. The.SEED.v1.0 over 2009 is signed at the bottom left and revivalgh.blogspot.com above the REVIVAL DESIGN+VFX STUDIOS lockup at the bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="467" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-2.jpg" alt="The same lounge from the other end, close on the television wall: the dark brown panel fills the left of the frame with the flat screen, the column of five framed photographs and the white shelf with its black animal sculptures below it, while the two white lounge chairs, the arched chrome lamp and the low dark table sit in sunlight at the right against a white wall and a dark door." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="427" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-3.jpg" alt="A second sitting room, worked in black and white. A full-height feature wall of dark undulating panels carries a long floating cabinet in dark timber with a television inset below it and two framed pictures hung on the white wall to its left; two sofas and a low glass table sit on a mirror-gloss black tile floor, two grey armchairs stand by tall sheer-curtained windows at the right, and a white plinth cabinet closes the near corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="427" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-4.jpg" alt="The dining room in its grey scheme: a long white-topped table on a dark base with four white moulded shell chairs stands under three white drum pendant lights, a low counter with a lamp and framed pictures runs along a dark panelled wall at the right, a single window with a sheer curtain lights the pale walls, and the floor is black tile laid on the diagonal." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="427" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-5.jpg" alt="The same dining room, same camera, in its red scheme: the walls, the table base and the counter front are now deep red against the same white chairs, the same three drum pendants and the same black diagonal-tiled floor, with a rose laid on the set table." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1276" height="681" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-6.jpg" alt="The bedroom seen from the foot of the bed. The walls are papered in a large mauve damask over a pale dado, the ceiling is coffered with a dark band, and a low platform bed dressed in plum with a branch-pattern throw and matching cushions sits against a dark headboard wall at the left. An arched chrome floor lamp sweeps across the room towards a white chair by the window, a white dresser with a television on it stands at the right, and the floor is laid in glossy magenta tile with a pale rug." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="427" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-7.jpg" alt="The same bedroom from the doorway, with the damask papered over to plain pale walls: the low bed is now dressed in brown and white, a tall blue-and-yellow abstract canvas stands between the window and the white dresser, a pleated drum pendant hangs at the near left, and the magenta tile floor and the arched chrome lamp are unchanged." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="427" src="assets/images/somewhere-in-east-legon/somewhere-in-east-legon-8.jpg" alt="A bathroom in pale green and white. A wall-hung toilet and a white vanity with a vessel basin and a mirrored cabinet sit against a wall of small white mosaic, a bath is built in under a band of high windows, and the right-hand wall is clad in large sage tiles with a chrome shower column fixed to it; towels hang at the near left on a glossy pale tile floor." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="stanchart-hq.html" class="project-nav-link">Next: Stanchart HQ &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

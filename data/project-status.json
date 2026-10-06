@@ -2,15 +2,6 @@
   "generated": "from work.html + archive.html by scripts/build_project_status.py",
   "contract": "visibility live = work page + archive page + homepage slideshow; archived = archive page only",
   "projects": {
-    "yao-yaa.html": {
-      "slug": "yao-yaa",
-      "title": "Yao + Yaa",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "yah-kumasi-mall.html": {
       "slug": "yah-kumasi-mall",
       "title": "Yah!",
@@ -38,15 +29,6 @@
       "onArchivePage": true,
       "plates": 17
     },
-    "weldment-panels.html": {
-      "slug": "weldment-panels",
-      "title": "Weldment Panels",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
-    },
     "watsons-place.html": {
       "slug": "watsons-place",
       "title": "Watson&rsquo;s Place",
@@ -56,15 +38,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "vodafone-red-hse.html": {
-      "slug": "vodafone-red-hse",
-      "title": "Vodafone Red Hse",
-      "year": "2011",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
     "villa-aggregate.html": {
       "slug": "villa-aggregate",
       "title": "Villa Aggregate",
@@ -73,24 +46,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 16
-    },
-    "viasat1-breakfast-show.html": {
-      "slug": "viasat1-breakfast-show",
-      "title": "Viasat1 Breakfast Show",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 9
-    },
-    "victoria-island-naija-project.html": {
-      "slug": "victoria-island-naija-project",
-      "title": "VI",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
     },
     "trumpet-africa-ident.html": {
       "slug": "trumpet-africa-ident",
@@ -146,15 +101,6 @@
       "onArchivePage": true,
       "plates": 3
     },
-    "tedxharambee.html": {
-      "slug": "tedxharambee",
-      "title": "TEDxHarambee",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
-    },
     "asante-interior-design-presentation.html": {
       "slug": "asante-interior-design-presentation",
       "title": "TAI",
@@ -172,15 +118,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 15
-    },
-    "stephen-yvonne.html": {
-      "slug": "stephen-yvonne",
-      "title": "Stephen + Yvonne",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
     },
     "stellar-bar.html": {
       "slug": "stellar-bar",
@@ -207,7 +144,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 1
+      "plates": 3
     },
     "smsgh.html": {
       "slug": "smsgh",
@@ -217,24 +154,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 12
-    },
-    "six-acres-company-profile.html": {
-      "slug": "six-acres-company-profile",
-      "title": "Six Acres Company Profile",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 13
-    },
-    "sinopec-ghana-interiors.html": {
-      "slug": "sinopec-ghana-interiors",
-      "title": "Sinopec Ghana Interiors",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
     },
     "senya-resort.html": {
       "slug": "senya-resort",
@@ -263,15 +182,6 @@
       "onArchivePage": true,
       "plates": 1
     },
-    "rdvs-ident.html": {
-      "slug": "rdvs-ident",
-      "title": "RDVS Ident",
-      "year": "2010",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
     "purc.html": {
       "slug": "purc",
       "title": "PURC",
@@ -281,23 +191,14 @@
       "onArchivePage": true,
       "plates": 3
     },
-    "provident-insurance.html": {
-      "slug": "provident-insurance",
-      "title": "Provident Insurance",
-      "year": "2015",
+    "protea-hotel-airport.html": {
+      "slug": "protea-hotel-airport",
+      "title": "Protea Hotel - Airport",
+      "year": "2020",
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 3
-    },
-    "project-mount.html": {
-      "slug": "project-mount",
-      "title": "Project Mount",
-      "year": "2018",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
+      "plates": 2
     },
     "premier-place.html": {
       "slug": "premier-place",
@@ -353,15 +254,6 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "osu-tower.html": {
-      "slug": "osu-tower",
-      "title": "Osu Tower",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 12
-    },
     "osu-apartments.html": {
       "slug": "osu-apartments",
       "title": "Osu Apartments",
@@ -389,33 +281,6 @@
       "onArchivePage": true,
       "plates": 2
     },
-    "octagon-mews.html": {
-      "slug": "octagon-mews",
-      "title": "Octagon Mews",
-      "year": "2011",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
-    "octagon-interiors.html": {
-      "slug": "octagon-interiors",
-      "title": "Octagon",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 14
-    },
-    "oak-tree-apartments.html": {
-      "slug": "oak-tree-apartments",
-      "title": "Oak Tree Apartments",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
-    },
     "nyla-court.html": {
       "slug": "nyla-court",
       "title": "Nyla Court",
@@ -433,33 +298,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 5
-    },
-    "nissa-offices-2010.html": {
-      "slug": "nissa-offices-2010",
-      "title": "Nissa Offices 2010",
-      "year": "2010",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
-    "nest-apt.html": {
-      "slug": "nest-apt",
-      "title": "Nest",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
-    "ndaba-restaurant-whm.html": {
-      "slug": "ndaba-restaurant-whm",
-      "title": "Ndaba Restaurant, WHM",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 7
     },
     "naadei-villas.html": {
       "slug": "naadei-villas",
@@ -488,15 +326,6 @@
       "onArchivePage": true,
       "plates": 7
     },
-    "maurice-abena.html": {
-      "slug": "maurice-abena",
-      "title": "Maurice + Abena",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 10
-    },
     "marble-bath.html": {
       "slug": "marble-bath",
       "title": "Marble & Bath",
@@ -505,33 +334,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 5
-    },
-    "maple-court.html": {
-      "slug": "maple-court",
-      "title": "Maple Court",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 6
-    },
-    "map-folder-design.html": {
-      "slug": "map-folder-design",
-      "title": "MAP",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
-    "mankata.html": {
-      "slug": "mankata",
-      "title": "Mankata",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
     },
     "macord.html": {
       "slug": "macord",
@@ -550,15 +352,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 9
-    },
-    "lase-icon.html": {
-      "slug": "lase-icon",
-      "title": "Lase",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
     },
     "la-palm-2008-christmas-party-posters.html": {
       "slug": "la-palm-2008-christmas-party-posters",
@@ -586,15 +379,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 6
-    },
-    "jhk-investment.html": {
-      "slug": "jhk-investment",
-      "title": "JHK",
-      "year": "2011",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 10
     },
     "jm-spots.html": {
       "slug": "jm-spots",
@@ -644,11 +428,11 @@
     "hot-gossip.html": {
       "slug": "hot-gossip",
       "title": "Hot Gossip",
-      "year": "2015",
+      "year": "2012",
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 10
     },
     "home-automation-system-presentation.html": {
       "slug": "home-automation-system-presentation",
@@ -686,33 +470,6 @@
       "onArchivePage": true,
       "plates": 12
     },
-    "haven-project.html": {
-      "slug": "haven-project",
-      "title": "Haven",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
-    },
-    "haustalks.html": {
-      "slug": "haustalks",
-      "title": "Haustalks",
-      "year": "2019",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
-    "harbour-pointe.html": {
-      "slug": "harbour-pointe",
-      "title": "Harbour Pointe",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
     "glow-in-the-dark.html": {
       "slug": "glow-in-the-dark",
       "title": "Glow in the Dark",
@@ -721,15 +478,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 2
-    },
-    "ghana-bbq-beer-festival.html": {
-      "slug": "ghana-bbq-beer-festival",
-      "title": "Ghana BBQ & Beer Festival",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
     },
     "gh-phot-awards.html": {
       "slug": "gh-phot-awards",
@@ -766,15 +514,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 1
-    },
-    "fizzles-pub.html": {
-      "slug": "fizzles-pub",
-      "title": "Fizzles Pub",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 18
     },
     "ert.html": {
       "slug": "ert",
@@ -819,16 +558,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 3
-    },
-    "emerge-ident.html": {
-      "slug": "emerge-ident",
-      "title": "Emerge Co. Ltd Showreel",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 22
+      "plates": 2
     },
     "elo-tv.html": {
       "slug": "elo-tv",
@@ -838,24 +568,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 17
-    },
-    "elo-identity.html": {
-      "slug": "elo-identity",
-      "title": "ELO Identity",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 11
-    },
-    "elo-conference.html": {
-      "slug": "elo-conference",
-      "title": "ELO Conference",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 16
     },
     "ela-b.html": {
       "slug": "ela-b",
@@ -875,15 +587,6 @@
       "onArchivePage": true,
       "plates": 15
     },
-    "eic-competition.html": {
-      "slug": "eic-competition",
-      "title": "EIC Competition",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "ehr.html": {
       "slug": "ehr",
       "title": "EHR",
@@ -893,14 +596,23 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "dyv.html": {
-      "slug": "dyv",
-      "title": "DYV",
-      "year": "2023",
+    "e-zone.html": {
+      "slug": "e-zone",
+      "title": "E-Zone",
+      "year": "2012",
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 5
+      "plates": 1
+    },
+    "dyv.html": {
+      "slug": "dyv",
+      "title": "DYV",
+      "year": "2025",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
     },
     "drw-furnart.html": {
       "slug": "drw-furnart",
@@ -910,6 +622,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 19
+    },
+    "design-express.html": {
+      "slug": "design-express",
+      "title": "Design Express",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
     },
     "d-e-t-a-i-l-s.html": {
       "slug": "d-e-t-a-i-l-s",
@@ -929,15 +650,6 @@
       "onArchivePage": true,
       "plates": 11
     },
-    "daawat-sweets.html": {
-      "slug": "daawat-sweets",
-      "title": "Daawat Sweets",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
     "csm.html": {
       "slug": "csm",
       "title": "CSM",
@@ -946,24 +658,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 6
-    },
-    "college-invasion.html": {
-      "slug": "college-invasion",
-      "title": "College Invasion",
-      "year": "2009",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
-    "clairemont.html": {
-      "slug": "clairemont",
-      "title": "Clairemont",
-      "year": "2011",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 17
     },
     "chocolate.html": {
       "slug": "chocolate",
@@ -983,24 +677,6 @@
       "onArchivePage": true,
       "plates": 10
     },
-    "campions-renderings.html": {
-      "slug": "campions-renderings",
-      "title": "Campions Renderings",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 53
-    },
-    "c25.html": {
-      "slug": "c25",
-      "title": "C25",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 7
-    },
     "brownies-place.html": {
       "slug": "brownies-place",
       "title": "Brownie&rsquo;s Place",
@@ -1018,24 +694,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 13
-    },
-    "beautiful-choices.html": {
-      "slug": "beautiful-choices",
-      "title": "Beautiful Choices",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
-    "baobab-hotel-interiors.html": {
-      "slug": "baobab-hotel-interiors",
-      "title": "Baobab Hotel - Interiors",
-      "year": "2024",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
     },
     "baobab-hotel-exteriors.html": {
       "slug": "baobab-hotel-exteriors",
@@ -1055,24 +713,6 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "apartment-in-takoradi.html": {
-      "slug": "apartment-in-takoradi",
-      "title": "Apartment In Takoradi",
-      "year": "2010",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
-    "anyigbanua.html": {
-      "slug": "anyigbanua",
-      "title": "Anyigbanua",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
     "ameyaw-sarah.html": {
       "slug": "ameyaw-sarah",
       "title": "Ameyaw + Sarah",
@@ -1090,15 +730,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 1
-    },
-    "alexander.html": {
-      "slug": "alexander",
-      "title": "Alexander",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 10
     },
     "akyea-residence.html": {
       "slug": "akyea-residence",
@@ -1153,15 +784,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 16
-    },
-    "adolph-s-wedding-invite.html": {
-      "slug": "adolph-s-wedding-invite",
-      "title": "Adolph's Wedding Invite",
-      "year": "2018",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
     },
     "adentan-townhouses.html": {
       "slug": "adentan-townhouses",
@@ -1224,7 +846,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 3
+      "plates": 1
     },
     "2gs.html": {
       "slug": "2gs",
@@ -1262,6 +884,357 @@
       "onArchivePage": true,
       "plates": 16
     },
+    "buena-vista-homes.html": {
+      "slug": "buena-vista-homes",
+      "title": "Buena Vista Homes",
+      "year": "2008",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "echo.html": {
+      "slug": "echo",
+      "title": "Echo",
+      "year": "2008",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "yakubu-interiors.html": {
+      "slug": "yakubu-interiors",
+      "title": "Yakubu Interiors",
+      "year": "2008",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "adm-cocoa.html": {
+      "slug": "adm-cocoa",
+      "title": "ADM Cocoa",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "amalbank-hq-reception.html": {
+      "slug": "amalbank-hq-reception",
+      "title": "Amalbank HQ Reception",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "asag-constitution-cover.html": {
+      "slug": "asag-constitution-cover",
+      "title": "ASAG Constitution Cover",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "avenda.html": {
+      "slug": "avenda",
+      "title": "Avenda",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "buena-vista-3.html": {
+      "slug": "buena-vista-3",
+      "title": "Buena Vista 3",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "capss-dinner.html": {
+      "slug": "capss-dinner",
+      "title": "CAPSS Dinner",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "chyuanchya-com.html": {
+      "slug": "chyuanchya-com",
+      "title": "Chyuanchya.com",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "clements-court.html": {
+      "slug": "clements-court",
+      "title": "Clement's Court",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "college-invasion.html": {
+      "slug": "college-invasion",
+      "title": "College Invasion",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "deneese.html": {
+      "slug": "deneese",
+      "title": "Deneese",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "faze-partners.html": {
+      "slug": "faze-partners",
+      "title": "Faze Partners",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "harrys-court.html": {
+      "slug": "harrys-court",
+      "title": "Harry's Court",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "house-dominic.html": {
+      "slug": "house-dominic",
+      "title": "House Dominic",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "nissa.html": {
+      "slug": "nissa",
+      "title": "NISSA",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "out-of-darkness.html": {
+      "slug": "out-of-darkness",
+      "title": "Out of Darkness",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "penta.html": {
+      "slug": "penta",
+      "title": "Penta",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "rhyme-and-jazz.html": {
+      "slug": "rhyme-and-jazz",
+      "title": "Rhyme and Jazz",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "smart-plaza.html": {
+      "slug": "smart-plaza",
+      "title": "Smart Plaza",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "something-for-a-friend.html": {
+      "slug": "something-for-a-friend",
+      "title": "Something for a Friend",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "somewhere-in-east-legon.html": {
+      "slug": "somewhere-in-east-legon",
+      "title": "Somewhere in East Legon",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "somewhere-in-gambia.html": {
+      "slug": "somewhere-in-gambia",
+      "title": "Somewhere in Gambia",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "the-brightest-idea.html": {
+      "slug": "the-brightest-idea",
+      "title": "The Brightest Idea",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "the-seed.html": {
+      "slug": "the-seed",
+      "title": "The SEED",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "tsik.html": {
+      "slug": "tsik",
+      "title": "TSIK",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "white-and-unassuming.html": {
+      "slug": "white-and-unassuming",
+      "title": "White and Unassuming",
+      "year": "2009",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "amoabeng-villa.html": {
+      "slug": "amoabeng-villa",
+      "title": "Amoabeng Villa",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "apartment-in-takoradi.html": {
+      "slug": "apartment-in-takoradi",
+      "title": "Apartment In Takoradi",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "ayi-mensah.html": {
+      "slug": "ayi-mensah",
+      "title": "Ayi Mensah",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "elo-identity.html": {
+      "slug": "elo-identity",
+      "title": "ELO Identity",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "emerald-house.html": {
+      "slug": "emerald-house",
+      "title": "Emerald House",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "goil-rebranding.html": {
+      "slug": "goil-rebranding",
+      "title": "Goil Rebranding",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "ppa-ghana-competition.html": {
+      "slug": "ppa-ghana-competition",
+      "title": "PPA Ghana Competition",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "project-mount.html": {
+      "slug": "project-mount",
+      "title": "Project Mount",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "rdvs-ident.html": {
+      "slug": "rdvs-ident",
+      "title": "RDVS Ident",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "rdvsstudiosgh-com.html": {
+      "slug": "rdvsstudiosgh-com",
+      "title": "RDVStudiosGH.COM",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "royal-golf-club-house.html": {
+      "slug": "royal-golf-club-house",
+      "title": "Royal Golf Club House",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
     "samsung-branding-proposal.html": {
       "slug": "samsung-branding-proposal",
       "title": "Samsung Branding Proposal",
@@ -1270,6 +1243,564 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 5
+    },
+    "wellness-house.html": {
+      "slug": "wellness-house",
+      "title": "Wellness House",
+      "year": "2010",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "asag-design-week.html": {
+      "slug": "asag-design-week",
+      "title": "ASAG Design Week",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "cal-bank-interiors.html": {
+      "slug": "cal-bank-interiors",
+      "title": "Cal Bank Interiors",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "clairemont.html": {
+      "slug": "clairemont",
+      "title": "Clairemont",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 20
+    },
+    "edell-place.html": {
+      "slug": "edell-place",
+      "title": "Edell Place",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "elo-conference.html": {
+      "slug": "elo-conference",
+      "title": "ELO Conference",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 17
+    },
+    "gold-dust.html": {
+      "slug": "gold-dust",
+      "title": "Gold Dust",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "house-for-isaac.html": {
+      "slug": "house-for-isaac",
+      "title": "House for Isaac",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "jhk-investment.html": {
+      "slug": "jhk-investment",
+      "title": "JHK",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "octagon-mews.html": {
+      "slug": "octagon-mews",
+      "title": "Octagon Mews",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "vodafone-red-hse.html": {
+      "slug": "vodafone-red-hse",
+      "title": "Vodafone Red Hse",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "zipnet-takoradi.html": {
+      "slug": "zipnet-takoradi",
+      "title": "Zipnet Takoradi",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "aika-identity.html": {
+      "slug": "aika-identity",
+      "title": "Aika Identity",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "anyigbanua.html": {
+      "slug": "anyigbanua",
+      "title": "Anyigbanua",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "be-more.html": {
+      "slug": "be-more",
+      "title": "Be More",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "c25.html": {
+      "slug": "c25",
+      "title": "C25",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "eic-competition.html": {
+      "slug": "eic-competition",
+      "title": "EIC Competition",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "house-ol.html": {
+      "slug": "house-ol",
+      "title": "House Ol",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "hvl-identity.html": {
+      "slug": "hvl-identity",
+      "title": "HVL Identity",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "icas.html": {
+      "slug": "icas",
+      "title": "ICAS",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "mankata.html": {
+      "slug": "mankata",
+      "title": "Mankata",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "map-folder-design.html": {
+      "slug": "map-folder-design",
+      "title": "MAP",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "nestle-marina-mall.html": {
+      "slug": "nestle-marina-mall",
+      "title": "Nestle - Marina Mall",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "osu-tower.html": {
+      "slug": "osu-tower",
+      "title": "Osu Tower",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 12
+    },
+    "pink-blue-and-gold.html": {
+      "slug": "pink-blue-and-gold",
+      "title": "Pink, Blue and Gold",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "pious-ama.html": {
+      "slug": "pious-ama",
+      "title": "Pious + Ama",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "procredit.html": {
+      "slug": "procredit",
+      "title": "Procredit",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "sam-mellics.html": {
+      "slug": "sam-mellics",
+      "title": "Sam-Mellics",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "the-parker.html": {
+      "slug": "the-parker",
+      "title": "The Parker",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "ycm.html": {
+      "slug": "ycm",
+      "title": "YCM",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "daawat-sweets.html": {
+      "slug": "daawat-sweets",
+      "title": "Daawat Sweets",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "fizzles-pub.html": {
+      "slug": "fizzles-pub",
+      "title": "Fizzles Pub",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 18
+    },
+    "haven-project.html": {
+      "slug": "haven-project",
+      "title": "Haven",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "la-maison.html": {
+      "slug": "la-maison",
+      "title": "La Maison",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "maple-court.html": {
+      "slug": "maple-court",
+      "title": "Maple Court",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "maurice-abena.html": {
+      "slug": "maurice-abena",
+      "title": "Maurice + Abena",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "oak-tree-apartments.html": {
+      "slug": "oak-tree-apartments",
+      "title": "Oak Tree Apartments",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "sinopec-ghana-interiors.html": {
+      "slug": "sinopec-ghana-interiors",
+      "title": "Sinopec Ghana Interiors",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "tedxharambee.html": {
+      "slug": "tedxharambee",
+      "title": "TEDxHarambee",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "victoria-island-naija-project.html": {
+      "slug": "victoria-island-naija-project",
+      "title": "VI",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "viasat1-breakfast-show.html": {
+      "slug": "viasat1-breakfast-show",
+      "title": "Viasat1 Breakfast Show",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 9
+    },
+    "yao-yaa.html": {
+      "slug": "yao-yaa",
+      "title": "Yao + Yaa",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "beautiful-choices.html": {
+      "slug": "beautiful-choices",
+      "title": "Beautiful Choices",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "lase-icon.html": {
+      "slug": "lase-icon",
+      "title": "Lase",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "ndaba-restaurant-whm.html": {
+      "slug": "ndaba-restaurant-whm",
+      "title": "Ndaba Restaurant, WHM",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "nest-apt.html": {
+      "slug": "nest-apt",
+      "title": "Nest",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "octagon-interiors.html": {
+      "slug": "octagon-interiors",
+      "title": "Octagon",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 14
+    },
+    "stephen-yvonne.html": {
+      "slug": "stephen-yvonne",
+      "title": "Stephen + Yvonne",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "airport-city.html": {
+      "slug": "airport-city",
+      "title": "Airport City",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "campions-renderings.html": {
+      "slug": "campions-renderings",
+      "title": "Campions Renderings",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 53
+    },
+    "emerge-ident.html": {
+      "slug": "emerge-ident",
+      "title": "Emerge Co. Ltd Showreel",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 22
+    },
+    "harbour-pointe.html": {
+      "slug": "harbour-pointe",
+      "title": "Harbour Pointe",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "lines.html": {
+      "slug": "lines",
+      "title": "Lines",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "provident-insurance.html": {
+      "slug": "provident-insurance",
+      "title": "Provident Insurance",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "villagio-vista.html": {
+      "slug": "villagio-vista",
+      "title": "Villagio Vista",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 9
+    },
+    "west-hills-mall.html": {
+      "slug": "west-hills-mall",
+      "title": "West Hills Mall",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "alexander.html": {
+      "slug": "alexander",
+      "title": "Alexander",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "weldment-panels.html": {
+      "slug": "weldment-panels",
+      "title": "Weldment Panels",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "ghana-bbq-beer-festival.html": {
+      "slug": "ghana-bbq-beer-festival",
+      "title": "Ghana BBQ & Beer Festival",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "six-acres-company-profile.html": {
+      "slug": "six-acres-company-profile",
+      "title": "Six Acres Company Profile",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 13
+    },
+    "adolph-s-wedding-invite.html": {
+      "slug": "adolph-s-wedding-invite",
+      "title": "Adolph's Wedding Invite",
+      "year": "2018",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "haustalks.html": {
+      "slug": "haustalks",
+      "title": "Haustalks",
+      "year": "2019",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
     }
   }
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Villagio Vista &mdash; RDVS Studios</title>
+  <meta name="description" content="Villagio Vista — a 2015 in-house photography experiment by RDVS Studios: nine plates drawn from three exposures of a pixel-clad residential development, one of them a thirty-second night frame cropped six ways.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Photography / Architectural Photography &mdash; 2015 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">Villagio Vista</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/villagio-vista/villagio-vista-1.jpg" alt="A black and white view across the tops of three residential volumes whose facades are clad in an irregular pixel mosaic of pale, mid and dark grey panels. The tallest block stands at the left with a stack of white recessed balconies down its outer flank and an open, unglazed storey at its crown; a second tower rises at the right with the same checkered cladding and white balcony flank; a low block joining them carries small trees along its roofline. The sky is flat featureless white, a thin treeline closes the bottom of the frame, and the only colour left in the picture is the red rectangular RDVSIMAGING badge in the bottom-right corner." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Villagio Vista is a 2015 in-house photography experiment: nine plates drawn from just three exposures of a pixel-clad residential development, one of them a thirty-second night frame cropped six different ways.</p>
+
+        <div class="project-body-text">
+          <p>The gallery is titled VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT and was published on 9 July 2015 from the studio&rsquo;s RDVS. DESIGN Behance account, where it carries an Attribution, Non-commercial, No Derivatives licence. Nine modules were published and all nine are plated here. Four days after Airport City, and in the same run that also produced LA MAISON - PHOTOGRAPHY, WEST HILLS MALL - PHOTOGRAPHY and LINES - EXPERIMENTAL PHOTOGRAPHY, this gallery is the fourth of five photography listings the studio put up in six weeks. Unlike Airport City it reached us with no description and no credits line, so this page carries no Team row and quotes nothing the studio did not write about it; what it does carry is what the files themselves record.</p>
+          <p>That record is unusually complete, because the studio exported the plates out of Photoshop with their metadata intact. Every frame came off the same Canon EOS 60D, body serial 2571412391, on the kit EF-S18-55mm f/3.5-5.6 IS II at f/13 or wider, and the nine plates resolve to three shutter releases rather than nine. Plates one and two are one daylight capture, IMG_1786.CR2, made at 14:49:25 on 7 July 2015 at 1/200 s, f/13, ISO 100. Plate three is a second daylight capture, IMG_1795.CR2, at 15:30:37, 1/100 s, f/11, ISO 100. Plates four to nine are all one night exposure, IMG_2012.CR2, at 19:37:25 that same evening: a thirty-second frame at f/7.1 and ISO 160 with the exposure programme recorded as manual. Six plates, one press of the shutter, six different crops of it.</p>
+          <p>What was photographed is a residential development whose towers are clad in an irregular mosaic of coloured rectangular panels, broken by stacks of plain white recessed balconies. The daylight pair holds two towers and the low block joining them against a flat pale sky, and the two plates are one crop published twice over, which the files support rather than prove: the same 1000 by 582 output, the same original RAW, the same creation timestamp to the hundredth of a second. Plate two is full colour, the near tower yellow and cream and the far tower and podium green, while plate one is that frame desaturated to grey, so the cladding becomes a study in three values and the red RDVSIMAGING badge is the only thing left in colour. A small white square tag sits beside the badge on every plate except that first one, which is also the only file that records no live text layers. Plate three pushes in on the yellow tower where an upper volume oversails the floors below, the checkered cladding wrapping over the soffit of the overhang so the pattern runs diagonally across its underside.</p>
+          <p>The night run is where the experiment is. A thirty-second exposure turns the site into a set of light sources: the towers lit flat white from below, a handful of windows glowing warm orange, red obstruction lights burning at the roof corners, stars holding still as points in a deep blue sky, and traffic reduced to a horizontal smear of white and red that crosses the frame at the waist of the tall tower and streaks the road along the bottom. The six crops of that one exposure are sequenced by how much they let in. Heights at a constant 1000 pixels of width run 543, 769, 1167, 2222, 1896 and 1512, so the listing opens tight on the lit facade, takes the crown of the red tower with its planted and floodlit roof, pulls back across two towers, opens out to the tallest plate which holds the whole scene including the road, and then steps back down through two shorter crops, the last of them the broadest view in the set and the only one to take in the third tower and the green block below it.</p>
+          <p>The dates the files carry do not agree with the date the gallery claims, and the disagreement is informative. Last-save stamps run plate three at 12:04 on 9 July, plates four to six at 22:45 to 22:48 that night, plates seven to nine in the small hours of 10 July, and then plates one and two at 13:49 and 20:38 on 18 July &mdash; nine days after the publish date Behance shows, which is a way of saying that the two daylight plates opening the gallery were the last things the studio touched. The upload stamps inside the module filenames put all nine files on the CDN on 2 November 2015 in three short sittings: the first at 00:36 lands plates four, five, three and six in that order, the second at 00:45 to 00:47 lands the three tall night crops, and the last puts plates one and two down at 04:31:36, two seconds after the final two Airport City frames landed. The gallery names its subject but no place, and the frames name nothing legible beyond a road, street lighting and palms; several of the files carry a machine offset of -07:00 rather than Accra&rsquo;s +00:00, so the timestamps describe a computer, not a site. Outside the source, a public encyclopaedia entry for a Villagio Vista in Accra describes three towers colour-coded yellow, red and green and completed in 2016, which matches the three cladding colours visible here and the open unglazed storeys in the night frames, and is offered only as corroboration of what these pictures show rather than as evidence for anything the listing claims. The source is on Behance &mdash; <a href="https://www.behance.net/gallery/27802713/VILLAGIO-VISTA-PHOTOGRAPHY-EXPERIMENT" target="_blank" rel="noopener noreferrer">VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT, 9 July 2015</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Villagio Vista, Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-photography">Architectural Photography</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Nine plates drawn from three exposures made within five hours of one another on 7 July 2015; the two daylight plates that open the gallery carry the last-save dates, nine days after the stated publish date.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT &middot; Behance gallery 27802713 &middot; 9 July 2015 &middot; 9 frames, 9 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated architectural photography of a residential development: one daylight frame published in colour and monochrome, one daylight detail, and one thirty-second night frame cropped into six plates.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">9 plates &middot; up to 1000 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1000" height="582" src="assets/images/villagio-vista/villagio-vista-1.jpg" alt="A black and white view across the tops of three residential volumes whose facades are clad in an irregular pixel mosaic of pale, mid and dark grey panels. The tallest block stands at the left with a stack of white recessed balconies down its outer flank and an open, unglazed storey at its crown; a second tower rises at the right with the same checkered cladding and white balcony flank; a low block joining them carries small trees along its roofline. The sky is flat featureless white, a thin treeline closes the bottom of the frame, and the only colour left in the picture is the red rectangular RDVSIMAGING badge in the bottom-right corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="582" src="assets/images/villagio-vista/villagio-vista-2.jpg" alt="The same daylight view printed in full colour: the tall tower at the left is clad in an irregular mosaic of yellow, gold and cream rectangular panels with a flank of plain white recessed balconies, and the tower at the right and the low block joining them are clad in the same mosaic in greens. The left tower has an open, unglazed storey and a small white rooftop structure at its crown; young trees and a white box sit along the podium roof between the towers. The sky is a flat pale blue-grey, a treeline closes the bottom of the frame, and a red RDVSIMAGING badge with a small white square tag sits in the bottom-right corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="713" src="assets/images/villagio-vista/villagio-vista-3.jpg" alt="A close daylight crop of the yellow tower, taken at the level where an upper volume oversails the floors below it. The checkered yellow, gold and cream cladding wraps over the underside of the overhang, so the pattern runs diagonally across the soffit, while beneath it the white balconies step back in a stack of deep horizontal openings with narrow windows set into the recesses. Windows pierce the tiled face irregularly down the right side of the frame, the pale green edge of the neighbouring block just enters at the bottom right, and the sky at the left is clear pale blue. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="543" src="assets/images/villagio-vista/villagio-vista-4.jpg" alt="A night crop across the waist of the tall tower, landscape rather than the verticals around it. The white facade with its staggered recessed balconies and dark windows fills most of the frame, one window lit warm orange at the upper left and a smaller one lower down, and the yellow cladding reads as a thin lit band at the left edge. A horizontal streak of white light smears right across the middle of the image at the joint between the two volumes, the trail of a moving light source during a thirty-second exposure, and the sky behind the building is a deep even blue. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="769" src="assets/images/villagio-vista/villagio-vista-5.jpg" alt="The crown of the red tower at night: a white penthouse box and lift overrun sit on the roofline with planted trees lit from below, and the top storeys beneath are white with staggered balconies, one window glowing warm orange at the right and another at the lower left. The tower&rsquo;s return face along the left is clad in the same pixel mosaic, reading here as deep red and orange in the low light, and the sky is a solid dark blue with a faint streak near the left edge. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="1167" src="assets/images/villagio-vista/villagio-vista-6.jpg" alt="A night crop of two towers against a dark blue sky pricked with star points. The left tower, edged in yellow cladding with white staggered balconies, is topped by two red obstruction lights and an open unglazed storey, with a few lit windows and a warm orange one lower down; the right tower is clad in red and orange panels with a white crown and a planted, floodlit roof. Between and below them the tops of two more pixel-clad blocks appear, one red and one green, and palms and low lit buildings run along the horizon at the bottom left. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="2222" src="assets/images/villagio-vista/villagio-vista-7.jpg" alt="The tallest plate, the whole night scene cropped narrow and vertical. The yellow-edged tower stands full height through the centre, its crown lit by two red obstruction lights above an open unglazed storey, its white balconies broken by a few lit windows and by a horizontal light trail at the joint between its two volumes; the red and orange pixel-clad tower stands shorter at the right with scattered lit windows. Below them a road runs across the frame streaked red and white by traffic, with street lamps and trees at the base of the towers, palms and low lit buildings at the left, and a dark sky holding still stars above. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="1896" src="assets/images/villagio-vista/villagio-vista-8.jpg" alt="The same night view a little tighter: the yellow tower fills the left two-thirds from its red obstruction lights down through its lower floors, the red and orange pixel-clad tower sits at the right with lit windows scattered across its facade, and only the treetops and a thin band of lit road survive of the foreground. Star points are visible in the deep blue sky, a light trail smears across the waist of the taller tower and another streaks along the road at the bottom. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="1512" src="assets/images/villagio-vista/villagio-vista-9.jpg" alt="The broadest night crop, taking in three towers at once: the tall yellow-edged block at the left with its open crown and red obstruction lights, a shorter red and orange pixel-clad block in the middle distance, and the red tower at the right rising above a green pixel-clad base with its planted roof floodlit from below. Street lamps, trees and a low lit wall run along the middle ground, red and white light trails streak the road across the bottom of the frame, and stars are scattered through the dark blue sky. Red RDVSIMAGING badge and white tag, bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="provident-insurance.html" class="project-nav-link">&larr; Previous: Provident Insurance</a>
+      <a href="west-hills-mall.html" class="project-nav-link">Next: West Hills Mall &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

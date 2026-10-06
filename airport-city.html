@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Airport City &mdash; RDVS Studios</title>
+  <meta name="description" content="Airport City — a 2015 in-house photography experiment by RDVS Studios: five frames of Accra’s Airport City district, shot and curated by Jude Nyoagbe and Randy Biney and finished by Randy Biney, published as a single Behance gallery.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Photography / Architectural Photography &mdash; 2015 &middot; RDVS Studios</span>
+      <h1 class="project-page-title">Airport City</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/airport-city/airport-city-1.jpg" alt="A blue glass curtain wall seen close along its corner, filling the left two-thirds of the frame with a grid of square reflective panes. The lower half of the glazing works as a mirror: it returns a neighbouring facade clad in an irregular checkerboard of black, white and grey panels together with a rooftop sign whose letters run backwards in the glass. Past the right edge of the building the frame opens onto a washed-out white sky, a low hazy treeline and a single blue billboard, and a red rectangular RDVSIMAGING badge sits in the bottom-right corner." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">Airport City is a 2015 in-house photography series in which RDVS treated Accra’s new business district as a set of framing problems: a blue curtain wall used as a mirror, a skyline crushed into a strip only 287 pixels tall, and two vertical frames shot downward through the gap between concrete floor slabs.</p>
+
+        <div class="project-body-text">
+          <p>The gallery is titled AIRPORT CITY,ACCRA - PHOTOGRAPHY EXPERIMENT and was published on 5 July 2015 from the studio&rsquo;s RDVS. DESIGN Behance account, under a Creative Commons Attribution-NonCommercial-ShareAlike badge. Its description is a statement about the category rather than about these pictures: &ldquo;This project falls into our in house category of &lsquo;Experimental photography&rsquo;. In our quest and search for the perfect shot we embark on these experiments that allow us to bend (and sometimes break) the rules of photography. In some cases we are successful at other times this excercise becomes a wild goose choose but we love these experiments because we are able to see things from a different angle/view than we usually do.&rdquo; The two misspellings are the studio&rsquo;s own and are left exactly as written. Five frames were published and all five are plated here.</p>
+          <p>The credits run in full: &ldquo;TEAM SHOTS TAKEN + CURATED BY: JUDE NYOAGBE + RANDY BINEY POST PRODUCTION BY RANDY BINEY.&rdquo; Both names recur through the archive as the designer, renderer or animator on client work rather than as crew brought in for a shoot, and the split inside the line is the informative part &mdash; taking the pictures and choosing between them were the same two people, while the finishing fell to one of them. Every frame carries the same red RDVSIMAGING badge in its lower-right corner, so the series went out under the studio&rsquo;s imaging tag rather than under RDVS itself.</p>
+          <p>The first three frames are landscape and they play one idea three ways. The curtain wall in plate one is not photographed as a surface but used as a mirror: its lower panes give back a neighbouring facade of black, white and grey checkerboard with the sign from that building&rsquo;s roof reading backwards in the glass, so the district appears twice in one exposure and neither appearance is direct. Plate two takes the ground away altogether, cropping two parapets &mdash; a red Vodafone wordmark on white banding, a gold and black monogram roundel on blue glass &mdash; against a sky burned to flat white. Plate three takes the opposite extreme and crushes the whole skyline into a strip 800 by 287 pixels, so shallow that the buildings are reduced to rooflines, signage and a crane jib crossing in front of them.</p>
+          <p>Plates four and five are the two vertical frames, and they are where the rules actually bend. Both look down from an upper floor through the gap between concrete slabs, and the slabs stay in the picture: a dark floor soffit across the top and a pale parapet across the bottom cut the view into an irregular aperture, so a car park, a mall&rsquo;s cylindrical corner tower and a checkered facade beyond are all seen as though through a slot in the building itself. They are also the only two frames wider than 800 pixels, at 1000 by 1376 and 1000 by 1583, and plate five returns to the same checkerboard cladding that plate one catches only in reflection &mdash; this time as a direct subject, with its rooftop sign photographed from behind so that its letters run the other way.</p>
+          <p>The listing takes 2015 from the gallery, but the two dates the source carries disagree. Behance stamps the project as published on 5 July 2015, while the five image files carry upload stamps inside one six-and-a-half-hour session spanning 1 and 2 November 2015 &mdash; the three landscape frames first, the two vertical ones about six hours later. That is a single sitting rather than the &ldquo;ever evolving project&rdquo; the description promises, and nothing has been added since. The year reads 2015 on either date, so the disagreement moves nothing on this page.</p>
+          <p>Airport City was not a one-off either. The studio&rsquo;s Behance list puts LA MAISON - PHOTOGRAPHY on 11 June 2015 and WEST HILLS MALL - PHOTOGRAPHY on 14 June, then this gallery on 5 July, VILLAGIO VISTA - PHOTOGRAPHY EXPERIMENT on 9 July and LINES - EXPERIMENTAL PHOTOGRAPHY on 26 July: five photography galleries in six weeks, none of them in this archive yet. It is the first entry here typed as photography, which is why the Typology cell says Photography rather than borrowing a word from the design and visualisation lists &mdash; the taxonomy generator harvests typologies from the archive&rsquo;s own display cells as well as from work cards, so the value written on this row is the value the next regeneration will produce. The studio&rsquo;s earlier site export carried the same five frames as a project called airport-city dated 2021 with an Architecture typology; the gallery&rsquo;s own publish stamp and its caption correct both. The source is on Behance &mdash; <a href="https://www.behance.net/gallery/27663433/AIRPORT-CITYACCRA-PHOTOGRAPHY-EXPERIMENT" target="_blank" rel="noopener noreferrer">AIRPORT CITY,ACCRA - PHOTOGRAPHY EXPERIMENT, 5 July 2015</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Airport City, Accra, Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2015</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=architectural-photography">Architectural Photography</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=studio-projects">In-house</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Architectural Photography</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Self-initiated and open by design: the gallery calls itself ever evolving, and its five frames were all uploaded in one session in November 2015.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Published As</span>
+            <span class="project-spec-val">1 Behance gallery &middot; 5 July 2015 &middot; 5 frames, 5 plated</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Self-initiated architectural photography of the Airport City district of Accra: shooting, curation and post-production, published as a single gallery.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Team</span>
+            <span class="project-spec-val">Jude Nyoagbe and Randy Biney (shots and curation); Randy Biney (post-production)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">5 plates &middot; up to 1000 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="800" height="537" src="assets/images/airport-city/airport-city-1.jpg" alt="A blue glass curtain wall seen close along its corner, filling the left two-thirds of the frame with a grid of square reflective panes. The lower half of the glazing works as a mirror: it returns a neighbouring facade clad in an irregular checkerboard of black, white and grey panels together with a rooftop sign whose letters run backwards in the glass. Past the right edge of the building the frame opens onto a washed-out white sky, a low hazy treeline and a single blue billboard, and a red rectangular RDVSIMAGING badge sits in the bottom-right corner." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="568" src="assets/images/airport-city/airport-city-2.jpg" alt="Two office rooftops cropped against an almost featureless white sky. On the left a white banded building with horizontal strips of blue glazing carries the Vodafone wordmark in red lowercase on its parapet, with a second red sign running away from the camera along the same roofline; on the right a taller tower of blue glass carries a circular gold-and-black dimensional monogram at its corner. The head of a street lamp intrudes at the bottom edge. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="800" height="287" src="assets/images/airport-city/airport-city-3.jpg" alt="A very wide, low strip of skyline under heavy grey cloud: a cylindrical glass atrium braced with white diagrid at the left and a construction crane jib crossing in front of it, beige slab blocks and blue-glass towers packed along the horizon, one saturated blue cube standing out near the centre, and a run of large dimensional rooftop capitals along the low building in the middle distance with a blue shield badge on its corner. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="1376" src="assets/images/airport-city/airport-city-4.jpg" alt="A tall frame looking downward through the wedge-shaped gap between two concrete slabs: the dark underside of a floor crosses the top of the image and a pale parapet closes the bottom, so the view is cut to an irregular opening. Through it sits a multi-storey open car park packed with cars, a low two-storey retail building with a cylindrical corner tower carrying a blue shield badge, a divided road with a yellow minibus, and the flat hazy Accra horizon with industrial chimneys and a distant white office block. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img width="1000" height="1583" src="assets/images/airport-city/airport-city-5.jpg" alt="The tallest frame, looking down at a mid-rise building whose two visible faces are clad in an irregular checkerboard of black, white, grey and beige panels with deeply recessed windows. A concrete parapet or stair soffit cuts diagonally across the whole lower half of the image, close to the lens; a service road, a generator set and a yellow billboard sit at the left, a green treeline and low buildings fill the middle distance, and a wide pale blue sky with thin cloud fills the top. A rooftop sign on the checkered building is seen from behind, its letters running the other way. Red RDVSIMAGING badge, bottom right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="advantage-place.html" class="project-nav-link">&larr; Previous: Advantage Place</a>
+      <a href="campions-renderings.html" class="project-nav-link">Next: Campions Renderings &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

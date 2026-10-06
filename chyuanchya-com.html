@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Chyuanchya.com &mdash; RDVS Studios</title>
+  <meta name="description" content="Chyuanchya.com - 2009 web design by RDVS Studios: the homepage design for a gold company, a dark olive and mustard corporate layout with a seven-item navigation, a thin geometric wordmark, rendered 99.99 gold bars and five numbered tiles, published as a pre-launch preview.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">Website / Digital &amp; Web Design &mdash; 2009 &middot; Chyuanchya</span>
+      <h1 class="project-page-title">Chyuanchya.com</h1>
+    </header>
+
+    <div class="project-hero-media">
+      <img src="assets/images/chyuanchya-com/chyuanchya-com-1.jpg" alt="The complete homepage design for a gold company: a dark olive header band carrying a small black rounded-square mark with a pale C inside it at the left and a seven-item navigation row at the right reading HOME, NEWS, ABOUT US, PROJECTS, INVESTORS, STOCKS and CONTACT US, with HOME set in amber on a darker tile; below it a mustard bar holding the wordmark chyuan chya with the gold company beside it and a SUBMIT button and search field at the right. The white content band shows a gold masthead panel of the same wordmark drawn in thin geometric lettering, an About Us heading in gold over three lines of body copy explaining the name, and at the right a render of stacked gold bars stamped chyuan chya and 99.99. Under that, on a dark wood-grain ground, sit five numbered tiles: 00 home with a small white house model, 01 news with a folded newspaper, 02 projects with a document and pen, 03 stocks with a checklist and a downward arrow, and 04 contact us with a compass on a map. The footer strip reads CHYUANCHYA &copy; ALL RIGHTS RESERVED - 2009 at the left and HANDCRAFTED AND POWERED BY REVIVAL.DESIGN+VFX.STUDIOS - the SEED.v1.2009 | Valid XHTML &amp; CSS at the right." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">The homepage design for Chyuanchya, a gold company, published in September 2009 as a pre-launch preview: a dark olive and mustard layout with a seven-item navigation, a thin geometric wordmark, a render of stamped 99.99 bars, and five numbered tiles on a wood-grain band. The studio said the site would be uploaded in a few days, and nothing in the archive ever reports it going up, so this listing is the design rather than a live site.</p>
+
+        <div class="project-body-text">
+          <p>The post is an announcement with two sentences of substance. The studio had been working on the site &ldquo;for quite sometime now&rdquo;, it &ldquo;should be uploaded in a few days&rdquo;, and the brief is stated plainly: &ldquo;a very simple site done in xhtml, css some javascripts and php&rdquo; whose concept was &ldquo;to make it as simple and corporate as possible&rdquo;. The closing line &mdash; &ldquo;Your C&amp;C&rsquo;s are very much welcome&rdquo; &mdash; is the old blog habit of asking for comments and corrections, which is also how the studio tagged its own work: the labels on this entry are chyuanchya, microsoft frontpage, photoshop, portfolio and web design.</p>
+          <p>The client is named by the design itself. The wordmark reads chyuan chya with the gold company under it, the navigation carries INVESTORS and STOCKS, and the About Us column explains the name: CHYUANCHYA is &ldquo;translated from its Chinese words, which means Gold, Diamond over Ghana&rdquo;, and because Ghana was the Gold Coast the site&rsquo;s own copy resolves the phrase to The Gold Company. The listing is named after the client, and the unusual spelling is left exactly as the studio set it &mdash; CHYUANCHYA in the copyright line, chyuan chya in the wordmark, CHYUANCHYA.COM in the post title.</p>
+          <p>As a layout it is a 2009 corporate homepage in the full sense: a dark olive masthead band with the mark at one end and the navigation at the other, a mustard utility bar holding the search field, a white content band that pairs a gold masthead panel and the About Us extract with a render of stacked gold bars, and then a strip of five numbered tiles on a wood-grain ground, each with its own still-life image &mdash; a house model, a folded newspaper, a document and pen, a checklist with a downward arrow, a compass on a map. The numbering starts at 00, so the home page is one of the sections rather than above them.</p>
+          <p>The footer is the part worth a second look. Its credit line reads HANDCRAFTED AND POWERED BY REVIVAL.DESIGN+VFX.STUDIOS - the SEED.v1.2009 | Valid XHTML &amp; CSS, which is the studio&rsquo;s seed signature &mdash; the same device listed as <a href="the-seed.html">the SEED</a> wallpaper at v.1.0 in October 2009 and stamped THE.SEED.1.1..2010 across <a href="goil-rebranding.html">the 2010 GOIL frames</a> &mdash; here typeset as a working site credit instead of drawn as artwork, and the first of the three that also carries a validation claim. The &ldquo;Valid XHTML &amp; CSS&rdquo; badge text is period practice: a hand-coded page advertised itself by passing the W3C check.</p>
+          <p>What the archive does not hold is any later word on the site itself. One entry in a hundred and twenty-two mentions Chyuanchya, so the launch the post predicted is undocumented, and this listing keeps the announcement&rsquo;s own position: a finished homepage design, one image, no screenshots of anything running. The tools are only those the labels name &mdash; Microsoft FrontPage and Photoshop &mdash; and the languages are only those the body names: XHTML, CSS, some JavaScript and PHP. Nothing else is inferred, and in particular the then-competing editor that this studio did not use is not written into the record.</p>
+          <p>The source post is on blogspot &mdash; <a href="https://revivalgh.blogspot.com/2009/09/wwwchyuanchyacom-web-design.html" target="_blank" rel="noopener noreferrer">coming soon! the new WWW.CHYUANCHYA.COM - WEB DESIGN, 29 September 2009</a>.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">Chyuanchya</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Location</span>
+            <span class="project-spec-val">Ghana</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2009</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Typology</span>
+            <span class="project-spec-val">Website</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val project-services"><a class="project-service" href="work.html?service=web-design">Digital &amp; Web Design</a></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Discipline</span>
+            <span class="project-spec-val">Digital &amp; Web Design</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Status</span>
+            <span class="project-spec-val">Homepage design published 29 September 2009 as forthcoming; no later post records the site going up</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Software</span>
+            <span class="project-spec-val">Microsoft FrontPage and Photoshop (named in the post&rsquo;s own labels)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Built With</span>
+            <span class="project-spec-val">XHTML, CSS, some JavaScript and PHP (named in the post)</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Scope of Services</span>
+            <span class="project-spec-val">Design and build of a corporate homepage: identity bar, navigation, search, an About Us extract, product imagery and a five-tile section strip.</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1263 px wide</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Project detail gallery">
+      <div class="gallery-item">
+        <img width="1263" height="611" src="assets/images/chyuanchya-com/chyuanchya-com-1.jpg" alt="The complete homepage design for a gold company: a dark olive header band carrying a small black rounded-square mark with a pale C inside it at the left and a seven-item navigation row at the right reading HOME, NEWS, ABOUT US, PROJECTS, INVESTORS, STOCKS and CONTACT US, with HOME set in amber on a darker tile; below it a mustard bar holding the wordmark chyuan chya with the gold company beside it and a SUBMIT button and search field at the right. The white content band shows a gold masthead panel of the same wordmark drawn in thin geometric lettering, an About Us heading in gold over three lines of body copy explaining the name, and at the right a render of stacked gold bars stamped chyuan chya and 99.99. Under that, on a dark wood-grain ground, sit five numbered tiles: 00 home with a small white house model, 01 news with a folded newspaper, 02 projects with a document and pen, 03 stocks with a checklist and a downward arrow, and 04 contact us with a compass on a map. The footer strip reads CHYUANCHYA &copy; ALL RIGHTS RESERVED - 2009 at the left and HANDCRAFTED AND POWERED BY REVIVAL.DESIGN+VFX.STUDIOS - the SEED.v1.2009 | Valid XHTML &amp; CSS at the right." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <a href="la-palm-2008-christmas-party-posters.html" class="project-nav-link">&larr; Previous: La Palm 2008 Christmas Party Poster</a>
+      <a href="apartment-in-takoradi.html" class="project-nav-link">Next: Apartment In Takoradi &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+</body>
+</html>

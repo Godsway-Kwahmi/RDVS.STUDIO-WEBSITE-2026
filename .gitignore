@@ -21,3 +21,14 @@ Thumbs.db
 
 # Test artifacts
 scratch/
+
+# Raw working dumps that sit inside the asset tree but are referenced by nothing: Google
+# Drive drop folders, render batches and client paperwork (some of it names individuals).
+# Verified 2026-10-04 — 208 files / 375 MB across these patterns, 0 of them referenced by
+# any page, script or stylesheet — so the site needs none of them.
+assets/**/RENDERS/
+assets/**/drive-download-*/
+assets/**/USER_PROFILES/
+assets/**/PAPERWORK/
+assets/**/MOODBOARD/
+assets/**/PROGRESS/
