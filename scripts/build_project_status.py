@@ -103,17 +103,31 @@ def main_():
         for p in arch:
             print(f'  {p:44s} {registry[p]["title"][:36]:36s} plates={registry[p]["plates"]}')
 
-    if not apply:
-        print('\nREPORT ONLY - pass --apply to write ' + OUT)
-        return
     payload = OrderedDict([
         ('generated', 'from work.html + archive.html by scripts/build_project_status.py'),
         ('contract', 'visibility live = work page + archive page + homepage slideshow; '
                      'archived = archive page only'),
         ('projects', registry),
     ])
-    os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
     text = json.dumps(payload, indent=2, ensure_ascii=False) + '\n'
+
+    if not apply:
+        # Report mode is a drift check, not a preview. `plates` counts the image refs a page
+        # actually loads, so a gallery write that lands without a re-derive leaves the registry
+        # describing a gallery that no longer exists -- and until now no surface asserted it.
+        # Same contract as scripts/build_sanity_seed.py and scripts/build_sanity_taxonomy.py.
+        path = os.path.join(ROOT, OUT)
+        if os.path.isfile(path):
+            have = open(path, 'rb').read().decode('utf-8').replace('\r\n', '\n')
+            if have == text:
+                print(f'\n{OUT} is in step with the site ({len(registry)} projects)')
+                return
+            print(f'\n{OUT} is STALE -- rerun with --apply')
+        else:
+            print(f'\n{OUT} is MISSING -- rerun with --apply')
+        sys.exit(1)
+
+    os.makedirs(os.path.join(ROOT, 'data'), exist_ok=True)
     tmp = os.path.join(ROOT, OUT + '.x.tmp')
     with open(tmp, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(text)
