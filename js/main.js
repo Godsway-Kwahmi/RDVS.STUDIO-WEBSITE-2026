@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
     'abl-reception.html': ['design', 'vfx-cgi'],
+    'ackon-desk.html': ['vfx-cgi'],
     'aelius.html': ['design'],
     'afg.html': ['design', 'turnkey-build', 'vfx-cgi'],
     'ahero.html': ['vfx-cgi'],
@@ -97,6 +98,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'macord.html': ['design', 'vfx-cgi'],
     'marble-bath.html': ['vfx-cgi'],
     'margin.html': ['design', 'vfx-cgi'],
+    'mig.html': ['design'],
     'moty.html': ['design', 'vfx-cgi'],
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
@@ -984,7 +986,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/cascades/tower-cascades-hero.jpg',
         imageMobileUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: twenty-four visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -1003,7 +1005,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/cascades/tower-cascades-1.jpg',
         imageMobileUrl: 'assets/images/cascades/tower-cascades-1.jpg',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: twenty-four visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -1944,7 +1946,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/cascades/tower-cascades-hero.jpg',
         imageMobileUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: twenty-four visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -2994,6 +2996,28 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/avalon/Gc8QzsaXkAAQotV.jpg',
         imageMobileUrl: 'assets/images/avalon/Gc8QzsaXkAAQotV.jpg',
         projectUrl: 'avalon.html'
+      },
+      {
+        id: 'ackon-desk',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        imageUrlDesktop: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        imageMobileUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        projectUrl: 'ackon-desk.html'
+      },
+      {
+        id: 'mig',
+        title: 'MIG',
+        category: 'Modern Indigenous Goods — 2021',
+        service: 'Modern Indigenous Goods',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/mig/mig-1h-2.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-1h-2.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-1h-2.jpg',
+        projectUrl: 'mig.html'
       }
 
 
