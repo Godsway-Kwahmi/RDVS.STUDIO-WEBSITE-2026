@@ -59,14 +59,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     'abl-reception.html': ['design', 'vfx-cgi'],
     'aelius.html': ['design'],
     'afg.html': ['design', 'turnkey-build', 'vfx-cgi'],
-    'ahero.html': ['design', 'vfx-cgi'],
+    'ahero.html': ['vfx-cgi'],
     'ameyaw-sarah.html': ['design'],
     'asante-interior-design-presentation.html': ['design', 'vfx-cgi'],
     'avalon.html': ['design', 'vfx-cgi'],
     'baobab-hotel-exteriors.html': ['vfx-cgi'],
     'bfa.html': ['design', 'vfx-cgi'],
     'brownies-place.html': ['design', 'vfx-cgi'],
-    'campions-renderings.html': ['design', 'vfx-cgi'],
     'ceeander.html': ['design', 'vfx-cgi'],
     'chocolate.html': ['design'],
     'csm.html': ['design', 'vfx-cgi'],
@@ -78,7 +77,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'el-dor.html': ['design', 'vfx-cgi'],
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
-    'emerge-ident.html': ['design', 'vfx-cgi'],
     'empire-tower.html': ['design', 'vfx-cgi'],
     'frontier-filling-station.html': ['design', 'vfx-cgi'],
     'fule.html': ['vfx-cgi'],
@@ -88,13 +86,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
     'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
-    'hola.html': ['design', 'vfx-cgi'],
+    'hola.html': ['vfx-cgi'],
     'hubtel.html': ['design', 'vfx-cgi'],
     'imperial-square.html': ['design'],
     'kdmrd.html': ['vfx-cgi'],
     'kuma-residence.html': ['design', 'vfx-cgi'],
     'la-beach-towers.html': ['design', 'vfx-cgi'],
-    'lamu.html': ['design', 'vfx-cgi'],
+    'lamu.html': ['vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
     'marble-bath.html': ['vfx-cgi'],
@@ -129,7 +127,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'villa-aggregate.html': ['design', 'vfx-cgi'],
     'watsons-place.html': ['design', 'vfx-cgi'],
     'west-cantonments-igl-presentation.html': ['design', 'vfx-cgi'],
-    'white-fleece.html': ['design'],
     'yah-kumasi-mall.html': ['design', 'vfx-cgi'],
   };
 
@@ -207,8 +204,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'dyv-dawn',
         title: 'DYV',
-        category: 'Architectural Design — 2025',
-        service: 'Architectural Design',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
         imageUrlDesktop: 'assets/images/dyv/dyv-dawn.jpg',
@@ -409,8 +406,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'dyv-dawn-plate1',
         title: 'DYV',
-        category: 'Architectural Design — 2025',
-        service: 'Architectural Design',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-panoramic-header.jpg',
         imageUrlDesktop: 'assets/images/dyv/dyv-panoramic-header.jpg',
@@ -428,8 +425,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'dyv-dawn-plate2',
         title: 'DYV',
-        category: 'Architectural Design — 2025',
-        service: 'Architectural Design',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
         imageUrlDesktop: 'assets/images/dyv/dyv-courtyard-night.jpg',
@@ -488,9 +485,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
-        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
-        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
+        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -2256,63 +2253,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'aelius.html'
       },
       {
-        id: 'white-fleece-plate1',
-        title: 'White Fleece',
-        category: 'Graphic Design & Identity — 2014',
-        service: 'Graphic Design & Identity',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/white-fleece/white-fleece-8.jpg',
-        imageUrlDesktop: 'assets/images/white-fleece/white-fleece-8.jpg',
-        imageMobileUrl: 'assets/images/white-fleece/white-fleece-8.jpg',
-        projectUrl: 'white-fleece.html',
-        desc: 'A 2014 corporate identity for White Fleece, a business in Accra, in which RDVS Studios designed a teal wave-and-orbit logotype and built out a full stationery suite, colour system and brand wallpaper.',
-        specs: {
-          client: 'White Fleece',
-          scope: 'Brand identity design, logotype and variations, letterhead, business card, corporate typeface specification, brand wallpaper and a laptop mockup.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Graphic Design   Identity\']'
-        }
-      },
-      {
-        id: 'white-fleece-plate2',
-        title: 'White Fleece',
-        category: 'Graphic Design & Identity — 2014',
-        service: 'Graphic Design & Identity',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/white-fleece/white-fleece-1.jpg',
-        imageUrlDesktop: 'assets/images/white-fleece/white-fleece-1.jpg',
-        imageMobileUrl: 'assets/images/white-fleece/white-fleece-1.jpg',
-        projectUrl: 'white-fleece.html',
-        desc: 'A 2014 corporate identity for White Fleece, a business in Accra, in which RDVS Studios designed a teal wave-and-orbit logotype and built out a full stationery suite, colour system and brand wallpaper.',
-        specs: {
-          client: 'White Fleece',
-          scope: 'Brand identity design, logotype and variations, letterhead, business card, corporate typeface specification, brand wallpaper and a laptop mockup.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Graphic Design   Identity\']'
-        }
-      },
-      {
-        id: 'white-fleece-plate3',
-        title: 'White Fleece',
-        category: 'Graphic Design & Identity — 2014',
-        service: 'Graphic Design & Identity',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/white-fleece/white-fleece-2.jpg',
-        imageUrlDesktop: 'assets/images/white-fleece/white-fleece-2.jpg',
-        imageMobileUrl: 'assets/images/white-fleece/white-fleece-2.jpg',
-        projectUrl: 'white-fleece.html',
-        desc: 'A 2014 corporate identity for White Fleece, a business in Accra, in which RDVS Studios designed a teal wave-and-orbit logotype and built out a full stationery suite, colour system and brand wallpaper.',
-        specs: {
-          client: 'White Fleece',
-          scope: 'Brand identity design, logotype and variations, letterhead, business card, corporate typeface specification, brand wallpaper and a laptop mockup.',
-          team: 'RDVS. DESIGN',
-          year: '2014',
-          disciplines: '[\'Graphic Design   Identity\']'
-        }
-      },
-      {
         id: 'the-tea-house-plate1',
         title: 'The Tea House',
         category: 'Graphic Design, Digital & Web Design — 2021',
@@ -2511,9 +2451,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design & 3D Visualization — 2017',
         service: 'Graphic Design & 3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/mtn-hq/mtn-hq-20.jpg',
-        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-20.jpg',
-        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-20.jpg',
+        imageUrl: 'assets/images/mtn-hq/mtn-hq-18.jpg',
+        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-18.jpg',
+        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-18.jpg',
         projectUrl: 'mtn.html',
         desc: 'Environmental graphics and way-finding pitch for MTN House, Accra — a system built on the SIM card and paper-plane motif, explored through pictograms, signage, kiosks and 3D visualization.',
         specs: {
@@ -2742,28 +2682,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
-        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
-        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-1.jpg',
-        projectUrl: 'd-e-t-a-i-l-s.html',
-        desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
-        specs: {
-          client: 'RDVS Studios',
-          scope: 'Self-initiated interior modelling, look-dev, lighting, rendering and edit',
-          team: 'RDVS Team',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'details-film-plate2',
-        title: 'Details',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
-        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
-        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
+        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
+        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -2978,8 +2899,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'ahero',
         title: 'Ahero',
-        category: 'Decorative Design — 2022',
-        service: 'Decorative Design',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
         imageUrlDesktop: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
@@ -3000,19 +2921,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'hola',
         title: 'Hola',
-        category: 'Furniture Design — 2022',
-        service: 'Furniture Design',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
-        imageUrlDesktop: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
-        imageMobileUrl: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
+        imageUrl: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
+        imageUrlDesktop: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
+        imageMobileUrl: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
         projectUrl: 'hola.html'
       },
       {
         id: 'lamu',
         title: 'Lamu',
-        category: 'Joinery Detailing — 2022',
-        service: 'Joinery Detailing',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
         imageUrlDesktop: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
@@ -3358,6 +3279,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'product-line-e-float-i-film1',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        videoUrl: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
+        videoUrlDesktop: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-2.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'In-house',
+          scope: 'Furniture / Floating media unit',
+        }
+      },
+      {
         id: 'product-mound-film1',
         title: 'MOUND',
         category: 'Design · VFX + CGI — 2016',
@@ -3375,7 +3314,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Accessories / Tray & bench',
           year: '2016',
         }
-      }
+      },
     ],
     images: [
       {
@@ -3895,7 +3834,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Furniture / Sleeping pod',
           year: '2019',
         }
-      }
+      },
     ]
   }
 };

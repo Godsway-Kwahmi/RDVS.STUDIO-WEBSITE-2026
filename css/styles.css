@@ -1705,6 +1705,7 @@ a.subservice-item:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;   /* anchors .lightbox-film-expand */
 }
 
 .gallery-img {
@@ -1725,6 +1726,38 @@ a.subservice-item:hover {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* js/lightbox.js adds an expand affordance to every gallery film so it can join the fullscreen
+   deck without stealing the click-to-play gesture from the player's own controls. */
+.lightbox-film-expand {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  background: var(--input-bg);
+  border: 1px solid var(--border-hairline);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.72;
+  transition: opacity var(--transition-speed) var(--transition-ease), color var(--transition-speed) var(--transition-ease), border-color var(--transition-speed) var(--transition-ease);
+}
+
+.lightbox-film-expand:hover,
+.lightbox-film-expand:focus-visible {
+  opacity: 1;
+  color: var(--foreground);
+  border-color: var(--foreground);
+}
+
+.lightbox-film-expand svg {
+  width: 15px;
+  height: 15px;
 }
 
 /* Gallery items that contain a video stack vertically so any caption
@@ -1887,6 +1920,21 @@ a.subservice-item:hover {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* A gallery film opens in the same stage as a still, so it inherits the same containment.
+   The script flips display, so the player is only ever laid out while it is the live slide. */
+.lightbox-active-video {
+  max-width: 90vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: none;
+  background: #000;
+  border-radius: 4px;
+  cursor: default;
+  transition: opacity 0.2s ease;
+}
+
 .lightbox-arrow {
   width: 44px;
   height: 44px;
@@ -1981,6 +2029,11 @@ a.subservice-item:hover {
   }
 
   .lightbox-active-img {
+    max-width: 100%;
+    max-height: 72vh;
+  }
+
+  .lightbox-active-video {
     max-width: 100%;
     max-height: 72vh;
   }

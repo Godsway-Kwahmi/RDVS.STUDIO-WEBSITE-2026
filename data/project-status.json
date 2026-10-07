@@ -11,15 +11,6 @@
       "onArchivePage": true,
       "plates": 12
     },
-    "white-fleece.html": {
-      "slug": "white-fleece",
-      "title": "White Fleece",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
-    },
     "west-cantonments-igl-presentation.html": {
       "slug": "west-cantonments-igl-presentation",
       "title": "West Cantonments Residence",
@@ -423,7 +414,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 3
     },
     "dela-anyaa.html": {
       "slug": "dela-anyaa",
@@ -621,7 +612,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 6
+      "plates": 5
     },
     "lamu.html": {
       "slug": "lamu",
@@ -1612,6 +1603,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 5
+    },
+    "white-fleece.html": {
+      "slug": "white-fleece",
+      "title": "White Fleece",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 8
     },
     "advantage-place.html": {
       "slug": "advantage-place",

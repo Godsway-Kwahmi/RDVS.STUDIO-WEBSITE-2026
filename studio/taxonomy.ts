@@ -127,6 +127,7 @@ export const TYPOLOGIES: string[] = [
   'Hospitality',
   'Hospitality & Event Venue',
   'Hospitality & Nightlife',
+  'Hospitality / Residential',
   'Icon Design',
   'Identity',
   'Institutional',
