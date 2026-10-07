@@ -597,7 +597,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/afg/afg-17.jpg',
         imageMobileUrl: 'assets/images/afg/afg-17.jpg',
         projectUrl: 'afg.html',
-        desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across one hundred plates.',
+        desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
           client: 'AFG',
           scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
@@ -1100,7 +1100,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/swipe/swipe-2.jpg',
         imageMobileUrl: 'assets/images/swipe/swipe-2.jpg',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   fifteen plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   seven plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
@@ -1119,7 +1119,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/swipe/swipe-7.jpg',
         imageMobileUrl: 'assets/images/swipe/swipe-7.jpg',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   fifteen plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   seven plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
@@ -1214,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/nyla-court/nyla-court-living-04.jpg',
         imageMobileUrl: 'assets/images/nyla-court/nyla-court-living-04.jpg',
         projectUrl: 'nyla-court.html',
-        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across eighteen plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
+        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across twenty-two plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design and architectural visualization',
@@ -1233,7 +1233,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/nyla-court/nyla-court-living-05.jpg',
         imageMobileUrl: 'assets/images/nyla-court/nyla-court-living-05.jpg',
         projectUrl: 'nyla-court.html',
-        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across eighteen plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
+        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across twenty-two plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design and architectural visualization',
@@ -1849,7 +1849,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/afg/afg-2.jpg',
         imageMobileUrl: 'assets/images/afg/afg-2.jpg',
         projectUrl: 'afg.html',
-        desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across one hundred plates.',
+        desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
           client: 'AFG',
           scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
