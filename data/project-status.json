@@ -63,7 +63,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 25
+      "plates": 34
     },
     "the-tea-house.html": {
       "slug": "the-tea-house",
@@ -90,7 +90,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 5
     },
     "the-address.html": {
       "slug": "the-address",
@@ -99,7 +99,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 3
+      "plates": 5
     },
     "asante-interior-design-presentation.html": {
       "slug": "asante-interior-design-presentation",
@@ -146,15 +146,6 @@
       "onArchivePage": true,
       "plates": 3
     },
-    "smsgh.html": {
-      "slug": "smsgh",
-      "title": "SMSGH",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 12
-    },
     "senya-resort.html": {
       "slug": "senya-resort",
       "title": "Senya Resort",
@@ -162,7 +153,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 5
+      "plates": 6
     },
     "safo-adu-residence.html": {
       "slug": "safo-adu-residence",
@@ -180,7 +171,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 1
+      "plates": 7
     },
     "purc.html": {
       "slug": "purc",
@@ -189,7 +180,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 3
+      "plates": 4
     },
     "protea-hotel-airport.html": {
       "slug": "protea-hotel-airport",
@@ -198,7 +189,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 2
+      "plates": 9
     },
     "premier-place.html": {
       "slug": "premier-place",
@@ -263,15 +254,6 @@
       "onArchivePage": true,
       "plates": 1
     },
-    "of-sunsets.html": {
-      "slug": "of-sunsets",
-      "title": "Of Sunsets",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 28
-    },
     "odade3.html": {
       "slug": "odade3",
       "title": "Odade3",
@@ -288,7 +270,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 44
+      "plates": 48
     },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
@@ -324,7 +306,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 7
+      "plates": 6
     },
     "marble-bath.html": {
       "slug": "marble-bath",
@@ -371,6 +353,15 @@
       "onArchivePage": true,
       "plates": 16
     },
+    "kuma-residence.html": {
+      "slug": "kuma-residence",
+      "title": "Kuma Residence",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
     "kdmrd.html": {
       "slug": "kdmrd",
       "title": "KDMRD",
@@ -398,15 +389,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "ike.html": {
-      "slug": "ike",
-      "title": "Ike",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
     "hvl.html": {
       "slug": "hvl",
       "title": "HVL",
@@ -423,7 +405,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 2
     },
     "hot-gossip.html": {
       "slug": "hot-gossip",
@@ -434,15 +416,6 @@
       "onArchivePage": true,
       "plates": 10
     },
-    "home-automation-system-presentation.html": {
-      "slug": "home-automation-system-presentation",
-      "title": "Senseble",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 23
-    },
     "his-grace-garden-presentation.html": {
       "slug": "his-grace-garden-presentation",
       "title": "HGG",
@@ -450,7 +423,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 8
     },
     "hfc-tvc.html": {
       "slug": "hfc-tvc",
@@ -558,7 +531,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 2
+      "plates": 7
     },
     "elo-tv.html": {
       "slug": "elo-tv",
@@ -702,7 +675,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 5
+      "plates": 2
     },
     "b1-hq-lagos-ave.html": {
       "slug": "b1-hq-lagos-ave",
@@ -765,7 +738,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 101
+      "plates": 98
     },
     "aelius.html": {
       "slug": "aelius",
@@ -837,7 +810,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 21
+      "plates": 22
     },
     "41-barham.html": {
       "slug": "41-barham",
@@ -846,7 +819,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 1
+      "plates": 2
     },
     "2gs.html": {
       "slug": "2gs",
@@ -864,7 +837,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 4
+      "plates": 6
     },
     "1981.html": {
       "slug": "1981",
@@ -883,6 +856,114 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 16
+    },
+    "a-a.html": {
+      "slug": "a-a",
+      "title": "A-A",
+      "year": "2023",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "ackon-desk.html": {
+      "slug": "ackon-desk",
+      "title": "Ackon Desk",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "ahero.html": {
+      "slug": "ahero",
+      "title": "Ahero",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "avalon.html": {
+      "slug": "avalon",
+      "title": "Avalon",
+      "year": "2024",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
+    "giffard-park.html": {
+      "slug": "giffard-park",
+      "title": "Giffard Park",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "hola.html": {
+      "slug": "hola",
+      "title": "Hola",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "lamu.html": {
+      "slug": "lamu",
+      "title": "Lamu",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "margin.html": {
+      "slug": "margin",
+      "title": "Margin",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
+    "mig.html": {
+      "slug": "mig",
+      "title": "MIG",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 34
+    },
+    "the-fitzgerald.html": {
+      "slug": "the-fitzgerald",
+      "title": "The Fitzgerald",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "ttd.html": {
+      "slug": "ttd",
+      "title": "TTD",
+      "year": "2023",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 40
+    },
+    "white-house.html": {
+      "slug": "white-house",
+      "title": "White House",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
     },
     "buena-vista-homes.html": {
       "slug": "buena-vista-homes",
@@ -1424,6 +1505,15 @@
       "onArchivePage": true,
       "plates": 1
     },
+    "ike.html": {
+      "slug": "ike",
+      "title": "Ike",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
     "mankata.html": {
       "slug": "mankata",
       "title": "Mankata",
@@ -1585,6 +1675,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
+    },
+    "smsgh.html": {
+      "slug": "smsgh",
+      "title": "SMSGH",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 12
     },
     "tedxharambee.html": {
       "slug": "tedxharambee",
@@ -1774,6 +1873,24 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
+    },
+    "of-sunsets.html": {
+      "slug": "of-sunsets",
+      "title": "Of Sunsets",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 28
+    },
+    "home-automation-system-presentation.html": {
+      "slug": "home-automation-system-presentation",
+      "title": "Senseble",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 23
     },
     "six-acres-company-profile.html": {
       "slug": "six-acres-company-profile",
