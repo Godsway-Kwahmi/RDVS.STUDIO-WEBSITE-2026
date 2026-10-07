@@ -92,15 +92,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "the-address.html": {
-      "slug": "the-address",
-      "title": "The Address",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "asante-interior-design-presentation.html": {
       "slug": "asante-interior-design-presentation",
       "title": "TAI",
@@ -117,16 +108,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 15
-    },
-    "stellar-bar.html": {
-      "slug": "stellar-bar",
-      "title": "Stellar Bar",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
+      "plates": 7
     },
     "stark-glaube.html": {
       "slug": "stark-glaube",
@@ -155,24 +137,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "safo-adu-residence.html": {
-      "slug": "safo-adu-residence",
-      "title": "Safo Adu Townhouses",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
-    "rlg.html": {
-      "slug": "rlg",
-      "title": "RLG",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 7
-    },
     "purc.html": {
       "slug": "purc",
       "title": "PURC",
@@ -189,25 +153,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 9
-    },
-    "premier-place.html": {
-      "slug": "premier-place",
-      "title": "Premier Place",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 11
-    },
-    "premier-lodge-2.html": {
-      "slug": "premier-lodge-2",
-      "title": "Premier Lodge 2",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
+      "plates": 7
     },
     "poconos-bar-grill.html": {
       "slug": "poconos-bar-grill",
@@ -218,15 +164,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "pine-square.html": {
-      "slug": "pine-square",
-      "title": "Pine Square",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 16
-    },
     "petrus.html": {
       "slug": "petrus",
       "title": "Petrus",
@@ -234,34 +171,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 15
-    },
-    "palazzo.html": {
-      "slug": "palazzo",
-      "title": "Palazzo",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
-    "osu-apartments.html": {
-      "slug": "osu-apartments",
-      "title": "Osu Apartments",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
-    "odade3.html": {
-      "slug": "odade3",
-      "title": "Odade3",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
+      "plates": 13
     },
     "nyla-court.html": {
       "slug": "nyla-court",
@@ -270,7 +180,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 48
+      "plates": 23
     },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
@@ -335,15 +245,6 @@
       "onArchivePage": true,
       "plates": 9
     },
-    "la-palm-2008-christmas-party-posters.html": {
-      "slug": "la-palm-2008-christmas-party-posters",
-      "title": "La Palm 2008 Christmas Party Poster",
-      "year": "2008",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
     "la-beach-towers.html": {
       "slug": "la-beach-towers",
       "title": "La Beach Towers",
@@ -371,15 +272,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "jm-spots.html": {
-      "slug": "jm-spots",
-      "title": "J&M Spots",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 16
-    },
     "imperial-square.html": {
       "slug": "imperial-square",
       "title": "Imperial Square",
@@ -389,15 +281,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "hvl.html": {
-      "slug": "hvl",
-      "title": "HVL",
-      "year": "2011",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
-    },
     "hubtel.html": {
       "slug": "hubtel",
       "title": "Hubtel Nairobi",
@@ -406,24 +289,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 2
-    },
-    "hot-gossip.html": {
-      "slug": "hot-gossip",
-      "title": "Hot Gossip",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 10
-    },
-    "his-grace-garden-presentation.html": {
-      "slug": "his-grace-garden-presentation",
-      "title": "HGG",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 8
     },
     "hfc-tvc.html": {
       "slug": "hfc-tvc",
@@ -488,42 +353,6 @@
       "onArchivePage": true,
       "plates": 1
     },
-    "ert.html": {
-      "slug": "ert",
-      "title": "ERT",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
-    "enda-whm.html": {
-      "slug": "enda-whm",
-      "title": "Enda WHM",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
-    "enda-acm.html": {
-      "slug": "enda-acm",
-      "title": "Enda ACM",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
-    "enda-accra-mall.html": {
-      "slug": "enda-accra-mall",
-      "title": "Enda - Accra Mall",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 6
-    },
     "empire-tower.html": {
       "slug": "empire-tower",
       "title": "Empire Tower",
@@ -558,7 +387,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 15
+      "plates": 16
     },
     "ehr.html": {
       "slug": "ehr",
@@ -568,15 +397,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 4
-    },
-    "e-zone.html": {
-      "slug": "e-zone",
-      "title": "E-Zone",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
     },
     "dyv.html": {
       "slug": "dyv",
@@ -595,15 +415,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 19
-    },
-    "design-express.html": {
-      "slug": "design-express",
-      "title": "Design Express",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
     },
     "d-e-t-a-i-l-s.html": {
       "slug": "d-e-t-a-i-l-s",
@@ -657,7 +468,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 39
+      "plates": 26
     },
     "bfa.html": {
       "slug": "bfa",
@@ -677,15 +488,6 @@
       "onArchivePage": true,
       "plates": 2
     },
-    "b1-hq-lagos-ave.html": {
-      "slug": "b1-hq-lagos-ave",
-      "title": "B1 HQ Lagos Ave",
-      "year": "2020",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "ameyaw-sarah.html": {
       "slug": "ameyaw-sarah",
       "title": "Ameyaw + Sarah",
@@ -694,42 +496,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 10
-    },
-    "alexander-signage.html": {
-      "slug": "alexander-signage",
-      "title": "Alexander-Signage",
-      "year": "2021",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
-    "akyea-residence.html": {
-      "slug": "akyea-residence",
-      "title": "Akyea Residence",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
-    "airport-hills-residence.html": {
-      "slug": "airport-hills-residence",
-      "title": "Airport Hills Residence",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
-    "aika-osu.html": {
-      "slug": "aika-osu",
-      "title": "Aika",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
     },
     "afg.html": {
       "slug": "afg",
@@ -749,42 +515,6 @@
       "onArchivePage": true,
       "plates": 1
     },
-    "advantage-place.html": {
-      "slug": "advantage-place",
-      "title": "Advantage Place",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 16
-    },
-    "adentan-townhouses.html": {
-      "slug": "adentan-townhouses",
-      "title": "Adentan Townhouses",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 47
-    },
-    "aces-re-up.html": {
-      "slug": "aces-re-up",
-      "title": "Aces Re-Up",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
-    "access-bank-iris.html": {
-      "slug": "access-bank-iris",
-      "title": "Access Bank Iris",
-      "year": "2018",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "abl-reception.html": {
       "slug": "abl-reception",
       "title": "ABL Reception",
@@ -793,15 +523,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 4
-    },
-    "94-laurel.html": {
-      "slug": "94-laurel",
-      "title": "94 Laurel",
-      "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 2
     },
     "5aap.html": {
       "slug": "5aap",
@@ -829,15 +550,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 15
-    },
-    "1hive.html": {
-      "slug": "1hive",
-      "title": "1Hive",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 6
     },
     "1981.html": {
       "slug": "1981",
@@ -927,7 +639,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 8
+      "plates": 5
     },
     "mig.html": {
       "slug": "mig",
@@ -956,15 +668,6 @@
       "onArchivePage": true,
       "plates": 40
     },
-    "white-house.html": {
-      "slug": "white-house",
-      "title": "White House",
-      "year": "2021",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 1
-    },
     "buena-vista-homes.html": {
       "slug": "buena-vista-homes",
       "title": "Buena Vista Homes",
@@ -982,6 +685,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 3
+    },
+    "la-palm-2008-christmas-party-posters.html": {
+      "slug": "la-palm-2008-christmas-party-posters",
+      "title": "La Palm 2008 Christmas Party Poster",
+      "year": "2008",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
     },
     "yakubu-interiors.html": {
       "slug": "yakubu-interiors",
@@ -1397,6 +1109,15 @@
       "onArchivePage": true,
       "plates": 1
     },
+    "hvl.html": {
+      "slug": "hvl",
+      "title": "HVL",
+      "year": "2011",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
     "jhk-investment.html": {
       "slug": "jhk-investment",
       "title": "JHK",
@@ -1469,6 +1190,24 @@
       "onArchivePage": true,
       "plates": 7
     },
+    "design-express.html": {
+      "slug": "design-express",
+      "title": "Design Express",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "e-zone.html": {
+      "slug": "e-zone",
+      "title": "E-Zone",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
     "eic-competition.html": {
       "slug": "eic-competition",
       "title": "EIC Competition",
@@ -1477,6 +1216,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
+    },
+    "hot-gossip.html": {
+      "slug": "hot-gossip",
+      "title": "Hot Gossip",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 10
     },
     "house-ol.html": {
       "slug": "house-ol",
@@ -1568,6 +1316,15 @@
       "onArchivePage": true,
       "plates": 2
     },
+    "premier-place.html": {
+      "slug": "premier-place",
+      "title": "Premier Place",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 11
+    },
     "procredit.html": {
       "slug": "procredit",
       "title": "Procredit",
@@ -1603,6 +1360,24 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
+    },
+    "94-laurel.html": {
+      "slug": "94-laurel",
+      "title": "94 Laurel",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "aces-re-up.html": {
+      "slug": "aces-re-up",
+      "title": "Aces Re-Up",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
     },
     "daawat-sweets.html": {
       "slug": "daawat-sweets",
@@ -1667,6 +1442,24 @@
       "onArchivePage": true,
       "plates": 8
     },
+    "premier-lodge-2.html": {
+      "slug": "premier-lodge-2",
+      "title": "Premier Lodge 2",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "rlg.html": {
+      "slug": "rlg",
+      "title": "RLG",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 7
+    },
     "sinopec-ghana-interiors.html": {
       "slug": "sinopec-ghana-interiors",
       "title": "Sinopec Ghana Interiors",
@@ -1684,6 +1477,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 12
+    },
+    "stellar-bar.html": {
+      "slug": "stellar-bar",
+      "title": "Stellar Bar",
+      "year": "2013",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
     },
     "tedxharambee.html": {
       "slug": "tedxharambee",
@@ -1721,6 +1523,24 @@
       "onArchivePage": true,
       "plates": 5
     },
+    "aika-osu.html": {
+      "slug": "aika-osu",
+      "title": "Aika",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "akyea-residence.html": {
+      "slug": "akyea-residence",
+      "title": "Akyea Residence",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
+    },
     "beautiful-choices.html": {
       "slug": "beautiful-choices",
       "title": "Beautiful Choices",
@@ -1729,6 +1549,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
+    },
+    "enda-accra-mall.html": {
+      "slug": "enda-accra-mall",
+      "title": "Enda - Accra Mall",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
     },
     "lase-icon.html": {
       "slug": "lase-icon",
@@ -1766,6 +1595,15 @@
       "onArchivePage": true,
       "plates": 14
     },
+    "odade3.html": {
+      "slug": "odade3",
+      "title": "Odade3",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
     "stephen-yvonne.html": {
       "slug": "stephen-yvonne",
       "title": "Stephen + Yvonne",
@@ -1774,6 +1612,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 5
+    },
+    "advantage-place.html": {
+      "slug": "advantage-place",
+      "title": "Advantage Place",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 16
     },
     "airport-city.html": {
       "slug": "airport-city",
@@ -1802,6 +1649,15 @@
       "onArchivePage": true,
       "plates": 22
     },
+    "enda-acm.html": {
+      "slug": "enda-acm",
+      "title": "Enda ACM",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
     "harbour-pointe.html": {
       "slug": "harbour-pointe",
       "title": "Harbour Pointe",
@@ -1811,6 +1667,15 @@
       "onArchivePage": true,
       "plates": 2
     },
+    "jm-spots.html": {
+      "slug": "jm-spots",
+      "title": "J&M Spots",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 16
+    },
     "lines.html": {
       "slug": "lines",
       "title": "Lines",
@@ -1819,6 +1684,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 7
+    },
+    "osu-apartments.html": {
+      "slug": "osu-apartments",
+      "title": "Osu Apartments",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
     },
     "provident-insurance.html": {
       "slug": "provident-insurance",
@@ -1847,6 +1721,15 @@
       "onArchivePage": true,
       "plates": 2
     },
+    "1hive.html": {
+      "slug": "1hive",
+      "title": "1Hive",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 6
+    },
     "alexander.html": {
       "slug": "alexander",
       "title": "Alexander",
@@ -1856,6 +1739,33 @@
       "onArchivePage": true,
       "plates": 10
     },
+    "his-grace-garden-presentation.html": {
+      "slug": "his-grace-garden-presentation",
+      "title": "HGG",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "safo-adu-residence.html": {
+      "slug": "safo-adu-residence",
+      "title": "Safo Adu Townhouses",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "the-address.html": {
+      "slug": "the-address",
+      "title": "The Address",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
     "weldment-panels.html": {
       "slug": "weldment-panels",
       "title": "Weldment Panels",
@@ -1864,6 +1774,42 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 8
+    },
+    "adentan-townhouses.html": {
+      "slug": "adentan-townhouses",
+      "title": "Adentan Townhouses",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 47
+    },
+    "airport-hills-residence.html": {
+      "slug": "airport-hills-residence",
+      "title": "Airport Hills Residence",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "enda-whm.html": {
+      "slug": "enda-whm",
+      "title": "Enda WHM",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "ert.html": {
+      "slug": "ert",
+      "title": "ERT",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
     },
     "ghana-bbq-beer-festival.html": {
       "slug": "ghana-bbq-beer-festival",
@@ -1883,6 +1829,24 @@
       "onArchivePage": true,
       "plates": 28
     },
+    "palazzo.html": {
+      "slug": "palazzo",
+      "title": "Palazzo",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "pine-square.html": {
+      "slug": "pine-square",
+      "title": "Pine Square",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 16
+    },
     "home-automation-system-presentation.html": {
       "slug": "home-automation-system-presentation",
       "title": "Senseble",
@@ -1901,6 +1865,15 @@
       "onArchivePage": true,
       "plates": 13
     },
+    "access-bank-iris.html": {
+      "slug": "access-bank-iris",
+      "title": "Access Bank Iris",
+      "year": "2018",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
     "adolph-s-wedding-invite.html": {
       "slug": "adolph-s-wedding-invite",
       "title": "Adolph's Wedding Invite",
@@ -1918,6 +1891,33 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 3
+    },
+    "b1-hq-lagos-ave.html": {
+      "slug": "b1-hq-lagos-ave",
+      "title": "B1 HQ Lagos Ave",
+      "year": "2020",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "alexander-signage.html": {
+      "slug": "alexander-signage",
+      "title": "Alexander-Signage",
+      "year": "2021",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
+    },
+    "white-house.html": {
+      "slug": "white-house",
+      "title": "White House",
+      "year": "2021",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 1
     }
   }
 }

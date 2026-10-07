@@ -26,6 +26,56 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="product.html" class="nav-link">Product</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
   <main class="project-detail-container">
     <a href="work.html" class="project-back-link">&larr; Back to all work</a>
 
@@ -35,7 +85,7 @@
     </header>
 
     <div class="project-hero-media">
-      <img src="assets/images/protea-hotel-airport/protea-hotel-airport-1.jpg" alt="A guest room: a full-width padded headboard under wall-wash light with copper reading arms either side, and an opening onto a stone-clad bathroom vanity" class="project-hero-img">
+      <img src="assets/images/protea-hotel-airport/E7iCvERX0AENu7d.jpg" alt="Protea Hotel Airport twin guest room: two made-up beds under a panelled headboard with copper reading arms and sconces, a desk and laptop to the left, a wall-mounted screen, and a glazed opening onto the stone-clad bathroom" class="project-hero-img">
     </div>
 
     <div class="project-content-grid">
@@ -89,12 +139,8 @@
         <p class="gallery-section-subtitle">Reception, circulation and the guest rooms</p>
       </div>
 
-      <div class="gallery-item gallery-item-full">
-        <img width="1024" height="657" src="assets/images/protea-hotel-airport/protea-hotel-airport-1.jpg" alt="A guest room: a full-width padded headboard under wall-wash light with copper reading arms either side, and an opening onto a stone-clad bathroom vanity" class="gallery-img" loading="lazy">
-      </div>
-      <div class="gallery-item gallery-item-full">
-        <img width="1024" height="1005" src="assets/images/protea-hotel-airport/protea-hotel-airport-3.jpg" alt="A guest-room corridor, stone-tiled walls with a copper band and timber doors under coved ceiling light running the length of a patterned carpet runner" class="gallery-img" loading="lazy">
-      </div>
+
+
 
       <div class="gallery-item">
         <img width="2048" height="2048" src="assets/images/protea-hotel-airport/E7iCqm7XMAQeNhe.jpg" alt="Protea Hotel Airport Architectural Detail" class="gallery-img" loading="lazy">
@@ -127,7 +173,7 @@
 
     <nav class="project-nav-footer" aria-label="Project pagination">
       <a href="purc.html" class="project-nav-link">&larr; Previous: PURC</a>
-      <a href="premier-place.html" class="project-nav-link">Next: Premier Place &rarr;</a>
+      <a href="poconos-bar-grill.html" class="project-nav-link">Next: Poconos Bar + Grill &rarr;</a>
     </nav>
   </main>
 
@@ -156,7 +202,7 @@
   <script src="js/lightbox.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/sanity-taxonomy.js"></script>
-<script src="js/sanity-client.js"></script>
+  <script src="js/sanity-client.js"></script>
   <script src="js/sanity-render.js"></script>
 </body>
 </html>

@@ -1088,6 +1088,42 @@ button {
   }
 }
 
+/* Varied-size work tiles. The grid script draws each card into one of four tiers on every
+   load, and dense flow backfills the holes the larger tiers leave. Width is measured in grid
+   columns against a single-column card, so the smallest tile is about a sixth of a feature
+   tile's area and the page reads as an editorial layout rather than a stamp sheet. Tiering
+   only means something from 768px up — below that a fraction of one column is just a shrunken
+   card — so phones and narrow tablets keep the uniform grid.
+   #projectGrid holds both layouts the work page renders: year rows and the flat All view. */
+@media (min-width: 768px) {
+  #projectGrid .minimal-grid {
+    grid-auto-flow: row dense;
+  }
+
+  /* Centred rather than flush left: the gap the card leaves belongs to the layout, not to
+     a missing image. */
+  #projectGrid .grid-card.tile-small {
+    width: 68%;
+    margin-inline: auto;
+  }
+
+  #projectGrid .grid-card.tile-wide {
+    grid-column: span 2;
+  }
+
+  #projectGrid .grid-card.tile-feature {
+    grid-column: span 2;
+  }
+}
+
+/* Four columns is the only width where three columns of artwork still leaves a neighbour
+   beside it; at three columns a feature would be a full-bleed banner. */
+@media (min-width: 1200px) {
+  #projectGrid .grid-card.tile-feature {
+    grid-column: span 3;
+  }
+}
+
 /* Project / Article Card */
 .grid-card {
   display: block;
