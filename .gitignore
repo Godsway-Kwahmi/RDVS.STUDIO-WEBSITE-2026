@@ -22,6 +22,16 @@ Thumbs.db
 # Test artifacts
 scratch/
 
+# Write-retry leftovers. Every safe writer on this mount is temp + os.replace, and Dropbox rejects a
+# replace often enough that `<file>.tmp.<pid>.<ms>` and `<file>.bak` accumulate at the repo root and in
+# data/ -- untracked AND not ignored, so a `git add .` would have published a second, stale registry
+# next to the live one. Verified 2026-10-08: no tracked file matches any of these four patterns, so
+# ignoring them hides nothing that is supposed to ship.
+*.tmp
+*.tmp.*
+*.bak
+*.orig
+
 # Raw working dumps that sit inside the asset tree but are referenced by nothing: Google
 # Drive drop folders, render batches and client paperwork (some of it names individuals).
 # Verified 2026-10-04 — 208 files / 375 MB across these patterns, 0 of them referenced by
