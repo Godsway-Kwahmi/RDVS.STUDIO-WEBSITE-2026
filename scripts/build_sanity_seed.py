@@ -59,7 +59,13 @@ def card_attrs(work, page):
     i = work.find('<a href="%s"' % page)
     if i < 0:
         return {}
-    seg = work[i:i + 900]
+    # Bound the segment by the card's own </a>, not a fixed window. A card whose data-* attributes
+    # carry a long service list runs past 900 characters before its visible <span
+    # class="card-category">, and a truncated window silently returns no match: 211 of the 222 seed
+    # records carried an empty `cardLabel` (found 2026-10-08 while reclassifying 5AAP, whose card
+    # grew from "Design + Build" to a three-service line).
+    end = work.find('</a>', i)
+    seg = work[i:end if end > i else len(work)]
     out = {}
     for key in ('title', 'year', 'typology', 'discipline', 'client', 'location', 'category'):
         m = re.search(r'data-%s="([^"]*)"' % key, seg)

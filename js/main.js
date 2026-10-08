@@ -446,44 +446,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: '5aap-progress-plate1',
-        title: '5AAP',
-        category: 'Design + Build — 2020',
-        service: 'Design + Build',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/5aap/5aap-2.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
-        projectUrl: '5aap.html',
-        desc: 'Progressive corporate and commercial campus balancing monumental civic presence with human-scale pedestrian plazas and natural daylight voids.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Design + Build\']'
-        }
-      },
-      {
-        id: '5aap-progress-plate2',
-        title: '5AAP',
-        category: 'Design + Build — 2020',
-        service: 'Design + Build',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/5aap/5aap-1.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-1.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-1.jpg',
-        projectUrl: '5aap.html',
-        desc: 'Progressive corporate and commercial campus balancing monumental civic presence with human-scale pedestrian plazas and natural daylight voids.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Design + Build\']'
-        }
-      },
-      {
         id: 'details-film',
         title: 'Details',
         category: '3D Visualization — 2018',
@@ -500,25 +462,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2018',
           disciplines: ['3D Visualization', 'Architectural Visualization']
-        }
-      },
-      {
-        id: '5aap-progress',
-        title: '5AAP',
-        category: 'Design + Build — 2020',
-        service: 'Design + Build',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/5aap/5aap-2.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
-        projectUrl: '5aap.html',
-        desc: 'Progressive corporate and commercial campus balancing monumental civic presence with human-scale pedestrian plazas and natural daylight voids.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: ['Architectural Design', 'Design & Build']
         }
       }
 
@@ -2034,7 +1977,64 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
 
-
+,
+      {
+        id: '5aap-progress-plate1',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-2.jpg',
+        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
+        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
+        projectUrl: '5aap.html',
+        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'Design + Build\']'
+        }
+      },
+      {
+        id: '5aap-progress-plate2',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-1.jpg',
+        imageUrlDesktop: 'assets/images/5aap/5aap-1.jpg',
+        imageMobileUrl: 'assets/images/5aap/5aap-1.jpg',
+        projectUrl: '5aap.html',
+        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'Design + Build\']'
+        }
+      },
+      {
+        id: '5aap-progress',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-2.jpg',
+        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
+        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
+        projectUrl: '5aap.html',
+        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
+        }
+      }
     ]
   },
 
