@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     '2gs.html': ['design'],
     '3aap.html': ['design', 'turnkey-build', 'vfx-cgi'],
     '41-barham.html': ['design', 'vfx-cgi'],
-    '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
     'abl-reception.html': ['design', 'vfx-cgi'],
     'ackon-desk.html': ['vfx-cgi'],
@@ -1918,63 +1917,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
         }
       },
-      {
-        id: '5aap-progress-plate1',
-        title: '5AAP',
-        category: 'Interior Design, Graphic Design & Design + Build — 2020',
-        service: 'Interior Design, Graphic Design & Design + Build',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/5aap/5aap-2.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
-        projectUrl: '5aap.html',
-        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
-        specs: {
-          client: 'IDP Foundation',
-          scope: 'Interior Design, Graphic Design & Design + Build',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'Design + Build\']'
-        }
-      },
-      {
-        id: '5aap-progress-plate2',
-        title: '5AAP',
-        category: 'Interior Design, Graphic Design & Design + Build — 2020',
-        service: 'Interior Design, Graphic Design & Design + Build',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/5aap/5aap-1.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-1.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-1.jpg',
-        projectUrl: '5aap.html',
-        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
-        specs: {
-          client: 'IDP Foundation',
-          scope: 'Interior Design, Graphic Design & Design + Build',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'Design + Build\']'
-        }
-      },
-      {
-        id: '5aap-progress',
-        title: '5AAP',
-        category: 'Interior Design, Graphic Design & Design + Build — 2020',
-        service: 'Interior Design, Graphic Design & Design + Build',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/5aap/5aap-2.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-2.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-2.jpg',
-        projectUrl: '5aap.html',
-        desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
-        specs: {
-          client: 'IDP Foundation',
-          scope: 'Interior Design, Graphic Design & Design + Build',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
-        }
-      }
     ]
   },
 

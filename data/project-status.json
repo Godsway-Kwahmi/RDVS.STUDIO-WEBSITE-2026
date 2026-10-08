@@ -515,15 +515,6 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "5aap.html": {
-      "slug": "5aap",
-      "title": "5AAP",
-      "year": "2020",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 22
-    },
     "41-barham.html": {
       "slug": "41-barham",
       "title": "41 Barham",
@@ -1909,6 +1900,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 3
+    },
+    "5aap.html": {
+      "slug": "5aap",
+      "title": "5AAP",
+      "year": "2020",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 22
     },
     "b1-hq-lagos-ave.html": {
       "slug": "b1-hq-lagos-ave",
