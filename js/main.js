@@ -2247,7 +2247,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'aelius',
         title: 'Aelius Consult Brand System',
-        category: 'Graphic Design — 2023',
+        category: 'Graphic Design — 2021',
         service: 'Graphic Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/aelius/aelius-brand.jpg',
