@@ -1363,9 +1363,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2013',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-3.jpg',
-        imageUrlDesktop: 'assets/images/la-beach-towers/la-beach-towers-3.jpg',
-        imageMobileUrl: 'assets/images/la-beach-towers/la-beach-towers-3.jpg',
+        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-4.jpg',
+        imageUrlDesktop: 'assets/images/la-beach-towers/la-beach-towers-4.jpg',
+        imageMobileUrl: 'assets/images/la-beach-towers/la-beach-towers-4.jpg',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
