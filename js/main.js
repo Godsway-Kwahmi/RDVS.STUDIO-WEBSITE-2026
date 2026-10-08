@@ -1918,8 +1918,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
         }
       },
-
-,
       {
         id: '5aap-progress-plate1',
         title: '5AAP',
