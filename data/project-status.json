@@ -542,6 +542,15 @@
       "onArchivePage": true,
       "plates": 2
     },
+    "3aap.html": {
+      "slug": "3aap",
+      "title": "3AAP",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
     "2gs.html": {
       "slug": "2gs",
       "title": "2GS",

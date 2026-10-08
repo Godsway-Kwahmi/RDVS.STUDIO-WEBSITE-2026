@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     '1957.html': ['design', 'vfx-cgi'],
     '1981.html': ['vfx-cgi'],
     '2gs.html': ['design'],
+    '3aap.html': ['design', 'turnkey-build', 'vfx-cgi'],
     '41-barham.html': ['design', 'vfx-cgi'],
     '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
@@ -1954,6 +1955,82 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },
+      {
+        id: '3aap',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-1.jpg',
+        imageUrlDesktop: 'assets/images/3aap/3aap-1.jpg',
+        imageMobileUrl: 'assets/images/3aap/3aap-1.jpg',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: '3aap-plate1',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-2.jpg',
+        imageUrlDesktop: 'assets/images/3aap/3aap-2.jpg',
+        imageMobileUrl: 'assets/images/3aap/3aap-2.jpg',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: '3aap-plate2',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-3.jpg',
+        imageUrlDesktop: 'assets/images/3aap/3aap-3.jpg',
+        imageMobileUrl: 'assets/images/3aap/3aap-3.jpg',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: '3aap-plate3',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-4.jpg',
+        imageUrlDesktop: 'assets/images/3aap/3aap-4.jpg',
+        imageMobileUrl: 'assets/images/3aap/3aap-4.jpg',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
         }
       },
 
