@@ -452,6 +452,15 @@
       "onArchivePage": true,
       "plates": 10
     },
+    "caustics-rnd.html": {
+      "slug": "caustics-rnd",
+      "title": "Caustics RnD",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 0
+    },
     "brownies-place.html": {
       "slug": "brownies-place",
       "title": "Brownie&rsquo;s Place",

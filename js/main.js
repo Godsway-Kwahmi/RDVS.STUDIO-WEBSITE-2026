@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'baobab-hotel-exteriors.html': ['vfx-cgi'],
     'bfa.html': ['design', 'vfx-cgi'],
     'brownies-place.html': ['design', 'vfx-cgi'],
+    'caustics-rnd.html': ['studio-projects', 'vfx-cgi'],
     'ceeander.html': ['design', 'vfx-cgi'],
     'chocolate.html': ['design'],
     'csm.html': ['design', 'vfx-cgi'],
@@ -3114,6 +3115,28 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'3D Animation\']'
+        }
+      },
+      {
+        id: 'caustics-rnd',
+        title: 'Caustics RnD',
+        category: '3D Animation — 2020',
+        service: '3D Animation',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
+        videoUrlDesktop: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
+        videoMobileUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
+        imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
+        imageUrlDesktop: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
+        imageMobileUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
+        projectUrl: 'caustics-rnd.html',
+        desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
+        specs: {
+          client: 'RDVS Studios',
+          scope: 'Self-initiated study: modelling, look-dev, caustic light simulation, lighting, rendering and edit',
+          team: 'RDVS',
+          year: '2020',
+          disciplines: ['Motion Design', '3D Animation']
         }
       }
     ],
