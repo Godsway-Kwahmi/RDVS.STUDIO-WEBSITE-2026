@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
     'giffard-park.html': ['design', 'vfx-cgi'],
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
-    'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'hola.html': ['vfx-cgi'],
     'hubtel.html': ['design', 'vfx-cgi'],
@@ -1432,63 +1431,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hfa-plate1',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-1.jpg',
-        imageUrlDesktop: 'assets/images/hfa/hfa-1.jpg',
-        imageMobileUrl: 'assets/images/hfa/hfa-1.jpg',
-        projectUrl: 'hfa.html',
-        desc: 'A twelve-plate interior design and 3D visualization set for HFA, a new apartment in Accra produced with the real estate company Homes Direct for its marketing campaigns, presenting bright modern bedrooms, living and dining spaces and kitchens.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design and photorealistic 3D visualization for a residential marketing campaign.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'hfa-plate2',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-2.jpg',
-        imageUrlDesktop: 'assets/images/hfa/hfa-2.jpg',
-        imageMobileUrl: 'assets/images/hfa/hfa-2.jpg',
-        projectUrl: 'hfa.html',
-        desc: 'A twelve-plate interior design and 3D visualization set for HFA, a new apartment in Accra produced with the real estate company Homes Direct for its marketing campaigns, presenting bright modern bedrooms, living and dining spaces and kitchens.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design and photorealistic 3D visualization for a residential marketing campaign.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'hfa-plate3',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-6.jpg',
-        imageUrlDesktop: 'assets/images/hfa/hfa-6.jpg',
-        imageMobileUrl: 'assets/images/hfa/hfa-6.jpg',
-        projectUrl: 'hfa.html',
-        desc: 'A twelve-plate interior design and 3D visualization set for HFA, a new apartment in Accra produced with the real estate company Homes Direct for its marketing campaigns, presenting bright modern bedrooms, living and dining spaces and kitchens.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design and photorealistic 3D visualization for a residential marketing campaign.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
       },
 

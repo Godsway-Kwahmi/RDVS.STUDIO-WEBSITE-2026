@@ -290,15 +290,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "hfa.html": {
-      "slug": "hfa",
-      "title": "HFA",
-      "year": "2018",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 12
-    },
     "glow-in-the-dark.html": {
       "slug": "glow-in-the-dark",
       "title": "Glow in the Dark",
@@ -1900,6 +1891,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
+    },
+    "hfa.html": {
+      "slug": "hfa",
+      "title": "HFA",
+      "year": "2018",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 12
     },
     "haustalks.html": {
       "slug": "haustalks",
