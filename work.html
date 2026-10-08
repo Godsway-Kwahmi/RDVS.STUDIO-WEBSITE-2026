@@ -2141,26 +2141,37 @@
         }
       }
 
-      // A fresh draw on every load: each card gets a rank inside its row and a one-in-five
-      // chance of taking two columns. Both are fixed for the session, so filtering or
-      // re-sorting repaints the same arrangement instead of shuffling under the cursor.
-      const TILE_WIDE_CHANCE = 0.2;
-      const TILE_WIDE_MIN_ASPECT = 1.25;
+      // A fresh draw on every load: each card gets a rank inside its row and one of four tile
+      // sizes. The chances are cumulative and lopsided on purpose — half the cards stay a single
+      // column so the grid still reads as a grid, two columns is common enough to look like a
+      // pattern, and a feature tile lands about once per screenful. Both rolls are fixed for the
+      // session, so filtering or re-sorting repaints the same arrangement instead of shuffling
+      // under the cursor. minAspect holds the wide tiers to landscape artwork: a portrait plate
+      // at three columns swamps its row, so the size is revoked once the media reports its
+      // dimensions. A card may lead with a film, whose size only arrives with its metadata.
+      const TILE_TIERS = [
+        { cls: 'tile-feature', chance: 0.06, minAspect: 1.6 },
+        { cls: 'tile-wide', chance: 0.2, minAspect: 1.25 },
+        { cls: 'tile-small', chance: 0.22, minAspect: 0 }
+      ];
       const tileDraw = new Map();
       cards.forEach(card => {
-        const wide = Math.random() < TILE_WIDE_CHANCE;
-        tileDraw.set(card, { rank: Math.random(), wide });
-        if (!wide) return;
-        card.classList.add('tile-wide');
-        // Two columns only reads as a feature on landscape artwork — a portrait plate at
-        // that width swamps its row — so the tile is revoked once the media reports size.
-        // A card may lead with a film, whose size only lands with its metadata.
+        const roll = Math.random();
+        let drawn = null, cutoff = 0;
+        for (const tier of TILE_TIERS) {
+          cutoff += tier.chance;
+          if (roll < cutoff) { drawn = tier; break; }
+        }
+        tileDraw.set(card, { rank: Math.random(), tier: drawn ? drawn.cls : '' });
+        if (!drawn) return;
+        card.classList.add(drawn.cls);
+        if (!drawn.minAspect) return;
         const media = card.querySelector('img, video');
         if (!media) return;
         const gate = () => {
           const w = media.naturalWidth || media.videoWidth;
           const h = media.naturalHeight || media.videoHeight;
-          if (w && h && w / h < TILE_WIDE_MIN_ASPECT) card.classList.remove('tile-wide');
+          if (w && h && w / h < drawn.minAspect) card.classList.remove(drawn.cls);
         };
         if (media.complete || media.readyState) gate();
         else {
