@@ -603,7 +603,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 5
+      "plates": 4
     },
     "lamu.html": {
       "slug": "lamu",

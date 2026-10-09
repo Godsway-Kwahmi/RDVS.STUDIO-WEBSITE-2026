@@ -2836,9 +2836,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2022',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
-        imageUrlDesktop: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
-        imageMobileUrl: 'assets/images/hola/F15a8D5XsAAu3mA.jpg',
+        imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
+        imageUrlDesktop: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
+        imageMobileUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
         projectUrl: 'hola.html'
       },
       {
