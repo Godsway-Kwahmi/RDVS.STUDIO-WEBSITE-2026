@@ -155,15 +155,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "petrus.html": {
-      "slug": "petrus",
-      "title": "Petrus",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 13
-    },
     "nyla-court.html": {
       "slug": "nyla-court",
       "title": "Nyla Court",
@@ -1837,6 +1828,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
+    },
+    "petrus.html": {
+      "slug": "petrus",
+      "title": "Petrus",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 13
     },
     "pine-square.html": {
       "slug": "pine-square",

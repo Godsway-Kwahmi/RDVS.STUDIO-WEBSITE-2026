@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
     'nyla-court.html': ['design', 'vfx-cgi'],
-    'petrus.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
@@ -675,17 +674,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'nyla-court.html'
       },
       {
-        id: 'petrus',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-1.jpg',
-        imageUrlDesktop: 'assets/images/petrus/petrus-1.jpg',
-        imageMobileUrl: 'assets/images/petrus/petrus-1.jpg',
-        projectUrl: 'petrus.html'
-      },
-      {
         id: 'link-drive-road',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -1107,44 +1095,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: '[\'Landscape Design\', \'Interior Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'petrus-plate1',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-2.jpg',
-        imageUrlDesktop: 'assets/images/petrus/petrus-2.jpg',
-        imageMobileUrl: 'assets/images/petrus/petrus-2.jpg',
-        projectUrl: 'petrus.html',
-        desc: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes for Petrus, with architecture by S.A.A.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Interior Design & 3D Visualization',
-          team: '3D Visualization & Interior Design: RDVS | Architecture: S.A.A',
-          year: '2017',
-          disciplines: '[\'Interior Design\', \'3D Visualization\']'
-        }
-      },
-      {
-        id: 'petrus-plate2',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-3.jpg',
-        imageUrlDesktop: 'assets/images/petrus/petrus-3.jpg',
-        imageMobileUrl: 'assets/images/petrus/petrus-3.jpg',
-        projectUrl: 'petrus.html',
-        desc: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes for Petrus, with architecture by S.A.A.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Interior Design & 3D Visualization',
-          team: '3D Visualization & Interior Design: RDVS | Architecture: S.A.A',
-          year: '2017',
-          disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
       },
       {
