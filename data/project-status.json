@@ -380,15 +380,6 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "drw-furnart.html": {
-      "slug": "drw-furnart",
-      "title": "DRW Furnart",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 19
-    },
     "d-e-t-a-i-l-s.html": {
       "slug": "d-e-t-a-i-l-s",
       "title": "Details",
@@ -1729,6 +1720,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 10
+    },
+    "drw-furnart.html": {
+      "slug": "drw-furnart",
+      "title": "DRW Furnart",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 19
     },
     "his-grace-garden-presentation.html": {
       "slug": "his-grace-garden-presentation",

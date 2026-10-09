@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'csm.html': ['design', 'vfx-cgi'],
     'd-e-t-a-i-l-s.html': ['studio-projects', 'vfx-cgi'],
     'dela-anyaa.html': ['design'],
-    'drw-furnart.html': ['design', 'vfx-cgi'],
     'dyv.html': ['design', 'vfx-cgi'],
     'ehr.html': ['design', 'vfx-cgi'],
     'el-dor.html': ['design', 'vfx-cgi'],
@@ -2132,17 +2131,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'marble-bath.html'
       },
       {
-        id: 'drw-furnart',
-        title: 'DRW Furnart',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/drw-furnart/drw-furnart-1-desktop.jpg',
-        imageUrlDesktop: 'assets/images/drw-furnart/drw-furnart-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/drw-furnart/drw-furnart-1.jpg',
-        projectUrl: 'drw-furnart.html'
-      },
-      {
         id: 'npa-reception-renders',
         title: 'NPA',
         category: 'Architectural Visualization & BIM — 2022',
@@ -2548,44 +2536,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2013',
           disciplines: '[\'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'drw-furnart-plate1',
-        title: 'DRW Furnart',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/drw-furnart/drw-furnart-1.jpg',
-        imageUrlDesktop: 'assets/images/drw-furnart/drw-furnart-1.jpg',
-        imageMobileUrl: 'assets/images/drw-furnart/drw-furnart-1.jpg',
-        projectUrl: 'drw-furnart.html',
-        desc: 'A 2016 visualization set for Furnart: the furniture collection designed by DRW   Kuukuwa Manful and Emmanuel Sarpong   rendered both as isolated product studies and staged room by room in a single house interior.',
-        specs: {
-          client: 'DRW / Furnart',
-          scope: '3D visualization of the DRW furniture collection: product studies and staged interior scenes',
-          team: 'Kuukuwa Manful & Emmanuel Sarpong (furniture design, DRW); RDVS (3D visualization)',
-          year: '2016',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'drw-furnart-plate2',
-        title: 'DRW Furnart',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/drw-furnart/drw-furnart-2.jpg',
-        imageUrlDesktop: 'assets/images/drw-furnart/drw-furnart-2.jpg',
-        imageMobileUrl: 'assets/images/drw-furnart/drw-furnart-2.jpg',
-        projectUrl: 'drw-furnart.html',
-        desc: 'A 2016 visualization set for Furnart: the furniture collection designed by DRW   Kuukuwa Manful and Emmanuel Sarpong   rendered both as isolated product studies and staged room by room in a single house interior.',
-        specs: {
-          client: 'DRW / Furnart',
-          scope: '3D visualization of the DRW furniture collection: product studies and staged interior scenes',
-          team: 'Kuukuwa Manful & Emmanuel Sarpong (furniture design, DRW); RDVS (3D visualization)',
-          year: '2016',
-          disciplines: '[\'3D Visualization\']'
         }
       },
       {
