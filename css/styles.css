@@ -2061,6 +2061,68 @@ a.subservice-item:hover {
   color: var(--foreground);
 }
 
+/* Pager thumbnails. Each arrow carries the neighbour's own card thumbnail above its label, so the walk reads
+   as "more work in this service" instead of "the next name in the alphabet". The image is decorative (alt="")
+   because the label under it already names the project and says which way it goes, and the thumbnail link is
+   aria-hidden + tabindex="-1" so the pair is one tab stop and one accessible name, not two. */
+.project-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 42%;
+  /* min-width:0 is the shrink guard. A flex item's default min-width:auto means "never narrower than the
+     content", and the content here is a whole project title, so on a narrow phone the two arrows would rather
+     overflow the row than wrap. With it, 42% is a real cap and the label breaks instead. */
+  min-width: 0;
+}
+
+/* Two thumbs must start at the same height, so the row is top-aligned when it carries them. Scoped through
+   :has so the 144 flat archived pagers and the product line keep the vertical centring they have always had. */
+.project-nav-footer:has(.project-nav-item) {
+  align-items: flex-start;
+}
+
+.project-nav-item:last-child {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.project-nav-thumb {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  border: 1px solid var(--border-hairline);
+  background-color: var(--surface-subtle);
+  transition: border-color 0.25s ease;
+}
+
+.project-nav-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.project-nav-thumb:hover {
+  border-color: var(--foreground);
+}
+
+.project-nav-thumb:hover img,
+.project-nav-item:hover .project-nav-thumb img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .project-nav-item {
+    gap: 8px;
+  }
+
+  .project-nav-thumb {
+    max-width: 168px;
+  }
+}
+
 /* Minimal Footer */
 .site-footer {
   border-top: 1px solid var(--border-hairline);
