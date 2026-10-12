@@ -1553,6 +1553,19 @@ a.subservice-item:hover {
   display: block;
 }
 
+/* A header panel that declares its own ratio wraps the media it holds: the film or the plate spans the
+   whole width of the header space, scaled proportionally, with nothing cut. The ratio is written onto the
+   panel from the file's own measured size (scratch/_hero_fit.py owns the rule, scratch/_apply_hero_fit.py
+   writes `style="aspect-ratio: W/H"`), and this class exists to lift the 78vh clamp -- a clamp shorter than
+   the media's own height would send the crop straight back, which is the whole thing being avoided.
+   `.project-hero-media` is otherwise a fixed 16/10 box (16/9 when it holds a film) with `object-fit: cover`,
+   which crops every plate wider than 16/10 at the sides and letterboxes any film that is not exactly 16/9.
+   This rule sits AFTER the film block above on purpose: `.project-hero-media.has-video` is also two classes,
+   so at equal specificity it is source order that decides. Guarded by scratch/_hero_fit_contract.py. */
+.project-hero-media.hero-fit-wide {
+  max-height: none;
+}
+
 /* Gallery Section Headings & Storyboard Dividers */
 .gallery-section-divider {
   grid-column: 1 / -1;
