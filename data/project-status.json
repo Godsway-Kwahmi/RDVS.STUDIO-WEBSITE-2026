@@ -155,15 +155,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "nyla-court.html": {
-      "slug": "nyla-court",
-      "title": "Nyla Court",
-      "year": "2020",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 23
-    },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
       "title": "NPA",
@@ -1918,6 +1909,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
+    },
+    "nyla-court.html": {
+      "slug": "nyla-court",
+      "title": "Nyla Court",
+      "year": "2020",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 23
     },
     "alexander-signage.html": {
       "slug": "alexander-signage",

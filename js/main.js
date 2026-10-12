@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
-    'nyla-court.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
@@ -662,17 +661,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'nyla-court',
-        title: 'Nyla Court',
-        category: 'Interior Design & Architectural Visualization — 2020',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/nyla-court/nyla-court-hero.jpg',
-        imageUrlDesktop: 'assets/images/nyla-court/nyla-court-hero.jpg',
-        imageMobileUrl: 'assets/images/nyla-court/nyla-court-hero.jpg',
-        projectUrl: 'nyla-court.html'
-      },
-      {
         id: 'link-drive-road',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -1094,44 +1082,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: '[\'Landscape Design\', \'Interior Design   3D Visualization\']'
-        }
-      },
-      {
-        id: 'nyla-court-plate1',
-        title: 'Nyla Court',
-        category: 'Interior Design & Architectural Visualization — 2020',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/nyla-court/nyla-court-living-04.jpg',
-        imageUrlDesktop: 'assets/images/nyla-court/nyla-court-living-04.jpg',
-        imageMobileUrl: 'assets/images/nyla-court/nyla-court-living-04.jpg',
-        projectUrl: 'nyla-court.html',
-        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across twenty-two plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'nyla-court-plate2',
-        title: 'Nyla Court',
-        category: 'Interior Design & Architectural Visualization — 2020',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/nyla-court/nyla-court-living-05.jpg',
-        imageUrlDesktop: 'assets/images/nyla-court/nyla-court-living-05.jpg',
-        imageMobileUrl: 'assets/images/nyla-court/nyla-court-living-05.jpg',
-        projectUrl: 'nyla-court.html',
-        desc: 'Interior design and architectural visualization for Nyla Court, a group of white two-storey houses arranged around a paved court, developed across twenty-two plates that run from the living and dining room through to the wardrobes and the stone in the bathroom.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
       },
       {
