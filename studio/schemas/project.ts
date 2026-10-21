@@ -87,15 +87,17 @@ export default defineType({
       title: 'Listing Family',
       type: 'string',
       description:
-        'Project = a commissioned job, listed on work.html and archive.html. Product = a piece of ' +
-        'the in-house MIG line, listed on product.html instead. The two are not interchangeable: a ' +
-        'product page carries no data-typology and no work-card tokens, and the homepage deck draws ' +
-        'them from its own fifth pool. `pageFile` still decides which HTML file it hydrates.',
+        'Project = a work listed on work.html (card) and archive.html (row). Product is RETIRED: ' +
+        'the seven in-house MIG pieces joined the work grid on 2026-10-21, so they are ordinary ' +
+        'projects whose typology is the product kind ("Desk", "Media wall"), they carry work-card ' +
+        'service tokens like any other work, and scripts/build_sanity_seed.py now refuses to write ' +
+        'this value. It stays listed so a future product-only listing has somewhere to go without a ' +
+        'migration. `pageFile` still decides which HTML file it hydrates.',
       options: {
         layout: 'radio',
         list: [
           {title: 'Project (work.html + archive.html)', value: 'project'},
-          {title: 'Product (product.html, the MIG line)', value: 'product'},
+          {title: 'Product (retired 2026-10-21: the MIG pieces are works)', value: 'product'},
         ],
       },
       initialValue: 'project',
@@ -116,8 +118,9 @@ export default defineType({
       type: 'string',
       description:
         'What the work IS (the left side of a page meta line and the work card sub-line). ' +
-        'Generated from the values the work cards actually carry, so it only applies to a project: ' +
-        'a product is described by Line / Type / Kind below instead.',
+        'Generated from the values the work cards actually carry. The seven in-house MIG pieces keep ' +
+        'their Line / Type / Kind rows on the page, and their KIND is also their typology here -- the ' +
+        'owner\'s ruling of 2026-10-21 -- so "Desk" is a typology, not only a product kind.',
       hidden: ({document}) => document?.family === 'product',
       options: {list: TYPOLOGIES},
       validation: (Rule) =>

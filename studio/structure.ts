@@ -54,14 +54,16 @@ export const structure = (S: StructureBuilder) =>
                   S.documentTypeList('project')
                     .title('Commissioned work')
                     .filter(`(_type == "project") && family != "product"`)                ),
-              // The in-house MIG pieces are listed on product.html, never on work.html, so they get
-              // their own list rather than being mixed into the commissioned set.
+              // Retired 2026-10-21: the seven in-house MIG pieces are ordinary works now -- cards on
+              // work.html, rows on archive.html, family "project", typology = the product kind -- so this
+              // list holds nothing. It stays so a document tagged with the retired value cannot become
+              // invisible, and so the split the site used to have is recorded rather than forgotten.
               S.listItem()
-                .title('Product line (MIG)')
+                .title('Product line (retired)')
                 .icon(DocumentIcon)
                 .child(
                   S.documentTypeList('project')
-                    .title('Product line (MIG)')
+                    .title('Product line (retired)')
                     .filter('(_type == "project") && family == "product"')                ),
               S.divider(),
               S.listItem()

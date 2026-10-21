@@ -13,15 +13,21 @@ The committed seed was written before the current schema existed and cannot be i
     "Architectural Design" not once.
 
 This rebuilds one record per listed page from the site itself, which is the source of truth:
-work.html's cards for the 141 commissioned projects, the seven product pages for the MIG line
-(they are not on work.html, so they get `family: "product"` and the Line/Type/Kind vocabulary
-instead of a typology), and data/project-status.json for visibility. Images are deliberately NOT
-seeded: a real asset has to be uploaded, and a fabricated reference is what broke the last file.
+work.html's cards for every commissioned project AND for the seven in-house MIG pieces (they joined
+the work grid on 2026-10-21, so they are ordinary `family: "project"` records whose `typology` is the
+product kind the page itself states -- "Desk", "Media wall"), and data/project-status.json for
+visibility. Images are deliberately NOT seeded: a real asset has to be uploaded, and a fabricated
+reference is what broke the last file.
+
+There used to be a second path here, `product_records()`, globbing `product-*.html` and emitting a
+`family: "product"` record for each with `cardLabel: "Product Design"` and no card. Since those pages
+now carry work cards, that path produced a SECOND document for the same `_id`, which `validate()`
+rejects; it was deleted rather than guarded, because a generator with two writers for one record is
+the bug, not the symptom.
 
     py -3.10 scripts/build_sanity_seed.py            # validate + drift check (exit 1 if stale)
     py -3.10 scripts/build_sanity_seed.py --write    # rewrite studio/projects.ndjson
 """
-import glob
 import html
 import json
 import os
@@ -42,7 +48,6 @@ ALL_ORDER = list(PARENT_OF)
 
 OUT = os.path.join(ROOT, 'studio', 'projects.ndjson')
 WRITE = '--write' in sys.argv
-CONFLICT = re.compile(r'conflicted copy', re.I)
 
 
 def read(rel):
@@ -174,7 +179,12 @@ def project_records():
         if not tokens:
             problems.append('%s tags no service the filter bar owns' % page)
         discipline = specs.get('Discipline') or listed.get('discipline') or ''
-        h1 = clean(re.search(r'class="project-page-title"[^>]*>(.*?)</h1>', src, re.S).group(1))
+        h1m = re.search(r'class="project-page-title"[^>]*>(.*?)</h1>', src, re.S)
+        # Named rather than left to `None.group(1)`: this line once crashed a whole run with an
+        # AttributeError that said nothing about which page, and the registry derives membership
+        # from exactly this class, so a row without it means page and registry disagree.
+        assert h1m, ('%s is a registry row but carries no <h1 class="project-page-title">' % page)
+        h1 = clean(h1m.group(1))
         if h1 != listed.get('title', ''):
             problems.append('%s: listing title %r != page h1 %r'
                             % (page, listed.get('title', ''), h1))
@@ -209,45 +219,6 @@ def project_records():
     return records, problems
 
 
-def product_records():
-    records, problems = [], []
-    for page in sorted(glob.glob('product-*.html')):
-        if CONFLICT.search(page):
-            continue
-        src = read(page)
-        tokens = bar_ordered(page_service_keys(page))
-        line, kind_path, tail = meta_parts(src)
-        segs = [s.strip() for s in kind_path.split('/') if s.strip()]
-        h1m = re.search(r'class="product-page-title"[^>]*>(.*?)</h1>', src, re.S)
-        title = clean(h1m.group(1)) if h1m else ''
-        year = re.search(r'\b(19|20)\d{2}\b', tail)
-        if not tokens:
-            problems.append('%s tags no service the filter bar owns' % page)
-        if not title:
-            problems.append('%s has no product-page-title' % page)
-        rec = {
-            '_id': page[:-5],
-            '_type': 'project',
-            'title': title,
-            'pageFile': page,
-            'slug': {'_type': 'slug', 'current': page[:-5]},
-            'family': 'product',
-            'visibility': 'live',
-            'featured': False,
-            'publishedAt': int(year.group(0)) if year else 2020,
-            'productLine': line,
-            'productType': segs[0] if segs else '',
-            'productKind': segs[-1] if segs else '',
-            'primaryDiscipline': primary_token(tokens, ' / '.join(segs)),
-            'disciplines': tokens,
-            'cardLabel': 'Product Design',
-            'excerpt': lead(src),
-            'specs': {'client': 'In-house'},
-        }
-        records.append(rec)
-    return records, problems
-
-
 def validate(records):
     """Fail loudly on anything `sanity dataset import` would reject or the schema would red-flag."""
     from _service_axis import BAR_LABELS as labels
@@ -255,10 +226,6 @@ def validate(records):
                                 read(os.path.join('studio', 'taxonomy.ts'))
                                 .split('export const TYPOLOGIES: string[] = [')[1]
                                 .split(']')[0]))
-    kinds = set(re.findall(r"'([^']*)'",
-                           read(os.path.join('studio', 'taxonomy.ts'))
-                           .split('export const PRODUCT_KINDS: string[] = [')[1]
-                           .split(']')[0]))
     seen, bad = set(), []
     for r in records:
         tag = r['_id']
@@ -283,19 +250,19 @@ def validate(records):
         if r['family'] == 'project' and r.get('typology') not in typologies:
             bad.append('%s: typology %r is not a value any work card carries'
                        % (tag, r.get('typology')))
-        if r['family'] == 'product' and r.get('productKind') not in kinds:
-            bad.append('%s: productKind %r is not a kind any product page states'
-                       % (tag, r.get('productKind')))
+        if r['family'] != 'project':
+            # Tripwire, not a shape. Since 2026-10-21 the seven MIG pages are on work.html, so every
+            # listed page arrives through project_records() exactly once; a second `family` here would
+            # mean a page is being described twice, which is how the old product path collided _ids.
+            bad.append('%s: family %r is not a shape this generator writes any more'
+                       % (tag, r['family']))
     return bad
 
 
 def main():
-    projects, p1 = project_records()
-    products, p2 = product_records()
-    records = projects + products
-    problems = p1 + p2
+    records, problems = project_records()
     bad = validate(records)
-    print('%d project + %d product records' % (len(projects), len(products)))
+    print('%d records, one per listed page' % len(records))
     print('  live=%d archived=%d' % (sum(1 for r in records if r['visibility'] == 'live'),
                                      sum(1 for r in records if r['visibility'] == 'archived')))
     print('  years %d-%d, no image fields (assets must be uploaded, never fabricated)'

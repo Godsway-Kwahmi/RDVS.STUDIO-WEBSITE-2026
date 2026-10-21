@@ -632,6 +632,69 @@
       "onArchivePage": true,
       "plates": 40
     },
+    "product-1h.html": {
+      "slug": "product-1h",
+      "title": "1H",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 6
+    },
+    "product-hg-desk.html": {
+      "slug": "product-hg-desk",
+      "title": "HG-DESK",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "product-line-e-float-i.html": {
+      "slug": "product-line-e-float-i",
+      "title": "LINE E FLOAT I",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 9
+    },
+    "product-mlky.html": {
+      "slug": "product-mlky",
+      "title": "MLKY",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
+    "product-mound.html": {
+      "slug": "product-mound",
+      "title": "MOUND",
+      "year": "2016",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 2
+    },
+    "product-s-age.html": {
+      "slug": "product-s-age",
+      "title": "S-AGE",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "product-sp001.html": {
+      "slug": "product-sp001",
+      "title": "SP001",
+      "year": "2019",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
     "buena-vista-homes.html": {
       "slug": "buena-vista-homes",
       "title": "Buena Vista Homes",

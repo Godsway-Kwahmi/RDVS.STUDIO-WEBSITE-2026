@@ -1451,8 +1451,7 @@ a.subservice-item:hover {
    Individual Project Page Layout (Minimalissimo Architecture)
    Product pages use the project detail layout, so they share these rules.
    ========================================================================== */
-.project-detail-container,
-.product-detail-container {
+.project-detail-container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: calc(var(--header-height) + 32px) var(--grid-margin) 96px var(--grid-margin);
@@ -1483,11 +1482,11 @@ a.subservice-item:hover {
   color: var(--text-secondary);
 }
 
-/* A product page carries .product-page-title, never .project-page-title: the
-   verification harness reads the latter as "this is one of the studio's works"
-   and demands a work.html card for it. */
-.project-page-title,
-.product-page-title {
+/* One title class. .product-page-title existed only to keep the seven in-house MIG pages out
+   of the harness census, which read .project-page-title as "this is a studio work, so work.html
+   must card it". The owner moved the MIG pieces onto work.html on 2026-10-21, so the split is
+   gone -- and a page that is carded is allowed to say it is a work. */
+.project-page-title {
   font-size: clamp(1.75rem, 3.5vw, 2.75rem);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-heading);
@@ -2052,10 +2051,10 @@ a.subservice-item:hover {
   }
 }
 
-/* Product pages chain to each other, not into the project chain, so they carry
-   their own nav class and borrow the rule. */
-.project-nav-footer,
-.product-nav-footer {
+/* One pager class for every work, live or archived. .product-nav-footer used to chain the seven
+   MIG pages to each other instead of into the work walk; they joined the live service rings on
+   2026-10-21, so their separate class went with product.html. */
+.project-nav-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2090,7 +2089,7 @@ a.subservice-item:hover {
 }
 
 /* Two thumbs must start at the same height, so the row is top-aligned when it carries them. Scoped through
-   :has so the 144 flat archived pagers and the product line keep the vertical centring they have always had. */
+   :has so the flat archived pagers keep the vertical centring they have always had. */
 .project-nav-footer:has(.project-nav-item) {
   align-items: flex-start;
 }
@@ -2453,8 +2452,7 @@ a.subservice-item:hover {
     padding-bottom: 56px;
   }
 
-  .project-detail-container,
-  .product-detail-container {
+  .project-detail-container {
     padding-top: calc(var(--header-height) + 20px);
     padding-bottom: 64px;
   }
@@ -2827,8 +2825,9 @@ a.subservice-item:hover {
 }
 
 /* ==========================================================================
-   Product — the MIG line
-   No rules of its own: the index reuses Work's toolbar and card grid, and each
-   product page reuses the project detail layout. The three classes a product
-   page adds are grouped with their project twins above, where they inherit.
+   Product — the MIG line (retired 2026-10-21)
+   The seven product-*.html pages are ordinary works now: cards on work.html, rows
+   on archive.html, .project-* classes, and they inherit every rule above with no
+   class of their own. product.html and the nav link that opened it are deleted, so
+   the only thing left here is the record of why nothing is.
    ========================================================================== */

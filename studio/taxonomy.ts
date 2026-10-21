@@ -117,10 +117,13 @@ export const TYPOLOGIES: string[] = [
   'Commercial / TVC',
   'Corporate Profile',
   'Corporate Reception',
+  'Desk',
   'Educational',
   'Event Design',
   'Event Marketing',
   'Event Poster',
+  'Experimental lighting',
+  'Floating media unit',
   'Furniture',
   'Furniture & Product Design',
   'Graphic Design',
@@ -133,6 +136,7 @@ export const TYPOLOGIES: string[] = [
   'Institutional',
   'Interior Design',
   'Magazine',
+  'Media wall',
   'Mixed-Use',
   'Motion Design',
   'Photography',
@@ -140,6 +144,7 @@ export const TYPOLOGIES: string[] = [
   'Product & Accessories Design',
   'Product Design',
   'Product Visualization',
+  'Reception desk',
   'Residential',
   'Residential Architecture',
   'Residential Architecture & Interiors',
@@ -149,7 +154,9 @@ export const TYPOLOGIES: string[] = [
   'Residential Remodeling',
   'Retail',
   'Retail Interior',
+  'Sleeping pod',
   'Studio & Brand Identity',
+  'Tray & bench',
   'Wallpaper',
   'Website',
   'Wedding Invitation',
@@ -159,8 +166,9 @@ export const TYPOLOGIES: string[] = [
 
 /**
  * The in-house product line, harvested from the product pages' own meta lines
- * (`Line / Type / Kind`). These are NOT typologies: product pages appear on product.html, never
- * on work.html, so a product document has its own vocabulary to be tagged with.
+ * (`Line / Type / Kind`). The KIND is also a typology -- it is what the seven MIG cards
+ * carry on work.html since 2026-10-21 -- while LINE and TYPE stay this vocabulary,
+ * because the pages themselves row them as Line and Type, not as a typology.
  */
 export const PRODUCT_LINES: string[] = ['MIG']
 export const PRODUCT_TYPES: string[] = ['Accessories', 'Furniture', 'Lights']

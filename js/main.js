@@ -3105,10 +3105,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ]
   },
-  // The fifth stream is the Products page (product.html): the studio's own MIG pieces,
-  // which live on their own pages and are designed + visualized in-house rather than
-  // commissioned. They draw an equal share of the deck like the four disciplines, so a
-  // product slide reaches the homepage instead of hiding inside the VFX pool.
+  // The fifth stream is the studio's own MIG line: the seven `product-*.html` pieces, designed and
+  // visualized in-house rather than commissioned. They joined work.html's grid on 2026-10-21, but they
+  // keep their own stream so the deck gives them an equal share next to the four disciplines instead of
+  // burying a piece of furniture inside the VFX pool.
   // Every still and every film a product page renders is pooled, not just the header,
   // so a plate deeper in the gallery can reach the deck too (user, 2026-10-05).
   // scratch/_build_product_pool.py rebuilds this block from the pages themselves.
@@ -3129,15 +3129,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Desk',
+          client: 'RDVS Studios',
           year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-film1',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         videoUrl: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
@@ -3148,8 +3147,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
@@ -3166,8 +3165,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Accessories / Tray & bench',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3185,8 +3183,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3202,8 +3199,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3219,8 +3215,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3236,8 +3231,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3253,8 +3247,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3270,8 +3263,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Media wall',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3287,8 +3279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Desk',
+          client: 'RDVS Studios',
           year: '2020',
         }
       },
@@ -3304,8 +3295,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Desk',
+          client: 'RDVS Studios',
           year: '2020',
         }
       },
@@ -3321,15 +3311,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Desk',
+          client: 'RDVS Studios',
           year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
@@ -3338,14 +3327,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate2',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-3.jpg',
@@ -3354,14 +3343,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate3',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-4.jpg',
@@ -3370,14 +3359,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate4',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-5.jpg',
@@ -3386,14 +3375,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate5',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
@@ -3402,14 +3391,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate6',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
@@ -3418,14 +3407,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate7',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-8.jpg',
@@ -3434,14 +3423,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate8',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-9.jpg',
@@ -3450,14 +3439,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
         id: 'product-line-e-float-i-plate9',
         title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI',
+        category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-10.jpg',
@@ -3466,8 +3455,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Floating media unit',
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {
@@ -3482,8 +3471,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Lights / Experimental lighting',
+          client: 'RDVS Studios',
           year: '2021',
         }
       },
@@ -3499,8 +3487,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Lights / Experimental lighting',
+          client: 'RDVS Studios',
           year: '2021',
         }
       },
@@ -3516,8 +3503,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Lights / Experimental lighting',
+          client: 'RDVS Studios',
           year: '2021',
         }
       },
@@ -3533,8 +3519,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Accessories / Tray & bench',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3550,8 +3535,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Accessories / Tray & bench',
+          client: 'RDVS Studios',
           year: '2016',
         }
       },
@@ -3567,8 +3551,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Reception desk',
+          client: 'RDVS Studios',
           year: '2018',
         }
       },
@@ -3584,8 +3567,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Reception desk',
+          client: 'RDVS Studios',
           year: '2018',
         }
       },
@@ -3601,8 +3583,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Reception desk',
+          client: 'RDVS Studios',
           year: '2018',
         }
       },
@@ -3618,8 +3599,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Reception desk',
+          client: 'RDVS Studios',
           year: '2018',
         }
       },
@@ -3635,8 +3615,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Reception desk',
+          client: 'RDVS Studios',
           year: '2018',
         }
       },
@@ -3652,8 +3631,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Sleeping pod',
+          client: 'RDVS Studios',
           year: '2019',
         }
       },
@@ -3669,8 +3647,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Sleeping pod',
+          client: 'RDVS Studios',
           year: '2019',
         }
       },
@@ -3686,8 +3663,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
-          client: 'In-house',
-          scope: 'Furniture / Sleeping pod',
+          client: 'RDVS Studios',
           year: '2019',
         }
       },

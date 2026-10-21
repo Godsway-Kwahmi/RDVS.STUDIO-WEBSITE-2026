@@ -66,10 +66,12 @@ archive_typologies = {html.unescape(re.sub(r'<[^>]+>', '', t)).strip()
                                           arch, re.S) if t.strip()}
 typologies = sorted(card_typologies | archive_typologies)
 
-# --- the in-house product line, which work.html never lists ----------------------
-# A product page's meta line is `Line / Type / Kind — Year` ("MIG / Furniture / Desk — 2020"), and
-# the pages are listed on product.html, so no card's data-typology can ever name them. The CMS needs
-# its own vocabulary for them or a product document has nothing honest to put in `typology`.
+# --- the in-house product line, the MIG pieces -----------------------------------
+# A product page's meta line is `Line / Type / Kind` ("MIG / Furniture / Desk"). Since 2026-10-21 the
+# seven pages are ordinary works with work.html cards, and the owner ruled that the KIND is what goes
+# in the card's typology slot, so every kind below is also in TYPOLOGIES -- asserted under the sanity
+# checks. LINE and TYPE stay a separate vocabulary because the pages' own spec panel still rows them
+# ("Line: MIG", "Type: Furniture"), and the CMS mirrors what the page says rather than flattening it.
 product_pages = sorted(f for f in os.listdir(ROOT)
                        if f.startswith('product-') and f.endswith('.html')
                        and 'conflicted' not in f)
@@ -111,6 +113,12 @@ for _t, _l, p in subs:
 for t, l in mains:
     assert main_names[t] == l, 'bar label %r != MAIN_SERVICE_NAMES %r for %s' % (l, main_names[t], t)
 assert product_pages and product_kinds, 'no product pages found to read the MIG vocabulary from'
+# The kind is the card's typology now (the owner's ruling of 2026-10-21), so the two arrays cannot
+# drift apart: a kind that is not also a typology would mean a product card whose typology the CMS
+# would refuse to offer.
+assert set(product_kinds) <= set(typologies), \
+    'product kinds %s are not all harvested typologies -- did the seven MIG pages lose their cards?' \
+    % sorted(set(product_kinds) - set(typologies))
 assert len(slide_pools) == len(slide_keys) >= 4, \
     'serviceKeys %s not all present in servicePools %s' % (slide_keys, sorted(pool_names))
 
@@ -185,8 +193,9 @@ body.append(']')
 body.append('')
 body.append('/**')
 body.append(' * The in-house product line, harvested from the product pages\' own meta lines')
-body.append(' * (`Line / Type / Kind`). These are NOT typologies: product pages appear on product.html, never')
-body.append(' * on work.html, so a product document has its own vocabulary to be tagged with.')
+body.append(' * (`Line / Type / Kind`). The KIND is also a typology -- it is what the seven MIG cards')
+body.append(' * carry on work.html since 2026-10-21 -- while LINE and TYPE stay this vocabulary,')
+body.append(' * because the pages themselves row them as Line and Type, not as a typology.')
 body.append(' */')
 body.append('export const PRODUCT_LINES: string[] = [%s]' % ', '.join(q(x) for x in product_lines))
 body.append('export const PRODUCT_TYPES: string[] = [%s]' % ', '.join(q(x) for x in product_types))
