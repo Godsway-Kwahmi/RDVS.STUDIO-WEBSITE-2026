@@ -29,6 +29,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAX_ENTRIES = 3
 POOL_KEYS = ('architecture', 'interiors', 'vfx', 'motion')
 
+# `servicePools` grew a fifth array, `products`, on 2026-10-05, and it is owned by
+# scratch/_build_product_pool.py (every plate and film of the product pages, guarded by
+# harness section M3). This generator must not write it -- but for fifteen days POOL_KEYS
+# was also the only statement of which pools EXIST, so a report here silently counted four
+# of them, exactly the partial-census-wearing-a-full-one's-name failure that
+# scratch/_slide_pool_census.py had until 2026-10-21. POOL_KEYS is now checked against the
+# pools actually present in js/main.js, and an unknown pool stops the run instead of being
+# skipped.
+EXTERNALLY_OWNED = {'products': 'scratch/_build_product_pool.py'}
+POOL_OPENER = '\n  architecture: {'
+POOL_NAME = re.compile(r'^  ([a-z][a-z0-9_]*): \{', re.M)
+
 # First matching service token decides which pool a work renders in, because pool
 # membership in main.js is physical (the array it sits in), not the `discipline` field.
 TOKEN_POOL = (
@@ -308,24 +320,56 @@ def build_entry(info, media, kind, suffix, curated):
 
 
 # ------------------------------------------------------- existing pool parsing
-def parse_pools(main):
-    starts = {}
-    for key in POOL_KEYS:
-        starts[key] = main.index(f'\n  {key}: {{')
-    order = sorted(starts.items(), key=lambda kv: kv[1])
-    ends = {}
-    for i, (key, s) in enumerate(order):
-        if i + 1 < len(order):
-            ends[key] = order[i + 1][1]
-        else:
-            ends[key] = main.index('\n};', s)
+def pool_blocks(main):
+    """(pool names in file order, {name: (start, end)}) for the servicePools literal.
+
+    A block runs to the NEXT POOL IN THE FILE, not to the next name this caller happens to
+    know. POOL_KEYS used to bound itself, so once main.js carried a fifth pool between two
+    of the four, the earlier pool's block swallowed it and every per-pool number in the
+    report was wrong while the grand total stayed right -- the worst kind of wrong, because
+    nothing looked broken.
+    """
+    s0 = main.index(POOL_OPENER)
+    block_end = main.index('\n};', s0)
+    starts = sorted((main.index('\n  %s: {' % n), n)
+                    for n in dict.fromkeys(POOL_NAME.findall(main[s0:block_end])))
+    assert starts, 'no pools found inside servicePools -- the block shape changed'
+    bounds = {n: (s, starts[i + 1][0] if i + 1 < len(starts) else block_end)
+              for i, (s, n) in enumerate(starts)}
+    return [n for _, n in starts], bounds
+
+
+def parse_pools(main, keys=POOL_KEYS):
+    _, bounds = pool_blocks(main)
     blocks = {}
-    for key in POOL_KEYS:
-        seg = main[starts[key]:ends[key]]
+    for key in keys:
+        s, e = bounds[key]
+        seg = main[s:e]
         vs = seg.index('videos: [')
         im = seg.index('images: [')
         blocks[key] = {'videos': extract_entries(seg, vs, im), 'images': extract_entries(seg, im, len(seg))}
     return blocks
+
+
+def pools_in_file(main):
+    """Every top-level pool name inside the servicePools block, in file order."""
+    return pool_blocks(main)[0]
+
+
+def check_coverage(main):
+    """Fail loudly rather than report four pools as if they were all of them."""
+    found = pools_in_file(main)
+    unknown = [k for k in found if k not in POOL_KEYS and k not in EXTERNALLY_OWNED]
+    absent = [k for k in POOL_KEYS if k not in found]
+    if unknown or absent:
+        raise SystemExit(
+            'pool coverage is stale here: js/main.js has %s, this script writes %s\n'
+            '  pools nobody owns in this file: %s\n'
+            '  pools this script expects but the file lacks: %s\n'
+            'Add the pool to POOL_KEYS (it is generated) or to EXTERNALLY_OWNED (another\n'
+            'tool owns it), then re-run -- do not ship a report that counts a subset.'
+            % (found, list(POOL_KEYS), unknown, absent))
+    return found
 
 
 def extract_entries(seg, open_idx, close_idx):
@@ -359,6 +403,8 @@ def main_():
     work = read('work.html')
     pages = list(OrderedDict.fromkeys(re.findall(r'href="([a-z0-9\-]+\.html)" class="grid-card"', work)))
     main_js = read('js/main.js')
+    found = check_coverage(main_js)
+    owned = [k for k in found if k not in POOL_KEYS]
     pools = parse_pools(main_js)
     curated_by_page = {}
     for key in POOL_KEYS:
@@ -367,13 +413,31 @@ def main_():
                 u = ent['fields'].get('projectUrl')
                 if u and u not in curated_by_page:
                     curated_by_page[u] = ent['fields']
-    print(f'listings: {len(pages)} | existing pool entries: '
-          f'{sum(len(pools[k][t]) for k in POOL_KEYS for t in ("videos","images"))}')
+    mine = sum(len(pools[k][t]) for k in POOL_KEYS for t in ("videos", "images"))
+    detail = ', '.join('%s %d' % (k, sum(len(pools[k][t]) for t in ("videos", "images")))
+                       for k in POOL_KEYS)
+    print(f'listings: {len(pages)} | pool entries this script writes: {mine} ({detail})')
+    owned_pools = {}
+    for k in owned:
+        owned_pools[k] = parse_pools(main_js, [k])[k]
+        n = sum(len(owned_pools[k][t]) for t in ("videos", "images"))
+        print(f'  {k}: {n} entries owned by {EXTERNALLY_OWNED[k]} -- read here, never written')
+    # A page already represented in an externally owned pool IS in the deck. Generating for
+    # it would put the same work in a service pool as well, which double-counts it in the
+    # equal-share draw and fights that tool's guard (for `products` that is (M3) in
+    # scratch/_verify_backlog.py). Route around those pages and print how many.
+    pooled_elsewhere = {e['fields']['projectUrl']
+                        for k in owned for t in ('videos', 'images') for e in owned_pools[k][t]
+                        if e['fields'].get('projectUrl')}
+    skipped = [p for p in pages if p in pooled_elsewhere]
+    print(f'  pages whose slides belong to another tool, skipped here: {len(skipped)} {skipped[:8]}')
 
     additions = {'videos': {}, 'images': {}}
     counts = {'projects': 0, 'no_media': [], 'video': 0, 'gif': 0, 'still': 0, 'new_projects': 0,
               'singles': []}
     for page in pages:
+        if page in pooled_elsewhere:
+            continue
         info = parse_page(page)
         counts['projects'] += 1
         curated = curated_by_page.get(page, {})
@@ -454,6 +518,22 @@ def main_():
     if upgrades:
         # Rewrite only inside the servicePools block, so the same path used by a card
         # thumb or drawer elsewhere in main.js keeps the size it was chosen for.
+        # The replace is region-wide, which would also reach a pool another tool owns:
+        # `str.replace` fixes every copy, so a path shared between, say, motion and the
+        # externally owned products array would get rewritten in both. Refuse instead of
+        # quietly editing another machine's artefact.
+        _, bounds = pool_blocks(text)
+        clash = sorted({(key, os.path.basename(v))
+                        for key in owned
+                        for _id, field, v, b in upgrades
+                        if f"{field}: '{v}'" in text[bounds[key][0]:bounds[key][1]]})
+        if clash:
+            raise SystemExit(
+                'refusing to write js/main.js: these strings also live in a pool this script does not\n'
+                'own, and the region-wide upgrade replace below would rewrite them there too:\n  %s\n'
+                'Own it properly instead: run %s and let it upgrade its own entries.'
+                % ('\n  '.join('%s: %s' % c for c in clash),
+                   ', '.join(sorted(set(EXTERNALLY_OWNED.values())))))
         s0 = text.index('\n  architecture: {')
         e0 = text.index('\n};', s0)
         region = text[s0:e0]
@@ -494,4 +574,12 @@ def main_():
     print('node --check:', subprocess.call('node --check js/main.js', shell=True, cwd=ROOT))
 
 
-main_()
+if __name__ == '__main__':
+    main_()
+else:
+    # This module used to end in a bare `main_()`, so IMPORTING it ran the whole generator --
+    # and because the apply switch is read from sys.argv, an importer whose command line happened
+    # to carry --apply would have rewritten js/main.js as a side effect of reaching for a helper.
+    # Verified 2026-10-21 by importing it for a pool count and getting a full report back.
+    print('build_slideshow_pool imported, not run: it regenerates js/main.js when EXECUTED. '
+          'Call main_() explicitly if that is really what you mean.')
