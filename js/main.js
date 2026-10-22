@@ -4316,11 +4316,17 @@ document.addEventListener('DOMContentLoaded', async () => {
           } else {
             const deskImg = proj.imageUrlDesktop || proj.imageUrl;
             const mobImg = proj.imageMobileUrl || proj.imageUrl;
-
+            // ONE STILL AT A TIME (owner, 2026-10-22). Only the slide the viewer lands on is a live image.
+            // The rest hold their URLs in data-src / data-srcset until hydrateStills() lights them, and the
+            // picture keeps `data-defer` so a guard can tell "deferred on purpose" from "deferred and forgot
+            // to light". This is the deck's own half of the same rule index.html's baked paint follows (see
+            // slide_markup in scratch/_paint_homepage_deck.py); loading="lazy" alone was not it, because all
+            // fifteen slides sit stacked in one 100vw x 100dvh box, so every one of them counts as being in
+            // the viewport and the preload scanner asked for all fifteen at once.
             mediaContainer.innerHTML = `
-              <picture class="slide-picture">
-                <source media="(max-width: 768px)" srcset="${mobImg}">
-                <img src="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+              <picture class="slide-picture"${idx === 0 ? '' : ' data-defer'}>
+                <source media="(max-width: 768px)" ${idx === 0 ? 'srcset' : 'data-srcset'}="${mobImg}">
+                <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
               </picture>
             `;
           }
@@ -4611,6 +4617,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     // blue field). So the deck waits for the overlay to leave, then starts from slide 0 as if the visitor
     // had just arrived. Deferred once, by a 100 ms poll, and only while the veil is actually up.
     if (introIsUp()) {
+      // Owner order, 2026-10-22: warm the deck's media UNDER the veil. The visitor cannot see the deck for
+      // VEIL seconds and the deck does not start until it leaves, so the pipe is free for exactly that long
+      // -- and `preload="none"` on a built film slide means it has asked for nothing on its own account.
+      // Still first, film second: hydrateStills() is synchronous and the three stills the viewer reaches
+      // inside a minute are the smaller, more visible payload, while requestFilmWarm() waits for an idle
+      // beat (up to 4 s) before it puts a film in flight.
+      //
+      // What does NOT happen under the veil is the deck advancing. Its own start stays on the other side of
+      // this branch, so no slide burns its dwell behind a blue field and no film plays its opening seconds to
+      // nobody (that regression is why initCarousel defers itself at all -- see the note above).
+      hydrateStills();
+      requestFilmWarm();
       const waitForIntro = setInterval(() => {
         if (introIsUp()) return;
         clearInterval(waitForIntro);
@@ -4618,6 +4636,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }, 100);
       return;
     }
+    deckStarted = true;
     updateSlide(0);
     setupEventListeners();
   }
@@ -4714,6 +4733,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Every advance re-arms the background preloading from the new position, so the queue is always
     // walking toward the slides the viewer has not seen yet.
     requestFilmWarm();
+    // ... and the same walk for the stills: the two slides past this one get their URLs now, so the image
+    // is already decoding when the dwell runs out instead of starting to load at the cut.
+    hydrateStills();
   }
 
   function startCurrentSlide() {
@@ -4861,6 +4883,48 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  // ---------------------------------------------------------------- deferred stills, one at a time
+  /**
+   * Owner order, 2026-10-22, on the slow-slideshow investigation: "one still at a time, plus warm under the
+   * veil".
+   *
+   * Measured before it (scratch/_deck_load.py): index.html asked for all fifteen painted stills between
+   * 1,286 and 1,591 ms -- ~11 MB of plates up to 3088 px wide -- while the intro veil still covered the
+   * deck, and populateRandomizedSlides() then re-drew the deck at random and rewrote every .slide-media, so
+   * those bytes were thrown away and the drawn fifteen were fetched on top of them: ~22 MB of stills to
+   * paint ~11 MB of pixels, none of it wanted before 6.90 s. loading="lazy" sat on every one of those images
+   * and changed nothing, because the fifteen slides are stacked inside the same 100vw x 100dvh box and only
+   * opacity-hidden, so the browser sees fifteen in-viewport images and loads fifteen.
+   *
+   * So a still that is neither the slide on screen nor one of the TWO after it has no `src` at all: its URL
+   * waits in data-src / data-srcset and nothing is fetched for it. Three of a deck that holds an image slide
+   * for DEFAULT_IMAGE_DURATION is ~18 s of runway for the heaviest plate in the pool, which is enough headroom
+   * at 2 Mbps, and it is the same "in the order the viewer will actually see them, one at a time" discipline
+   * the film warm queue below runs. `data-defer` comes off the picture as it is lit, which is what makes
+   * lighting idempotent and keeps "deferred on purpose" separable from "lit and done" in a DOM read.
+   *
+   * Slide 1 is exempt at both ends: it is the only still index.html paints live, because it is the one thing
+   * a visitor sees before this file has run.
+   */
+  const STILL_AHEAD = 2;          // slides hydrated in front of the viewer, besides the one on screen
+  let deckStarted = false;        // false while the intro veil is up -- this is what filmQueue() warms from
+
+  function lightStill(idx) {
+    const slide = slides[idx];
+    if (!slide) return;
+    const pic = slide.querySelector('picture.slide-picture[data-defer]');
+    if (!pic) return;                       // slide 1, or a film slide: its poster rides on the <video>
+    pic.querySelectorAll('source[data-srcset]').forEach((s) => { s.srcset = s.dataset.srcset; });
+    const img = pic.querySelector('img[data-src]');
+    if (img) img.src = img.dataset.src;
+    pic.removeAttribute('data-defer');
+  }
+
+  function hydrateStills() {
+    // the deck's own walk order, wrapping over the end, exactly like filmQueue()
+    for (let step = 0; step <= STILL_AHEAD; step++) lightStill((currentIndex + step) % totalSlides);
+  }
+
   // ---------------------------------------------------------------- background film preloading
   /**
    * Owner order, 2026-10-22: "for the animations and videos in the slideshow on the homepage, preload
@@ -4907,7 +4971,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     // slide is deliberately not in here, and a 360 slide owns its own media so it is skipped too
     const out = [];
     const seen = new Set();
-    for (let step = 1; step < totalSlides; step++) {
+    // ... but "the active slide already has the pipe" is only true once the deck has STARTED. Under the intro
+    // veil nothing is playing, a built film slide carries preload="none", and the slide the viewer lands on in
+    // 6.9 s is precisely the one whose bytes matter most, so while deckStarted is false it is first in line.
+    for (let step = deckStarted ? 1 : 0; step < totalSlides; step++) {
       const idx = (currentIndex + step) % totalSlides;
       const slide = slides[idx];
       const vid = slide ? slide.querySelector('video') : null;
