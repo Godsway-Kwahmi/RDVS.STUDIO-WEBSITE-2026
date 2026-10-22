@@ -3822,11 +3822,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // the four disciplines plus the Products page — distributed equally. News slides always
   // occupy the tail, so the budget adapts to their count.
   const serviceKeys = ['architecture', 'interiors', 'vfx', 'motion', 'products'];
-  const TOTAL_SLIDE_BUDGET = 20;
+  // Owner, 2026-10-22: "let's reduce the number of slides on the homepage from 20 to 15". The deck
+  // was twenty since the pool was enlarged; 15 is the new size, and it is ONE fact told in two
+  // places that have to agree -- this constant and the number of .slide / .caption-card /
+  // .pagination-bar blocks baked into index.html. `scratch/_deck_size_contract.py` is the guard.
+  const TOTAL_SLIDE_BUDGET = 15;
 
   // Drawn again on every page load, so a refresh — or the automatic reload that fires when
-  // the deck reaches slide 20 — shows a different cut of the work instead of replaying the
-  // same twenty. Fisher-Yates over a copy; the pools stay as curated.
+  // the deck reaches slide 15 — shows a different cut of the work instead of replaying the
+  // same fifteen. Fisher-Yates over a copy; the pools stay as curated.
   function shuffled(list) {
     const out = [...list];
     for (let i = out.length - 1; i > 0; i--) {
@@ -3844,7 +3848,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   // page refresh." Because each load re-draws the deck, this reload is what keeps the
   // slideshow running indefinitely on fresh material: the deck plays through its last slide —
   // which since 2026-10-22 is the news article — and only then the page reloads and a new
-  // draw starts at slide one.
+  // draw starts at slide one. The deck itself was cut to fifteen slides on 2026-10-22, so the
+  // reload fires at the end of the shorter run -- not at a twentieth slide that no longer exists.
   const AUTO_REFRESH_AFTER_SLIDE = TOTAL_SLIDE_BUDGET;
   const AUTO_REFRESH_MIN_GAP_MS = 30000;
   let autoRefreshQueued = false;
