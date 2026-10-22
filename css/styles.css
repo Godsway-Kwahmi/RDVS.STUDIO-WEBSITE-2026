@@ -590,13 +590,18 @@ button {
   position: relative;
   display: none;
   align-items: center;
-  gap: 8px;
+  /* Two thirds of the size, per the owner's markup of 2026-10-22, which boxes the volume pill
+     together with the slide counter and reads "REDUCE TO 2/3RDS OF SIZE". Measured at 1440 px
+     the pill was 106 x 28 and the counter 54 x 21, so every value below is the old one x 2/3:
+     gap 8 -> 5, padding 4/10 -> 2.5/7, radius 20 -> 13, and the descendants under it. The
+     1 px border and the 1 px hairline idiom stay as they are -- the site's rules do not scale. */
+  gap: 5px;
   background: rgba(0, 0, 0, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 2.5px 7px;
+  border-radius: 13px;
   user-select: none;
   z-index: 25;
   transition: border-color var(--transition-speed) var(--transition-ease), background-color var(--transition-speed) var(--transition-ease);
@@ -604,6 +609,38 @@ button {
 
 .hero-volume-control.visible {
   display: inline-flex;
+}
+
+/* Scoped to the hero on purpose: main.js builds the same .volume-toggle-btn /
+   .volume-slider markup into a .video-volume-overlay on every project-page film, and that
+   one keeps its original size. */
+.hero-volume-control .volume-toggle-btn {
+  width: 12px;
+  height: 12px;
+}
+
+.hero-volume-control .volume-toggle-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
+.hero-volume-control .volume-slider-container {
+  width: 39px;
+  height: 9px;
+}
+
+.hero-volume-control .volume-slider {
+  height: 1.33px;
+}
+
+.hero-volume-control .volume-slider::-webkit-slider-thumb {
+  width: 5px;
+  height: 5px;
+}
+
+.hero-volume-control .volume-slider::-moz-range-thumb {
+  width: 5px;
+  height: 5px;
 }
 
 .hero-status-row {
@@ -718,8 +755,10 @@ button {
 .slide-status {
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  font-size: 0.9375rem;
+  /* 0.9375rem -> 0.625rem and 6px -> 4px: the counter shares the boxed cluster with the
+     volume pill, and the owner's markup asks that cluster for two thirds of its size. */
+  gap: 4px;
+  font-size: 0.625rem;
   color: var(--text-secondary);
 }
 
@@ -760,19 +799,77 @@ button {
   background-color: var(--foreground);
 }
 
-.step-nav {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+/* ==========================================================================
+   Hero edge step arrows
+   The owner's markup of 2026-10-22 deleted the Previous/Next text pair from the hairline
+   row and drew a chevron at each edge of the media instead, annotated "ADD ARROWS, ONLY
+   VISIBLE ON MOUSE OVER". So: one arrow per edge, vertically centred on the hero, faded to
+   zero until the pointer is inside .hero-viewport. Keyboard users get them on focus, and a
+   touch device gets no arrow at all -- that is what "only visible on mouse over" asks for,
+   and it is also what keeps an invisible button from swallowing taps at the screen edge.
+   The class names stay .step-btn.prev / .step-btn.next because js/main.js binds exactly
+   those two selectors (const prevBtn / nextBtn) and the accessible names stayed "Previous"
+   and "Next" -- only the visible words were deleted.
+   ========================================================================== */
+.hero-step-nav {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  /* The layer spans the whole hero so the arrows can be placed from its edges; it must not
+     intercept anything, or it would sit over the scrim and the media. */
+  pointer-events: none;
 }
 
 .step-btn {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 88px;
+  padding: 0;
+  border: none;
+  background: none;
+  /* Sits on dark media in both themes, same as the volume pill and the hairline bars. */
+  color: #ffffff;
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity var(--transition-speed) var(--transition-ease);
 }
 
-.step-btn:hover {
-  color: var(--foreground);
+.step-btn.prev { left: var(--grid-margin); }
+.step-btn.next { right: var(--grid-margin); }
+
+.hero-viewport:hover .step-btn {
+  opacity: 0.85;
+}
+
+.step-btn:hover,
+.step-btn:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.step-btn svg {
+  width: 22px;
+  height: 44px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* The hero carries frames from near-black to a white product shot, so a hairline white
+     chevron needs its own separation from whatever plate is behind it. */
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.55));
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .hero-step-nav {
+    display: none;
+  }
 }
 
 /* Base Social Navigation Links */
@@ -2405,17 +2502,13 @@ a.subservice-item:hover {
     justify-content: space-between;
     width: 100%;
     gap: 8px;
-    /* Previous/Next now live INSIDE this row (they lead the hairline row on desktop). Four controls
-       do not fit a 375 px line -- the bars alone are ~171 px at this tier -- so the row wraps and
-     .step-nav below takes the whole second line, which is exactly where it sat before. */
+    /* Three controls share this line now that the Previous/Next pair is gone (the edge chevrons
+       took over, and they live over the media, not in this row). Measured at 375 px they are
+       145 + 72 + 36 = 253 px of content on a 343 px line, and they still fit the 288 px line at
+       320 px, so nothing wraps on a phone; the wrap is the valve for the 280 px tier, where the
+       counter drops to a second line instead of pushing the document wide. */
     flex-wrap: wrap;
     row-gap: 10px;
-  }
-
-  .step-nav {
-    justify-content: flex-end;
-    order: 1;
-    width: 100%;
   }
 
   .hero-social-links {

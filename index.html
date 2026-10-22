@@ -460,12 +460,6 @@
           <div class="hero-meta-controls">
             <div class="hero-controls-row">
               <div class="hero-status-row">
-                <!-- Understated Step Controls -->
-                <div class="step-nav">
-                  <button type="button" class="step-btn prev" aria-label="Previous">Previous</button>
-                  <button type="button" class="step-btn next" aria-label="Next">Next</button>
-                </div>
-
                 <!-- 20 Hairline Progress Indicators -->
                 <div class="pagination-bars" role="tablist" aria-label="Slide Selection">
                   <button class="pagination-bar active" data-index="0" role="tab" aria-selected="true" aria-label="Slide 1"><span class="pagination-fill"></span></button>
@@ -522,6 +516,20 @@
             </nav>
           </div>
         </div>
+      </div>
+
+      <!-- Edge step arrows. The owner's markup of 2026-10-22 deleted the Previous/Next text pair
+           from the hairline row and drew chevrons at the two edges of the media instead, to be
+           "only visible on mouse over". These are the same two controls under the same two class
+           names -- js/main.js binds .step-btn.prev and .step-btn.next -- with the words replaced
+           by a hairline chevron and the accessible names kept. -->
+      <div class="hero-step-nav" aria-label="Slide navigation">
+        <button type="button" class="step-btn prev" aria-label="Previous">
+          <svg viewBox="0 0 22 44" aria-hidden="true"><polyline points="17 3 5 22 17 41"></polyline></svg>
+        </button>
+        <button type="button" class="step-btn next" aria-label="Next">
+          <svg viewBox="0 0 22 44" aria-hidden="true"><polyline points="5 3 17 22 5 41"></polyline></svg>
+        </button>
       </div>
     </section>
   </main>
