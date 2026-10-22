@@ -2053,9 +2053,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2015',
         service: 'Graphic Design',
         discipline: 'vfx',
-        imageUrl: 'assets/images/2gs/2gs-5-desktop.jpg',
-        imageUrlDesktop: 'assets/images/2gs/2gs-5-desktop.jpg',
-        imageMobileUrl: 'assets/images/2gs/2gs-5-desktop.jpg',
+        imageUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        imageUrlDesktop: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        imageMobileUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
         projectUrl: '2gs.html'
       },
       {
