@@ -2405,10 +2405,17 @@ a.subservice-item:hover {
     justify-content: space-between;
     width: 100%;
     gap: 8px;
+    /* Previous/Next now live INSIDE this row (they lead the hairline row on desktop). Four controls
+       do not fit a 375 px line -- the bars alone are ~171 px at this tier -- so the row wraps and
+     .step-nav below takes the whole second line, which is exactly where it sat before. */
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
   .step-nav {
     justify-content: flex-end;
+    order: 1;
+    width: 100%;
   }
 
   .hero-social-links {
