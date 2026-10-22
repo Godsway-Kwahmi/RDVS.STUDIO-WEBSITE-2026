@@ -131,8 +131,17 @@ button {
 
 /* ==========================================================================
    Header (Minimalissimo Structure)
-   Left: "RDVS"
-   Right: Work, About, News, Expertise, RDVSchool, Contact + Search (Icon Trigger)
+   Left:  "RDVS", and RDVSchool centred in the empty region beside it
+   Right: Work, About, News, Expertise, Contact, then Search + theme toggle,
+          and Archive at the far right END of the bar.
+   Owner markup, 2026-10-22: two red "MOVE HERE" arrows moved RDVSchool out of the link group into
+   the gap left of Work, and Archive out of the position before the search field to the very end of
+   the bar; the blue "SHIFT TO THE LEFT A BIT HERE" covered Contact + Search, which is what giving
+   the end of the bar up to Archive does to them.
+   Both links STAY inside <nav class="primary-nav"> in the markup and are moved by position only, so
+   the mobile drawer (which IS that element), the active-link loop in js/nav.js and the nav-drift
+   reader in scratch/_nav_audit.py keep seeing all seven links. The hook classes are written by
+   scratch/_nav_relocate.py.
    ========================================================================== */
 .site-header {
   position: fixed;
@@ -156,6 +165,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* Archive is lifted out of the flow to the end of the bar, so it needs a containing block. */
+  position: relative;
+  /* Archive's measured 51px at 0.9375rem plus the 24px gap the utility cluster keeps between its own
+     members. scratch/_nav_geometry.py re-measures this in a browser and fails the run if the label is
+     ever renamed or the font-size changes and the number stops being true. */
+  --nav-archive-slot: 75px;
 }
 
 /* Studio Brand Link — strictly "RDVS" */
@@ -181,11 +196,16 @@ button {
   margin-left: auto;
 }
 
-/* Core Navigation Links: Work, About, News, Expertise, RDVSchool, Contact */
+/* Core Navigation Links: RDVSchool, Work, About, News, Expertise, Contact, Archive */
 .primary-nav {
   display: flex;
   align-items: center;
   gap: 22px;
+  /* The link group owns every pixel between the wordmark and the utility cluster, which is what
+     lets RDVSchool's auto margins centre it in the leftover space at ANY viewport width instead of
+     at a typed-out x coordinate. */
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .nav-link {
@@ -197,6 +217,36 @@ button {
 .nav-link:hover,
 .nav-link.active {
   color: var(--foreground);
+}
+
+/* The two relocated links, DESKTOP ONLY. Below 993px neither rule exists, so both are ordinary
+   members of the drawer in DOM order and the bar carries only brand + search + toggle + Menu. */
+@media (min-width: 993px) {
+  /* The utility group has to own the whole row before the link group inside it can spread.
+     Without this the group is only as wide as its own content, RDVSchool's auto margins have
+     nothing to distribute, and it lands flush against "Work" instead of in the gap. */
+  .header-right {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    /* Contact, the search field and the toggle give the end of the bar up to Archive -- this is
+       the "shift to the left a bit" the markup asked for. */
+    margin-right: var(--nav-archive-slot);
+  }
+
+  .nav-school {
+    /* First in the line, then centred in whatever the rest of the group leaves behind it. */
+    order: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-archive {
+    /* Out of the flow and pinned to the far right END of the bar, after the theme toggle. */
+    position: absolute;
+    right: var(--grid-margin);
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 /* Minimalist Search: input with clickable search icon button outside to the right */
