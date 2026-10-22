@@ -3731,7 +3731,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // ─── News slides: the first 3 items from the news section always lead the slideshow ───
+  // ─── News slides: the first 3 items from the news section always CLOSE the slideshow ───
+  // Owner order, 2026-10-22: the news articles used to lead the deck; they now play last, so the
+  // dispatch is the final slide before the automatic reload.
   // Fallback snapshot mirrors news.html (applies on file:// where fetch is blocked).
   const staticNewsSlides = [
     {
@@ -3740,8 +3742,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       category: 'Studio Dispatch — 2026',
       service: 'Studio Dispatch',
       discipline: 'news',
-      imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
-      imageMobileUrl: 'assets/images/hamlet/hamlet-estate.jpg',
+      // The same two renditions the news card in news.html loads, because that is what the
+      // fetched path produces. This snapshot used to name assets/images/hamlet/hamlet-estate.jpg
+      // — a 1600x2000 portrait master at 1.87 MB — so the file:// path rendered a different,
+      // heavier frame than the HTTP path for the one slide both paths claim to mirror.
+      imageUrl: 'assets/images/hamlet/hamlet-estate-desktop.jpg',
+      imageMobileUrl: 'assets/images/hamlet/hamlet-estate-mobile.jpg',
       projectUrl: 'we-have-updated-our-website.html',
       desc: 'RDVS Studios launches an updated digital platform documenting our multidisciplinary architecture, interior design, 3D visualization, visual effects, and turnkey build practices.',
       specs: {
@@ -3814,7 +3820,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Generate the remaining slides: a fresh random draw from each of the service pools —
   // the four disciplines plus the Products page — distributed equally. News slides always
-  // occupy the front, so the budget adapts to their count.
+  // occupy the tail, so the budget adapts to their count.
   const serviceKeys = ['architecture', 'interiors', 'vfx', 'motion', 'products'];
   const TOTAL_SLIDE_BUDGET = 20;
 
@@ -3836,8 +3842,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // "After the 20 slide in the slideshow on the home page, let's implement an automatic
   // page refresh." Because each load re-draws the deck, this reload is what keeps the
-  // slideshow running indefinitely on fresh material: slide 20 ends, the page reloads and
-  // a new draw starts at slide one, picking up new work and news on the way.
+  // slideshow running indefinitely on fresh material: the deck plays through its last slide —
+  // which since 2026-10-22 is the news article — and only then the page reloads and a new
+  // draw starts at slide one.
   const AUTO_REFRESH_AFTER_SLIDE = TOTAL_SLIDE_BUDGET;
   const AUTO_REFRESH_MIN_GAP_MS = 30000;
   let autoRefreshQueued = false;
@@ -3923,8 +3930,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // News items always run first; the works behind them play in random order, with a swap
-  // pass so the same work never occupies two consecutive slides.
+  // News items always run LAST (owner order, 2026-10-22 — they led the deck before); the works
+  // before them play in random order, with a swap pass so the same work never occupies two
+  // consecutive slides.
   function spreadRepeats(list) {
     for (let i = 1; i < list.length; i++) {
       if (slideKey(list[i]) !== slideKey(list[i - 1])) continue;
@@ -3948,7 +3956,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return list;
   }
 
-  const projects = spreadRepeats([...newsSlides, ...shuffled(drawnProjects)]);
+  const projects = spreadRepeats([...shuffled(drawnProjects), ...newsSlides]);
 
   // Check URL query or hash call for specific project (e.g. ?project=1957 or #1957)
   try {
