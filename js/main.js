@@ -4219,11 +4219,16 @@ document.addEventListener('DOMContentLoaded', async () => {
               const activePoster = isMobileViewport && mobPoster ? mobPoster : deskPoster;
 
               mediaContainer.innerHTML = `
-                <video class="slide-video" src="${activeVid}" poster="${activePoster}" muted playsinline preload="auto">
+                <video class="slide-video" src="${activeVid}" poster="${activePoster}" muted playsinline preload="none">
                   <source media="(max-width: 768px)" src="${mobVid}" type="video/mp4">
                   <source src="${deskVid}" type="video/mp4">
                 </video>
               `;
+              // preload="none" at build time is the other half of the background preloading below:
+              // the poster still paints instantly, but no film asks for bytes until either it becomes
+              // the active slide (play() needs them) or the warm queue reaches it. Before this order
+              // every painted film carried preload="auto" and they all started together -- five films,
+              // 37.5 MB, one ident that took 61 s on a loopback connection.
             }
 
           } else {
@@ -4523,6 +4528,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentIndex = newIndex;
     }
 
+    // The film being preloaded in the background may be the one the viewer has just arrived at.
+    // Playback owns that element from here, so the queue releases it instead of competing with it.
+    handOffWarm(currentIndex);
+
     // Sync title from project page for the active slide if available
     const activeProject = projects[currentIndex];
     if (activeProject && activeProject.projectUrl) {
@@ -4586,6 +4595,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     startCurrentSlide();
+
+    // Every advance re-arms the background preloading from the new position, so the queue is always
+    // walking toward the slides the viewer has not seen yet.
+    requestFilmWarm();
   }
 
   function startCurrentSlide() {
@@ -4732,6 +4745,135 @@ document.addEventListener('DOMContentLoaded', async () => {
       }, remainingTime);
     }
   }
+
+  // ---------------------------------------------------------------- background film preloading
+  /**
+   * Owner order, 2026-10-22: "for the animations and videos in the slideshow on the homepage, preload
+   * them in the background so they load faster".
+   *
+   * Measured before it (scratch/_preload_baseline_2026-10-22.md): every painted film slide carried
+   * preload="auto", so one draw put 5 films / 37.5 MB into the pipe at the same instant, they shared
+   * the bandwidth, `waiting` fired on 3 of 3 film activations, and the worst file — a 13.2 MB logo
+   * animation — needed 61 s on a LOOPBACK connection. Nothing about that is the film's fault: the deck
+   * was asking for all of them at once, the one on screen included.
+   *
+   * So the deck now preloads its own films in the order the viewer will actually see them, ONE IN THE
+   * BACKGROUND AT A TIME, in the slide's own <video> element (never a second copy of the file), and it
+   * never preloads the slide that is currently playing -- that one already has the pipe. The deck's own
+   * file, the one on screen, is always allowed to fetch on its own account, so the worst case measured
+   * here is one background film plus the playing one. The queue restarts from the new position each
+   * time the deck advances, so the film two slides ahead is buffered rather than the one the viewer is
+   * never going to reach, and a film is promoted exactly once per page life (`__warmed`) -- promoting
+   * it again after the deck wrapped would download it a second time.
+   */
+  const FILM_WARM_RETRY_MS = 1200;      // breathing room between two warm passes
+  const FILM_WARM_CAP_MS = 20000;       // a stalled range must not park the whole queue
+  const warmedFilms = new Set();        // urls this page has already taken as far as it intends to
+  let warmItem = null;                  // the single film currently in flight
+  let warmTimer = null;
+  let warmGap = null;
+
+  function filmUrlFor(proj) {
+    // the same rendition the slide markup and updateSlide() would use, so a warm never buys the wrong file
+    if (!proj || !proj.videoUrl) return '';
+    const onMobile = window.innerWidth <= 768 || window.matchMedia('(max-width: 768px)').matches;
+    return onMobile && proj.videoMobileUrl ? proj.videoMobileUrl : (proj.videoUrlDesktop || proj.videoUrl);
+  }
+
+  function lightDataWanted() {
+    const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    return !!(conn && (conn.saveData || /2g/.test(conn.effectiveType || '')));
+  }
+
+  function filmQueue() {
+    // the films ahead of the viewer, nearest first, wrapping over the end of the deck — the active
+    // slide is deliberately not in here, and a 360 slide owns its own media so it is skipped too
+    const out = [];
+    const seen = new Set();
+    for (let step = 1; step < totalSlides; step++) {
+      const idx = (currentIndex + step) % totalSlides;
+      const slide = slides[idx];
+      const vid = slide ? slide.querySelector('video') : null;
+      // __warmed is what keeps this to ONE download per film for the life of the page: a slide that
+      // has already been promoted -- or already played, because the deck wrapped around -- must not
+      // be handed to load() a second time.
+      if (!vid || slide._vrViewer || vid.__warmed) continue;
+      const url = filmUrlFor(projects[idx]);
+      if (!url || warmedFilms.has(url) || seen.has(url)) continue;
+      seen.add(url);
+      out.push({ idx, vid, url });
+    }
+    return out;
+  }
+
+  function warmNextFilm() {
+    if (warmItem || document.hidden || lightDataWanted()) return;
+    const item = filmQueue()[0];
+    if (!item) return;
+
+    item.vid.__warmed = true;
+    if (item.vid.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+      // it fetched everything already (the viewer watched this film and the deck came back around)
+      warmedFilms.add(item.url);
+      return warmLater();
+    }
+
+    warmItem = item;
+    let settled = false;
+    const settle = () => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(warmTimer);
+      warmTimer = null;
+      item.vid.removeEventListener('canplay', settle);
+      item.vid.removeEventListener('error', settle);
+      if (warmItem && warmItem.url === item.url) warmItem = null;
+      // A film that reached "canplay" is playable, which is the point of warming it; error counts as
+      // finished so the queue never re-tries a file the browser will not take.
+      if (item.vid.error || item.vid.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) warmedFilms.add(item.url);
+      warmLater();
+    };
+    item.vid.addEventListener('canplay', settle, { once: true });
+    item.vid.addEventListener('error', settle, { once: true });
+
+    // Chrome re-runs resource selection when `preload` changes, so promotion is the preload flip and
+    // NOT a load() call: calling load() unconditionally aborts the request the flip just made and
+    // downloads the same film twice (measured here on 2026-10-22 -- two resource-timing entries for
+    // funko-terrace.mp4, one of them 1 ms). A browser that ignored the flip is forced a beat later,
+    // and only if it demonstrably started nothing.
+    item.vid.preload = 'auto';
+    setTimeout(() => {
+      if (settled) return;
+      if (item.vid.networkState === HTMLMediaElement.NETWORK_EMPTY) item.vid.load();
+    }, 60);
+    warmTimer = setTimeout(settle, FILM_WARM_CAP_MS);
+  }
+
+  function warmLater() {
+    clearTimeout(warmGap);
+    warmGap = setTimeout(warmNextFilm, FILM_WARM_RETRY_MS);
+  }
+
+  function requestFilmWarm() {
+    // idle first: the slide on screen and its caption are the visit's real work
+    clearTimeout(warmGap);
+    if (window.requestIdleCallback) window.requestIdleCallback(() => warmNextFilm(), { timeout: 4000 });
+    else warmGap = setTimeout(warmNextFilm, 1500);
+  }
+
+  function handOffWarm(idx) {
+    // the deck just landed on the film being warmed -- playback takes over the same element, so the
+    // queue lets go of it (and its watchdog) instead of competing with itself
+    if (warmItem && warmItem.idx === idx) {
+      clearTimeout(warmTimer);
+      warmTimer = null;
+      warmItem = null;
+    }
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) requestFilmWarm();
+  });
 
   function pauseCurrentSlide() {
     isPaused = true;
