@@ -801,34 +801,38 @@ button {
 
 /* ==========================================================================
    Hero edge step arrows
-   The owner's markup of 2026-10-22 deleted the Previous/Next text pair from the hairline
-   row and drew a chevron at each edge of the media instead, annotated "ADD ARROWS, ONLY
-   VISIBLE ON MOUSE OVER". So: one arrow per edge, vertically centred on the hero, faded to
-   zero until the pointer is inside .hero-viewport. Keyboard users get them on focus, and a
-   touch device gets no arrow at all -- that is what "only visible on mouse over" asks for,
-   and it is also what keeps an invisible button from swallowing taps at the screen edge.
-   The class names stay .step-btn.prev / .step-btn.next because js/main.js binds exactly
-   those two selectors (const prevBtn / nextBtn) and the accessible names stayed "Previous"
-   and "Next" -- only the visible words were deleted.
+   The owner's markup of 2026-10-22 deleted the Previous/Next text pair from the hairline row and drew
+   a chevron at each edge of the media instead, annotated "ADD ARROWS, ONLY VISIBLE ON MOUSE OVER"; the
+   follow-up the same day settled what "mouse over" means: *"Keep each of the arrows invisible until the
+   left or right side of slide. On mouse over on the left section of the slide reveal the left arrow and
+   on mouse over on the right side of the image reveal the right arrow."* So each arrow belongs to one
+   SIDE of the slide -- the whole band is its own hover target and its own click target, and it is the
+   only thing that lights up when the pointer is in it. No halo either: the chevron is bare line.
+   Keyboard users get the arrow on focus, and a touch device (hover: none, pointer: coarse) gets no
+   arrow at all -- that is what "only visible on mouse over" asks for, and it keeps an invisible button
+   from swallowing taps at the screen edge. The 20 hairline bars and the arrow keys stay usable there.
+   Class names stay .step-btn.prev / .step-btn.next because js/main.js binds exactly those selectors.
    ========================================================================== */
 .hero-step-nav {
   position: absolute;
   inset: 0;
-  z-index: 12;
-  /* The layer spans the whole hero so the arrows can be placed from its edges; it must not
-     intercept anything, or it would sit over the scrim and the media. */
+  /* Above the scrim, BELOW .hero-footer (10), so the caption, the hairline bars, the volume pill and
+     the social links all win the hit test where they overlap the bands. */
+  z-index: 9;
+  /* The layer spans the hero only so the bands can be placed from its edges. It takes no hits itself --
+     measured: with this line removed the middle of the slide hit `div.hero-step-nav` instead of the
+     media, because the two bands are children of a full-inset box. */
   pointer-events: none;
+  /* One number to tune: how much of the slide counts as "the left side" / "the right side". */
+  --step-zone: 16%;
 }
 
 .step-btn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  bottom: 0;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 88px;
   padding: 0;
   border: none;
   background: none;
@@ -840,11 +844,19 @@ button {
   transition: opacity var(--transition-speed) var(--transition-ease);
 }
 
-.step-btn.prev { left: var(--grid-margin); }
-.step-btn.next { right: var(--grid-margin); }
+/* The band is the zone; the glyph stays where the drawing put it, one grid margin from the edge. */
+.step-btn.prev {
+  left: 0;
+  width: var(--step-zone);
+  justify-content: flex-start;
+  padding-left: var(--grid-margin);
+}
 
-.hero-viewport:hover .step-btn {
-  opacity: 0.85;
+.step-btn.next {
+  right: 0;
+  width: var(--step-zone);
+  justify-content: flex-end;
+  padding-right: var(--grid-margin);
 }
 
 .step-btn:hover,
@@ -861,9 +873,6 @@ button {
   stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
-  /* The hero carries frames from near-black to a white product shot, so a hairline white
-     chevron needs its own separation from whatever plate is behind it. */
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.55));
 }
 
 @media (hover: none) and (pointer: coarse) {
