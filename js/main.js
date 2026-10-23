@@ -5128,20 +5128,44 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Touch Swipe Handling
     let touchStartX = 0;
     let touchEndX = 0;
+    // Was the gesture that just ended a DRAG? The edge step arrows are visible and therefore live on a
+    // touch screen now (owner, 2026-10-23: "let's have the arrows for the slideshow on mobile screen too"),
+    // and a touch browser may hand a `click` to whatever is under the finger when a swipe ends. A drag that
+    // starts inside one of the 16% bands would then be two commands from one gesture: this handler steps,
+    // and the band's own click handler steps again -- in the same direction when the drag starts on the band
+    // that points that way, which is exactly the case that reads as the deck running away rather than as a
+    // bug. The flag is cleared on every touchstart, set only past the same 50 px this handler already
+    // requires, and consumed once by the click listener below. A tap never sets it, so a tap never loses.
+    let stepGestureSwipe = false;
 
     if (heroViewport) {
       heroViewport.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        stepGestureSwipe = false;
       }, { passive: true });
 
       heroViewport.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
+        if (touchEndX < touchStartX - 50 || touchEndX > touchStartX + 50) {
+          stepGestureSwipe = true;
+        }
         if (touchEndX < touchStartX - 50) {
           updateSlide(currentIndex + 1);
         } else if (touchEndX > touchStartX + 50) {
           updateSlide(currentIndex - 1);
         }
       }, { passive: true });
+
+      // Capture, so this runs before the button's own listener and can stop the propagation outright. It
+      // only ever acts on the click that is the tail of the swipe that just happened; a tap, a mouse click
+      // and a keyboard activation all arrive with the flag clear.
+      heroViewport.addEventListener('click', (e) => {
+        if (!stepGestureSwipe) return;
+        stepGestureSwipe = false;
+        if (e.target && e.target.closest && e.target.closest('.step-btn')) {
+          e.stopPropagation();
+        }
+      }, true);
     }
 
     // Drawer Listeners

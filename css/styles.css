@@ -817,9 +817,11 @@ button {
    on mouse over on the right side of the image reveal the right arrow."* So each arrow belongs to one
    SIDE of the slide -- the whole band is its own hover target and its own click target, and it is the
    only thing that lights up when the pointer is in it. No halo either: the chevron is bare line.
-   Keyboard users get the arrow on focus, and a touch device (hover: none, pointer: coarse) gets no
-   arrow at all -- that is what "only visible on mouse over" asks for, and it keeps an invisible button
-   from swallowing taps at the screen edge. The 20 hairline bars and the arrow keys stay usable there.
+   Keyboard users get the arrow on focus. A touch device (hover: none, pointer: coarse) gets the arrows
+   AT REST -- it has no hover to wait for, so hiding them there left a phone with no arrows at all, and the
+   owner asked for them back on 2026-10-23; the block at the end of this section is the treatment. The
+   hairline bars and the arrow keys stay usable everywhere, and the footer's z-index keeps every caption,
+   bar, pill and link above the bands.
    Class names stay .step-btn.prev / .step-btn.next because js/main.js binds exactly those selectors.
    ========================================================================== */
 .hero-step-nav {
@@ -884,9 +886,24 @@ button {
   stroke-linejoin: round;
 }
 
+/* A touch screen has no hover to wait for, so an arrow that only appears under a pointer never appears
+   at all (owner, 2026-10-23: "let's have the arrows for the slideshow on mobile screen too"). They rest at
+   55% -- the slide is a dark plate at that moment and the drawing asked for bare line, not a badge -- and
+   come up to 100% under the finger. The 16% side bands are unchanged, so the tap target is the same one a
+   pointer gets: at the narrowest layout the site supports (320 px) a band is 51 px wide by the full height
+   of the slide, which clears the 44 px floor with 7 px to spare. `:active` carries the same specificity as
+   the `:hover`/`:focus-visible` pair and comes after it in the sheet, so it wins under a finger and changes
+   nothing on a mouse. What a visible band costs is a live tap target over the left and right 16% of the
+   hero on a phone: the footer is z-index 10 against these bands' 9, so the caption, the bars, the volume
+   pill and the social links all still win their hit tests, and a swipe that starts inside a band is caught
+   by the gesture guard in js/main.js rather than stepping twice. */
 @media (hover: none) and (pointer: coarse) {
-  .hero-step-nav {
-    display: none;
+  .step-btn {
+    opacity: .55;
+  }
+
+  .step-btn:active {
+    opacity: 1;
   }
 }
 
