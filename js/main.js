@@ -156,6 +156,96 @@ document.addEventListener('DOMContentLoaded', async () => {
     name: 'Architectural Design',
     videos: [
       {
+        id: 'details-film-3',
+        title: 'Details',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'architecture',
+        videoUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
+        videoUrlDesktop: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
+        videoMobileUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
+        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
+        projectUrl: 'd-e-t-a-i-l-s.html',
+        desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
+        specs: {
+          client: 'RDVS Studios',
+          scope: 'Self-initiated interior modelling, look-dev, lighting, rendering and edit',
+          team: 'RDVS Team',
+          year: '2018',
+          disciplines: ['3D Visualization', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'funko-kitchen',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        videoUrl: 'assets/videos/funko-ridge/funko-kitchen.mp4',
+        videoUrlDesktop: 'assets/videos/funko-ridge/funko-kitchen.mp4',
+        videoMobileUrl: 'assets/videos/funko-ridge/funko-kitchen.mp4',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-4.jpg',
+        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: ['Masterplanning', 'Environmental Architecture', '3D Simulation']
+        }
+      },
+      {
+        id: '41-barham-film',
+        title: '41 Barham',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        videoUrl: 'assets/videos/41-barham/41-barham-film.mp4',
+        videoUrlDesktop: 'assets/videos/41-barham/41-barham-film.mp4',
+        videoMobileUrl: 'assets/videos/41-barham/41-barham-film.mp4',
+        imageUrl: 'assets/images/barham/barham-residence.jpg',
+        imageUrlDesktop: 'assets/images/barham/barham-residence.jpg',
+        imageMobileUrl: 'assets/images/barham/barham-residence.jpg',
+        projectUrl: '41-barham.html',
+        desc: 'A twenty-second title sequence held with the project',
+
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Architect Kofi Amankwah (Architecture), RDVS (Interior Design & 3D Visualization)',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'dyv-film',
+        title: 'DYV',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'architecture',
+        videoUrl: 'assets/videos/dyv/dyv-film.mp4',
+        videoUrlDesktop: 'assets/videos/dyv/dyv-film.mp4',
+        videoMobileUrl: 'assets/videos/dyv/dyv-film.mp4',
+        imageUrl: 'assets/images/dyv/dyv-atrium.jpg',
+        imageUrlDesktop: 'assets/images/dyv/dyv-atrium.jpg',
+        imageMobileUrl: 'assets/images/dyv/dyv-atrium.jpg',
+        projectUrl: 'dyv.html',
+        desc: 'The atrium fly-through: a fifteen-second monochrome push-in through the central atrium: a dense cluster of glowing cylindrical pendants under the domed opening, curved balcony bands rising around it, and lounge groups set among indoor trees. It opens on the same atrium view the gallery holds as its fourth plate, and it is the studio’s own capture posted to Instagram, so it is 1068x720 rather than a master render',
+        specs: {
+          client: 'DYV Holdings',
+          scope: 'Urban Planning, Facade Engineering & 3D Cinematic Renderings',
+          team: 'Godsway Kwahmi, RDVS Urban Studio',
+          year: '2025',
+          disciplines: ['Urban Planning', 'Facade Design', '3D Environmental Rendering']
+        }
+      },
+      {
         id: 'funko-ridge',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
@@ -466,6 +556,97 @@ document.addEventListener('DOMContentLoaded', async () => {
   interiors: {
     name: 'Interior Design',
     videos: [
+      {
+        id: 'watsons-place-film',
+        title: 'Watson’s Place',
+        category: 'Interior Design & Architectural Visualization — 2016',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        videoUrl: 'assets/videos/watsons-place/watsons-place-film.mp4',
+        videoUrlDesktop: 'assets/videos/watsons-place/watsons-place-film.mp4',
+        videoMobileUrl: 'assets/videos/watsons-place/watsons-place-film.mp4',
+        imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
+        imageUrlDesktop: 'assets/images/watsons-place/watsons-place-4.jpg',
+        imageMobileUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
+        projectUrl: 'watsons-place.html',
+        desc: 'The delivered animation of the street views and the three rooms',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'villa-aggregate-film',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
+        videoUrlDesktop: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
+        videoMobileUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-1.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'A walkthrough of the villa',
+
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'tower-cascades-film',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        videoUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
+        videoUrlDesktop: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
+        videoMobileUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
+        imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-hero.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'The delivered animation, end to end',
+
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'moty-intro',
+        title: 'MOTY',
+        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
+        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        videoUrl: 'assets/videos/moty/moty-intro.mp4',
+        videoUrlDesktop: 'assets/videos/moty/moty-intro.mp4',
+        videoMobileUrl: 'assets/videos/moty/moty-intro.mp4',
+        imageUrl: 'assets/images/moty/moty-5.jpg',
+        imageUrlDesktop: 'assets/images/moty/moty-5.jpg',
+        imageMobileUrl: 'assets/images/moty/moty-5.jpg',
+        projectUrl: 'moty.html',
+        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+
+        specs: {
+          client: 'Mother of the Year (MOTY)',
+          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+        }
+      },
 
     ],
     images: [
@@ -1823,6 +2004,110 @@ document.addEventListener('DOMContentLoaded', async () => {
     name: 'VFX + CGI',
     videos: [
       {
+        id: 'ttd-film',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/ttd/ttd-film.mp4',
+        videoUrlDesktop: 'assets/videos/ttd/ttd-film.mp4',
+        videoMobileUrl: 'assets/videos/ttd/ttd-film.mp4',
+        imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        projectUrl: 'ttd.html',
+        desc: 'A ninety-second render film of the TTD living room from one locked-off camera: the room runs from dark through lit evening to full daylight, holding on the red sectional, the terracotta stair and the blue dining wall at the far end',
+      },
+      {
+        id: 'mig-logo-letters-flip-v2',
+        title: 'MIG',
+        category: 'Modern Indigenous Goods — 2021',
+        service: 'Modern Indigenous Goods',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
+        videoUrlDesktop: 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
+        videoMobileUrl: 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
+        imageUrl: 'assets/images/mig/mig-1h-2.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-1h-2.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-1h-2.jpg',
+        projectUrl: 'mig.html',
+        desc: 'The four-and-a-half-second flip: the four marks of the MIG monogram start edge-on as one flat band, then rotate up into the picture plane one after another from the left, their extruded sides catching grey light as they turn, and resolve into the flat black logotype on white the page opens with, which holds to the end',
+      },
+      {
+        id: 'ahero-film',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/ahero/ahero-film.mp4',
+        videoUrlDesktop: 'assets/videos/ahero/ahero-film.mp4',
+        videoMobileUrl: 'assets/videos/ahero/ahero-film.mp4',
+        imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
+        imageUrlDesktop: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
+        imageMobileUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
+        projectUrl: 'ahero.html',
+      },
+      {
+        id: 'ackon-desk-film',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/ackon-desk/ackon-desk-film.mp4',
+        videoUrlDesktop: 'assets/videos/ackon-desk/ackon-desk-film.mp4',
+        videoMobileUrl: 'assets/videos/ackon-desk/ackon-desk-film.mp4',
+        imageUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        imageUrlDesktop: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        imageMobileUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
+        projectUrl: 'ackon-desk.html',
+        desc: 'A walkthrough of the rendered desk',
+      },
+      {
+        id: 'the-tea-house-website-load',
+        title: 'The Tea House',
+        category: 'Graphic Design, Digital & Web Design — 2021',
+        service: 'Graphic Design, Digital & Web Design',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
+        videoUrlDesktop: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
+        videoMobileUrl: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
+        imageUrl: 'assets/images/tea-house/tea-house-05.png',
+        imageUrlDesktop: 'assets/images/tea-house/tea-house-05.png',
+        imageMobileUrl: 'assets/images/tea-house/tea-house-05.png',
+        projectUrl: 'the-tea-house.html',
+        desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
+
+        specs: {
+          client: 'Private Client',
+          scope: 'Brand identity system, graphic design and custom UI/UX web design — art direction, menu, booking and reservation flows',
+          team: 'Jude Abbey, Jude Nyoagbe, Mahalia, Bimpong',
+          year: '2021',
+          disciplines: '[\'Graphic Design\', \'Digital   Web Design\']'
+        }
+      },
+      {
+        id: '2gs-film',
+        title: '2GS',
+        category: 'Graphic Design — 2015',
+        service: 'Graphic Design',
+        discipline: 'vfx',
+        videoUrl: 'assets/videos/2gs/2gs-logo-construction-v2.mp4',
+        videoUrlDesktop: 'assets/videos/2gs/2gs-logo-construction-v2.mp4',
+        videoMobileUrl: 'assets/videos/2gs/2gs-logo-construction-v2.mp4',
+        imageUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        imageUrlDesktop: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        imageMobileUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        projectUrl: '2gs.html',
+        desc: 'The eight-and-a-half-second ident: the monogram assembles itself out of the dark, its lower blocks arriving as bare outlines before they fill, while the stacked 2GS, CONSTRUCTION and +LOGISTICS wordmark draws in beside them; faint construction ticks sit under the mark and to its right, then fade as light crosses the sand fill and the finished lockup holds',
+        specs: {
+          client: '2GS Construction + Logistics',
+          scope: 'Identity and branding: monogram and lockups, labyrinth motif, colour palette and typography, business cards, letterheads and stationery, signage',
+          team: 'Randy Biney (concept + design); Jude Nyoagbe (concept)',
+          year: '2015',
+          disciplines: ['Graphic Design']
+        }
+      },
+      {
         id: '1981-film-project',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -2837,6 +3122,74 @@ document.addEventListener('DOMContentLoaded', async () => {
   motion: {
     name: 'Motion Design',
     videos: [
+      {
+        id: 'trumpet-africa-moonlit',
+        title: 'Trumpet Africa Productions Ident',
+        category: 'Broadcast — 2014',
+        service: 'Broadcast',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4',
+        videoUrlDesktop: 'assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4',
+        videoMobileUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4',
+        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        projectUrl: 'trumpet-africa-ident.html',
+        desc: 'Full rendered broadcast ident animations',
+
+        specs: {
+          client: 'Trumpet Africa Productions',
+          scope: 'Concept Development, Storyboarding, Illustrations, Motion Design & 3D Animation',
+          team: 'Concept: Jude Nyoagbe + Randy Biney, Animation: Randy Biney',
+          year: '2014',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
+        id: 'hfc-commercial',
+        title: 'HFC TVC',
+        category: 'Visual Effects (VFX) & Motion Design — 2016',
+        service: 'Visual Effects (VFX) & Motion Design',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
+        videoUrlDesktop: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
+        videoMobileUrl: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
+        projectUrl: 'hfc-tvc.html',
+        desc: 'The 2-second clip held with the project',
+
+        specs: {
+          client: 'Midnight Run',
+          scope: 'Visual Effects (VFX) & Motion Design',
+          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
+          year: '2016',
+          disciplines: ['Motion Design', 'Keyframe Design']
+        }
+      },
+      {
+        id: 'elo-tv-film',
+        title: 'ELO TV',
+        category: 'Motion Design — 2015',
+        service: 'Motion Design',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/elo-tv/elo-tv-logo-16x9-v2.mp4',
+        videoUrlDesktop: 'assets/videos/elo-tv/elo-tv-logo-16x9-v2.mp4',
+        videoMobileUrl: 'assets/videos/elo-tv/elo-tv-logo-16x9-v2.mp4',
+        imageUrl: 'assets/images/elo-tv/elo-tv-logo-frame.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-logo-frame.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-logo-frame.jpg',
+        projectUrl: 'elo-tv.html',
+        desc: 'The broadcast ident itself: eight seconds at 1920x1080 and 30 fps in which a bloom of light opens the top bar of the slanted E, the three bars unfold onto a presenter in red, and the red tv chip resolves its letters before the mark holds and fades back to black.',
+        specs: {
+          client: 'ELO TV',
+          scope: 'Graphic Design & Motion Design (Brand Identity, Stationery & Broadcast Ident)',
+          team: 'RDVS Team',
+          year: '2015',
+          disciplines: ['Graphic Design', 'Motion Design']
+        }
+      },
       {
         id: 'ceeander-motion',
         title: 'Ceeander Ident',
