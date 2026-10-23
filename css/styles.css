@@ -25,6 +25,15 @@
   --input-bg: rgba(255, 255, 255, 0.03);
   --brand-blue: #4288e7;
   --brand-blue-hover: #5da0fa;
+  /* RDVSchool's animated band. Consumed by the .nav-school block below: three blues, no fourth hue,
+     so the drift stays inside the brand. PEAK is the layer's resting opacity -- a glow reads at
+     full strength on a black bar and washes out on a white one, which is why light mode lowers it
+     and raises the alphas instead of reusing these. */
+  --school-glow-a: rgba(66, 136, 231, 0.55);
+  --school-glow-b: rgba(31, 68, 160, 0.50);
+  --school-glow-c: rgba(130, 182, 240, 0.34);
+  --school-glow-peak: 0.9;
+  --school-glow-hover: 1.1;
   color-scheme: dark;
 
   /* Minimalissimo Exact Typography */
@@ -71,6 +80,14 @@
   --input-bg: rgba(0, 0, 0, 0.03);
   --brand-blue: #1d6fdc;
   --brand-blue-hover: #1558b0;
+  /* Same three blues, re-weighted: on white the band is a tint, not a glow, so the alphas go up and
+     the layer's own opacity comes down. Swapping the theme mid-animation costs nothing -- the
+     gradients read these vars, so the colours cross-fade with the rest of the header. */
+  --school-glow-a: rgba(29, 111, 220, 0.34);
+  --school-glow-b: rgba(23, 74, 165, 0.30);
+  --school-glow-c: rgba(96, 154, 226, 0.26);
+  --school-glow-peak: 0.7;
+  --school-glow-hover: 0.95;
   color-scheme: light;
 }
 
@@ -247,6 +264,81 @@ button {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+/* ==========================================================================
+   RDVSchool -- the animated band behind the nav label
+   Two blurred, masked gradients drifting out of phase in the gap the label owns.
+   DESKTOP ONLY, because below 993px .nav-school is a row of the full-bleed mobile drawer
+   (--mobile-nav-bg) and a glow patch floating in that panel is a different thing entirely.
+   Nothing here adds padding or margin: the band is painted on absolutely positioned
+   pseudo-elements with NEGATIVE insets, so the label's box never grows and the bar's layout is
+   byte-for-byte what it was -- scratch/_nav_audit.py, which reads the nav on every page, still
+   reports 0 defects. The global prefers-reduced-motion block further down neutralises the
+   animation for anyone who asks for that.
+   ========================================================================== */
+@media (min-width: 993px) {
+  .nav-school {
+    position: relative;
+    /* -1 puts the whole link at the bottom of the header's stacking order: above --header-bg,
+       below the other bar content. That is what lets the band bleed sideways UNDER "Work" without
+       tinting its text -- the label itself is safe because nothing else overlaps it. */
+    z-index: -1;
+  }
+
+  .nav-school::before,
+  .nav-school::after {
+    content: '';
+    position: absolute;
+    /* -17/-34, not a round -18: the label sits at y=17 in the 56px bar and is 21px tall, so 18px of
+       vertical bleed would put the box's top edge 1px ABOVE the bar. The mask has already faded to
+       nothing by then, but a band that leaves the bar at all is a band that can tint the hero. */
+    inset: -17px -34px;
+    z-index: -1;
+    border-radius: 50%;
+    /* The dissolve. Alpha ramps to nothing well inside the box, so the band has no edge to hit --
+       it fades into whatever the theme paints behind it, black in dark mode and white in light. */
+    -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.55) 48%, transparent 76%);
+    mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.55) 48%, transparent 76%);
+    filter: blur(9px);
+    opacity: var(--school-glow-peak);
+    pointer-events: none;
+    will-change: transform;
+    transition: opacity var(--transition-speed) var(--transition-ease);
+  }
+
+  .nav-school::before {
+    background:
+      radial-gradient(58% 120% at 22% 42%, var(--school-glow-a) 0%, transparent 62%),
+      radial-gradient(52% 110% at 78% 58%, var(--school-glow-b) 0%, transparent 64%);
+    animation: school-drift-a 17s ease-in-out infinite alternate;
+  }
+
+  .nav-school::after {
+    /* Deliberately not a coprime-free pair: 17s and 23s against each other means the two layers
+       slide back into phase only every ~6.5 minutes, so the drift never reads as a loop. */
+    background:
+      radial-gradient(46% 100% at 62% 34%, var(--school-glow-c) 0%, transparent 58%),
+      radial-gradient(40% 96% at 30% 66%, var(--school-glow-a) 0%, transparent 60%);
+    animation: school-drift-b 23s ease-in-out infinite alternate;
+  }
+
+  .nav-school:hover::before,
+  .nav-school:hover::after,
+  .nav-school.active::before,
+  .nav-school.active::after {
+    opacity: var(--school-glow-hover);
+  }
+}
+
+@keyframes school-drift-a {
+  from { transform: translate3d(-9%, 4%, 0) scale(1.02) rotate(-2deg); }
+  to   { transform: translate3d(9%, -5%, 0) scale(1.12) rotate(2.5deg); }
+}
+
+@keyframes school-drift-b {
+  from { transform: translate3d(7%, -4%, 0) scale(1.08) rotate(1.5deg); }
+  to   { transform: translate3d(-8%, 5%, 0) scale(1) rotate(-2deg); }
 }
 
 /* Minimalist Search: input with clickable search icon button outside to the right */
