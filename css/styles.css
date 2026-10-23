@@ -434,16 +434,14 @@ button {
   transform: none;
 }
 
-/* The deck's one opt-out from the house crop, taken by the intro film on the news slide (owner order
-   2026-10-22: the animation is to be shown, and its words are not to be cut). `cover` in a 100vw x 100dvh
-   box ate the leading edge of every line -- an 879x703 window rendered "Multidisciplinary" as
-   "ultidisciplina" -- because the veil's type starts 6% from the left. `contain` shows the whole frame on
-   its own #000 ground, which .slide-media already is, and each rendition in the ladder is rendered at its
-   device's aspect so the bars are near-invisible where a rung matches. Videos only: the photographs and
-   the poster still fill the slide the way every other slide does. */
-.slide-media.fit-contain video {
-  object-fit: contain;
-}
+/* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
+   screen like all the other slides"). The intro film on the news slide used to letterbox itself with a class
+   of its own, which drew black bars whenever the window's aspect differed from the rendition it was served.
+   The class, the rule and the entry key the builder read are all gone, so the deck has one framing rule and a
+   slide cannot opt out of it -- the ladder in js/main.js is what protects that film now, by matching its
+   aspect to the device it plays on, and scratch/_news_slide_fill.py is what reports the crop that remains.
+   The retired class is not named in this file on purpose: its occurrence count across js/ and css/ is the
+   machine-checkable statement that the mechanism is gone rather than parked, and a comment would break it. */
 
 .slide.active .slide-img,
 .slide.active .slide-picture img {

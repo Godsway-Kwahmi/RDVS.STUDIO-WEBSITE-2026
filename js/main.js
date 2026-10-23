@@ -3778,16 +3778,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   const NEWS_FILMS = {
     'we-have-updated-our-website.html': {
       renditions: INTRO_FILM_RUNGS,
-      // `fit: 'contain'` is the opt-out from the deck's house crop, taken for this film only. The slide box
-      // is 100vw x 100dvh and .slide-video is object-fit: cover, which is right for a photograph and wrong
-      // for lettering: measured in an 879x703 window the cover crop ate the leading edge of every word --
-      // "Multidisciplinary" rendered as "ultidisciplina". A rung matches its device's aspect to within a few
-      // percent, but a window that falls between two rungs (a resized desktop, an ultrawide) would still cut
-      // a word, and the owner's standing rule for a video he has asked to be shown whole (2026-10-11, the
-      // header fit) is that it must not be cut. The bars contain letterboxes are .slide-media's own #000,
-      // which is also the ground the animation opens and closes on, so the film keeps its shape without the
-      // slide gaining a frame around it.
-      fit: 'contain',
+      // There is no per-slide fit any more (owner, 2026-10-23: "make sure the video for the news slide fills
+      // the screen like all the other slides"). This entry used to carry `fit: 'contain'`, which letterboxes
+      // the film -- black bars on any window whose aspect differs from its rendition's -- and a barred slide
+      // is exactly the thing the deck's other fourteen slides are not. The house rule in css/styles.css is
+      // `object-fit: cover` on .slide-media video and this slide now simply takes it.
+      //
+      // What cover costs is measured, not guessed: scratch/_news_slide_fill.py reads the ladder out of this
+      // file, takes the veil's own ink margins out of scratch/_intro_boxes.json (the type block starts 5.22%
+      // from the left and the widest line ends 6.2% from the right of its frame), and prints the crop for 24
+      // real viewports. On the device a rung was rendered for the crop is 0.0%, because a rung is painted AT
+      // that viewport; the exposure is on windows that fall between rungs, where the crop can reach 6.8% per
+      // side and shave a letter or the footer line. That is the trade he asked for, and the numbers are in
+      // the handoff rather than buried under a rule that hides them.
       videoUrl: 'assets/videos/rdvs-intro/rdvs-intro-film-desktop.mp4',
       videoUrlDesktop: 'assets/videos/rdvs-intro/rdvs-intro-film-desktop.mp4',
       videoMobileUrl: 'assets/videos/rdvs-intro/rdvs-intro-film-phone.mp4',
@@ -4308,9 +4311,8 @@ document.addEventListener('DOMContentLoaded', async () => {
               // every painted film carried preload="auto" and they all started together -- five films,
               // 37.5 MB, one ident that took 61 s on a loopback connection.
               //
-              // `fit: 'contain'` and why the intro film takes it are recorded on the entry itself, next to
-              // the ladder it plays from.
-              mediaContainer.classList.toggle('fit-contain', proj.fit === 'contain');
+              // Nothing here re-classes the container any more: the framing of a slide is decided by
+              // css/styles.css alone, for all fifteen of them (owner, 2026-10-23).
             }
 
           } else {
