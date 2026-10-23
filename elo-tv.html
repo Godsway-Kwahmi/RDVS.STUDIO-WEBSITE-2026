@@ -16,7 +16,7 @@
 
         var savedTheme = localStorage.getItem('rdvs-theme');
 
-        var theme = savedTheme || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        var theme = savedTheme || 'dark';   // dark is the default (owner, 2026-10-23); the toggle still offers light and a saved choice still wins
 
         document.documentElement.setAttribute('data-theme', theme);
 

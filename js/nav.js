@@ -44,18 +44,10 @@
       }
     });
 
-    // OS color scheme change listener (if user has not set an explicit override)
-    if (window.matchMedia) {
-      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-        try {
-          if (!localStorage.getItem('rdvs-theme')) {
-            const osTheme = e.matches ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', osTheme);
-            updateThemeUI(osTheme);
-          }
-        } catch (err) {}
-      });
-    }
+    // The operating system no longer decides anything here (owner, 2026-10-23: "make our default dark
+    // mode instead of light mode"). Dark is the default, the header toggle is the only way to change it,
+    // and the storage listener above keeps two open tabs agreeing. An OS listener that flipped a visitor
+    // to light mid-visit would undo that in the one place no page script can pre-empt.
   }
 
   if (document.readyState === 'loading') {
