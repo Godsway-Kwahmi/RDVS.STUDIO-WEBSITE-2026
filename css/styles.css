@@ -558,66 +558,28 @@ button {
 .project-title {
   font-size: clamp(1.35rem, 2.5vw, 1.85rem);
   /* "REDUCE FONT WEIGHT TO HAIRLINE" -- Screenshot 2026-10-24 003553.png, the same sheet that asked for
-     twice the height.  --font-weight-thin is 100 and Geist is loaded at 100, so this is a real face and
-     not a synthesis; it is also the weight the caption's category line already carries in the
-     legibility block at the end of this file, which is what the two lines now share. */
+     twice the height, and asked again on 2026-10-24 when the glass came off: "make the weight of the
+     font hairline".  --font-weight-thin is 100 and the css2 menu serves 100 on all 231 pages, so this
+     is the real Geist hairline and not a synthesis; it is also the weight the caption's category line
+     already carries in the legibility block at the foot of this file, which is what the two lines
+     share.  Nothing in the deleted plate raised it -- that was a background, not a weight. */
   font-weight: var(--font-weight-thin);
   line-height: var(--line-height-heading);
   color: var(--foreground);
   margin-bottom: 6px;
 }
 
-/* "MILKY GLASS BACKGROUND" and "SWIPE" with an arrow left to right -- Screenshot 2026-10-24, the
-   sheet that boxes the slide title.  The plate is a pseudo-element rather than padding because the
-   1200px band rule below pins this box's bottom edge to the hero's mid-line and scratch/
-   _hero_band_probe.cjs asserts its height at twice the category line's: real padding would move
-   both.  The insets are the drawn box measured against the title's own line box -- 46 px of box
-   around 37 px of line box, 326 px around 294 px of ink -- so the glass sits 7 above, 5 below,
-   9 left and 14 right of the text box and reads exactly as drawn.
-
-   Two background layers on the one pseudo-element: a sweeping highlight over a flat milky fill.
-   The sweep animates background-position, not transform, because a pseudo-element cannot clip its
-   own children and this one has no children to put in a masked wrapper -- a positioned layer is
-   clipped by the box it paints into for free.  It runs from -80% to 180% between 8% and 46% of the
-   cycle and rests off the right edge for the rest, which is a swipe with a beat rather than a
-   strobe.  The site's global prefers-reduced-motion rule at the foot of this file flattens the
-   duration, so the plate simply holds with the highlight parked out of view.
-
-   isolation: isolate is what makes z-index: -1 safe: without a stacking context on the title the
-   plate would fall behind the hero's own background and vanish. */
-.project-title {
-  position: relative;
-  isolation: isolate;
-}
-
-.project-title::before {
-  content: '';
-  position: absolute;
-  inset: -7px -14px -5px -9px;
-  z-index: -1;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background-color: rgba(255, 255, 255, 0.10);
-  background-image:
-    linear-gradient(105deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.30) 42%,
-      rgba(255, 255, 255, 0.06) 58%,
-      rgba(255, 255, 255, 0) 78%),
-    linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
-  background-repeat: no-repeat;
-  background-size: 42% 100%, 100% 100%;
-  background-position: -80% 0, 0 0;
-  backdrop-filter: blur(14px) saturate(150%);
-  -webkit-backdrop-filter: blur(14px) saturate(150%);
-  animation: hero-title-sheen 4.6s linear infinite;
-}
-
-@keyframes hero-title-sheen {
-  0%, 8% { background-position: -80% 0, 0 0; }
-  46%, 100% { background-position: 180% 0, 0 0; }
-}
-
+/* The milky-glass plate and its left-to-right sweep -- REMOVED on the owner's instruction,
+   2026-10-24, one sheet after the band's twelfth markup put them in ("MILKY GLASS BACKGROUND",
+   "SWIPE").  What went: the `.project-title::before` layer (fill, border, radius, backdrop-filter),
+   the `hero-title-sheen` keyframes, and the `position: relative; isolation: isolate;` rule that
+   existed only to give that pseudo-element a containing block and a stacking context.  What stayed:
+   the title is still a link to its own project page, still hairline, still 37.0px of line box.
+   `scratch/_verify_title_live.py` asserts the ABSENCE of all three plate shapes over the wire, and
+   `scratch/_title_flat_probe.cjs` proves it in the parsed cascade and in pixels -- its control re-injects
+   this exact plate out of git and requires the crop to CHANGE, so "identical crops" cannot mean a blind
+   crop. `scratch/_hero_band_probe.cjs` still measures the geometry the plate was built around (346/346 at
+   21 viewports after the removal): the plate used negative insets, so taking it away moves nothing. */
 /* The title is a link now, so it answers a hover the way the caption's other link does.  The
    global `a { color: inherit }` at the head of this file already carries the white; this is the
    affordance, not the colour.  line-height: inherit is not cosmetic -- a rule near the top of this
@@ -1875,6 +1837,18 @@ a.subservice-item:hover {
 
 .form-input:focus, .form-textarea:focus, .form-select:focus {
   border-color: var(--text-secondary);
+}
+
+/* Phone legibility for the site's only form (contact.html): the block above sets controls at 0.9375rem,
+   which measures 15px, and iOS Safari answers a 15px focusable control by ZOOMING the whole page to the
+   caret -- measured at 390x844 as `select 358x43 at 15px` in scratch/_contact_probe.cjs. 16px is the
+   threshold the WebKit heuristic uses, so every control the visitor can focus is lifted to exactly that on
+   a touch device and on anything narrow enough to be one. Desktop keeps its 15px: the ask was the Contact
+   page's facts and dropdown, not a retype of the form. */
+@media (max-width: 767px), (pointer: coarse) {
+  .form-input, .form-textarea, .form-select, .form-submit-btn {
+    font-size: 1rem;
+  }
 }
 
 .form-textarea {
