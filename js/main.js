@@ -4430,6 +4430,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // DOM Elements
+  // The slide title is itself a link to its project page (the owner's markup of 2026-10-24 boxes
+  // the title and asks for it), so the caption heading carries an <a>.  The deck therefore writes
+  // the ANCHOR's text: titleEl.textContent on the heading would replace the heading's children and
+  // delete the link on the first slide change.  Falls back to the heading when a card has no
+  // anchor, which is what the baked markup always has but a hand-edited page might not.
+  function setSlideTitle(titleEl, text, href) {
+    if (!titleEl) return;
+    const link = titleEl.querySelector('a.project-title-link') || titleEl;
+    link.textContent = text;
+    if (href && link !== titleEl) link.setAttribute('href', href);
+  }
+
   const slides = document.querySelectorAll('.slide');
   const captionCards = document.querySelectorAll('.caption-card');
   const paginationBars = document.querySelectorAll('.pagination-bar');
@@ -4701,7 +4713,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           const yr = proj.category && proj.category.includes('—') ? proj.category.split('—')[1].trim() : '';
           catEl.innerHTML = categoryLine(serviceName, yr);
         }
-        if (titleEl) titleEl.textContent = proj.title;
+        if (titleEl) setSlideTitle(titleEl, proj.title, proj.projectUrl);
         if (actionLink) {
           actionLink.href = proj.projectUrl || 'work.html';
           actionLink.innerHTML = proj.discipline === 'news' ? 'Read article &rarr;'
@@ -4849,7 +4861,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       proj.title = info.title;
       if (captionCards[idx]) {
         const titleEl = captionCards[idx].querySelector('.project-title');
-        if (titleEl) titleEl.textContent = info.title;
+        if (titleEl) setSlideTitle(titleEl, info.title, proj.projectUrl);
       }
       if (slides[idx]) {
         slides[idx].setAttribute('aria-label', info.title);

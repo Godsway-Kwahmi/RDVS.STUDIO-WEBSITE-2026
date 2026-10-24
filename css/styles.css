@@ -25,15 +25,6 @@
   --input-bg: rgba(255, 255, 255, 0.03);
   --brand-blue: #4288e7;
   --brand-blue-hover: #5da0fa;
-  /* RDVSchool's animated band. Consumed by the .nav-school block below: three blues, no fourth hue,
-     so the drift stays inside the brand. PEAK is the layer's resting opacity -- a glow reads at
-     full strength on a black bar and washes out on a white one, which is why light mode lowers it
-     and raises the alphas instead of reusing these. */
-  --school-glow-a: rgba(66, 136, 231, 0.55);
-  --school-glow-b: rgba(31, 68, 160, 0.50);
-  --school-glow-c: rgba(130, 182, 240, 0.34);
-  --school-glow-peak: 0.9;
-  --school-glow-hover: 1.1;
   color-scheme: dark;
 
   /* Minimalissimo Exact Typography */
@@ -80,14 +71,6 @@
   --input-bg: rgba(0, 0, 0, 0.03);
   --brand-blue: #1d6fdc;
   --brand-blue-hover: #1558b0;
-  /* Same three blues, re-weighted: on white the band is a tint, not a glow, so the alphas go up and
-     the layer's own opacity comes down. Swapping the theme mid-animation costs nothing -- the
-     gradients read these vars, so the colours cross-fade with the rest of the header. */
-  --school-glow-a: rgba(29, 111, 220, 0.34);
-  --school-glow-b: rgba(23, 74, 165, 0.30);
-  --school-glow-c: rgba(96, 154, 226, 0.26);
-  --school-glow-peak: 0.7;
-  --school-glow-hover: 0.95;
   color-scheme: light;
 }
 
@@ -266,80 +249,16 @@ button {
   }
 }
 
-/* ==========================================================================
-   RDVSchool -- the animated band behind the nav label
-   Two blurred, masked gradients drifting out of phase in the gap the label owns.
-   DESKTOP ONLY, because below 993px .nav-school is a row of the full-bleed mobile drawer
-   (--mobile-nav-bg) and a glow patch floating in that panel is a different thing entirely.
-   Nothing here adds padding or margin: the band is painted on absolutely positioned
-   pseudo-elements with NEGATIVE insets, so the label's box never grows and the bar's layout is
-   byte-for-byte what it was -- scratch/_nav_audit.py, which reads the nav on every page, still
-   reports 0 defects. The global prefers-reduced-motion block further down neutralises the
-   animation for anyone who asks for that.
-   ========================================================================== */
-@media (min-width: 993px) {
-  .nav-school {
-    position: relative;
-    /* -1 puts the whole link at the bottom of the header's stacking order: above --header-bg,
-       below the other bar content. That is what lets the band bleed sideways UNDER "Work" without
-       tinting its text -- the label itself is safe because nothing else overlaps it. */
-    z-index: -1;
-  }
-
-  .nav-school::before,
-  .nav-school::after {
-    content: '';
-    position: absolute;
-    /* -17/-34, not a round -18: the label sits at y=17 in the 56px bar and is 21px tall, so 18px of
-       vertical bleed would put the box's top edge 1px ABOVE the bar. The mask has already faded to
-       nothing by then, but a band that leaves the bar at all is a band that can tint the hero. */
-    inset: -17px -34px;
-    z-index: -1;
-    border-radius: 50%;
-    /* The dissolve. Alpha ramps to nothing well inside the box, so the band has no edge to hit --
-       it fades into whatever the theme paints behind it, black in dark mode and white in light. */
-    -webkit-mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.55) 48%, transparent 76%);
-    mask-image: radial-gradient(ellipse 62% 58% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.55) 48%, transparent 76%);
-    filter: blur(9px);
-    opacity: var(--school-glow-peak);
-    pointer-events: none;
-    will-change: transform;
-    transition: opacity var(--transition-speed) var(--transition-ease);
-  }
-
-  .nav-school::before {
-    background:
-      radial-gradient(58% 120% at 22% 42%, var(--school-glow-a) 0%, transparent 62%),
-      radial-gradient(52% 110% at 78% 58%, var(--school-glow-b) 0%, transparent 64%);
-    animation: school-drift-a 17s ease-in-out infinite alternate;
-  }
-
-  .nav-school::after {
-    /* Deliberately not a coprime-free pair: 17s and 23s against each other means the two layers
-       slide back into phase only every ~6.5 minutes, so the drift never reads as a loop. */
-    background:
-      radial-gradient(46% 100% at 62% 34%, var(--school-glow-c) 0%, transparent 58%),
-      radial-gradient(40% 96% at 30% 66%, var(--school-glow-a) 0%, transparent 60%);
-    animation: school-drift-b 23s ease-in-out infinite alternate;
-  }
-
-  .nav-school:hover::before,
-  .nav-school:hover::after,
-  .nav-school.active::before,
-  .nav-school.active::after {
-    opacity: var(--school-glow-hover);
-  }
-}
-
-@keyframes school-drift-a {
-  from { transform: translate3d(-9%, 4%, 0) scale(1.02) rotate(-2deg); }
-  to   { transform: translate3d(9%, -5%, 0) scale(1.12) rotate(2.5deg); }
-}
-
-@keyframes school-drift-b {
-  from { transform: translate3d(7%, -4%, 0) scale(1.08) rotate(1.5deg); }
-  to   { transform: translate3d(-8%, 5%, 0) scale(1) rotate(-2deg); }
-}
+/* RDVSchool's animated band -- REMOVED on the owner's instruction, 2026-10-24 00:35
+   (Screenshot 2026-10-24 003553.png: "GET RID OF SVG ANIMATED BACKGROUND", boxed round the wordmark).
+   It landed in commit b79e7c5 as two blurred, radial-masked gradient layers on .nav-school's
+   pseudo-elements, drifting against each other on school-drift-a / school-drift-b, with five
+   --school-glow-* variables in each theme behind them.  All of it is out: the layers, the keyframes,
+   the position/z-index the label needed for them, and the variables nothing else reads.  The label's
+   place in the bar is unchanged, because the band was painted entirely on negative-inset
+   pseudo-elements and never added a box of its own -- which is also why the homepage caption can still
+   treat .nav-school's left edge as its column law (scratch/_hero_band_probe.cjs measures it).
+   The work is not lost, only unhired: git show b79e7c5 has the whole block with its reasoning. */
 
 /* Minimalist Search: input with clickable search icon button outside to the right */
 .search-form {
@@ -558,6 +477,28 @@ button {
 }
 
 .hero-footer-container {
+  position: relative;
+  /* Two numbers drive the desktop hero band, both explained at the block that reads them:
+     --hero-caption-inset is the column the caption is aligned to, --hero-caption-min is how far
+     left it may ever go.  They live here because this box is the containing block for the caption's
+     percentage margin and for the two absolutely placed parts of the band. */
+  --hero-caption-inset: 330px;
+  --hero-caption-min: 288px;
+  /* One lift, three readers.  The caption's margin-bottom raises the title so its bottom edge lands on
+     a hero fraction, and the two caption lines that live in the band are written as distances from THAT
+     edge -- so the lift cancels out of them and they stay on the band's rows whatever the title does.
+     25dvh - grid-margin is the three-quarter line, which is where the markup of 01:10 moved the title
+     to; 50dvh - grid-margin was the mid-line it came from.  The vh/dvh pair is the same fallback the
+     site uses everywhere else that reads a viewport height. */
+  --hero-caption-lift: calc(25vh - var(--grid-margin));
+  --hero-caption-lift: calc(25dvh - var(--grid-margin));
+  /* The header's Work column, as a distance back from the header's own content-box right edge --
+     measured 602.3px at 1200, 1365, 1440 and 1920 by scratch/_hero_lines_geom.cjs.  Above a 2048px
+     viewport the two containers part company by exactly --grid-margin, because the header keeps its
+     padding inside the 2000px cap while the hero footer's padding sits outside it; the /2 term below
+     pays that back so the column is still exact at 2560.  1952px = --max-width - 2 * --grid-margin. */
+  --hero-social-inset: 602.3px;
+  --hero-social-cap: 1952px;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -607,12 +548,88 @@ button {
   margin-bottom: 5px;
 }
 
+/* "INCREASE FONT HEIGHT TO 200% CURRENT HEIGHT" -- Screenshot 2026-10-24 001708.png boxes the slide
+   title at y 277-319 against the title's own 299-317.5: twice the height, sharing the bottom edge and
+   opening upward.  Every arm of the clamp doubles so the ratio holds at every width, not just the one
+   he screenshotted.  Nothing else has to move: the band rule in the 1200px block below pins this box's
+   bottom edge to the hero's mid-line, so the type grows up from the line exactly as drawn.
+   The class is the homepage caption's alone -- index.html's fifteen slides and js/main.js's caption
+   builder, nowhere else on the site -- so a project page cannot pick this size up. */
 .project-title {
-  font-size: clamp(0.675rem, 1.25vw, 0.925rem);
-  font-weight: var(--font-weight-normal);
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  /* "REDUCE FONT WEIGHT TO HAIRLINE" -- Screenshot 2026-10-24 003553.png, the same sheet that asked for
+     twice the height.  --font-weight-thin is 100 and Geist is loaded at 100, so this is a real face and
+     not a synthesis; it is also the weight the caption's category line already carries in the
+     legibility block at the end of this file, which is what the two lines now share. */
+  font-weight: var(--font-weight-thin);
   line-height: var(--line-height-heading);
   color: var(--foreground);
   margin-bottom: 6px;
+}
+
+/* "MILKY GLASS BACKGROUND" and "SWIPE" with an arrow left to right -- Screenshot 2026-10-24, the
+   sheet that boxes the slide title.  The plate is a pseudo-element rather than padding because the
+   1200px band rule below pins this box's bottom edge to the hero's mid-line and scratch/
+   _hero_band_probe.cjs asserts its height at twice the category line's: real padding would move
+   both.  The insets are the drawn box measured against the title's own line box -- 46 px of box
+   around 37 px of line box, 326 px around 294 px of ink -- so the glass sits 7 above, 5 below,
+   9 left and 14 right of the text box and reads exactly as drawn.
+
+   Two background layers on the one pseudo-element: a sweeping highlight over a flat milky fill.
+   The sweep animates background-position, not transform, because a pseudo-element cannot clip its
+   own children and this one has no children to put in a masked wrapper -- a positioned layer is
+   clipped by the box it paints into for free.  It runs from -80% to 180% between 8% and 46% of the
+   cycle and rests off the right edge for the rest, which is a swipe with a beat rather than a
+   strobe.  The site's global prefers-reduced-motion rule at the foot of this file flattens the
+   duration, so the plate simply holds with the highlight parked out of view.
+
+   isolation: isolate is what makes z-index: -1 safe: without a stacking context on the title the
+   plate would fall behind the hero's own background and vanish. */
+.project-title {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-title::before {
+  content: '';
+  position: absolute;
+  inset: -7px -14px -5px -9px;
+  z-index: -1;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.10);
+  background-image:
+    linear-gradient(105deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.30) 42%,
+      rgba(255, 255, 255, 0.06) 58%,
+      rgba(255, 255, 255, 0) 78%),
+    linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04));
+  background-repeat: no-repeat;
+  background-size: 42% 100%, 100% 100%;
+  background-position: -80% 0, 0 0;
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  animation: hero-title-sheen 4.6s linear infinite;
+}
+
+@keyframes hero-title-sheen {
+  0%, 8% { background-position: -80% 0, 0 0; }
+  46%, 100% { background-position: 180% 0, 0 0; }
+}
+
+/* The title is a link now, so it answers a hover the way the caption's other link does.  The
+   global `a { color: inherit }` at the head of this file already carries the white; this is the
+   affordance, not the colour.  line-height: inherit is not cosmetic -- a rule near the top of this
+   file gives every bare `a` the body's --line-height-base, and that taller line box inside the
+   heading grew the title from 37.0px to 41.4px, which is the one number the hero band measures. */
+.project-title-link {
+  line-height: inherit;
+  transition: opacity var(--transition-speed) var(--transition-ease);
+}
+
+.project-title-link:hover {
+  opacity: 0.72;
 }
 
 .project-desc {
@@ -1026,6 +1043,165 @@ button {
 .hero-social-link:hover,
 .hero-social-link:focus-visible {
   color: var(--foreground);
+}
+
+/* The studio credit the owner's markup of 2026-10-23 asked for at the bottom-right of the hero:
+   "WEBSITE BY RDVS", plain text, no link, on the type scale of the social row it sits beside.
+   It is the last child of the controls block, where the block's own alignment puts it at that
+   block's right edge -- under the social row on a phone or a tablet.  At desktop widths the swap
+   block below stretches the controls block across the band and pins the credit to its far end. */
+.hero-credit {
+  text-align: right;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   The hero band at desktop widths -- the swap
+   The owner's fifth and sixth drawings of 2026-10-23 put the caption and the controls block in each
+   other's place ("CHANGE POSITIONS", two curl arrows between them), and asked that the block be
+   "LEFT ALIGNED" to a line drawn under the header's RDVSchool wordmark.  Measured 1:1 against the
+   live page at 1440, 1920 and 2560 that line is a law, not an estimate: the wordmark's left edge
+   sits at vw/2 - 330px.  This container is centred with the same max-width as the header, so 50% of
+   it is the same vertical line, and a percentage margin of calc(50% - 330px) lands the caption on
+   the wordmark at every viewport -- until the floor below takes over.
+   Order after the swap, two columns on one bottom line:
+     the controls block, pinned to the container's left edge, three lines tall -- pill and counter,
+       hairline bars, social row -- every line starting at that edge;
+     the caption, in the wordmark's column;
+     the credit, pinned to the right edge.
+   --hero-caption-min is the floor, and it is the controls block's own width: its widest line is the
+   social row at 256px (the bars are 246px, the pill and counter together 121px) plus the 32px the two
+   columns want between them.  So below 1284px of viewport the caption stops at the floor instead of
+   sliding under the block, and above it the caption tracks the column exactly -- which is the whole
+   point of stacking the block: at 1365px the column sits at 352 and the 415px floor this replaced was
+   shunting the caption 87px past it.  The credit needs the same arithmetic on the right: caption 620
+   + credit ~120 + block 256 + two gaps 64 = 1060, so the band closes at 1108px of viewport; the
+   breakpoint stays at 1200px, where it has room to spare.
+   ========================================================================== */
+@media (min-width: 1200px) {
+  /* Out of the flex flow, so the caption is the only in-flow item and its percentage margin is the
+     whole story.  The box spans the band left to right -- it is transparent, and .hero-footer
+     already keeps this strip off the slide for clicks -- so the credit inside it can be pinned to
+     the band's right edge without becoming a third child of the container, which at narrower
+     widths would have joined the space-between row and moved the controls block to the centre. */
+  .hero-meta-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-start;
+  }
+
+  /* Every row of the block starts at the block's left edge instead of ending at its right. */
+  .hero-controls-row {
+    align-items: flex-start;
+  }
+
+  /* The owner's markup of the swap gives the bars the far-left slot and lifts the pill and the
+     counter out of it.  They cannot share a line, so the row wraps: the pill and the counter keep
+     the first line at order 0, and the bars take a line to themselves below. */
+  .hero-status-row {
+    justify-content: flex-start;
+    /* A wrapping flex container sized by its content adds its items up -- 386px of one-line
+       arithmetic, which would drag the bars' stretched box past the caption.  min-content of a
+       multi-line container is its LARGEST item instead: 246px of hairlines, so the row is exactly as
+       wide as the widest thing it actually draws. */
+    width: min-content;
+    flex-wrap: wrap;
+    /* 16px is the gap the block already uses between its second line and its third -- the controls
+       row's 12px plus the social row's own 4px margin-top.  The three lines share one rhythm. */
+    row-gap: 16px;
+  }
+
+  .hero-status-row .pagination-bars {
+    order: 3;
+    /* A full basis is what puts it on its own line once the row wraps. */
+    flex-basis: 100%;
+  }
+
+  .caption-wrapper {
+    margin-left: max(calc(50% - var(--hero-caption-inset)), var(--hero-caption-min));
+    /* "MOVE HERE" -- Screenshot 2026-10-23 225318.png boxes the title at image y 568-596 and draws
+       its destination at y 293-325, in the empty middle of the hero.  The next markup
+       (232651.png) moved the caption's other two lines away and left the title exactly there, so the
+       drawn box is now the law on its own terms: the title's BOTTOM edge on the hero's mid-line puts
+       it at 290.5-318.5 in a 1365x635 window, against the 293-325 he drew.
+       The footer is bottom-anchored, so margin-bottom does all the lifting -- 50dvh minus the grid
+       margin, which puts the title's bottom edge on the hero's mid-line and holds at 1365, 1440 and
+       2560 as measured by scratch/_hero_lines_geom.cjs.  No transform on this box: the card inside it
+       already carries one, and the two lines below are measured against that card. */
+    margin-bottom: var(--hero-caption-lift);
+  }
+
+  /* The caption's other two lines, moved down into the controls block's band by the owner's markup of
+     23:26 ("move text line 1 and 2 down per the arrows") and then dropped one row by his markup of
+     00:17 ("MOVE ONE LINE DOWN").
+
+     They resolve against the active .caption-card, not against the footer container: that card keeps
+     `transform: translateY(0)` from its entrance animation, and a non-none transform makes an element
+     the containing block for its absolutely positioned descendants even when it is itself position:
+     static.  Measured, not assumed -- scratch/_hero_lines_geom.cjs prints the card's computed transform
+     and shows these two bottoms landing on the card's edge.  The card is the better anchor because it
+     is already where the caption is: its left edge is the RDVSchool column and its bottom edge is the
+     hero's mid-line, so `left: 0` stands the category, the title and the links on one vertical line by
+     construction, and the band is reached by the same 50dvh - grid-margin the caption was lifted by.
+     Should that transform ever be removed the anchor silently moves to the container, ~300px lower;
+     scratch/_hero_band_probe.cjs asserts the transform and the two bottoms together so it cannot move
+     quietly.
+
+     max-content is not decoration: an absolutely positioned box sizes to what the containing block has
+     left, and the card is only as wide as the title -- 45.9px at 1365, which is what wrapped the
+     category line into four.  These lines are one line each, whatever the title happens to be.
+
+     Bottom edges, from the band's floor: the links line closes on the social row at 0, and the category
+     line closes on the hairline bars at 33px -- 17px of social row + 16px gap + the 1px hairline, which
+     measures 32.8px of ink because the social row's line box is 16.8px.  It sat at 50px, on the counter's
+     row, until the markup of 00:17 boxed it and drew an arrow one row down ("MOVE ONE LINE DOWN"); the
+     counter's row is now the block's alone.  The drop also puts 16px between the category's bottom edge
+     and the links' top edge, which is the gap the block already uses between its own three lines. */
+  .project-category,
+  .project-links {
+    position: absolute;
+    left: 0;
+    width: max-content;
+    margin: 0;
+  }
+
+  .project-category {
+    bottom: calc(33px - var(--hero-caption-lift));
+  }
+
+  .project-links {
+    bottom: calc(0px - var(--hero-caption-lift));
+  }
+
+  /* The title's 6px bottom margin is dead space now that the links line is placed by the band, and
+     it sits between the title and the hero's mid-line -- which is the line this rule is measured to. */
+  .project-title {
+    margin-bottom: 0;
+  }
+
+  /* Out of the block's column and onto the band's floor, under the header's Work label.  The row was
+     the block's third line; the markup of 01:01 boxed it and ran an arrow right to a line drawn
+     straight down from that label, and boxed the counter's row and the bars' row together with an
+     arrow one row down -- which is what happens here for free: with the socials out of the flow the
+     block is only its two rows, and it is bottom-anchored, so the bars land on the floor and the
+     counter on the category line. */
+  .hero-social-links {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - var(--hero-social-inset)
+               - max(0px, (100% - var(--hero-social-cap)) / 2));
+  }
+
+  .hero-credit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 /* ==========================================================================
@@ -2606,6 +2782,16 @@ a.subservice-item:hover {
     gap: 16px;
   }
 
+  /* The phone drawing of 2026-10-23 boxes the caption where it is and draws it up into the empty
+     space above.  The footer is bottom-anchored, so margin-bottom is what lifts the caption without
+     moving the controls block below it.  Measured against the drawing's own window (510x646): the
+     caption's bottom edge at 403px and the block's top at 589px, which this reproduces as
+     403 / 587 -- and the clamp keeps the lift proportional from a 280px-wide phone to a 640px one
+     instead of pinning it to one device. */
+  .caption-wrapper {
+    margin-bottom: clamp(96px, 26vh, 220px);
+  }
+
   .hero-meta-controls {
     align-items: stretch;
     width: 100%;
@@ -2639,7 +2825,9 @@ a.subservice-item:hover {
   }
 
   .hero-social-links {
-    justify-content: flex-end;
+    /* "MOVE HERE, LEFT ALIGNED" -- the phone drawing's blue box round the social row, with an arrow
+       onto the container's left edge.  The row is already full width, so this is the whole change. */
+    justify-content: flex-start;
     gap: 16px;
     margin-top: 0;
   }
