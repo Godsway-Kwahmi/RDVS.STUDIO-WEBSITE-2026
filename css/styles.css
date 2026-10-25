@@ -584,9 +584,16 @@ button {
    global `a { color: inherit }` at the head of this file already carries the white; this is the
    affordance, not the colour.  line-height: inherit is not cosmetic -- a rule near the top of this
    file gives every bare `a` the body's --line-height-base, and that taller line box inside the
-   heading grew the title from 37.0px to 41.4px, which is the one number the hero band measures. */
+   heading grew the title from 37.0px to 41.4px, which is the one number the hero band measures.
+   font-weight: inherit is the same trap's other arm, and it is why the hairline was asked for three
+   times.  The heading above does say 100, and Geist 100 does load, but the visible glyphs are inside
+   this anchor, and the site-wide `p, span, a, button, … { font-weight: var(--font-weight-normal) }`
+   rule at the head of this file sets 400 on the anchor DIRECTLY -- a declaration on the element beats
+   inheritance from its parent, so the heading's hairline never reached the type.  Measured on the
+   deployed page at 1600x1000 before this line: heading 100, anchor 400. */
 .project-title-link {
   line-height: inherit;
+  font-weight: inherit;
   transition: opacity var(--transition-speed) var(--transition-ease);
 }
 
@@ -1096,6 +1103,16 @@ button {
        2560 as measured by scratch/_hero_lines_geom.cjs.  No transform on this box: the card inside it
        already carries one, and the two lines below are measured against that card. */
     margin-bottom: var(--hero-caption-lift);
+    /* "FIX LINKS" -- Capture.PNG, 2026-10-24 13:58, an arrow from those two words to "View project ->"
+       and "Details".  Both were painted and pointed at the right page but neither could be clicked:
+       the controls block above is `position:absolute; left:0; right:0`, a transparent strip the whole
+       width of the band, and it is the container's LAST child, so it painted over the caption's links
+       line, which closes on the same floor.  Hit-testing the deployed page at 1600x1000 returned
+       DIV.hero-meta-controls at the centre of both links.  A flex item takes z-index without becoming
+       positioned, so this lifts the caption's column over the strip and moves nothing: the strip's own
+       children -- counter and bars at x 24-270, socials at 973-1229, credit at 1473-1576 -- are all
+       outside the caption's x 470-619, so no click the block needed is lost. */
+    z-index: 1;
   }
 
   /* The caption's other two lines, moved down into the controls block's band by the owner's markup of
@@ -2761,9 +2778,37 @@ a.subservice-item:hover {
      moving the controls block below it.  Measured against the drawing's own window (510x646): the
      caption's bottom edge at 403px and the block's top at 589px, which this reproduces as
      403 / 587 -- and the clamp keeps the lift proportional from a 280px-wide phone to a 640px one
-     instead of pinning it to one device. */
+     instead of pinning it to one device.
+     "for mobile", 2026-10-24 (third sheet): the caption is that same single block again.  The first
+     two sheets dropped the links line and then the category out of it onto the band floor; the third
+     boxes both where they now stack and draws one arrow up to the title, so they are back in the flow
+     in their markup order -- eyebrow above the title, actions under it.  Nothing about the lift had to
+     change to put them back.  Measured after the rejoin at 507x606 / 390x844 / 320x568: the links'
+     bottom edge sits `lift` clear of the controls block (339.9 / 522.4 / 318.1 against 513.4 / 757.8 /
+     481.8) and the title 22.8px above it.
+     The fifth sheet of the same day (MLKY, at 390x844 -- the crop is 452 of the hero's 844 px tall,
+     and the band rows in it land within 1px of that frame's measured geometry) boxes the whole
+     caption and draws one arrow down onto a line in the empty space, saying MOVE HERE.  The line is
+     103px above the controls block's top edge, so the caption's bottom edge is asked to sit there:
+     the lift drops from 26vh to a floor of 88px, which at 844 is 10.4vh.  The proportion is gone on
+     purpose -- at this coefficient 10.5vh does not reach 88px until the viewport is 838px tall, so
+     every common phone gets the distance the drawing measures and only a tablet-tall window drifts
+     upward.  That does NOT reproduce the 2026-10-23 drawing's 403 / 587 line on a short screen (its
+     26vh came from a 646px window, where this rule now gives 88px instead of 170); the newer sheet
+     wins and the conflict is filed in scratch/_handoff_s34.md.  What the earlier sheets marked and
+     did NOT retract is kept: the pill and the slide counter lead the pagination line at the left
+     edge, and "Website by RDVS" is left-aligned.
+     The sixth sheet of the same day (1981, a 279x453 crop of a 280x653 window: the band's three rows
+     land within 1px of that frame's measured geometry) boxes the pill and the counter where the fourth
+     sheet put them and draws one arrow up onto "MOVE HERE".  The pair leaves the dashes line and takes
+     a line of its own above it -- the arrangement the >=1200px swap block already runs.  That row is
+     bottom-anchored, so the 17px it grows by (16 of row-gap plus the 1px hairline the dashes' own line
+     is) lifts its top edge, which is the caption's datum, by exactly that much.  Subtracting it here is
+     what keeps the fifth sheet's drawn line: the caption does not move, and the only things that change
+     place are the boxed pair, which rises 17px, and the dashes, which drop 9 to lead their own line the
+     way they do on the desktop band. */
   .caption-wrapper {
-    margin-bottom: clamp(96px, 26vh, 220px);
+    margin-bottom: calc(max(88px, 10.5vh) - 17px);
   }
 
   .hero-meta-controls {
@@ -2786,16 +2831,28 @@ a.subservice-item:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* "for mobile", 2026-10-24: the sheet boxes the volume pill and the 05 / 15 counter and runs one
+       long line back to the pagination dashes, ending in two arrowheads that drop onto that line.
+       Two boxed things, two arrowheads, one destination: both controls leave the far end of this row
+       and join the bars at the left edge, so the row reads bars, pill, counter from x=16.
+       flex-start rather than an order swap because that is already the DOM order.
+       The fourth sheet of the same day boxes that pair again and runs one arrow left along the dashes
+       to the container's edge -- the same mark that moved the social row and the credit, whose lines
+       were already left-packed.  Here the line is left-packed but the pair is not first: the dashes
+       hold x=16 and the pair sits after them at 134.  So the pair leads the line and the bars follow;
+       the order moves the one element that has no mark on the sheet. */
+    justify-content: flex-start;
     width: 100%;
     gap: 8px;
-    /* Three controls share this line now that the Previous/Next pair is gone (the edge chevrons
-       took over, and they live over the media, not in this row). Measured at 375 px they are
-       145 + 72 + 36 = 253 px of content on a 343 px line, and they still fit the 288 px line at
-       320 px, so nothing wraps on a phone; the wrap is the valve for the 280 px tier, where the
-       counter drops to a second line instead of pushing the document wide. */
+    /* Three controls share this row (the Previous/Next pair is gone -- the edge chevrons took over, and
+       they live over the media, not in this row).  Wrapping started as the valve for the 280 px tier,
+       where the counter would otherwise have pushed the document wide; the sixth sheet of 2026-10-24
+       made it the arrangement, with the dashes taking the second line on purpose. */
     flex-wrap: wrap;
-    row-gap: 10px;
+    /* The sixth sheet's arrow is what puts the two lines here, so the gap between them is the gap the
+       >=1200px swap block uses for the same split -- 16px, not the 10px that only ever had to separate a
+       counter that had been pushed onto a second line by a too-narrow tier. */
+    row-gap: 16px;
   }
 
   .hero-social-links {
@@ -2806,8 +2863,22 @@ a.subservice-item:hover {
     margin-top: 0;
   }
 
+  /* The last mark on the same sheet: a box round "Website by RDVS" with an arrow running left along
+     the bottom edge.  The paragraph is already the block's full width (its column stretches it), so
+     the credit's right alignment is the only thing holding it off the edge. */
+  .hero-credit {
+    text-align: left;
+  }
+
   .pagination-bars {
     gap: 3px;
+    /* The fourth sheet's left arrow: the dashes give up the head of the line to the pill and the
+       counter.  Painted order becomes pill, counter, bars; the DOM and tab order stay as authored.
+       The sixth sheet then lifts that pair off this line, and a full basis is what keeps the dashes on
+       a line of their own -- the same lever the >=1200px swap block pulls with `flex-basis: 100%`.
+       Left-packed, so they start at the container edge now that nothing sits before them. */
+    order: 1;
+    flex-basis: 100%;
   }
 
   .pagination-bar {

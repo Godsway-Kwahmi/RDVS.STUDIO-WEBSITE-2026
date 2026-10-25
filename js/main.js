@@ -3494,9 +3494,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         videoUrl: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
         videoUrlDesktop: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-2.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-6.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -3674,6 +3674,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-6.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate2',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-7.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate3',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
         imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-2.jpg',
         imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
@@ -3685,7 +3717,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate2',
+        id: 'product-line-e-float-i-plate4',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -3701,7 +3733,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate3',
+        id: 'product-line-e-float-i-plate5',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -3717,7 +3749,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate4',
+        id: 'product-line-e-float-i-plate6',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -3725,38 +3757,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-line-e-float-i-5.jpg',
         imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-5.jpg',
         imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-5.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate5',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-6.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate6',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-7.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -3917,54 +3917,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-s-age-2.jpg',
         imageUrlDesktop: 'assets/images/mig/mig-s-age-2.jpg',
         imageMobileUrl: 'assets/images/mig/mig-s-age-2.jpg',
-        projectUrl: 'product-s-age.html',
-        desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2018',
-        }
-      },
-      {
-        id: 'product-s-age-plate3',
-        title: 'S-AGE',
-        category: 'Design · In-house · VFX + CGI — 2018',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-s-age-3.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-s-age-3.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-s-age-3.jpg',
-        projectUrl: 'product-s-age.html',
-        desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2018',
-        }
-      },
-      {
-        id: 'product-s-age-plate4',
-        title: 'S-AGE',
-        category: 'Design · In-house · VFX + CGI — 2018',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-s-age-4.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-s-age-4.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-s-age-4.jpg',
-        projectUrl: 'product-s-age.html',
-        desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2018',
-        }
-      },
-      {
-        id: 'product-s-age-plate5',
-        title: 'S-AGE',
-        category: 'Design · In-house · VFX + CGI — 2018',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-s-age-5.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-s-age-5.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-s-age-5.jpg',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
