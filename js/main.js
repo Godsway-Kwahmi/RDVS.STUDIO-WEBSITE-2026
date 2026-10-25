@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'aelius.html': ['design'],
     'afg.html': ['design', 'turnkey-build', 'vfx-cgi'],
     'ahero.html': ['vfx-cgi'],
-    'ameyaw-sarah.html': ['design'],
     'asante-interior-design-presentation.html': ['design', 'vfx-cgi'],
     'avalon.html': ['design', 'vfx-cgi'],
     'baobab-hotel-exteriors.html': ['vfx-cgi'],
@@ -2273,26 +2272,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'ameyaw-sarah',
-        title: 'Ameyaw + Sarah',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-5-desktop.jpg',
-        imageUrlDesktop: 'assets/images/ameyaw-sarah/ameyaw-sarah-5-desktop.jpg',
-        imageMobileUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-5-desktop.jpg',
-        projectUrl: 'ameyaw-sarah.html',
-        desc: 'Invitation for an Akan customary marriage \u2014 the adinkra symbol Me Ware Wo redrawn from the couple\u2019s initials as a four-lobed monogram, laid over a kente weave built from minute S and A letterforms, with an adinkra legend driving the directions map.',
-        specs: {
-          client: 'Ameyaw Mensah & Sarah Amoabeng',
-          scope: 'Graphic Design, Illustration & Print',
-          team: 'Randy Biney, Jude Nyoagbe',
-          location: 'Sunyani, Ghana',
-          year: '2014',
-          disciplines: ['Graphic Design', 'Illustration', 'Print']
-        }
-      },
-      {
         id: 'baobab-hotel-exteriors',
         title: 'Baobab Hotel - Exteriors',
         category: '3D Visualization — 2016',
@@ -2904,25 +2883,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Jude Abbey, Jude Nyoagbe',
           year: '2016',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'ameyaw-sarah-gif',
-        title: 'Ameyaw + Sarah',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg',
-        imageUrlDesktop: 'assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg',
-        imageMobileUrl: 'assets/images/ameyaw-sarah/ameyaw-sarah-1.jpg',
-        projectUrl: 'ameyaw-sarah.html',
-        desc: 'Invitation for an Akan customary marriage \\u2014 the adinkra symbol Me Ware Wo redrawn from the couple\\u2019s initials as a four-lobed monogram, laid over a kente weave built from minute S and A letterforms, with an adinkra legend driving the directions map.',
-        specs: {
-          client: 'Ameyaw Mensah & Sarah Amoabeng',
-          scope: 'Graphic Design, Illustration & Print',
-          team: 'Randy Biney, Jude Nyoagbe',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
         }
       },
       {
