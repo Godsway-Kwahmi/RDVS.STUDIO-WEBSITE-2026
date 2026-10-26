@@ -290,6 +290,93 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
+        id: 'purc-9-l1-ut',
+        title: 'PURC',
+        category: 'Architectural Design — 2012',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/purc/E9OZl1VWQAACIut.jpg',
+        imageUrlDesktop: 'assets/images/purc/E9OZl1VWQAACIut.jpg',
+        imageMobileUrl: 'assets/images/purc/E9OZl1VWQAACIut.jpg',
+        projectUrl: 'purc.html',
+        desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
+        specs: {
+          client: 'Public Utilities Regulatory Commission',
+          scope: 'Architectural Design, interior design, architectural visualization, graphic design and design documentation',
+          team: 'Six-person winning team, incl. RDVS directors @niianerkwei and @kwahmi',
+          year: '2012',
+          disciplines: ['Architectural Design', 'Interior Design', 'Architectural Visualization', 'Graphic Design', 'Design Documentation']
+        }
+      },
+      {
+        id: 'purc-9-q7-r',
+        title: 'PURC',
+        category: 'Architectural Design — 2012',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/purc/E9NWq7VWUAAQIJr.jpg',
+        imageUrlDesktop: 'assets/images/purc/E9NWq7VWUAAQIJr.jpg',
+        imageMobileUrl: 'assets/images/purc/E9NWq7VWUAAQIJr.jpg',
+        projectUrl: 'purc.html',
+        desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
+        specs: {
+          client: 'Public Utilities Regulatory Commission',
+          scope: 'Architectural Design, interior design, architectural visualization, graphic design and design documentation',
+          team: 'Six-person winning team, incl. RDVS directors @niianerkwei and @kwahmi',
+          year: '2012',
+          disciplines: ['Architectural Design', 'Interior Design', 'Architectural Visualization', 'Graphic Design', 'Design Documentation']
+        }
+      },
+      {
+        id: 'funko-ridge-5',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-5.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-5.jpg',
+        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-5.jpg',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-6',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-6.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-6.jpg',
+        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-6.jpg',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'empire-tower-t-k-o-g-3a',
+        title: 'Empire Tower',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/empire-tower/EtVkWAoWgAEV3aY.jpg',
+        imageUrlDesktop: 'assets/images/empire-tower/EtVkWAoWgAEV3aY.jpg',
+        imageMobileUrl: 'assets/images/empire-tower/EtVkWAoWgAEV3aY.jpg',
+        projectUrl: 'empire-tower.html'
+      },
+      {
         id: 'dyv-dawn',
         title: 'DYV',
         category: 'Interior Design & Architectural Visualization — 2025',
@@ -314,9 +401,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/barham/barham-residence.jpg',
-        imageUrlDesktop: 'assets/images/barham/barham-residence.jpg',
-        imageMobileUrl: 'assets/images/barham/barham-residence.jpg',
+        imageUrl: 'assets/images/barham/E9yFXncXEAEzLJ3.jpg',
+        imageUrlDesktop: 'assets/images/barham/E9yFXncXEAEzLJ3.jpg',
+        imageMobileUrl: 'assets/images/barham/E9yFXncXEAEzLJ3.jpg',
         projectUrl: '41-barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
         specs: {
@@ -477,9 +564,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2017',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
-        imageUrl: 'assets/images/empire-tower/empire-tower-1.jpg',
-        imageUrlDesktop: 'assets/images/empire-tower/empire-tower-1.jpg',
-        imageMobileUrl: 'assets/images/empire-tower/empire-tower-1.jpg',
+        imageUrl: 'assets/images/empire-tower/EtJStmkW4AIP-3M.jpg',
+        imageUrlDesktop: 'assets/images/empire-tower/EtJStmkW4AIP-3M.jpg',
+        imageMobileUrl: 'assets/images/empire-tower/EtJStmkW4AIP-3M.jpg',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -500,25 +587,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/dyv/dyv-panoramic-header.jpg',
         imageUrlDesktop: 'assets/images/dyv/dyv-panoramic-header.jpg',
         imageMobileUrl: 'assets/images/dyv/dyv-panoramic-header.jpg',
-        projectUrl: 'dyv.html',
-        desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Architectural Design',
-          team: 'RDVS Team',
-          year: '2025',
-          disciplines: '[\'Architectural Design\']'
-        }
-      },
-      {
-        id: 'dyv-dawn-plate2',
-        title: 'DYV',
-        category: 'Interior Design & Architectural Visualization — 2025',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
-        imageUrlDesktop: 'assets/images/dyv/dyv-courtyard-night.jpg',
-        imageMobileUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -649,6 +717,120 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'moty-3',
+        title: 'MOTY',
+        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
+        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/moty/moty-3.jpg',
+        imageUrlDesktop: 'assets/images/moty/moty-3.jpg',
+        imageMobileUrl: 'assets/images/moty/moty-3.jpg',
+        projectUrl: 'moty.html',
+        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+        specs: {
+          client: 'Mother of the Year (MOTY)',
+          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'kuma-residence-mff-w',
+        title: 'Kuma Residence',
+        category: 'Interior Design & Architectural Visualization — 2022',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
+        imageUrlDesktop: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
+        imageMobileUrl: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
+        projectUrl: 'kuma-residence.html',
+        desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design carried through an in-house material and lighting study: modelling, look-dev, lighting and photoreal rendering',
+          team: 'RDVS Team',
+          year: '2022',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'kuma-residence-mev8-sn-2',
+        title: 'Kuma Residence',
+        category: 'Interior Design & Architectural Visualization — 2022',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/kuma-residence/FRJmev8XIAAsnF2.jpg',
+        imageUrlDesktop: 'assets/images/kuma-residence/FRJmev8XIAAsnF2.jpg',
+        imageMobileUrl: 'assets/images/kuma-residence/FRJmev8XIAAsnF2.jpg',
+        projectUrl: 'kuma-residence.html',
+        desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design carried through an in-house material and lighting study: modelling, look-dev, lighting and photoreal rendering',
+          team: 'RDVS Team',
+          year: '2022',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-3',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-3.jpg',
+        imageUrlDesktop: 'assets/images/ela-b/ela-b-3.jpg',
+        imageMobileUrl: 'assets/images/ela-b/ela-b-3.jpg',
+        projectUrl: 'ela-b.html',
+        desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'el-dor-7',
+        title: 'El Dor',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/el-dor/el-dor-7.jpg',
+        imageUrlDesktop: 'assets/images/el-dor/el-dor-7.jpg',
+        imageMobileUrl: 'assets/images/el-dor/el-dor-7.jpg',
+        projectUrl: 'el-dor.html',
+        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'afg-4',
+        title: 'AFG Offices',
+        category: 'Interior Design, 3D Visualization, Graphic Design, Industrial & Furniture Design & Construction — 2019',
+        service: 'Interior Design, 3D Visualization, Graphic Design, Industrial & Furniture Design & Construction',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/afg/afg-4.jpg',
+        imageUrlDesktop: 'assets/images/afg/afg-4.jpg',
+        imageMobileUrl: 'assets/images/afg/afg-4.jpg',
+        projectUrl: 'afg.html',
+        desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
       {
         id: 'csm',
         title: 'CSM',
@@ -1099,9 +1281,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2017',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-1.jpg',
-        imageUrlDesktop: 'assets/images/cascades/tower-cascades-1.jpg',
-        imageMobileUrl: 'assets/images/cascades/tower-cascades-1.jpg',
+        imageUrl: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
+        imageMobileUrl: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -1118,9 +1300,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
-        imageUrlDesktop: 'assets/images/hamlet/hamlet-estate.jpg',
-        imageMobileUrl: 'assets/images/hamlet/hamlet-estate.jpg',
+        imageUrl: 'assets/images/hamlet/hamlet-bath.jpg',
+        imageUrlDesktop: 'assets/images/hamlet/hamlet-bath.jpg',
+        imageMobileUrl: 'assets/images/hamlet/hamlet-bath.jpg',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -1232,9 +1414,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Landscape Design, Interior Design & 3D Visualization — 2017',
         service: 'Landscape Design, Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
-        imageUrlDesktop: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
-        imageMobileUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
+        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-3.jpg',
+        imageUrlDesktop: 'assets/images/poconos-bar-grill/poconos-bar-grill-3.jpg',
+        imageMobileUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-3.jpg',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.',
         specs: {
@@ -1289,9 +1471,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-3.jpg',
-        imageUrlDesktop: 'assets/images/naadei-villas/naadei-villas-3.jpg',
-        imageMobileUrl: 'assets/images/naadei-villas/naadei-villas-3.jpg',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-12.jpg',
+        imageUrlDesktop: 'assets/images/naadei-villas/naadei-villas-12.jpg',
+        imageMobileUrl: 'assets/images/naadei-villas/naadei-villas-12.jpg',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -1346,9 +1528,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2024',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/macord/macord-5.jpg',
-        imageUrlDesktop: 'assets/images/macord/macord-5.jpg',
-        imageMobileUrl: 'assets/images/macord/macord-5.jpg',
+        imageUrl: 'assets/images/macord/macord-2.jpg',
+        imageUrlDesktop: 'assets/images/macord/macord-2.jpg',
+        imageMobileUrl: 'assets/images/macord/macord-2.jpg',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
@@ -1403,9 +1585,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2018',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/link-drive/link-drive-2.jpg',
-        imageUrlDesktop: 'assets/images/link-drive/link-drive-2.jpg',
-        imageMobileUrl: 'assets/images/link-drive/link-drive-2.jpg',
+        imageUrl: 'assets/images/link-drive/link-drive-9.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-9.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-9.jpg',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -1422,9 +1604,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2013',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-2.jpg',
-        imageUrlDesktop: 'assets/images/la-beach-towers/la-beach-towers-2.jpg',
-        imageMobileUrl: 'assets/images/la-beach-towers/la-beach-towers-2.jpg',
+        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
+        imageUrlDesktop: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
+        imageMobileUrl: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
@@ -1460,9 +1642,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design — 2013',
         service: 'Interior Design',
         discipline: 'interiors',
-        imageUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
-        imageUrlDesktop: 'assets/images/imperial-square/imperial-square-1.jpg',
-        imageMobileUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
+        imageUrl: 'assets/images/imperial-square/imperial-square-3.jpg',
+        imageUrlDesktop: 'assets/images/imperial-square/imperial-square-3.jpg',
+        imageMobileUrl: 'assets/images/imperial-square/imperial-square-3.jpg',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -1654,9 +1836,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2014',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/csm/csm-1.jpg',
-        imageUrlDesktop: 'assets/images/csm/csm-1.jpg',
-        imageMobileUrl: 'assets/images/csm/csm-1.jpg',
+        imageUrl: 'assets/images/csm/csm-3.jpg',
+        imageUrlDesktop: 'assets/images/csm/csm-3.jpg',
+        imageMobileUrl: 'assets/images/csm/csm-3.jpg',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -1787,9 +1969,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2018',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/bfa/bfa-7.jpg',
-        imageUrlDesktop: 'assets/images/bfa/bfa-7.jpg',
-        imageMobileUrl: 'assets/images/bfa/bfa-7.jpg',
+        imageUrl: 'assets/images/bfa/bfa-8.jpg',
+        imageUrlDesktop: 'assets/images/bfa/bfa-8.jpg',
+        imageMobileUrl: 'assets/images/bfa/bfa-8.jpg',
         projectUrl: 'bfa.html',
         desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
         specs: {
@@ -1907,9 +2089,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2017',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
-        imageUrlDesktop: 'assets/images/cascades/tower-cascades-hero.jpg',
-        imageMobileUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
+        imageUrl: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
+        imageMobileUrl: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -1967,25 +2149,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/3aap/3aap-3.jpg',
         imageUrlDesktop: 'assets/images/3aap/3aap-3.jpg',
         imageMobileUrl: 'assets/images/3aap/3aap-3.jpg',
-        projectUrl: '3aap.html',
-        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
-        specs: {
-          client: 'Impact Hub Accra',
-          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: '3aap-plate3',
-        title: '3AAP',
-        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
-        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/3aap/3aap-4.jpg',
-        imageUrlDesktop: 'assets/images/3aap/3aap-4.jpg',
-        imageMobileUrl: 'assets/images/3aap/3aap-4.jpg',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
         specs: {
@@ -2129,18 +2292,309 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['3D Visualization', 'Retail Interior']
         }
       },
+
+    ],
+    images: [
       {
-        id: '1981-film-project-film',
+        id: 'ttd-zv-h-s-3ll',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
+        imageUrlDesktop: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
+        imageMobileUrl: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
+        projectUrl: 'ttd.html'
+      },
+      {
+        id: 'the-fitzgerald-uj-vru-u-l',
+        title: 'The Fitzgerald',
+        category: 'Event Space Interiors — 2022',
+        service: 'Event Space Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl.jpg',
+        imageUrlDesktop: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl.jpg',
+        imageMobileUrl: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl.jpg',
+        projectUrl: 'the-fitzgerald.html'
+      },
+      {
+        id: 'the-fitzgerald-uj-v4a-g',
+        title: 'The Fitzgerald',
+        category: 'Event Space Interiors — 2022',
+        service: 'Event Space Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI.jpg',
+        imageUrlDesktop: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI.jpg',
+        imageMobileUrl: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI.jpg',
+        projectUrl: 'the-fitzgerald.html'
+      },
+      {
+        id: 'stanchart-hq-3',
+        title: 'Stanchart HQ',
+        category: 'Architectural Visualization — 2010',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/stanchart-hq/stanchart-hq-3.jpg',
+        imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-3.jpg',
+        imageMobileUrl: 'assets/images/stanchart-hq/stanchart-hq-3.jpg',
+        projectUrl: 'stanchart-hq.html',
+        desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
+        specs: {
+          client: 'Standard Chartered Bank',
+          scope: 'Architectural visualization: three street-level views of the proposed head office tower — two daylight studies and a dusk long-exposure.',
+          team: 'Vista (design and modelling); R.D+V.S (visualization)',
+          year: '2010',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'stanchart-hq-2',
+        title: 'Stanchart HQ',
+        category: 'Architectural Visualization — 2010',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/stanchart-hq/stanchart-hq-2.jpg',
+        imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-2.jpg',
+        imageMobileUrl: 'assets/images/stanchart-hq/stanchart-hq-2.jpg',
+        projectUrl: 'stanchart-hq.html',
+        desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
+        specs: {
+          client: 'Standard Chartered Bank',
+          scope: 'Architectural visualization: three street-level views of the proposed head office tower — two daylight studies and a dusk long-exposure.',
+          team: 'Vista (design and modelling); R.D+V.S (visualization)',
+          year: '2010',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'protea-hotel-airport-7i-qm7-e-he',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCqm7XMAQeNhe.jpg',
+        imageUrlDesktop: 'assets/images/protea-hotel-airport/E7iCqm7XMAQeNhe.jpg',
+        imageMobileUrl: 'assets/images/protea-hotel-airport/E7iCqm7XMAQeNhe.jpg',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'protea-hotel-airport-7i-s8-v',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCs8EWYAAvIOH.jpg',
+        imageUrlDesktop: 'assets/images/protea-hotel-airport/E7iCs8EWYAAvIOH.jpg',
+        imageMobileUrl: 'assets/images/protea-hotel-airport/E7iCs8EWYAAvIOH.jpg',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'mig-efk-0-7-5e',
+        title: 'MIG',
+        category: 'Modern Indigenous Goods — 2021',
+        service: 'Modern Indigenous Goods',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
+        imageUrlDesktop: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
+        imageMobileUrl: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
+        projectUrl: 'mig.html'
+      },
+      {
+        id: 'mig-1h-1',
+        title: 'MIG',
+        category: 'Modern Indigenous Goods — 2021',
+        service: 'Modern Indigenous Goods',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/mig/mig-1h-1.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-1h-1.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-1h-1.jpg',
+        projectUrl: 'mig.html'
+      },
+      {
+        id: 'margin-bank',
+        title: 'Margin',
+        category: 'Workplace Interiors — 2022',
+        service: 'Workplace Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/margin/margin-bank.jpg',
+        imageUrlDesktop: 'assets/images/margin/margin-bank.jpg',
+        imageMobileUrl: 'assets/images/margin/margin-bank.jpg',
+        projectUrl: 'margin.html'
+      },
+      {
+        id: 'margin-h-a-90',
+        title: 'Margin',
+        category: 'Workplace Interiors — 2022',
+        service: 'Workplace Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        imageUrlDesktop: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        imageMobileUrl: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        projectUrl: 'margin.html'
+      },
+      {
+        id: 'marble-bath-4',
+        title: 'Marble & Bath',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/marble-bath/marble-bath-4.jpg',
+        imageUrlDesktop: 'assets/images/marble-bath/marble-bath-4.jpg',
+        imageMobileUrl: 'assets/images/marble-bath/marble-bath-4.jpg',
+        projectUrl: 'marble-bath.html'
+      },
+      {
+        id: 'lamu-t-o-d',
+        title: 'Lamu',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
+        imageUrlDesktop: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
+        imageMobileUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
+        projectUrl: 'lamu.html'
+      },
+      {
+        id: 'lamu-t-o-w-wq-x',
+        title: 'Lamu',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/lamu/FtIUHoSXwAEwqDx.jpg',
+        imageUrlDesktop: 'assets/images/lamu/FtIUHoSXwAEwqDx.jpg',
+        imageMobileUrl: 'assets/images/lamu/FtIUHoSXwAEwqDx.jpg',
+        projectUrl: 'lamu.html'
+      },
+      {
+        id: 'hola-1k-sa-0-t-n',
+        title: 'Hola',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/hola/F1kFHsaX0AAGtWn.jpg',
+        imageUrlDesktop: 'assets/images/hola/F1kFHsaX0AAGtWn.jpg',
+        imageMobileUrl: 'assets/images/hola/F1kFHsaX0AAGtWn.jpg',
+        projectUrl: 'hola.html'
+      },
+      {
+        id: 'hola-15a57-g-y-r',
+        title: 'Hola',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
+        imageUrlDesktop: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
+        imageMobileUrl: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
+        projectUrl: 'hola.html'
+      },
+      {
+        id: 'giffard-park-i-k-x',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/EiLEUFFXkAAAxZV.jpg',
+        imageUrlDesktop: 'assets/images/giffard-park/EiLEUFFXkAAAxZV.jpg',
+        imageMobileUrl: 'assets/images/giffard-park/EiLEUFFXkAAAxZV.jpg',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-i-s-0yi',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
+        imageUrlDesktop: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
+        imageMobileUrl: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'avalon-d-8-9-4-gyn1',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
+        imageUrlDesktop: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
+        imageMobileUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-d-ct-g-qa-e',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
+        imageUrlDesktop: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
+        imageMobileUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'ahero-3a-6-4-7',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ahero/GVU3aP6W4AA7WUC.jpg',
+        imageUrlDesktop: 'assets/images/ahero/GVU3aP6W4AA7WUC.jpg',
+        imageMobileUrl: 'assets/images/ahero/GVU3aP6W4AA7WUC.jpg',
+        projectUrl: 'ahero.html'
+      },
+      {
+        id: 'ahero-9-1k0-0-ev-c',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ahero/F9YX1k0W0AAevHc.jpg',
+        imageUrlDesktop: 'assets/images/ahero/F9YX1k0W0AAevHc.jpg',
+        imageMobileUrl: 'assets/images/ahero/F9YX1k0W0AAevHc.jpg',
+        projectUrl: 'ahero.html'
+      },
+      {
+        id: 'ackon-desk-2u-v-q',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/GUD2uFJXIAEvHSq.jpg',
+        imageUrlDesktop: 'assets/images/ackon-desk/GUD2uFJXIAEvHSq.jpg',
+        imageMobileUrl: 'assets/images/ackon-desk/GUD2uFJXIAEvHSq.jpg',
+        projectUrl: 'ackon-desk.html'
+      },
+      {
+        id: 'ackon-desk-2ug-0-mr',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/GUD2ugHW0AAQBmr.jpg',
+        imageUrlDesktop: 'assets/images/ackon-desk/GUD2ugHW0AAQBmr.jpg',
+        imageMobileUrl: 'assets/images/ackon-desk/GUD2ugHW0AAQBmr.jpg',
+        projectUrl: 'ackon-desk.html'
+      },
+      {
+        id: 'a-a-x-g4i-c-p3d6',
+        title: 'A-A',
+        category: 'Interior Remodeling — 2023',
+        service: 'Interior Remodeling',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/a-a/GxGGg4iXcAAp3d6.jpg',
+        imageUrlDesktop: 'assets/images/a-a/GxGGg4iXcAAp3d6.jpg',
+        imageMobileUrl: 'assets/images/a-a/GxGGg4iXcAAp3d6.jpg',
+        projectUrl: 'a-a.html'
+      },
+      {
+        id: '1981-4',
         title: '1981',
         category: '3D Visualization — 2015',
         service: '3D Visualization',
         discipline: 'vfx',
-        videoUrl: 'assets/videos/1981/1981-film.mp4',
-        videoUrlDesktop: 'assets/videos/1981/1981-film.mp4',
-        videoMobileUrl: 'assets/videos/1981/1981-film.mp4',
-        imageUrl: 'assets/images/1981/1981-6.jpg',
-        imageUrlDesktop: 'assets/images/1981/1981-6.jpg',
-        imageMobileUrl: 'assets/images/1981/1981-6.jpg',
+        imageUrl: 'assets/images/1981/1981-4.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-4.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-4.jpg',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -2150,10 +2604,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
-      }
-
-    ],
-    images: [
+      },
       {
         id: 'chocolate',
         title: 'Chocolate',
@@ -2317,9 +2768,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2015',
         service: 'Graphic Design',
         discipline: 'vfx',
-        imageUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
-        imageUrlDesktop: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
-        imageMobileUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
+        imageUrl: 'assets/images/2gs/2gs-9.jpg',
+        imageUrlDesktop: 'assets/images/2gs/2gs-9.jpg',
+        imageMobileUrl: 'assets/images/2gs/2gs-9.jpg',
         projectUrl: '2gs.html'
       },
       {
@@ -2410,9 +2861,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design, Digital & Web Design — 2021',
         service: 'Graphic Design, Digital & Web Design',
         discipline: 'vfx',
-        imageUrl: 'assets/images/tea-house/tea-house-03.png',
-        imageUrlDesktop: 'assets/images/tea-house/tea-house-03.png',
-        imageMobileUrl: 'assets/images/tea-house/tea-house-03.png',
+        imageUrl: 'assets/images/tea-house/tea-house-05.png',
+        imageUrlDesktop: 'assets/images/tea-house/tea-house-05.png',
+        imageMobileUrl: 'assets/images/tea-house/tea-house-05.png',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
@@ -2448,9 +2899,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'vfx',
-        imageUrl: 'assets/images/stark-glaube/stark-glaube-2.jpg',
-        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-2.jpg',
-        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-2.jpg',
+        imageUrl: 'assets/images/stark-glaube/stark-glaube-3.jpg',
+        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-3.jpg',
+        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-3.jpg',
         projectUrl: 'stark-glaube.html',
         desc: 'Identity for a Ghanaian company — the initials SG and the name set as a wordmark, taken through four routes: a monogram knocked out of a graded band of triangles, glossy green-and-blue ribbon loops, a bird in flight and a three-bar banner.',
         specs: {
@@ -2467,9 +2918,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/senya-resort/senya-resort-1.jpg',
-        imageUrlDesktop: 'assets/images/senya-resort/senya-resort-1.jpg',
-        imageMobileUrl: 'assets/images/senya-resort/senya-resort-1.jpg',
+        imageUrl: 'assets/images/senya-resort/senya-resort-3.jpg',
+        imageUrlDesktop: 'assets/images/senya-resort/senya-resort-3.jpg',
+        imageMobileUrl: 'assets/images/senya-resort/senya-resort-3.jpg',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -2508,9 +2959,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization & BIM — 2022',
         service: 'Architectural Visualization & BIM',
         discipline: 'vfx',
-        imageUrl: 'assets/images/npa/npa-4.jpg',
-        imageUrlDesktop: 'assets/images/npa/npa-4.jpg',
-        imageMobileUrl: 'assets/images/npa/npa-4.jpg',
+        imageUrl: 'assets/images/npa/npa-2.jpg',
+        imageUrlDesktop: 'assets/images/npa/npa-2.jpg',
+        imageMobileUrl: 'assets/images/npa/npa-2.jpg',
         projectUrl: 'npa-reception-renders.html',
         desc: 'BIM modelling and architectural visualization for the National Petroleum Authority s open-plan office   five plates of a white, black and grey floorplate carried by one blue brand wall, built around an interior scheme by Newland Interiors.',
         specs: {
@@ -2546,9 +2997,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design & 3D Visualization — 2017',
         service: 'Graphic Design & 3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/mtn-hq/mtn-hq-19.jpg',
-        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-19.jpg',
-        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-19.jpg',
+        imageUrl: 'assets/images/mtn-hq/mtn-hq-17.jpg',
+        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-17.jpg',
+        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-17.jpg',
         projectUrl: 'mtn.html',
         desc: 'Environmental graphics and way-finding pitch for MTN House, Accra — a system built on the SIM card and paper-plane motif, explored through pictograms, signage, kiosks and 3D visualization.',
         specs: {
@@ -2584,9 +3035,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2015',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/marble-bath/marble-bath-1.jpg',
-        imageUrlDesktop: 'assets/images/marble-bath/marble-bath-1-desktop.jpg',
-        imageMobileUrl: 'assets/images/marble-bath/marble-bath-1.jpg',
+        imageUrl: 'assets/images/marble-bath/marble-bath-2.jpg',
+        imageUrlDesktop: 'assets/images/marble-bath/marble-bath-2.jpg',
+        imageMobileUrl: 'assets/images/marble-bath/marble-bath-2.jpg',
         projectUrl: 'marble-bath.html',
         desc: 'Four interior visualizations of a master bathroom, made in 2015 for a project by Mobius Architecture. Samuel Adabi designed both the interior and the building; RDVS Studios modelled, shaded, lit, rendered and post-processed the views.',
         specs: {
@@ -2644,9 +3095,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2017',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/kdmrd/kdmrd-2.jpg',
-        imageUrlDesktop: 'assets/images/kdmrd/kdmrd-2.jpg',
-        imageMobileUrl: 'assets/images/kdmrd/kdmrd-2.jpg',
+        imageUrl: 'assets/images/kdmrd/kdmrd-3.jpg',
+        imageUrlDesktop: 'assets/images/kdmrd/kdmrd-3.jpg',
+        imageMobileUrl: 'assets/images/kdmrd/kdmrd-3.jpg',
         projectUrl: 'kdmrd.html',
         desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
         specs: {
@@ -2739,9 +3190,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2013',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/fule/fule-7.jpg',
-        imageUrlDesktop: 'assets/images/fule/fule-7.jpg',
-        imageMobileUrl: 'assets/images/fule/fule-7.jpg',
+        imageUrl: 'assets/images/fule/fule-1.jpg',
+        imageUrlDesktop: 'assets/images/fule/fule-1.jpg',
+        imageMobileUrl: 'assets/images/fule/fule-1.jpg',
         projectUrl: 'fule.html',
         desc: 'Eight architectural visualization plates from 2013 for a private duplex in Accra, made by RDVS. Design: street and courtyard exteriors, then bedroom, kitchen and living room interiors in warm oak and pale neutrals.',
         specs: {
@@ -2758,9 +3209,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
-        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
-        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-4.jpg',
+        imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-3.jpg',
+        imageUrlDesktop: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-3.jpg',
+        imageMobileUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-3.jpg',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -2867,44 +3318,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'baobab-hotel-exteriors-plate2',
-        title: 'Baobab Hotel - Exteriors',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
-        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
-        imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
-        projectUrl: 'baobab-hotel-exteriors.html',
-        desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \\u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
-        specs: {
-          client: 'Architect Theodore Kanyi',
-          scope: '3D Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2016',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: '2gs-plate1',
-        title: '2GS',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/2gs/2gs-1.jpg',
-        imageUrlDesktop: 'assets/images/2gs/2gs-1.jpg',
-        imageMobileUrl: 'assets/images/2gs/2gs-1.jpg',
-        projectUrl: '2gs.html',
-        desc: 'A 2015 identity for 2GS Construction + Logistics: a monogram built from the idea of the collective, carried from pencil construction studies through stationery, business cards, letterheads and concrete signage.',
-        specs: {
-          client: '2GS Construction + Logistics',
-          scope: 'Identity and branding: monogram and lockups, labyrinth motif, colour palette and typography, business cards, letterheads and stationery, signage',
-          team: 'Randy Biney (concept + design); Jude Nyoagbe (concept)',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: '2gs-plate2',
         title: '2GS',
         category: 'Graphic Design — 2015',
@@ -2929,9 +3342,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2015',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/1981/1981-6.jpg',
-        imageUrlDesktop: 'assets/images/1981/1981-6.jpg',
-        imageMobileUrl: 'assets/images/1981/1981-6.jpg',
+        imageUrl: 'assets/images/1981/1981-1.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-1.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-1.jpg',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -3036,9 +3449,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior & Architecture — 2023',
         service: 'Interior & Architecture',
         discipline: 'vfx',
-        imageUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
-        imageUrlDesktop: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
-        imageMobileUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
+        imageUrl: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
+        imageMobileUrl: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
         projectUrl: 'ttd.html'
       },
       {
@@ -3196,50 +3609,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'trumpet-africa-motion-film',
-        title: 'Trumpet Africa Productions Ident',
-        category: 'Broadcast — 2014',
-        service: 'Broadcast',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
-        videoUrlDesktop: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
-        videoMobileUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
-        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        projectUrl: 'trumpet-africa-ident.html',
-        desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
-        specs: {
-          client: 'Trumpet Africa Productions',
-          scope: 'Concept Development, Storyboarding, Illustrations, Motion Design & 3D Animation',
-          team: 'RDVS Team',
-          year: '2014',
-          disciplines: '[\'Broadcast\']'
-        }
-      },
-      {
-        id: 'ceeander-motion-film',
-        title: 'Ceeander Ident',
-        category: '3D Animation — 2014',
-        service: '3D Animation',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
-        videoUrlDesktop: 'assets/videos/ceeander/ceeander-motion.mp4',
-        videoMobileUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
-        imageUrl: 'assets/images/ceeander/ceeander-cover.jpg',
-        imageUrlDesktop: 'assets/images/ceeander/ceeander-cover.jpg',
-        imageMobileUrl: 'assets/images/ceeander/ceeander-cover.jpg',
-        projectUrl: 'ceeander.html',
-        desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
-        specs: {
-          client: 'Ceeander Entertainment Ltd',
-          scope: 'Concept, Storyboarding, 3D Animation, Motion Design & Sound Design',
-          team: 'RDVS Team',
-          year: '2014',
-          disciplines: '[\'3D Animation\']'
-        }
-      },
-      {
         id: 'caustics-rnd',
         title: 'Caustics RnD',
         category: '3D Animation — 2020',
@@ -3264,14 +3633,71 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
+        id: 'trumpet-africa-palette',
+        title: 'Trumpet Africa Productions Ident',
+        category: 'Broadcast — 2014',
+        service: 'Broadcast',
+        discipline: 'motion',
+        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-palette.jpg',
+        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-palette.jpg',
+        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-palette.jpg',
+        projectUrl: 'trumpet-africa-ident.html',
+        desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
+        specs: {
+          client: 'Trumpet Africa Productions',
+          scope: 'Concept Development, Storyboarding, Illustrations, Motion Design & 3D Animation',
+          team: 'RDVS Team',
+          year: '2014',
+          disciplines: '[\'Broadcast\']'
+        }
+      },
+      {
+        id: 'elo-tv-17',
+        title: 'ELO TV',
+        category: 'Motion Design — 2015',
+        service: 'Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/elo-tv/elo-tv-17.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-17.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-17.jpg',
+        projectUrl: 'elo-tv.html',
+        desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
+        specs: {
+          client: 'ELO TV',
+          scope: 'Graphic Design & Motion Design (Brand Identity, Stationery & Broadcast Ident)',
+          team: 'RDVS Team',
+          year: '2015',
+          disciplines: ['Graphic Design', 'Motion Design']
+        }
+      },
+      {
+        id: 'ceeander-2',
+        title: 'Ceeander Ident',
+        category: '3D Animation — 2014',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/ceeander/ceeander-2.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-2.jpg',
+        imageMobileUrl: 'assets/images/ceeander/ceeander-2.jpg',
+        projectUrl: 'ceeander.html',
+        desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
+        specs: {
+          client: 'Ceeander Entertainment Ltd',
+          scope: 'Concept, Storyboarding, 3D Animation, Motion Design & Sound Design',
+          team: 'RDVS Team',
+          year: '2014',
+          disciplines: '[\'3D Animation\']'
+        }
+      },
+      {
         id: 'elo-tv',
         title: 'ELO TV',
         category: 'Motion Design — 2015',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/elo-tv/elo-tv-16.jpg',
-        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-16.jpg',
-        imageMobileUrl: 'assets/images/elo-tv/elo-tv-16.jpg',
+        imageUrl: 'assets/images/elo-tv/elo-tv-07.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-07.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-07.jpg',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
@@ -3307,9 +3733,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Broadcast — 2014',
         service: 'Broadcast',
         discipline: 'motion',
-        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
+        imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png',
+        imageUrlDesktop: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png',
+        imageMobileUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -3326,9 +3752,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Visual Effects (VFX) & Motion Design — 2016',
         service: 'Visual Effects (VFX) & Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-5.jpg',
-        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-5.jpg',
-        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-5.jpg',
+        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-7.jpg',
+        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-7.jpg',
+        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-7.jpg',
         projectUrl: 'hfc-tvc.html',
         desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
         specs: {
@@ -3364,9 +3790,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design — 2014',
         service: 'Graphic Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
-        imageUrlDesktop: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
-        imageMobileUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
+        imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-teaser.gif',
+        imageUrlDesktop: 'assets/images/glow-in-the-dark/glow-in-the-dark-teaser.gif',
+        imageMobileUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-teaser.gif',
         projectUrl: 'glow-in-the-dark.html',
         desc: 'Event marketing for a party advertised for 4 October 2014 — a neon sign key visual modelled in 3D so the glass could be shown dead and struck up, then looped as a teaser between the two states.',
         specs: {
@@ -3383,9 +3809,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Animation — 2014',
         service: '3D Animation',
         discipline: 'motion',
-        imageUrl: 'assets/images/ceeander/ceeander-cover.jpg',
-        imageUrlDesktop: 'assets/images/ceeander/ceeander-cover.jpg',
-        imageMobileUrl: 'assets/images/ceeander/ceeander-cover.jpg',
+        imageUrl: 'assets/images/ceeander/ceeander-1.jpg',
+        imageUrlDesktop: 'assets/images/ceeander/ceeander-1.jpg',
+        imageMobileUrl: 'assets/images/ceeander/ceeander-1.jpg',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
         specs: {
@@ -3396,25 +3822,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: '[\'3D Animation\']'
         }
       },
-      {
-        id: 'hfc-tvc-motion',
-        title: 'HFC TVC',
-        category: 'Visual Effects (VFX) & Motion Design — 2016',
-        service: 'Visual Effects (VFX) & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
-        imageUrlDesktop: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
-        imageMobileUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
-        projectUrl: 'hfc-tvc.html',
-        desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
-        specs: {
-          client: 'Midnight Run',
-          scope: 'Visual Effects (VFX) & Motion Design',
-          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
-          year: '2016',
-          disciplines: ['Motion Design', 'Broadcast TVC']
-        }
-      }
 
     ]
   },

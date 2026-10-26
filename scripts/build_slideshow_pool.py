@@ -14,6 +14,16 @@ hand-written copy is never regressed; only the additional entries are generated.
 Usage:
     py -3.10 scripts/build_slideshow_pool.py            # report only, writes nothing
     py -3.10 scripts/build_slideshow_pool.py --apply    # splice into js/main.js
+
+SUPERSEDED FOR WRITES on 2026-10-25. The owner rewrote the slide rule that day -- *"all the videos and
+animations from all the projects, the hero image on the page for the project and the first 2 images in the
+project page ... Always use the highest quality"* -- and that sentence lives in
+`scratch/_slide_frame_window.py`, not in `MAX_ENTRIES = 3` above. Three films on a page with two plates now
+belong on the deck together; a fourth plate does not. `--apply` therefore refuses unless
+`--allow-superseded` is passed, because landing this generator's idea of the pool would undo the shipped one.
+Reading it is unchanged: `scratch/_strip_template_rows.py` still checks it as a consumer of page markup, and
+its report mode is a useful second opinion on coverage. The writer is
+`py -3.10 scratch/_reconcile_slide_pool.py --write`, followed by `scratch/_paint_homepage_deck.py --write`.
 """
 import html
 import json
@@ -400,6 +410,15 @@ def extract_entries(seg, open_idx, close_idx):
 
 def main_():
     apply = '--apply' in sys.argv
+    if apply and '--allow-superseded' not in sys.argv:
+        raise SystemExit(
+            'REFUSED: this generator is SUPERSEDED for writes (see its docstring). Its MAX_ENTRIES = 3 '
+            'policy and its own best-file rule predate the owner\'s 2026-10-25 wording of the slide window, '
+            'so applying it would put the pool back inside a rule the harness now checks against '
+            'scratch/_slide_frame_window.py and FAIL section M of scratch/_verify_backlog.py. '
+            'The writer for the current rule is:  py -3.10 scratch/_reconcile_slide_pool.py --write. '
+            'This file is still safe to READ (build(), pool parsing, coverage) and still runs in report '
+            'mode; to force the old splice anyway, pass --allow-superseded.')
     work = read('work.html')
     pages = list(OrderedDict.fromkeys(re.findall(r'href="([a-z0-9\-]+\.html)" class="grid-card"', work)))
     main_js = read('js/main.js')
