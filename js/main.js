@@ -5215,11 +5215,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   let currentIndex = 0;
   const totalSlides = Math.min(slides.length, projects.length);
   const DEFAULT_IMAGE_DURATION = 6000; // 6 seconds for image slides
-  // Owner order, 2026-10-22: "play only 15 seconds of animations that are more than 6 seconds
-  // long instead of the 30 seconds rule". A film longer than an image's 6 s dwell now gets 15 s
-  // and the deck moves on; a film shorter than 15 s still plays once, in full, and its own `ended`
-  // event advances the slide, so 15 is a ceiling and never a floor.
-  const MAX_VIDEO_DURATION = 15; // seconds of a film the slideshow will play before advancing
+  // Owner order, 2026-10-27: "instead of 15 seconds, let's extend the playback time on the slides
+  // on the homepage for videos more than 30 seconds to 30 seconds like before." A film longer
+  // than 30 s is cut at 30 s and the deck moves on; a film shorter than that still plays once, in
+  // full, and its own `ended` event advances the slide, so 30 is a ceiling and never a floor.
+  // (The ceiling was 30 s until 2026-10-22, 15 s between then and this order.)
+  const MAX_VIDEO_DURATION = 30; // seconds of a film the slideshow will play before advancing
   let slideTimer = null;
   let progressInterval = null;
   let activeVideoCleanup = null;
@@ -5400,9 +5401,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (activeVideo) {
       /**
        * VIDEO SLIDE LOGIC:
-       * - "play only 15 seconds of the video if it is more than 6 seconds long" (2026-10-22;
-       *   the rule was 30 seconds before that)
-       * - "for those less than 15 seconds play the video once and move to the next slide"
+       * - "play 30 seconds of the video if it is longer than that" (2026-10-27; the cap was 15 s
+       *   from 2026-10-22 and 30 s before that)
+       * - "for videos less than 30 seconds play the video once and move to the next slide"
        * - "don't loop"
        * - Minimalist Volume Controls display & synchronization
        */
@@ -5441,7 +5442,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           activeFill.style.width = `${progress}%`;
         }
 
-        // Rule: a film longer than the cap is cut at it -- 15 s, was 30 s before 2026-10-22.
+        // Rule: a film longer than the cap is cut at it -- 30 s (15 s between 2026-10-22 and
+        // the 2026-10-27 order that restored 30).
         if (cur >= MAX_VIDEO_DURATION) {
           advanceToNext();
         }
