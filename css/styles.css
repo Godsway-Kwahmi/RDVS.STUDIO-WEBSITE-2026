@@ -499,12 +499,36 @@ button {
      pays that back so the column is still exact at 2560.  1952px = --max-width - 2 * --grid-margin. */
   --hero-social-inset: 602.3px;
   --hero-social-cap: 1952px;
+  /* Owner markup 2026-10-27: the bottom strip (socials row + "Website by RDVS")
+     gets a theme-colored background like the fixed nav bar at the top.  One
+     ::before bar on THIS box (it alone spans the full width at every tier --
+     below 1200 .hero-meta-controls is a right-packed flex item), full-bleed to
+     the viewport edges, painted above the slide (inside .hero-footer's
+     stacking context) but below the caption.  --hero-strip-height is measured
+     floor-relative: it must cover the socials row and reach the hero's bottom
+     edge while keeping the hairline controls row and the caption's category
+     line clear. */
+  --hero-strip-height: 48px;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 32px;
+}
+
+.hero-footer-container::before {
+  content: '';
+  position: absolute;
+  left: calc((100% - 100vw) / 2);
+  right: calc((100% - 100vw) / 2);
+  height: var(--hero-strip-height);
+  bottom: calc(-1 * var(--grid-margin));
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .caption-wrapper {
@@ -1050,6 +1074,17 @@ button {
    + credit ~120 + block 256 + two gaps 64 = 1060, so the band closes at 1108px of viewport; the
    breakpoint stays at 1200px, where it has room to spare.
    ========================================================================== */
+/* The mid band (641-1199) stacks the strip's rows taller than the desktop
+   floor-line pair: measured at 768 and 1024, the socials row tops 45.6px
+   above the floor and the hairline controls row bottoms 61.6px above it, so
+   the strip is 52 + 24 = 76px tall -- 6px of air over the socials, 9.6px
+   under the hairline row. */
+@media (max-width: 1199px) {
+  .hero-footer-container {
+    --hero-strip-height: 76px;
+  }
+}
+
 @media (min-width: 1200px) {
   /* Out of the flex flow, so the caption is the only in-flow item and its percentage margin is the
      whole story.  The box spans the band left to right -- it is transparent, and .hero-footer
@@ -2809,6 +2844,14 @@ a.subservice-item:hover {
      way they do on the desktop band. */
   .caption-wrapper {
     margin-bottom: calc(max(88px, 10.5vh) - 17px);
+  }
+
+  .hero-footer-container {
+    /* Phone geometry (390x844): the socials row tops 44px above the floor,
+       the credit closes at it, and the hero's bottom edge is 16px below, so
+       the strip is 52 + 16 = 68px tall -- 5.8px of air over the socials,
+       4.2px under the hairline row. */
+    --hero-strip-height: 68px;
   }
 
   .hero-meta-controls {
