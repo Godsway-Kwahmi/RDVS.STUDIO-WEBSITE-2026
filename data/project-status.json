@@ -191,15 +191,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "marble-bath.html": {
-      "slug": "marble-bath",
-      "title": "Marble & Bath",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "macord.html": {
       "slug": "macord",
       "title": "Macord International School",
@@ -1720,6 +1711,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 7
+    },
+    "marble-bath.html": {
+      "slug": "marble-bath",
+      "title": "Marble & Bath",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
     },
     "osu-apartments.html": {
       "slug": "osu-apartments",
