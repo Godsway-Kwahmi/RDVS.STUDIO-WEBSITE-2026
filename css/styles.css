@@ -1126,6 +1126,19 @@ button {
     flex-basis: 100%;
   }
 
+  /* "MOVE UP INLINE WITH →" -- the owner's fifteenth markup (2026-10-27) boxes the volume pill and
+     the slide counter in red and draws the arrow to the caption's category line.  Measured on the
+     drawing at 1365x635: the category line's bottom edge sits 33px above the band's floor, the
+     counter's row sat 16px above the hairline bars' row with the counter's own ink ~17px tall, so
+     the counter's bottom edge needed 14.9px of lift to land inline with the category line's bottom
+     edge.  A transform keeps the lift off the flex row's rhythm -- moving bottom would change the
+     gap to the bars below, which the drawing never touches.  Bars and socials are not in the drawn
+     box and do not move. */
+  .hero-status-row .hero-volume-control,
+  .hero-status-row .slide-status {
+    transform: translateY(-14.9px);
+  }
+
   .caption-wrapper {
     margin-left: max(calc(50% - var(--hero-caption-inset)), var(--hero-caption-min));
     /* "MOVE HERE" -- Screenshot 2026-10-23 225318.png boxes the title at image y 568-596 and draws
@@ -1170,12 +1183,14 @@ button {
      left, and the card is only as wide as the title -- 45.9px at 1365, which is what wrapped the
      category line into four.  These lines are one line each, whatever the title happens to be.
 
-     Bottom edges, from the band's floor: the links line closes on the social row at 0, and the category
-     line closes on the hairline bars at 33px -- 17px of social row + 16px gap + the 1px hairline, which
-     measures 32.8px of ink because the social row's line box is 16.8px.  It sat at 50px, on the counter's
-     row, until the markup of 00:17 boxed it and drew an arrow one row down ("MOVE ONE LINE DOWN"); the
-     counter's row is now the block's alone.  The drop also puts 16px between the category's bottom edge
-     and the links' top edge, which is the gap the block already uses between its own three lines. */
+     Bottom edges, from the band's floor: the category line closes on the hairline bars at 33px --
+     17px of social row + 16px gap + the 1px hairline, which measures 32.8px of ink because the social
+     row's line box is 16.8px.  It sat at 50px, on the counter's row, until the markup of 00:17 boxed
+     it and drew an arrow one row down ("MOVE ONE LINE DOWN"); the counter's row held alone until the
+     markup of 2026-10-27 lifted the counter off it inline with this line (see the transform rule
+     above).  The links line closed on the social row at 0 and the category→links gap was 16px, both
+     until the fifteenth markup's blue box sank the strip 8.4px -- the links line now closes at
+     −8.4px and the gap measures 24.4px. */
   .project-category,
   .project-links {
     position: absolute;
@@ -1189,7 +1204,14 @@ button {
   }
 
   .project-links {
-    bottom: calc(0px - var(--hero-caption-lift));
+    /* "MOVE DOWN SLIGHTLY SO IT IS MIDWAY THROUGH BACKGROUND" -- the same fifteenth markup boxes
+       the band's bottom strip in blue.  The strip is the three floor-anchored lines -- links,
+       socials, credit -- and the drawing asks for 8.4px of sink below the floor, midway into the
+       hero background behind the band.  Nothing clips it: neither .hero-footer nor its container
+       carries overflow.  The 16px category→links gap the 00:17 markup established becomes 24.4px,
+       and the counter→bars gap becomes ~30.9px -- both consequences of the sink, re-pinned in
+       scratch/_hero_band_probe.cjs. */
+    bottom: calc(-8.4px - var(--hero-caption-lift));
   }
 
   /* The title's 6px bottom margin is dead space now that the links line is placed by the band, and
@@ -1206,7 +1228,8 @@ button {
      counter on the category line. */
   .hero-social-links {
     position: absolute;
-    bottom: 0;
+    /* The blue box's 8.4px sink, same as .project-links above. */
+    bottom: -8.4px;
     left: calc(100% - var(--hero-social-inset)
                - max(0px, (100% - var(--hero-social-cap)) / 2));
   }
@@ -1214,7 +1237,8 @@ button {
   .hero-credit {
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* The blue box's 8.4px sink, same as .project-links above. */
+    bottom: -8.4px;
   }
 }
 
