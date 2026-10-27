@@ -147,6 +147,67 @@
       <a href="ndaba-restaurant-whm.html" class="project-nav-link">&larr; Previous: Ndaba Restaurant, WHM</a>
       <a href="octagon-interiors.html" class="project-nav-link">Next: Octagon &rarr;</a>
     </nav>
+    <section class="project-cta" aria-labelledby="project-cta-heading">
+      <h2 class="project-cta-heading" id="project-cta-heading">Start a conversation about your next project</h2>
+      <form class="contact-form project-cta-form" action="mailto:info@rdvs.studio" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="pi-name" class="form-label">Full Name</label>
+          <input type="text" id="pi-name" name="name" required class="form-input" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="pi-email" class="form-label">Email Address</label>
+          <input type="email" id="pi-email" name="email" required class="form-input" placeholder="name@domain.com">
+        </div>
+        <div class="form-group">
+          <label for="pi-discipline" class="form-label">Area of Interest</label>
+          <select id="pi-discipline" name="discipline" class="form-select">
+              <option value="" selected>Choose an area of interest</option>
+              <option value="art">Art</option>
+              <option value="bim">BIM</option>
+              <option value="competitions">Competitions</option>
+              <optgroup label="Design">
+                <option value="architecture-planning">Architectural Design</option>
+                <option value="art-direction">Art Direction</option>
+                <option value="web-design">Digital & Web Design</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="illustration">Illustration</option>
+                <option value="industrial-design">Industrial & Furniture Design</option>
+                <option value="interior-design">Interior Design</option>
+                <option value="motion-design">Motion Design</option>
+              </optgroup>
+              <optgroup label="Design + Build">
+                <option value="cost-engineering">Cost Engineering</option>
+                <option value="product-material-sourcing">Product and Material Sourcing</option>
+              </optgroup>
+              <option value="studio-projects">In-house</option>
+              <optgroup label="Photography">
+                <option value="architectural-photography">Architectural Photography</option>
+                <option value="drone-photography">Drone Photography</option>
+                <option value="principal-photography">Principal Photography</option>
+              </optgroup>
+              <optgroup label="VFX + CGI">
+                <option value="3d-animation">3D Animation</option>
+                <option value="architectural-visualization">Architectural Visualization</option>
+                <option value="match-moving">Match-moving</option>
+                <option value="photogrammetry">Photogrammetry</option>
+                <option value="product-visualization">Product Visualization</option>
+                <option value="tracking">Tracking</option>
+                <option value="virtual-reality">Virtual Reality (VR)</option>
+              </optgroup>
+              <option value="rdvschool">RDVSchool Masterclasses</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="pi-message" class="form-label">Project Brief or Message</label>
+          <textarea id="pi-message" name="message" required class="form-textarea" placeholder="Describe project scale, location, scope, or desired timeline..."></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Send inquiry</button>
+        <div class="project-cta-success" role="status" style="display:none; color: var(--foreground); font-size: 0.9375rem; margin-top: 12px; padding: 12px; border: 1px solid var(--border-color);">
+          Your mail app is opening with this inquiry addressed to <a href="mailto:info@rdvs.studio" style="color: var(--foreground);">info@rdvs.studio</a>. Send it from there and it reaches the studio. If nothing opened, write to us at that address.
+        </div>
+      </form>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -175,5 +236,6 @@
   <script src="js/sanity-taxonomy.js"></script>
 <script src="js/sanity-client.js"></script>
   <script src="js/sanity-render.js"></script>
+  <script src="js/inquiry-form.js"></script>
 </body>
 </html>

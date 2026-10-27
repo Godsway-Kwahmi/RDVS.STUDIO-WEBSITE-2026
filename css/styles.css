@@ -2625,6 +2625,24 @@ a.subservice-item:hover {
   transform: scale(1.02);
 }
 
+/* Project-page conversation CTA (owner, 2026-10-27): the Contact page's inquiry form, offered after
+   the prev/next pager so a visitor who has just walked a project can open the same conversation
+   without leaving the page. The form fields reuse .contact-form's classes wholesale; only the section
+   frame and the column cap are new. 640px keeps the measure at the Contact page's single-column
+   reading width on desktop and leaves the phone layout untouched. */
+.project-cta {
+  margin-top: 48px;
+  max-width: 640px;
+}
+
+.project-cta-heading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--foreground);
+  margin-bottom: 24px;
+}
+
 @media (max-width: 640px) {
   .project-nav-item {
     gap: 8px;
