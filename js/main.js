@@ -2486,9 +2486,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Workplace Interiors — 2022',
         service: 'Workplace Interiors',
         discipline: 'vfx',
-        imageUrl: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
-        imageUrlDesktop: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
-        imageMobileUrl: 'assets/images/margin/F-ZKh-aWQAAV90S-mobile.jpg',
+        imageUrl: 'assets/images/margin/F97ocXEXAAArCud.jpg',
+        imageUrlDesktop: 'assets/images/margin/F97ocXEXAAArCud.jpg',
+        imageMobileUrl: 'assets/images/margin/F97ocXEXAAArCud-mobile.jpg',
         projectUrl: 'margin.html'
       },
       {
@@ -3434,9 +3434,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Workplace Interiors — 2022',
         service: 'Workplace Interiors',
         discipline: 'vfx',
-        imageUrl: 'assets/images/margin/F-XhIIqXMAAGhOa.jpg',
-        imageUrlDesktop: 'assets/images/margin/F-XhIIqXMAAGhOa.jpg',
-        imageMobileUrl: 'assets/images/margin/F-XhIIqXMAAGhOa-mobile.jpg',
+        imageUrl: 'assets/images/margin/GH1cB5CW4AAQFih.jpg',
+        imageUrlDesktop: 'assets/images/margin/GH1cB5CW4AAQFih.jpg',
+        imageMobileUrl: 'assets/images/margin/GH1cB5CW4AAQFih-mobile.jpg',
         projectUrl: 'margin.html'
       },
       {
