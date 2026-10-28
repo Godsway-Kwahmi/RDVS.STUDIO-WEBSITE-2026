@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design & Spatial Design — 2019',
         service: 'Architectural Design & Spatial Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-6.jpg',
-        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-6.jpg',
-        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-6-mobile.jpg',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-hero.jpg',
+        imageUrlDesktop: 'assets/images/funko-ridge/funko-ridge-hero.jpg',
+        imageMobileUrl: 'assets/images/funko-ridge/funko-ridge-hero-mobile.jpg',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
