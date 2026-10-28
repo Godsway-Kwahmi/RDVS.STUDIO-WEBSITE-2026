@@ -2643,8 +2643,12 @@ a.subservice-item:hover {
   margin-bottom: 8px;
 }
 
-/* The number line under the heading (owner, 2026-10-27): the studio's one number, offered as a call
-   and as WhatsApp. Site anchors are `color: inherit` with no underline, so inside this secondary-colour
+/* The number line, which the owner's sheet of 2026-10-28 moved from under the heading to UNDER THE
+   FORM, so it is the section's last block: read the form, and if you would rather not fill it in,
+   here is the way out. Its spacing is now a top margin -- the form has no bottom margin of its own
+   (the global reset zeroes every margin, and `.contact-form` spaces its children with `gap`), so
+   20px is the same step the form uses between its own fields.
+   Site anchors are `color: inherit` with no underline, so inside this secondary-colour
    paragraph a link would read as plain text. The owner's follow-up (2026-10-28) puts the wordmark's own
    blue on it -- the same --brand-blue the header's RDVS is written in, and the same hover pair it
    lifts to -- so the two most actionable words on the page carry the brand's colour. The underline on
@@ -2654,7 +2658,7 @@ a.subservice-item:hover {
   font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 24px;
+  margin-top: 20px;
 }
 
 .project-cta-intro a {
