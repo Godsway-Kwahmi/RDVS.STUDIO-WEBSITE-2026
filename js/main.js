@@ -2110,9 +2110,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2019',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/1957/1957-1.jpg',
-        imageUrlDesktop: 'assets/images/1957/1957-1.jpg',
-        imageMobileUrl: 'assets/images/1957/1957-1-mobile.jpg',
+        imageUrl: 'assets/images/1957/1957-6.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-6.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-6-mobile.jpg',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
