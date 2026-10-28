@@ -1990,9 +1990,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2018',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/bfa/bfa-5.jpg',
-        imageUrlDesktop: 'assets/images/bfa/bfa-5.jpg',
-        imageMobileUrl: 'assets/images/bfa/bfa-5-mobile.jpg',
+        imageUrl: 'assets/images/bfa/bfa-5.png',
+        imageUrlDesktop: 'assets/images/bfa/bfa-5.png',
+        imageMobileUrl: 'assets/images/bfa/bfa-5-mobile.png',
         projectUrl: 'bfa.html',
         desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
         specs: {
