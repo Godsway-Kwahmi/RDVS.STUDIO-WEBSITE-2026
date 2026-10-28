@@ -2645,8 +2645,11 @@ a.subservice-item:hover {
 
 /* The number line under the heading (owner, 2026-10-27): the studio's one number, offered as a call
    and as WhatsApp. Site anchors are `color: inherit` with no underline, so inside this secondary-colour
-   paragraph a link would read as plain text -- the Contact page solves that by lifting its links to
-   --foreground, and this follows the same rule, with an underline on hover for the affordance. */
+   paragraph a link would read as plain text. The owner's follow-up (2026-10-28) puts the wordmark's own
+   blue on it -- the same --brand-blue the header's RDVS is written in, and the same hover pair it
+   lifts to -- so the two most actionable words on the page carry the brand's colour. The underline on
+   hover stays: blue alone is not an affordance a visitor who has never seen the page can be trusted to
+   read. */
 .project-cta-intro {
   font-size: 0.9375rem;
   color: var(--text-secondary);
@@ -2655,10 +2658,11 @@ a.subservice-item:hover {
 }
 
 .project-cta-intro a {
-  color: var(--foreground);
+  color: var(--brand-blue);
 }
 
 .project-cta-intro a:hover {
+  color: var(--brand-blue-hover);
   text-decoration: underline;
 }
 
