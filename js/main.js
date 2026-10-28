@@ -763,9 +763,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design, Graphic Design & Design + Build — 2020',
         service: 'Interior Design, Graphic Design & Design + Build',
         discipline: 'interiors',
-        imageUrl: 'assets/images/5aap/5aap-5.jpg',
-        imageUrlDesktop: 'assets/images/5aap/5aap-5.jpg',
-        imageMobileUrl: 'assets/images/5aap/5aap-5-mobile.jpg',
+        imageUrl: 'assets/images/5aap/EnCDoTBXEAAqKsO.jpg',
+        imageUrlDesktop: 'assets/images/5aap/EnCDoTBXEAAqKsO.jpg',
+        imageMobileUrl: 'assets/images/5aap/EnCDoTBXEAAqKsO-mobile.jpg',
         projectUrl: '5aap.html',
         desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
         specs: {
