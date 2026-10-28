@@ -650,15 +650,6 @@
       "onArchivePage": true,
       "plates": 9
     },
-    "product-mlky.html": {
-      "slug": "product-mlky",
-      "title": "MLKY",
-      "year": "2021",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
     "product-mound.html": {
       "slug": "product-mound",
       "title": "MOUND",
@@ -1990,6 +1981,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 1
+    },
+    "product-mlky.html": {
+      "slug": "product-mlky",
+      "title": "MLKY",
+      "year": "2021",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 3
     },
     "white-house.html": {
       "slug": "white-house",

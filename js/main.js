@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'product-1h.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-line-e-float-i.html': ['design', 'studio-projects', 'vfx-cgi'],
-    'product-mlky.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-mound.html': ['design', 'vfx-cgi'],
     'product-s-age.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-sp001.html': ['design', 'studio-projects', 'vfx-cgi'],
@@ -4198,54 +4197,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'RDVS Studios',
           year: '2020',
-        }
-      },
-      {
-        id: 'product-mlky',
-        title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-mlky-1.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-mlky-1-mobile.jpg',
-        projectUrl: 'product-mlky.html',
-        desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2021',
-        }
-      },
-      {
-        id: 'product-mlky-plate2',
-        title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-mlky-2.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-mlky-2.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-mlky-2-mobile.jpg',
-        projectUrl: 'product-mlky.html',
-        desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2021',
-        }
-      },
-      {
-        id: 'product-mlky-plate3',
-        title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-mlky-3.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-mlky-3.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-mlky-3-mobile.jpg',
-        projectUrl: 'product-mlky.html',
-        desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2021',
         }
       },
       {
