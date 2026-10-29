@@ -402,11 +402,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/barham/E9yFXncXEAEzLJ3.jpg',
-        imageUrlDesktop: 'assets/images/barham/E9yFXncXEAEzLJ3.jpg',
-        imageMobileUrl: 'assets/images/barham/E9yFXncXEAEzLJ3-mobile.jpg',
+        imageUrl: 'assets/images/barham/E9yFXncXEAEzLJ3-a.jpg',
+        imageUrlDesktop: 'assets/images/barham/E9yFXncXEAEzLJ3-a.jpg',
+        imageMobileUrl: 'assets/images/barham/E9yFXncXEAEzLJ3-a-mobile.jpg',
         projectUrl: '41-barham.html',
         desc: 'A minimalist architectural volume embracing high-contrast warm materiality, double-height ceiling voids, and seamless indoor-outdoor courtyards.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Architect Kofi Amankwah (Architecture), RDVS (Interior Design & 3D Visualization)',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'barham-daylight',
+        title: '41 Barham',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/barham/E9yFXncXEAEzLJ3-b.jpg',
+        imageUrlDesktop: 'assets/images/barham/E9yFXncXEAEzLJ3-b.jpg',
+        imageMobileUrl: 'assets/images/barham/E9yFXncXEAEzLJ3-b-mobile.jpg',
+        projectUrl: '41-barham.html',
+        desc: 'The same rear elevation in daylight, square-on above the lawn: the glass-railed first-floor balcony between the twin gables, dark window frames and a white hoarding across the foreground.',
         specs: {
           client: 'Imperial Homes',
           scope: 'Interior Design & 3D Visualization',
@@ -2597,9 +2616,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
         discipline: 'vfx',
-        imageUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
-        imageUrlDesktop: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
-        imageMobileUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1-mobile.jpg',
+        imageUrl: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
+        imageUrlDesktop: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
+        imageMobileUrl: 'assets/images/avalon/GuZ8So8WAAATDw8-mobile.jpg',
         projectUrl: 'avalon.html'
       },
       {
@@ -2608,9 +2627,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
         discipline: 'vfx',
-        imageUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
-        imageUrlDesktop: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
-        imageMobileUrl: 'assets/images/avalon/GdGKctIWgAAqaDe-mobile.jpg',
+        imageUrl: 'assets/images/avalon/GdOGAJlXYAEedq8.jpg',
+        imageUrlDesktop: 'assets/images/avalon/GdOGAJlXYAEedq8.jpg',
+        imageMobileUrl: 'assets/images/avalon/GdOGAJlXYAEedq8-mobile.jpg',
         projectUrl: 'avalon.html'
       },
       {
