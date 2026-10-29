@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'senya-resort.html': ['vfx-cgi'],
     'stanchart-hq.html': ['vfx-cgi'],
     'stark-glaube.html': ['design'],
+    'stellar-bar.html': ['design', 'vfx-cgi'],
     'swipe.html': ['bim', 'design', 'vfx-cgi'],
     'the-fitzgerald.html': ['design', 'vfx-cgi'],
     'the-hamlet-presentation.html': ['design', 'vfx-cgi'],
@@ -717,6 +718,63 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'stellar-bar-2',
+        title: 'Stellar Bar',
+        category: 'Interior Design & Architectural Visualization — 2013',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/stellar-bar/stellar-bar-2.jpg',
+        imageUrlDesktop: 'assets/images/stellar-bar/stellar-bar-2.jpg',
+        imageMobileUrl: 'assets/images/stellar-bar/stellar-bar-2-mobile.jpg',
+        projectUrl: 'stellar-bar.html',
+        desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
+        specs: {
+          client: 'Stellar Foods',
+          scope: 'Interior design and architectural visualization of a bar: seating plan, bar front, finishes and lighting scheme, resolved in photoreal renders before construction',
+          team: 'RDVS',
+          year: '2013',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'stellar-bar-3',
+        title: 'Stellar Bar',
+        category: 'Interior Design & Architectural Visualization — 2013',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/stellar-bar/stellar-bar-3.jpg',
+        imageUrlDesktop: 'assets/images/stellar-bar/stellar-bar-3.jpg',
+        imageMobileUrl: 'assets/images/stellar-bar/stellar-bar-3-mobile.jpg',
+        projectUrl: 'stellar-bar.html',
+        desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
+        specs: {
+          client: 'Stellar Foods',
+          scope: 'Interior design and architectural visualization of a bar: seating plan, bar front, finishes and lighting scheme, resolved in photoreal renders before construction',
+          team: 'RDVS',
+          year: '2013',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'stellar-bar',
+        title: 'Stellar Bar',
+        category: 'Interior Design & Architectural Visualization — 2013',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/stellar-bar/stellar-bar-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/stellar-bar/stellar-bar-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/stellar-bar/stellar-bar-1-desktop-mobile.jpg',
+        projectUrl: 'stellar-bar.html',
+        desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
+        specs: {
+          client: 'Stellar Foods',
+          scope: 'Interior design and architectural visualization of a bar: seating plan, bar front, finishes and lighting scheme, resolved in photoreal renders before construction',
+          team: 'RDVS',
+          year: '2013',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
       {
         id: '5aap-progress-plate1',
         title: '5AAP',

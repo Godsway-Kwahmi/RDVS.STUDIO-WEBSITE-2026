@@ -101,6 +101,15 @@
       "onArchivePage": true,
       "plates": 7
     },
+    "stellar-bar.html": {
+      "slug": "stellar-bar",
+      "title": "Stellar Bar",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
     "stark-glaube.html": {
       "slug": "stark-glaube",
       "title": "Stark Glaube",
@@ -1486,15 +1495,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 12
-    },
-    "stellar-bar.html": {
-      "slug": "stellar-bar",
-      "title": "Stellar Bar",
-      "year": "2013",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 4
     },
     "tedxharambee.html": {
       "slug": "tedxharambee",
