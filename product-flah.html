@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || 'dark';   // dark is the default (owner, 2026-10-23); the toggle still offers light and a saved choice still wins
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>FLAH &mdash; RDVS Studios</title>
+  <meta name="description" content="FLAH, a 2020 piece for the MIG line: a continuous line of light set into the wall, tracing a wide frame around the television above a floating console, shown as a bedroom render.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link nav-school">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link nav-archive">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="18.36"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-detail-container">
+    <a href="work.html" class="project-back-link">&larr; Back to all work</a>
+
+    <header class="project-hero-header">
+      <span class="project-meta-line">MIG / Furniture / Floating light frame &mdash; 2020</span>
+      <h1 class="project-page-title">FLAH</h1>
+    </header>
+
+    <div class="project-hero-media hero-fit-wide" style="aspect-ratio: 1080/617;">
+      <img width="1080" height="617" src="assets/images/mig/mig-flah-1.jpg" alt="FLAH in a bedroom render: a thin continuous line of warm white light set into the wall, tracing a wide rectangle around the wall-mounted television, with the floating console crossing its lower right, an abstract canvas above, a tan leather chair under the console and the bed in the foreground." class="project-hero-img">
+    </div>
+
+    <div class="project-content-grid">
+      <div class="project-story">
+        <p class="project-lead-text">A frame of light instead of a frame of timber: FLAH sets a continuous illuminated line into the wall and draws it around the screen, with the console floating below it and nothing built between the two. Designed by RDVS for the MIG line and shown as a CGI interior.</p>
+
+        <div class="project-body-text">
+          <p>FLAH is industrial design and product visualization in one piece: the studio designed it for its own MIG line and documented it as a bedroom render.</p>
+          <p>The element is a line of light recessed into the wall, describing a wide rectangle around the television. The screen hangs inside the outline rather than on a carcass, and the floating console crosses the frame's lower right and runs on to the corner, where a leather chair is turned under it. There is no surround, no cabinet and no visible fixing: the light itself is the frame.</p>
+          <p>The plate shows the piece installed rather than isolated &mdash; a pale plaster wall, an abstract canvas hung above the right of the frame, a vase of dark stems and a stack of books on the console, and the bed in the foreground carrying a decanter and a pile of magazines.</p>
+          <p>2020 is the date this listing carries for FLAH, the year recorded for the MIG pieces around it; the file itself carries a 2023 export stamp, which is not the design date.</p>
+        </div>
+      </div>
+
+      <aside class="project-specs-panel">
+        <div class="project-specs-grid">
+          <div class="project-spec-item">
+            <span class="project-spec-label">Client</span>
+            <span class="project-spec-val">RDVS Studios</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Line</span>
+            <span class="project-spec-val">MIG</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Type</span>
+            <span class="project-spec-val">Floating light frame</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Completion</span>
+            <span class="project-spec-val">2020</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Mounting</span>
+            <span class="project-spec-val">Wall-carried</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Light</span>
+            <span class="project-spec-val">A continuous line set into the wall</span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Services</span>
+            <span class="project-spec-val"><span class="project-services"><a class="project-service" href="work.html?service=industrial-design">Industrial &amp; Furniture Design</a><span class="project-service-sep">&middot;</span><a class="project-service" href="work.html?service=product-visualization">Product Visualization</a></span></span>
+          </div>
+          <div class="project-spec-item">
+            <span class="project-spec-label">Format</span>
+            <span class="project-spec-val">1 plate &middot; up to 1,080 px long edge</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="project-gallery-grid" aria-label="Product plates">
+      <div class="gallery-item gallery-item-full">
+        <img width="1080" height="617" src="assets/images/mig/mig-flah-1.jpg" alt="FLAH in a bedroom render: the illuminated line traced around the wall-mounted television, the floating console crossing the frame's lower right, an abstract canvas above and the tan leather chair turned under the console." class="gallery-img" loading="lazy">
+      </div>
+    </section>
+
+    <nav class="project-nav-footer" aria-label="Project pagination">
+      <span class="project-nav-item">
+        <a class="project-nav-thumb" href="product-1h.html" tabindex="-1" aria-hidden="true"><img src="assets/nav-thumbs/product-1h.jpg" width="320" height="200" alt="" loading="lazy" decoding="async"></a>
+        <a href="product-1h.html" class="project-nav-link">&larr; Previous: 1H</a>
+      </span>
+      <span class="project-nav-item">
+        <a class="project-nav-thumb" href="product-mound.html" tabindex="-1" aria-hidden="true"><img src="assets/nav-thumbs/product-mound.jpg" width="320" height="200" alt="" loading="lazy" decoding="async"></a>
+        <a href="product-mound.html" class="project-nav-link">Next: MOUND &rarr;</a>
+      </span>
+    </nav>
+    <section class="project-cta" aria-labelledby="project-cta-heading">
+      <h2 class="project-cta-heading" id="project-cta-heading">Start a conversation about your next project</h2>
+      <form class="contact-form project-cta-form" action="mailto:info@rdvs.studio" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="pi-name" class="form-label">Full Name</label>
+          <input type="text" id="pi-name" name="name" required class="form-input" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="pi-email" class="form-label">Email Address</label>
+          <input type="email" id="pi-email" name="email" required class="form-input" placeholder="name@domain.com">
+        </div>
+        <div class="form-group">
+          <label for="pi-discipline" class="form-label">Area of Interest</label>
+          <select id="pi-discipline" name="discipline" class="form-select">
+              <option value="" selected>Choose an area of interest</option>
+              <option value="art">Art</option>
+              <option value="bim">BIM</option>
+              <option value="competitions">Competitions</option>
+              <optgroup label="Design">
+                <option value="architecture-planning">Architectural Design</option>
+                <option value="art-direction">Art Direction</option>
+                <option value="web-design">Digital & Web Design</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="illustration">Illustration</option>
+                <option value="industrial-design">Industrial & Furniture Design</option>
+                <option value="interior-design">Interior Design</option>
+                <option value="motion-design">Motion Design</option>
+              </optgroup>
+              <optgroup label="Design + Build">
+                <option value="cost-engineering">Cost Engineering</option>
+                <option value="product-material-sourcing">Product and Material Sourcing</option>
+              </optgroup>
+              <option value="studio-projects">In-house</option>
+              <optgroup label="Photography">
+                <option value="architectural-photography">Architectural Photography</option>
+                <option value="drone-photography">Drone Photography</option>
+                <option value="principal-photography">Principal Photography</option>
+              </optgroup>
+              <optgroup label="VFX + CGI">
+                <option value="3d-animation">3D Animation</option>
+                <option value="architectural-visualization">Architectural Visualization</option>
+                <option value="match-moving">Match-moving</option>
+                <option value="photogrammetry">Photogrammetry</option>
+                <option value="product-visualization">Product Visualization</option>
+                <option value="tracking">Tracking</option>
+                <option value="virtual-reality">Virtual Reality (VR)</option>
+              </optgroup>
+              <option value="rdvschool">RDVSchool Masterclasses</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="pi-message" class="form-label">Project Brief or Message</label>
+          <textarea id="pi-message" name="message" required class="form-textarea" placeholder="Describe project scale, location, scope, or desired timeline..."></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Send inquiry</button>
+        <div class="project-cta-success" role="status" style="display:none; color: var(--foreground); font-size: 0.9375rem; margin-top: 12px; padding: 12px; border: 1px solid var(--border-color);">
+          Your mail app is opening with this inquiry addressed to <a href="mailto:info@rdvs.studio" style="color: var(--foreground);">info@rdvs.studio</a>. Send it from there and it reaches the studio. If nothing opened, write to us at that address.
+        </div>
+      </form>
+      <p class="project-cta-intro">Prefer to talk it through? Call <a href="tel:+233505624184">050 562 4184</a> or message the same number on <a href="https://wa.me/233505624184" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvstudiosgh" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/sanity-taxonomy.js"></script>
+  <script src="js/sanity-client.js"></script>
+  <script src="js/sanity-render.js"></script>
+  <script src="js/inquiry-form.js"></script>
+</body>
+</html>

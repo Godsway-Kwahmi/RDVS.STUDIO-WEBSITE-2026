@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
+    'product-flah.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-line-e-float-i.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-mound.html': ['design', 'vfx-cgi'],
@@ -4002,6 +4003,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'RDVS Studios',
           year: '2016',
+        }
+      },
+      {
+        id: 'product-flah',
+        title: 'FLAH',
+        category: 'Design · VFX + CGI — 2020',
+        service: 'Design · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-flah-1.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-flah-1.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-flah-1-mobile.jpg',
+        projectUrl: 'product-flah.html',
+        desc: 'A frame of light instead of a frame of timber: FLAH sets a continuous illuminated line into the wall and draws it around the screen, with the console floating below it and nothing built between the two. Designed by RDVS for the MIG line and shown as a CGI interior.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
         }
       },
       {

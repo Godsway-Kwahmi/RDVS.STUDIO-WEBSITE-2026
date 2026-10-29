@@ -123,6 +123,7 @@ export const TYPOLOGIES: string[] = [
   'Event Marketing',
   'Event Poster',
   'Experimental lighting',
+  'Floating light frame',
   'Floating media unit',
   'Furniture',
   'Furniture & Product Design',
@@ -172,7 +173,7 @@ export const TYPOLOGIES: string[] = [
  */
 export const PRODUCT_LINES: string[] = ['MIG']
 export const PRODUCT_TYPES: string[] = ['Accessories', 'Furniture', 'Lights']
-export const PRODUCT_KINDS: string[] = ['Desk', 'Experimental lighting', 'Floating media unit', 'Media wall', 'Reception desk', 'Sleeping pod', 'Tray & bench']
+export const PRODUCT_KINDS: string[] = ['Desk', 'Experimental lighting', 'Floating light frame', 'Floating media unit', 'Media wall', 'Reception desk', 'Sleeping pod', 'Tray & bench']
 
 /** The pools js/main.js's servicePools is drawn across, in its own order. */
 export interface SlidePoolOption {value: string; label: string}

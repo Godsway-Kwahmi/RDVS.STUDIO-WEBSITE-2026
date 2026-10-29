@@ -324,7 +324,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 17
+      "plates": 16
     },
     "ela-b.html": {
       "slug": "ela-b",
@@ -486,7 +486,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 2
+      "plates": 3
     },
     "3aap.html": {
       "slug": "3aap",
@@ -632,6 +632,15 @@
       "onArchivePage": true,
       "plates": 6
     },
+    "product-flah.html": {
+      "slug": "product-flah",
+      "title": "FLAH",
+      "year": "2020",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 1
+    },
     "product-hg-desk.html": {
       "slug": "product-hg-desk",
       "title": "HG-DESK",
@@ -648,7 +657,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 9
+      "plates": 12
     },
     "product-mound.html": {
       "slug": "product-mound",
