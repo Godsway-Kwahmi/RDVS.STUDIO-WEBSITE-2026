@@ -4090,6 +4090,54 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-11.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-11.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-11-mobile.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate4',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-12.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-12.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-12-mobile.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate5',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-1.jpg',
+        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-1.jpg',
+        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-1-mobile.jpg',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate6',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
         imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-2.jpg',
         imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-2-mobile.jpg',
@@ -4101,7 +4149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate4',
+        id: 'product-line-e-float-i-plate7',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -4117,7 +4165,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate5',
+        id: 'product-line-e-float-i-plate8',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -4133,7 +4181,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate6',
+        id: 'product-line-e-float-i-plate9',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -4149,7 +4197,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate7',
+        id: 'product-line-e-float-i-plate10',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -4165,7 +4213,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate8',
+        id: 'product-line-e-float-i-plate11',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
@@ -4181,7 +4229,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'product-line-e-float-i-plate9',
+        id: 'product-line-e-float-i-plate12',
         title: 'LINE E FLOAT I',
         category: 'Design · In-house · VFX + CGI — 2020',
         service: 'Design · In-house · VFX + CGI',
