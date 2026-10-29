@@ -4583,24 +4583,47 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (newsSlides.length + drawnProjects.length < TOTAL_SLIDE_BUDGET) {
     const leftovers = [];
     serviceKeys.forEach(key => groups[key].forEach(group => leftovers.push(...group)));
-    for (const entry of shuffled(leftovers)) {
+    const order = shuffled(leftovers);
+    // The leak this pass closes is that the top-up used to ask ONE question -- "is this work already on this
+    // deck?" -- while every other path in the rotation also asks "did the visitor just see it, or is its round
+    // still open?". So a slot filled here could hand back a work from the PREVIOUS deck. A probe over 4 seeds x
+    // 240 cycles found it and named the case (scratch/_rotation_clash_probe.py): product-hg-desk returned at
+    // deck 73 through the top-up after the motion draw underfilled. A topped-up slot is still a slide, and the
+    // owner's rule is that every slide comes back fresh -- so freshness is the ordering here, not a preference.
+    // Rounds are kept per service and a work can sit in two of them, so membership is tested through servicesOf.
+    const listed = (store, id) => servicesOf(id).some(service =>
+      (Array.isArray(store[service]) ? store[service] : []).includes(id));
+    // Three passes, most demanding first, each entered only while a slot is still open:
+    //   1. work no service has drawn this rotation AND the previous deck did not show;
+    //   2. the open round yields, but the deck the visitor just watched still does not;
+    //   3. anything this deck does not already carry.
+    // Pass 3 exists so a slot is never left empty: fourteen distinct works is the contract the order states,
+    // and a missing slide would be the worse failure. With 75 live works against 14 slots the first pass has
+    // always had enough to work with, which is what makes the repeat path a backstop rather than a routine.
+    const passes = [id => !listed(rotation.seen, id) && !listed(rotation.previous, id),
+                    id => !listed(rotation.previous, id),
+                    () => true];
+    for (const accept of passes) {
+      for (const entry of order) {
+        if (newsSlides.length + drawnProjects.length >= TOTAL_SLIDE_BUDGET) break;
+        const key = slideKey(entry);
+        // A top-up fills a MISSING slot, so it takes work this deck does not already carry. claimable() lets a
+        // second entry of a work through (MAX_PER_PROJECT), and an entry another service already drew would be
+        // claimable too -- either one would put a work on this deck twice and leave the slot it was meant to
+        // fill empty. The deck stays fourteen distinct projects.
+        if (shownThisDeck.has(key) || !claimable(entry) || !accept(key)) continue;
+        claim(entry);
+        drawnProjects.push(entry);
+        shownThisDeck.add(key);
+        // A topped-up work joins the round of every service that pools it, or the rotation would
+        // count it as unseen and hand it out again while its own round is still open.
+        servicesOf(key).forEach(service => {
+          const round = Array.isArray(rotation.seen[service]) ? rotation.seen[service] : [];
+          if (!round.includes(key)) round.push(key);
+          rotation.seen[service] = round;
+        });
+      }
       if (newsSlides.length + drawnProjects.length >= TOTAL_SLIDE_BUDGET) break;
-      const key = slideKey(entry);
-      // A top-up fills a MISSING slot, so it takes fresh work only. claimable() lets a second
-      // entry of a work through (MAX_PER_PROJECT), and an entry another service already drew
-      // would be claimable too -- either one would put a work on this deck twice and leave the
-      // slot it was meant to fill empty. The deck stays fourteen distinct projects.
-      if (shownThisDeck.has(key) || !claimable(entry)) continue;
-      claim(entry);
-      drawnProjects.push(entry);
-      shownThisDeck.add(key);
-      // A topped-up work joins the round of every service that pools it, or the rotation would
-      // count it as unseen and hand it out again while its own round is still open.
-      servicesOf(key).forEach(service => {
-        const round = Array.isArray(rotation.seen[service]) ? rotation.seen[service] : [];
-        if (!round.includes(key)) round.push(key);
-        rotation.seen[service] = round;
-      });
     }
   }
 
