@@ -1263,9 +1263,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2018',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/cantonments/west-cantonments-2.jpg',
-        imageUrlDesktop: 'assets/images/cantonments/west-cantonments-2.jpg',
-        imageMobileUrl: 'assets/images/cantonments/west-cantonments-2-mobile.jpg',
+        imageUrl: 'assets/images/cantonments/west-cantonments-17.jpg',
+        imageUrlDesktop: 'assets/images/cantonments/west-cantonments-17.jpg',
+        imageMobileUrl: 'assets/images/cantonments/west-cantonments-17-mobile.jpg',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
