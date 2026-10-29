@@ -310,25 +310,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'purc-9-q7-r',
-        title: 'PURC',
-        category: 'Architectural Design — 2012',
-        service: 'Architectural Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/purc/E9NWq7VWUAAQIJr.jpg',
-        imageUrlDesktop: 'assets/images/purc/E9NWq7VWUAAQIJr.jpg',
-        imageMobileUrl: 'assets/images/purc/E9NWq7VWUAAQIJr-mobile.jpg',
-        projectUrl: 'purc.html',
-        desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
-        specs: {
-          client: 'Public Utilities Regulatory Commission',
-          scope: 'Architectural Design, interior design, architectural visualization, graphic design and design documentation',
-          team: 'Six-person winning team, incl. RDVS directors @niianerkwei and @kwahmi',
-          year: '2012',
-          disciplines: ['Architectural Design', 'Interior Design', 'Architectural Visualization', 'Graphic Design', 'Design Documentation']
-        }
-      },
-      {
         id: 'funko-ridge-5',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
@@ -489,6 +470,25 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'purc-9-zm-pb',
+        title: 'PURC',
+        category: 'Architectural Design — 2012',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/purc/E9OZmPJXMAUyrpB.jpg',
+        imageUrlDesktop: 'assets/images/purc/E9OZmPJXMAUyrpB.jpg',
+        imageMobileUrl: 'assets/images/purc/E9OZmPJXMAUyrpB-mobile.jpg',
+        projectUrl: 'purc.html',
+        desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
+        specs: {
+          client: 'Public Utilities Regulatory Commission',
+          scope: 'Architectural Design, interior design, architectural visualization, graphic design and design documentation',
+          team: 'Six-person winning team, incl. RDVS directors @niianerkwei and @kwahmi',
+          year: '2012',
+          disciplines: ['Architectural Design', 'Interior Design', 'Architectural Visualization', 'Graphic Design', 'Design Documentation']
         }
       },
       {
