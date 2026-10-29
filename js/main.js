@@ -2436,9 +2436,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2013',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/fule/fule-1.jpg',
-        imageUrlDesktop: 'assets/images/fule/fule-1.jpg',
-        imageMobileUrl: 'assets/images/fule/fule-1-mobile.jpg',
+        imageUrl: 'assets/images/fule/fule-6.jpg',
+        imageUrlDesktop: 'assets/images/fule/fule-6.jpg',
+        imageMobileUrl: 'assets/images/fule/fule-6-mobile.jpg',
         projectUrl: 'fule.html',
         desc: 'Eight architectural visualization plates from 2013 for a private duplex in Accra, made by RDVS. Design: street and courtyard exteriors, then bedroom, kitchen and living room interiors in warm oak and pale neutrals.',
         specs: {
