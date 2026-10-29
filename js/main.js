@@ -2364,28 +2364,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'ttd.html'
       },
       {
-        id: 'the-fitzgerald-uj-vru-u-l',
-        title: 'The Fitzgerald',
-        category: 'Event Space Interiors — 2022',
-        service: 'Event Space Interiors',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl.jpg',
-        imageUrlDesktop: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl.jpg',
-        imageMobileUrl: 'assets/images/the-fitzgerald/EujCvruXUAEuVPl-mobile.jpg',
-        projectUrl: 'the-fitzgerald.html'
-      },
-      {
-        id: 'the-fitzgerald-uj-v4a-g',
-        title: 'The Fitzgerald',
-        category: 'Event Space Interiors — 2022',
-        service: 'Event Space Interiors',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI.jpg',
-        imageUrlDesktop: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI.jpg',
-        imageMobileUrl: 'assets/images/the-fitzgerald/EujCv4aWQAATgKI-mobile.jpg',
-        projectUrl: 'the-fitzgerald.html'
-      },
-      {
         id: 'stanchart-hq-3',
         title: 'Stanchart HQ',
         category: 'Architectural Visualization — 2010',
