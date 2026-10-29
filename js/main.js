@@ -3709,9 +3709,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Motion Design — 2015',
         service: 'Motion Design',
         discipline: 'motion',
-        imageUrl: 'assets/images/elo-tv/elo-tv-07.jpg',
-        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-07.jpg',
-        imageMobileUrl: 'assets/images/elo-tv/elo-tv-07-mobile.jpg',
+        imageUrl: 'assets/images/elo-tv/elo-tv-16.jpg',
+        imageUrlDesktop: 'assets/images/elo-tv/elo-tv-16.jpg',
+        imageMobileUrl: 'assets/images/elo-tv/elo-tv-16-mobile.jpg',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
