@@ -299,6 +299,15 @@
       "onArchivePage": true,
       "plates": 33
     },
+    "fule.html": {
+      "slug": "fule",
+      "title": "Fule",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
     "frontier-filling-station.html": {
       "slug": "frontier-filling-station",
       "title": "Frontier Filling Station",
@@ -1405,15 +1414,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 18
-    },
-    "fule.html": {
-      "slug": "fule",
-      "title": "Fule",
-      "year": "2013",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 8
     },
     "haven-project.html": {
       "slug": "haven-project",

@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
     'empire-tower.html': ['design', 'vfx-cgi'],
+    'fule.html': ['vfx-cgi'],
     'frontier-filling-station.html': ['design', 'vfx-cgi'],
     'funko-ridge.html': ['design'],
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
@@ -2429,6 +2430,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'fule-1',
+        title: 'Fule',
+        category: 'Architectural Visualization — 2013',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/fule/fule-1.jpg',
+        imageUrlDesktop: 'assets/images/fule/fule-1.jpg',
+        imageMobileUrl: 'assets/images/fule/fule-1-mobile.jpg',
+        projectUrl: 'fule.html',
+        desc: 'Eight architectural visualization plates from 2013 for a private duplex in Accra, made by RDVS. Design: street and courtyard exteriors, then bedroom, kitchen and living room interiors in warm oak and pale neutrals.',
+        specs: {
+          client: 'Fule Badoe',
+          scope: '3D architectural visualization: exterior street, courtyard and garden views, plus interior renders of the bedroom, kitchen and two living spaces.',
+          team: 'RDVS. DESIGN',
+          year: '2013',
+          disciplines: '[\'Architectural Visualization\']'
+        }
+      },
       {
         id: 'ttd-zv-h-s-3ll',
         title: 'TTD',
