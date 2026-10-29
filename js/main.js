@@ -4510,10 +4510,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // A work now contributes up to three entries to the pool — its film, a GIF, its best
   // stills — so the draw is over PROJECTS, not entries: each service's entries are grouped
-  // by work, a work is picked at random, and one entry is taken from inside its group.
-  // Selecting entries directly would make a work with three entries three times as likely
-  // to show as a work with one. A work may still appear twice per deck (MAX_PER_PROJECT),
-  // never on consecutive slides, and never next to its own news slide.
+  // by work, a work is picked at random, and exactly one entry of it reaches the deck. So the
+  // fourteen slides carry fourteen DISTINCT works; selecting entries directly would also make
+  // a work with three entries three times as likely to show as a work with one.
+  // MAX_PER_PROJECT stays as the claim map's ceiling -- news keys are seeded with it so a news
+  // work can never also be drawn as a project -- and `shownThisDeck` is what keeps a work to
+  // one slide inside a deck.
   const slideKey = (entry) => entry.projectUrl || entry.id || entry.title;
   const MAX_PER_PROJECT = 2;
   const claims = new Map(newsSlides.map(entry => [slideKey(entry), MAX_PER_PROJECT]));
@@ -4523,8 +4525,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     claims.set(key, (claims.get(key) || 0) + 1);
   };
 
-  // Groups come from drawOf(), which already shuffles the pool, so the entry sitting at the
-  // head of a group is a random pick from that work's media.
+  // Groups come from drawOf(), which already shuffles the pool, so a group's order is random
+  // too; the entry itself is then picked by index at draw time (see the draw loop below), so a
+  // work that returns on a later cycle can come back on any of its files.
   function groupsOf(key) {
     const groups = new Map();
     for (const entry of drawOf(key)) {
@@ -4537,7 +4540,74 @@ document.addEventListener('DOMContentLoaded', async () => {
   const groups = {};
   serviceKeys.forEach(key => { groups[key] = groupsOf(key); });
 
+  // Owner order, 2026-10-29: "for each slide on the homepage slideshow, cycle through a
+  // different project for each 14 project slides + 1 news slide cycle so that every slide
+  // stays fresh" -- and, on the same day, "also randomize cycles and randomize entries for
+  // each cycle". So a deck is fourteen projects plus the news slide, and every deck is a
+  // RANDOM draw within three rules that keep it fresh:
+  //   1. each service fills its quota by shuffling the works it has not shown in its open
+  //      round, so the fourteen names (and which service takes the odd slot) change every
+  //      cycle instead of following a fixed walk;
+  //   2. no work repeats until its service's round is complete, and the previous deck's
+  //      works are held out even when a round resets, so consecutive cycles share no project;
+  //   3. the ENTRY is re-drawn every cycle too: a work ships several files (a film, a GIF,
+  //      its plates), and one uniform pick from its group is taken at draw time -- so the same
+  //      project comes back on a different frame or film instead of pinning the first one.
+  // The play order is shuffled per cycle as well, and the news slide still closes every deck.
+  const DECK_ROTATION_KEY = 'rdvs-deck-rotation-v2';
+  const rotation = (() => {
+    try {
+      const stored = JSON.parse(localStorage.getItem(DECK_ROTATION_KEY) || 'null');
+      if (stored && typeof stored === 'object' && stored.seen && typeof stored.seen === 'object') {
+        return { seen: stored.seen, previous: stored.previous || {} };
+      }
+    } catch (e) {
+      // storage blocked: a plain draw, never a blank deck
+    }
+    return { seen: {}, previous: {} };
+  })();
+  function saveRotation() {
+    try { localStorage.setItem(DECK_ROTATION_KEY, JSON.stringify(rotation)); } catch (e) {}
+  }
+  // Five works are pooled under two disciplines. The visitor who has seen one has seen it, so
+  // a drawn work is recorded against every service that pools it.
+  function servicesOf(id) {
+    return serviceKeys.filter(key => groups[key].has(id));
+  }
+  // The next `quota` works for one service: finish the open round first, then open a new one
+  // when the round is exhausted -- never taking a work the previous deck showed, and never a
+  // work another service already drew into this deck. Returns the picks and the round state
+  // they belong to, so the caller commits only what it actually drew.
+  function nextWorks(key, quota, used) {
+    const ids = [...groups[key].keys()];
+    // Stale names -- works archived or renamed since they were shown -- would sit in the
+    // round forever and make the rotation skip a real work, so prune both lists against the
+    // pool that exists now.
+    const clamp = list => (Array.isArray(list) ? list : []).filter(id => ids.includes(id));
+    let round = clamp(rotation.seen[key]);
+    const previous = clamp(rotation.previous[key]);
+    let base = round.slice();
+    const picks = [];
+    const take = (from) => {
+      for (const id of shuffled(from)) {
+        if (picks.length >= quota) break;
+        picks.push(id);
+        round.push(id);
+      }
+    };
+    take(ids.filter(id => !round.includes(id) && !previous.includes(id) && !used.has(id)));
+    if (picks.length < quota) {
+      // The round is complete. The next one opens with the previous deck's works held at its
+      // back, so the reset itself cannot replay the names the visitor just saw.
+      base = previous.slice();
+      round = base.slice();
+      take(ids.filter(id => !round.includes(id) && !used.has(id) && !picks.includes(id)));
+    }
+    return { picks, base, round };
+  }
+
   const drawnProjects = [];
+  const shownThisDeck = new Set(newsSlides.map(entry => slideKey(entry)));
   // Which service absorbs the odd slot is part of the draw as well, so the split of the
   // deck is not pinned to the order of serviceKeys.
   const serviceOrder = shuffled(serviceKeys);
@@ -4545,17 +4615,25 @@ document.addEventListener('DOMContentLoaded', async () => {
   serviceOrder.forEach(key => {
     const quota = basePerService + (remainder > 0 ? 1 : 0);
     if (remainder > 0) remainder--;
-
-    let taken = 0;
-    for (const id of shuffled([...groups[key].keys()])) {
-      if (taken >= quota) break;
+    const plan = nextWorks(key, quota, shownThisDeck);
+    const drawn = [];
+    for (const id of plan.picks) {
       const group = groups[key].get(id);
-      if (!group.length || !claimable(group[0])) continue;
-      const entry = group.pop();
+      if (!group || !group.length) continue;
+      // The ENTRY is drawn fresh every cycle: a work ships several files (its film, a GIF,
+      // its plates), so one uniform pick from its group means the same project comes back on
+      // a different frame or film next time round instead of pinning the file it first showed.
+      const at = Math.floor(Math.random() * group.length);
+      const entry = group[at];
+      if (!claimable(entry)) continue;
+      group.splice(at, 1);
       claim(entry);
       drawnProjects.push(entry);
-      taken++;
+      shownThisDeck.add(id);
+      drawn.push(id);
     }
+    // Commit what was drawn, not what was attempted: a pick skipped here must stay unseen.
+    rotation.seen[key] = [...plan.base, ...drawn];
   });
 
   // Top-up only fires when a draw underfills. The leftovers from every service are pooled
@@ -4565,11 +4643,39 @@ document.addEventListener('DOMContentLoaded', async () => {
     serviceKeys.forEach(key => groups[key].forEach(group => leftovers.push(...group)));
     for (const entry of shuffled(leftovers)) {
       if (newsSlides.length + drawnProjects.length >= TOTAL_SLIDE_BUDGET) break;
-      if (!claimable(entry)) continue;
+      const key = slideKey(entry);
+      // A top-up fills a MISSING slot, so it takes fresh work only. claimable() lets a second
+      // entry of a work through (MAX_PER_PROJECT), and an entry another service already drew
+      // would be claimable too -- either one would put a work on this deck twice and leave the
+      // slot it was meant to fill empty. The deck stays fourteen distinct projects.
+      if (shownThisDeck.has(key) || !claimable(entry)) continue;
       claim(entry);
       drawnProjects.push(entry);
+      shownThisDeck.add(key);
+      // A topped-up work joins the round of every service that pools it, or the rotation would
+      // count it as unseen and hand it out again while its own round is still open.
+      servicesOf(key).forEach(service => {
+        const round = Array.isArray(rotation.seen[service]) ? rotation.seen[service] : [];
+        if (!round.includes(key)) round.push(key);
+        rotation.seen[service] = round;
+      });
     }
   }
+
+  // Record what this deck showed, per service, so the next deck holds those works out of its
+  // first pass. A top-up pick counts too, or the next deck could replay it.
+  const drawnKeys = new Set(drawnProjects.map(entry => slideKey(entry)));
+  const previous = {};
+  serviceKeys.forEach(key => {
+    previous[key] = [...groups[key].keys()].filter(id => drawnKeys.has(id));
+  });
+  rotation.previous = previous;
+  // The draw time is part of the record: a probe (and the visitor's own history) can see that
+  // the deck was drawn on this load rather than restored from the last one.
+  rotation.at = Date.now();
+  // Persist before the deck paints: the next deck -- the automatic reload, or the visitor's
+  // next visit -- must start after these fourteen, not replay them.
+  saveRotation();
 
   // News items always run LAST (owner order, 2026-10-22 — they led the deck before); the works
   // before them play in random order, with a swap pass so the same work never occupies two
