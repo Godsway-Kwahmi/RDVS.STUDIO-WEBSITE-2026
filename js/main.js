@@ -3088,9 +3088,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Graphic Design & 3D Visualization — 2017',
         service: 'Graphic Design & 3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/mtn-hq/mtn-hq-17.jpg',
-        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-17.jpg',
-        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-17-mobile.jpg',
+        imageUrl: 'assets/images/mtn-hq/mtn-hq-19.jpg',
+        imageUrlDesktop: 'assets/images/mtn-hq/mtn-hq-19.jpg',
+        imageMobileUrl: 'assets/images/mtn-hq/mtn-hq-19-mobile.jpg',
         projectUrl: 'mtn.html',
         desc: 'Environmental graphics and way-finding pitch for MTN House, Accra — a system built on the SIM card and paper-plane motif, explored through pictograms, signage, kiosks and 3D visualization.',
         specs: {
