@@ -3846,6 +3846,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   // burying a piece of furniture inside the VFX pool.
   // Every still and every film a product page renders is pooled, not just the header,
   // so a plate deeper in the gallery can reach the deck too (user, 2026-10-05).
+  // Named frames the owner keeps off the homepage are subtracted first
+  // (scratch/_slide_pool_exclusions.py; S-AGE plates 3-5, user, 2026-10-25).
+  // LINE E FLOAT I answers the standard window instead -- every film, the header and the
+  // first two plates (user, 2026-10-29; _slide_frame_window.STANDARD_WINDOW).
   // scratch/_build_product_pool.py rebuilds this block from the pages themselves.
   products: {
     name: 'Product Design',
@@ -4110,150 +4114,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-line-e-float-i-11.jpg',
         imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-11.jpg',
         imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-11-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate4',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-12.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-12.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-12-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate5',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-1.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-1.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-1-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate6',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-2.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-2.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-2-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate7',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-3.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-3.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-3-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate8',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-4.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-4.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-4-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate9',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-5.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-5.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-5-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate10',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-8.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-8.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-8-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate11',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-9.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-9.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-9-mobile.jpg',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate12',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-10.jpg',
-        imageUrlDesktop: 'assets/images/mig/mig-line-e-float-i-10.jpg',
-        imageMobileUrl: 'assets/images/mig/mig-line-e-float-i-10-mobile.jpg',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
