@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'brownies-place.html': ['design', 'vfx-cgi'],
     'caustics-rnd.html': ['studio-projects', 'vfx-cgi'],
     'ceeander.html': ['design', 'vfx-cgi'],
-    'chocolate.html': ['design'],
     'csm.html': ['design', 'vfx-cgi'],
     'd-e-t-a-i-l-s.html': ['studio-projects', 'vfx-cgi'],
     'dela-anyaa.html': ['design'],
@@ -2708,25 +2707,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'chocolate',
-        title: 'Chocolate',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/chocolate/chocolate-13.jpg',
-        imageUrlDesktop: 'assets/images/chocolate/chocolate-13.jpg',
-        imageMobileUrl: 'assets/images/chocolate/chocolate-13-mobile.jpg',
-        projectUrl: 'chocolate.html',
-        desc: 'Logo design for Chocolate by Kwaku Bediako, a fashion design house in Ghana — a dripping C monogram drawn from a couturier’s dress form, paired with a script wordmark, a winged badge variant, a corporate typeface, stationery, and the badge cast as metal hardware on the house’s footwear and leatherwear.',
-        specs: {
-          client: 'Chocolate by Kwaku Bediako',
-          scope: 'Logo Design, Brand Identity, Corporate Typeface, Stationery & Application',
-          team: 'RDVS Team',
-          year: '2014',
-          disciplines: ['Graphic Design', 'Brand Identity']
-        }
-      },
-      {
         id: 'glow-in-the-dark',
         title: 'Glow in the Dark',
         category: 'Graphic Design — 2014',
@@ -3272,44 +3252,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Graphic Design, Logo Design & Brand Identity',
           team: 'Kofi Tetteh (Concept + Design)',
           year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'chocolate-plate1',
-        title: 'Chocolate',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/chocolate/chocolate-14.jpg',
-        imageUrlDesktop: 'assets/images/chocolate/chocolate-14.jpg',
-        imageMobileUrl: 'assets/images/chocolate/chocolate-14-mobile.jpg',
-        projectUrl: 'chocolate.html',
-        desc: 'Logo design for Chocolate by Kwaku Bediako, a fashion design house in Ghana — a dripping C monogram drawn from a couturier’s dress form, paired with a script wordmark, a winged badge variant, a corporate typeface, stationery, and the badge cast as metal hardware on the house’s footwear and leatherwear.',
-        specs: {
-          client: 'Chocolate by Kwaku Bediako',
-          scope: 'Logo Design, Brand Identity, Corporate Typeface, Stationery & Application',
-          team: 'RDVS Team',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'chocolate-plate2',
-        title: 'Chocolate',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/chocolate/chocolate-15.jpg',
-        imageUrlDesktop: 'assets/images/chocolate/chocolate-15.jpg',
-        imageMobileUrl: 'assets/images/chocolate/chocolate-15-mobile.jpg',
-        projectUrl: 'chocolate.html',
-        desc: 'Logo design for Chocolate by Kwaku Bediako, a fashion design house in Ghana — a dripping C monogram drawn from a couturier’s dress form, paired with a script wordmark, a winged badge variant, a corporate typeface, stationery, and the badge cast as metal hardware on the house’s footwear and leatherwear.',
-        specs: {
-          client: 'Chocolate by Kwaku Bediako',
-          scope: 'Logo Design, Brand Identity, Corporate Typeface, Stationery & Application',
-          team: 'RDVS Team',
-          year: '2014',
           disciplines: '[\'Graphic Design\']'
         }
       },

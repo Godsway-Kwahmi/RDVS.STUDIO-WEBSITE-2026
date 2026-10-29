@@ -389,15 +389,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "chocolate.html": {
-      "slug": "chocolate",
-      "title": "Chocolate",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 15
-    },
     "ceeander.html": {
       "slug": "ceeander",
       "title": "Ceeander Ident",
@@ -1576,6 +1567,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
+    },
+    "chocolate.html": {
+      "slug": "chocolate",
+      "title": "Chocolate",
+      "year": "2014",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 15
     },
     "enda-accra-mall.html": {
       "slug": "enda-accra-mall",
