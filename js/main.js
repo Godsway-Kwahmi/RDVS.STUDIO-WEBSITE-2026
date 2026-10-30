@@ -3057,10 +3057,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         desc: 'BIM modelling and architectural visualization for the National Petroleum Authority s open-plan office   five plates of a white, black and grey floorplate carried by one blue brand wall, built around an interior scheme by Newland Interiors.',
         specs: {
           client: 'National Petroleum Authority',
-          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors',
+          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors. Deliverables: 3D renders, measured and working drawings',
           team: 'RDVS Team',
           year: '2022',
-          disciplines: '[\'Architectural Visualization   BIM\']'
+          interiorDesign: 'Newland Interiors',
+          deliverables: '3D renders, measured and working drawings',
+          disciplines: ['BIM', 'Architectural Visualization']
         }
       },
       {
@@ -3076,10 +3078,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         desc: 'BIM modelling and architectural visualization for the National Petroleum Authority s open-plan office   five plates of a white, black and grey floorplate carried by one blue brand wall, built around an interior scheme by Newland Interiors.',
         specs: {
           client: 'National Petroleum Authority',
-          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors',
+          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors. Deliverables: 3D renders, measured and working drawings',
           team: 'RDVS Team',
           year: '2022',
-          disciplines: '[\'Architectural Visualization   BIM\']'
+          interiorDesign: 'Newland Interiors',
+          deliverables: '3D renders, measured and working drawings',
+          disciplines: ['BIM', 'Architectural Visualization']
         }
       },
       {
