@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
     'empire-tower.html': ['design', 'vfx-cgi'],
+    'ert.html': ['vfx-cgi'],
     'fule.html': ['vfx-cgi'],
     'frontier-filling-station.html': ['design', 'vfx-cgi'],
     'funko-ridge.html': ['design'],
@@ -2430,6 +2431,66 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'ert',
+        title: 'ERT',
+        category: 'Architectural Visualization — 2017',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ert/ert-1.jpg',
+        imageUrlDesktop: 'assets/images/ert/ert-1.jpg',
+        imageMobileUrl: 'assets/images/ert/ert-1-mobile.jpg',
+        projectUrl: 'ert.html',
+        desc: 'Architectural visualization of ERT, a townhouse scheme by Mobius Architecture in Accra: three white cubic volumes with timber roof screens and a lit lap pool, seen at dusk.',
+        specs: {
+          client: 'Private Client',
+          architecture: 'Mobius Architecture',
+          scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: '[\'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'ert-plate1',
+        title: 'ERT',
+        category: 'Architectural Visualization — 2017',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ert/ert-2.jpg',
+        imageUrlDesktop: 'assets/images/ert/ert-2.jpg',
+        imageMobileUrl: 'assets/images/ert/ert-2-mobile.jpg',
+        projectUrl: 'ert.html',
+        desc: 'ERT from the drive at dusk: each white volume carries a board-formed concrete window bay and a planted timber pergola, cars parked under the cantilevers and bollard lights tracing the lawn edge.',
+        specs: {
+          client: 'Private Client',
+          architecture: 'Mobius Architecture',
+          scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: '[\'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'ert-plate2',
+        title: 'ERT',
+        category: 'Architectural Visualization — 2017',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ert/ert-3.jpg',
+        imageUrlDesktop: 'assets/images/ert/ert-3.jpg',
+        imageMobileUrl: 'assets/images/ert/ert-3-mobile.jpg',
+        projectUrl: 'ert.html',
+        desc: 'ERT corner house at dusk: the white cubic volume with its concrete chimney and full-height glazing, a timber Townhouses sign wall uplit at the left and an SUV under the carport.',
+        specs: {
+          client: 'Private Client',
+          architecture: 'Mobius Architecture',
+          scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: '[\'Architectural Visualization\']'
+        }
+      },
       {
         id: 'fule-1',
         title: 'Fule',
