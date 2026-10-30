@@ -2434,7 +2434,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'ert',
         title: 'ERT',
-        category: 'Architectural Visualization — 2017',
+        category: 'Architectural Visualization — 2015',
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-1.jpg',
@@ -2447,14 +2447,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           architecture: 'Mobius Architecture',
           scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
           team: 'RDVS Team',
-          year: '2017',
+          year: '2015',
           disciplines: '[\'Architectural Visualization\']'
         }
       },
       {
         id: 'ert-plate1',
         title: 'ERT',
-        category: 'Architectural Visualization — 2017',
+        category: 'Architectural Visualization — 2015',
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-2.jpg',
@@ -2467,14 +2467,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           architecture: 'Mobius Architecture',
           scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
           team: 'RDVS Team',
-          year: '2017',
+          year: '2015',
           disciplines: '[\'Architectural Visualization\']'
         }
       },
       {
         id: 'ert-plate2',
         title: 'ERT',
-        category: 'Architectural Visualization — 2017',
+        category: 'Architectural Visualization — 2015',
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-3.jpg',
@@ -2487,7 +2487,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           architecture: 'Mobius Architecture',
           scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
           team: 'RDVS Team',
-          year: '2017',
+          year: '2015',
           disciplines: '[\'Architectural Visualization\']'
         }
       },
