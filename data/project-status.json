@@ -128,6 +128,15 @@
       "onArchivePage": true,
       "plates": 3
     },
+    "smsgh.html": {
+      "slug": "smsgh",
+      "title": "SMSGH",
+      "year": "2013",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 12
+    },
     "senya-resort.html": {
       "slug": "senya-resort",
       "title": "Senya Resort",
@@ -163,6 +172,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 6
+    },
+    "palazzo.html": {
+      "slug": "palazzo",
+      "title": "Palazzo",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
     },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
@@ -326,6 +344,24 @@
       "onArchivePage": true,
       "plates": 4
     },
+    "enda-whm.html": {
+      "slug": "enda-whm",
+      "title": "Enda WHM",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 7
+    },
+    "enda-acm.html": {
+      "slug": "enda-acm",
+      "title": "Enda ACM",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
     "empire-tower.html": {
       "slug": "empire-tower",
       "title": "Empire Tower",
@@ -334,6 +370,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 7
+    },
+    "emerge-ident.html": {
+      "slug": "emerge-ident",
+      "title": "Emerge Co. Ltd Showreel",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 22
     },
     "elo-tv.html": {
       "slug": "elo-tv",
@@ -469,6 +514,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 1
+    },
+    "access-bank-iris.html": {
+      "slug": "access-bank-iris",
+      "title": "Access Bank Iris",
+      "year": "2018",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
     },
     "abl-reception.html": {
       "slug": "abl-reception",
@@ -1496,15 +1550,6 @@
       "onArchivePage": true,
       "plates": 2
     },
-    "smsgh.html": {
-      "slug": "smsgh",
-      "title": "SMSGH",
-      "year": "2013",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 12
-    },
     "tedxharambee.html": {
       "slug": "tedxharambee",
       "title": "TEDxHarambee",
@@ -1685,24 +1730,6 @@
       "onArchivePage": true,
       "plates": 53
     },
-    "emerge-ident.html": {
-      "slug": "emerge-ident",
-      "title": "Emerge Co. Ltd Showreel",
-      "year": "2015",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 22
-    },
-    "enda-acm.html": {
-      "slug": "enda-acm",
-      "title": "Enda ACM",
-      "year": "2015",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "harbour-pointe.html": {
       "slug": "harbour-pointe",
       "title": "Harbour Pointe",
@@ -1856,15 +1883,6 @@
       "onArchivePage": true,
       "plates": 5
     },
-    "enda-whm.html": {
-      "slug": "enda-whm",
-      "title": "Enda WHM",
-      "year": "2017",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "ghana-bbq-beer-festival.html": {
       "slug": "ghana-bbq-beer-festival",
       "title": "Ghana BBQ & Beer Festival",
@@ -1882,15 +1900,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 28
-    },
-    "palazzo.html": {
-      "slug": "palazzo",
-      "title": "Palazzo",
-      "year": "2017",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 4
     },
     "petrus.html": {
       "slug": "petrus",
@@ -1927,15 +1936,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 13
-    },
-    "access-bank-iris.html": {
-      "slug": "access-bank-iris",
-      "title": "Access Bank Iris",
-      "year": "2018",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 5
     },
     "adolph-s-wedding-invite.html": {
       "slug": "adolph-s-wedding-invite",

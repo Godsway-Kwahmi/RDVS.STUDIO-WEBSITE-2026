@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
     'abl-reception.html': ['design', 'vfx-cgi'],
+    'access-bank-iris.html': ['design', 'vfx-cgi'],
     'ackon-desk.html': ['vfx-cgi'],
     'aelius.html': ['design'],
     'afg.html': ['design', 'turnkey-build', 'vfx-cgi'],
@@ -77,7 +78,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     'el-dor.html': ['design', 'vfx-cgi'],
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
+    'emerge-ident.html': ['design', 'vfx-cgi'],
     'empire-tower.html': ['design', 'vfx-cgi'],
+    'enda-acm.html': ['design', 'vfx-cgi'],
+    'enda-whm.html': ['design'],
     'ert.html': ['vfx-cgi'],
     'fule.html': ['vfx-cgi'],
     'frontier-filling-station.html': ['design', 'vfx-cgi'],
@@ -101,6 +105,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
+    'palazzo.html': ['vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
     'product-flah.html': ['design', 'vfx-cgi'],
@@ -112,6 +117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'protea-hotel-airport.html': ['vfx-cgi'],
     'purc.html': ['design', 'turnkey-build'],
     'senya-resort.html': ['vfx-cgi'],
+    'smsgh.html': ['art', 'design', 'photography', 'vfx-cgi'],
     'stanchart-hq.html': ['vfx-cgi'],
     'stark-glaube.html': ['design'],
     'stellar-bar.html': ['design', 'vfx-cgi'],
@@ -292,6 +298,66 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'enda-whm',
+        title: 'Enda WHM',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/enda-whm/enda-whm-1.jpg',
+        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-1.jpg',
+        imageMobileUrl: 'assets/images/enda-whm/enda-whm-1-mobile.jpg',
+        projectUrl: 'enda-whm.html',
+        desc: 'Enda WHM dining room: an orange service bulkhead over a lit cake display at the left, a timber waffle ceiling with pale globe pendants above, and a backlit screen of bamboo culms glowing over the brick banquette at the right.',
+
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural design of the Enda WHM cafe: dining room and banquette wall, the backlit bamboo screen, the service bulkhead and the seating plan',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design']
+        }
+      },
+      {
+        id: 'enda-whm-plate1',
+        title: 'Enda WHM',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/enda-whm/enda-whm-2.jpg',
+        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-2.jpg',
+        imageMobileUrl: 'assets/images/enda-whm/enda-whm-2-mobile.jpg',
+        projectUrl: 'enda-whm.html',
+        desc: 'Enda WHM banquette wall: the backlit bamboo screen above a red brick dado, brown leather bench seating with oak tables and cube benches, and four globe pendants hung on long cords.',
+
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural design of the Enda WHM cafe: dining room and banquette wall, the backlit bamboo screen, the service bulkhead and the seating plan',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design']
+        }
+      },
+      {
+        id: 'enda-whm-plate2',
+        title: 'Enda WHM',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/enda-whm/enda-whm-4.jpg',
+        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-4.jpg',
+        imageMobileUrl: 'assets/images/enda-whm/enda-whm-4-mobile.jpg',
+        projectUrl: 'enda-whm.html',
+        desc: 'Enda WHM seating plan from above: oak tables laid with caddies and a sushi tray, leather banquettes running to the brick and bamboo screen, and a pink globe pendant dropping into frame over parquet flooring.',
+
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural design of the Enda WHM cafe: dining room and banquette wall, the backlit bamboo screen, the service bulkhead and the seating plan',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design']
+        }
+      },
       {
         id: 'purc-9-l1-ut',
         title: 'PURC',
@@ -739,6 +805,186 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'access-bank-iris',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-1.jpg',
+        imageUrlDesktop: 'assets/images/access-bank-iris/access-bank-iris-1.jpg',
+        imageMobileUrl: 'assets/images/access-bank-iris/access-bank-iris-1-mobile.jpg',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Visualization of a glass-fronted meeting room: mesh task chairs around a table, a red and orange geometric brand graphic with chevrons on the rear wall, and a full-height glazed partition reflecting the daylight from the window wall beyond.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate1',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-2.jpg',
+        imageUrlDesktop: 'assets/images/access-bank-iris/access-bank-iris-2.jpg',
+        imageMobileUrl: 'assets/images/access-bank-iris/access-bank-iris-2-mobile.jpg',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Executive office visualization with dark timber veneer and vertical slat walls, a white desk carrying a desktop computer and task lamp, grey carpet tiles, and a navy leather sofa in the foreground under recessed ceiling downlights.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate2',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-3.jpg',
+        imageUrlDesktop: 'assets/images/access-bank-iris/access-bank-iris-3.jpg',
+        imageMobileUrl: 'assets/images/access-bank-iris/access-bank-iris-3-mobile.jpg',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Open client lounge visualization: grey sofa and a round white coffee table in the centre, blue and orange accent chairs, yellow armchairs by the window, a timber slat wall with a green screen, planters and a circular ceiling feature.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-acm',
+        title: 'Enda ACM',
+        category: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization — 2015',
+        service: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-acm/enda-acm-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/enda-acm/enda-acm-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/enda-acm/enda-acm-1-desktop-mobile.jpg',
+        projectUrl: 'enda-acm.html',
+        desc: 'The servery: two curved-glass display cabinets set into a timber counter in front of an asymmetric grid of backlit bottle shelves, with dark walls papered in fine white line drawings of glassware and a glazed wall to the right',
+
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design, industrial design, graphic design and 3D visualization of the Enda cafe and Chinese fast-food restaurant: dining hall, banquettes, servery and bamboo screen',
+          team: 'RDVS',
+          year: '2015',
+          disciplines: ['Interior Design', 'Industrial Design', 'Graphic Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'enda-acm-plate1',
+        title: 'Enda ACM',
+        category: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization — 2015',
+        service: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-acm/enda-acm-2.jpg',
+        imageUrlDesktop: 'assets/images/enda-acm/enda-acm-2.jpg',
+        imageMobileUrl: 'assets/images/enda-acm/enda-acm-2-mobile.jpg',
+        projectUrl: 'enda-acm.html',
+        desc: 'Across the dining hall: low pale timber tables with matching block benches and banquettes in front of a dark wall carrying a backlit screen of uneven bamboo canes over a red brick dado, a dome of square timber coffering sunk into the ceiling above, and white globe pendants hung at varying heights',
+
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design, industrial design, graphic design and 3D visualization of the Enda cafe and Chinese fast-food restaurant: dining hall, banquettes, servery and bamboo screen',
+          team: 'RDVS',
+          year: '2015',
+          disciplines: ['Interior Design', 'Industrial Design', 'Graphic Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'enda-acm-plate2',
+        title: 'Enda ACM',
+        category: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization — 2015',
+        service: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-acm/enda-acm-3.jpg',
+        imageUrlDesktop: 'assets/images/enda-acm/enda-acm-3.jpg',
+        imageMobileUrl: 'assets/images/enda-acm/enda-acm-3-mobile.jpg',
+        projectUrl: 'enda-acm.html',
+        desc: 'The same hall from the other end: a long curved white ceiling swept with circular air diffusers and recessed squares dropping towards the timber coffered dome, runs of tables and block benches on a plank floor, the bamboo screen glowing along the far wall, and a glazed wall with planters in timber crates at the left',
+
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design, industrial design, graphic design and 3D visualization of the Enda cafe and Chinese fast-food restaurant: dining hall, banquettes, servery and bamboo screen',
+          team: 'RDVS',
+          year: '2015',
+          disciplines: ['Interior Design', 'Industrial Design', 'Graphic Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'smsgh',
+        title: 'SMSGH',
+        category: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization — 2013',
+        service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/smsgh/smsgh-1.jpg',
+        imageUrlDesktop: 'assets/images/smsgh/smsgh-1.jpg',
+        imageMobileUrl: 'assets/images/smsgh/smsgh-1-mobile.jpg',
+        projectUrl: 'smsgh.html',
+        desc: 'Visualization of the reception: full-height orange wall, dark desk with a white sms logo behind it, multicolour striped carpet, low black benches at the window and recessed ceiling panels over a cove-lit glass partition.',
+
+        specs: {
+          client: 'Hubtel',
+          scope: 'Interior design, graphic design, digital illustration and architectural visualization of the SMSGH workplace: reception, private offices and a breakout lounge',
+          team: 'RDVS. DESIGN',
+          year: '2013',
+          disciplines: ['Interior Design', 'Graphic Design', 'Digital Illustration', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'smsgh-plate1',
+        title: 'SMSGH',
+        category: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization — 2013',
+        service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/smsgh/smsgh-2.jpg',
+        imageUrlDesktop: 'assets/images/smsgh/smsgh-2.jpg',
+        imageMobileUrl: 'assets/images/smsgh/smsgh-2-mobile.jpg',
+        projectUrl: 'smsgh.html',
+        desc: 'Visualization of a private office: white desk with a computer and black task chairs, green accent wall with open shelving, warm timber floor and ceiling, cove lighting and an orange sofa in the foreground.',
+
+        specs: {
+          client: 'Hubtel',
+          scope: 'Interior design, graphic design, digital illustration and architectural visualization of the SMSGH workplace: reception, private offices and a breakout lounge',
+          team: 'RDVS. DESIGN',
+          year: '2013',
+          disciplines: ['Interior Design', 'Graphic Design', 'Digital Illustration', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'smsgh-plate2',
+        title: 'SMSGH',
+        category: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization — 2013',
+        service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/smsgh/smsgh-3.jpg',
+        imageUrlDesktop: 'assets/images/smsgh/smsgh-3.jpg',
+        imageMobileUrl: 'assets/images/smsgh/smsgh-3-mobile.jpg',
+        projectUrl: 'smsgh.html',
+        desc: 'Visualization of the breakout lounge: exposed timber ceiling beams and track lights, large colourful paintings on white walls, grey sofas, two yellow armchairs on a dark shag rug, black coffee table and white chairs beyond.',
+
+        specs: {
+          client: 'Hubtel',
+          scope: 'Interior design, graphic design, digital illustration and architectural visualization of the SMSGH workplace: reception, private offices and a breakout lounge',
+          team: 'RDVS. DESIGN',
+          year: '2013',
+          disciplines: ['Interior Design', 'Graphic Design', 'Digital Illustration', 'Architectural Visualization']
+        }
+      },
       {
         id: 'stellar-bar-2',
         title: 'Stellar Bar',
@@ -1972,9 +2218,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & 3D Visualization — 2014',
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/csm/csm-3.jpg',
-        imageUrlDesktop: 'assets/images/csm/csm-3.jpg',
-        imageMobileUrl: 'assets/images/csm/csm-3-mobile.jpg',
+        imageUrl: 'assets/images/csm/csm-4.jpg',
+        imageUrlDesktop: 'assets/images/csm/csm-4.jpg',
+        imageMobileUrl: 'assets/images/csm/csm-4-mobile.jpg',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -2431,6 +2677,66 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ],
     images: [
+      {
+        id: 'palazzo',
+        title: 'Palazzo',
+        category: '3D Visualization — 2017',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/palazzo/palazzo-1.jpg',
+        imageUrlDesktop: 'assets/images/palazzo/palazzo-1.jpg',
+        imageMobileUrl: 'assets/images/palazzo/palazzo-1-mobile.jpg',
+        projectUrl: 'palazzo.html',
+        desc: 'Palazzo at dusk, seen across the road: a two-storey glazed office block lit warm inside beside a taller black-framed retail pavilion, a planted wall uplit at the centre, cars parked along the front and red and white light trails streaking the foreground under sunset cloud',
+
+        specs: {
+          client: 'Imperial Homes',
+          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2017',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'palazzo-plate1',
+        title: 'Palazzo',
+        category: '3D Visualization — 2017',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/palazzo/palazzo-2.jpg',
+        imageUrlDesktop: 'assets/images/palazzo/palazzo-2.jpg',
+        imageMobileUrl: 'assets/images/palazzo/palazzo-2-mobile.jpg',
+        projectUrl: 'palazzo.html',
+        desc: 'Palazzo offices at dusk: two glazed storeys banded in dark fascia, desks, partitions and yellow accents lit inside, a white saloon and two dark cars parked in front and an uplit hedge at the right under pink cloud',
+
+        specs: {
+          client: 'Imperial Homes',
+          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2017',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'palazzo-plate2',
+        title: 'Palazzo',
+        category: '3D Visualization — 2017',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/palazzo/palazzo-3.jpg',
+        imageUrlDesktop: 'assets/images/palazzo/palazzo-3.jpg',
+        imageMobileUrl: 'assets/images/palazzo/palazzo-3-mobile.jpg',
+        projectUrl: 'palazzo.html',
+        desc: 'Palazzo entrance at night: a brick fin rising through the flat roofline over a white canopy and glazed lobby, a shelved office glowing above, an uplit planted wall at the left and three cars parked in front with starburst lights under a deep blue sky',
+
+        specs: {
+          client: 'Imperial Homes',
+          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2017',
+          disciplines: ['3D Visualization']
+        }
+      },
       {
         id: 'ert',
         title: 'ERT',
@@ -3538,6 +3844,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     name: 'Motion Design',
     videos: [
       {
+        id: 'emerge-ident-film',
+        title: 'Emerge Co. Ltd Showreel',
+        category: '3D Animation — 2015',
+        service: '3D Animation',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/emerge-ident/emerge-showreel.mp4',
+        videoUrlDesktop: 'assets/videos/emerge-ident/emerge-showreel.mp4',
+        videoMobileUrl: 'assets/videos/emerge-ident/emerge-showreel-mobile.mp4',
+        imageUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
+        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-08.jpg',
+        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-08-mobile.jpg',
+        projectUrl: 'emerge-ident.html',
+        desc: 'The showreel itself: 2 min 25 s of motion design and 3D animation at 1280x720, opening on the goldfish suspended against white.',
+
+        specs: {
+          client: 'Emerge Co. Ltd',
+          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
+          team: 'RDVS Studios',
+          year: '2015',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
         id: 'trumpet-africa-moonlit',
         title: 'Trumpet Africa Productions Ident',
         category: 'Broadcast — 2014',
@@ -3674,6 +4003,46 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     ],
     images: [
+      {
+        id: 'emerge-ident',
+        title: 'Emerge Co. Ltd Showreel',
+        category: '3D Animation — 2015',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/emerge-ident/emerge-ident-01.jpg',
+        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-01.jpg',
+        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-01-mobile.jpg',
+        projectUrl: 'emerge-ident.html',
+        desc: 'Emerge Co. Ltd Showreel — three goldfish turning inside the bowl',
+
+        specs: {
+          client: 'Emerge Co. Ltd',
+          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
+          team: 'RDVS Studios',
+          year: '2015',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
+        id: 'emerge-ident-plate1',
+        title: 'Emerge Co. Ltd Showreel',
+        category: '3D Animation — 2015',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/emerge-ident/emerge-ident-02.jpg',
+        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-02.jpg',
+        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-02-mobile.jpg',
+        projectUrl: 'emerge-ident.html',
+        desc: 'Emerge Co. Ltd Showreel — the bowl centred on white, fish inside',
+
+        specs: {
+          client: 'Emerge Co. Ltd',
+          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
+          team: 'RDVS Studios',
+          year: '2015',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
       {
         id: 'trumpet-africa-palette',
         title: 'Trumpet Africa Productions Ident',
