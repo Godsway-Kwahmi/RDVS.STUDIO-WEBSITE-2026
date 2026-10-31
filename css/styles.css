@@ -2731,7 +2731,13 @@ a.subservice-item:hover {
    where the platform ships one; where it does not (Windows has no thin Helvetica),
    the site's own loaded Geist 100 is the first fallback so the line still sets
    hairline-thin rather than dropping to a regular weight. One word at a time
-   takes the brand blue and hands over every minute (180 s cycle). */
+   takes the brand blue and hands over every minute (180 s cycle).
+   The owner's 1.2x drawing (2026-10-31) stretches the line vertically and grows
+   it UPWARD: the transform's origin sits on the baseline edge, so the footer and
+   the hairline above it do not move and no sibling reflows -- only the glyph box
+   gets taller (1872-wide probe: ink 185 -> 222 px, footer still at 265.59).
+   transform is a paint of the same geometry, so the 1872 px textLength span that
+   pins the line to the grid is untouched. */
 .site-tagline {
   display: block;
   width: calc(100% - (var(--grid-margin) * 2));
@@ -2745,6 +2751,8 @@ a.subservice-item:hover {
   letter-spacing: -0.045em;
   color: var(--foreground);
   text-rendering: geometricPrecision;
+  transform: scaleY(1.2);
+  transform-origin: 50% 100%;
 }
 
 .site-tagline text {
