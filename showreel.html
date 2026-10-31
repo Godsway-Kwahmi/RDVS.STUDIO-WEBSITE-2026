@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Showreel 2026 — RDVS Studios</title>
+  <meta name="description" content="RDVS 2026 Master Showreel — A 2-minute energetic motion showcase across architecture, spatial design, 3D visualization, and broadcast motion graphics.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .showreel-hero-section {
+      margin: 24px 0 48px 0;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      border: 1px solid var(--border-hairline, rgba(255, 255, 255, 0.1));
+      aspect-ratio: 16 / 9;
+    }
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .showreel-controls-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding: 12px 18px;
+      background: var(--card-bg, rgba(255, 255, 255, 0.03));
+      border: 1px solid var(--border-hairline, rgba(255, 255, 255, 0.08));
+      border-radius: 8px;
+      font-size: 0.875rem;
+    }
+    .reel-meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      color: var(--foreground);
+    }
+    .reel-meta-pill {
+      display: inline-block;
+      padding: 3px 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .reel-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn-reel-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--foreground);
+      background: var(--hover-bg, rgba(255, 255, 255, 0.08));
+      border: 1px solid var(--border-hairline, rgba(255, 255, 255, 0.12));
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-reel-action:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-1px);
+    }
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      margin: 36px 0 54px 0;
+    }
+    @media (min-width: 640px) {
+      .chapters-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .chapters-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .chapter-card {
+      padding: 18px 20px;
+      background: var(--card-bg, rgba(255, 255, 255, 0.02));
+      border: 1px solid var(--border-hairline, rgba(255, 255, 255, 0.07));
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .chapter-card:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      background: var(--hover-bg, rgba(255, 255, 255, 0.06));
+      transform: translateY(-2px);
+    }
+    .chapter-time {
+      font-size: 0.75rem;
+      font-family: monospace;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .chapter-title {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 6px;
+    }
+    .chapter-desc {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .tech-specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 40px 0;
+      font-size: 0.875rem;
+    }
+    .tech-specs-table th, .tech-specs-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-hairline, rgba(255, 255, 255, 0.08));
+    }
+    .tech-specs-table th {
+      color: var(--text-secondary);
+      font-weight: 500;
+      width: 30%;
+    }
+    .tech-specs-table td {
+      color: var(--foreground);
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="showreel.html" class="nav-link active">Showreel</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link nav-school">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">RDVS Showreel // 2026</h1>
+      <p class="page-subtitle">A 2-minute high-energy cut bridging computational architecture, 3D photorealistic CGI, luxury interior fit-out, and broadcast motion design.</p>
+    </header>
+
+    <section class="showreel-hero-section">
+      <div class="video-wrapper">
+        <video id="masterVideo" controls playsinline preload="auto" poster="scratch/overlays_helvetica/intro_card.png">
+          <source src="assets/videos/rdvs-showreel/rdvs-showreel-2026.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="showreel-controls-bar">
+        <div class="reel-meta-tag">
+          <span>RDVS STUDIO REEL</span>
+          <span class="reel-meta-pill">1080P MASTER</span>
+          <span class="reel-meta-pill">124 SECONDS</span>
+          <span class="reel-meta-pill">135 BPM</span>
+        </div>
+        <div class="reel-actions">
+          <a href="assets/videos/rdvs-showreel/rdvs-showreel-2026.mp4" download class="btn-reel-action">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Master MP4
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="about-section-heading">Showreel Chapters &amp; Acts</h2>
+      <p class="about-section-intro">Click any chapter to jump directly to its section in the showreel:</p>
+      
+      <div class="chapters-grid">
+        <div class="chapter-card" onclick="seekTo(0)">
+          <div class="chapter-time">00:00 — 00:14</div>
+          <div class="chapter-title">Act 0 // Awakening</div>
+          <div class="chapter-desc">Atmospheric synthesizer riser, studio typography lockup, Advantage Place skyscraper dusk descent, and computational wireframes.</div>
+        </div>
+
+        <div class="chapter-card" onclick="seekTo(14.4)">
+          <div class="chapter-time">00:14 — 00:45</div>
+          <div class="chapter-title">Act 1 // Architecture &amp; CGI</div>
+          <div class="chapter-desc">The Beat Drop! Tower Cascades vertical crane ascent, Weldment Panels metal facade, Akyea Residence luxury villa, and NPA masterplan.</div>
+        </div>
+
+        <div class="chapter-card" onclick="seekTo(45.0)">
+          <div class="chapter-time">00:45 — 01:10</div>
+          <div class="chapter-title">Act 2 // Spatial &amp; Interiors</div>
+          <div class="chapter-desc">Atmospheric breakdown. CSM executive boardroom, Nyla bookmatched Italian marble sanctuary, AFG workplace lighting, and VR 360 environments.</div>
+        </div>
+
+        <div class="chapter-card" onclick="seekTo(70.0)">
+          <div class="chapter-time">01:10 — 01:57</div>
+          <div class="chapter-title">Act 3 // Motion &amp; VFX</div>
+          <div class="chapter-desc">The Massive Second Drop! Trumpet Africa broadcast 3D particle simulation, Light Camera Visualize crane, Line &amp; Float kinetic experiments, and rapid-fire beat cuts.</div>
+        </div>
+
+        <div class="chapter-card" onclick="seekTo(117.7)">
+          <div class="chapter-time">01:57 — 02:04</div>
+          <div class="chapter-title">Act 4 // Studio Resolve</div>
+          <div class="chapter-desc">The official RDVS blue logo animation and website reveal (featured on Villa Aggregate), resolving with final musical fade to black.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="about-section-heading">Production Specifications</h2>
+      <table class="tech-specs-table">
+        <tbody>
+          <tr>
+            <th>Master Dimensions</th>
+            <td>1920 &times; 1080 (16:9 Full HD Master)</td>
+          </tr>
+          <tr>
+            <th>Frame Rate</th>
+            <td>30.00 fps progressive</td>
+          </tr>
+          <tr>
+            <th>Visual Compression</th>
+            <td>H.264 / AVC (CRF 17 Visually Lossless Master Profile, high-bitrate)</td>
+          </tr>
+          <tr>
+            <th>Audio Mastering</th>
+            <td>Stereo AAC, 320 kbps, 48 kHz Studio Quality</td>
+          </tr>
+          <tr>
+            <th>Soundtrack</th>
+            <td>The Last Point (Electronic Digital Beat, 135 BPM)</td>
+          </tr>
+          <tr>
+            <th>Typography</th>
+            <td>Helvetica Now (Display Black, ExtraBold, Bold, Medium, Regular, Light)</td>
+          </tr>
+          <tr>
+            <th>Artifact &amp; Watermark Cleaning</th>
+            <td>Original videos cleaned of third-party stamps, raw title cards, and corner Instagram badges using high-fidelity delogo/reframing algorithms.</td>
+          </tr>
+          <tr>
+            <th>Outro Identity</th>
+            <td>Seamless integration with official RDVS animated logo and website ending (from Villa Aggregate film).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <svg class="site-tagline" viewBox="0 0 1872 150" preserveAspectRatio="xMidYMid meet" role="img" aria-label="design . visualize . make" focusable="false"><text x="936" y="106" text-anchor="middle" textLength="1872" lengthAdjust="spacingAndGlyphs"><tspan class="st-w st-w1">design</tspan><tspan>&#160;.&#160;</tspan><tspan class="st-w st-w2">visualize</tspan><tspan>&#160;.&#160;</tspan><tspan class="st-w st-w3">make</tspan></text></svg>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 RDVS Studios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function seekTo(sec) {
+      var v = document.getElementById('masterVideo');
+      if (v) {
+        v.currentTime = sec;
+        v.play();
+      }
+    }
+  </script>
+</body>
+</html>

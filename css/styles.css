@@ -2713,6 +2713,66 @@ a.subservice-item:hover {
   }
 }
 
+/* Base wordmark — the owner's drawn "design . visualize . make", set as lowercase
+   SVG type above the footer hairline on every page that carries a footer. The
+   boldest Helvetica with the tightest kerning, centred and stretching edge to
+   edge across the page grid at every viewport (textLength pins the line to the
+   grid's content width). One word at a time takes the brand blue and hands over
+   every minute (180 s cycle). */
+.site-tagline {
+  display: block;
+  width: calc(100% - (var(--grid-margin) * 2));
+  max-width: calc(var(--max-width) - (var(--grid-margin) * 2));
+  margin: 96px auto 0;
+  height: auto;
+  overflow: visible;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Arial Black", sans-serif;
+  font-weight: 900;
+  font-size: 142px;
+  letter-spacing: -0.045em;
+  color: var(--foreground);
+  text-rendering: geometricPrecision;
+}
+
+.site-tagline text {
+  font: inherit;
+  fill: var(--foreground);
+}
+
+.site-tagline .st-w {
+  animation: st-word-hold 180s linear infinite;
+}
+
+.site-tagline .st-w2 {
+  animation-delay: -120s;
+}
+
+.site-tagline .st-w3 {
+  animation-delay: -60s;
+}
+
+@keyframes st-word-hold {
+  0%, 33.3333% {
+    fill: var(--brand-blue);
+  }
+  33.3334%, 100% {
+    fill: var(--foreground);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-tagline .st-w {
+    animation: none;
+  }
+  .site-tagline .st-w1 {
+    fill: var(--brand-blue);
+  }
+}
+
+.site-tagline + .site-footer {
+  margin-top: 0;
+}
+
 /* Minimal Footer */
 .site-footer {
   border-top: 1px solid var(--border-hairline);
