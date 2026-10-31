@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'csm.html': ['design', 'vfx-cgi'],
     'd-e-t-a-i-l-s.html': ['studio-projects', 'vfx-cgi'],
     'dela-anyaa.html': ['design'],
+    'design-express.html': ['vfx-cgi'],
     'dyv.html': ['design', 'vfx-cgi'],
     'ehr.html': ['design', 'vfx-cgi'],
     'el-dor.html': ['design', 'vfx-cgi'],
@@ -99,6 +100,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'lamu.html': ['vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
+    'marble-bath.html': ['vfx-cgi'],
     'margin.html': ['design', 'vfx-cgi'],
     'mig.html': ['design'],
     'moty.html': ['design', 'vfx-cgi'],
@@ -107,6 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
     'palazzo.html': ['vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
+    'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
     'product-flah.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
@@ -2678,6 +2681,66 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
+        id: 'design-express',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-1.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-1.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-1-mobile.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'A tall two-door wardrobe on a white ground: pale weathered-timber sides frame two satin doors scored with horizontal grooves and met by slim metal pull handles at the centre, and the unit stands on a low plinth casting a soft shadow',
+
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: ['Product Visualization']
+        }
+      },
+      {
+        id: 'design-express-plate1',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-2.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-2.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-2-mobile.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'Cover sheet for the set: black blocks lettered furniture visualization sit at the top left over the line DESIGNS BY DESIGN EXPRESS, and a low pale-oak sideboard with two sliding doors and narrow vertical recessed pulls stands at three-quarters on a white ground',
+
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: ['Product Visualization']
+        }
+      },
+      {
+        id: 'design-express-plate2',
+        title: 'Design Express',
+        category: 'Product Visualization — 2012',
+        service: 'Product Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/design-express/design-express-3.jpg',
+        imageUrlDesktop: 'assets/images/design-express/design-express-3.jpg',
+        imageMobileUrl: 'assets/images/design-express/design-express-3-mobile.jpg',
+        projectUrl: 'design-express.html',
+        desc: 'A tall cabinet: the upper half is open shelving in two bays lined in warm orange, and the lower half is a closed two-door cupboard in pale maple with a small chrome handle where the stiles meet',
+
+        specs: {
+          client: 'Design Express',
+          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
+          team: 'RDVS. DESIGN',
+          year: '2012',
+          disciplines: ['Product Visualization']
+        }
+      },
+      {
         id: 'palazzo',
         title: 'Palazzo',
         category: '3D Visualization — 2017',
@@ -3834,6 +3897,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/mig/mig-1h-2.jpg',
         imageMobileUrl: 'assets/images/mig/mig-1h-2-mobile.jpg',
         projectUrl: 'mig.html'
+      },
+      {
+        id: 'ppa-ghana-competition',
+        title: 'PPA Ghana Competition',
+        category: 'Interior Design & Architectural Visualization — 2010',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3.jpg',
+        imageUrlDesktop: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3.jpg',
+        imageMobileUrl: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3-mobile.jpg',
+        projectUrl: 'ppa-ghana-competition.html',
+        desc: 'A 2010 competition entry for the Public Procurement Authority of Ghana: RDVS supplied the interior design and 3D visualization for an eight-plate, twin-wing glazed headquarters designed by Tekton Consult.',
+        specs: {
+          client: 'Public Procurement Authority (PPA)',
+          scope: 'Interior design and 3D visualization of a competition entry: double-height reception, executive office and further reception views, each presented as a competition sheet with a CAD plan inset',
+          team: 'Tekton Consult (design); R.D+V.S (interior design and visualization)',
+          year: '2010',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'marble-bath',
+        title: 'Marble & Bath',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/marble-bath/marble-bath-1-desktop.jpg',
+        imageUrlDesktop: 'assets/images/marble-bath/marble-bath-1-desktop.jpg',
+        imageMobileUrl: 'assets/images/marble-bath/marble-bath-1-desktop-mobile.jpg',
+        projectUrl: 'marble-bath.html',
+        desc: 'Four interior visualizations of a master bathroom, made in 2015 for Samuel Adabi under Mobius Architecture: a marble-clad approach corridor, a floating walnut double vanity, a built-in tub and the dressing end.',
+        specs: {
+          client: 'Samuel Adabi / Mobius Architecture',
+          scope: '3D visualization of a master bathroom interior: marble-clad approach corridor, floating walnut double vanity, built-in tub under a window and a dressing area',
+          team: 'R.D+V.S (Revival Design + VFX Studios)',
+          year: '2015',
+          disciplines: ['Architectural Visualization']
+        }
       }
 
 

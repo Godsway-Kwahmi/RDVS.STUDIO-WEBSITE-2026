@@ -164,6 +164,15 @@
       "onArchivePage": true,
       "plates": 7
     },
+    "ppa-ghana-competition.html": {
+      "slug": "ppa-ghana-competition",
+      "title": "PPA Ghana Competition",
+      "year": "2010",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 8
+    },
     "poconos-bar-grill.html": {
       "slug": "poconos-bar-grill",
       "title": "Poconos Bar + Grill",
@@ -217,6 +226,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 6
+    },
+    "marble-bath.html": {
+      "slug": "marble-bath",
+      "title": "Marble & Bath",
+      "year": "2015",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
     },
     "macord.html": {
       "slug": "macord",
@@ -433,6 +451,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 3
+    },
+    "design-express.html": {
+      "slug": "design-express",
+      "title": "Design Express",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 5
     },
     "dela-anyaa.html": {
       "slug": "dela-anyaa",
@@ -1064,15 +1091,6 @@
       "onArchivePage": true,
       "plates": 8
     },
-    "ppa-ghana-competition.html": {
-      "slug": "ppa-ghana-competition",
-      "title": "PPA Ghana Competition",
-      "year": "2010",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 8
-    },
     "project-mount.html": {
       "slug": "project-mount",
       "title": "Project Mount",
@@ -1270,15 +1288,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 7
-    },
-    "design-express.html": {
-      "slug": "design-express",
-      "title": "Design Express",
-      "year": "2012",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 5
     },
     "e-zone.html": {
       "slug": "e-zone",
@@ -1756,15 +1765,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 7
-    },
-    "marble-bath.html": {
-      "slug": "marble-bath",
-      "title": "Marble & Bath",
-      "year": "2015",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 5
     },
     "osu-apartments.html": {
       "slug": "osu-apartments",
