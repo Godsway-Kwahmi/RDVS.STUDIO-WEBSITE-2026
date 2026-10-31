@@ -4753,11 +4753,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     return list;
   }
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const isWalkthrough = urlParams.has('walkthrough');
+
   const projects = spreadRepeats([...shuffled(drawnProjects), ...newsSlides]);
+
+  if (isWalkthrough) {
+    projects.splice(0, projects.length);
+    projects.push({
+      id: 'dyv-dawn',
+      title: 'DYV',
+      category: 'Design · VFX + CGI — 2025',
+      service: 'Design · VFX + CGI',
+      discipline: 'vfx',
+      imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
+      imageUrlDesktop: 'assets/images/dyv/dyv-dawn.jpg',
+      imageMobileUrl: 'assets/images/dyv/dyv-dawn-mobile.jpg',
+      projectUrl: 'dyv.html'
+    });
+    projects.push({
+      id: 'macord-3',
+      title: 'Macord International School',
+      category: 'Design · VFX + CGI — 2024',
+      service: 'Design · VFX + CGI',
+      discipline: 'architecture',
+      imageUrl: 'assets/images/macord/macord-3.jpg',
+      imageUrlDesktop: 'assets/images/macord/macord-3.jpg',
+      imageMobileUrl: 'assets/images/macord/macord-3-mobile.jpg',
+      projectUrl: 'macord.html'
+    });
+    projects.push({
+      id: 'avalon',
+      title: 'Avalon',
+      category: 'Design · VFX + CGI — 2024',
+      service: 'Design · VFX + CGI',
+      discipline: 'vfx',
+      imageUrl: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
+      imageUrlDesktop: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
+      imageMobileUrl: 'assets/images/avalon/GuZ8So8WAAATDw8-mobile.jpg',
+      projectUrl: 'avalon.html'
+    });
+  }
 
   // Check URL query or hash call for specific project (e.g. ?project=1957 or #1957)
   try {
-    const urlParams = new URLSearchParams(window.location.search);
     const requestedProject = urlParams.get('project') || urlParams.get('slide') || window.location.hash.replace('#', '');
     if (requestedProject) {
       const norm = requestedProject.toLowerCase().trim();
@@ -5475,8 +5514,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     hydrateStills();
   }
 
+  window.rdvsGoToSlide = function(idx) {
+    updateSlide(idx, false);
+  };
+  window.rdvsSetProgress = function(idx, pct) {
+    if (paginationBars[idx]) {
+      const fill = paginationBars[idx].querySelector('.pagination-fill');
+      if (fill) fill.style.width = pct + '%';
+    }
+  };
+
   function startCurrentSlide() {
     clearSlideTimer();
+    if (isWalkthrough) return;
 
     const activeSlide = slides[currentIndex];
     if (!activeSlide) return;
