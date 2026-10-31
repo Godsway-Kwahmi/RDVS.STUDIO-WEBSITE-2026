@@ -298,9 +298,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2012',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/purc/E9OZl1VWQAACIut.jpg',
-        imageUrlDesktop: 'assets/images/purc/E9OZl1VWQAACIut.jpg',
-        imageMobileUrl: 'assets/images/purc/E9OZl1VWQAACIut-mobile.jpg',
+        imageUrl: 'assets/images/purc/purc-entrance-lobby-bw.jpg',
+        imageUrlDesktop: 'assets/images/purc/purc-entrance-lobby-bw.jpg',
+        imageMobileUrl: 'assets/images/purc/purc-entrance-lobby-bw-mobile.jpg',
         projectUrl: 'purc.html',
         desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
         specs: {
