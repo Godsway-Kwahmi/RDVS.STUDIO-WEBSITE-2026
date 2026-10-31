@@ -1760,6 +1760,16 @@ button {
   object-fit: cover;
 }
 
+/* The caption under the about page's editorial plate. Its project name is a link, and the owner
+   wants it treated like a navigation link (2026-10-31): no underline, the same inherited colour
+   as the sentence around it, warming to the foreground on hover/focus -- exactly `.nav-link`'s
+   treatment. The global `a` rule already supplies `color: inherit`, no decoration and the colour
+   transition, so only the hover step is declared here. */
+.about-media-credit a:hover,
+.about-media-credit a:focus-visible {
+  color: var(--foreground);
+}
+
 /* Expertise List */
 .expertise-list {
   display: flex;
