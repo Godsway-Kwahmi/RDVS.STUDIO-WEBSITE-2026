@@ -2715,10 +2715,13 @@ a.subservice-item:hover {
 
 /* Base wordmark — the owner's drawn "design . visualize . make", set as lowercase
    SVG type above the footer hairline on every page that carries a footer. The
-   boldest Helvetica with the tightest kerning, centred and stretching edge to
+   thinnest Helvetica with the tightest kerning, centred and stretching edge to
    edge across the page grid at every viewport (textLength pins the line to the
-   grid's content width). One word at a time takes the brand blue and hands over
-   every minute (180 s cycle). */
+   grid's content width). "Helvetica Neue" resolves to its Thin cut (weight 100)
+   where the platform ships one; where it does not (Windows has no thin Helvetica),
+   the site's own loaded Geist 100 is the first fallback so the line still sets
+   hairline-thin rather than dropping to a regular weight. One word at a time
+   takes the brand blue and hands over every minute (180 s cycle). */
 .site-tagline {
   display: block;
   width: calc(100% - (var(--grid-margin) * 2));
@@ -2726,8 +2729,8 @@ a.subservice-item:hover {
   margin: 96px auto 0;
   height: auto;
   overflow: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Arial Black", sans-serif;
-  font-weight: 900;
+  font-family: "Helvetica Neue", 'Geist', Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 142px;
   letter-spacing: -0.045em;
   color: var(--foreground);
