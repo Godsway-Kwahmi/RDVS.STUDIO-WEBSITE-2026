@@ -3295,26 +3295,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Environmental Graphics', 'Way-Finding', '3D Visualization']
         }
       },
-      {
-        id: 'baobab-hotel-exteriors',
-        title: 'Baobab Hotel - Exteriors',
-        category: '3D Visualization — 2016',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
-        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
-        imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2-mobile.jpg',
-        projectUrl: 'baobab-hotel-exteriors.html',
-        desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
-        specs: {
-          client: 'Architect Theodore Kanyi',
-          scope: '3D Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          location: 'Accra, Ghana',
-          year: '2016',
-          disciplines: ['3D Visualization']
-        }
-      },
+      
       {
         id: 'senya-resort',
         title: 'Senya Resort',
