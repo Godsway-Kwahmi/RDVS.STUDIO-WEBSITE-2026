@@ -2550,50 +2550,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   vfx: {
     name: 'VFX + CGI',
     videos: [
-      {
-        id: 'jhk-investment-film',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        videoUrl: 'assets/videos/jhk-investment/jhk-investment-flythrough.mp4',
-        videoUrlDesktop: 'assets/videos/jhk-investment/jhk-investment-flythrough.mp4',
-        videoMobileUrl: 'assets/videos/jhk-investment/jhk-investment-flythrough-mobile.mp4',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-7.jpg',
-        imageUrlDesktop: 'assets/images/jhk-investment/jhk-investment-7.jpg',
-        imageMobileUrl: 'assets/images/jhk-investment/jhk-investment-7-mobile.jpg',
-        projectUrl: 'jhk-investment.html',
-        desc: 'The delivered stereo flythrough: a two-minute camera move past an ochre single-storey house with its white colonnade and pergola, a cobblestone forecourt and a planting of palms, agaves and flowering shrubs, carrying no soundtrack',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'Architectural visualization for JHK Investments: ten exterior views of modern one- and two-storey houses in daylight and at dusk, and a stereo camera flythrough of the development',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: ['Architectural Visualization']
-        },
-      },
-      {
-        id: 'jhk-investment-wip',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        videoUrl: 'assets/videos/jhk-investment/jhk-investment-wip-environment-rigs.mp4',
-        videoUrlDesktop: 'assets/videos/jhk-investment/jhk-investment-wip-environment-rigs.mp4',
-        videoMobileUrl: 'assets/videos/jhk-investment/jhk-investment-wip-environment-rigs-mobile.mp4',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-wip-poster.jpg',
-        imageUrlDesktop: 'assets/images/jhk-investment/jhk-investment-wip-poster.jpg',
-        imageMobileUrl: 'assets/images/jhk-investment/jhk-investment-wip-poster-mobile.jpg',
-        projectUrl: 'jhk-investment.html',
-        desc: 'The environment-rig test that preceded the flythrough: a three-minute camera move through the scene with a heavily defocused foreground, posted to its own blog on 4 March 2012 as a work in progress',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'Architectural visualization for JHK Investments: ten exterior views of modern one- and two-storey houses in daylight and at dusk, and a stereo camera flythrough of the development',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: ['Architectural Visualization']
-        },
-      },
+      
+      
       {
         id: 'ttd-film',
         title: 'TTD',
