@@ -182,15 +182,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "palazzo.html": {
-      "slug": "palazzo",
-      "title": "Palazzo",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
       "title": "NPA",
@@ -1900,6 +1891,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 28
+    },
+    "palazzo.html": {
+      "slug": "palazzo",
+      "title": "Palazzo",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
     },
     "petrus.html": {
       "slug": "petrus",

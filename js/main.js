@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
-    'palazzo.html': ['vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
@@ -2840,66 +2839,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2012',
           disciplines: ['Product Visualization']
-        }
-      },
-      {
-        id: 'palazzo',
-        title: 'Palazzo',
-        category: '3D Visualization — 2017',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/palazzo/palazzo-1.jpg',
-        imageUrlDesktop: 'assets/images/palazzo/palazzo-1.jpg',
-        imageMobileUrl: 'assets/images/palazzo/palazzo-1-mobile.jpg',
-        projectUrl: 'palazzo.html',
-        desc: 'Palazzo at dusk, seen across the road: a two-storey glazed office block lit warm inside beside a taller black-framed retail pavilion, a planted wall uplit at the centre, cars parked along the front and red and white light trails streaking the foreground under sunset cloud',
-
-        specs: {
-          client: 'Imperial Homes',
-          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2017',
-          disciplines: ['3D Visualization']
-        }
-      },
-      {
-        id: 'palazzo-plate1',
-        title: 'Palazzo',
-        category: '3D Visualization — 2017',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/palazzo/palazzo-2.jpg',
-        imageUrlDesktop: 'assets/images/palazzo/palazzo-2.jpg',
-        imageMobileUrl: 'assets/images/palazzo/palazzo-2-mobile.jpg',
-        projectUrl: 'palazzo.html',
-        desc: 'Palazzo offices at dusk: two glazed storeys banded in dark fascia, desks, partitions and yellow accents lit inside, a white saloon and two dark cars parked in front and an uplit hedge at the right under pink cloud',
-
-        specs: {
-          client: 'Imperial Homes',
-          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2017',
-          disciplines: ['3D Visualization']
-        }
-      },
-      {
-        id: 'palazzo-plate2',
-        title: 'Palazzo',
-        category: '3D Visualization — 2017',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/palazzo/palazzo-3.jpg',
-        imageUrlDesktop: 'assets/images/palazzo/palazzo-3.jpg',
-        imageMobileUrl: 'assets/images/palazzo/palazzo-3-mobile.jpg',
-        projectUrl: 'palazzo.html',
-        desc: 'Palazzo entrance at night: a brick fin rising through the flat roofline over a white canopy and glazed lobby, a shelved office glowing above, an uplit planted wall at the left and three cars parked in front with starburst lights under a deep blue sky',
-
-        specs: {
-          client: 'Imperial Homes',
-          scope: '3D visualization of the Palazzo scheme for Imperial Homes: exterior views of the glazed office block and retail pavilion at dusk and by night',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2017',
-          disciplines: ['3D Visualization']
         }
       },
       {
