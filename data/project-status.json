@@ -281,6 +281,15 @@
       "onArchivePage": true,
       "plates": 6
     },
+    "jhk-investment.html": {
+      "slug": "jhk-investment",
+      "title": "JHK",
+      "year": "2011",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
+    },
     "imperial-square.html": {
       "slug": "imperial-square",
       "title": "Imperial Square",
@@ -1216,15 +1225,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
-    },
-    "jhk-investment.html": {
-      "slug": "jhk-investment",
-      "title": "JHK",
-      "year": "2011",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 10
     },
     "octagon-mews.html": {
       "slug": "octagon-mews",
