@@ -1,31 +1,78 @@
-/* Project-page inquiry CTA -- the same mailto hand-off contact.html's inline script performs for its
-   form, scoped to the .project-cta-form every project page carries after its prev/next pager. Kept in
-   its own file so 223 pages share one wiring instead of 223 inline copies. The deploy is static -- there
-   is no server to post to -- so submitting hands the composed inquiry to the visitor's own mail app,
-   addressed to the commissions inbox; the form's `action` is the same address, so a visitor with
-   JavaScript off still reaches it through the browser's mailto handling. */
+/* Project-page inquiry CTA -- AJAX form submission to FormSubmit.co
+   wired to projects@rdvs.studio.
+   Scoped to .project-cta-form which every project page carries after its prev/next pager.
+   Submissions are sent directly via fetch() without opening a mail client.
+*/
 (function () {
   var form = document.querySelector('.project-cta-form');
   if (!form) return;
   var sel = form.querySelector('select[name="discipline"]');
   var success = form.querySelector('.project-cta-success');
+  var submitBtn = form.querySelector('button[type="submit"]');
   var TO = 'projects@rdvs.studio';
 
-  /* Exposed on the form so the composed address can be measured without launching a mail client. */
-  form.buildUri = function () {
-    var val = function (name) { return form.querySelector('[name="' + name + '"]').value.trim(); };
-    var picked = sel.selectedIndex > 0 ? sel.options[sel.selectedIndex].text : '';
-    var subject = (picked ? picked + ' inquiry' : 'Website inquiry') + ' from ' + val('name');
-    var body = val('message') + '\n\n--\n' + val('name') + '\n' + val('email');
-    return 'mailto:' + TO
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
-  };
+  form.setAttribute('action', 'https://formsubmit.co/' + TO);
+  form.setAttribute('method', 'POST');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var uri = form.buildUri();
-    if (success) success.style.display = 'block';
-    window.location.href = uri;
+    var originalBtnText = submitBtn ? submitBtn.textContent : 'Send inquiry';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending inquiry...';
+    }
+
+    var val = function (name) {
+      var el = form.querySelector('[name="' + name + '"]');
+      return el ? el.value.trim() : '';
+    };
+    var picked = (sel && sel.selectedIndex > 0) ? sel.options[sel.selectedIndex].text : '';
+    var name = val('name');
+    var email = val('email');
+    var message = val('message');
+    var pageTitle = document.title ? document.title.split('—')[0].trim() : 'Project Page';
+    var subject = 'Project Enquiry: ' + pageTitle + ' (' + (picked || 'General') + ') from ' + name;
+
+    fetch('https://formsubmit.co/ajax/' + TO, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        discipline: picked,
+        project: pageTitle,
+        url: window.location.href,
+        message: message,
+        _subject: subject,
+        _template: 'table',
+        _captcha: 'false'
+      })
+    })
+    .then(function (res) {
+      if (!res.ok) throw new Error('Submission failed');
+      return res.json();
+    })
+    .then(function () {
+      if (success) {
+        success.innerHTML = '<strong>Enquiry sent successfully!</strong> Thank you for reaching out. We will get back to you shortly at <span style="text-decoration: underline;">' + (email || 'your email') + '</span>.';
+        success.style.display = 'block';
+      }
+      form.reset();
+    })
+    .catch(function () {
+      if (success) {
+        success.innerHTML = 'Enquiry could not be sent automatically. Please email directly to <a href="mailto:' + TO + '" style="color: var(--foreground);">' + TO + '</a>.';
+        success.style.display = 'block';
+      }
+    })
+    .finally(function () {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      }
+    });
   });
 })();
