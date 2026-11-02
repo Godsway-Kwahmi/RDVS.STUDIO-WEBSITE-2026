@@ -78,9 +78,16 @@ export default defineType({
       name: 'socialLinks',
       title: 'Social Links',
       type: 'object',
-      // Defaults are the channels that resolve today. The site footer still links
-      // youtube.com/@rdvstudiosgh, which 404s — the live channel is @rdvs.studio. Fixing the
-      // footer on all 142 pages is an open, unapproved item; do not assume the CMS fixed it.
+      // Defaults are the channels that resolve today. The site's own href was youtube.com/@rdvstudiosgh,
+      // which 404s: this channel publishes no handle under that name. The live channel is @rdvs.studio
+      // (canonical channel/UCMoL9bjOb_C1KMhsO5lVC4g, title “RDVS”), and since the owner's order of
+      // 2026-11-01 -- “the link to our youtube is broken...please fix it” -- that is the URL on all 232
+      // pages carrying the social block, so the CMS default and the static pages state the same thing.
+      // Where the dead handle came from: scripts/update_social_links.js rewrote youtube.com/@rdvsgh INTO
+      // @rdvstudiosgh, so the file that fixed one broken link authored the next. Both dead spellings are now
+      // sources in that table and @rdvs.studio is the target; a sentence above still quotes the old handle on
+      // purpose, because it is the record of what the pages said, not a link to follow.
+      // The site ships the link; this schema only seeds the CMS. Do not re-point one without the other.
       fields: [
         defineField({name: 'instagram', title: 'Instagram URL', type: 'url', initialValue: 'https://www.instagram.com/rdvs.studio/'}),
         defineField({name: 'twitter', title: 'X / Twitter URL', type: 'url', initialValue: 'https://x.com/RDVS_DESIGN'}),

@@ -24,8 +24,12 @@ const replacements = [
     replacement: 'https://www.facebook.com/RDVS.DESIGN/'
   },
   {
-    regex: /https?:\/\/(www\.)?youtube\.com\/@rdvsgh\/?/g,
-    replacement: 'https://www.youtube.com/@rdvstudiosgh'
+    // The studio's YouTube handle moved twice: @rdvsgh -> @rdvstudiosgh -> @rdvs.studio. This entry used to
+    // match only the FIRST dead handle and rewrite it into the SECOND one, so a run of this tool put a broken
+    // link back into every page it touched (owner, 2026-11-01: "the link to our youtube is broken...please
+    // fix it"). Both dead handles are now sources, and the target is the handle that resolves today.
+    regex: /https?:\/\/(www\.)?youtube\.com\/@(rdvsgh|rdvstudiosgh)\/?/g,
+    replacement: 'https://www.youtube.com/@rdvs.studio'
   }
 ];
 

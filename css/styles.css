@@ -2213,6 +2213,23 @@ a.subservice-item:hover {
   color: var(--foreground);
 }
 
+
+/* A credited partner whose name links out, in a project's specification panel. The owner asked for
+   it to be treated like the navigation links (2026-11-01, NPA's Interior Design row), and what that
+   treatment is, measured off `.nav-link` itself, is two steps of colour and no underline:
+   --text-secondary at rest, --foreground on hover/focus. The global anchor rule already carries
+   `color: inherit`, `text-decoration: none` and the colour transition, so only the two colour steps
+   are declared here. Scoped to a class rather than to every anchor inside a specification value, so
+   the two bare credit links dyv.html already carries keep the colour they have. */
+.project-spec-credit {
+  color: var(--text-secondary);
+}
+
+.project-spec-credit:hover,
+.project-spec-credit:focus-visible {
+  color: var(--foreground);
+}
+
 /* Service tags — one link per service the project is tagged under on work.html */
 .project-services {
   display: flex;

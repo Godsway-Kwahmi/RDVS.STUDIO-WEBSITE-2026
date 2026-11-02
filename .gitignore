@@ -42,3 +42,9 @@ assets/**/USER_PROFILES/
 assets/**/PAPERWORK/
 assets/**/MOODBOARD/
 assets/**/PROGRESS/
+
+
+# Dropbox sync conflicts
+*conflicted copy*
+*(conflicted copy*
+*(RDVS_XPS's conflicted copy*

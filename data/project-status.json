@@ -81,7 +81,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 5
+      "plates": 28
     },
     "asante-interior-design-presentation.html": {
       "slug": "asante-interior-design-presentation",
@@ -369,7 +369,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 7
+      "plates": 6
     },
     "enda-acm.html": {
       "slug": "enda-acm",
@@ -388,15 +388,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 7
-    },
-    "emerge-ident.html": {
-      "slug": "emerge-ident",
-      "title": "Emerge Co. Ltd Showreel",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 22
     },
     "elo-tv.html": {
       "slug": "elo-tv",
@@ -451,15 +442,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 3
-    },
-    "design-express.html": {
-      "slug": "design-express",
-      "title": "Design Express",
-      "year": "2012",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
     },
     "dela-anyaa.html": {
       "slug": "dela-anyaa",
@@ -1280,6 +1262,15 @@
       "onArchivePage": true,
       "plates": 7
     },
+    "design-express.html": {
+      "slug": "design-express",
+      "title": "Design Express",
+      "year": "2012",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
     "e-zone.html": {
       "slug": "e-zone",
       "title": "E-Zone",
@@ -1729,6 +1720,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 53
+    },
+    "emerge-ident.html": {
+      "slug": "emerge-ident",
+      "title": "Emerge Co. Ltd Showreel",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 22
     },
     "harbour-pointe.html": {
       "slug": "harbour-pointe",

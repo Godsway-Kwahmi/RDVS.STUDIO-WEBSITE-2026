@@ -73,13 +73,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     'csm.html': ['design', 'vfx-cgi'],
     'd-e-t-a-i-l-s.html': ['studio-projects', 'vfx-cgi'],
     'dela-anyaa.html': ['design'],
-    'design-express.html': ['vfx-cgi'],
     'dyv.html': ['design', 'vfx-cgi'],
     'ehr.html': ['design', 'vfx-cgi'],
     'el-dor.html': ['design', 'vfx-cgi'],
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
-    'emerge-ident.html': ['design', 'vfx-cgi'],
     'empire-tower.html': ['design', 'vfx-cgi'],
     'enda-acm.html': ['design', 'vfx-cgi'],
     'enda-whm.html': ['design'],
@@ -307,9 +305,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/enda-whm/enda-whm-1.jpg',
-        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-1.jpg',
-        imageMobileUrl: 'assets/images/enda-whm/enda-whm-1-mobile.jpg',
+        imageUrl: 'assets/images/enda-whm/enda-whm-3.jpg',
+        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-3.jpg',
+        imageMobileUrl: 'assets/images/enda-whm/enda-whm-3-mobile.jpg',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM dining room: an orange service bulkhead over a lit cake display at the left, a timber waffle ceiling with pale globe pendants above, and a backlit screen of bamboo culms glowing over the brick banquette at the right.',
 
@@ -327,9 +325,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
         discipline: 'architecture',
-        imageUrl: 'assets/images/enda-whm/enda-whm-2.jpg',
-        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-2.jpg',
-        imageMobileUrl: 'assets/images/enda-whm/enda-whm-2-mobile.jpg',
+        imageUrl: 'assets/images/enda-whm/enda-whm-7.jpg',
+        imageUrlDesktop: 'assets/images/enda-whm/enda-whm-7.jpg',
+        imageMobileUrl: 'assets/images/enda-whm/enda-whm-7-mobile.jpg',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM banquette wall: the backlit bamboo screen above a red brick dado, brown leather bench seating with oak tables and cube benches, and four globe pendants hung on long cords.',
 
@@ -1165,9 +1163,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-3.jpg',
-        imageUrlDesktop: 'assets/images/ela-b/ela-b-3.jpg',
-        imageMobileUrl: 'assets/images/ela-b/ela-b-3-mobile.jpg',
+        imageUrl: 'assets/images/ela-b/ela-b-9.jpg',
+        imageUrlDesktop: 'assets/images/ela-b/ela-b-9.jpg',
+        imageMobileUrl: 'assets/images/ela-b/ela-b-9-mobile.jpg',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -2107,9 +2105,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-2.jpg',
-        imageUrlDesktop: 'assets/images/ela-b/ela-b-2.jpg',
-        imageMobileUrl: 'assets/images/ela-b/ela-b-2-mobile.jpg',
+        imageUrl: 'assets/images/ela-b/ela-b-8.jpg',
+        imageUrlDesktop: 'assets/images/ela-b/ela-b-8.jpg',
+        imageMobileUrl: 'assets/images/ela-b/ela-b-8-mobile.jpg',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -2738,66 +2736,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2011',
           disciplines: ['Architectural Visualization']
         },
-      },
-      {
-        id: 'design-express',
-        title: 'Design Express',
-        category: 'Product Visualization — 2012',
-        service: 'Product Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/design-express/design-express-1.jpg',
-        imageUrlDesktop: 'assets/images/design-express/design-express-1.jpg',
-        imageMobileUrl: 'assets/images/design-express/design-express-1-mobile.jpg',
-        projectUrl: 'design-express.html',
-        desc: 'A tall two-door wardrobe on a white ground: pale weathered-timber sides frame two satin doors scored with horizontal grooves and met by slim metal pull handles at the centre, and the unit stands on a low plinth casting a soft shadow',
-
-        specs: {
-          client: 'Design Express',
-          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: ['Product Visualization']
-        }
-      },
-      {
-        id: 'design-express-plate1',
-        title: 'Design Express',
-        category: 'Product Visualization — 2012',
-        service: 'Product Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/design-express/design-express-2.jpg',
-        imageUrlDesktop: 'assets/images/design-express/design-express-2.jpg',
-        imageMobileUrl: 'assets/images/design-express/design-express-2-mobile.jpg',
-        projectUrl: 'design-express.html',
-        desc: 'Cover sheet for the set: black blocks lettered furniture visualization sit at the top left over the line DESIGNS BY DESIGN EXPRESS, and a low pale-oak sideboard with two sliding doors and narrow vertical recessed pulls stands at three-quarters on a white ground',
-
-        specs: {
-          client: 'Design Express',
-          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: ['Product Visualization']
-        }
-      },
-      {
-        id: 'design-express-plate2',
-        title: 'Design Express',
-        category: 'Product Visualization — 2012',
-        service: 'Product Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/design-express/design-express-3.jpg',
-        imageUrlDesktop: 'assets/images/design-express/design-express-3.jpg',
-        imageMobileUrl: 'assets/images/design-express/design-express-3-mobile.jpg',
-        projectUrl: 'design-express.html',
-        desc: 'A tall cabinet: the upper half is open shelving in two bays lined in warm orange, and the lower half is a closed two-door cupboard in pale maple with a small chrome handle where the stiles meet',
-
-        specs: {
-          client: 'Design Express',
-          scope: 'Product visualization of five Design Express furniture pieces — wardrobe, sideboard, shelving cabinet, drawer unit and bench desk — each rendered on a seamless white ground',
-          team: 'RDVS. DESIGN',
-          year: '2012',
-          disciplines: ['Product Visualization']
-        }
       },
       {
         id: 'ert',
@@ -3671,25 +3609,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'dela-anyaa-plate2',
-        title: 'Dela Anyaa',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/dela-anyaa/dela-anyaa-9.jpg',
-        imageUrlDesktop: 'assets/images/dela-anyaa/dela-anyaa-9.jpg',
-        imageMobileUrl: 'assets/images/dela-anyaa/dela-anyaa-9-mobile.jpg',
-        projectUrl: 'dela-anyaa.html',
-        desc: 'A personal identity for Dela Anyaa, built from two parts: a calligraphic mark rendered in polished chrome, and a hand-written signature used in place of a wordmark.',
-        specs: {
-          client: 'Dela Anyaa',
-          scope: 'Graphic Design, Logo Design & Brand Identity',
-          team: 'Kofi Tetteh (Concept + Design)',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'baobab-hotel-exteriors-plate1',
         title: 'Baobab Hotel - Exteriors',
         category: '3D Visualization — 2016',
@@ -3925,29 +3844,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     name: 'Motion Design',
     videos: [
       {
-        id: 'emerge-ident-film',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/emerge-ident/emerge-showreel.mp4',
-        videoUrlDesktop: 'assets/videos/emerge-ident/emerge-showreel.mp4',
-        videoMobileUrl: 'assets/videos/emerge-ident/emerge-showreel-mobile.mp4',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-08.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-08-mobile.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'The showreel itself: 2 min 25 s of motion design and 3D animation at 1280x720, opening on the goldfish suspended against white.',
-
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
-          team: 'RDVS Studios',
-          year: '2015',
-          disciplines: ['Motion Design', '3D Animation']
-        }
-      },
-      {
         id: 'trumpet-africa-moonlit',
         title: 'Trumpet Africa Productions Ident',
         category: 'Broadcast — 2014',
@@ -4084,46 +3980,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     ],
     images: [
-      {
-        id: 'emerge-ident',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-01.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-01.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-01-mobile.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'Emerge Co. Ltd Showreel — three goldfish turning inside the bowl',
-
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
-          team: 'RDVS Studios',
-          year: '2015',
-          disciplines: ['Motion Design', '3D Animation']
-        }
-      },
-      {
-        id: 'emerge-ident-plate1',
-        title: 'Emerge Co. Ltd Showreel',
-        category: '3D Animation — 2015',
-        service: '3D Animation',
-        discipline: 'motion',
-        imageUrl: 'assets/images/emerge-ident/emerge-ident-02.jpg',
-        imageUrlDesktop: 'assets/images/emerge-ident/emerge-ident-02.jpg',
-        imageMobileUrl: 'assets/images/emerge-ident/emerge-ident-02-mobile.jpg',
-        projectUrl: 'emerge-ident.html',
-        desc: 'Emerge Co. Ltd Showreel — the bowl centred on white, fish inside',
-
-        specs: {
-          client: 'Emerge Co. Ltd',
-          scope: 'Motion design and 3D animation showreel for Emerge Co. Ltd: brand idents and clientele animation, 2 min 25 s at 1280x720',
-          team: 'RDVS Studios',
-          year: '2015',
-          disciplines: ['Motion Design', '3D Animation']
-        }
-      },
       {
         id: 'trumpet-africa-palette',
         title: 'Trumpet Africa Productions Ident',
@@ -4935,15 +4791,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   // the four disciplines plus the Products page — distributed equally. News slides always
   // occupy the tail, so the budget adapts to their count.
   const serviceKeys = ['architecture', 'interiors', 'vfx', 'motion', 'products'];
-  // Owner, 2026-10-22: "let's reduce the number of slides on the homepage from 20 to 15". The deck
-  // was twenty since the pool was enlarged; 15 is the new size, and it is ONE fact told in two
-  // places that have to agree -- this constant and the number of .slide / .caption-card /
-  // .pagination-bar blocks baked into index.html. `scratch/_deck_size_contract.py` is the guard.
-  const TOTAL_SLIDE_BUDGET = 15;
+  // Owner, 2026-11-01: "let's make the number of slides on the home page 20 instead of 15". That restores the
+  // size the deck had before his 2026-10-22 order ("reduce the number of slides on the homepage from 20 to 15"),
+  // and it is still ONE fact told in four places that have to agree: this constant, the .slide / .caption-card /
+  // .pagination-bar blocks baked into index.html, the counter and the three size comments baked there, and
+  // scratch/_slide_deck.py -- which PARSES this line instead of repeating the number.
+  // `scratch/_deck_size_contract.py` is the guard; `scratch/_grow_deck.py` then `_paint_homepage_deck.py` are
+  // the writers for an increase, and `scratch/_cut_deck_to_15.py` is the one for a decrease.
+  const TOTAL_SLIDE_BUDGET = 20;
 
   // Drawn again on every page load, so a refresh — or the automatic reload that fires when
-  // the deck reaches slide 15 — shows a different cut of the work instead of replaying the
-  // same fifteen. Fisher-Yates over a copy; the pools stay as curated.
+  // the deck reaches its last slide — shows a different cut of the work instead of replaying the
+  // same twenty. Fisher-Yates over a copy; the pools stay as curated.
   function shuffled(list) {
     const out = [...list];
     for (let i = out.length - 1; i > 0; i--) {
@@ -4960,9 +4819,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   // "After the 20 slide in the slideshow on the home page, let's implement an automatic
   // page refresh." Because each load re-draws the deck, this reload is what keeps the
   // slideshow running indefinitely on fresh material: the deck plays through its last slide —
-  // which since 2026-10-22 is the news article — and only then the page reloads and a new
-  // draw starts at slide one. The deck itself was cut to fifteen slides on 2026-10-22, so the
-  // reload fires at the end of the shorter run -- not at a twentieth slide that no longer exists.
+  // which since 2026-10-24 is the news article — and only then the page reloads and a new draw
+  // starts at slide one. The trigger is the BUDGET, not a number: his 2026-10-22 cut to fifteen moved it to 15,
+  // and his 2026-11-01 order back to twenty moves it again. Stated as `TOTAL_SLIDE_BUDGET` below, so the reload
+  // can never fire at a slide the deck does not have -- which is what a typed literal did once.
   const AUTO_REFRESH_AFTER_SLIDE = TOTAL_SLIDE_BUDGET;
   const AUTO_REFRESH_MIN_GAP_MS = 30000;
   let autoRefreshQueued = false;
