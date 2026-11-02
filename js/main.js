@@ -3276,44 +3276,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'stark-glaube-plate1',
-        title: 'Stark Glaube',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stark-glaube/stark-glaube-1.jpg',
-        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-1.jpg',
-        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-1-mobile.jpg',
-        projectUrl: 'stark-glaube.html',
-        desc: 'Identity for a Ghanaian company — the initials SG and the name set as a wordmark, taken through four routes: a monogram knocked out of a graded band of triangles, glossy green-and-blue ribbon loops, a bird in flight and a three-bar banner.',
-        specs: {
-          client: 'Stark Glaube',
-          scope: 'Graphic Design, Logo Design & Brand Identity',
-          team: 'Paa Kofi Tetteh',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
-        id: 'stark-glaube-plate2',
-        title: 'Stark Glaube',
-        category: 'Graphic Design — 2014',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stark-glaube/stark-glaube-3.jpg',
-        imageUrlDesktop: 'assets/images/stark-glaube/stark-glaube-3.jpg',
-        imageMobileUrl: 'assets/images/stark-glaube/stark-glaube-3-mobile.jpg',
-        projectUrl: 'stark-glaube.html',
-        desc: 'Identity for a Ghanaian company — the initials SG and the name set as a wordmark, taken through four routes: a monogram knocked out of a graded band of triangles, glossy green-and-blue ribbon loops, a bird in flight and a three-bar banner.',
-        specs: {
-          client: 'Stark Glaube',
-          scope: 'Graphic Design, Logo Design & Brand Identity',
-          team: 'Paa Kofi Tetteh',
-          year: '2014',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: 'senya-resort-plate1',
         title: 'Senya Resort',
         category: '3D Visualization — 2018',
@@ -3446,25 +3408,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/kdmrd/kdmrd-hero.jpg',
         imageUrlDesktop: 'assets/images/kdmrd/kdmrd-hero.jpg',
         imageMobileUrl: 'assets/images/kdmrd/kdmrd-hero-mobile.jpg',
-        projectUrl: 'kdmrd.html',
-        desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
-        specs: {
-          client: 'Private Client',
-          scope: 'RDVS delivered 3D architectural visualization: modeling the building and its setting, designing the facade screen and lighting, and producing the rendered exterior and courtyard views.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'kdmrd-plate2',
-        title: 'KDMRD',
-        category: '3D Visualization — 2017',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/kdmrd/kdmrd-1.jpg',
-        imageUrlDesktop: 'assets/images/kdmrd/kdmrd-1.jpg',
-        imageMobileUrl: 'assets/images/kdmrd/kdmrd-1-mobile.jpg',
         projectUrl: 'kdmrd.html',
         desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
         specs: {
