@@ -2828,44 +2828,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'ttd.html'
       },
       {
-        id: 'stanchart-hq-3',
-        title: 'Stanchart HQ',
-        category: 'Architectural Visualization — 2010',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stanchart-hq/stanchart-hq-3.jpg',
-        imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-3.jpg',
-        imageMobileUrl: 'assets/images/stanchart-hq/stanchart-hq-3-mobile.jpg',
-        projectUrl: 'stanchart-hq.html',
-        desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
-        specs: {
-          client: 'Standard Chartered Bank',
-          scope: 'Architectural visualization: three street-level views of the proposed head office tower — two daylight studies and a dusk long-exposure.',
-          team: 'Vista (design and modelling); R.D+V.S (visualization)',
-          year: '2010',
-          disciplines: ['3D Visualization']
-        }
-      },
-      {
-        id: 'stanchart-hq-2',
-        title: 'Stanchart HQ',
-        category: 'Architectural Visualization — 2010',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/stanchart-hq/stanchart-hq-2.jpg',
-        imageUrlDesktop: 'assets/images/stanchart-hq/stanchart-hq-2.jpg',
-        imageMobileUrl: 'assets/images/stanchart-hq/stanchart-hq-2-mobile.jpg',
-        projectUrl: 'stanchart-hq.html',
-        desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
-        specs: {
-          client: 'Standard Chartered Bank',
-          scope: 'Architectural visualization: three street-level views of the proposed head office tower — two daylight studies and a dusk long-exposure.',
-          team: 'Vista (design and modelling); R.D+V.S (visualization)',
-          year: '2010',
-          disciplines: ['3D Visualization']
-        }
-      },
-      {
         id: 'protea-hotel-airport-7i-qm7-e-he',
         title: 'Protea Hotel - Airport',
         category: 'Architectural Visualization — 2020',
@@ -2965,14 +2927,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'hola.html'
       },
       {
-        id: 'hola-15a57-g-y-r',
+        id: 'hola-15a7q-w-z',
         title: 'Hola',
         category: 'Architectural Visualization — 2022',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
-        imageUrlDesktop: 'assets/images/hola/F15a57TXgAAZyVr.jpg',
-        imageMobileUrl: 'assets/images/hola/F15a57TXgAAZyVr-mobile.jpg',
+        imageUrl: 'assets/images/hola/F15a7QaWAAAaW3Z.jpg',
+        imageUrlDesktop: 'assets/images/hola/F15a7QaWAAAaW3Z.jpg',
+        imageMobileUrl: 'assets/images/hola/F15a7QaWAAAaW3Z-mobile.jpg',
         projectUrl: 'hola.html'
       },
       {
@@ -3609,14 +3571,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'baobab-hotel-exteriors-plate1',
+        id: 'baobab-hotel-exteriors-plate2',
         title: 'Baobab Hotel - Exteriors',
         category: '3D Visualization — 2016',
         service: '3D Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1.jpg',
-        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1.jpg',
-        imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-1-mobile.jpg',
+        imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
+        imageUrlDesktop: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
+        imageMobileUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2-mobile.jpg',
         projectUrl: 'baobab-hotel-exteriors.html',
         desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \\u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
         specs: {

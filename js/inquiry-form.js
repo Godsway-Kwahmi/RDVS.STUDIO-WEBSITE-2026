@@ -9,7 +9,8 @@
   var sel = form.querySelector('select[name="discipline"]');
   var success = form.querySelector('.project-cta-success');
   var submitBtn = form.querySelector('button[type="submit"]');
-  var TO = 'projects@rdvs.studio';
+  var TO = '48e0aa4a66eb4ff68c80d949f8cda072';
+  var STUDIO_EMAIL = 'projects@rdvs.studio';
 
   form.setAttribute('action', 'https://formsubmit.co/' + TO);
   form.setAttribute('method', 'POST');
@@ -64,7 +65,7 @@
     })
     .catch(function () {
       if (success) {
-        success.innerHTML = 'Enquiry could not be sent automatically. Please email directly to <a href="mailto:' + TO + '" style="color: var(--foreground);">' + TO + '</a>.';
+        success.innerHTML = 'Enquiry could not be sent automatically. Please email directly to <a href="mailto:' + STUDIO_EMAIL + '" style="color: var(--foreground);">' + STUDIO_EMAIL + '</a>.';
         success.style.display = 'block';
       }
     })
