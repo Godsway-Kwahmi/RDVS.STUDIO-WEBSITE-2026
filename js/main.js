@@ -685,6 +685,42 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2025',
           disciplines: '[\'Architectural Design\']'
         }
+      },      {
+        id: 'dyv-dawn-plate2',
+        title: 'DYV',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
+        imageUrlDesktop: 'assets/images/dyv/dyv-courtyard-night.jpg',
+        imageMobileUrl: 'assets/images/dyv/dyv-courtyard-night-mobile.jpg',
+        projectUrl: 'dyv.html',
+        desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural Design',
+          team: 'RDVS Team',
+          year: '2025',
+          disciplines: '[\'Architectural Design\']'
+        }
+      },      {
+        id: 'dyv-dawn-plate3',
+        title: 'DYV',
+        category: 'Interior Design & Architectural Visualization — 2025',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/dyv/dyv-atrium.jpg',
+        imageUrlDesktop: 'assets/images/dyv/dyv-atrium.jpg',
+        imageMobileUrl: 'assets/images/dyv/dyv-atrium-mobile.jpg',
+        projectUrl: 'dyv.html',
+        desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural Design',
+          team: 'RDVS Team',
+          year: '2025',
+          disciplines: '[\'Architectural Design\']'
+        }
       },
       {
         id: 'details-film',
@@ -1638,6 +1674,240 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
+      },      {
+        id: 'villa-aggregate-plate3',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-4.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-4.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-4-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate4',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-5.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-5.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-5-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate5',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-6.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-6.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-6-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate6',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-7.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-7.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-7-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate7',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-8.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-8.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-8-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate8',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-9.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-9.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-9-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate9',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-10.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-10.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-10-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate10',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-11.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-11.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-11-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate11',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-12.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-12.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-12-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate12',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-13.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-13.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-13-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate13',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-14.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-14.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-14-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate14',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-15.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-15.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-15-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },      {
+        id: 'villa-aggregate-plate15',
+        title: 'Villa Aggregate',
+        category: 'Interior Design & Architectural Visualization — 2021',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/aggregate/villa-aggregate-16.jpg',
+        imageUrlDesktop: 'assets/images/aggregate/villa-aggregate-16.jpg',
+        imageMobileUrl: 'assets/images/aggregate/villa-aggregate-16-mobile.jpg',
+        projectUrl: 'villa-aggregate.html',
+        desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
+        specs: {
+          client: 'Aggregate Construction Limited',
+          scope: 'Interior design and architectural visualization, rendered to support the developer’s sales drive',
+          team: 'RDVS Team',
+          year: '2021',
+          disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
       },
       {
         id: 'tower-cascades-plate1',
@@ -2212,6 +2482,24 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: '[\'Architectural Design\', \'Interior Design   Architectural Visualization\']'
         }
+      },      {
+        id: 'ehr-plate4',
+        title: 'EHR',
+        category: 'Architectural Design, Interior Design & Architectural Visualization — 2017',
+        service: 'Architectural Design, Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ehr/ehr-21.jpg',
+        imageUrlDesktop: 'assets/images/ehr/ehr-21.jpg',
+        imageMobileUrl: 'assets/images/ehr/ehr-21-mobile.jpg',
+        projectUrl: 'ehr.html',
+        desc: 'EHR is a 2017 interior design and visualization set for a proposed private residence in Accra, Ghana. This page carries the four frames that were left out of the published gallery: one dusk view of the villa\u2019s garden and three daylight angles of its open-plan dining and bar.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural concept and development for the villa, full interior design including furniture and lighting selection, and the complete set of dusk exterior and interior visualizations used as sales material.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: '[\'Architectural Design\', \'Interior Design   Architectural Visualization\']'
+        }
       },
       {
         id: 'csm-plate1',
@@ -2465,6 +2753,240 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
+      },      {
+        id: '1957-apartments-retail-plate3',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-3.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-3.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-3-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate4',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-4.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-4.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-4-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate5',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-5.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-5.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-5-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate6',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-7.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-7.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-7-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate7',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-8.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-8.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-8-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate8',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-9.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-9.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-9-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate9',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-10.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-10.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-10-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate10',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-11.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-11.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-11-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate11',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-13.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-13.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-13-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate12',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-1.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-1.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-1-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate13',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-14.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-14.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-14-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate14',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-15.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-15.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-15-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: '1957-apartments-retail-plate15',
+        title: '1957 Apartments and Retail',
+        category: 'Interior Design & 3D Visualization — 2019',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/1957/1957-16.jpg',
+        imageUrlDesktop: 'assets/images/1957/1957-16.jpg',
+        imageMobileUrl: 'assets/images/1957/1957-16-mobile.jpg',
+        projectUrl: '1957.html',
+        desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
       },
       {
         id: 'tower-cascades',
@@ -2475,6 +2997,546 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
         imageUrlDesktop: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
         imageMobileUrl: 'assets/images/cascades/E14fiz3X0AA3X0k-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate3',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
+        imageMobileUrl: 'assets/images/cascades/E1msdaCXEAEFx84-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate4',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E1mtKvQXIAMmM9h.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E1mtKvQXIAMmM9h.jpg',
+        imageMobileUrl: 'assets/images/cascades/E1mtKvQXIAMmM9h-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate5',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E1mtLvhWQAcCZ7p.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E1mtLvhWQAcCZ7p.jpg',
+        imageMobileUrl: 'assets/images/cascades/E1mtLvhWQAcCZ7p-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate6',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E1mtLWgXIAgYyjJ.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E1mtLWgXIAgYyjJ.jpg',
+        imageMobileUrl: 'assets/images/cascades/E1mtLWgXIAgYyjJ-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate7',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E2G_xZRWYAIScVK.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E2G_xZRWYAIScVK.jpg',
+        imageMobileUrl: 'assets/images/cascades/E2G_xZRWYAIScVK-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate8',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E2IDVPjXMAA1kEf.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E2IDVPjXMAA1kEf.jpg',
+        imageMobileUrl: 'assets/images/cascades/E2IDVPjXMAA1kEf-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate9',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/E2IDVrPXsAA5ypI.jpg',
+        imageUrlDesktop: 'assets/images/cascades/E2IDVrPXsAA5ypI.jpg',
+        imageMobileUrl: 'assets/images/cascades/E2IDVrPXsAA5ypI-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate10',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-2.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-2.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-2-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate11',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-3.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-3.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-3-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate12',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-4.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-4.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-4-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate13',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-5.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-5.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-5-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate14',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-6.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-6.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-6-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate15',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-7.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-7.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-7-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate16',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-8.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-8.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-8-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate17',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-9.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-9.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-9-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate18',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-10.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-10.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-10-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate19',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-11.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-11.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-11-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate20',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-12.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-12.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-12-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate21',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-13.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-13.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-13-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate22',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-14.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-14.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-14-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate23',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-15.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-15.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-15-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate24',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-16.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-16.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-16-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate25',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-17.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-17.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-17-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate26',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-18.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-18.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-18-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate27',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-19.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-19.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-19-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate28',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-20.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-20.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-20-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate29',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-21.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-21.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-21-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate30',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-22.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-22.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-22-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate31',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-23.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-23.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-23-mobile.jpg',
+        projectUrl: 'tower-cascades.html',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        specs: {
+          client: 'Hawkrad Properties',
+          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },      {
+        id: 'tower-cascades-plate32',
+        title: 'Tower Cascades',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/cascades/tower-cascades-24.jpg',
+        imageUrlDesktop: 'assets/images/cascades/tower-cascades-24.jpg',
+        imageMobileUrl: 'assets/images/cascades/tower-cascades-24-mobile.jpg',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -2786,6 +3848,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ert/ert-3.jpg',
         imageUrlDesktop: 'assets/images/ert/ert-3.jpg',
         imageMobileUrl: 'assets/images/ert/ert-3-mobile.jpg',
+        projectUrl: 'ert.html',
+        desc: 'ERT corner house at dusk: the white cubic volume with its concrete chimney and full-height glazing, a timber Townhouses sign wall uplit at the left and an SUV under the carport.',
+        specs: {
+          client: 'Private Client',
+          architecture: 'Mobius Architecture',
+          scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
+          team: 'RDVS Team',
+          year: '2015',
+          disciplines: '[\'Architectural Visualization\']'
+        }
+      },      {
+        id: 'ert-plate3',
+        title: 'ERT',
+        category: 'Architectural Visualization — 2015',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ert/ert-4.jpg',
+        imageUrlDesktop: 'assets/images/ert/ert-4.jpg',
+        imageMobileUrl: 'assets/images/ert/ert-4-mobile.jpg',
         projectUrl: 'ert.html',
         desc: 'ERT corner house at dusk: the white cubic volume with its concrete chimney and full-height glazing, a timber Townhouses sign wall uplit at the left and an SUV under the carport.',
         specs: {
@@ -3312,6 +4393,42 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'3D Visualization\']'
         }
+      },      {
+        id: 'senya-resort-plate3',
+        title: 'Senya Resort',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/senya-resort/senya-resort-4.jpg',
+        imageUrlDesktop: 'assets/images/senya-resort/senya-resort-4.jpg',
+        imageMobileUrl: 'assets/images/senya-resort/senya-resort-4-mobile.jpg',
+        projectUrl: 'senya-resort.html',
+        desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
+        specs: {
+          client: 'Leonie Badger',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },      {
+        id: 'senya-resort-plate4',
+        title: 'Senya Resort',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/senya-resort/EuMQCBQXYAMNGul.jpg',
+        imageUrlDesktop: 'assets/images/senya-resort/EuMQCBQXYAMNGul.jpg',
+        imageMobileUrl: 'assets/images/senya-resort/EuMQCBQXYAMNGul-mobile.jpg',
+        projectUrl: 'senya-resort.html',
+        desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
+        specs: {
+          client: 'Leonie Badger',
+          scope: '3D Visualization',
+          team: 'RDVS Team',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
       },
 
 
@@ -3569,6 +4686,78 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
+      },      {
+        id: '1981-plate1',
+        title: '1981',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/1981/1981-2.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-2.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-2-mobile.jpg',
+        projectUrl: '1981.html',
+        desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
+        specs: {
+          client: 'Joelle Eyeson / 1981',
+          scope: '3D Modelling, Shading & Texturing, Lighting, Rendering & Post-Processing, Film Animation (interior design by Joelle Eyeson)',
+          team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
+          year: '2015',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },      {
+        id: '1981-plate2',
+        title: '1981',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/1981/1981-5.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-5.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-5-mobile.jpg',
+        projectUrl: '1981.html',
+        desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
+        specs: {
+          client: 'Joelle Eyeson / 1981',
+          scope: '3D Modelling, Shading & Texturing, Lighting, Rendering & Post-Processing, Film Animation (interior design by Joelle Eyeson)',
+          team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
+          year: '2015',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },      {
+        id: '1981-plate3',
+        title: '1981',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/1981/1981-6.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-6.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-6-mobile.jpg',
+        projectUrl: '1981.html',
+        desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
+        specs: {
+          client: 'Joelle Eyeson / 1981',
+          scope: '3D Modelling, Shading & Texturing, Lighting, Rendering & Post-Processing, Film Animation (interior design by Joelle Eyeson)',
+          team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
+          year: '2015',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },      {
+        id: '1981-plate4',
+        title: '1981',
+        category: '3D Visualization — 2015',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/1981/1981-3.jpg',
+        imageUrlDesktop: 'assets/images/1981/1981-3.jpg',
+        imageMobileUrl: 'assets/images/1981/1981-3-mobile.jpg',
+        projectUrl: '1981.html',
+        desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
+        specs: {
+          client: 'Joelle Eyeson / 1981',
+          scope: '3D Modelling, Shading & Texturing, Lighting, Rendering & Post-Processing, Film Animation (interior design by Joelle Eyeson)',
+          team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
+          year: '2015',
+          disciplines: '[\'3D Visualization\']'
+        }
       },
       {
         id: 'protea-hotel-airport',
@@ -3635,6 +4824,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/margin/GH1cB5CW4AAQFih.jpg',
         imageMobileUrl: 'assets/images/margin/GH1cB5CW4AAQFih-mobile.jpg',
         projectUrl: 'margin.html'
+      },      {
+        id: 'margin-plate1',
+        title: 'Margin',
+        category: 'Workplace Interiors — 2022',
+        service: 'Workplace Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/margin/F-XhIIqXMAAGhOa.jpg',
+        imageUrlDesktop: 'assets/images/margin/F-XhIIqXMAAGhOa.jpg',
+        imageMobileUrl: 'assets/images/margin/F-XhIIqXMAAGhOa-mobile.jpg',
+        projectUrl: 'margin.html'
+      },      {
+        id: 'margin-plate2',
+        title: 'Margin',
+        category: 'Workplace Interiors — 2022',
+        service: 'Workplace Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        imageUrlDesktop: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        imageMobileUrl: 'assets/images/margin/F-ZKh-aWQAAV90S-mobile.jpg',
+        projectUrl: 'margin.html'
       },
       {
         id: 'the-fitzgerald',
@@ -3667,6 +4876,226 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
         imageUrlDesktop: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
         imageMobileUrl: 'assets/images/ttd/FsOwki3WcAEJtvW-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate1',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
+        imageUrlDesktop: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
+        imageMobileUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate2',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FsLMJdyX0AIUNuB.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FsLMJdyX0AIUNuB.jpg',
+        imageMobileUrl: 'assets/images/ttd/FsLMJdyX0AIUNuB-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate3',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FsToeqxWcAEA8ft.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FsToeqxWcAEA8ft.jpg',
+        imageMobileUrl: 'assets/images/ttd/FsToeqxWcAEA8ft-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate4',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FsaGWWLWABgVwQD.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FsaGWWLWABgVwQD.jpg',
+        imageMobileUrl: 'assets/images/ttd/FsaGWWLWABgVwQD-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate5',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FseFF83XsAE3byC.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FseFF83XsAE3byC.jpg',
+        imageMobileUrl: 'assets/images/ttd/FseFF83XsAE3byC-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate6',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FseFG8GXoAE54NP.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FseFG8GXoAE54NP.jpg',
+        imageMobileUrl: 'assets/images/ttd/FseFG8GXoAE54NP-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate7',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FseFGd0X0AAMMNc.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FseFGd0X0AAMMNc.jpg',
+        imageMobileUrl: 'assets/images/ttd/FseFGd0X0AAMMNc-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate8',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FshZRdsWwAIPdr1.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FshZRdsWwAIPdr1.jpg',
+        imageMobileUrl: 'assets/images/ttd/FshZRdsWwAIPdr1-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate9',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FshZS8UXsAArIuW.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FshZS8UXsAArIuW.jpg',
+        imageMobileUrl: 'assets/images/ttd/FshZS8UXsAArIuW-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate10',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FshZSMBXwAASFtI.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FshZSMBXwAASFtI.jpg',
+        imageMobileUrl: 'assets/images/ttd/FshZSMBXwAASFtI-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate11',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FspUg4aX0AIuCJH.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FspUg4aX0AIuCJH.jpg',
+        imageMobileUrl: 'assets/images/ttd/FspUg4aX0AIuCJH-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate12',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/Ft4iPZlWYAEaQWQ.jpg',
+        imageUrlDesktop: 'assets/images/ttd/Ft4iPZlWYAEaQWQ.jpg',
+        imageMobileUrl: 'assets/images/ttd/Ft4iPZlWYAEaQWQ-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate13',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
+        imageUrlDesktop: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
+        imageMobileUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate14',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FtU6ipnWAAAdtts.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FtU6ipnWAAAdtts.jpg',
+        imageMobileUrl: 'assets/images/ttd/FtU6ipnWAAAdtts-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate15',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FtZCqbqWYAEc3_S.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FtZCqbqWYAEc3_S.jpg',
+        imageMobileUrl: 'assets/images/ttd/FtZCqbqWYAEc3_S-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate16',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FtcjLP0WAAUNJRl.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FtcjLP0WAAUNJRl.jpg',
+        imageMobileUrl: 'assets/images/ttd/FtcjLP0WAAUNJRl-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate17',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/Ftn-e3YWcAYqRZ9.jpg',
+        imageUrlDesktop: 'assets/images/ttd/Ftn-e3YWcAYqRZ9.jpg',
+        imageMobileUrl: 'assets/images/ttd/Ftn-e3YWcAYqRZ9-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate18',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate19',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FuIPM-RWIAAms-l.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuIPM-RWIAAms-l.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuIPM-RWIAAms-l-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate20',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FuIPMK6X0AAZtYD.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuIPMK6X0AAZtYD.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuIPMK6X0AAZtYD-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate21',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FuIPNjxWIAILRM7.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuIPNjxWIAILRM7.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuIPNjxWIAILRM7-mobile.jpg',
+        projectUrl: 'ttd.html'
+      },      {
+        id: 'ttd-plate22',
+        title: 'TTD',
+        category: 'Interior & Architecture — 2023',
+        service: 'Interior & Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ttd/FuLgJKhWAA0jerA.jpg',
+        imageUrlDesktop: 'assets/images/ttd/FuLgJKhWAA0jerA.jpg',
+        imageMobileUrl: 'assets/images/ttd/FuLgJKhWAA0jerA-mobile.jpg',
         projectUrl: 'ttd.html'
       },
       {
