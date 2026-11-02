@@ -28,7 +28,11 @@ const replacements = [
     // match only the FIRST dead handle and rewrite it into the SECOND one, so a run of this tool put a broken
     // link back into every page it touched (owner, 2026-11-01: "the link to our youtube is broken...please
     // fix it"). Both dead handles are now sources, and the target is the handle that resolves today.
-    regex: /https?:\/\/(www\.)?youtube\.com\/@(rdvsgh|rdvstudiosgh)\/?/g,
+    // The `@` is OPTIONAL and the handle must END at a non-handle character. Measured 2026-11-02 while
+    // landing the wave: villa-aggregate.html carried `https://www.youtube.com/rdvstudiosgh` with NO `@`, so the
+    // entry below -- which required the `@` -- fixed 230 pages and left that one's dead link standing. The
+    // lookahead is what keeps `rdvsgh` from matching inside a longer handle and rewriting only half of it.
+    regex: /https?:\/\/(?:www\.)?youtube\.com\/@?(rdvsgh|rdvstudiosgh)(?![\w.\-])/g,
     replacement: 'https://www.youtube.com/@rdvs.studio'
   }
 ];
