@@ -9,7 +9,7 @@
   if (!form) return;
   var sel = form.querySelector('select[name="discipline"]');
   var success = form.querySelector('.project-cta-success');
-  var TO = 'info@rdvs.studio';
+  var TO = 'projects@rdvs.studio';
 
   /* Exposed on the form so the composed address can be measured without launching a mail client. */
   form.buildUri = function () {

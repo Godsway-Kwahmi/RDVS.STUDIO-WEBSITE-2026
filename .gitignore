@@ -48,3 +48,12 @@ assets/**/PROGRESS/
 *conflicted copy*
 *(conflicted copy*
 *(RDVS_XPS's conflicted copy*
+
+# Local helper scripts & recordings
+__pycache__/
+*.pyc
+behance_all.txt
+fetch_gallery.py
+record_master_*.js
+tube_videos.json
+assets/videos/*-walkthrough-60s.mp4
