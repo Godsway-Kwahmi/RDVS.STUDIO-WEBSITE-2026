@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/dyv/dyv-film.mp4',
         imageUrl: 'assets/images/dyv/dyv-atrium.jpg',
-        mobilePosition: '33% center',
+        mobilePosition: 'center',
         projectUrl: 'dyv.html',
         desc: 'The atrium fly-through: a fifteen-second monochrome push-in through the central atrium: a dense cluster of glowing cylindrical pendants under the domed opening, curved balcony bands rising around it, and lounge groups set among indoor trees. It opens on the same atrium view the gallery holds as its fourth plate, and it is the studio’s own capture posted to Instagram, so it is 1068x720 rather than a master render',
         specs: {
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/enda-whm/enda-whm-3.jpg',
-        mobilePosition: '16% center',
+        mobilePosition: 'center',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM dining room: an orange service bulkhead over a lit cake display at the left, a timber waffle ceiling with pale globe pendants above, and a backlit screen of bamboo culms glowing over the brick banquette at the right.',
 
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/purc/purc-entrance-lobby-bw.jpg',
-        mobilePosition: '58% center',
+        mobilePosition: 'center',
         projectUrl: 'purc.html',
         desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
         specs: {
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtVkWAoWgAEV3aY.jpg',
-        mobilePosition: '92% center',
+        mobilePosition: 'center',
         projectUrl: 'empire-tower.html'
       },
       {
@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design & 3D Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
-        mobilePosition: '69% center',
+        mobilePosition: 'center',
         projectUrl: 'frontier-filling-station.html',
         desc: 'A 2016 multidisciplinary commission spanning architecture, industrial design, and 3D visualization for the Frontier Filling Station.',
         specs: {
@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/purc/purc-facade.jpg',
-        mobilePosition: '41% center',
+        mobilePosition: 'center',
         projectUrl: 'purc.html',
         desc: 'Monolithic civic tower: a full-height glazed oval core flanked by stepped, sun-shading office bands and grounded by a broad flared arrival canopy.',
         specs: {
@@ -691,7 +691,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-panoramic-header.jpg',
-        mobilePosition: '61% center',
+        mobilePosition: 'center',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -725,7 +725,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-atrium.jpg',
-        mobilePosition: '33% center',
+        mobilePosition: 'center',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -769,7 +769,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/watsons-place/watsons-place-film.mp4',
         imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
-        mobilePosition: '41% center',
+        mobilePosition: 'center',
         projectUrl: 'watsons-place.html',
         desc: 'The delivered animation of the street views and the three rooms',
         specs: {
@@ -828,7 +828,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/moty/moty-intro.mp4',
         imageUrl: 'assets/images/moty/moty-5.jpg',
-        mobilePosition: '70% center',
+        mobilePosition: 'center',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
 
@@ -964,7 +964,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/smsgh/smsgh-1.jpg',
-        mobilePosition: '29% center',
+        mobilePosition: 'center',
         projectUrl: 'smsgh.html',
         desc: 'Visualization of the reception: full-height orange wall, dark desk with a white sms logo behind it, multicolour striped carpet, low black benches at the window and recessed ceiling panels over a cove-lit glass partition.',
 
@@ -1002,7 +1002,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/smsgh/smsgh-3.jpg',
-        mobilePosition: '55% center',
+        mobilePosition: 'center',
         projectUrl: 'smsgh.html',
         desc: 'Visualization of the breakout lounge: exposed timber ceiling beams and track lights, large colourful paintings on white walls, grey sofas, two yellow armchairs on a dark shag rug, black coffee table and white chairs beyond.',
 
@@ -1021,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/stellar-bar/stellar-bar-2.jpg',
-        mobilePosition: '83% center',
+        mobilePosition: 'center',
         projectUrl: 'stellar-bar.html',
         desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
         specs: {
@@ -1057,7 +1057,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/stellar-bar/stellar-bar-1-desktop.jpg',
-        mobilePosition: '44% center',
+        mobilePosition: 'center',
         projectUrl: 'stellar-bar.html',
         desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
         specs: {
@@ -1255,7 +1255,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-estate.jpg',
-        mobilePosition: '67% center',
+        mobilePosition: 'center',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -1448,7 +1448,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-6.jpg',
-        mobilePosition: '73% center',
+        mobilePosition: 'center',
         projectUrl: 'swipe.html'
       },
       {
@@ -1603,7 +1603,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
-        mobilePosition: '41% center',
+        mobilePosition: 'center',
         projectUrl: 'watsons-place.html',
         desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
         specs: {
@@ -1776,7 +1776,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-10.jpg',
-        mobilePosition: '37% center',
+        mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1986,7 +1986,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg',
-        mobilePosition: '33% center',
+        mobilePosition: 'center',
         projectUrl: 'asante-interior-design-presentation.html',
         desc: 'TAI is a four-room interior presentation for a private house in Accra   a bedroom, a dining room, an entrance hall and a gym, each visualized at full size so the client could approve the scheme before anything was built.',
         specs: {
@@ -2112,7 +2112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/moty/moty-5.jpg',
-        mobilePosition: '70% center',
+        mobilePosition: 'center',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
@@ -2359,7 +2359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-8.jpg',
-        mobilePosition: '56% center',
+        mobilePosition: 'center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2395,7 +2395,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/la-beach-towers-4.jpg',
-        mobilePosition: '34% center',
+        mobilePosition: 'center',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
@@ -2413,7 +2413,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/imperial-square/imperial-square-3.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: 'center',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -3408,7 +3408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-5.jpg',
-        mobilePosition: '79% center',
+        mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3859,7 +3859,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
-        mobilePosition: '29% center',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
 
@@ -3879,7 +3879,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/2gs/2gs-logo-construction-v2.mp4',
         imageUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
-        mobilePosition: '59% center',
+        mobilePosition: 'center',
         projectUrl: '2gs.html',
         desc: 'The eight-and-a-half-second ident: the monogram assembles itself out of the dark, its lower blocks arriving as bare outlines before they fill, while the stacked 2GS, CONSTRUCTION and +LOGISTICS wordmark draws in beside them; faint construction ticks sit under the mark and to its right, then fade as light crosses the sand fill and the finished lockup holds',
         specs: {
@@ -3898,7 +3898,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/1981/1981-film.mp4',
         imageUrl: 'assets/images/1981/1981-6.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: 'center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -3920,7 +3920,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-1.jpg',
-        mobilePosition: '69% center',
+        mobilePosition: 'center',
         projectUrl: 'jhk-investment.html',
         desc: 'JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky',
         specs: {
@@ -3974,7 +3974,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-1.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: 'center',
         projectUrl: 'ert.html',
         desc: 'Architectural visualization of ERT, a townhouse scheme by Mobius Architecture in Accra: three white cubic volumes with timber roof screens and a lit lap pool, seen at dusk.',
         specs: {
@@ -3993,7 +3993,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-2.jpg',
-        mobilePosition: '79% center',
+        mobilePosition: 'center',
         projectUrl: 'ert.html',
         desc: 'ERT from the drive at dusk: each white volume carries a board-formed concrete window bay and a planted timber pergola, cars parked under the cantilevers and bollard lights tracing the lawn edge.',
         specs: {
@@ -4012,7 +4012,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ert/ert-3.jpg',
-        mobilePosition: '68% center',
+        mobilePosition: 'center',
         projectUrl: 'ert.html',
         desc: 'ERT corner house at dusk: the white cubic volume with its concrete chimney and full-height glazing, a timber Townhouses sign wall uplit at the left and an SUV under the carport.',
         specs: {
@@ -4097,7 +4097,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
-        mobilePosition: '68% center',
+        mobilePosition: 'center',
         projectUrl: 'mig.html'
       },
       {
@@ -4107,7 +4107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
-        mobilePosition: '63% center',
+        mobilePosition: 'center',
         projectUrl: 'mig.html'
       },
       {
@@ -4247,7 +4247,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUD2ugHW0AAQBmr.jpg',
-        mobilePosition: '13% center',
+        mobilePosition: 'center',
         projectUrl: 'ackon-desk.html'
       },
       {
@@ -4323,7 +4323,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
-        mobilePosition: '64% center',
+        mobilePosition: 'center',
         projectUrl: 'stanchart-hq.html',
         desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
         specs: {
@@ -4342,7 +4342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'industrial-design',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
-        mobilePosition: '73% center',
+        mobilePosition: 'center',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -4398,7 +4398,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/2gs/2gs-9.jpg',
-        mobilePosition: '8% center',
+        mobilePosition: 'center',
         projectUrl: '2gs.html'
       },
       {
@@ -4438,7 +4438,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design, Digital & Web Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/tea-house/tea-house-01.png',
-        mobilePosition: '24% center',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
@@ -4474,7 +4474,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design, Digital & Web Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
-        mobilePosition: '29% center',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
@@ -4605,7 +4605,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design & 3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/mtn-hq/mtn-hq-19.jpg',
-        mobilePosition: '17% center',
+        mobilePosition: 'center',
         projectUrl: 'mtn.html',
         desc: 'Environmental graphics and way-finding pitch for MTN House, Accra — a system built on the SIM card and paper-plane motif, explored through pictograms, signage, kiosks and 3D visualization.',
         specs: {
@@ -4644,7 +4644,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/kdmrd/kdmrd-hero.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: 'center',
         projectUrl: 'kdmrd.html',
         desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
         specs: {
@@ -4680,7 +4680,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-5.jpg',
-        mobilePosition: '78% center',
+        mobilePosition: 'center',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -4734,7 +4734,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/dela-anyaa/dela-anyaa-10.jpg',
-        mobilePosition: '60% center',
+        mobilePosition: 'center',
         projectUrl: 'dela-anyaa.html',
         desc: 'A personal identity for Dela Anyaa, built from two parts: a calligraphic mark rendered in polished chrome, and a hand-written signature used in place of a wordmark.',
         specs: {
@@ -4770,7 +4770,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/2gs/2gs-10.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: 'center',
         projectUrl: '2gs.html',
         desc: 'A 2015 identity for 2GS Construction + Logistics: a monogram built from the idea of the collective, carried from pencil construction studies through stationery, business cards, letterheads and concrete signage.',
         specs: {
@@ -4788,7 +4788,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-1.jpg',
-        mobilePosition: '71% center',
+        mobilePosition: 'center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -4839,7 +4839,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-6.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: 'center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -4981,7 +4981,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
-        mobilePosition: '92% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate2',
@@ -4990,7 +4990,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsLMJdyX0AIUNuB.jpg',
-        mobilePosition: '92% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate3',
@@ -5044,7 +5044,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FshZRdsWwAIPdr1.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate9',
@@ -5071,7 +5071,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FspUg4aX0AIuCJH.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate12',
@@ -5107,7 +5107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FtZCqbqWYAEc3_S.jpg',
-        mobilePosition: '8% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate16',
@@ -5116,7 +5116,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FtcjLP0WAAUNJRl.jpg',
-        mobilePosition: '8% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate17',
@@ -5152,7 +5152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPMK6X0AAZtYD.jpg',
-        mobilePosition: '17% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate21',
@@ -5161,7 +5161,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPNjxWIAILRM7.jpg',
-        mobilePosition: '19% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate22',
@@ -5283,7 +5283,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/marble-bath/marble-bath-1-desktop.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: 'center',
         projectUrl: 'marble-bath.html',
         desc: 'Four interior visualizations of a master bathroom, made in 2015 for Samuel Adabi under Mobius Architecture: a marble-clad approach corridor, a floating walnut double vanity, a built-in tub and the dressing end.',
         specs: {
@@ -5310,7 +5310,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Full rendered broadcast ident animations',
 
@@ -5350,7 +5350,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/elo-tv/elo-tv-logo-16x9-v2.mp4',
         imageUrl: 'assets/images/elo-tv/elo-tv-logo-frame.jpg',
-        mobilePosition: '46% center',
+        mobilePosition: 'center',
         projectUrl: 'elo-tv.html',
         desc: 'The broadcast ident itself: eight seconds at 1920x1080 and 30 fps in which a bloom of light opens the top bar of the slanted E, the three bars unfold onto a presenter in red, and the red tv chip resolves its letters before the mark holds and fades back to black.',
         specs: {
@@ -5369,7 +5369,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
         imageUrl: 'assets/images/ceeander/ceeander-cover.jpg',
-        mobilePosition: '60% center',
+        mobilePosition: 'center',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\u2019s logo in its actual colours.',
         specs: {
@@ -5389,7 +5389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -5428,7 +5428,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Broadcast',
         discipline: 'motion',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-03.png',
-        mobilePosition: '33% center',
+        mobilePosition: 'center',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -5446,7 +5446,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Motion Design',
         discipline: 'motion',
         imageUrl: 'assets/images/elo-tv/elo-tv-17.jpg',
-        mobilePosition: '39% center',
+        mobilePosition: 'center',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
@@ -5464,7 +5464,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Animation',
         discipline: 'motion',
         imageUrl: 'assets/images/ceeander/ceeander-7.png',
-        mobilePosition: '46% center',
+        mobilePosition: 'center',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
         specs: {
@@ -5482,7 +5482,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Motion Design',
         discipline: 'motion',
         imageUrl: 'assets/images/elo-tv/elo-tv-16.jpg',
-        mobilePosition: '35% center',
+        mobilePosition: 'center',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
@@ -5518,7 +5518,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Broadcast',
         discipline: 'motion',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png',
-        mobilePosition: '21% center',
+        mobilePosition: 'center',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -5590,7 +5590,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Animation',
         discipline: 'motion',
         imageUrl: 'assets/images/ceeander/ceeander-6.png',
-        mobilePosition: '44% center',
+        mobilePosition: 'center',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
         specs: {
@@ -5658,7 +5658,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         videoUrl: 'assets/videos/mound/mound-film.mp4',
         imageUrl: 'assets/images/mig/mig-mound-1.jpg',
-        mobilePosition: '45% center',
+        mobilePosition: 'center',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
@@ -5675,7 +5675,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
-        mobilePosition: '63% center',
+        mobilePosition: 'center',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -5750,7 +5750,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-6.jpg',
-        mobilePosition: '55% center',
+        mobilePosition: 'center',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -5870,7 +5870,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mound-1.jpg',
-        mobilePosition: '45% center',
+        mobilePosition: 'center',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
@@ -5900,7 +5900,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-1.jpg',
-        mobilePosition: '43% center',
+        mobilePosition: 'center',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
@@ -5915,7 +5915,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-2.jpg',
-        mobilePosition: '35% center',
+        mobilePosition: 'center',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
@@ -5930,7 +5930,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-1.jpg',
-        mobilePosition: '61% center',
+        mobilePosition: 'center',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
@@ -5945,7 +5945,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-2.jpg',
-        mobilePosition: '59% center',
+        mobilePosition: 'center',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
@@ -5960,7 +5960,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-3.jpg',
-        mobilePosition: '60% center',
+        mobilePosition: 'center',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
