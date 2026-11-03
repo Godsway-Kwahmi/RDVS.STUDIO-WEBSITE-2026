@@ -196,6 +196,23 @@
   <main>
     <section class="hero-viewport" aria-label="Featured Works">
       <div class="hero-scrim"></div>
+            <!-- The cycling studio wordmark, the owner's drawing of 2026-11-03: three words on one vertical
+           line at the right edge of the hero, in the manner of the vertical wordmark the Ackon Desk
+           film draws there. The bottom word is the bold one; every 12 s it fades out, the word above
+           it slides down into its place and thickens, the next word slides up one slot, and the word
+           that just faded re-appears thin at the top. design -> visualize -> make, 36 s round.
+           Decorative: the same three words are already read out by the footer tagline, so this is
+           aria-hidden and pointer-events:none -- the hero's right 16% band is a live "next slide"
+           target on touch screens (scratch/_hero_touch_*), and an overlay must not eat it. -->
+      <div class="hero-wordmark" aria-hidden="true">
+        <svg viewBox="0 0 170 1260" preserveAspectRatio="xMidYMid meet" focusable="false">
+          <g transform="translate(140 1230) rotate(-90)">
+            <text class="hw hw-make" x="0" y="0">make</text>
+            <text class="hw hw-visualize" x="0" y="0">visualize</text>
+            <text class="hw hw-design" x="0" y="0">design</text>
+          </g>
+        </svg>
+      </div>
 
       <!-- 20 Slides -->
       <div class="hero-slider">
