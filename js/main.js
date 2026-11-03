@@ -2250,6 +2250,114 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
+      },      {
+        id: 'link-drive-road-plate3',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-2.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-2.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-2-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: 'link-drive-road-plate4',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-3.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-3.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-3-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: 'link-drive-road-plate5',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-4.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-4.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-4-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: 'link-drive-road-plate6',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-6.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-6.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-6-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: 'link-drive-road-plate7',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-7.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-7.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-7-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
+      },      {
+        id: 'link-drive-road-plate8',
+        title: 'Link Drive Rd.',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/link-drive/link-drive-8.jpg',
+        imageUrlDesktop: 'assets/images/link-drive/link-drive-8.jpg',
+        imageMobileUrl: 'assets/images/link-drive/link-drive-8-mobile.jpg',
+        projectUrl: 'link-drive-road.html',
+        desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'3D Visualization\']'
+        }
       },
       {
         id: 'la-beach-towers-plate1',
