@@ -3836,7 +3836,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ahero/ahero-film.mp4',
         imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '84% center',
         projectUrl: 'ahero.html',
       },
       {
@@ -6686,7 +6686,19 @@ document.addEventListener('DOMContentLoaded', async () => {
               const deskVid = proj.videoUrl;
               const deskPoster = proj.imageUrl || '';
               const rung = filmRendition(proj);
-              const mobilePos = 'center';
+              // Videos take the entry's own `mobilePosition` now, the same way the image branch below already
+              // does (owner, 2026-11-03: "...make sure we capture the right half of the video... so
+              // don't center this video like the other videos"). Census over the pool as
+              // scratch/_slide_deck.py parses it: 26 entries carry a videoUrl, 25 of them say 'center' and
+              // only Ahero's says anything else, so wiring the field through moves Ahero and leaves the
+              // other 25 films exactly where they are.
+              //
+              // Ahero's value is the middle of the right half: 84% puts the 390 px window on frame x
+              // 62.0%..88.0%, measured by scratch/_ahero_right_half.py through the site's own mapping
+              // (and its edge-energy profile puts the film's work at fx=0.772, so the owner's half is
+              // where the work already is). The property lands on `.slide-media`, and the phone rule
+              // in css/styles.css now reads it for video as well as for a still.
+              const mobilePos = proj.mobilePosition || 'center';
               mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
 
               mediaContainer.innerHTML = rung

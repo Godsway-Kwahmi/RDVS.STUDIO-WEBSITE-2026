@@ -449,15 +449,20 @@ button {
   transform: none;
 }
 
+/* One phone framing law for both kinds of slide media (owner, 2026-11-03, on Ahero's film: "make sure
+   we capture the right half of the video... so don't center this video like the other videos"). The
+   stills already read --slide-mobile-pos here; the video pair used to re-pin `center` on top of it,
+   which made the pool's `mobilePosition` field decorative for every film on the deck. The desktop rule
+   above still says `object-position: center`, so this only ever changes what a phone sees, and a film
+   whose entry says nothing is still centred -- `center` is the fallback in the var() and the value in
+   25 of the deck's 26 film entries, counted by scratch/_guard_ahero_mobile_pos.py through the deck's own
+   pool parser. */
 @media (max-width: 768px) {
   .slide-picture img,
-  .slide-img {
-    object-position: var(--slide-mobile-pos, center);
-  }
-
+  .slide-img,
   .slide-video,
   .slide-media video {
-    object-position: center;
+    object-position: var(--slide-mobile-pos, center);
   }
 }
 
