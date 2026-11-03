@@ -516,15 +516,17 @@ button {
   --hero-social-inset: 602.3px;
   --hero-social-cap: 1952px;
   /* Owner markup 2026-10-27: the bottom strip (socials row + "Website by RDVS")
-     gets a theme-colored background like the fixed nav bar at the top.  One
-     ::before bar on THIS box (it alone spans the full width at every tier --
-     below 1200 .hero-meta-controls is a right-packed flex item), full-bleed to
-     the viewport edges, painted above the slide (inside .hero-footer's
-     stacking context) but below the caption.  --hero-strip-height is measured
-     floor-relative: it must cover the socials row and reach the hero's bottom
-     edge while keeping the hairline controls row and the caption's category
-     line clear. */
-  --hero-strip-height: 48px;
+     gets a theme-colored background like the fixed nav bar at the top.  Owner markup 2026-11-03 (a phone
+     screenshot with the band's top edge drawn in and the words "MAKE SAME BLACK/WHITE BACKGROUND LIKE
+     NAVIGATION AREA PER THEME"): that bar has to reach the TOP of the controls block, not stop under it.
+     Measured before the change, the counter row and the hairline bars sat on the raw slide because the bar
+     topped below them -- 35px uncovered at 390x844, 24px at 804x742, 7px at 1276x796.
+     One ::before bar on THIS box (it alone spans the full width at every tier -- below 1200
+     .hero-meta-controls is a right-packed flex item), full-bleed to the viewport edges, painted above the
+     slide (inside .hero-footer's stacking context) but below the caption.  --hero-strip-height is now
+     DERIVED, not typed: the controls block's own height + the floor padding it stands on + 8px of air, so
+     the bar's top edge clears the counter row at every tier.  Desktop: block 31 + margin 24 + 8 = 63. */
+  --hero-strip-height: 63px;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -1091,13 +1093,14 @@ button {
    breakpoint stays at 1200px, where it has room to spare.
    ========================================================================== */
 /* The mid band (641-1199) stacks the strip's rows taller than the desktop
-   floor-line pair: measured at 768 and 1024, the socials row tops 45.6px
-   above the floor and the hairline controls row bottoms 61.6px above it, so
-   the strip is 52 + 24 = 76px tall -- 6px of air over the socials, 9.6px
-   under the hairline row. */
+   floor-line pair.  Owner markup 2026-11-03 asks the theme bar to cover the whole controls block here
+   too: measured at 700, 1000 and 1150 the block is 76px tall and stands on 24px of floor padding, so the
+   bar is 76 + 24 + 8 of air = 108px.  Its top edge lands at 634 in an 804x742 window, which is 12px above
+   the caption's category line -- at this tier the caption and the controls share the band's rows, so the
+   category now sits on the same background the title and the links already did. */
 @media (max-width: 1199px) {
   .hero-footer-container {
-    --hero-strip-height: 76px;
+    --hero-strip-height: 108px;
   }
 }
 
@@ -3059,11 +3062,12 @@ a.subservice-item:hover {
   }
 
   .hero-footer-container {
-    /* Phone geometry (390x844): the socials row tops 44px above the floor,
-       the credit closes at it, and the hero's bottom edge is 16px below, so
-       the strip is 52 + 16 = 68px tall -- 5.8px of air over the socials,
-       4.2px under the hairline row. */
-    --hero-strip-height: 68px;
+    /* Phone geometry (390x844), owner markup of 2026-11-03: the controls block -- the counter's row, the
+       hairline bars, the socials and the credit -- is 87px tall at 360 and 430 and 89px at 640, and it
+       stands on 16px of floor padding, so the bar is 89 + 16 + 8 of air = 113px.  Before this it was
+       68px, which left the counter row and the bars -- 35px of ink at 390x844 -- sitting on the raw slide
+       with the bar's edge drawn straight through the band, which is the line the drawing marks. */
+    --hero-strip-height: 113px;
   }
 
   .hero-meta-controls {
