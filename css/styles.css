@@ -3626,9 +3626,10 @@ html[data-intro="done"] .rdvs-intro-veil {
    gap 2.92% of frame width, advance/x-height 0.938 -- a Helvetica-like face tracked at about -0.040em,
    which is the same law the footer wordmark already ships at -0.045em. Three words share one line where
    the film has one, so the line is longer and the letters smaller than his mark: one em of this face
-   paints at 5.76% of the viewport height on desktop and 4.41% on a phone, and the slots sit 435 user
-   units apart -- the longest word bold (397) plus the air, so a word can thicken without ever touching
-   the word waiting above it.
+   paints at 5.76% of the viewport height, and the slots sit 435 user units apart -- the longest word
+   bold (397) plus the air, so a word can thicken without ever touching the word waiting above it.
+   The owner's follow-up mark-up of the same day circles the line and writes "ONLY ON DESKTOP. DON'T
+   SHOW ON MOBILE", so below 768px the box carries display:none -- this geometry is the desktop's alone.
 
    The clock: one 36s keyframe set, three words, phase carried by animation-delay alone (0s, -24s,
    -12s) exactly as the footer tagline hands over. Each word's own cycle: bold in the bottom slot for
@@ -3642,9 +3643,9 @@ html[data-intro="done"] .rdvs-intro-veil {
   --hw-top: 870px;           /* SVG user units: the top slot */
   --hw-em: 5.76vh;          /* one em of the 100-unit face -- the ONE size knob the designer turns */
   --hw-units: 12.6;  /* VB_H / FONT_U: the line is drawn this many em tall */
-  --hw-clear: max(15vh, 112px);   /* the hero footer strip is 13.4% of the viewport at 804x742 and
-                                     31.1% at 390x844 -- measured, live -- so the line stands on a floor
-                                     that is either 15vh or the strip, whichever is taller. */
+  --hw-clear: max(15vh, 112px);   /* the hero footer strip is 13.4% of the viewport at 804x742 --
+                                     measured, live -- so the line stands on a floor that is either 15vh
+                                     or the strip, whichever is taller. */
   position: absolute;
   right: 2.9vw;                /* the film's own right gap, measured */
   bottom: var(--hw-clear);     /* the line grows upward from there */
@@ -3658,13 +3659,12 @@ html[data-intro="done"] .rdvs-intro-veil {
   overflow: visible;
 }
 
-/* Phones: the hero footer strip is more than twice as tall in proportion to the viewport, so the floor
-   rises with it and the letters shrink. Same three slots, same clock, same --hw-units -- the box height
-   is derived, so these two custom properties are the whole mobile story. */
+/* Phones: the owner's follow-up mark-up of 2026-11-03 circles the line and writes "ONLY ON DESKTOP.
+   DON'T SHOW ON MOBILE" -- so below 768px the box is not rendered at all, and none of the geometry above
+   is asked to fit a phone's much taller footer strip. */
 @media (max-width: 768px) {
   .hero-wordmark {
-    --hw-em: 4.41vh;
-    --hw-clear: max(33vh, 268px);
+    display: none;
   }
 }
 
