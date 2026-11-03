@@ -528,10 +528,24 @@ button {
      topped below them -- 35px uncovered at 390x844, 24px at 804x742, 7px at 1276x796.
      One ::before bar on THIS box (it alone spans the full width at every tier -- below 1200
      .hero-meta-controls is a right-packed flex item), full-bleed to the viewport edges, painted above the
-     slide (inside .hero-footer's stacking context) but below the caption.  --hero-strip-height is now
-     DERIVED, not typed: the controls block's own height + the floor padding it stands on + 8px of air, so
-     the bar's top edge clears the counter row at every tier.  Desktop: block 31 + margin 24 + 8 = 63. */
-  --hero-strip-height: 63px;
+     slide (inside .hero-footer's stacking context) but below the caption.  --hero-strip-height is
+     DERIVED, not typed, from the rows the bar is meant to carry.
+     Owner markup 2026-11-03 again (the same drawing, an arrow onto this band's top edge at the caption
+     cluster, "REDUCE HEIGHT ON DESKTOP"): the desktop bar was too tall.  It was 63px because it was
+     derived off the CONTROLS BLOCK's box (31 + 24 floor + 8 air), and the block's box is 31px of mostly
+     empty column -- the counter line is lifted 14.9px out of it by the markup of 2026-10-27, so the ink
+     that actually needed carrying topped at 32.4px above the viewport bottom while the bar topped at 63.
+     The extra 30px is what he is pointing at, and the edge did not even clear the type: measured at every
+     desktop tier from 1200 to 2560, the counter row's ink box runs 55.9..69.9 and the category line's
+     57.0..73.8, so a 63px bar cut through both of them.
+     The bar is therefore derived off the ink it carries, not off a box: the topmost row it owns is the
+     links/socials/credit line at 32.4px above the viewport bottom, plus the same 8px of air = 40px.  That
+     puts its top edge in the 30.9px gap the two markups already left between the hairline bars and the
+     counter line -- 7.6px above the ink it covers, 15.9px below the ink it does not -- so the band is 23px
+     shorter (36%) and no edge runs through any text.  The two lower tiers keep the 2026-11-03 law as
+     drawn: their controls block really is one tall stack (76px at 641-1199, 89px at <=640), so those
+     bars stay at 108 and 113. */
+  --hero-strip-height: 40px;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
