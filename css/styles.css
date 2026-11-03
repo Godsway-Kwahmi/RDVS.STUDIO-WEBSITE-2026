@@ -3628,8 +3628,9 @@ html[data-intro="done"] .rdvs-intro-veil {
    the film has one, so the line is longer and the letters smaller than his mark: one em of this face
    paints at 5.76% of the viewport height, and the slots sit 435 user units apart -- the longest word
    bold (397) plus the air, so a word can thicken without ever touching the word waiting above it.
-   The owner's follow-up mark-up of the same day circles the line and writes "ONLY ON DESKTOP. DON'T
-   SHOW ON MOBILE", so below 768px the box carries display:none -- this geometry is the desktop's alone.
+   The owner's follow-up mark-up of the same day crosses the line out and writes "ONLY ON DESKTOP REMOVE
+   ON ALL MOBILE SCREENS", so on a mobile screen the box carries display:none -- this geometry is the
+   desktop's alone.
 
    The clock: one 36s keyframe set, three words, phase carried by animation-delay alone (0s, -24s,
    -12s) exactly as the footer tagline hands over. Each word's own cycle: bold in the bottom slot for
@@ -3659,10 +3660,14 @@ html[data-intro="done"] .rdvs-intro-veil {
   overflow: visible;
 }
 
-/* Phones: the owner's follow-up mark-up of 2026-11-03 circles the line and writes "ONLY ON DESKTOP.
-   DON'T SHOW ON MOBILE" -- so below 768px the box is not rendered at all, and none of the geometry above
-   is asked to fit a phone's much taller footer strip. */
-@media (max-width: 768px) {
+/* Phones and tablets: the owner's mark-up of 2026-11-03 crosses the line out and writes "ONLY ON
+   DESKTOP REMOVE ON ALL MOBILE SCREENS". A width clause alone would not cover it -- a phone held
+   landscape reports 844-932 CSS px and an iPad Air/Pro landscape 1180-1366, all above any phone tier --
+   so the rule is the site's own two-part mobile test (css/styles.css already uses both shapes:
+   `@media (hover: none) and (pointer: coarse)` for the hero arrows, `@media (max-width: 767px),
+   (pointer: coarse)` for the nav): the mobile layout tier, OR a touch-primary device at ANY width.
+   A desktop with a mouse keeps the line at every window size; no mobile screen can reach it. */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
   .hero-wordmark {
     display: none;
   }
