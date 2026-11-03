@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-kitchen.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
 
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-terrace.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-bedroom.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/enda-whm/enda-whm-4.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM seating plan from above: oak tables laid with caddies and a sushi tray, leather banquettes running to the brick and bamboo screen, and a pink globe pendant dropping into frame over parquet flooring.',
 
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-01.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '41-barham.html',
         desc: 'The attic living room: a low bed with a charcoal throw beneath two skylights in the raked ceiling, a grey sofa and black coffee table on dark timber boards, and a glass door open onto a bare terrace behind grey drapes.',
         specs: {
@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-02.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '41-barham.html',
         desc: 'The same attic living room from the terrace door: the bed between its two skylights, a grey sofa with patterned cushions, a black coffee table and dark stained floorboards.',
         specs: {
@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/macord/macord-5.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: '41% center',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
@@ -571,7 +571,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/empire-tower-3.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'empire-tower.html'
       },
       {
@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design & Spatial Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -617,7 +617,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtJStmkW4AIP-3M.jpg',
-        mobilePosition: '63% center',
+        mobilePosition: '62% center',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -635,7 +635,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/empire-tower-1.jpg',
-        mobilePosition: '31% center',
+        mobilePosition: '30% center',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -671,7 +671,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtQVZm0XcAAdwi8.jpg',
-        mobilePosition: '31% center',
+        mobilePosition: '30% center',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -788,7 +788,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'A walkthrough of the villa',
 
@@ -808,7 +808,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
         imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'The delivered animation, end to end',
 
@@ -850,7 +850,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-1.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Visualization of a glass-fronted meeting room: mesh task chairs around a table, a red and orange geometric brand graphic with chevrons on the rear wall, and a full-height glazed partition reflecting the daylight from the window wall beyond.',
 
@@ -869,7 +869,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Executive office visualization with dark timber veneer and vertical slat walls, a white desk carrying a desktop computer and task lamp, grey carpet tiles, and a navy leather sofa in the foreground under recessed ceiling downlights.',
 
@@ -888,7 +888,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-3.jpg',
-        mobilePosition: '69% center',
+        mobilePosition: '68% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Open client lounge visualization: grey sofa and a round white coffee table in the centre, blue and orange accent chairs, yellow armchairs by the window, a timber slat wall with a green screen, planters and a circular ceiling feature.',
 
@@ -1129,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/moty/moty-3.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
@@ -1147,7 +1147,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
         specs: {
@@ -1183,7 +1183,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-9.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -1219,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, 3D Visualization, Graphic Design, Industrial & Furniture Design & Construction',
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-15.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -1237,7 +1237,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/csm/csm-1-desktop.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -1292,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, 3D Visualization, Graphic Design, Industrial & Furniture Design & Construction',
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-17.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -1400,7 +1400,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1438,7 +1438,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'asante-interior-design-presentation.html'
       },
       {
@@ -1458,7 +1458,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-1.jpg',
-        mobilePosition: '58% center',
+        mobilePosition: '59% center',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -1476,7 +1476,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -1494,7 +1494,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-3.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -1530,7 +1530,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-3.jpg',
-        mobilePosition: '58% center',
+        mobilePosition: '59% center',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -1566,7 +1566,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-9.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -1585,7 +1585,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/watsons-place/watsons-place-3.jpg',
-        mobilePosition: '60% center',
+        mobilePosition: '59% center',
         projectUrl: 'watsons-place.html',
         desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
         specs: {
@@ -1691,7 +1691,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-5.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1725,7 +1725,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-7.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1827,7 +1827,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-13.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1861,7 +1861,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-15.jpg',
-        mobilePosition: '21% center',
+        mobilePosition: '20% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1896,7 +1896,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -1914,7 +1914,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
-        mobilePosition: '71% center',
+        mobilePosition: '70% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -2094,7 +2094,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-12.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -2130,7 +2130,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/moty/moty-2.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: '41% center',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
@@ -2221,7 +2221,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/macord/macord-3.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: '75% center',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
@@ -2257,7 +2257,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-9.jpg',
-        mobilePosition: '39% center',
+        mobilePosition: '38% center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2274,7 +2274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-2.jpg',
-        mobilePosition: '40% center',
+        mobilePosition: '41% center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2291,7 +2291,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-3.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2325,7 +2325,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-6.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2342,7 +2342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-7.jpg',
-        mobilePosition: '77% center',
+        mobilePosition: '78% center',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -2431,7 +2431,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/imperial-square/imperial-square-2.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -2471,7 +2471,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-6.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -2489,7 +2489,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-8.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -2507,7 +2507,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-hero.jpg',
-        mobilePosition: '61% center',
+        mobilePosition: '62% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2525,7 +2525,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-2.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2543,7 +2543,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-8.jpg',
-        mobilePosition: '65% center',
+        mobilePosition: '64% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2561,7 +2561,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-9.jpg',
-        mobilePosition: '34% center',
+        mobilePosition: '33% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2579,7 +2579,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-10.jpg',
-        mobilePosition: '58% center',
+        mobilePosition: '59% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2633,7 +2633,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-13.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -2759,7 +2759,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/csm/csm-2.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: '41% center',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -2795,7 +2795,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Architectural Visualization & Graphic Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-18.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
@@ -2813,7 +2813,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Architectural Visualization & Graphic Design',
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-1.jpg',
-        mobilePosition: '21% center',
+        mobilePosition: '20% center',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
@@ -2831,7 +2831,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-5.png',
-        mobilePosition: '21% center',
+        mobilePosition: '20% center',
         projectUrl: 'bfa.html',
         desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
         specs: {
@@ -2867,7 +2867,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-8.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: '75% center',
         projectUrl: 'bfa.html',
         desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
         specs: {
@@ -2889,7 +2889,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, 3D Visualization, Graphic Design, Industrial & Furniture Design & Construction',
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-21.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -2907,7 +2907,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/abl-reception/abl-reception-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'abl-reception.html',
         desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
         specs: {
@@ -2982,7 +2982,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-2.jpg',
-        mobilePosition: '77% center',
+        mobilePosition: '78% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3050,7 +3050,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-7.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: '41% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3067,7 +3067,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-8.jpg',
-        mobilePosition: '71% center',
+        mobilePosition: '70% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3084,7 +3084,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-9.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3101,7 +3101,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-10.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3135,7 +3135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-13.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3152,7 +3152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-1.jpg',
-        mobilePosition: '42% center',
+        mobilePosition: '41% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3203,7 +3203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-16.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: '75% center',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -3306,7 +3306,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/E2G_xZRWYAIScVK.jpg',
-        mobilePosition: '39% center',
+        mobilePosition: '38% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3357,7 +3357,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-2.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3425,7 +3425,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-6.jpg',
-        mobilePosition: '71% center',
+        mobilePosition: '70% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3493,7 +3493,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-10.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3544,7 +3544,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-13.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3561,7 +3561,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-14.jpg',
-        mobilePosition: '39% center',
+        mobilePosition: '38% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3578,7 +3578,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-15.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3612,7 +3612,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-17.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3629,7 +3629,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-18.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3646,7 +3646,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-19.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3714,7 +3714,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-23.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3731,7 +3731,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-24.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -3767,7 +3767,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/3aap/3aap-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
         specs: {
@@ -4087,7 +4087,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCs8EWYAAvIOH.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: '75% center',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -4137,7 +4137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'lamu.html'
       },
       {
@@ -4167,7 +4167,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F15a7QaWAAAaW3Z.jpg',
-        mobilePosition: '76% center',
+        mobilePosition: '75% center',
         projectUrl: 'hola.html'
       },
       {
@@ -4187,7 +4187,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Multi-Unit Residential',
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -4197,7 +4197,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'avalon.html'
       },
       {
@@ -4227,7 +4227,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization & 3D Animation',
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/F9YX1k0W0AAevHc.jpg',
-        mobilePosition: '31% center',
+        mobilePosition: '30% center',
         projectUrl: 'ahero.html'
       },
       {
@@ -4379,7 +4379,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/senya-resort/senya-resort-1-desktop.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -4418,7 +4418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization & BIM',
         discipline: 'vfx',
         imageUrl: 'assets/images/npa/npa-3.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'npa-reception-renders.html'
       },
       {
@@ -4544,7 +4544,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/senya-resort/EuMQCBQXYAMNGul.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -4805,7 +4805,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-2.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -4822,7 +4822,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-5.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -4856,7 +4856,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-3.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -4874,7 +4874,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCvERX0AENu7d.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -4894,7 +4894,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Multi-Unit Residential',
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/Ei4kUxWXYAIh8HL.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -4904,7 +4904,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'hola.html'
       },
       {
@@ -4914,7 +4914,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
-        mobilePosition: '21% center',
+        mobilePosition: '20% center',
         projectUrl: 'lamu.html'
       },
       {
@@ -4972,7 +4972,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate1',
@@ -4999,7 +4999,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsToeqxWcAEA8ft.jpg',
-        mobilePosition: '37% center',
+        mobilePosition: '36% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate4',
@@ -5008,7 +5008,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsaGWWLWABgVwQD.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate5',
@@ -5017,7 +5017,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FseFF83XsAE3byC.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate6',
@@ -5026,7 +5026,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FseFG8GXoAE54NP.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate7',
@@ -5053,7 +5053,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FshZS8UXsAArIuW.jpg',
-        mobilePosition: '73% center',
+        mobilePosition: '72% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate10',
@@ -5080,7 +5080,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Ft4iPZlWYAEaQWQ.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate13',
@@ -5089,7 +5089,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate14',
@@ -5143,7 +5143,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPM-RWIAAms-l.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate20',
@@ -5170,7 +5170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuLgJKhWAA0jerA.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '15% center',
         projectUrl: 'ttd.html'
       },
       {
@@ -5180,7 +5180,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/Gc8QzsaXkAAQotV.jpg',
-        mobilePosition: '63% center',
+        mobilePosition: '62% center',
         projectUrl: 'avalon.html'
       },
       {
@@ -5408,7 +5408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
         imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
-        mobilePosition: '80% center',
+        mobilePosition: '85% center',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
         specs: {
@@ -5626,7 +5626,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         videoUrl: 'assets/videos/hg-desk/hg-desk-film.mp4',
         imageUrl: 'assets/images/mig/mig-hg-desk-1.jpg',
-        mobilePosition: '68% center',
+        mobilePosition: '90% center',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -5780,7 +5780,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-hg-desk-1.jpg',
-        mobilePosition: '68% center',
+        mobilePosition: '90% center',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -5885,7 +5885,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mound-2.jpg',
-        mobilePosition: '75% center',
+        mobilePosition: 'center',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
