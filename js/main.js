@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design & 3D Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '85% center',
         projectUrl: 'frontier-filling-station.html',
         desc: 'A 2016 multidisciplinary commission spanning architecture, industrial design, and 3D visualization for the Frontier Filling Station.',
         specs: {
@@ -4167,7 +4167,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F15a7QaWAAAaW3Z.jpg',
-        mobilePosition: '75% center',
+        mobilePosition: '72% center',
         projectUrl: 'hola.html'
       },
       {
@@ -4904,7 +4904,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobilePosition: '85% center',
+        mobilePosition: '72% center',
         projectUrl: 'hola.html'
       },
       {
@@ -5900,7 +5900,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-1.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '24% center',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
@@ -5915,7 +5915,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-2.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '74% center',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
