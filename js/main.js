@@ -918,14 +918,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/moty/moty-5.jpg',
         imageMobileUrl: 'assets/images/moty/moty-5-mobile.jpg',
         projectUrl: 'moty.html',
-        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
 
         specs: {
           client: 'Mother of the Year (MOTY)',
           scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
           team: 'RDVS. DESIGN',
           year: '2016',
-          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
         }
       },
 
@@ -1251,13 +1251,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/moty/moty-3.jpg',
         imageMobileUrl: 'assets/images/moty/moty-3-mobile.jpg',
         projectUrl: 'moty.html',
-        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
           client: 'Mother of the Year (MOTY)',
           scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
           team: 'RDVS. DESIGN',
           year: '2016',
-          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
         }
       },
       {
@@ -2342,13 +2342,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/moty/moty-5.jpg',
         imageMobileUrl: 'assets/images/moty/moty-5-mobile.jpg',
         projectUrl: 'moty.html',
-        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
           client: 'Mother of the Year (MOTY)',
           scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
           team: 'RDVS. DESIGN',
           year: '2016',
-          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
         }
       },
       {
@@ -2362,15 +2362,70 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrlDesktop: 'assets/images/moty/moty-2.jpg',
         imageMobileUrl: 'assets/images/moty/moty-2-mobile.jpg',
         projectUrl: 'moty.html',
-        desc: 'Futuristic broadcast title opener utilizing optical refraction, metallic shaders, and synchronized kinetic audio hits.',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
           client: 'Mother of the Year (MOTY)',
           scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
           team: 'RDVS. DESIGN',
           year: '2016',
-          disciplines: '[\'Interior Design\', \'Furniture Design\', \'Graphic Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
         }
       },
+      {
+        id: 'moty-plate1',
+        title: 'MOTY',
+        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
+        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/moty/moty-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'moty.html',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
+        specs: {
+          client: 'Mother of the Year (MOTY)',
+          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'moty-plate2',
+        title: 'MOTY',
+        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
+        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/moty/moty-6.jpg',
+        mobilePosition: '75% center',
+        projectUrl: 'moty.html',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
+        specs: {
+          client: 'Mother of the Year (MOTY)',
+          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'moty-plate3',
+        title: 'MOTY',
+        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
+        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/moty/moty-7.jpg',
+        mobilePosition: '18% center',
+        projectUrl: 'moty.html',
+        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
+        specs: {
+          client: 'Mother of the Year (MOTY)',
+          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+
       {
         id: 'macord-international-school-plate1',
         title: 'Macord International School',
