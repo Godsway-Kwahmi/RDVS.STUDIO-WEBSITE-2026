@@ -1418,7 +1418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-1.jpg',
-        mobilePosition: '40% center',
+        mobilePosition: '72% center',
         projectUrl: 'link-drive-road.html'
       },
       {
@@ -1657,7 +1657,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-3.jpg',
-        mobilePosition: '21% center',
+        mobilePosition: '24% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1674,7 +1674,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-4.jpg',
-        mobilePosition: '58% center',
+        mobilePosition: '62% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1776,7 +1776,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-10.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '35% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -1950,7 +1950,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-wide-hero.jpg',
-        mobilePosition: '26% center',
+        mobilePosition: '24% center',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -3812,7 +3812,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ttd/ttd-film.mp4',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '66% center',
         projectUrl: 'ttd.html',
         desc: 'A ninety-second render film of the TTD living room from one locked-off camera: the room runs from dark through lit evening to full daylight, holding on the red sectional, the terracotta stair and the blue dining wall at the far end',
       },
@@ -4067,7 +4067,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
-        mobilePosition: '36% center',
+        mobilePosition: '72% center',
         projectUrl: 'ttd.html'
       },
       {
@@ -5134,7 +5134,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: '66% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate19',
