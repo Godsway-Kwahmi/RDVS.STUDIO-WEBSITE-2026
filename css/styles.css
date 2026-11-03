@@ -451,10 +451,13 @@ button {
 
 @media (max-width: 768px) {
   .slide-picture img,
-  .slide-img,
+  .slide-img {
+    object-position: var(--slide-mobile-pos, center);
+  }
+
   .slide-video,
   .slide-media video {
-    object-position: var(--slide-mobile-pos, center);
+    object-position: center;
   }
 }
 

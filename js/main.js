@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
         imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
-        mobilePosition: '36% center',
+        mobilePosition: 'center',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-kitchen.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
 
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-terrace.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         videoUrl: 'assets/videos/funko-ridge/funko-bedroom.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -788,7 +788,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'A walkthrough of the villa',
 
@@ -808,7 +808,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         videoUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
         imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
-        mobilePosition: '85% center',
+        mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
         desc: 'The delivered animation, end to end',
 
@@ -1418,7 +1418,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-1.jpg',
-        mobilePosition: '72% center',
+        mobilePosition: '85% center',
         projectUrl: 'link-drive-road.html'
       },
       {
@@ -2022,7 +2022,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-7.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '85% center',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   seven plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3812,7 +3812,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ttd/ttd-film.mp4',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
-        mobilePosition: '66% center',
+        mobilePosition: 'center',
         projectUrl: 'ttd.html',
         desc: 'A ninety-second render film of the TTD living room from one locked-off camera: the room runs from dark through lit evening to full daylight, holding on the red sectional, the terracotta stair and the blue dining wall at the far end',
       },
@@ -3836,7 +3836,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ahero/ahero-film.mp4',
         imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
-        mobilePosition: '35% center',
+        mobilePosition: 'center',
         projectUrl: 'ahero.html',
       },
       {
@@ -3847,7 +3847,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ackon-desk/ackon-desk-film.mp4',
         imageUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
-        mobilePosition: '28% center',
+        mobilePosition: 'center',
         projectUrl: 'ackon-desk.html',
         desc: 'A walkthrough of the rendered desk',
       },
@@ -3859,7 +3859,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
-        mobilePosition: '29% center',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
 
@@ -3920,7 +3920,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-1.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '85% center',
         projectUrl: 'jhk-investment.html',
         desc: 'JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky',
         specs: {
@@ -3956,7 +3956,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '85% center',
         projectUrl: 'jhk-investment.html',
         desc: 'The side of an ochre house with a timber pergola and stone-clad columns casting striped shadows across a paved walkway and lawn, a window glowing warmly',
         specs: {
@@ -4137,7 +4137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'lamu.html'
       },
       {
@@ -4599,6 +4599,45 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'npa-reception-renders-plate3',
+        title: 'NPA',
+        category: 'Architectural Visualization & BIM — 2022',
+        service: 'Architectural Visualization & BIM',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/npa/npa-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'npa-reception-renders.html',
+        desc: 'BIM modelling and architectural visualization for the National Petroleum Authority s open-plan office   five plates of a white, black and grey floorplate carried by one blue brand wall, built around an interior scheme by Newland Interiors.',
+        specs: {
+          client: 'National Petroleum Authority',
+          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors. Deliverables: 3D renders, measured and working drawings',
+          team: 'RDVS Team',
+          year: '2022',
+          interiorDesign: 'Newland Interiors',
+          deliverables: '3D renders, measured and working drawings',
+          disciplines: ['BIM', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'npa-reception-renders-plate4',
+        title: 'NPA',
+        category: 'Architectural Visualization & BIM — 2022',
+        service: 'Architectural Visualization & BIM',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/npa/npa-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'npa-reception-renders.html',
+        desc: 'BIM modelling and architectural visualization for the National Petroleum Authority s open-plan office   five plates of a white, black and grey floorplate carried by one blue brand wall, built around an interior scheme by Newland Interiors.',
+        specs: {
+          client: 'National Petroleum Authority',
+          scope: 'BIM modelling and architectural visualization; interior design by Newland Interiors. Deliverables: 3D renders, measured and working drawings',
+          team: 'RDVS Team',
+          year: '2022',
+          interiorDesign: 'Newland Interiors',
+          deliverables: '3D renders, measured and working drawings',
+          disciplines: ['BIM', 'Architectural Visualization']
+        }
+      },      {
         id: 'mtn-hq-plate1',
         title: 'MTN HQ',
         category: 'Graphic Design & 3D Visualization — 2017',
@@ -4914,7 +4953,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
-        mobilePosition: '20% center',
+        mobilePosition: 'center',
         projectUrl: 'lamu.html'
       },
       {
@@ -5408,7 +5447,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
         imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
-        mobilePosition: '85% center',
+        mobilePosition: 'center',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
         specs: {
@@ -5626,7 +5665,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         videoUrl: 'assets/videos/hg-desk/hg-desk-film.mp4',
         imageUrl: 'assets/images/mig/mig-hg-desk-1.jpg',
-        mobilePosition: '90% center',
+        mobilePosition: 'center',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -5642,7 +5681,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         videoUrl: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
-        mobilePosition: '59% center',
+        mobilePosition: 'center',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -6647,7 +6686,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               const deskVid = proj.videoUrl;
               const deskPoster = proj.imageUrl || '';
               const rung = filmRendition(proj);
-              const mobilePos = proj.mobilePosition || 'center';
+              const mobilePos = 'center';
               mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
 
               mediaContainer.innerHTML = rung
