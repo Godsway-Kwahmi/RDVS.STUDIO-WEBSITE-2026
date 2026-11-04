@@ -587,6 +587,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'macord-international-school-plate4',
+        title: 'Macord International School',
+        category: '3D Visualization — 2024',
+        service: '3D Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/macord/macord-4.jpg',
+        mobilePosition: '30% center',
+        projectUrl: 'macord.html',
+        desc: 'The signage wall in monochrome: a woman holding a child at the zebra crossing at the left, the large lowercase lettering running off the right edge, tree branches across the top and the planted pergola over the batten wall.',
+        specs: {
+          client: 'Macord International School',
+          scope: 'Facade Design (Architectural Design), Landscape Design, Interior Design, Industrial & Furniture Design & 3D Visualization',
+          team: 'Jude Nyoagbe',
+          year: '2024',
+          disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', 'Industrial & Furniture Design', '3D Visualization']
+        }
+      },
+      {
         id: 'empire-tower',
         title: 'Empire Tower',
         category: 'Interior Design & Architectural Visualization — 2017',
