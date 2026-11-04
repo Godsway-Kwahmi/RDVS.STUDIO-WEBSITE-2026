@@ -558,6 +558,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/macord/macord-5.jpg',
         mobilePosition: '41% center',
+        desktopPosition: 'center 100%',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
@@ -2264,6 +2265,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/macord/macord-3.jpg',
         mobilePosition: '75% center',
+        desktopPosition: 'center 100%',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
         specs: {
