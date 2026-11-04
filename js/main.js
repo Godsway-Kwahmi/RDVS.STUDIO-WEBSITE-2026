@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'hola.html': ['vfx-cgi'],
+    'hot-gossip.html': ['design', 'vfx-cgi'],
     'hubtel.html': ['design', 'vfx-cgi'],
     'imperial-square.html': ['design'],
     'jhk-investment.html': ['vfx-cgi'],
@@ -106,6 +107,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
+    'petrus.html': ['design', 'vfx-cgi'],
+    'pine-square.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
@@ -3796,6 +3799,97 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
         }
       },
+      {
+        id: 'petrus',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Interior design and photorealistic 3D visualization for Petrus, a 2017 residence in Accra: a bedroom in greige linen and oak, a living room under a triple-ring chandelier, a glazed gym and a pool deck with the city beyond.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate1',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'The Petrus bedroom from the foot of the bed: a white sideboard with brass vertical inlays, radial wall art above, a gold teardrop vase and a dark rug over grey plank flooring.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'pine-square',
+        title: 'Pine Square',
+        category: 'Interior Design & Architectural Visualization — 2017',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/pine-square/pine-square-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'pine-square.html',
+        desc: 'Pine Square at dusk: a low white office block behind a perimeter wall of perforated blocks, warm uplight raking the wall and a planted roof garden silhouetted against a deep blue evening sky.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2017 office scheme in Accra, with the mood-board pack that set its palette',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Hot Gossip in 2012: a lounge walled in backlit pink discs, with a curved sectional in pale upholstery, a low table on a dark rug and steps up to a raised area at the far end.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate6',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The billiards hall at Hot Gossip: a blue-clothed pool table under yellow cove lighting, a glass-block partition on one side and a wall of pink disc lights at the far end.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+
     ]
   },
 

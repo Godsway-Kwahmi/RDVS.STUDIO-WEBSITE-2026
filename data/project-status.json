@@ -182,6 +182,24 @@
       "onArchivePage": true,
       "plates": 6
     },
+    "pine-square.html": {
+      "slug": "pine-square",
+      "title": "Pine Square",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 16
+    },
+    "petrus.html": {
+      "slug": "petrus",
+      "title": "Petrus",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 13
+    },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
       "title": "NPA",
@@ -298,6 +316,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 2
+    },
+    "hot-gossip.html": {
+      "slug": "hot-gossip",
+      "title": "Hot Gossip",
+      "year": "2012",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 10
     },
     "hfc-tvc.html": {
       "slug": "hfc-tvc",
@@ -460,6 +487,15 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 6
+    },
+    "enda-accra-mall.html": {
+      "slug": "enda-accra-mall",
+      "title": "Enda - Accra Mall",
+      "year": "2014",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 14
     },
     "ceeander.html": {
       "slug": "ceeander",
@@ -1289,15 +1325,6 @@
       "onArchivePage": true,
       "plates": 4
     },
-    "hot-gossip.html": {
-      "slug": "hot-gossip",
-      "title": "Hot Gossip",
-      "year": "2012",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 10
-    },
     "house-ol.html": {
       "slug": "house-ol",
       "title": "House Ol",
@@ -1622,15 +1649,6 @@
       "onArchivePage": true,
       "plates": 15
     },
-    "enda-accra-mall.html": {
-      "slug": "enda-accra-mall",
-      "title": "Enda - Accra Mall",
-      "year": "2014",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 14
-    },
     "lase-icon.html": {
       "slug": "lase-icon",
       "title": "Lase",
@@ -1900,24 +1918,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
-    },
-    "petrus.html": {
-      "slug": "petrus",
-      "title": "Petrus",
-      "year": "2017",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 13
-    },
-    "pine-square.html": {
-      "slug": "pine-square",
-      "title": "Pine Square",
-      "year": "2017",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 16
     },
     "home-automation-system-presentation.html": {
       "slug": "home-automation-system-presentation",
