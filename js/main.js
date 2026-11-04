@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
     'giffard-park.html': ['design', 'vfx-cgi'],
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
+    'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'hola.html': ['vfx-cgi'],
     'hot-gossip.html': ['design', 'vfx-cgi'],
@@ -3887,6 +3888,60 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Caleb Sackey + R.D+V.S',
           year: '2012',
           disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hfa',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA in 2018: the living and dining zone of a new Accra apartment seen through its own opening, a grey sofa on a pale rug before a dark feature wall with a floating timber cabinet, and a white dining set under a dome pendant to the left.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design and photorealistic 3D visualization for a new Accra apartment, delivered as marketing imagery for the Homes Direct campaign.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate1',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA bedroom: a low bed dressed in grey and taupe against a chocolate-brown accent panel carrying a wall-mounted television over a floating white console, sheer curtains at a tall window and a black ottoman at the foot.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design concept and styling for the bedroom, with the photoreal render delivered for the developer campaign.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate2',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA master bedroom: the bed facing a tall brown feature panel with a wall-mounted television, an open walk-in wardrobe with hanging clothes to the left, a dark armchair, floor lamp and framed art beyond.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design for the master bedroom and its walk-in wardrobe, rendered for the Homes Direct marketing set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
 
