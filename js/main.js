@@ -849,7 +849,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-1.jpg',
+        imageUrl: 'assets/images/access-bank-iris/018_0-00-00-00_photoreal_5K.png',
         mobilePosition: '15% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Visualization of a glass-fronted meeting room: mesh task chairs around a table, a red and orange geometric brand graphic with chevrons on the rear wall, and a full-height glazed partition reflecting the daylight from the window wall beyond.',
@@ -868,7 +868,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-2.jpg',
+        imageUrl: 'assets/images/access-bank-iris/019_sofa_walnut_batten_5K.png',
         mobilePosition: '15% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Executive office visualization with dark timber veneer and vertical slat walls, a white desk carrying a desktop computer and task lamp, grey carpet tiles, and a navy leather sofa in the foreground under recessed ceiling downlights.',
@@ -6488,6 +6488,77 @@ document.addEventListener('DOMContentLoaded', async () => {
   const nextBtn = document.querySelector('.step-btn.next');
   const heroViewport = document.querySelector('.hero-viewport');
 
+  // ---- The hero's ink follows the GROUND, and the ground is measured, not assumed ------------------
+  // Owner order 2026-11-03: "check the theme for consistency throughout the site to make sure words are
+  // readable when themes are changes".  The homepage hero is the one place on the site with TWO grounds
+  // under one block of type: the slide is a photograph (a photograph has no theme, so its type is media
+  // ink -- white -- in both themes) and the band behind the controls paints --header-bg (a theme surface,
+  // so its type has to follow the theme).  Which law a row owes is therefore a question about where its
+  // box is, and scratch/_hero_ground_map.cjs answers it per viewport: the band's top edge sits
+  // --hero-strip-height pixels above the viewport floor (40 at >=1200, 108 at 641-1199, 113 at <=640),
+  // and a row is on the band only when its whole box lies below that edge.
+  //
+  // Measured 2026-11-03 at 360x740, 480x800, 640x900, 641x900, 820x1180, 1024x768, 1199x800, 1200x800,
+  // 1440x900, 1920x1080 and 2560x1440, in both themes, the answer is NOT a function of the breakpoint:
+  //   >=1200     the category tops 73.8px above the floor and the counter 69.9 -- on the PICTURE -- while
+  //              the links, bars, socials and credit at 24..32.4 sit inside the 40px band;
+  //   <=640      the caption cluster is lifted to 207..274.7 -- on the PICTURE -- and the counter, bars,
+  //              socials and credit at 32.8..107.1 stay inside the 113px band;
+  //   641-1199   BOTH, in different windows: at 1024x768 the category tops at 100.6 and the title at 78.8,
+  //              inside the 108px band, and at 641x900 they top at 183.1 and 161.3, above it.
+  // That last line is why this is a measurement and not a media query: 641 and 1024 are the same tier and
+  // they disagree, because the caption is lifted by a fraction of the viewport while the band is a fixed
+  // number of pixels.  Every static list of rows per breakpoint -- which is what css/styles.css had until
+  // this pass, and what cost the light theme 1.08:1 on "View project" at 390x844 and 1.28:1 on the title
+  // at 1024x768 -- is wrong in at least one window a visitor can actually have.
+  //
+  // So CSS owns the two ink definitions (the [data-hero-ground] rules at the foot of styles.css) and this
+  // loop owns the boundary.  The volume pill is deliberately NOT classified: it paints its own
+  // rgba(0, 0, 0, .65) in both themes, so its white glyph is correct wherever the pill happens to sit.
+  // The cost is one getBoundingClientRect per row per event, on rows the deck already touches.
+  const HERO_GROUND_ROWS = [
+    '.caption-card.active .project-category',
+    '.caption-card.active .project-title',
+    '.caption-card.active .project-links',
+    '.hero-viewport .slide-status',
+    '.hero-viewport .pagination-bars',
+    '.hero-viewport .hero-social-links',
+    '.hero-viewport .hero-credit'
+  ];
+
+  function assignHeroGrounds() {
+    const foot = document.querySelector('.hero-footer-container');
+    if (!foot) return;
+    const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
+    const bandTop = window.innerHeight - strip;
+    for (const sel of HERO_GROUND_ROWS) {
+      for (const el of document.querySelectorAll(sel)) {
+        const box = el.getBoundingClientRect();
+        // No box is an inactive caption card: nothing is being read there, and its own rows would be
+        // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
+        if (!box.width || !box.height) continue;
+        el.dataset.heroGround = box.top >= bandTop - 0.05 ? 'band' : 'media';
+      }
+    }
+  }
+
+  let heroGroundFrame = 0;
+  function scheduleHeroGrounds() {
+    if (heroGroundFrame) cancelAnimationFrame(heroGroundFrame);
+    heroGroundFrame = requestAnimationFrame(() => { heroGroundFrame = 0; assignHeroGrounds(); });
+  }
+  // The window's HEIGHT moves the band's edge against a caption lifted by a percentage, so a resize --
+  // a phone rotating, a desktop address bar sliding away -- re-derives the law rather than a tier list.
+  window.addEventListener('resize', scheduleHeroGrounds);
+  // ... and so does the caption's own text, because a category line that wraps pushes the title up.
+  if (typeof ResizeObserver === 'function') {
+    const captionHost = document.querySelector('.caption-wrapper');
+    if (captionHost) new ResizeObserver(scheduleHeroGrounds).observe(captionHost);
+  }
+  // Once here, before the deck starts: the homepage keeps its caption behind the intro veil for 6.9 s, and
+  // the law should already be on the rows by the time the veil lifts rather than at the first cut.
+  assignHeroGrounds();
+
   // Minimalist Volume Controls
   const heroVolumeControl = document.getElementById('heroVolumeControl');
   const volumeToggleBtn = document.getElementById('volumeToggleBtn');
@@ -7098,6 +7169,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     captionCards.forEach((card, idx) => {
       card.classList.toggle('active', idx === currentIndex);
     });
+    // The active card is the only one with a box, so a cut to a caption of a different height moves
+    // every text row in the footer block -- and near the band's edge, moving is re-classifying.
+    assignHeroGrounds();
 
     // Hairline Pagination
     paginationBars.forEach((bar, idx) => {

@@ -28,6 +28,41 @@
   --input-bg-solid: #080808;
   --brand-blue: #4288e7;
   --brand-blue-hover: #5da0fa;
+  /* The quiet INK.  Not --border-hairline and not --text-secondary multiplied by an opacity: the site
+     used both of those to dim separators and carets, and both put the result under WCAG AA -- a hairline
+     border token used as a text colour measures 1.14:1 on the dark page and 1.20:1 on the light one, and
+     --text-secondary at 55% measures 2.40:1 and 2.30:1.  This value is chosen from the two grounds a
+     quiet row can actually stand on in this theme, the page and the subtle surface: #7a7a7a is 4.89:1 on
+     --background #000000 and 4.52:1 on --surface-subtle #0d0d0f, so it clears 4.5 on both. */
+  --text-quiet: #7a7a7a;
+  /* Two inks for two grounds, because the hero re-pins the text tokens and the band at its foot is not
+     media.  var() inside a custom property is substituted on the element that DECLARES it, so declaring
+     these aliases here -- on <html>, where the cascade has already resolved [data-theme] -- freezes the
+     page's own colours as literal values that no descendant re-pin can reach.  That is how the hero band
+     gets its theme back while the slide above it keeps white type. */
+  --ink-page: var(--foreground);
+  /* And the ink for the ground that has no theme: a photograph.  The secondary is the caption's existing
+     white at 78%.  Measured in the pixels that are actually on screen (scratch/_ink_pixels.cjs, both
+     themes, the rows that use it): 4.17:1 at its worst of the frames sampled -- a phone frame whose
+     lightest pixel is rgb(133,108,61) -- and 6.16 to 13.99:1 on every other one.  The arithmetic floor is
+     worse than the best of those: 78% white over a blown-out sky that the scrim has only dimmed to 40%
+     black is 2.34:1, which is why the caption's legibility is the scrim's business and is recorded as the
+     one residual this layer cannot fix. */
+  --ink-media: #ffffff;
+  --ink-media-secondary: rgba(255, 255, 255, 0.78);
+  /* Quiet ink standing on a TRANSLUCENT theme panel -- the hero band, which paints --header-bg OVER A
+     PHOTOGRAPH, so its ground is not the flat token the cascade implies.  Measured in pixels by
+     scratch/_ink_pixels.cjs on 2026-11-03: the light band reads rgb(220,222,222) to rgb(224,224,225) on
+     the frames sampled and rgb(208,207,202) at its brightest; the dark band reads rgb(3,3,3) to
+     rgb(13,11,8).  Against those measured grounds the light theme's own --text-secondary, #666666,
+     computes to 3.68:1 -- still under AA -- and the white ink this replaces was 1.34:1, which is why the
+     band needs an ink of its own rather than the page's quiet grey.
+     Eighty-six percent of the page's ink composites to rgb(44,44,44) on the light band and rgb(222,222,222)
+     on the dark one, and measures 9.89 to 14.30:1 in the light theme and 14.5 to 19.2:1 in the dark, in the
+     pixels the browser actually painted.  The alpha is a floor, not a taste: scratch/_guard_theme_ink.py
+     recomputes it against the whole 0..255 picture range in both themes, so a thinner value fails there
+     before it can ship. */
+  --ink-panel-quiet: rgba(255, 255, 255, 0.86);
   color-scheme: dark;
 
   /* Minimalissimo Exact Typography */
@@ -75,6 +110,15 @@
   --input-bg-solid: #f7f7f7;
   --brand-blue: #1d6fdc;
   --brand-blue-hover: #1558b0;
+  /* The quiet INK, light theme: 5.10:1 on --background #ffffff and 4.68:1 on --surface-subtle #f5f5f7.
+     --ink-page, --ink-media and their secondaries are NOT re-declared here -- they are var() aliases
+     resolved once on <html>, so this block's own --foreground/--text-secondary/--text-quiet values are
+     what they freeze. */
+  --text-quiet: #6e6e6e;
+  /* rgba(17,17,17,.86) is --foreground at 86%: the quiet ink for the hero band, which paints
+     --header-bg translucently over a photograph and therefore is rgb(208,207,202)-ish on a bright frame
+     rather than the #ffffff the token alone suggests.  See the note on --ink-panel-quiet in :root. */
+  --ink-panel-quiet: rgba(17, 17, 17, 0.86);
   color-scheme: light;
 }
 
@@ -387,9 +431,22 @@ button {
   height: 100dvh;
   background-color: var(--background);
   overflow: hidden;
-  /* Hero is a permanent dark-media zone — pin text tokens so overlays stay legible in light mode */
-  --foreground: #ffffff;
-  --text-secondary: #888888;
+  /* Hero is a permanent dark-media zone -- pin the text tokens to the MEDIA ink so a slide's overlays
+     stay legible whatever the theme.  The values are tokens now rather than literals because the band at
+     the hero's foot is not media, and the two pins have to say so separately (see .hero-footer-container
+     and the desktop block below).
+     --text-secondary was #888888: a THEME colour, painted over a photograph.  A page's quiet grey has no
+     meaning on a frame -- there is no token ground to composite it against -- and the audit's own rule for
+     type over media is white on the scrim, so the caption family now has one media value.  Measured in
+     pixels by scratch/_ink_pixels.cjs on the rows that use it (the category line, the slide counter),
+     white at 78% reads 4.17:1 at its worst -- a phone frame whose lightest pixel is rgb(133,108,61) -- and
+     6.16 to 13.99:1 on every other frame sampled, in both themes.
+     What that instrument also found, and what this rule cannot fix, is the slide TITLE: pure white over a
+     frame that is bright where the title stands reads 1.51 to 1.78:1 (Enda - Accra Mall, SMSGH, Baobab).
+     That is the scrim's job, not the ink's, and raising the scrim costs the render -- see the A/B pair in
+     scratch/_scrim_ab.cjs and the owner's decision recorded in the handoff. */
+  --foreground: var(--ink-media);
+  --text-secondary: var(--ink-media-secondary);
   --text-tertiary: #555555;
 }
 
@@ -546,6 +603,25 @@ button {
      drawn: their controls block really is one tall stack (76px at 641-1199, 89px at <=640), so those
      bars stay at 108 and 113. */
   --hero-strip-height: 40px;
+  /* THE BAND IS NOT MEDIA.  Its ::before paints --header-bg -- the owner's markup of 2026-11-03 asked
+     for "same black/white background like navigation area per theme" -- so the ink standing on it has to
+     follow the theme too, and the hero's dark-media pin above it has to be undone here.
+     What that pin was doing, measured two ways on 2026-11-03.  scratch/_theme_contrast.cjs composites the
+     token chain and filed the credit and the social row as #888888 on the panel's own colour (3.54:1), and
+     "View project", "Details" and the active slide number as #ffffff on it (1.00:1).  scratch/_ink_pixels.cjs
+     then measured the panel as the browser paints it -- rgb(220,222,222) to rgb(224,224,225) over the frames
+     sampled -- and the same two inks are 2.30:1 and 1.34:1 on that ground.  Both instruments say the same
+     thing in different units: the light theme's footer was white type on a milky panel.  The aliases resolve
+     on <html>, where the cascade has already picked the theme, so they are the page's own colours in a form
+     this subtree cannot re-pin.
+     The rows that rise ABOVE the band's top edge are back on the slide and take the media ink again --
+     and WHICH rows those are is a measurement, not a breakpoint: at 1440x900 it is the counter and the
+     category and the title, at 390x844 it is the whole caption cluster (category, title, links) with the
+     counter still inside the band, and at 1024x768 nothing but the picture is above it while at 641x900
+     the cluster is.  The [data-hero-ground] block at the foot of this file states the two inks and
+     assignHeroGrounds() in js/main.js decides per row, per window, which one it wears. */
+  --foreground: var(--ink-page);
+  --text-secondary: var(--ink-panel-quiet);
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -923,7 +999,11 @@ button {
 .pagination-bar {
   width: 12px;
   height: 1px;
-  background-color: var(--text-tertiary);
+  /* A control, not text, so its bar is WCAG 1.4.11 -- 3:1 against the ground it sits on.  These dashes
+     are on the hero band at every tier, and the band now follows the theme, so they read the quiet INK
+     (4.89:1 on the dark theme's panel, 3.83:1 on the light theme's worst-case panel) instead of
+     --text-tertiary, which is 2.82:1 on the dark page -- under even the 3:1 bar. */
+  background-color: var(--text-quiet);
   cursor: pointer;
   position: relative;
   transition: background-color var(--transition-speed) var(--transition-ease), width var(--transition-speed) var(--transition-ease);
@@ -935,7 +1015,11 @@ button {
 
 .pagination-bar.active {
   width: 22px;
-  background-color: rgba(255, 255, 255, 0.4);
+  /* Was rgba(255,255,255,.4): a 40% white dash is the one thing a light-theme band cannot show at all
+     (1.05:1 against the milky panel).  The active dash takes the band's own full ink, which is white on
+     the dark theme and near-black on the light one, and stays the brightest mark on the line either
+     way. */
+  background-color: var(--foreground);
 }
 
 .pagination-fill {
@@ -1736,7 +1820,11 @@ button {
 }
 
 .meta-sep {
-  color: var(--border-hairline);
+  /* Was var(--border-hairline) -- a 8%-alpha border token used as TEXT ink.  Composited it paints
+     rgb(20,20,20) on the dark page and rgb(235,235,235) on the light one: 1.14:1 and 1.20:1, measured by
+     scratch/_theme_contrast.cjs over all 233 pages on 2026-11-03.  A separator is still a word-sized
+     mark a visitor has to resolve, so it gets the quiet INK, not the quiet BORDER. */
+  color: var(--text-quiet);
 }
 
 .card-category {
@@ -1913,7 +2001,10 @@ a.subservice-item:hover {
 }
 
 .subservice-sep {
-  color: var(--border-hairline);
+  /* Same correction as .meta-sep: this is the same "/" drawn in a border token (1.14:1 dark, 1.20:1
+     light).  The expertise page draws one per service pair, so 8 of the site's 625 AA failures were
+     these marks alone. */
+  color: var(--text-quiet);
   user-select: none;
 }
 
@@ -2285,8 +2376,13 @@ a.subservice-item:hover {
 }
 
 .project-service-sep {
-  color: var(--text-secondary);
-  opacity: 0.55;
+  /* The separator in a project page's Services row -- 132 pages carry it, and at 388 measured rows it is
+     the largest single group of the site's AA failures.  It was --text-secondary painted at 55% opacity,
+     which composites to rgb(75,75,75) on the dark page (2.40:1) and rgb(171,171,171) on the light one
+     (2.30:1): the same quiet colour in both themes, because an opacity multiply pulls a light ink DOWN
+     and a dark ink UP and lands both of them in the middle, where nothing is legible.  The token gives
+     each theme its own quiet ink and clears 4.5 on both of its grounds. */
+  color: var(--text-quiet);
 }
 
 /* Gallery Grid — Uncropped & Natural Proportions */
@@ -2591,8 +2687,11 @@ a.subservice-item:hover {
 
 .lightbox-hint {
   font-size: 0.75rem;
-  color: var(--text-secondary);
-  opacity: 0.6;
+  /* A render-time audit cannot walk an overlay that is display:none until a visitor opens it, so this
+     one was read off the rule instead of off the screen: it was --text-secondary at 60% opacity, which
+     on the light theme's near-white --lightbox-bg is rgb(166,166,166) on rgb(250,250,250) -- about
+     2.1:1.  The quiet INK token, which is AA on both themes' grounds, replaces the dimmer. */
+  color: var(--text-quiet);
 }
 
 @media (max-width: 768px) {
@@ -3594,22 +3693,82 @@ a.subservice-item:hover {
   white-space: nowrap;
 }
 
-/* Homepage Hero Slide Captions Legibility:
-   Because the hero slider renders full-bleed photographic media,
-   captions on the homepage slides maintain white contrast over the dark scrim */
-.hero-viewport .project-title,
-.hero-viewport .project-action-link {
-  color: #ffffff !important;
+/* Homepage hero ink: two grounds, two laws, and the GROUND DECIDES.  Rewritten 2026-11-03 on the
+   theme-consistency order ("check the theme for consistency throughout the site to make sure words are
+   readable when themes are changes"), and rewritten again the same evening by the instrument that measures
+   the pixels a letter stands on (scratch/_ink_pixels.cjs) rather than the cascade.
+   GROUND 1, the slide: a photograph has no theme, so type on it is media ink -- white -- in both themes.
+   GROUND 2, the band: it paints --header-bg by the owner's drawing of 2026-11-03, so type on it follows
+   the theme.  .hero-footer-container already hands its subtree the band's ink; what is left here is the
+   rows that are NOT on the band.
+   WHICH ROWS those are is a measurement, not a breakpoint.  scratch/_hero_ground_map.cjs walked 11
+   viewports x 2 themes on 2026-11-03 (360x740, 480x800, 640x900, 641x900, 820x1180, 1024x768, 1199x800,
+   1200x800, 1440x900, 1920x1080, 2560x1440) and the answer is not a function of width:
+     >=1200    band 40px.  Category tops 73.8 above the floor, counter 69.9, title 237..397  -> PICTURE;
+               links 32.4, bars 25, socials 32.4, credit 32.4                              -> BAND.
+     <=640     band 113px. Category 261.8..274.7, title 240..252.9, links 207..219.9        -> PICTURE;
+               counter 103.2..107.1, bars 73.2..74.6, socials 60.2, credit 32.8             -> BAND.
+     641-1199  band 108px -- and this tier disagrees with itself: at 1024x768 the category tops at 100.6
+               and the title at 78.8 (BAND), at 641x900 they top at 183.1 and 161.3 (PICTURE).
+   The caption is lifted by a fraction of the viewport while the band is a fixed number of pixels, so no
+   list of rows per media query can hold: the first such list, drawn from a desktop-only drawing, painted
+   "View project" 1.08:1 on the photograph at 390x844 in the light theme and the title 1.28:1 on the milky
+   band at 1024x768.  Both are measured, and both are why the boundary moved into js/main.js.
+   So: CSS states the two inks; assignHeroGrounds() in js/main.js compares each row's box with the band's
+   top edge and puts the answer on the row as data-hero-ground; it re-runs on resize, on every slide cut
+   and whenever the caption's text changes height. */
+.hero-footer-container [data-hero-ground="band"] {
+  --foreground: var(--ink-page);
+  --text-secondary: var(--ink-panel-quiet);
 }
 
-.hero-viewport .project-category,
-.hero-viewport .project-spec-trigger {
-  color: rgba(255, 255, 255, 0.75) !important;
+.hero-footer-container [data-hero-ground="media"] {
+  --foreground: var(--ink-media);
+  --text-secondary: var(--ink-media-secondary);
 }
 
-.hero-viewport .project-action-link:hover,
-.hero-viewport .project-spec-trigger:hover {
-  color: #ffffff !important;
+/* THE NO-JS FALLBACK.  index.html bakes the first slide's caption and the deck needs js/main.js to move
+   it, so these rules only govern a visitor with scripting off -- and, for the first 6.9 s, everybody.
+   They are the two tiers where the measurement is uniform, copied from the numbers above; the 641-1199
+   tier gets nothing because it has no single answer, and the container's own band ink is the safer of its
+   two wrongs (dark type on a panel is legible; dark type on a photograph is not).
+   EVERY selector here is conditioned with :not([data-hero-ground]) -- and that is not decoration.  The two
+   rules above are `.hero-footer-container [data-hero-ground="x"]` at specificity (0,2,0) and these were
+   `.hero-footer-container .project-title` at the same (0,2,0), so the cascade handed the win to whichever
+   came LATER in the file -- these did.  A row the script had just measured and pinned to the band would
+   still have been painted with media ink by the fallback, which is the white-on-milk-panel 1.00:1 bug again,
+   reachable on a short or landscape phone window where the caption does fall inside the 113px band.  With the
+   `:not()` the fallback fires only on a row the script has NOT classified, which is exactly what a no-JS
+   fallback is for, and the ordering stops mattering.  `scratch/_hero_ground_map.cjs` measures 640x360 for
+   that case, and scratch/_guard_theme_ink.py asserts every fallback selector carries the condition.
+   The title is a plain `color: var(--foreground)` at its own rule, so handing the row the ground's
+   --foreground is enough -- no !important, which is what the previous revision needed only because its
+   pin was unconditional and had to beat the tier it got wrong. */
+@media (min-width: 1200px) {
+  .hero-footer-container .project-category:not([data-hero-ground]),
+  .hero-footer-container .project-title:not([data-hero-ground]),
+  .hero-footer-container .slide-status:not([data-hero-ground]) {
+    --foreground: var(--ink-media);
+    --text-secondary: var(--ink-media-secondary);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-footer-container .project-category:not([data-hero-ground]),
+  .hero-footer-container .project-title:not([data-hero-ground]),
+  .hero-footer-container .project-links:not([data-hero-ground]) {
+    --foreground: var(--ink-media);
+    --text-secondary: var(--ink-media-secondary);
+  }
+}
+
+.hero-volume-control {
+  /* Deliberately NOT a classified row.  The pill paints its own ground -- rgba(0,0,0,.65) in both themes,
+     line 821 above -- so its glyph and label are white-on-dark wherever the pill happens to sit: over the
+     light theme's panel that composite is rgb(85,85,85) and over a bright frame it is no worse, which is
+     6.6:1 or better either way.  Following the band here would be the bug: white on the panel is 1.00:1. */
+  --foreground: var(--ink-media);
+  --text-secondary: var(--ink-media-secondary);
 }
 
 /* ==========================================================================
