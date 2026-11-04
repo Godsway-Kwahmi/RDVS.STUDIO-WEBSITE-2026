@@ -6600,6 +6600,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       discipline: 'architecture',
       imageUrl: 'assets/images/macord/macord-3.jpg',
       mobilePosition: '92% center',
+      desktopPosition: 'center 100%',
       projectUrl: 'macord.html'
     });
     projects.push({
