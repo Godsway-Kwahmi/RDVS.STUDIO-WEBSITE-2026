@@ -15,8 +15,6 @@
   --border-hairline: rgba(255, 255, 255, 0.08);
   --surface-subtle: #0d0d0f;
   --header-bg: rgba(0, 0, 0, 0.75);
-  --hero-glass-fill: #C4EDFF;
-  --hero-glass-edge: rgba(255, 255, 255, 0.5);
   --mobile-nav-bg: rgba(0, 0, 0, 0.95);
   --search-bg: rgba(255, 255, 255, 0.04);
   --search-bg-focus: rgba(255, 255, 255, 0.08);
@@ -101,8 +99,6 @@
   --border-hairline: rgba(0, 0, 0, 0.08);
   --surface-subtle: #f5f5f7;
   --header-bg: rgba(255, 255, 255, 0.85);
-  --hero-glass-fill: #1B3AA8;
-  --hero-glass-edge: rgba(18, 54, 255, 0.45);
   --mobile-nav-bg: rgba(255, 255, 255, 0.98);
   --search-bg: rgba(0, 0, 0, 0.04);
   --search-bg-focus: rgba(0, 0, 0, 0.08);
@@ -721,60 +717,6 @@ button {
    this exact plate out of git and requires the crop to CHANGE, so "identical crops" cannot mean a blind
    crop. `scratch/_hero_band_probe.cjs` still measures the geometry the plate was built around (346/346 at
    21 viewports after the removal): the plate used negative insets, so taking it away moves nothing. */
-
-/* ── Kinetic glass blocks behind the slide name (owner order, 2026-11-04) ────────────────────────
-   "A fractal animated glass blocky background ... behind every project name on the changing of a slide
-   that lasts only 2.5 seconds ... cycles through all the 6 marked up shapes ... in a different order each
-   time, with varying transparencies each time."  The six marked-up shapes are the captures in
-   assets/images/glass-blocky-fractal/, measured by scratch/_glass_marks_measure.mjs; the drawing itself
-   lives in js/main.js, which owns the deck's clock.
-
-   This is NOT the plate above being resurrected, and the difference is the contract:
-     - the plate STOOD.  This field is empty except during the 2.5 s after a cut -- every rect is built at
-       opacity 0, animated up and back down, and its nodes are removed when the run ends, so a settled
-       screenshot is byte-identical to the plate-free one and _title_flat_probe.cjs still has to find the
-       crop unchanged;
-     - the plate was a frosted panel ON the title's own box, with a backdrop-filter and a border-radius.
-       Nothing here is declared on `.project-title` or inside any rule that names it, which is exactly
-       what scratch/_verify_title_live.py counts, and an SVG rect cannot carry a backdrop-filter at all;
-     - the plate was opaque enough to be read as a surface.  The ceiling on a block's alpha is 0.30 and
-       it is set in js/main.js, not here, because it is an animation parameter.
-   The tint follows the theme (--hero-glass-fill / --hero-glass-edge above) rather than the media, because
-   the field spans both grounds at once and the theme is the only thing it can honestly answer to.
-
-   DESKTOP ONLY (owner order, 2026-11-04, the same sheet that asked for the cascade): nothing below
-   1024px plays it, and the test is width alone -- a touch device at 1300px is still in.  The number is
-   the owner's choice, not the band's (the hero's own desktop tier is 1200, and 641-1199 is the tier this
-   file calls the tablet band), so it is written here rather than borrowed.  js/main.js asks the same
-   question before it builds a single node; the query is repeated here so a mobile viewport cannot get
-   the layer even if the deck's own gate is ever moved. */
-@media (min-width: 1024px) {
-  .hero-glass-field {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .hero-glass-field rect {
-    opacity: 0;
-    fill: var(--hero-glass-fill);
-    stroke: var(--hero-glass-edge);
-    stroke-width: 1;
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  /* The name stays above its own background.  Without this the fixed field -- a positioned element --
-     paints over the caption's in-flow text, and the whole point is that the blocks sit BEHIND the name. */
-  .hero-footer-container > .caption-wrapper {
-    position: relative;
-    z-index: 1;
-  }
-}
-
 /* The title is a link now, so it answers a hover the way the caption's other link does.  The
    global `a { color: inherit }` at the head of this file already carries the white; this is the
    affordance, not the colour.  line-height: inherit is not cosmetic -- a rule near the top of this
