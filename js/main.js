@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     '1957.html': ['design', 'vfx-cgi'],
     '1981.html': ['vfx-cgi'],
     '2gs.html': ['design'],
-    '3aap.html': ['design', 'turnkey-build', 'vfx-cgi'],
     '41-barham.html': ['design', 'vfx-cgi'],
     '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
@@ -98,7 +97,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'kdmrd.html': ['vfx-cgi'],
     'kuma-residence.html': ['design', 'vfx-cgi'],
     'la-beach-towers.html': ['design', 'vfx-cgi'],
-    'lamu.html': ['vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
     'marble-bath.html': ['vfx-cgi'],
@@ -109,7 +107,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
     'petrus.html': ['design', 'vfx-cgi'],
-    'pine-square.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
@@ -3787,60 +3784,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: '3aap',
-        title: '3AAP',
-        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
-        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/3aap/3aap-1.jpg',
-        mobilePosition: 'center',
-        projectUrl: '3aap.html',
-        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
-        specs: {
-          client: 'Impact Hub Accra',
-          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: '3aap-plate1',
-        title: '3AAP',
-        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
-        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/3aap/3aap-2.jpg',
-        mobilePosition: '15% center',
-        projectUrl: '3aap.html',
-        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
-        specs: {
-          client: 'Impact Hub Accra',
-          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: '3aap-plate2',
-        title: '3AAP',
-        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
-        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/3aap/3aap-3.jpg',
-        mobilePosition: 'center',
-        projectUrl: '3aap.html',
-        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
-        specs: {
-          client: 'Impact Hub Accra',
-          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'petrus',
         title: 'Petrus',
         category: 'Interior Design & 3D Visualization — 2017',
@@ -3874,24 +3817,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2017',
           disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'pine-square',
-        title: 'Pine Square',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/pine-square/pine-square-1.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'pine-square.html',
-        desc: 'Pine Square at dusk: a low white office block behind a perimeter wall of perforated blocks, warm uplight raking the wall and a planted roof garden silhouetted against a deep blue evening sky.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for a 2017 office scheme in Accra, with the mood-board pack that set its palette',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
       {
@@ -4318,26 +4243,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/margin/F97ocXEXAAArCud.jpg',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
-      },
-      {
-        id: 'lamu-t-o-d',
-        title: 'Lamu',
-        category: 'Architectural Visualization — 2022',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'lamu.html'
-      },
-      {
-        id: 'lamu-t-o-w-wq-x',
-        title: 'Lamu',
-        category: 'Architectural Visualization — 2022',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/lamu/FtIUHoSXwAEwqDx.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'lamu.html'
       },
       {
         id: 'hola-1k-sa-0-t-n',
@@ -5136,16 +5041,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
         mobilePosition: '72% center',
         projectUrl: 'hola.html'
-      },
-      {
-        id: 'lamu',
-        title: 'Lamu',
-        category: 'Architectural Visualization — 2022',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'lamu.html'
       },
       {
         id: 'margin',

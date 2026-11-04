@@ -182,15 +182,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "pine-square.html": {
-      "slug": "pine-square",
-      "title": "Pine Square",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 16
-    },
     "petrus.html": {
       "slug": "petrus",
       "title": "Petrus",
@@ -605,15 +596,6 @@
       "onArchivePage": true,
       "plates": 19
     },
-    "3aap.html": {
-      "slug": "3aap",
-      "title": "3AAP",
-      "year": "2019",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "2gs.html": {
       "slug": "2gs",
       "title": "2GS",
@@ -689,15 +671,6 @@
     "hola.html": {
       "slug": "hola",
       "title": "Hola",
-      "year": "2022",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
-    "lamu.html": {
-      "slug": "lamu",
-      "title": "Lamu",
       "year": "2022",
       "visibility": "live",
       "onWorkPage": true,
@@ -1928,6 +1901,15 @@
       "onArchivePage": true,
       "plates": 4
     },
+    "pine-square.html": {
+      "slug": "pine-square",
+      "title": "Pine Square",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 16
+    },
     "home-automation-system-presentation.html": {
       "slug": "home-automation-system-presentation",
       "title": "Senseble",
@@ -1950,6 +1932,15 @@
       "slug": "adolph-s-wedding-invite",
       "title": "Adolph's Wedding Invite",
       "year": "2018",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
+    },
+    "3aap.html": {
+      "slug": "3aap",
+      "title": "3AAP",
+      "year": "2019",
       "visibility": "archived",
       "onWorkPage": false,
       "onArchivePage": true,
@@ -2008,6 +1999,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 1
+    },
+    "lamu.html": {
+      "slug": "lamu",
+      "title": "Lamu",
+      "year": "2022",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
     }
   }
 }
