@@ -569,6 +569,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'macord-international-school-plate3',
+        title: 'Macord International School',
+        category: '3D Visualization — 2024',
+        service: '3D Visualization',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/macord/macord-6.jpg',
+        mobilePosition: '55% center',
+        projectUrl: 'macord.html',
+        desc: 'The school boundary wall at dusk: tall timber fins uplit behind large white lowercase lettering, planting trailing over the pergola edge and red traffic trails streaking the foreground.',
+        specs: {
+          client: 'Macord International School',
+          scope: 'Facade Design (Architectural Design), Landscape Design, Interior Design, Industrial & Furniture Design & 3D Visualization',
+          team: 'Jude Nyoagbe',
+          year: '2024',
+          disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', 'Industrial & Furniture Design', '3D Visualization']
+        }
+      },
+      {
         id: 'empire-tower',
         title: 'Empire Tower',
         category: 'Interior Design & Architectural Visualization — 2017',
