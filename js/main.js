@@ -576,6 +576,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/macord/macord-6.jpg',
         mobilePosition: '55% center',
+        desktopPosition: 'center 87.3%',
         projectUrl: 'macord.html',
         desc: 'The school boundary wall at dusk: tall timber fins uplit behind large white lowercase lettering, planting trailing over the pergola edge and red traffic trails streaking the foreground.',
         specs: {
@@ -749,6 +750,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 83.4%',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -4614,6 +4616,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/aelius/aelius-brand.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 61.5%',
         projectUrl: 'aelius.html'
       },
       {
@@ -6956,6 +6959,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               // in css/styles.css now reads it for video as well as for a still.
               const mobilePos = proj.mobilePosition || 'center';
               mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
+              mediaContainer.style.removeProperty('--slide-desktop-pos');
 
               mediaContainer.innerHTML = rung
                 ? `
@@ -6970,6 +6974,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const deskImg = proj.imageUrl;
             const mobilePos = proj.mobilePosition || 'center';
             mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
+            // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
+            // for an anchor must have the previous occupant's cleared rather than left to inherit.
+            if (proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
+            else mediaContainer.style.removeProperty('--slide-desktop-pos');
             mediaContainer.innerHTML = `
               <picture class="slide-picture"${idx === 0 ? '' : ' data-defer'}>
                 <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>

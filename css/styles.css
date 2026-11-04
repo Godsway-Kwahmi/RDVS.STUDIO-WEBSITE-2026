@@ -500,7 +500,12 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  /* Still the same fill-the-screen law -- only the vertical anchor can move. A portrait render whose
+     subject sits low in the frame (the DYV media screens, Macord's night figures) would otherwise have
+     that subject run off the bottom, so a slide may name its own desktop anchor through
+     --slide-desktop-pos, which js/main.js sets from the pool entry's `desktopPosition`. Every slide that
+     says nothing keeps `center`, and no slide is ever scaled down or cropped by this. */
+  object-position: var(--slide-desktop-pos, center);
   display: block;
   filter: brightness(0.95);
   transform: none;
