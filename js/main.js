@@ -4447,6 +4447,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/a-a/GxGGg4iXcAAp3d6.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 81.6%',
         projectUrl: 'a-a.html'
       },
       {
@@ -5192,6 +5193,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/a-a/G09Bw1sWAAATy5h.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 90.9%',
         projectUrl: 'a-a.html'
       },
       {
