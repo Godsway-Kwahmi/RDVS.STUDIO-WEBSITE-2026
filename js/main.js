@@ -8756,11 +8756,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
   // edge starts on the caption’s own column, so the caption’s text stands on the plate’s edge exactly
   // as it does on the Margin slide ("the left edge of the image is in line with the text like this and
-  // the rest of the image shifts slightly to the right and not dead center") and the theme ground
-  // gathers at the right. object-position percentages resolve against the plate’s own free space, so
-  // the shift is a px term beside 50% and is only written where there is free space to move through:
-  // a landscape plate already spans the width. A portrait or square plate joins the column at its own
-  // size as well, which is what BFA’s squares needed: on a window taller than 1400 px they were
+  // the rest of the image shifts slightly to the right and not dead center"), with the theme ground
+  // gathering on the side the plate leaves free. object-position percentages resolve against the plate’s
+  // own free space, so the shift is a px term beside 50% and is only written where there is free space to
+  // move through: a landscape plate already spans the width. A portrait or square plate joins the column
+  // at its own size as well, which is what BFA’s squares needed: on a window taller than 1400 px they were
   // painted unscaled and centred, so the caption fell inside the image instead of on its edge.
   const HERO_CAPTION_INSET = 330;
   const HERO_CAPTION_MIN = 312; // --hero-caption-min (288) + --grid-margin (24)
@@ -8784,7 +8784,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     // its right edge, so it stays centred and keeps its theme ground on both sides.
     if (column + paintedW > W + 1) return;
     const shift = column - freeX / 2;
-    if (shift > 0) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
+    // Owner, 2026-11-05: "let the anchor pull left on narrow desktops too". The column is a fixed
+    // distance from the left edge while a centred plate's edge is a fixed distance from the centre, so
+    // on a narrow window the centred edge lands right of the column -- 48 of the pool's 67 contained
+    // plates at 1366x640 -- and the caption stood in the theme ground instead of on the plate. The
+    // column is never left of HERO_CAPTION_MIN and the guard above keeps the right edge inside the
+    // window, so pulling left cannot push the plate off screen at either end.
+    if (Math.abs(shift) > 0.05) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
   }
 
   let containAnchorFrame = 0;
