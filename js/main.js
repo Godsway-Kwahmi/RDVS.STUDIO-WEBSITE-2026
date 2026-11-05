@@ -1898,6 +1898,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-8.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -1915,6 +1916,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-9.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -1949,6 +1951,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-11.jpg',
+        fit: 'contain',
         mobilePosition: '70% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -1966,6 +1969,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-12.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -1983,6 +1987,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-13.jpg',
+        fit: 'contain',
         mobilePosition: '85% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -2000,6 +2005,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-14.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -2017,6 +2023,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-15.jpg',
+        fit: 'contain',
         mobilePosition: '20% center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -2034,6 +2041,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-16.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
@@ -8611,6 +8619,44 @@ document.addEventListener('DOMContentLoaded', async () => {
       : `<span class="service-name">${service}</span>`;
   }
 
+  // Owner, 2026-11-05: a plate shown whole at full height no longer floats in the middle of the
+  // window -- its left edge starts on the caption’s column ("shift slightly to the right of the
+  // screen"), so the caption reads off the plate and the theme ground falls as one band at the
+  // right. object-position percentages resolve against the plate’s own free space, so the shift
+  // is a px term beside 50% and is only written where there is free space to move through: a
+  // landscape plate already spans the width, and a plate painted at its natural size stays centred.
+  const HERO_CAPTION_INSET = 330;
+  const HERO_CAPTION_MIN = 312; // --hero-caption-min (288) + --grid-margin (24)
+  function anchorContainSlide(mediaContainer) {
+    mediaContainer.style.removeProperty('--slide-contain-shift');
+    if (!mediaContainer.classList.contains('slide-media-contain')) return;
+    if (!window.matchMedia('(min-width: 1200px)').matches) return;
+    const img = mediaContainer.querySelector('img');
+    if (!img || !img.naturalWidth || !img.naturalHeight) return;
+    const W = mediaContainer.clientWidth;
+    const H = mediaContainer.clientHeight;
+    const scale = Math.min(1, W / img.naturalWidth, H / img.naturalHeight);
+    const paintedW = img.naturalWidth * scale;
+    const freeX = W - paintedW;
+    if (Math.abs(img.naturalHeight * scale - H) > 1) return;
+    if (freeX <= 1) return;
+    const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
+    // A plate that reaches past the column from the left has no room to sit on it without losing
+    // its right edge, so it stays centred and keeps its theme ground on both sides.
+    if (column + paintedW > W + 1) return;
+    const shift = column - freeX / 2;
+    if (shift > 0) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
+  }
+
+  let containAnchorFrame = 0;
+  window.addEventListener('resize', () => {
+    if (containAnchorFrame) return;
+    containAnchorFrame = requestAnimationFrame(() => {
+      containAnchorFrame = 0;
+      document.querySelectorAll('.slide-media-contain').forEach(anchorContainSlide);
+    });
+  });
+
   // Dynamically populate randomized slides into the DOM
   function populateRandomizedSlides() {
     const isMobileViewport = window.innerWidth <= 768 || window.matchMedia('(max-width: 768px)').matches;
@@ -8706,6 +8752,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img${isContain ? ' slide-img-contain' : ''}" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
               </picture>
             `;
+            anchorContainSlide(mediaContainer);            const containImg = isContain && mediaContainer.querySelector('img');            if (containImg && !containImg.complete) {              containImg.addEventListener('load', () => anchorContainSlide(mediaContainer), { once: true });            }
           }
         }
       }

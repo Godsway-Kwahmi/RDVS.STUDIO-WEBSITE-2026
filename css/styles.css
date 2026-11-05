@@ -543,9 +543,13 @@ button {
 .slide-picture img.slide-img-contain,
 .slide-img-contain {
   object-fit: scale-down;
-  /* The phone rule's --slide-mobile-pos anchor belongs to a cover crop; with no crop to anchor, a
-     contained plate is centred on both axes. */
-  object-position: center;
+  /* Owner, 2026-11-05: a plate shown whole at full height no longer floats in the middle of the
+     window -- its left edge starts on the caption’s column ("shift slightly to the right of the
+     screen"), so the caption reads off the plate and the theme ground falls as one band at the
+     right. js/main.js measures the plate against the window and writes --slide-contain-shift only
+     where there is free space to move through: a landscape plate spans the width, and a plate
+     painted at its natural size stays centred. */
+  object-position: calc(50% + var(--slide-contain-shift, 0px)) center;
 }
 
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
