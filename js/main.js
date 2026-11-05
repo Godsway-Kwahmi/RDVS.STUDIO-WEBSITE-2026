@@ -864,7 +864,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         videoUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
-        imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
+        imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
         desc: 'The delivered animation, end to end',
@@ -2047,10 +2047,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2017',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-hero.jpg',
-        mobilePosition: '85% center',
+        imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
+        mobilePosition: '33% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -2068,7 +2068,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
         mobilePosition: '70% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4331,24 +4331,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E14fiz3X0AA3X0k.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
-        id: 'tower-cascades-plate3',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
-        mobilePosition: '33% center',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4365,7 +4348,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E1mtKvQXIAMmM9h.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4382,7 +4365,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E1mtLvhWQAcCZ7p.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4399,7 +4382,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E1mtLWgXIAgYyjJ.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4416,7 +4399,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E2G_xZRWYAIScVK.jpg',
         mobilePosition: '38% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4433,7 +4416,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E2IDVPjXMAA1kEf.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4450,7 +4433,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E2IDVrPXsAA5ypI.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4467,7 +4450,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-2.jpg',
         mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4484,7 +4467,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-3.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4501,7 +4484,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-4.jpg',
         mobilePosition: '41% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4518,7 +4501,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-5.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4535,7 +4518,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-6.jpg',
         mobilePosition: '70% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4552,7 +4535,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-7.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4569,7 +4552,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-8.jpg',
         mobilePosition: '41% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4586,7 +4569,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-9.jpg',
         mobilePosition: '35% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4603,7 +4586,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-10.jpg',
         mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4620,7 +4603,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-11.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4637,7 +4620,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-12.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4654,7 +4637,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-13.jpg',
         mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4671,7 +4654,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-14.jpg',
         mobilePosition: '38% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4688,7 +4671,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-15.jpg',
         mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4705,7 +4688,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-16.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4722,7 +4705,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-17.jpg',
         mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4739,7 +4722,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-18.jpg',
         mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4756,7 +4739,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-19.jpg',
         mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4773,7 +4756,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-20.jpg',
         mobilePosition: '36% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4790,7 +4773,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-21.jpg',
         mobilePosition: 'center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4807,7 +4790,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-22.jpg',
         mobilePosition: '30% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4824,7 +4807,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-23.jpg',
         mobilePosition: '85% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
@@ -4841,7 +4824,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-24.jpg',
         mobilePosition: '15% center',
         projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-three visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
+        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
           client: 'Hawkrad Properties',
           scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
