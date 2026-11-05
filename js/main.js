@@ -3579,6 +3579,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-14.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 74.7%',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
