@@ -5632,6 +5632,46 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'protea-hotel-airport.html'
       },
       {
+        id: 'protea-hotel-airport-7i-sbw',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCsBwXMAIxQGf.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'protea-hotel-airport-7i-tzp',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCtzPXoAEAaLT.jpg',
+        mobilePosition: '58% center',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'protea-hotel-airport-7i-whk',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCwhKXIAAdVuB.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
+        id: 'protea-hotel-airport-7i-xqu',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/E7iCxquX0AM7iJa.jpg',
+        mobilePosition: '45% center',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
         id: 'mig-efk-0-7-5e',
         title: 'MIG',
         category: 'Modern Indigenous Goods — 2021',
