@@ -8879,10 +8879,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             // cover would crop it.
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
-            // A contained plate is centred by definition: its anchors were chosen for a cover crop, and with
-            // the whole frame in view an anchor would only push it off centre. It may still carry a vertical
-            // nudge for the desktop window (`containY`), which the stylesheet applies above 768 px only.
-            mediaContainer.style.setProperty('--slide-mobile-pos', isContain ? 'center' : mobilePos);
+            // Contain is a desktop law only (owner, 2026-11-05: "Portrait positioning should only be on
+            // desktop but on mobile screens the images can fill the whole screen"), so below 769 px the
+            // stylesheet leaves the cover rule standing and the slide crops to its entry's own anchor --
+            // the same `mobilePosition` a cover slide reads. It may still carry a vertical nudge for the
+            // desktop window (`containY`), which the stylesheet applies above 768 px only.
+            mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
             // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
             // for an anchor must have the previous occupant's cleared rather than left to inherit.
             if (!isContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
