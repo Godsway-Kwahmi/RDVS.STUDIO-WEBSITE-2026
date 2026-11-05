@@ -5368,6 +5368,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'hot-gossip.html',
         desc: 'Hot Gossip in 2012: a lounge walled in backlit pink discs, with a curved sectional in pale upholstery, a low table on a dark rug and steps up to a raised area at the far end.',
@@ -5386,6 +5387,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'hot-gossip.html',
         desc: 'The billiards hall at Hot Gossip: a blue-clothed pool table under yellow cove lighting, a glass-block partition on one side and a wall of pink disc lights at the far end.',
@@ -6066,6 +6068,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Workplace Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/margin/margin-bank.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
       },
@@ -6076,6 +6079,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Workplace Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/margin/F97ocXEXAAArCud.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
       },
@@ -6253,6 +6257,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/stanchart-hq/stanchart-hq-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'stanchart-hq.html',
         desc: 'Photorealistic 3D visualization for Stanchart HQ, a corporate headquarters tower completed in 2010.',
@@ -6884,6 +6889,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Workplace Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/margin/GH1cB5CW4AAQFih.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
       },      {
@@ -6893,6 +6899,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Workplace Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/margin/F-XhIIqXMAAGhOa.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
       },      {
@@ -8677,11 +8684,11 @@ document.addEventListener('DOMContentLoaded', async () => {
           } else {
             const deskImg = proj.imageUrl;
             const mobilePos = proj.mobilePosition || 'center';
-            // Owner, 2026-11-05: the Kuma Residence and 3AAP frames are shown whole, at 100% of
-            // their own resolution, with the leftover window painted in the page's theme ground;
-            // Margin's last plate and Fule's square plate join them. `scale-down` is the one value
-            // that never upscales: contain would blow a 978 px study up to the viewport, and cover
-            // would crop it.
+            // Owner, 2026-11-05: the plates that cannot fill the window without cropping or upscaling
+            // -- Kuma Residence, 3AAP, Hot Gossip, Margin, Stanchart HQ and Fule -- are shown whole,
+            // with the leftover window painted in the page's theme ground. `scale-down` is the one
+            // value that never upscales: contain would blow a 978 px study up to the viewport, and
+            // cover would crop it.
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
             // A contained plate is centred by definition: its anchors were chosen for a cover crop, and with
