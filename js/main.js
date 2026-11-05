@@ -6279,6 +6279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdOGAJlXYAEedq8.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
