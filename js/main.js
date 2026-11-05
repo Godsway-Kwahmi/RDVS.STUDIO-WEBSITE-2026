@@ -6194,6 +6194,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'mig.html'
       },
@@ -6204,6 +6205,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'mig.html'
       },
@@ -7374,6 +7376,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/mig-1h-2.jpg',
+        fit: 'contain',
         mobilePosition: '63% center',
         projectUrl: 'mig.html'
       },
