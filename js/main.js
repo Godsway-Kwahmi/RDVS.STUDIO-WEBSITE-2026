@@ -3432,6 +3432,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'la-beach-towers-plate3',
+        title: 'La Beach Towers',
+        category: '3D Visualization — 2013',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-12.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'la-beach-towers.html',
+        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          year: '2013',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
         id: 'imperial-square-plate1',
         title: 'Imperial Square',
         category: 'Interior Design — 2013',
