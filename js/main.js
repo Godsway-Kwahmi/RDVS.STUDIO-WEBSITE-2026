@@ -9082,6 +9082,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       // nobody (that regression is why initCarousel defers itself at all -- see the note above).
       hydrateStills();
       requestFilmWarm();
+      requestStillWarm();
       const waitForIntro = setInterval(() => {
         if (introIsUp()) return;
         clearInterval(waitForIntro);
@@ -9187,6 +9188,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ... and the same walk for the stills: the two slides past this one get their URLs now, so the image
     // is already decoding when the dwell runs out instead of starting to load at the cut.
     hydrateStills();
+    // ... and the rest of the deck keeps draining into the browser cache in the background.
+    requestStillWarm();
   }
 
   window.rdvsGoToSlide = function(idx) {
@@ -9388,6 +9391,80 @@ document.addEventListener('DOMContentLoaded', async () => {
     for (let step = 0; step <= STILL_AHEAD; step++) lightStill((currentIndex + step) % totalSlides);
   }
 
+  // ---------------------------------------------------------------- whole-deck still preloading
+  /**
+   * Owner order, 2026-11-05: "Because the images in the slides are large, let's load them in the
+   * background the moment a visitor enters the site."
+   *
+   * hydrateStills() keeps the hero to itself and still lights only the two slides ahead, so this is the
+   * rest of the deck: every still that is not yet lit, walked in the draw's own order from whichever
+   * slide the viewer is on, ONE FILE AT A TIME and at low fetch priority. It can never take the pipe
+   * from the slide on screen, and a plate warmed here is painted straight out of the browser cache when
+   * the deck reaches it instead of starting to download at the cut. Save-data and 2G never enter the
+   * queue, and a file that stalls is dropped after STILL_WARM_CAP_MS so it cannot park the rest.
+   */
+  const STILL_WARM_GAP_MS = 150;        // breathing room between two background stills
+  const STILL_WARM_CAP_MS = 30000;      // a stalled file must not park the whole deck
+  const warmedStills = new Set();       // urls this page has already pulled into the cache
+  let stillWarmItem = null;             // the single background still in flight
+  let stillWarmGap = null;
+  let stillWarmQueued = false;
+
+  function stillWarmUrl() {
+    for (let step = 0; step < totalSlides; step++) {
+      const idx = (currentIndex + step) % totalSlides;
+      const proj = projects[idx];
+      const slide = slides[idx];
+      if (!proj || !proj.imageUrl || proj.videoUrl) continue;      // a film owns its own poster
+      if (warmedStills.has(proj.imageUrl)) continue;
+      // a picture that no longer carries data-defer is lit or on screen: its bytes are already moving
+      if (!slide || !slide.querySelector('picture.slide-picture[data-defer]')) continue;
+      return proj.imageUrl;
+    }
+    return '';
+  }
+
+  function warmNextStill() {
+    stillWarmGap = null;
+    if (stillWarmItem || document.hidden || lightDataWanted()) return;
+    const url = stillWarmUrl();
+    if (!url) return;
+    const image = new Image();
+    image.decoding = 'async';
+    if ('fetchPriority' in image) image.fetchPriority = 'low';
+    const item = { url, image };
+    stillWarmItem = item;
+    let settled = false;
+    let cap = null;
+    const settle = () => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(cap);
+      warmedStills.add(url);
+      if (stillWarmItem === item) stillWarmItem = null;
+      stillWarmGap = setTimeout(warmNextStill, STILL_WARM_GAP_MS);
+    };
+    cap = setTimeout(() => {
+      image.src = '';                       // releases the pipe; the slide asks again if it is reached
+      settle();
+    }, STILL_WARM_CAP_MS);
+    image.onload = settle;
+    image.onerror = settle;
+    image.src = url;
+  }
+
+  function requestStillWarm() {
+    if (stillWarmQueued || stillWarmItem || stillWarmGap) return;
+    stillWarmQueued = true;
+    const run = () => {
+      stillWarmQueued = false;
+      stillWarmGap = null;
+      warmNextStill();
+    };
+    if (window.requestIdleCallback) window.requestIdleCallback(run, { timeout: 2500 });
+    else stillWarmGap = setTimeout(run, 1200);
+  }
+
   // ---------------------------------------------------------------- background film preloading
   /**
    * Owner order, 2026-10-22: "for the animations and videos in the slideshow on the homepage, preload
@@ -9517,7 +9594,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) requestFilmWarm();
+    if (!document.hidden) {
+      requestFilmWarm();
+      requestStillWarm();
+    }
   });
 
   function pauseCurrentSlide() {
