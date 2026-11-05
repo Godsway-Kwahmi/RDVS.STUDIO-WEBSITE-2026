@@ -399,6 +399,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtVkWAoWgAEV3aY.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'empire-tower.html'
       },
