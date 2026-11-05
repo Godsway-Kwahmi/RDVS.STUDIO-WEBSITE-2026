@@ -1401,6 +1401,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/FRJmev8XIAAsnF2.jpg',
         fit: 'contain',
+        containY: '40%',
         mobilePosition: '74% center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
@@ -7773,6 +7774,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
@@ -7803,6 +7805,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-3.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
@@ -8779,8 +8782,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const freeX = W - paintedW;
     if (freeX <= 1) return;
     // A landscape plate that is not held to the window’s height keeps its symmetric bands; only the
-    // portrait and square plates the owner’s rule names come off centre here.
-    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight) return;
+    // portrait and square plates the owner’s rule names come off centre here.  The 5% tolerance is what
+    // keeps 1H's 1123x1077 and Tower Cascades' 1131x1130 in that group: on a window taller than they are
+    // they paint at their own size, and only rounding says they are wider than tall.  It reaches five
+    // entries in all -- the two 1H copies of mig-1h-1 and three Tower Cascades near-squares -- and stops
+    // well short of the pool's next-widest contained plate at 1.19.
+    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.05) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
     // A plate that reaches past the column from the left has no room to sit on it without losing
     // its right edge, so it stays centred and keeps its theme ground on both sides.
