@@ -1467,6 +1467,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hubtel/hubtel-nairobi-1.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 100%',
         projectUrl: 'hubtel.html',
         desc: 'Interior design and full 3D visualization for Hubtel\'s Nairobi workspace — reception and welcome sequence, open collaborative floor, and executive rooms, resolved around daylight, circulation and brand presence.',
         specs: {
@@ -3483,6 +3484,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hubtel/hubtel-nairobi-2.jpg',
         mobilePosition: 'center',
+        desktopPosition: 'center 70.9%',
         projectUrl: 'hubtel.html',
         desc: 'Interior design and full 3D visualization for Hubtel\'s Nairobi workspace — reception and welcome sequence, open collaborative floor, and executive rooms, resolved around daylight, circulation and brand presence.',
         specs: {
