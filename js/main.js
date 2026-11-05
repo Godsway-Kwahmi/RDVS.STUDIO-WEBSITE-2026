@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
     'product-1h.html': ['design', 'vfx-cgi'],
-    'product-flah.html': ['design', 'vfx-cgi'],
     'product-hg-desk.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-line-e-float-i.html': ['design', 'studio-projects', 'vfx-cgi'],
     'product-mound.html': ['design', 'vfx-cgi'],
@@ -423,6 +422,24 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       {
         id: 'barham-residence',
+        title: '41 Barham',
+        category: 'Architectural Design — 2017',
+        service: 'Architectural Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/barham/barham-residence.jpg',
+        mobilePosition: 'center',
+        projectUrl: '41-barham.html',
+        desc: 'The ground-floor living room at night: a grand piano with its lid up and an orange leather lounge chair with ottoman seen through full-height glazing, a tall cream-shaded floor lamp, a grid of framed pet photographs on the wall and a crystal drum chandelier above.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Architect Kofi Amankwah (Architecture), RDVS (Interior Design & 3D Visualization)',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'barham-attic',
         title: '41 Barham',
         category: 'Architectural Design — 2017',
         service: 'Architectural Design',
@@ -2514,13 +2531,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ela-b/ela-b-6.jpg',
         mobilePosition: '15% center',
         projectUrl: 'ela-b.html',
-        desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
+        desc: 'Render of the dining area seen through a foreground of blurred white branches: green-topped table, tan and black side chairs, black planters with tall greenery, pale carpet and the reed panel and pendant discs behind.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
           team: 'RDVS. DESIGN',
           year: '2018',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
       {
@@ -2532,13 +2549,229 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ela-b/ela-b-8.jpg',
         mobilePosition: '85% center',
         projectUrl: 'ela-b.html',
-        desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
+        desc: 'Kitchen render: handleless white wall cabinets over a black worktop and splashback, oak fronted base units, an integrated extractor and hob, a small potted plant on the counter and a pale tiled floor.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
           team: 'RDVS. DESIGN',
           year: '2018',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate3',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Overhead render looking straight down at a grey shaggy carpet with two flat sculptural shapes in teal and slate grey, a round white openwork tray, and small carved wooden objects placed beside them.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate4',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Render of the open plan living and dining area: white sofas with teal cushions in the foreground, a mint topped dining table with mixed chairs beyond, disc pendants above and a large dried-reed panel on the far wall.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate5',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-3.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Wider angle render of the same living room: low white modular seating with teal and grey cushions, black organic coffee tables on a pale rug, blue armchair at the window and two framed artworks on the wall.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate6',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Render from the seating edge toward the dining zone: a bright blue lounge chair, dark coffee table with bowls and wooden objects, white armchair, and the reed wall art lit by two flat pendant discs.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate7',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Close-up render of a mint green table top holding a potted monstera, small woven baskets and a blue glass vessel, with a roller blind framing sunlit foliage outside and dried reeds hanging at the right.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate8',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-7.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Detail render across a black kitchen counter: stainless steel pots and a gas hob in shallow focus, with a bright green clipped hedge filling the window behind and daylight raking across the worktop.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate9',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-10.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Opposite kitchen view render: the veneer wall and dark door at the right, a run of white and oak cabinets under two small windows, open shelving with jars, and three recessed ceiling discs overhead.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate10',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-11.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Bedroom render: a low oak bed with white linen and a navy throw on a teal patterned rug, black pouf at the foot, slim glass side tables, dark curtains and an orange exterior wall visible through the glazing.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate11',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-12.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Second angle of the bedroom render: the bed now against a white media wall with a wall-mounted television, pendant lamps over the side table, tall glazing to the balcony and the same geometric teal rug underfoot.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate12',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-13.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Tight corner render of the bedroom: a potted plant on the dark floor in front of the orange balcony wall, the edge of the bed with navy bedding, and bright daylight striping across the rug.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate13',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-14.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Detail render from the bedside: monstera leaves in the foreground, a glass side table with an open book, the white duvet and navy throw, and strong bands of sunlight falling across the teal patterned rug.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'ela-b-plate14',
+        title: 'Ela B',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/ela-b/ela-b-15.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'ela-b.html',
+        desc: 'Wide bedroom render from the foot of the room: the oak bed with navy throw centred between full-height glazing and dark drapes, a black pouf on the rug, and two pendant lights hanging low at either side.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
       {
@@ -2874,13 +3107,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/bfa/bfa-5.png',
         mobilePosition: '20% center',
         projectUrl: 'bfa.html',
-        desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
+        desc: 'BFA bedroom from the foot of the bed: a low dark upholstered bed in pink sheets and a grey throw, pink panelled half walls, a tall yucca in a white pot beside the headboard, a wall-mounted black television, pink table lamp and a round pink table with a magazine on the white shag rug.',
         specs: {
           client: 'Homes Direct',
           scope: 'Interior Design & 3D Visualization',
           team: 'Jude Abbey, Jude Nyoagbe',
           year: '2018',
-          disciplines: '[\'Interior Design\', \'3D Visualization — 2018 · Commissioned Work\']'
+          disciplines: ['Interior Design', '3D Visualization']
         }
       },
       {
@@ -2892,13 +3125,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/bfa/bfa-6.jpg',
         mobilePosition: '26% center',
         projectUrl: 'bfa.html',
-        desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
+        desc: 'BFA bedroom from the opposite corner, framed by a blurred wall edge and out-of-focus plant: the black television on a split white and pink wall, a cream armchair on a quilted grey base and a tripod floor lamp with a drum shade.',
         specs: {
           client: 'Homes Direct',
           scope: 'Interior Design & 3D Visualization',
           team: 'Jude Abbey, Jude Nyoagbe',
           year: '2018',
-          disciplines: '[\'Interior Design\', \'3D Visualization — 2018 · Commissioned Work\']'
+          disciplines: ['Interior Design', '3D Visualization']
         }
       },
       {
@@ -2910,13 +3143,193 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/bfa/bfa-8.jpg',
         mobilePosition: '75% center',
         projectUrl: 'bfa.html',
-        desc: 'Interior design and photorealistic 3D visualization for BFA, with architecture by 1916 Design Construct and commissioned by Homes Direct.',
+        desc: 'BFA living room: the white two-seat sofa with navy velvet cushions on the dark feature wall, two oak-framed lounge chairs with tan slings, decanters on the glass oval table and a slim arc floor lamp by the navy curtain.',
         specs: {
           client: 'Homes Direct',
           scope: 'Interior Design & 3D Visualization',
           team: 'Jude Abbey, Jude Nyoagbe',
           year: '2018',
-          disciplines: '[\'Interior Design\', \'3D Visualization — 2018 · Commissioned Work\']'
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate4',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-7.png',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA bedroom behind the cream sofa back that spans the foreground: pink headboard panel, pink lamp on a block nightstand, a chrome tray of glass tumblers on the shag rug and a yucca in a black pot by the dark curtains.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate5',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-9.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA bedroom cropped low at the bed foot: dark grey wall over pink panelling, the pink lamp, a chrome-legged table with a silver ice bucket and crystal bowl, and a pink cantilever side table carrying a potted palm.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate6',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-10.png',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA bedroom from the far corner: the bed centred on a grey shag rug with a pink drum table and lamp at right, a cream sofa and floor lamp by the sliding glass doors to the terrace, tall yucca in a black ribbed planter.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate7',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-11.png',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA bedroom at nearly the same angle as the plate behind the sofa, with a large white tripod floor lamp added at right against the dark grey upper walls, a yucca in a white pot between the bed and the terrace door, and the same pink table, magazine and remote in the centre.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate8',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-12.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA kitchen in square crop: a white curved peninsula with potted cacti on a black tripod stand, three pale pink cylinder pendants, glossy white cabinets over oak base units, a sink under a blinded window and a silver Liebherr fridge.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate9',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-13.png',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA bedroom panned toward the television wall: a black flat screen on the dark panel above a pink dado band, two dark doors, a yucca on the pink ledge and the chrome tray and round table in the foreground.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate10',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA dining area from the far end: an oak table with six black upholstered chairs under an interlocking LED ring pendant, a bowl of yellow citrus on top, two flush black doors in the wall behind and the bar with white wire stools at left.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate11',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA kitchen at counter height: glossy taupe wall cabinets and a steel hood over a grey mosaic backsplash and white worktop, oak veneer bases, three stacked yellow bowls, a tall chrome tap and a black-framed window on greenery.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate12',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-3.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA living room from behind a white sofa with blue velvet cushions: two glass coffee tables on gold drum bases, an oak media console under a black television, an abstract diptych on the pink wall and the dining table beyond.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'bfa-plate13',
+        title: 'BFA',
+        category: 'Interior Design & 3D Visualization — 2018',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/bfa/bfa-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'bfa.html',
+        desc: 'BFA dining table from the opposite end, camera low: the same oak top, black chairs, citrus bowl and ring pendant, with the pink wall diptych behind, black curtains and an orange car at the window, white wire bar stools at right.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior Design & 3D Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
         }
       },
 
@@ -3820,6 +4233,132 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'petrus-plate2',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-3.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus living room by day: white sofa and two swivel armchairs around a sculptural white table under a triple-ring LED chandelier, four tree-ring prints on the wall and sliding doors into the gym at left.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate3',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus home gym: treadmill, red exercise bike and a black-and-yellow bench along the wood-panelled wall and tall mirror, glass doors onto banana-leaf planting over plank flooring.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate4',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus kitchen at counter height: dark gloss base cabinets, cream uppers and grey marble worktops, a board with bread and cheese in the foreground beside a tall tap and under-cabinet lighting.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate5',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus kitchen from the far end of the L-run: black gloss drawers with steel pulls, hanging utensils and a roller blind at the window, a glass door at right looking through to the gym.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate6',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-7.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus living room from behind the sofas: a wall-mounted television over the cream media panel, two white swivel chairs and the ring chandelier, tree-ring artworks and a sliding door to the lawn beyond.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate7',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-8.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus living room the other way: the white sofa facing the camera with a two-tier coffee table, cognac leather chair in the foreground, an abstract figure painting and a white torso sculpture at left.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'petrus-plate8',
+        title: 'Petrus',
+        category: 'Interior Design & 3D Visualization — 2017',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/petrus/petrus-9.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'petrus.html',
+        desc: 'Petrus gym from the low corner: dumbbell rack, bench and cable machine along the wall, red spin bike and treadmill by the black-framed glass doors, a mirror edge at left and the pool beyond.',
+        specs: {
+          client: 'Imperial Homes',
+          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
         id: 'hot-gossip',
         title: 'Hot Gossip',
         category: 'Interior Design & 3D Visualization — 2012',
@@ -4028,12 +4567,264 @@ document.addEventListener('DOMContentLoaded', async () => {
     ],
     images: [
       {
+        id: 'afg-render-87',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-87.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Visualisation of the lounge: the seating group and faceted Welcome to AFG wall modelled before build, daylight coming through the glazed boardroom.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-88',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-88.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'The lounge camera in its evening grade, the room dropping to black around the lit graphic wall.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-89',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-89.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Visualisation of the boardroom from the lounge, its glazed wall etched with We build the pride of Africa and the faceted ceiling visible inside.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-90',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-90.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'The same boardroom camera under artificial light, the etched signage and red graphics glowing on the glass.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-91',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-91.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Boardroom visualisation from the head of the table, showing the faceted ceiling panels and a pull-down projection screen.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-92',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-92.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Open-plan visualisation: bench desks and task chairs under a black ceiling, the AFG graphic wall at the far end.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-93',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-93.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'The open plan from the opposite end, storage fins dividing the desk banks and daylight at the far windows.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-94',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-94.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Management office visualisation, a plywood desk and task chair in a bright white room with textured blinds.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-95',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-95.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Pantry visualisation from the doorway, bench seating and red chairs at the counter.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-96',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-96.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'The pantry from inside, a red-tiled graphic wall, black cabinets and the dining table set with red chairs.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-97',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-97.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Breakout visualisation: a pinboard wall of red panels, open shelving and a timber table under a black ceiling.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-98',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-98.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Pantry booth visualisation in daylight, red chairs and bench seating around a plywood table by the window.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-99',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-99.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'The same booth in its blue night grade, the room reduced to silhouette and cool light.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
+        id: 'afg-render-100',
+        title: 'AFG Offices',
+        category: 'Design Visualisations — 2019',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/afg/afg-100.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'afg.html',
+        desc: 'Visualisation of the staff rest room: two low day beds in a deep blue room, the faceted wall shape lit from above.',
+        specs: {
+          client: 'AFG',
+          scope: 'Interior design, environmental graphics, 3D visualization, bespoke furniture and full fit-out construction',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
+        }
+      },
+      {
         id: 'jhk-investment',
         title: 'JHK',
         category: 'Architectural Visualization — 2011',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-1.jpg',
+        imageUrl: 'assets/images/jhk-investment/jhk-investment-1.png',
         mobilePosition: '85% center',
         projectUrl: 'jhk-investment.html',
         desc: 'JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky',
@@ -4051,7 +4842,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2011',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-2.jpg',
+        imageUrl: 'assets/images/jhk-investment/jhk-investment-2.png',
         mobilePosition: 'center',
         projectUrl: 'jhk-investment.html',
         desc: 'Daytime exterior of an ochre single-storey house with a covered porch, children playing on the lawn beside a red toy car and a blue pool cover, palms and trees behind',
@@ -4069,7 +4860,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2011',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
+        imageUrl: 'assets/images/jhk-investment/jhk-investment-3.png',
         mobilePosition: '85% center',
         projectUrl: 'jhk-investment.html',
         desc: 'The side of an ochre house with a timber pergola and stone-clad columns casting striped shadows across a paved walkway and lawn, a window glowing warmly',
@@ -5390,7 +6181,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2010',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3.jpg',
+        imageUrl: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3.png',
         mobilePosition: '22% center',
         projectUrl: 'ppa-ghana-competition.html',
         desc: 'A 2010 competition entry for the Public Procurement Authority of Ghana: RDVS supplied the interior design and 3D visualization for an eight-plate, twin-wing glazed headquarters designed by Tekton Consult.',
@@ -5882,21 +6673,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'RDVS Studios',
           year: '2016',
-        }
-      },
-      {
-        id: 'product-flah',
-        title: 'FLAH',
-        category: 'Design · VFX + CGI — 2020',
-        service: 'Design · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-flah-1.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'product-flah.html',
-        desc: 'A frame of light instead of a frame of timber: FLAH sets a continuous illuminated line into the wall and draws it around the screen, with the console floating below it and nothing built between the two. Designed by RDVS for the MIG line and shown as a CGI interior.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
         }
       },
       {
