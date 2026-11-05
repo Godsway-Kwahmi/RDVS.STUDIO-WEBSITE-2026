@@ -9394,19 +9394,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ---------------------------------------------------------------- whole-deck still preloading
   /**
    * Owner order, 2026-11-05: "Because the images in the slides are large, let's load them in the
-   * background the moment a visitor enters the site."
+   * background the moment a visitor enters the site." Same day, on the pace: "allow two or three in
+   * parallel".
    *
    * hydrateStills() keeps the hero to itself and still lights only the two slides ahead, so this is the
    * rest of the deck: every still that is not yet lit, walked in the draw's own order from whichever
-   * slide the viewer is on, ONE FILE AT A TIME and at low fetch priority. It can never take the pipe
-   * from the slide on screen, and a plate warmed here is painted straight out of the browser cache when
-   * the deck reaches it instead of starting to download at the cut. Save-data and 2G never enter the
-   * queue, and a file that stalls is dropped after STILL_WARM_CAP_MS so it cannot park the rest.
+   * slide the viewer is on, THREE FILES AT A TIME and at low fetch priority. Three shares the pipe with
+   * the hero and the film queue without letting a slow plate hold up the rest. A plate warmed here is
+   * painted straight out of the browser cache when the deck reaches it instead of starting to download
+   * at the cut. Save-data and 2G never enter the queue, and a file that stalls is dropped after
+   * STILL_WARM_CAP_MS so it cannot park the rest.
    */
-  const STILL_WARM_GAP_MS = 150;        // breathing room between two background stills
+  const STILL_WARM_PARALLEL = 3;        // background stills allowed in flight at once
+  const STILL_WARM_GAP_MS = 150;        // breathing room before the pool refills
   const STILL_WARM_CAP_MS = 30000;      // a stalled file must not park the whole deck
   const warmedStills = new Set();       // urls this page has already pulled into the cache
-  let stillWarmItem = null;             // the single background still in flight
+  const stillWarmInFlight = new Map();  // url -> the background stills currently in flight
   let stillWarmGap = null;
   let stillWarmQueued = false;
 
@@ -9416,7 +9419,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const proj = projects[idx];
       const slide = slides[idx];
       if (!proj || !proj.imageUrl || proj.videoUrl) continue;      // a film owns its own poster
-      if (warmedStills.has(proj.imageUrl)) continue;
+      if (warmedStills.has(proj.imageUrl) || stillWarmInFlight.has(proj.imageUrl)) continue;
       // a picture that no longer carries data-defer is lit or on screen: its bytes are already moving
       if (!slide || !slide.querySelector('picture.slide-picture[data-defer]')) continue;
       return proj.imageUrl;
@@ -9424,16 +9427,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     return '';
   }
 
-  function warmNextStill() {
-    stillWarmGap = null;
-    if (stillWarmItem || document.hidden || lightDataWanted()) return;
-    const url = stillWarmUrl();
-    if (!url) return;
+  function warmStill(url) {
     const image = new Image();
     image.decoding = 'async';
     if ('fetchPriority' in image) image.fetchPriority = 'low';
     const item = { url, image };
-    stillWarmItem = item;
+    stillWarmInFlight.set(url, item);
     let settled = false;
     let cap = null;
     const settle = () => {
@@ -9441,8 +9440,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       settled = true;
       clearTimeout(cap);
       warmedStills.add(url);
-      if (stillWarmItem === item) stillWarmItem = null;
-      stillWarmGap = setTimeout(warmNextStill, STILL_WARM_GAP_MS);
+      stillWarmInFlight.delete(url);
+      clearTimeout(stillWarmGap);
+      stillWarmGap = setTimeout(pumpStills, STILL_WARM_GAP_MS);
     };
     cap = setTimeout(() => {
       image.src = '';                       // releases the pipe; the slide asks again if it is reached
@@ -9453,13 +9453,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     image.src = url;
   }
 
+  function pumpStills() {
+    stillWarmGap = null;
+    if (document.hidden || lightDataWanted()) return;
+    while (stillWarmInFlight.size < STILL_WARM_PARALLEL) {
+      const url = stillWarmUrl();
+      if (!url) return;
+      warmStill(url);
+    }
+  }
+
   function requestStillWarm() {
-    if (stillWarmQueued || stillWarmItem || stillWarmGap) return;
+    if (stillWarmQueued || stillWarmGap || stillWarmInFlight.size) return;
     stillWarmQueued = true;
     const run = () => {
       stillWarmQueued = false;
       stillWarmGap = null;
-      warmNextStill();
+      pumpStills();
     };
     if (window.requestIdleCallback) window.requestIdleCallback(run, { timeout: 2500 });
     else stillWarmGap = setTimeout(run, 1200);
