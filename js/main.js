@@ -8758,12 +8758,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       : `<span class="service-name">${service}</span>`;
   }
 
-  // Owner, 2026-11-05: a plate shown whole at full height no longer floats in the middle of the
-  // window -- its left edge starts on the caption’s column ("shift slightly to the right of the
-  // screen"), so the caption reads off the plate and the theme ground falls as one band at the
-  // right. object-position percentages resolve against the plate’s own free space, so the shift
-  // is a px term beside 50% and is only written where there is free space to move through: a
-  // landscape plate already spans the width, and a plate painted at its natural size stays centred.
+  // Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
+  // edge starts on the caption’s own column, so the caption’s text stands on the plate’s edge exactly
+  // as it does on the Margin slide ("the left edge of the image is in line with the text like this and
+  // the rest of the image shifts slightly to the right and not dead center") and the theme ground
+  // gathers at the right. object-position percentages resolve against the plate’s own free space, so
+  // the shift is a px term beside 50% and is only written where there is free space to move through:
+  // a landscape plate already spans the width. A portrait or square plate joins the column at its own
+  // size as well, which is what BFA’s squares needed: on a window taller than 1400 px they were
+  // painted unscaled and centred, so the caption fell inside the image instead of on its edge.
   const HERO_CAPTION_INSET = 330;
   const HERO_CAPTION_MIN = 312; // --hero-caption-min (288) + --grid-margin (24)
   function anchorContainSlide(mediaContainer) {
@@ -8777,8 +8780,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const scale = Math.min(1, W / img.naturalWidth, H / img.naturalHeight);
     const paintedW = img.naturalWidth * scale;
     const freeX = W - paintedW;
-    if (Math.abs(img.naturalHeight * scale - H) > 1) return;
     if (freeX <= 1) return;
+    // A landscape plate that is not held to the window’s height keeps its symmetric bands; only the
+    // portrait and square plates the owner’s rule names come off centre here.
+    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
     // A plate that reaches past the column from the left has no room to sit on it without losing
     // its right edge, so it stays centred and keeps its theme ground on both sides.

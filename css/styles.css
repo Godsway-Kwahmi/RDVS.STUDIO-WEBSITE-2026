@@ -543,12 +543,14 @@ button {
 .slide-picture img.slide-img-contain,
 .slide-img-contain {
   object-fit: scale-down;
-  /* Owner, 2026-11-05: a plate shown whole at full height no longer floats in the middle of the
-     window -- its left edge starts on the caption’s column ("shift slightly to the right of the
-     screen"), so the caption reads off the plate and the theme ground falls as one band at the
-     right. js/main.js measures the plate against the window and writes --slide-contain-shift only
-     where there is free space to move through: a landscape plate spans the width, and a plate
-     painted at its natural size stays centred. */
+  /* Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
+     edge starts on the caption's own column ("the left edge of the image is in line with the text
+     like this and the rest of the image shifts slightly to the right and not dead center"), so the
+     caption's text stands on the plate's edge and the theme ground gathers as one band at the right.
+     js/main.js measures the plate against the window and writes --slide-contain-shift only where
+     there is free space to move through: a landscape plate already spans the width. A portrait or
+     square plate joins the column at its own size too, which is what BFA's squares needed on a
+     window taller than they are -- centred there, the caption fell inside the image. */
   object-position: calc(50% + var(--slide-contain-shift, 0px)) center;
 }
 
