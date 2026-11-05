@@ -6152,6 +6152,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFHsaX0AAGtWn.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'hola.html'
       },
