@@ -944,10 +944,105 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-3.jpg',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-3.png',
         mobilePosition: '68% center',
         projectUrl: 'access-bank-iris.html',
         desc: 'Open client lounge visualization: grey sofa and a round white coffee table in the centre, blue and orange accent chairs, yellow armchairs by the window, a timber slat wall with a green screen, planters and a circular ceiling feature.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate3',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/024_plants_photoreal_5K.png',
+        mobilePosition: '50% center',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Interior visualization of the client lounge: large tropical plants in ribbed white planters beside upholstered seating, daylight from the window wall and the bank\'s red and orange chevron brand graphics on the partition beyond.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate4',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/025_plants_photoreal_5K.png',
+        mobilePosition: '50% center',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Client area interior visualization: leafy indoor plants in white planters beside a low seating arrangement, with the bank\'s orange and red chevron pattern on the wall partition and recessed ceiling downlights above.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate5',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/026_plants_photoreal_5K.png',
+        mobilePosition: '50% center',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Office lounge interior visualization: a bright interior with large potted plants, blue and orange accent seating, and a view through to the reception desk area beyond.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate6',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-4.jpg',
+        mobilePosition: '50% center',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Waiting area visualization seen across a bright yellow curved sofa and a timber-topped round table laid with a white tea set, with orchids in planters, a dark stone-clad column, and a glazed wall to a further seating bay.',
+
+        specs: {
+          client: 'Access Bank',
+          scope: 'Interior design and architectural visualization of Access Bank Iris in Accra: meeting rooms, executive offices, client lounges, waiting areas and the boardroom',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'access-bank-iris-plate7',
+        title: 'Access Bank Iris',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/access-bank-iris/access-bank-iris-5.png',
+        mobilePosition: '50% center',
+        projectUrl: 'access-bank-iris.html',
+        desc: 'Boardroom visualization: a long pale conference table with black mesh chairs under a cove-lit ceiling recess, projector above, and a dark timber feature wall carrying the backlit blue Access wordmark with orange chevron arrows running off its edge.',
 
         specs: {
           client: 'Access Bank',
