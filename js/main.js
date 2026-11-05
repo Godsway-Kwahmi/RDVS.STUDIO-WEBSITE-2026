@@ -1061,6 +1061,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-acm/enda-acm-1-desktop.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'enda-acm.html',
         desc: 'The servery: two curved-glass display cabinets set into a timber counter in front of an asymmetric grid of backlit bottle shelves, with dark walls papered in fine white line drawings of glassware and a glazed wall to the right',
