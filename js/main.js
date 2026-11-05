@@ -5948,6 +5948,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/afg/afg-100.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'afg.html',
         desc: 'Visualisation of the staff rest room: two low day beds in a deep blue room, the faceted wall shape lit from above.',
