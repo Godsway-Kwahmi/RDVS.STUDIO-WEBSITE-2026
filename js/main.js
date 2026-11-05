@@ -3748,6 +3748,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-10.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'ela-b.html',
         desc: 'Opposite kitchen view render: the veneer wall and dark door at the right, a run of white and oak cabinets under two small windows, open shelving with jars, and three recessed ceiling discs overhead.',
@@ -8884,7 +8885,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             `;
             anchorContainSlide(mediaContainer);
             const containImg = isContain && mediaContainer.querySelector('img');
-            if (containImg && !containImg.complete) {
+            // The pass above can only work once the pixels are decoded, and a still that is not slide 1 is
+            // drawn with its URL parked in `data-src` -- an img with no src reports `complete` as true with
+            // naturalWidth 0, so keying the retry on `complete` alone means a plate that `lightStill()` lits
+            // minutes later never re-anchors and lands dead-centred instead of on the caption column.
+            // `naturalWidth` is the honest "decoded yet?" test.
+            if (containImg && !(containImg.complete && containImg.naturalWidth)) {
               containImg.addEventListener('load', () => anchorContainSlide(mediaContainer), { once: true });
             }
           }
