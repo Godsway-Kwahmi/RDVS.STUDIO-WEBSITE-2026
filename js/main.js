@@ -1268,9 +1268,85 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design & Design + Build',
         discipline: 'interiors',
         imageUrl: 'assets/images/5aap/EnCDoTBXEAAqKsO.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: '5aap.html',
         desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
+        }
+      },
+      {
+        id: '5aap-progress-plate3',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-5.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '5aap.html',
+        desc: 'The breakout corner: a long black-topped worktable on crate shelving, two navy lounge chairs, and a low planter box laid with books.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
+        }
+      },
+      {
+        id: '5aap-progress-plate4',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-3.jpg',
+        mobilePosition: 'center',
+        projectUrl: '5aap.html',
+        desc: 'The Patrick Steele Room seen through its full-height glass partition: dark table, blue chairs and a computer at the far end.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
+        }
+      },
+      {
+        id: '5aap-progress-plate5',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-4.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '5aap.html',
+        desc: 'The Patrick Steele Room from inside, lit by a temporary worklight before handover.',
+        specs: {
+          client: 'IDP Foundation',
+          scope: 'Interior Design, Graphic Design & Design + Build',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'Design + Build']
+        }
+      },
+      {
+        id: '5aap-progress-plate6',
+        title: '5AAP',
+        category: 'Interior Design, Graphic Design & Design + Build — 2020',
+        service: 'Interior Design, Graphic Design & Design + Build',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/5aap/5aap-19.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '5aap.html',
+        desc: 'The corner from the street under overhanging branches, the ladder still leaning on the finished elevation.',
         specs: {
           client: 'IDP Foundation',
           scope: 'Interior Design, Graphic Design & Design + Build',
