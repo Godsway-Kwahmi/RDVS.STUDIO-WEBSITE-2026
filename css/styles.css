@@ -1287,6 +1287,10 @@ button {
     order: 3;
     /* A full basis is what puts it on its own line once the row wraps. */
     flex-basis: 100%;
+    /* The hairline rides with the text line it crosses -- the owner's drawing of 2026-11-05 lifts
+       that line 4.5px ("X = X so that the text sits in the middle through the height"), and the bars
+       pass through the middle of the social row, so they take the same lift. */
+    transform: translateY(-4.5px);
   }
 
   /* "MOVE UP INLINE WITH →" -- the owner's fifteenth markup (2026-10-27) boxes the volume pill and
@@ -1367,14 +1371,17 @@ button {
   }
 
   .project-links {
-    /* "MOVE DOWN SLIGHTLY SO IT IS MIDWAY THROUGH BACKGROUND" -- the same fifteenth markup boxes
-       the band's bottom strip in blue.  The strip is the three floor-anchored lines -- links,
-       socials, credit -- and the drawing asks for 8.4px of sink below the floor, midway into the
-       hero background behind the band.  Nothing clips it: neither .hero-footer nor its container
-       carries overflow.  The 16px category→links gap the 00:17 markup established becomes 24.4px,
-       and the counter→bars gap becomes ~30.9px -- both consequences of the sink, re-pinned in
-       scratch/_hero_band_probe.cjs. */
-    bottom: calc(-8.4px - var(--hero-caption-lift));
+    /* The band's bottom line -- links, socials, credit -- sinks below the floor, but only far enough
+       to sit MIDWAY through the height left under the category line.  The fifteenth markup of
+       2026-10-27 ("MOVE DOWN SLIGHTLY SO IT IS MIDWAY THROUGH BACKGROUND") sank it 8.4px; the owner's
+       drawing of 2026-11-05 boxes the social row against two equal arrows -- "X = X / SO THAT THE
+       TEXT SITS IN THE MIDDLE THROUGH THE HEIGHT / MOVE SLIGHTLY UP".  Measured at 2062x950 the 8.4px
+       sink left 24.6px between the category's bottom edge and this line's top edge against 15.6px
+       below it to the hero's own bottom edge; a 3.9px sink meets both at 20.1px.  Neither gap depends
+       on the window height -- the category line's bottom is always the hero's bottom minus 57px and
+       the floor is always 24px above it -- so the sink stays a constant.  Nothing clips it: neither
+       .hero-footer nor its container carries overflow.  Re-pinned in scratch/_hero_band_probe.cjs. */
+    bottom: calc(-3.9px - var(--hero-caption-lift));
   }
 
   /* The title's 6px bottom margin is dead space now that the links line is placed by the band, and
@@ -1391,8 +1398,8 @@ button {
      counter on the category line. */
   .hero-social-links {
     position: absolute;
-    /* The blue box's 8.4px sink, same as .project-links above. */
-    bottom: -8.4px;
+    /* The bottom line's 3.9px sink, same as .project-links above. */
+    bottom: -3.9px;
     left: calc(100% - var(--hero-social-inset)
                - max(0px, (100% - var(--hero-social-cap)) / 2));
   }
@@ -1400,8 +1407,8 @@ button {
   .hero-credit {
     position: absolute;
     right: 0;
-    /* The blue box's 8.4px sink, same as .project-links above. */
-    bottom: -8.4px;
+    /* The bottom line's 3.9px sink, same as .project-links above. */
+    bottom: -3.9px;
   }
 }
 
