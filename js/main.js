@@ -1600,7 +1600,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-6.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '72% center',
         projectUrl: 'swipe.html'
       },
       {
@@ -2608,13 +2608,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/swipe/swipe-2.jpg',
         mobilePosition: 'center',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   seven plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
           team: 'RDVS Team',
           year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM   Architectural Visualization\']'
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
         }
       },
       {
@@ -2624,15 +2624,123 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-7.jpg',
-        mobilePosition: '85% center',
+        mobilePosition: 'center',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra   seven plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
           team: 'RDVS Team',
           year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM   Architectural Visualization\']'
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate3',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-6.jpg',
+        mobilePosition: '72% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate4',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-8.jpg',
+        mobilePosition: '15% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate5',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-9.jpg',
+        mobilePosition: '72% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate6',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-11.jpg',
+        mobilePosition: '15% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate7',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-12.jpg',
+        mobilePosition: '67% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'swipe-plate8',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/swipe-16.jpg',
+        mobilePosition: '85% center',
+        projectUrl: 'swipe.html',
+        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
         }
       },
       {
