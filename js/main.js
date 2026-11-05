@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'la-beach-towers.html': ['design', 'vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
-    'marble-bath.html': ['vfx-cgi'],
     'margin.html': ['design', 'vfx-cgi'],
     'mig.html': ['design'],
     'moty.html': ['design', 'vfx-cgi'],
@@ -6828,24 +6827,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Tekton Consult (design); R.D+V.S (interior design and visualization)',
           year: '2010',
           disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'marble-bath',
-        title: 'Marble & Bath',
-        category: '3D Visualization — 2015',
-        service: '3D Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/marble-bath/marble-bath-1-desktop.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'marble-bath.html',
-        desc: 'Four interior visualizations of a master bathroom, made in 2015 for Samuel Adabi under Mobius Architecture: a marble-clad approach corridor, a floating walnut double vanity, a built-in tub and the dressing end.',
-        specs: {
-          client: 'Samuel Adabi / Mobius Architecture',
-          scope: '3D visualization of a master bathroom interior: marble-clad approach corridor, floating walnut double vanity, built-in tub under a window and a dressing area',
-          team: 'R.D+V.S (Revival Design + VFX Studios)',
-          year: '2015',
-          disciplines: ['Architectural Visualization']
         }
       }
 
