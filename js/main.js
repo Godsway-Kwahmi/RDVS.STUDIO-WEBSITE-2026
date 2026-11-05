@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     '1957.html': ['design', 'vfx-cgi'],
     '1981.html': ['vfx-cgi'],
     '2gs.html': ['design'],
+    '3aap.html': ['design', 'turnkey-build', 'vfx-cgi'],
     '41-barham.html': ['design', 'vfx-cgi'],
     '5aap.html': ['design', 'turnkey-build'],
     'a-a.html': ['design', 'vfx-cgi'],
@@ -1298,6 +1299,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
+        fit: 'contain',
         mobilePosition: '85% center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
@@ -1316,6 +1318,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/FRJmev8XIAAsnF2.jpg',
+        fit: 'contain',
         mobilePosition: '74% center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
@@ -1533,6 +1536,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/kuma-residence-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
@@ -2804,6 +2808,312 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-12.jpg',
         mobilePosition: '85% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image3',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-3.jpg',
+        mobilePosition: '32% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image4',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image5',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image6',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-6.jpg',
+        mobilePosition: '58% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image7',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-7.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image8',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-8.jpg',
+        mobilePosition: '62% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image9',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-9.jpg',
+        mobilePosition: '62% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image10',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-10.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image11',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-11.jpg',
+        mobilePosition: '40% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image13',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-13.jpg',
+        mobilePosition: '55% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image14',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-14.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image15',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-15.jpg',
+        mobilePosition: '45% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image16',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-16.jpg',
+        mobilePosition: '52% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image17',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-17.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image18',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-18.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image19',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-19.jpg',
+        mobilePosition: '55% center',
+        projectUrl: 'naadei-villas.html',
+        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & Architectural Visualization',
+          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
+          year: '2018',
+          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'naadei-villas-image20',
+        title: 'Naadei Villas',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/naadei-villas/naadei-villas-20.jpg',
+        mobilePosition: 'center',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -4830,6 +5140,63 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
+        }
+      },
+      {
+        id: '3aap',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-1.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: '3aap-plate1',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-2.jpg',
+        fit: 'contain',
+        mobilePosition: '15% center',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: '3aap-plate2',
+        title: '3AAP',
+        category: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization — 2019',
+        service: 'Interior Design, Design + Build, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/3aap/3aap-3.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '3aap.html',
+        desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
+        specs: {
+          client: 'Impact Hub Accra',
+          scope: 'Interior Design, Fit-out, Graphic Design & Architectural Visualization',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Interior Design', 'Design + Build', 'Graphic Design', 'Architectural Visualization']
         }
       },
       {
@@ -8243,6 +8610,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const mediaContainer = slides[idx].querySelector('.slide-media');
         if (mediaContainer) {
           if (proj.videoUrl) {
+            mediaContainer.classList.remove('slide-media-contain');
             if ((proj.is360 || proj.videoUrl.includes('360')) && window.VR360) {
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
@@ -8307,6 +8675,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           } else {
             const deskImg = proj.imageUrl;
             const mobilePos = proj.mobilePosition || 'center';
+            // Owner, 2026-11-05: the Kuma Residence and 3AAP frames are shown whole, at 100% of
+            // their own resolution, with the leftover window painted in the page's theme ground.
+            // `scale-down` is the one value that never upscales: contain would blow a 978 px study
+            // up to the viewport, and cover would crop it.
+            const isContain = proj.fit === 'contain';
+            mediaContainer.classList.toggle('slide-media-contain', isContain);
             mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
             // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
             // for an anchor must have the previous occupant's cleared rather than left to inherit.
@@ -8314,7 +8688,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             else mediaContainer.style.removeProperty('--slide-desktop-pos');
             mediaContainer.innerHTML = `
               <picture class="slide-picture"${idx === 0 ? '' : ' data-defer'}>
-                <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
+                <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img${isContain ? ' slide-img-contain' : ''}" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
               </picture>
             `;
           }

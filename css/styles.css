@@ -528,6 +528,23 @@ button {
   }
 }
 
+/* A slide may ask to be shown whole rather than cropped to the window (owner, 2026-11-05: Kuma
+   Residence and 3AAP — "show the image at 100% of its resolution and then fill the space around it
+   with black or white per the theme color"). `scale-down` is the one object-fit that never upscales:
+   a 978 px study is painted at 978 px, and contain would blow it up to the viewport. The empty window
+   takes the page's own ground, so the bars are black in the dark theme and white in the light one. */
+.slide-media-contain {
+  background: var(--background);
+}
+
+/* The cover law above is written as `.slide-picture img` (0,1,1), so a bare `.slide-img-contain`
+   (0,1,0) lost the cascade and every contain slide still computed `cover`. Match the picture
+   context to win on specificity, and keep the bare class for any img rendered outside a <picture>. */
+.slide-picture img.slide-img-contain,
+.slide-img-contain {
+  object-fit: scale-down;
+}
+
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
    screen like all the other slides"). The intro film on the news slide used to letterbox itself with a class
    of its own, which drew black bars whenever the window's aspect differed from the rendition it was served.
