@@ -8752,7 +8752,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img${isContain ? ' slide-img-contain' : ''}" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>
               </picture>
             `;
-            anchorContainSlide(mediaContainer);            const containImg = isContain && mediaContainer.querySelector('img');            if (containImg && !containImg.complete) {              containImg.addEventListener('load', () => anchorContainSlide(mediaContainer), { once: true });            }
+            anchorContainSlide(mediaContainer);
+            const containImg = isContain && mediaContainer.querySelector('img');
+            if (containImg && !containImg.complete) {
+              containImg.addEventListener('load', () => anchorContainSlide(mediaContainer), { once: true });
+            }
           }
         }
       }
