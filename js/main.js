@@ -2114,6 +2114,456 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'hamlet-estate-plate3',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/E1beK_vXEAQG_oy.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate4',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/E9tM3Z2XMAMNd0k.jpg',
+        mobilePosition: '77% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate5',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-01.jpg',
+        mobilePosition: '85% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate6',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-02.jpg',
+        mobilePosition: '70% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate7',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-03.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate8',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-04.jpg',
+        mobilePosition: '15% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate9',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-05.jpg',
+        mobilePosition: '46% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate10',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-06.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate11',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-07.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate12',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-08.jpg',
+        mobilePosition: '68% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate13',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-09.jpg',
+        mobilePosition: '81% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate14',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-10.jpg',
+        mobilePosition: '73% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate15',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-11.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate16',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-12.jpg',
+        mobilePosition: '85% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate17',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-13.jpg',
+        mobilePosition: '41% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate18',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-14.jpg',
+        mobilePosition: '40% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate19',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-15.jpg',
+        mobilePosition: '15% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate20',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-16.jpg',
+        mobilePosition: '81% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate21',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-17.jpg',
+        mobilePosition: '15% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate22',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-18.jpg',
+        mobilePosition: '20% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate23',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-19.jpg',
+        mobilePosition: '45% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate24',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-20.jpg',
+        mobilePosition: '85% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate25',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-21.jpg',
+        mobilePosition: '34% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate26',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-22.jpg',
+        mobilePosition: '84% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate27',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/hamlet-23.jpg',
+        mobilePosition: '29% center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
         id: 'asante-interior-design-presentation-plate1',
         title: 'TAI',
         category: 'Interior Design — 2020',
