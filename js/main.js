@@ -2138,7 +2138,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/E9tM3Z2XMAMNd0k.jpg',
-        mobilePosition: '77% center',
+        mobilePosition: '82% center',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
