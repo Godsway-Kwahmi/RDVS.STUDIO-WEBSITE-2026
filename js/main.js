@@ -5957,6 +5957,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/fule/fule-6.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'fule.html',
         desc: 'Eight architectural visualization plates from 2013 for a private duplex in Accra, made by RDVS. Design: street and courtyard exteriors, then bedroom, kitchen and living room interiors in warm oak and pale neutrals.',
@@ -6901,6 +6902,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Workplace Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/margin/F-ZKh-aWQAAV90S.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
       },
@@ -8676,15 +8678,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             const deskImg = proj.imageUrl;
             const mobilePos = proj.mobilePosition || 'center';
             // Owner, 2026-11-05: the Kuma Residence and 3AAP frames are shown whole, at 100% of
-            // their own resolution, with the leftover window painted in the page's theme ground.
-            // `scale-down` is the one value that never upscales: contain would blow a 978 px study
-            // up to the viewport, and cover would crop it.
+            // their own resolution, with the leftover window painted in the page's theme ground;
+            // Margin's last plate and Fule's square plate join them. `scale-down` is the one value
+            // that never upscales: contain would blow a 978 px study up to the viewport, and cover
+            // would crop it.
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
-            mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
+            // A contained plate is centred by definition: its anchors were chosen for a cover crop, and with
+            // the whole frame in view an anchor would only push it off centre.
+            mediaContainer.style.setProperty('--slide-mobile-pos', isContain ? 'center' : mobilePos);
             // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
             // for an anchor must have the previous occupant's cleared rather than left to inherit.
-            if (proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
+            if (!isContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
             else mediaContainer.style.removeProperty('--slide-desktop-pos');
             mediaContainer.innerHTML = `
               <picture class="slide-picture"${idx === 0 ? '' : ' data-defer'}>

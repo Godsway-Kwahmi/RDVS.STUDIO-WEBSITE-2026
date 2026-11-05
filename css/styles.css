@@ -543,6 +543,9 @@ button {
 .slide-picture img.slide-img-contain,
 .slide-img-contain {
   object-fit: scale-down;
+  /* The phone rule's --slide-mobile-pos anchor belongs to a cover crop; with no crop to anchor, a
+     contained plate is centred on both axes. */
+  object-position: center;
 }
 
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
