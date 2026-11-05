@@ -1302,6 +1302,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/kuma-residence/FRJmffPWYAECYZw.jpg',
         fit: 'contain',
+        containY: '40%',
         mobilePosition: '85% center',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
@@ -8785,12 +8786,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
             // A contained plate is centred by definition: its anchors were chosen for a cover crop, and with
-            // the whole frame in view an anchor would only push it off centre.
+            // the whole frame in view an anchor would only push it off centre. It may still carry a vertical
+            // nudge for the desktop window (`containY`), which the stylesheet applies above 768 px only.
             mediaContainer.style.setProperty('--slide-mobile-pos', isContain ? 'center' : mobilePos);
             // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
             // for an anchor must have the previous occupant's cleared rather than left to inherit.
             if (!isContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
             else mediaContainer.style.removeProperty('--slide-desktop-pos');
+            if (isContain && proj.containY) mediaContainer.style.setProperty('--slide-contain-y', proj.containY);
+            else mediaContainer.style.removeProperty('--slide-contain-y');
             mediaContainer.innerHTML = `
               <picture class="slide-picture"${idx === 0 ? '' : ' data-defer'}>
                 <img ${idx === 0 ? 'src' : 'data-src'}="${deskImg}" alt="${proj.title}" class="slide-img${isContain ? ' slide-img-contain' : ''}" ${idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>

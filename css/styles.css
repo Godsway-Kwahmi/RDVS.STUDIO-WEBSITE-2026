@@ -552,6 +552,16 @@ button {
   object-position: calc(50% + var(--slide-contain-shift, 0px)) center;
 }
 
+/* Owner, 2026-11-05, on the Kuma Residence study ("shift upwards slightly"): a contained plate
+   can still be nudged off the vertical centre on desktop, where the caption is overlaid. The
+   offset is a pool-entry value written as --slide-contain-y; phones keep the centred base rule. */
+@media (min-width: 769px) {
+  .slide-picture img.slide-img-contain,
+  .slide-img-contain {
+    object-position: calc(50% + var(--slide-contain-shift, 0px)) var(--slide-contain-y, 50%);
+  }
+}
+
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
    screen like all the other slides"). The intro film on the news slide used to letterbox itself with a class
    of its own, which drew black bars whenever the window's aspect differed from the rendition it was served.
