@@ -3855,6 +3855,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hubtel/hubtel-nairobi-2.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         desktopPosition: 'center 70.9%',
         projectUrl: 'hubtel.html',
