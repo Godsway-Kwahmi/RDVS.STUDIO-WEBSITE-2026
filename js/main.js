@@ -7531,24 +7531,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: '2gs-plate2',
-        title: '2GS',
-        category: 'Graphic Design — 2015',
-        service: 'Graphic Design',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/2gs/2gs-10.jpg',
-        mobilePosition: 'center',
-        projectUrl: '2gs.html',
-        desc: 'A 2015 identity for 2GS Construction + Logistics: a monogram built from the idea of the collective, carried from pencil construction studies through stationery, business cards, letterheads and concrete signage.',
-        specs: {
-          client: '2GS Construction + Logistics',
-          scope: 'Identity and branding: monogram and lockups, labyrinth motif, colour palette and typography, business cards, letterheads and stationery, signage',
-          team: 'Randy Biney (concept + design); Jude Nyoagbe (concept)',
-          year: '2015',
-          disciplines: '[\'Graphic Design\']'
-        }
-      },
-      {
         id: '1981-film-project-plate1',
         title: '1981',
         category: '3D Visualization — 2015',
