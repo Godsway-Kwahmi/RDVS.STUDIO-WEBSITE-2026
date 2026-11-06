@@ -610,6 +610,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/macord/macord-6.jpg',
         fit: 'contain',
         mobilePosition: '55% center',
+        mobileFit: 'contain',
         desktopPosition: 'center 87.3%',
         projectUrl: 'macord.html',
         desc: 'The school boundary wall at dusk: tall timber fins uplit behind large white lowercase lettering, planting trailing over the pergola edge and red traffic trails streaking the foreground.',
@@ -8779,7 +8780,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobileFit: 'contain',
+        mobilePosition: '42% center',
         projectUrl: 'hola.html'
       },
       {
@@ -9461,6 +9462,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfc-tvc.html',
         desc: 'High-contrast stylized motion keyframes establishing lighting mood, particle density, and corporate typographic hierarchy.',
         specs: {
@@ -9498,6 +9500,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/hfc-tvc/hfc-tvc-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfc-tvc.html',
         desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
         specs: {
@@ -9516,6 +9519,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/hfc-tvc/hfc-tvc-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfc-tvc.html',
         desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
         specs: {
