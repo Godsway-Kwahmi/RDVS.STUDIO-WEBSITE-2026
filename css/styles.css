@@ -1178,22 +1178,23 @@ button {
 }
 
 /* A touch screen has no hover to wait for, so an arrow that only appears under a pointer never appears
-   at all (owner, 2026-10-23: "let's have the arrows for the slideshow on mobile screen too"). They rest at
-   55% -- the slide is a dark plate at that moment and the drawing asked for bare line, not a badge -- and
-   come up to 100% under the finger. The 16% side bands are unchanged, so the tap target is the same one a
-   pointer gets: at the narrowest layout the site supports (320 px) a band is 51 px wide by the full height
-   of the slide, which clears the 44 px floor with 7 px to spare. `:active` carries the same specificity as
-   the `:hover`/`:focus-visible` pair and comes after it in the sheet, so it wins under a finger and changes
-   nothing on a mouse. What a visible band costs is a live tap target over the left and right 16% of the
-   hero on a phone: the footer is z-index 10 against these bands' 9, so the caption, the bars, the volume
-   pill and the social links all still win their hit tests, and a swipe that starts inside a band is caught
-   by the gesture guard in js/main.js rather than stepping twice. */
+   at all (owner, 2026-10-23: "let's have the arrows for the slideshow on mobile screen too"). They rested
+   at 55% until the owner changed the rule on 2026-11-06: "Even on touch screen on mobile, hide arrow icons
+   for previous and next slides until user touches the screen. On screen touch, show for 3 seconds and then
+   hide again until another touch." So the rest state is now hidden, and js/main.js adds `is-revealed` to
+   .hero-step-nav on every touchstart and takes it off three seconds later. The 16% side bands and their
+   tap target are unchanged, so a first tap inside a band still reveals and still steps. `:active` keeps the
+   glyph at full strength under the finger that is pressing it. */
 @media (hover: none) and (pointer: coarse) {
   .step-btn {
+    opacity: 0;
+  }
+
+  .hero-step-nav.is-revealed .step-btn {
     opacity: .55;
   }
 
-  .step-btn:active {
+  .hero-step-nav.is-revealed .step-btn:active {
     opacity: 1;
   }
 }
@@ -1204,6 +1205,16 @@ button {
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
+}
+
+/* Owner markup 2026-11-06, on a phone slide of The Fitzgerald: the social row boxed with an arrow down
+   onto the studio credit -- "MOVE SOCIAL MEDIA LINKS TO THE LINE BELOW IN LINE WITH WEBSITE BY RDVS".
+   The wrapper is inert everywhere the band lays out its own columns: display:contents leaves the nav and
+   the credit as direct participants in .hero-footer-container, so the >=1200px absolute pins and the
+   641-1199 stack read exactly as they did before the wrapper existed. Only the phone tier below turns it
+   into the row. */
+.hero-credit-row {
+  display: contents;
 }
 
 .hero-social-links {
@@ -3281,8 +3292,13 @@ a.subservice-item:hover {
        hairline bars, the socials and the credit -- is 87px tall at 360 and 430 and 89px at 640, and it
        stands on 16px of floor padding, so the bar is 89 + 16 + 8 of air = 113px.  Before this it was
        68px, which left the counter row and the bars -- 35px of ink at 390x844 -- sitting on the raw slide
-       with the bar's edge drawn straight through the band, which is the line the drawing marks. */
-    --hero-strip-height: 113px;
+       with the bar's edge drawn straight through the band, which is the line the drawing marks.
+       The owner's 2026-11-06 markup then put the socials and the credit on ONE line (see
+       .hero-credit-row below), which removes a 16.8px type line and the 16px gap that separated it, so
+       the same derivation gives 113 - 32.8 = 80.  Measured after the merge, the ink runs 799.2..859 at
+       507x875 and the 80px bar tops at 795 -- the same 4px of air the 113px bar left above the counter
+       row there. */
+    --hero-strip-height: 80px;
   }
 
   .hero-meta-controls {
@@ -3342,6 +3358,22 @@ a.subservice-item:hover {
      the credit's right alignment is the only thing holding it off the edge. */
   .hero-credit {
     text-align: left;
+  }
+
+  /* Owner markup 2026-11-06 (The Fitzgerald, phone): the socials leave their own row and join the
+     credit's line, so both start at the container's left edge on one baseline -- "MOVE SOCIAL MEDIA
+     LINKS TO THE LINE BELOW IN LINE WITH WEBSITE BY RDVS". Baseline alignment, not centre, because the
+     two runs share a type size and the drawing lines them up on the written line. The row wraps rather
+     than overflows: at 390 the four links plus the credit come to ~357px against 358 of usable width,
+     and anything narrower (320, 280) drops the credit to a second line at the same left edge. */
+  .hero-credit-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2px;
+    width: 100%;
   }
 
   .pagination-bars {
@@ -3443,6 +3475,17 @@ a.subservice-item:hover {
 
   .project-gallery-grid {
     gap: 20px;
+  }
+}
+
+/* Below 376px of viewport the phone row of socials + credit no longer fits on one line -- measured at the
+   11px link size, 226.4 of links + 16 of gap + 102.2 of credit = 344.6 against the viewport minus its two
+   16px margins -- so the credit wraps under the socials and the block grows by that second line. The strip
+   pays for the line rather than leave the counter row outside the band: 97 = 80 + 17. Measured at
+   320x653, the ink tops at 559.8 against a band top of 556, the same ~4px of air as the wider phones. */
+@media (max-width: 380px) {
+  .hero-footer-container {
+    --hero-strip-height: 97px;
   }
 }
 

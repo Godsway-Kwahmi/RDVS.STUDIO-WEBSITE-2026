@@ -7771,7 +7771,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobilePosition: 'center',
+        mobilePosition: '0% center',
         projectUrl: 'hola.html'
       },
       {
@@ -10587,6 +10587,22 @@ document.addEventListener('DOMContentLoaded', async () => {
       nextBtn.addEventListener('click', () => {
         updateSlide(currentIndex + 1);
       });
+    }
+
+    // Owner, 2026-11-06: "Even on touch screen on mobile, hide arrow icons for previous and next slides
+    // until user touches the screen. On screen touch, show for 3 seconds and then hide again until another
+    // touch." The stylesheet owns the look -- on a coarse pointer the glyphs are 0 opacity unless
+    // .hero-step-nav carries `is-revealed` -- and this is the clock. Each touch restarts the three seconds
+    // rather than queueing another; the listener sits on the document so a touch anywhere counts, and
+    // passive because it never cancels the page's own gestures.
+    const stepNav = document.querySelector('.hero-step-nav');
+    if (stepNav) {
+      let stepNavRevealTimer = 0;
+      document.addEventListener('touchstart', () => {
+        stepNav.classList.add('is-revealed');
+        clearTimeout(stepNavRevealTimer);
+        stepNavRevealTimer = setTimeout(() => stepNav.classList.remove('is-revealed'), 3000);
+      }, { passive: true });
     }
 
     paginationBars.forEach((bar) => {
