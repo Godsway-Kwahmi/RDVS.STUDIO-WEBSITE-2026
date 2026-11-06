@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/d-e-t-a-i-l-s/details-film.mp4',
         imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -191,6 +192,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/funko-ridge/funko-kitchen.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
 
@@ -211,6 +213,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/41-barham/41-barham-film.mp4',
         imageUrl: 'assets/images/barham/barham-residence.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '41-barham.html',
         desc: 'A twenty-second title sequence held with the project',
 
@@ -231,6 +234,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/dyv/dyv-film.mp4',
         imageUrl: 'assets/images/dyv/dyv-atrium.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'dyv.html',
         desc: 'The atrium fly-through: a fifteen-second monochrome push-in through the central atrium: a dense cluster of glowing cylindrical pendants under the domed opening, curved balcony bands rising around it, and lounge groups set among indoor trees. It opens on the same atrium view the gallery holds as its fourth plate, and it is the studio’s own capture posted to Instagram, so it is 1068x720 rather than a master render',
         specs: {
@@ -250,6 +254,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/funko-ridge/funko-terrace.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -269,6 +274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/funko-ridge/funko-bedroom.mp4',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -832,6 +838,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/watsons-place/watsons-place-film.mp4',
         imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'watsons-place.html',
         desc: 'The delivered animation of the street views and the three rooms',
         specs: {
@@ -871,6 +878,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/tower-cascades/tower-cascades-film.mp4',
         imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'The delivered animation, end to end',
 
@@ -891,6 +899,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/moty/moty-intro.mp4',
         imageUrl: 'assets/images/moty/moty-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
 
@@ -6240,6 +6249,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/ttd/ttd-film.mp4',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html',
         desc: 'A ninety-second render film of the TTD living room from one locked-off camera: the room runs from dark through lit evening to full daylight, holding on the red sectional, the terracotta stair and the blue dining wall at the far end',
       },
@@ -6264,6 +6274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/ahero/ahero-film.mp4',
         imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
         mobilePosition: '84% center',
+        mobileFit: 'contain',
         projectUrl: 'ahero.html',
       },
       {
@@ -6275,6 +6286,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/ackon-desk/ackon-desk-film.mp4',
         imageUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html',
         desc: 'A walkthrough of the rendered desk',
       },
@@ -6327,6 +6339,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/1981/1981-film.mp4',
         imageUrl: 'assets/images/1981/1981-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -8039,6 +8052,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa-moonlit.mp4',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Full rendered broadcast ident animations',
 
@@ -8059,6 +8073,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/hfc-tvc/hfc-commercial.mp4',
         imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfc-tvc.html',
         desc: 'The 2-second clip held with the project',
 
@@ -8099,6 +8114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/ceeander/ceeander-motion.mp4',
         imageUrl: 'assets/images/ceeander/ceeander-cover.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\u2019s logo in its actual colours.',
         specs: {
@@ -8119,6 +8135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/trumpet-africa-ident/trumpet-africa.mp4',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-01.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -8138,6 +8155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
         imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
         specs: {
@@ -8358,6 +8376,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/hg-desk/hg-desk-film.mp4',
         imageUrl: 'assets/images/mig/mig-hg-desk-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -8374,6 +8393,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/line-e-float-i/line-e-float-i-film.mp4',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -8390,6 +8410,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/mound/mound-film.mp4',
         imageUrl: 'assets/images/mig/mig-mound-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
