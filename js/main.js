@@ -429,6 +429,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-residence.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: '41-barham.html',
         desc: 'The ground-floor living room at night: a grand piano with its lid up and an orange leather lounge chair with ottoman seen through full-height glazing, a tall cream-shaded floor lamp, a grid of framed pet photographs on the wall and a crystal drum chandelier above.',
