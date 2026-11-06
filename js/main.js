@@ -496,6 +496,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interior-design',
         imageUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -2122,6 +2123,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/5aap/5aap-1.jpg',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: '5aap.html',
         desc: 'The IDP Foundation office: interior design, wayfinding and signage design, and construction, delivered by RDVS across 2019 and 2020.',
         specs: {
@@ -2178,6 +2180,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/5aap/5aap-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '5aap.html',
         desc: 'The Patrick Steele Room seen through its full-height glass partition: dark table, blue chairs and a computer at the far end.',
         specs: {
@@ -2351,6 +2354,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/csm/csm-1-desktop.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -4589,6 +4593,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/imperial-square/imperial-square-2.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -5141,6 +5146,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/csm/csm-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -5159,6 +5165,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/csm/csm-2.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'csm.html',
         desc: 'Interior design and 3D visualization for Centre Stage Management — a compact office in Tema planned around a reception, two workstations and a meeting space.',
         specs: {
@@ -7842,6 +7849,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'graphic',
         imageUrl: 'assets/images/stark-glaube/stark-glaube-2-desktop.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'stark-glaube.html',
         desc: 'Identity for a Ghanaian company — the initials SG and the name set as a wordmark, taken through four routes: a monogram knocked out of a graded band of triangles, glossy green-and-blue ribbon loops, a bird in flight and a three-bar banner.',
         specs: {
@@ -7950,6 +7958,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/dela-anyaa/dela-anyaa-8-desktop.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'dela-anyaa.html'
       },
       {
@@ -8495,6 +8504,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/dela-anyaa/dela-anyaa-10.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'dela-anyaa.html',
         desc: 'A personal identity for Dela Anyaa, built from two parts: a calligraphic mark rendered in polished chrome, and a hand-written signature used in place of a wordmark.',
         specs: {
