@@ -9106,6 +9106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdOGAzlXQAA03pC.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9116,6 +9117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdTbJDjWAAAyxys.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9126,6 +9128,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9136,6 +9139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9146,6 +9150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GuZ9BhbW8AAjMjv.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9156,6 +9161,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GuZ9BkOW8AAFase.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -9166,6 +9172,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GuZ9Bv1WwAA0pxM.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'avalon.html'
