@@ -7435,6 +7435,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
         fit: 'contain',
+        containY: '65%',
+        desktopPosition: 'center 65%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'jhk-investment.html',
