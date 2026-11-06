@@ -7431,6 +7431,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-1.png',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'jhk-investment.html',
         desc: 'JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky',
         specs: {
@@ -7467,6 +7468,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/jhk-investment/jhk-investment-3.png',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'jhk-investment.html',
         desc: 'The side of an ochre house with a timber pergola and stone-clad columns casting striped shadows across a paved walkway and lawn, a window glowing warmly',
         specs: {
