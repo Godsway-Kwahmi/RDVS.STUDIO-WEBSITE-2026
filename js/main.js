@@ -5862,6 +5862,158 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'hot-gossip-plate5',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-5.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The bar at Hot Gossip: warm yellow strip light under a slatted luminous ceiling, a brass column at the corner, a mirrored back bar with pink disc panels and a row of teal stools.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate2',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-2.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The Hot Gossip washroom: three white vessel basins along a glossy deep-purple counter under a mirror wall, dark mosaic wrapping the side wall and a cove of light across the ceiling.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate3',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-3.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The same washroom from the other end: a long magenta vanity run with basins and mirrors, black mosaic behind it and recessed slots lighting the ceiling.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate4',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-4.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Booth seating at Hot Gossip lit from a wall of glowing pink discs, with a band of blue cove light tracing the ceiling recess above an L-shaped sofa and a low table.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate7',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-7.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The Hot Gossip dance floor of illuminated photo tiles laid out in a grid, leading to a raised DJ booth glowing pink at the far end, with columns of disc lights framing the room.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate8',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-8.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The lit dance floor seen from the side: quilted pale-pink wall panels, a band of disc lights and the glowing floor tiles running towards a bar at the end of the room.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate9',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-9.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'Low banquettes set on a dark rug in front of a full-height wall of glowing pink discs that wraps the corner of the lounge.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'hot-gossip-plate10',
+        title: 'Hot Gossip',
+        category: 'Interior Design & 3D Visualization — 2012',
+        service: 'Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hot-gossip/hot-gossip-10.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hot-gossip.html',
+        desc: 'The bar and billiards hall from the opposite end: a radial ceiling of yellow-lit slats opening above the room, pendant clusters, and pink disc columns at either side.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
+          team: 'Caleb Sackey + R.D+V.S',
+          year: '2012',
+          disciplines: ['Interior Design', '3D Visualization']
+        }
+      },
+      {
         id: 'hfa',
         title: 'HFA',
         category: 'Interior Design & Architectural Visualization — 2018',
