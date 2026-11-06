@@ -514,6 +514,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/frontier-filling-station/frontier-filling-station-1.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'frontier-filling-station.html',
         desc: 'A 2016 multidisciplinary commission spanning architecture, industrial design, and 3D visualization for the Frontier Filling Station.',
         specs: {
@@ -644,6 +645,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/empire-tower-3.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'empire-tower.html'
       },
       {
@@ -684,6 +686,572 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'funko-ridge-plate2',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate3',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-15.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate4',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-7.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate5',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-9.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate6',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-10.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate7',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-11.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate8',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-12.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate9',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-13.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate10',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-14.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate11',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-17.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate12',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-18.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate13',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-19.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate14',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-20.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate15',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-21.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate16',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-22.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate17',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-23.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate18',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-24.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate19',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-25.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate20',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-26.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate21',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-27.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate22',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-28.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate23',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-29.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate24',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-30.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate25',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-31.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate26',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-32.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate27',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-33.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate28',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-34.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate29',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-35.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate30',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-37.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
+        id: 'funko-ridge-plate31',
+        title: 'Funko Ridge Residence',
+        category: 'Architectural Design & Spatial Design — 2019',
+        service: 'Architectural Design & Spatial Design',
+        discipline: 'architecture',
+        imageUrl: 'assets/images/funko-ridge/funko-ridge-38.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'funko-ridge.html',
+        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
+        specs: {
+          client: 'Ridge Estates / Private Client',
+          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
+          team: 'Jude Abbey, Jude Nyoagbe',
+          year: '2019',
+          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
+        }
+      },
+      {
         id: 'empire-tower-plate1',
         title: 'Empire Tower',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -691,6 +1259,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtJStmkW4AIP-3M.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -709,6 +1278,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/empire-tower-1.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -727,6 +1297,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/Eta5jqdXcAAmchw.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -745,6 +1316,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/empire-tower/EtQVZm0XcAAdwi8.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'empire-tower.html',
         desc: 'Rigorous spatial articulation balancing proportional harmony, light simulation, and bespoke detailing created for Empire Tower.',
         specs: {
@@ -1722,6 +2294,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-9.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'A fifteen-plate interior visualization set made in 2018 as marketing collateral for a real estate company in Accra, showing one contemporary apartment s living, kitchen and bedroom schemes in interior design and 3D visualization.',
         specs: {
@@ -2535,6 +3108,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-wide-hero.jpg',
         mobilePosition: '24% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2553,6 +3127,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/E1beK_vXEAQG_oy.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2590,6 +3165,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-01.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2608,6 +3184,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-02.jpg',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2626,6 +3203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-03.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2644,6 +3222,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-04.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2662,6 +3241,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-05.jpg',
         mobilePosition: '46% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2680,6 +3260,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-06.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2717,6 +3298,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-08.jpg',
         mobilePosition: '68% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2735,6 +3317,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-09.jpg',
         mobilePosition: '81% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2753,6 +3336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-10.jpg',
         mobilePosition: '73% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2771,6 +3355,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-11.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2789,6 +3374,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-12.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2807,6 +3393,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-13.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2825,6 +3412,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-14.jpg',
         mobilePosition: '40% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2900,6 +3488,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-18.jpg',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2918,6 +3507,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-19.jpg',
         mobilePosition: '45% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2974,6 +3564,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-22.jpg',
         mobilePosition: '84% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -2992,6 +3583,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-23.jpg',
         mobilePosition: '29% center',
+        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -4039,6 +4631,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-6.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Render of the dining area seen through a foreground of blurred white branches: green-topped table, tan and black side chairs, black planters with tall greenery, pale carpet and the reed panel and pendant discs behind.',
         specs: {
@@ -4057,6 +4650,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-8.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Kitchen render: handleless white wall cabinets over a black worktop and splashback, oak fronted base units, an integrated extractor and hob, a small potted plant on the counter and a pale tiled floor.',
         specs: {
@@ -4075,6 +4669,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Overhead render looking straight down at a grey shaggy carpet with two flat sculptural shapes in teal and slate grey, a round white openwork tray, and small carved wooden objects placed beside them.',
         specs: {
@@ -4093,6 +4688,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Render of the open plan living and dining area: white sofas with teal cushions in the foreground, a mint topped dining table with mixed chairs beyond, disc pendants above and a large dried-reed panel on the far wall.',
         specs: {
@@ -4111,6 +4707,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Wider angle render of the same living room: low white modular seating with teal and grey cushions, black organic coffee tables on a pale rug, blue armchair at the window and two framed artworks on the wall.',
         specs: {
@@ -4129,6 +4726,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Render from the seating edge toward the dining zone: a bright blue lounge chair, dark coffee table with bowls and wooden objects, white armchair, and the reed wall art lit by two flat pendant discs.',
         specs: {
@@ -4147,6 +4745,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Close-up render of a mint green table top holding a potted monstera, small woven baskets and a blue glass vessel, with a roller blind framing sunlit foliage outside and dried reeds hanging at the right.',
         specs: {
@@ -4165,6 +4764,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Detail render across a black kitchen counter: stainless steel pots and a gas hob in shallow focus, with a bright green clipped hedge filling the window behind and daylight raking across the worktop.',
         specs: {
@@ -4202,6 +4802,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-11.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Bedroom render: a low oak bed with white linen and a navy throw on a teal patterned rug, black pouf at the foot, slim glass side tables, dark curtains and an orange exterior wall visible through the glazing.',
         specs: {
@@ -4220,6 +4821,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-12.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Second angle of the bedroom render: the bed now against a white media wall with a wall-mounted television, pendant lamps over the side table, tall glazing to the balcony and the same geometric teal rug underfoot.',
         specs: {
@@ -4238,6 +4840,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-13.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Tight corner render of the bedroom: a potted plant on the dark floor in front of the orange balcony wall, the edge of the bed with navy bedding, and bright daylight striping across the rug.',
         specs: {
@@ -4274,6 +4877,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ela-b/ela-b-15.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ela-b.html',
         desc: 'Wide bedroom render from the foot of the room: the oak bed with navy throw centred between full-height glazing and dark drapes, a black pouf on the rug, and two pendant lights hanging low at either side.',
         specs: {
@@ -6194,6 +6798,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA in 2018: the living and dining zone of a new Accra apartment seen through its own opening, a grey sofa on a pale rug before a dark feature wall with a floating timber cabinet, and a white dining set under a dome pendant to the left.',
         specs: {
@@ -6212,6 +6817,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA bedroom: a low bed dressed in grey and taupe against a chocolate-brown accent panel carrying a wall-mounted television over a floating white console, sheer curtains at a tall window and a black ottoman at the foot.',
         specs: {
@@ -6249,6 +6855,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA master bedroom: the bed facing a tall brown feature panel with a wall-mounted television, an open walk-in wardrobe with hanging clothes to the left, a dark armchair, floor lamp and framed art beyond.',
         specs: {
@@ -6285,6 +6892,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA open-plan living and dining in bright white: a grey sofa and cushions at the left, a white dining table with molded chairs at the right, a timber cabinet wall, a floating console with greenery and a round mirror.',
         specs: {
@@ -6303,6 +6911,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA dining area at dusk: a white round table with molded chairs beneath a black dome pendant, mauve curtains glowing behind, a framed picture on the left wall and a grey sofa in the foreground.',
         specs: {
@@ -6321,6 +6930,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA dressing area: an upholstered grey armchair before an open wardrobe with hanging clothes and white cabinetry, a folded throw on the chair, a small shelf and plant at the left over warm wood floor.',
         specs: {
@@ -6339,6 +6949,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-8.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA kitchen looking toward the dining area: white cabinets and a long stainless double sink beneath a row of windows, a dark island to the right, an open shelf holding bottles and the white table through the opening.',
         specs: {
@@ -6357,6 +6968,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-9.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hfa.html',
         desc: 'HFA living room in full daylight: a grey sofa with cushions and a black round pouf on a pale rug, small timber side tables flanking it, framed art on white walls and a white dining set to the right under a dome pendant.',
         specs: {
@@ -7135,6 +7747,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/GVU3aP6W4AA7WUC.jpg',
         mobilePosition: '78% center',
+        mobileFit: 'contain',
         projectUrl: 'ahero.html'
       },
       {
@@ -7145,6 +7758,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/F9YX1k0W0AAevHc.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'ahero.html'
       },
       {
@@ -8021,6 +8635,40 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/F9WX-jyXcAApIqO.jpg',
         mobilePosition: '35% center',
+        mobileFit: 'contain',
+        projectUrl: 'ahero.html'
+      },
+      {
+        id: 'ahero-plate1',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ahero/GVU3aRQXAAAw57F.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'ahero.html'
+      },
+      {
+        id: 'ahero-plate2',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ahero/GVU3aYNWwAABrJl.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'ahero.html'
+      },
+      {
+        id: 'ahero-plate3',
+        title: 'Ahero',
+        category: 'Architectural Visualization & 3D Animation — 2022',
+        service: 'Architectural Visualization & 3D Animation',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ahero/GVU3aYSWkAA9h4b.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ahero.html'
       },
       {
@@ -8031,6 +8679,72 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/Ei4kUxWXYAIh8HL.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate1',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/FgahHx2WAAAX8cJ.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate2',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/Ei4kVs2XgAAA_L1.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate3',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/EiyxydCWkAI4H1P.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate4',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/giffard-park-7.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate5',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/giffard-park-8.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate6',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/giffard-park-9.jpg',
+        mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
       },
@@ -8332,6 +9046,78 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/Gc8QzsaXkAAQotV.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate1',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdOGAzlXQAA03pC.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate2',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdTbJDjWAAAyxys.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate3',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate4',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate5',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GuZ9BhbW8AAjMjv.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate6',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GuZ9BkOW8AAFase.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
+        id: 'avalon-plate7',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/GuZ9Bv1WwAA0pxM.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'avalon.html'
       },
       {
@@ -8612,6 +9398,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/ceeander/ceeander-7.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
         specs: {
@@ -8740,6 +9527,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/ceeander/ceeander-6.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ceeander.html',
         desc: 'A 22-second ident for Ceeander Entertainment \\u2014 masks glow in darkness, torchlight seeps into the scene, and a lightning strike opens onto the company\\u2019s logo in its actual colours.',
         specs: {
@@ -8829,6 +9617,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -8844,6 +9633,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-2.jpg',
         mobilePosition: '63% center',
+        mobileFit: 'contain',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -8875,6 +9665,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-4.jpg',
         mobilePosition: '28% center',
+        mobileFit: 'contain',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -8890,6 +9681,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-5.jpg',
         mobilePosition: '28% center',
+        mobileFit: 'contain',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -8905,6 +9697,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-1h-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-1h.html',
         desc: 'A wall run built from modules rather than one fixed elevation: open bays and closed volumes re-stack around a screen at eye level. RDVS designed 1H in 2016 for the MIG line and documented it in two schemes, a dark-stained set stacked as a tall bay and a white-and-dark set run wider across the wall.',
         specs: {
@@ -8920,6 +9713,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-hg-desk-1.jpg',
         mobilePosition: '16% center',
+        mobileFit: 'contain',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -8935,6 +9729,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-hg-desk-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
@@ -8950,6 +9745,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-hg-desk-3.jpg',
         mobilePosition: '46% center',
+        mobileFit: 'contain',
         projectUrl: 'product-hg-desk.html',
         desc: 'A work desk built around one thick top with a returned edge carrying the MIG mark, set on angled trestle supports. Designed by RDVS in 2020 for the MIG line.',
         specs: {
