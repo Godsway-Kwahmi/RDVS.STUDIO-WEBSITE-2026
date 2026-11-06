@@ -8899,11 +8899,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             // cover would crop it.
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
-            // Contain is a desktop law only (owner, 2026-11-05: "Portrait positioning should only be on
-            // desktop but on mobile screens the images can fill the whole screen"), so below 769 px the
-            // stylesheet leaves the cover rule standing and the slide crops to its entry's own anchor --
-            // the same `mobilePosition` a cover slide reads. It may still carry a vertical nudge for the
-            // desktop window (`containY`), which the stylesheet applies above 768 px only.
+            // Contain is a desktop law only, and the owner moved its floor to 1024 px on 2026-11-06:
+            // "implement the portrait positioning only on desktops from 1024pixels wide and above. For any
+            // screen less than that width ... please have the images fill the whole screen like before".
+            // Below 1024 px the stylesheet leaves the cover rule standing, so the slide fills the window;
+            // under 769 px it also reads this entry's `mobilePosition`, which is the same anchor a cover
+            // slide uses. `containY` is written too, but the stylesheet only applies it above 1023 px.
             mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
             // The deck re-draws into the same slide nodes on every rotation, so a slide that does not ask
             // for an anchor must have the previous occupant's cleared rather than left to inherit.

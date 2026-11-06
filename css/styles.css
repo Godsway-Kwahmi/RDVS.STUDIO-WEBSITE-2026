@@ -533,10 +533,12 @@ button {
    with black or white per the theme color"). `scale-down` is the one object-fit that never upscales:
    a 978 px study is painted at 978 px, and contain would blow it up to the viewport. The empty window
    takes the page's own ground, so the bars are black in the dark theme and white in the light one.
-   The whole treatment is desktop-only (owner, 2026-11-05: "Portrait positioning should only be on
-   desktop but on mobile screens the images can fill the whole screen") -- below 769 px a contained
-   slide simply obeys the cover law above and crops to its entry's own `mobilePosition`. */
-@media (min-width: 769px) {
+   The whole treatment is desktop-only, and the owner set the floor on 2026-11-06: "implement the
+   portrait positioning only on desktops from 1024 pixels wide and above. For any screen less than
+   that width ... have the images fill the whole screen like before" -- below 1024 px a contained
+   slide simply obeys the cover law above and crops to fill. The earlier floor was 769 px, which left
+   a tablet in the 769-1023 band with theme ground at the sides instead of a full-bleed picture. */
+@media (min-width: 1024px) {
   .slide-media-contain {
     background: var(--background);
   }
