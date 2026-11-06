@@ -610,8 +610,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/macord/macord-6.jpg',
         fit: 'contain',
-        mobilePosition: '55% center',
-        mobileFit: 'contain',
+        mobilePosition: '55% bottom',
+        mobileFit: 'crop',
+        mobileGap: '118px',
         desktopPosition: 'center 87.3%',
         projectUrl: 'macord.html',
         desc: 'The school boundary wall at dusk: tall timber fins uplit behind large white lowercase lettering, planting trailing over the pergola edge and red traffic trails streaking the foreground.',
@@ -6677,44 +6678,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hot-gossip-plate2',
-        title: 'Hot Gossip',
-        category: 'Interior Design & 3D Visualization — 2012',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-2.png',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hot-gossip.html',
-        desc: 'The Hot Gossip washroom: three white vessel basins along a glossy deep-purple counter under a mirror wall, dark mosaic wrapping the side wall and a cove of light across the ceiling.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
-          team: 'Caleb Sackey + R.D+V.S',
-          year: '2012',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'hot-gossip-plate3',
-        title: 'Hot Gossip',
-        category: 'Interior Design & 3D Visualization — 2012',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-3.png',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hot-gossip.html',
-        desc: 'The same washroom from the other end: a long magenta vanity run with basins and mirrors, black mosaic behind it and recessed slots lighting the ceiling.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
-          team: 'Caleb Sackey + R.D+V.S',
-          year: '2012',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
         id: 'hot-gossip-plate4',
         title: 'Hot Gossip',
         category: 'Interior Design & 3D Visualization — 2012',
@@ -7468,8 +7431,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Architectural Visualization — 2011',
         service: 'Architectural Visualization',
         discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-3.png',
-        mobilePosition: '85% center',
+        imageUrl: 'assets/images/jhk-investment/jhk-investment-3.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'jhk-investment.html',
         desc: 'The side of an ochre house with a timber pergola and stone-clad columns casting striped shadows across a paved walkway and lawn, a window glowing warmly',
@@ -9145,6 +9109,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'avalon.html'
       },
       {
+        id: 'avalon-plate8',
+        title: 'Avalon',
+        category: 'Interior Architecture — 2024',
+        service: 'Interior Architecture',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/avalon/624954545_18094908160756194_8357279890571942706_n.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'avalon.html'
+      },
+      {
         id: 'ackon-desk',
         title: 'Ackon Desk',
         category: 'Architectural Visualization — 2022',
@@ -10654,6 +10628,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.documentElement.style.setProperty('--mobile-contain-base', Math.max(0, base) + 'px');
   }
 
+  // The phone treatment family. `mobileFit: 'contain'` shows the plate whole between the nav and the
+  // caption on the theme ground. `mobileFit: 'crop'` keeps that same box but lets the plate fill it and
+  // hands the overflow to `mobilePosition`, and `mobileGap` lifts the box's bottom edge off the caption
+  // line. The owner asked for both on Macord's night entrance (2026-11-06): "scale it up to get it to fit
+  // the datum we set in our rule and shift the image up like in the markup so we can lose some of the sky
+  // and have enough space between the text and bottom edge of the image". Measured at 390x844 the contain
+  // box bottom and the caption's first line are the same pixel (582), so the gap is what buys the room.
+  function applyMobileFit(mediaContainer, proj) {
+    const boxed = proj.mobileFit === 'contain' || proj.mobileFit === 'crop';
+    mediaContainer.classList.toggle('slide-media-mobile-contain', boxed);
+    mediaContainer.classList.toggle('slide-media-mobile-crop', proj.mobileFit === 'crop');
+    mediaContainer.style.setProperty('--slide-mobile-gap', boxed && proj.mobileGap ? proj.mobileGap : '0px');
+  }
+
   // Owner, 2026-11-06: "when we implement wide treatment on a mobile slide or portrait treatment on a
   // desktop slide positioning, let's not add drop shadow from the top or bottom band of the homepage".
   // The scrim's gradient is only ever visible in the top fifth and the bottom third of the window, and
@@ -10945,7 +10933,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Owner, 2026-11-06: a film whose frame is too wide to show whole on a phone can ask for
             // the phone contain treatment through `mobileFit`. It is a phone-only class; the desktop
             // branch below stays on cover.
-            mediaContainer.classList.toggle('slide-media-mobile-contain', proj.mobileFit === 'contain');
+            applyMobileFit(mediaContainer, proj);
             if ((proj.is360 || proj.videoUrl.includes('360')) && window.VR360) {
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
@@ -11020,7 +11008,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
             // sliver is shown whole between the nav and the caption, on the theme ground. Kept off the
             // desktop branch on purpose -- the stylesheet only reads it under 769 px.
-            mediaContainer.classList.toggle('slide-media-mobile-contain', proj.mobileFit === 'contain');
+            applyMobileFit(mediaContainer, proj);
             // Contain is a desktop law only, and the owner moved its floor to 1024 px on 2026-11-06:
             // "implement the portrait positioning only on desktops from 1024pixels wide and above. For any
             // screen less than that width ... please have the images fill the whole screen like before".

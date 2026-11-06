@@ -555,6 +555,8 @@ button {
     width: auto;
     height: auto;
     background: var(--background);
+    /* A slide may lift this edge further off the caption (see --slide-mobile-gap below). */
+    bottom: calc(var(--mobile-contain-base, 30%) + var(--slide-mobile-gap, 0px));
   }
 
   .slide-media-mobile-contain .slide-picture img,
@@ -562,6 +564,19 @@ button {
   .slide-media-mobile-contain video {
     object-fit: scale-down;
     object-position: center;
+  }
+
+  /* `mobileFit: 'crop'` keeps the box above but lets the plate fill it, so the overflow goes to the
+     anchor in `mobilePosition` instead of to a theme-ground band. Paired with `mobileGap`, which lifts
+     the bottom edge off the caption, the same plate reads larger on the screen and gives up the part of
+     the frame the owner does not want -- for Macord's night entrance at 390x844, a 118px gap costs 40px
+     of dusk sky off the top and puts 118px of ground between the road and the caption. Under 769 px the
+     contain rule pins `object-position: center`, which is why the anchor has to be re-read here. */
+  .slide-media-mobile-crop .slide-picture img,
+  .slide-media-mobile-crop .slide-img,
+  .slide-media-mobile-crop video {
+    object-fit: cover;
+    object-position: var(--slide-mobile-pos, center bottom);
   }
 }
 
