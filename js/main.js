@@ -1475,6 +1475,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/stellar-bar/stellar-bar-2.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: 'stellar-bar.html',
         desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
         specs: {
@@ -1493,6 +1494,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/stellar-bar/stellar-bar-3.jpg',
         mobilePosition: '42% center',
+        mobileFit: 'contain',
         projectUrl: 'stellar-bar.html',
         desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
         specs: {
@@ -1511,6 +1513,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/stellar-bar/stellar-bar-1-desktop.jpg',
         mobilePosition: '68% center',
+        mobileFit: 'contain',
         projectUrl: 'stellar-bar.html',
         desc: 'A 2013 bar interior for Stellar Foods in Nigeria: a low, warm lounge of timber banquettes, brick-piered back bar and an internally lit bar counter, designed and rendered by RDVS before construction.',
         specs: {
@@ -1890,6 +1893,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-16.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -2066,6 +2070,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-17.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -2084,6 +2089,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-3.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -2120,6 +2126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cantonments/west-cantonments-9.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'west-cantonments-igl-presentation.html',
         desc: 'Interior design and 3D visualization for the West Cantonments development by Infinite Group Ltd in Accra — rendering the reception lobby, executive boardroom, fitness centre, and rooftop bar in photoreal detail.',
         specs: {
@@ -2471,6 +2478,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/E1msdaCXEAEFx84.jpg',
         mobilePosition: '33% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -2489,6 +2497,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/E14fBXJXMAEasP9.jpg',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -4455,6 +4464,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ehr/ehr-18.jpg',
         mobilePosition: '55% center',
+        mobileFit: 'contain',
         projectUrl: 'ehr.html',
         desc: 'EHR is a 2017 interior design and visualization set for a proposed private residence in Accra, Ghana. This page carries the four frames that were left out of the published gallery: one dusk view of the villa\u2019s garden and three daylight angles of its open-plan dining and bar.',
         specs: {
@@ -4491,6 +4501,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/ehr/ehr-20.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ehr.html',
         desc: 'EHR is a 2017 interior design and visualization set for a proposed private residence in Accra, Ghana. This page carries the four frames that were left out of the published gallery: one dusk view of the villa\u2019s garden and three daylight angles of its open-plan dining and bar.',
         specs: {
@@ -5261,6 +5272,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E1mtLvhWQAcCZ7p.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5296,6 +5308,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/E2G_xZRWYAIScVK.jpg',
         mobilePosition: '38% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5314,6 +5327,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E2IDVPjXMAA1kEf.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5332,6 +5346,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/E2IDVrPXsAA5ypI.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5349,6 +5364,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-2.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5367,6 +5383,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-3.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5384,6 +5401,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-4.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5401,6 +5419,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5419,6 +5438,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/cascades/tower-cascades-6.jpg',
         fit: 'contain',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5454,6 +5474,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-8.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5471,6 +5492,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-9.jpg',
         mobilePosition: '35% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5488,6 +5510,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-10.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5505,6 +5528,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-11.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5522,6 +5546,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-12.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5539,6 +5564,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-13.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5556,6 +5582,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-14.jpg',
         mobilePosition: '38% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5573,6 +5600,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-15.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5590,6 +5618,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-16.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5607,6 +5636,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-17.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5624,6 +5654,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-18.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5641,6 +5672,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-19.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5658,6 +5690,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-20.jpg',
         mobilePosition: '36% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5675,6 +5708,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-21.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5692,6 +5726,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-22.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5709,6 +5744,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-23.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5726,6 +5762,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/cascades/tower-cascades-24.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'tower-cascades.html',
         desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
         specs: {
@@ -5967,6 +6004,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'Hot Gossip in 2012: a lounge walled in backlit pink discs, with a curved sectional in pale upholstery, a low table on a dark rug and steps up to a raised area at the far end.',
         specs: {
@@ -5985,6 +6023,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The billiards hall at Hot Gossip: a blue-clothed pool table under yellow cove lighting, a glass-block partition on one side and a wall of pink disc lights at the far end.',
         specs: {
@@ -6003,6 +6042,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-5.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The bar at Hot Gossip: warm yellow strip light under a slatted luminous ceiling, a brass column at the corner, a mirrored back bar with pink disc panels and a row of teal stools.',
         specs: {
@@ -6021,6 +6061,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-2.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The Hot Gossip washroom: three white vessel basins along a glossy deep-purple counter under a mirror wall, dark mosaic wrapping the side wall and a cove of light across the ceiling.',
         specs: {
@@ -6039,6 +6080,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-3.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The same washroom from the other end: a long magenta vanity run with basins and mirrors, black mosaic behind it and recessed slots lighting the ceiling.',
         specs: {
@@ -6057,6 +6099,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-4.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'Booth seating at Hot Gossip lit from a wall of glowing pink discs, with a band of blue cove light tracing the ceiling recess above an L-shaped sofa and a low table.',
         specs: {
@@ -6075,6 +6118,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-7.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The Hot Gossip dance floor of illuminated photo tiles laid out in a grid, leading to a raised DJ booth glowing pink at the far end, with columns of disc lights framing the room.',
         specs: {
@@ -6093,6 +6137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-8.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The lit dance floor seen from the side: quilted pale-pink wall panels, a band of disc lights and the glowing floor tiles running towards a bar at the end of the room.',
         specs: {
@@ -6111,6 +6156,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-9.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'Low banquettes set on a dark rug in front of a full-height wall of glowing pink discs that wraps the corner of the lounge.',
         specs: {
@@ -6129,6 +6175,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-10.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
         desc: 'The bar and billiards hall from the opposite end: a radial ceiling of yellow-lit slats opening above the room, pendant clusters, and pink disc columns at either side.',
         specs: {
@@ -7142,6 +7189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-4.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -7219,6 +7267,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'industrial-design',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -7605,6 +7654,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-5.jpg',
         mobilePosition: '68% center',
+        mobileFit: 'contain',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -7623,6 +7673,178 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate3',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-7.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate4',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-8.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate5',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-9.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate6',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-10.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate7',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-11.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate8',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-12.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate9',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-2.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate10',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-3.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'gh-phot-awards.html',
+        desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Industrial Design, 3D Visualization, Motion Design',
+          team: 'RDVS Team',
+          year: '2016',
+          disciplines: '[\'Industrial Design\', \'3D Visualization\', \'Motion Design\']'
+        }
+      },
+      {
+        id: 'gh-phot-awards-plate11',
+        title: 'Gh Photography Awards',
+        category: 'Industrial Design, 3D Visualization & Motion Design — 2016',
+        service: 'Industrial Design, 3D Visualization & Motion Design',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-4.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -7697,6 +7919,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -7714,6 +7937,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-2.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -7731,6 +7955,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-5.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -7748,6 +7973,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -7765,6 +7991,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/1981/1981-3.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '1981.html',
         desc: 'Walkthrough of the retail shop for Accra fashion brand 1981 — white walls, chrome garment frames each hung in front of its own portrait panel, and a black lightbox brand wall at the head of the axis.',
         specs: {
@@ -8847,6 +9074,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-1.jpg',
         mobilePosition: '65% center',
+        mobileFit: 'contain',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
@@ -8862,6 +9090,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-2.jpg',
         mobilePosition: '35% center',
+        mobileFit: 'contain',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
@@ -8877,6 +9106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-sp001-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-sp001.html',
         desc: 'A low pod for a power nap at work, deep enough to hold some privacy. Designed by RDVS in 2019 for the MIG line, and given here lit on black, dressed with pillows, and exploded so the slatted top and the hardwood frame read separately.',
         specs: {
