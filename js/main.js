@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'ela-b.html': ['design', 'vfx-cgi'],
     'elo-tv.html': ['design'],
     'empire-tower.html': ['design', 'vfx-cgi'],
+    'enda-accra-mall.html': ['design', 'vfx-cgi'],
     'enda-acm.html': ['design', 'vfx-cgi'],
     'enda-whm.html': ['design'],
     'ert.html': ['vfx-cgi'],
@@ -1061,7 +1062,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Industrial Design, Graphic Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-acm/enda-acm-1-desktop.jpg',
-        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'enda-acm.html',
         desc: 'The servery: two curved-glass display cabinets set into a timber counter in front of an asymmetric grid of backlit bottle shelves, with dark walls papered in fine white line drawings of glassware and a glazed wall to the right',
@@ -1112,6 +1112,266 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS',
           year: '2015',
           disciplines: ['Interior Design', 'Industrial Design', 'Graphic Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-1.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'The banquette run: low timber tables with condiment caddies against brown leather seating, pink paper lanterns above, red brick dado and planters in timber crates, with the backlit bamboo screen and its silhouette behind.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design, furniture, graphics and imagery for the ENDA foods court at Accra Mall, completed for the 2014 opening.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate1',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Looking down the dining area from above: square timber tables with matching benches set along the banquette, a paper lantern suspended mid-frame, and the backlit bamboo screen running the full length behind.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Space planning and styling of the dining hall, with the low timber furniture and the illuminated bamboo screen designed in-house.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate2',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-3.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Down the length of the banquette run towards the servery, with the brick dado and bamboo screen on one side and the row of illuminated menu boards hanging over the counter ahead.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design of the dining run and its sightline to the servery, with the menu boards carried through from the graphic identity.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate3',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Wide interior perspective of Enda showing the integrated dining area, ambient lantern lighting, and seamless transition to the ordering counters.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design and visualization of the whole court, showing how the dining hall hands over to the ordering counters.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate4',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-5.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Intimate view of low timber dining table and bench setting with custom condiment holder and soft backlit bamboo screen texture.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Furniture design for the table setting, including the custom condiment caddy built for these tables.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate5',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Panoramic composition across the dining hall highlighting spatial flow, exposed timber ceiling features, and warm ambient illumination.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Interior design of the dining hall, with the timber ceiling features and the lantern lighting planned as one run.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate6',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-7.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Banquette seating vignette showing brick base detail, plush upholstery, and timber herb planter integration.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Detail design of the banquette: brick base, upholstery and the timber planters built into the seating run.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate7',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-8.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'The servery and ordering counter: vibrant orange finish, hanging illuminated menu displays, and curved glass pastry showcase.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Design of the servery and ordering counter with its illuminated menu displays and curved glass showcase.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate8',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-9.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'The mall-facing corner: a red fascia carrying the circular enda badge above fully glazed walls lettered enda foods, with yellow shell chairs and round tables on the terrazzo concourse.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'The concourse face of the unit: signage, the lettered glazing and the seating spilling onto the mall floor.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate9',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-10.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Close-up of overhead lightbox menu boards displaying fast-food offerings and branded graphic typography.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Graphic design of the overhead lightbox menus, from the typography to the food photography.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate10',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-11.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Curved glass pastry counter detail showcasing baked goods with clean interior lighting.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Detail of the curved glass pastry counter and its internal lighting.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate11',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-12.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Custom timber condiment caddy designed specifically for Enda tables, demonstrating industrial furniture details.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'Industrial design of the condiment caddy made for these tables.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate12',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-13.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Suspended pink paper lantern detail casting a gentle warm glow across the timber dining tables.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'The lantern lighting detail over the dining tables.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'enda-accra-mall-plate13',
+        title: 'Enda - Accra Mall',
+        category: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization — 2014',
+        service: 'Interior Design, Industrial & Furniture Design, Graphic Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-14.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'enda-accra-mall.html',
+        desc: 'Architectural materiality study: raw red brick dado wall, natural bamboo screening, and oiled timber planks.',
+        specs: {
+          client: 'ENDA Foods',
+          scope: 'The material palette of the court: brick dado, bamboo screening and oiled timber.',
+          team: 'Jude Abbey, Jude Nyoagbe, Kuukuwa Manful, Winfred Atieku, Randy Biney',
+          year: '2014',
+          disciplines: ['Interior Design', 'Industrial & Furniture Design', 'Graphic Design', 'Architectural Visualization']
         }
       },
       {
