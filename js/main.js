@@ -7771,7 +7771,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobilePosition: '72% center',
+        mobilePosition: '0% center',
         projectUrl: 'hola.html'
       },
       {
