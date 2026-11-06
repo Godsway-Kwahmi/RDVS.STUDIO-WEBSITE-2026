@@ -389,6 +389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-hero.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -455,6 +456,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-01.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '41-barham.html',
         desc: 'The attic living room: a low bed with a charcoal throw beneath two skylights in the raked ceiling, a grey sofa and black coffee table on dark timber boards, and a glass door open onto a bare terrace behind grey drapes.',
         specs: {
@@ -473,6 +475,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/barham/barham-02.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '41-barham.html',
         desc: 'The same attic living room from the terrace door: the bed between its two skylights, a grey sofa with patterned cushions, a black coffee table and dark stained floorboards.',
         specs: {
@@ -527,6 +530,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg',
         mobilePosition: '32% center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.',
         specs: {
@@ -666,6 +670,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-4.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -922,6 +927,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/018_0-00-00-00_photoreal_5K.png',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Visualization of a glass-fronted meeting room: mesh task chairs around a table, a red and orange geometric brand graphic with chevrons on the rear wall, and a full-height glazed partition reflecting the daylight from the window wall beyond.',
 
@@ -941,6 +947,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/019_sofa_walnut_batten_5K.png',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Executive office visualization with dark timber veneer and vertical slat walls, a white desk carrying a desktop computer and task lamp, grey carpet tiles, and a navy leather sofa in the foreground under recessed ceiling downlights.',
 
@@ -960,6 +967,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-3.png',
         mobilePosition: '68% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Open client lounge visualization: grey sofa and a round white coffee table in the centre, blue and orange accent chairs, yellow armchairs by the window, a timber slat wall with a green screen, planters and a circular ceiling feature.',
 
@@ -979,6 +987,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/024_plants_photoreal_5K.png',
         mobilePosition: '50% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Interior visualization of the client lounge: large tropical plants in ribbed white planters beside upholstered seating, daylight from the window wall and the bank\'s red and orange chevron brand graphics on the partition beyond.',
 
@@ -998,6 +1007,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/025_plants_photoreal_5K.png',
         mobilePosition: '50% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Client area interior visualization: leafy indoor plants in white planters beside a low seating arrangement, with the bank\'s orange and red chevron pattern on the wall partition and recessed ceiling downlights above.',
 
@@ -1017,6 +1027,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/026_plants_photoreal_5K.png',
         mobilePosition: '50% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Office lounge interior visualization: a bright interior with large potted plants, blue and orange accent seating, and a view through to the reception desk area beyond.',
 
@@ -1036,6 +1047,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-4.jpg',
         mobilePosition: '50% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Waiting area visualization seen across a bright yellow curved sofa and a timber-topped round table laid with a white tea set, with orchids in planters, a dark stone-clad column, and a glazed wall to a further seating bay.',
 
@@ -1055,6 +1067,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/access-bank-iris/access-bank-iris-5.png',
         mobilePosition: '50% center',
+        mobileFit: 'contain',
         projectUrl: 'access-bank-iris.html',
         desc: 'Boardroom visualization: a long pale conference table with black mesh chairs under a cove-lit ceiling recess, projector above, and a dark timber feature wall carrying the backlit blue Access wordmark with orange chevron arrows running off its edge.',
 
@@ -1785,6 +1798,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-12.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -1878,6 +1892,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/abl-reception/abl-reception-1.jpg',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'abl-reception.html',
         desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
         specs: {
@@ -1916,6 +1931,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2157,6 +2173,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2175,6 +2192,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-3.jpg',
         mobilePosition: '24% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2192,6 +2210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-4.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2209,6 +2228,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-5.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2227,6 +2247,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/aggregate/villa-aggregate-6.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2245,6 +2266,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/aggregate/villa-aggregate-7.jpg',
         fit: 'contain',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2298,6 +2320,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-10.jpg',
         mobilePosition: '35% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2315,6 +2338,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-11.jpg',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2351,6 +2375,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/aggregate/villa-aggregate-13.jpg',
         fit: 'contain',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2368,6 +2393,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-14.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -2385,6 +2411,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/aggregate/villa-aggregate-15.jpg',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'villa-aggregate.html',
         desc: 'Interior design and visualization for a four-bedroom family house built to be sold, organised around vertical timber slats — living room, dining volume, kitchen and study nook, across sixteen plates.',
         specs: {
@@ -3137,6 +3164,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-3.jpg',
         mobilePosition: '28% center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.',
         specs: {
@@ -3155,6 +3183,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-2.jpg',
         mobilePosition: '22% center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'A 2017 multidisciplinary commission spanning architecture, landscape design, interior design, and 3D visualization for Poconos Bar + Grill.',
         specs: {
@@ -3173,6 +3202,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'Poconos Bar + Grill dance floor and video wall: a figure with raised arms on the screen and red LED graphics beside it, the lit bar and its bottle shelves opening to the right.',
         specs: {
@@ -3191,6 +3221,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'Poconos Bar + Grill VIP booth: a grey sectional against a backlit faceted cube wall, black marble tables crowded with spirits and three glowing moon lamps, distressed metal floor lamps at either end.',
         specs: {
@@ -3209,6 +3240,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'poconos-bar-grill.html',
         desc: 'Poconos Bar + Grill lounge head-on: the U-shaped sofa and red cushions wrapped around two marble tables with moon globes, the whole faceted wall washed in warm light.',
         specs: {
@@ -3245,6 +3277,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-12.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3263,6 +3296,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-3.jpg',
         mobilePosition: '32% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3281,6 +3315,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3299,6 +3334,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3317,6 +3353,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-6.jpg',
         mobilePosition: '58% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3335,6 +3372,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3353,6 +3391,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-8.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3371,6 +3410,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-9.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3407,6 +3447,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-11.jpg',
         mobilePosition: '40% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3425,6 +3466,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-13.jpg',
         mobilePosition: '55% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3443,6 +3485,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-14.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3479,6 +3522,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-16.jpg',
         mobilePosition: '52% center',
+        mobileFit: 'contain',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -4539,6 +4583,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-5.png',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom from the foot of the bed: a low dark upholstered bed in pink sheets and a grey throw, pink panelled half walls, a tall yucca in a white pot beside the headboard, a wall-mounted black television, pink table lamp and a round pink table with a magazine on the white shag rug.',
         specs: {
@@ -4557,6 +4602,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-6.jpg',
         mobilePosition: '26% center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom from the opposite corner, framed by a blurred wall edge and out-of-focus plant: the black television on a split white and pink wall, a cream armchair on a quilted grey base and a tripod floor lamp with a drum shade.',
         specs: {
@@ -4575,6 +4621,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-8.jpg',
         mobilePosition: '75% center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA living room: the white two-seat sofa with navy velvet cushions on the dark feature wall, two oak-framed lounge chairs with tan slings, decanters on the glass oval table and a slim arc floor lamp by the navy curtain.',
         specs: {
@@ -4593,6 +4640,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-7.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom behind the cream sofa back that spans the foreground: pink headboard panel, pink lamp on a block nightstand, a chrome tray of glass tumblers on the shag rug and a yucca in a black pot by the dark curtains.',
         specs: {
@@ -4611,6 +4659,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-9.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom cropped low at the bed foot: dark grey wall over pink panelling, the pink lamp, a chrome-legged table with a silver ice bucket and crystal bowl, and a pink cantilever side table carrying a potted palm.',
         specs: {
@@ -4629,6 +4678,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-10.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom from the far corner: the bed centred on a grey shag rug with a pink drum table and lamp at right, a cream sofa and floor lamp by the sliding glass doors to the terrace, tall yucca in a black ribbed planter.',
         specs: {
@@ -4647,6 +4697,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-11.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom at nearly the same angle as the plate behind the sofa, with a large white tripod floor lamp added at right against the dark grey upper walls, a yucca in a white pot between the bed and the terrace door, and the same pink table, magazine and remote in the centre.',
         specs: {
@@ -4684,6 +4735,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-13.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA bedroom panned toward the television wall: a black flat screen on the dark panel above a pink dado band, two dark doors, a yucca on the pink ledge and the chrome tray and round table in the foreground.',
         specs: {
@@ -4721,6 +4773,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA kitchen at counter height: glossy taupe wall cabinets and a steel hood over a grey mosaic backsplash and white worktop, oak veneer bases, three stacked yellow bowls, a tall chrome tap and a black-framed window on greenery.',
         specs: {
@@ -4739,6 +4792,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA living room from behind a white sofa with blue velvet cushions: two glass coffee tables on gold drum bases, an oak media console under a black television, an abstract diptych on the pink wall and the dining table beyond.',
         specs: {
@@ -4757,6 +4811,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/bfa/bfa-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'bfa.html',
         desc: 'BFA dining table from the opposite end, camera low: the same oak top, black chairs, citrus bowl and ring pendant, with the pink wall diptych behind, black curtains and an orange car at the window, white wire bar stools at right.',
         specs: {
@@ -4797,6 +4852,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/abl-reception/abl-reception-2.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'abl-reception.html',
         desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
         specs: {
@@ -4835,6 +4891,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/abl-reception/abl-reception-4.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'abl-reception.html',
         desc: 'Minimalist commercial lobby blending linear slatted wall elements with monolithic reception counter architecture and concealed ambient illumination.',
         specs: {
@@ -4875,6 +4932,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-2.jpg',
         mobilePosition: '78% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4892,6 +4950,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4909,6 +4968,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4926,6 +4986,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4944,6 +5005,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/1957/1957-7.jpg',
         fit: 'contain',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4961,6 +5023,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-8.jpg',
         mobilePosition: '70% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4978,6 +5041,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-9.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -4995,6 +5059,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-10.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5012,6 +5077,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-11.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5029,6 +5095,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-13.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5046,6 +5113,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-1.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5063,6 +5131,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-14.jpg',
         mobilePosition: '66% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5080,6 +5149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/1957/1957-15.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5098,6 +5168,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/1957/1957-16.jpg',
         fit: 'contain',
         mobilePosition: '75% center',
+        mobileFit: 'contain',
         projectUrl: '1957.html',
         desc: 'Interior design and 3D architectural visualization for 1957 Apartments and Retail, with architecture by Mustard Architecture.',
         specs: {
@@ -5637,6 +5708,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/3aap/3aap-1.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
         specs: {
@@ -5656,6 +5728,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/3aap/3aap-2.jpg',
         fit: 'contain',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
         specs: {
@@ -6813,6 +6886,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCs8EWYAAvIOH.jpg',
         mobilePosition: '75% center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -6823,6 +6897,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCsBwXMAIxQGf.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -6833,6 +6908,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCtzPXoAEAaLT.jpg',
         mobilePosition: '58% center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -6843,6 +6919,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCwhKXIAAdVuB.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -6853,6 +6930,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCxquX0AM7iJa.jpg',
         mobilePosition: '45% center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -6928,6 +7006,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/EiLEUFFXkAAAxZV.jpg',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -6938,6 +7017,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -6989,6 +7069,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUD2uFJXIAEvHSq.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html'
       },
       {
@@ -6999,6 +7080,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUD2ugHW0AAQBmr.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html'
       },
       {
@@ -7658,6 +7740,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/protea-hotel-airport/E7iCvERX0AENu7d.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'protea-hotel-airport.html'
       },
       {
@@ -7678,6 +7761,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/Ei4kUxWXYAIh8HL.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -7729,6 +7813,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/the-fitzgerald/Eud0gaBUYAABir9.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'the-fitzgerald.html'
       },
       {
@@ -7969,6 +8054,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUEAQ-MWsAAGT7n.jpg',
         mobilePosition: '28% center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html'
       },
       {
@@ -7979,6 +8065,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUD2uA9WoAAj5rO.jpg',
         mobilePosition: '30% center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html',
         desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
         specs: {
@@ -7997,6 +8084,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUEAQukWQAAoY9G.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html',
         desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
         specs: {
@@ -8015,6 +8103,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ackon-desk/GUEAQvzWoAEGQaK.jpg',
         mobilePosition: '25% center',
+        mobileFit: 'contain',
         projectUrl: 'ackon-desk.html',
         desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
         specs: {
