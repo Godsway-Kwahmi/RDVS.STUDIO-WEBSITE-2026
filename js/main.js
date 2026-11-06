@@ -768,6 +768,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-courtyard-night.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         desktopPosition: 'center 83.4%',
         projectUrl: 'dyv.html',
