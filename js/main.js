@@ -6874,6 +6874,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Graphic Design & 3D Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/mtn-hq/mtn-hq-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'mtn.html',
         desc: 'Environmental graphics and way-finding pitch for MTN House, Accra — a system built on the SIM card and paper-plane motif, explored through pictograms, signage, kiosks and 3D visualization.',
