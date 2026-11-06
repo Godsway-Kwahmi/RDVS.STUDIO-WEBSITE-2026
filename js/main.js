@@ -3151,6 +3151,60 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'poconos-bar-grill-plate3',
+        title: 'Poconos Bar + Grill',
+        category: 'Landscape Design, Interior Design & 3D Visualization — 2017',
+        service: 'Landscape Design, Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'poconos-bar-grill.html',
+        desc: 'Poconos Bar + Grill dance floor and video wall: a figure with raised arms on the screen and red LED graphics beside it, the lit bar and its bottle shelves opening to the right.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural Design, Landscape Design, Interior Design & 3D Visualization',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'poconos-bar-grill-plate4',
+        title: 'Poconos Bar + Grill',
+        category: 'Landscape Design, Interior Design & 3D Visualization — 2017',
+        service: 'Landscape Design, Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'poconos-bar-grill.html',
+        desc: 'Poconos Bar + Grill VIP booth: a grey sectional against a backlit faceted cube wall, black marble tables crowded with spirits and three glowing moon lamps, distressed metal floor lamps at either end.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural Design, Landscape Design, Interior Design & 3D Visualization',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
+        id: 'poconos-bar-grill-plate5',
+        title: 'Poconos Bar + Grill',
+        category: 'Landscape Design, Interior Design & 3D Visualization — 2017',
+        service: 'Landscape Design, Interior Design & 3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/poconos-bar-grill/poconos-bar-grill-6.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'poconos-bar-grill.html',
+        desc: 'Poconos Bar + Grill lounge head-on: the U-shaped sofa and red cushions wrapped around two marble tables with moon globes, the whole faceted wall washed in warm light.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Architectural Design, Landscape Design, Interior Design & 3D Visualization',
+          team: 'RDVS Team',
+          year: '2017',
+          disciplines: ['Architectural Design', 'Landscape Design', 'Interior Design', '3D Visualization']
+        }
+      },
+      {
         id: 'naadei-villas-plate1',
         title: 'Naadei Villas',
         category: 'Interior Design & Architectural Visualization — 2018',
