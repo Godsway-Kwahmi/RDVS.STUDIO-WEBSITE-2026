@@ -9383,6 +9383,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-03.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
@@ -9476,6 +9477,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/trumpet-africa-ident/trumpet-africa-sunset-02.png',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'trumpet-africa-ident.html',
         desc: 'Broadcast ident designed for Trumpet Africa Productions, exploring and documenting African stories through the motif of Creation and Revelation.',
         specs: {
