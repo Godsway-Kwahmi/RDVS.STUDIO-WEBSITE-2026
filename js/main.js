@@ -7767,7 +7767,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/GVU3aP6W4AA7WUC.jpg',
         mobilePosition: '78% center',
-        mobileFit: 'contain',
         projectUrl: 'ahero.html'
       },
       {
@@ -8682,7 +8681,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ahero/GVU3aYNWwAABrJl.jpg',
         mobilePosition: 'center',
-        mobileFit: 'contain',
         projectUrl: 'ahero.html'
       },
       {
