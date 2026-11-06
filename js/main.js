@@ -9390,13 +9390,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   // edge starts on the caption’s own column, so the caption’s text stands on the plate’s edge exactly
   // as it does on the Margin slide ("the left edge of the image is in line with the text like this and
   // the rest of the image shifts slightly to the right and not dead center"), with the theme ground
-  // gathering on the side the plate leaves free. object-position percentages resolve against the plate’s
-  // own free space, so the shift is a px term beside 50% and is only written where there is free space to
-  // move through: a landscape plate already spans the width. A portrait or square plate joins the column
-  // at its own size as well, which is what BFA’s squares needed: on a window taller than 1400 px they were
-  // painted unscaled and centred, so the caption fell inside the image instead of on its edge.
+  // gathering on the side the plate leaves free. Owner, 2026-11-06: that datum moves one navigation-bar
+  // height further left, so the text now stands just inside the plate’s edge. object-position percentages
+  // resolve against the plate’s own free space, so the shift is a px term beside 50% and is only written
+  // where there is free space to move through: a landscape plate already spans the width. A portrait or
+  // square plate joins the datum at its own size as well, which is what BFA’s squares needed: on a window
+  // taller than 1400 px they were painted unscaled and centred, so the caption fell inside the image
+  // instead of on its edge.
   const HERO_CAPTION_INSET = 330;
   const HERO_CAPTION_MIN = 312; // --hero-caption-min (288) + --grid-margin (24)
+  // Owner, 2026-11-06: the portrait plate's left datum is one navigation-bar height left of the
+  // caption column -- "the shift to the left for the new portrait position should be the same
+  // distance as the height of the navigation background bar". --header-height is 56px.
+  const PORTRAIT_DATUM_OFFSET = 56;
   function anchorContainSlide(mediaContainer) {
     mediaContainer.style.removeProperty('--slide-contain-shift');
     if (!mediaContainer.classList.contains('slide-media-contain')) return;
@@ -9417,16 +9423,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     // well short of the pool's next-widest contained plate at 1.19.
     if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.05) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
-    // A plate that reaches past the column from the left has no room to sit on it without losing
+    const datum = column - PORTRAIT_DATUM_OFFSET;
+    // A plate that reaches past the datum from the left has no room to sit on it without losing
     // its right edge, so it stays centred and keeps its theme ground on both sides.
-    if (column + paintedW > W + 1) return;
-    const shift = column - freeX / 2;
-    // Owner, 2026-11-05: "let the anchor pull left on narrow desktops too". The column is a fixed
+    if (datum + paintedW > W + 1) return;
+    const shift = datum - freeX / 2;
+    // Owner, 2026-11-05: "let the anchor pull left on narrow desktops too". The datum is a fixed
     // distance from the left edge while a centred plate's edge is a fixed distance from the centre, so
-    // on a narrow window the centred edge lands right of the column -- 48 of the pool's 67 contained
+    // on a narrow window the centred edge lands right of the datum -- 48 of the pool's 67 contained
     // plates at 1366x640 -- and the caption stood in the theme ground instead of on the plate. The
-    // column is never left of HERO_CAPTION_MIN and the guard above keeps the right edge inside the
-    // window, so pulling left cannot push the plate off screen at either end.
+    // datum is never left of HERO_CAPTION_MIN less the bar and the guard above keeps the right edge
+    // inside the window, so pulling left cannot push the plate off screen at either end.
     if (Math.abs(shift) > 0.05) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
   }
 

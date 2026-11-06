@@ -553,10 +553,12 @@ button {
        edge starts on the caption's own column ("the left edge of the image is in line with the text
        like this and the rest of the image shifts slightly to the right and not dead center"), so the
        caption's text stands on the plate's edge and the theme ground gathers as one band at the right.
-       js/main.js measures the plate against the window and writes --slide-contain-shift only where
-       there is free space to move through: a landscape plate already spans the width. A portrait or
-       square plate joins the column at its own size too, which is what BFA's squares needed on a
-       window taller than they are -- centred there, the caption fell inside the image. */
+       Owner, 2026-11-06: that datum moves one --header-height (56px) further left, so the text stands
+       just inside the plate's edge. js/main.js measures the plate against the window and writes
+       --slide-contain-shift only where there is free space to move through: a landscape plate already
+       spans the width. A portrait or square plate joins the datum at its own size too, which is what
+       BFA's squares needed on a window taller than they are -- centred there, the caption fell inside
+       the image. */
     object-position: calc(50% + var(--slide-contain-shift, 0px)) var(--slide-contain-y, 50%);
     /* The vertical nudge (owner, 2026-11-05, on the Kuma Residence study: "shift upwards slightly")
        is a pool-entry value written as --slide-contain-y; a plate that says nothing stays centred. */
