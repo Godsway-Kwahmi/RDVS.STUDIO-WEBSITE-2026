@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
     'giffard-park.html': ['design', 'vfx-cgi'],
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
+    'haustalks.html': ['design'],
     'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'hola.html': ['vfx-cgi'],
@@ -3706,7 +3707,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-8.jpg',
         fit: 'contain',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3725,7 +3726,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-9.jpg',
         fit: 'contain',
-        mobilePosition: '72% center',
+        mobilePosition: 'center',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3782,7 +3783,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-16.jpg',
         fit: 'contain',
-        mobilePosition: '85% center',
+        mobilePosition: 'center',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -7028,6 +7029,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         videoUrl: 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
+        mobileFit: 'contain',
         imageUrl: 'assets/images/mig/mig-1h-2.jpg',
         mobilePosition: 'center',
         projectUrl: 'mig.html',
@@ -7622,6 +7624,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Modern Indigenous Goods',
         discipline: 'vfx',
         imageUrl: 'assets/images/mig/EefkDFAX0AA7W5e.jpg',
+        mobileFit: 'contain',
         fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'mig.html'
@@ -7796,6 +7799,63 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
           year: '2015',
           disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'haustalks',
+        title: 'Haustalks',
+        category: 'Brand Identity / Graphic Design — 2019',
+        service: 'Brand Identity & Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/haustalks/haustalks-desktop.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'haustalks.html',
+        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
+        specs: {
+          client: 'Haustalks',
+          scope: 'Brand Identity & Graphic Design',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Graphic Design']
+        }
+      },
+      {
+        id: 'haustalks-plate1',
+        title: 'Haustalks',
+        category: 'Brand Identity / Graphic Design — 2019',
+        service: 'Brand Identity & Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/haustalks/haustalks-1.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'haustalks.html',
+        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
+        specs: {
+          client: 'Haustalks',
+          scope: 'Brand Identity & Graphic Design',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Graphic Design']
+        }
+      },
+      {
+        id: 'haustalks-plate2',
+        title: 'Haustalks',
+        category: 'Brand Identity / Graphic Design — 2019',
+        service: 'Brand Identity & Graphic Design',
+        discipline: 'graphic',
+        imageUrl: 'assets/images/haustalks/haustalks-2.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'haustalks.html',
+        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
+        specs: {
+          client: 'Haustalks',
+          scope: 'Brand Identity & Graphic Design',
+          team: 'RDVS Team',
+          year: '2019',
+          disciplines: ['Graphic Design']
         }
       },
       {
@@ -9115,6 +9175,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/624954545_18094908160756194_8357279890571942706_n.jpg',
+        mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
