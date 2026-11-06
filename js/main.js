@@ -1654,6 +1654,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         containY: '60%',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
         specs: {
@@ -1674,6 +1675,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         containY: '60%',
         mobilePosition: '74% center',
+        mobileFit: 'contain',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
         specs: {
@@ -1895,6 +1897,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/kuma-residence/kuma-residence-1.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'kuma-residence.html',
         desc: 'A material and lighting study for a private residence, rendered in greyscale so the values could be read before any palette was committed — part of an iterative interior design process run almost in real time.',
         specs: {
@@ -1931,6 +1934,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-1.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html'
       },
       {
@@ -1951,6 +1955,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/asante-interior-design-presentation/asante-interior-design-presentation-2.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'asante-interior-design-presentation.html'
       },
       {
@@ -2946,6 +2951,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/asante-interior-design-presentation/asante-interior-design-presentation-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'asante-interior-design-presentation.html',
         desc: 'TAI is a four-room interior presentation for a private house in Accra   a bedroom, a dining room, an entrance hall and a gym, each visualized at full size so the client could approve the scheme before anything was built.',
         specs: {
@@ -3691,6 +3697,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3709,6 +3716,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-9.jpg',
         mobilePosition: '38% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3726,6 +3734,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-2.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3743,6 +3752,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-3.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3760,6 +3770,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3777,6 +3788,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-6.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3794,6 +3806,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-7.jpg',
         mobilePosition: '78% center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -3811,6 +3824,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/link-drive/link-drive-8.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'link-drive-road.html',
         desc: 'Interior design and photorealistic 3D visualization for Link Drive Rd., a bespoke residential project completed for Imperial Homes.',
         specs: {
@@ -4468,6 +4482,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-12.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
@@ -4486,6 +4501,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-18.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
@@ -4504,6 +4520,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-1.jpg',
         mobilePosition: '20% center',
+        mobileFit: 'contain',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
@@ -7022,6 +7039,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'graphic',
         imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'glow-in-the-dark.html',
         desc: 'Event marketing for a party advertised for 4 October 2014 — a neon sign key visual modelled in 3D so the glass could be shown dead and struck up, then looped as a teaser between the two states.',
         specs: {
@@ -7425,6 +7443,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/kdmrd/kdmrd-hero.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'kdmrd.html',
         desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
         specs: {
@@ -7443,6 +7462,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/kdmrd/kdmrd-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'kdmrd.html',
         desc: 'KDMRD is a 3D visualization study RDVS produced in 2017 for an unidentified client, presenting a bold red cubic building through exterior renders and one shaded courtyard view that show its perforated facade and public landscaped setting.',
         specs: {
@@ -8025,6 +8045,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ppa-ghana-competition/ppa-ghana-competition-3.png',
         mobilePosition: '22% center',
+        mobileFit: 'contain',
         projectUrl: 'ppa-ghana-competition.html',
         desc: 'A 2010 competition entry for the Public Procurement Authority of Ghana: RDVS supplied the interior design and 3D visualization for an eight-plate, twin-wing glazed headquarters designed by Tekton Consult.',
         specs: {
@@ -8322,6 +8343,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/glow-in-the-dark/glow-in-the-dark-teaser.gif',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'glow-in-the-dark.html',
         desc: 'Event marketing for a party advertised for 4 October 2014 — a neon sign key visual modelled in 3D so the glass could be shown dead and struck up, then looped as a teaser between the two states.',
         specs: {
