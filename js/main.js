@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/enda-whm/enda-whm-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM dining room: an orange service bulkhead over a lit cake display at the left, a timber waffle ceiling with pale globe pendants above, and a backlit screen of bamboo culms glowing over the brick banquette at the right.',
 
@@ -334,6 +335,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/enda-whm/enda-whm-4.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'enda-whm.html',
         desc: 'Enda WHM seating plan from above: oak tables laid with caddies and a sushi tray, leather banquettes running to the brick and bamboo screen, and a pink globe pendant dropping into frame over parquet flooring.',
 
@@ -1087,6 +1089,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-acm/enda-acm-1-desktop.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-acm.html',
         desc: 'The servery: two curved-glass display cabinets set into a timber counter in front of an asymmetric grid of backlit bottle shelves, with dark walls papered in fine white line drawings of glassware and a glazed wall to the right',
 
@@ -1146,6 +1149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'The banquette run: low timber tables with condiment caddies against brown leather seating, pink paper lanterns above, red brick dado and planters in timber crates, with the backlit bamboo screen and its silhouette behind.',
         specs: {
@@ -1164,6 +1168,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'Looking down the dining area from above: square timber tables with matching benches set along the banquette, a paper lantern suspended mid-frame, and the backlit bamboo screen running the full length behind.',
         specs: {
@@ -1201,6 +1206,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'Wide interior perspective of Enda showing the integrated dining area, ambient lantern lighting, and seamless transition to the ordering counters.',
         specs: {
@@ -1238,6 +1244,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'Panoramic composition across the dining hall highlighting spatial flow, exposed timber ceiling features, and warm ambient illumination.',
         specs: {
@@ -1275,6 +1282,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-8.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'The servery and ordering counter: vibrant orange finish, hanging illuminated menu displays, and curved glass pastry showcase.',
         specs: {
@@ -1293,6 +1301,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-9.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
         desc: 'The mall-facing corner: a red fascia carrying the circular enda badge above fully glazed walls lettered enda foods, with yellow shell chairs and round tables on the terrazzo concourse.',
         specs: {
@@ -1406,6 +1415,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/smsgh/smsgh-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'smsgh.html',
         desc: 'Visualization of the reception: full-height orange wall, dark desk with a white sms logo behind it, multicolour striped carpet, low black benches at the window and recessed ceiling panels over a cove-lit glass partition.',
 
@@ -1425,6 +1435,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/smsgh/smsgh-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'smsgh.html',
         desc: 'Visualization of a private office: white desk with a computer and black task chairs, green accent wall with open shelving, warm timber floor and ceiling, cove lighting and an orange sofa in the foreground.',
 
@@ -1444,6 +1455,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/smsgh/smsgh-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'smsgh.html',
         desc: 'Visualization of the breakout lounge: exposed timber ceiling beams and track lights, large colourful paintings on white walls, grey sofas, two yellow armchairs on a dark shag rug, black coffee table and white chairs beyond.',
 
@@ -1725,6 +1737,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -1743,6 +1756,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-15.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -1818,6 +1832,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-17.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -1856,6 +1871,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/la-beach-towers/la-beach-towers-16.jpg',
         fit: 'contain',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
@@ -1982,6 +1998,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-6.jpg',
         mobilePosition: '72% center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html'
       },
       {
@@ -1992,6 +2009,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-1.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -2010,6 +2028,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-2.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -2028,6 +2047,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/yah-kumasi-mall/yah-kumasi-mall-3.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'yah-kumasi-mall.html',
         desc: 'A 2016 interior design, graphic design and 3D visualization set for yah!, a new bakery and cafe in Kumasi Mall, Ghana, built on white space, a black Chinese dragon mural and a magenta brand punch.',
         specs: {
@@ -2119,6 +2139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/watsons-place/watsons-place-3.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'watsons-place.html',
         desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
         specs: {
@@ -2137,6 +2158,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'watsons-place.html',
         desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
         specs: {
@@ -2155,6 +2177,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/watsons-place/watsons-place-5.jpg',
         mobilePosition: '26% center',
+        mobileFit: 'contain',
         projectUrl: 'watsons-place.html',
         desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
         specs: {
@@ -3016,6 +3039,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3034,6 +3058,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3052,6 +3077,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-6.jpg',
         mobilePosition: '72% center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3127,6 +3153,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/swipe/swipe-12.jpg',
         mobilePosition: '67% center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
         desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
         specs: {
@@ -3905,6 +3932,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/la-beach-towers-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
@@ -4255,6 +4283,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-hero.jpg',
         mobilePosition: '62% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4273,6 +4302,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-2.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4291,6 +4321,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-8.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4309,6 +4340,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-9.jpg',
         mobilePosition: '33% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4327,6 +4359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-10.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4345,6 +4378,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-11.jpg',
         mobilePosition: '33% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4363,6 +4397,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-12.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4381,6 +4416,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/el-dor/el-dor-13.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -4834,6 +4870,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/afg/afg-21.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'afg.html',
         desc: 'A design-and-build office for AFG in Accra — brand set into the architecture across a faceted red graphic wall and etched glass, bespoke plywood and steel furniture, photographed room by room and shown beside the pre-build visualisations, across ninety-eight plates.',
         specs: {
@@ -6866,6 +6903,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
         mobilePosition: '72% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },
       {
@@ -6953,6 +6991,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-1h-1.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'mig.html'
       },
       {
@@ -7218,6 +7257,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/senya-resort/senya-resort-1-desktop.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -7369,6 +7409,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/senya-resort/senya-resort-4.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -7386,6 +7427,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/senya-resort/EuMQCBQXYAMNGul.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'senya-resort.html',
         desc: 'Interior visualizations for a resort scheme designed by Leonie Badger \\u2014 an open-plan living space organised around a floor-to-ceiling wall of stacked timber cubes, African textile panels, rattan pendants and carved masks set along a low white console.',
         specs: {
@@ -7636,6 +7678,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/baobab-hotel-exteriors/baobab-hotel-exteriors-2.jpg',
         fit: 'contain',
         mobilePosition: '75% center',
+        mobileFit: 'contain',
         projectUrl: 'baobab-hotel-exteriors.html',
         desc: 'Exterior visualizations of the Baobab Airport Hotel in Accra for architect Theodore Kanyi \\u2014 the tower modelled in 3D and composited into photographed day and night plates of the street, closing on the rooftop pool and bar at dusk.',
         specs: {
@@ -7836,6 +7879,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsOwki3WcAEJtvW.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate1',
@@ -7845,6 +7889,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Fs47RTMWwAA-eEF.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate2',
@@ -7863,6 +7908,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsToeqxWcAEA8ft.jpg',
         mobilePosition: '36% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate4',
@@ -7872,6 +7918,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FsaGWWLWABgVwQD.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate5',
@@ -7881,6 +7928,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FseFF83XsAE3byC.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate6',
@@ -7890,6 +7938,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FseFG8GXoAE54NP.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate7',
@@ -7899,6 +7948,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FseFGd0X0AAMMNc.jpg',
         mobilePosition: '64% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate8',
@@ -7908,6 +7958,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FshZRdsWwAIPdr1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate9',
@@ -7917,6 +7968,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FshZS8UXsAArIuW.jpg',
         mobilePosition: '72% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate10',
@@ -7926,6 +7978,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FshZSMBXwAASFtI.jpg',
         mobilePosition: '74% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate11',
@@ -7935,6 +7988,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FspUg4aX0AIuCJH.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate12',
@@ -7944,6 +7998,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Ft4iPZlWYAEaQWQ.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate13',
@@ -7953,6 +8008,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
         mobilePosition: '85% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate14',
@@ -7998,6 +8054,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
         mobilePosition: '66% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate19',
@@ -8007,6 +8064,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPM-RWIAAms-l.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate20',
@@ -8016,6 +8074,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPMK6X0AAZtYD.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate21',
@@ -8025,6 +8084,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuIPNjxWIAILRM7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate22',
@@ -8034,6 +8094,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/FuLgJKhWAA0jerA.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'ttd.html'
       },
       {
@@ -8124,6 +8185,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/mig/mig-1h-2.jpg',
         fit: 'contain',
         mobilePosition: '63% center',
+        mobileFit: 'contain',
         projectUrl: 'mig.html'
       },
       {
@@ -8721,6 +8783,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mound-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
@@ -8736,6 +8799,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mound-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'product-mound.html',
         desc: 'The plate labels MOUND as accessories for fruit and clutter: a shallow tray for what collects on a surface, and a mesh-top bench doing the same job at a larger scale at the foot of a bed. Designed by RDVS in 2016 for the MIG line.',
         specs: {
@@ -8751,6 +8815,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-1.jpg',
         mobilePosition: '24% center',
+        mobileFit: 'contain',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
@@ -8766,6 +8831,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-s-age-2.jpg',
         mobilePosition: '74% center',
+        mobileFit: 'contain',
         projectUrl: 'product-s-age.html',
         desc: 'A curved front-of-house desk in white, its plain panel carrying an information-desk pictogram. Designed by RDVS in 2018 for the MIG line.',
         specs: {
