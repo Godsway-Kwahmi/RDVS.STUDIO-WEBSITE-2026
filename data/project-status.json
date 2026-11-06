@@ -191,6 +191,15 @@
       "onArchivePage": true,
       "plates": 13
     },
+    "of-sunsets.html": {
+      "slug": "of-sunsets",
+      "title": "Of Sunsets",
+      "year": "2017",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 28
+    },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
       "title": "NPA",
@@ -1882,15 +1891,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 4
-    },
-    "of-sunsets.html": {
-      "slug": "of-sunsets",
-      "title": "Of Sunsets",
-      "year": "2017",
-      "visibility": "archived",
-      "onWorkPage": false,
-      "onArchivePage": true,
-      "plates": 28
     },
     "palazzo.html": {
       "slug": "palazzo",

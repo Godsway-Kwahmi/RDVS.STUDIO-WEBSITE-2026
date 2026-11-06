@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
+    'of-sunsets.html': ['design', 'vfx-cgi'],
     'petrus.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
@@ -9373,7 +9374,28 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2020',
           disciplines: ['Motion Design', '3D Animation']
         }
-      }
+      },
+      {
+        id: 'of-sunsets',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        videoUrl: 'assets/videos/of-sunsets/of-sunsets-film.mp4',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-1.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+
     ],
     images: [
       {
@@ -9564,6 +9586,166 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'3D Animation\']'
+        }
+      },
+      {
+        id: 'of-sunsets-plate1',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-4.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate2',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-12.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate3',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-18.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate4',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-20.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate5',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-21.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate6',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-23.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate7',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-26.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
+        }
+      },
+      {
+        id: 'of-sunsets-plate8',
+        title: 'Of Sunsets',
+        category: 'Architectural Visualization & Motion Design — 2017',
+        service: 'Architectural Visualization & Motion Design',
+        discipline: 'motion',
+        imageUrl: 'assets/images/of-sunsets/of-sunsets-27.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'of-sunsets.html',
+        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
+        specs: {
+          client: 'Mobius Architecture',
+          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
+          team: 'RDVS. DESIGN',
+          year: '2017',
+          disciplines: ['Architectural Visualization', 'Motion Design']
         }
       },
 
