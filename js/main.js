@@ -5846,6 +5846,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-10.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA kitchen, square on the column: dark lower cabinets and pale handleless uppers with a bright yellow open shelf as the accent, light quartz counters and splashback running the wall, daylight at a window and door, and the breakfast table glimpsed at the right.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design for the kitchen, its joinery and stone surfaces, rendered square for the campaign set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate3',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
         imageUrl: 'assets/images/hfa/hfa-2.jpg',
         mobilePosition: 'center',
         projectUrl: 'hfa.html',
@@ -5853,6 +5872,152 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'Homes Direct',
           scope: 'Interior design for the master bedroom and its walk-in wardrobe, rendered for the Homes Direct marketing set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate4',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-3.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA bedroom from the door end: the low bed against the far wall with a round mirror on a brown panel, tall windows and sheer curtains running the left, a small side table with a lamp over a pale rug.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design and styling for the second bedroom, photographed as a render for the marketing set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate5',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-4.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA open-plan living and dining in bright white: a grey sofa and cushions at the left, a white dining table with molded chairs at the right, a timber cabinet wall, a floating console with greenery and a round mirror.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design for the shared living and dining room, its joinery wall and furniture schedule, rendered for the campaign.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate6',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-5.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA dining area at dusk: a white round table with molded chairs beneath a black dome pendant, mauve curtains glowing behind, a framed picture on the left wall and a grey sofa in the foreground.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Lighting and styling study for the dining room at evening, part of the rendered marketing set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate7',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-7.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA dressing area: an upholstered grey armchair before an open wardrobe with hanging clothes and white cabinetry, a folded throw on the chair, a small shelf and plant at the left over warm wood floor.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design for the walk-in dressing space and its joinery, rendered for the Homes Direct set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate8',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-8.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA kitchen looking toward the dining area: white cabinets and a long stainless double sink beneath a row of windows, a dark island to the right, an open shelf holding bottles and the white table through the opening.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Kitchen layout, joinery and worktop specification, rendered for the campaign imagery.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate9',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-9.jpg',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA living room in full daylight: a grey sofa with cushions and a black round pouf on a pale rug, small timber side tables flanking it, framed art on white walls and a white dining set to the right under a dome pendant.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design and furniture specification for the living room, rendered for the developer campaign.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate10',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-11.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA dining space flooded with daylight, held tall: a white round table with white molded chairs beneath a dark dome pendant, a framed black-and-white picture on the wall, sheer curtains softening tall windows at the right and a leafy plant in the foreground.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design for the dining room, rendered portrait for the Homes Direct marketing set.',
+          team: 'RDVS. DESIGN',
+          year: '2018',
+          disciplines: ['Interior Design', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'hfa-plate11',
+        title: 'HFA',
+        category: 'Interior Design & Architectural Visualization — 2018',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hfa/hfa-12.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'hfa.html',
+        desc: 'HFA dining room in bright white, square on the column: a round white table with molded chairs under a black dome pendant, a framed forest picture on the wall, tall windows with sheer curtains and a potted plant in the foreground.',
+        specs: {
+          client: 'Homes Direct',
+          scope: 'Interior design and styling for the dining room, rendered square for the campaign set.',
           team: 'RDVS. DESIGN',
           year: '2018',
           disciplines: ['Interior Design', 'Architectural Visualization']
