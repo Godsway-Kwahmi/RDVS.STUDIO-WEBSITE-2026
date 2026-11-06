@@ -1,0 +1,12 @@
+# Crawlers are pointed away from the media tree. The homepage paints one plate into its pre-JS deck
+# markup and defers the other nineteen behind data-src, so a JS-rendering bot that walks the deck pulls
+# the slideshow warm queue on every visit; those plates are multi-megabyte files and the Vercel Hobby
+# transfer meter is 100 GB a month. /scripts, /scratch, /studio and the status json are already 404'd
+# by vercel.json's routes -- they are listed here so a crawler is never sent a body it should not index.
+User-agent: *
+Disallow: /assets/
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /scratch/
+Disallow: /studio/
+Disallow: /*.json$
