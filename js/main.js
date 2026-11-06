@@ -9349,10 +9349,43 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.documentElement.style.setProperty('--mobile-contain-base', Math.max(0, base) + 'px');
   }
 
+  // Owner, 2026-11-06: "when we implement wide treatment on a mobile slide or portrait treatment on a
+  // desktop slide positioning, let's not add drop shadow from the top or bottom band of the homepage".
+  // The scrim's gradient is only ever visible in the top fifth and the bottom third of the window, and
+  // on a treatment slide those two zones are the plate's theme ground -- so the gradient reads as a
+  // drop shadow laid across both bands. The treatment is live at two disjoint widths (phone contain at
+  // <=768 px, portrait contain at >=1024 px), so the flag follows the same two floors rather than the
+  // media class alone: the 769-1023 band renders every slide under the cover law and keeps its scrim.
+  function assignHeroScrim() {
+    if (!heroViewport) return;
+    const media = document.querySelector('.slide.active .slide-media');
+    if (!media) return;
+    let treatment = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain')) ||
+      (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
+    if (treatment) {
+      // Only the band is the owner's target: a contained plate that already runs the full height of
+      // its box (Hola's square at 1440x900, a portrait plate on a landscape window) leaves no top or
+      // bottom ground for the shadow to land on, and removing the scrim there would strip the caption
+      // shading off the photograph itself. `scale-down` never upscales, so the painted height is
+      // natural x min(1, box/natural) on both axes.
+      const box = media.getBoundingClientRect();
+      const plate = media.querySelector('img, video');
+      const pw = plate ? (plate.naturalWidth || plate.videoWidth || 0) : 0;
+      const ph = plate ? (plate.naturalHeight || plate.videoHeight || 0) : 0;
+      if (pw && ph && box.width && box.height) {
+        const painted = ph * Math.min(1, box.width / pw, box.height / ph);
+        treatment = box.height - painted > 1;
+      }
+    }
+    heroViewport.classList.toggle('is-contain-slide', treatment);
+  }
+
   function assignHeroGrounds() {
     const foot = document.querySelector('.hero-footer-container');
     if (!foot) return;
     assignMobileContainBase();
+    // After the base, so the phone plate is measured in the box it will actually occupy.
+    assignHeroScrim();
     const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
     const bandTop = window.innerHeight - strip;
     // A phone contain slide paints the page's own ground, not a photograph, so every caption row

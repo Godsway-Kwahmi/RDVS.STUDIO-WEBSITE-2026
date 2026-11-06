@@ -622,6 +622,21 @@ button {
   pointer-events: none;
   z-index: 3;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 20%, transparent 65%, rgba(0, 0, 0, 0.75) 100%);
+  transition: opacity 0.8s ease;
+}
+
+/* Owner, 2026-11-06: "when we implement wide treatment on a mobile slide or portrait treatment on a
+   desktop slide positioning, let's not add drop shadow from the top or bottom band of the homepage".
+   The gradient above only ever paints the top fifth and the bottom third of the window; on a slide
+   shown whole those zones are theme ground, so it lands as a grey shadow across both bands (measured
+   on the light theme, 0.4 alpha turns the white band rgb(153,153,153) at the very top). js/main.js
+   raises this flag only where the treatment is actually in force -- phone contain at <=768 px,
+   portrait contain at >=1024 px -- and only when the plate leaves a real top or bottom band, so every
+   cover slide, the 769-1023 band that renders under the cover law, and a contained plate that already
+   runs the full height of the window keep the scrim exactly as it was. The fade matches the slides'
+   own 0.8 s cross-fade. */
+.hero-viewport.is-contain-slide .hero-scrim {
+  opacity: 0;
 }
 
 .hero-footer {
