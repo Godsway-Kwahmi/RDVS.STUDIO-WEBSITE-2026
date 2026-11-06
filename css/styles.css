@@ -3261,6 +3261,21 @@ a.subservice-item:hover {
     margin-bottom: calc(max(88px, 10.5vh) - 17px);
   }
 
+  /* Owner, 2026-11-06: "the text position for project name etc appears to shift for some slides but
+     they shouldn't.  They should be consistently positioned on mobile for every slide."  The caption
+     is bottom-anchored, so a title that wraps to a second line at a slim width grew the block upward
+     and carried the eyebrow, and the footer's top edge with it -- which is also the phone contain
+     base.  Measured at 280x653: four of the twenty titles took two lines, and their category stood at
+     364.3 while every one-line title stood at 391.2, a 26.9px step per slide.  Reserving the second
+     line on the title box gives every caption the same height, so the category, the title's first
+     line and the links all land on one set of rows and the contain base stops moving too.  At this
+     tier the title's clamp is pinned to its 1.35rem floor (2.5vw is still under it at 640), and
+     --line-height-heading is 1.25, so the reserved box is the 54px two-line title the markup's
+     bottom edge already assumes. */
+  .project-title {
+    min-height: calc(1.35rem * var(--line-height-heading) * 2);
+  }
+
   .hero-footer-container {
     /* Phone geometry (390x844), owner markup of 2026-11-03: the controls block -- the counter's row, the
        hairline bars, the socials and the credit -- is 87px tall at 360 and 430 and 89px at 640, and it
