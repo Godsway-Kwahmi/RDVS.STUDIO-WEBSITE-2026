@@ -7,7 +7,7 @@
     (function () {
       try {
         var savedTheme = localStorage.getItem('rdvs-theme');
-        var theme = savedTheme || 'dark';
+        var theme = savedTheme || 'light';   // light is the default (owner, 2026-11-06); the toggle still offers dark and a saved choice still wins
         document.documentElement.setAttribute('data-theme', theme);
       } catch (e) {}
     })();

@@ -16,7 +16,7 @@
       });
     }
 
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
     updateThemeUI(currentTheme);
 
     // Event delegation for theme toggle button
@@ -25,7 +25,7 @@
       if (!toggleBtn) return;
       e.preventDefault();
 
-      const activeTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const activeTheme = document.documentElement.getAttribute('data-theme') || 'light';
       const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
 
       document.documentElement.setAttribute('data-theme', nextTheme);
@@ -45,9 +45,11 @@
     });
 
     // The operating system no longer decides anything here (owner, 2026-10-23: "make our default dark
-    // mode instead of light mode"). Dark is the default, the header toggle is the only way to change it,
-    // and the storage listener above keeps two open tabs agreeing. An OS listener that flipped a visitor
-    // to light mid-visit would undo that in the one place no page script can pre-empt.
+    // mode instead of light mode"; owner, 2026-11-06: "let's make the light mode the default theme when
+    // you open the website", which every page's head bootstrap now carries as the `savedTheme || 'light'`
+    // fallback). Light is the default, the header toggle is the only way to change it, and the storage
+    // listener above keeps two open tabs agreeing. An OS listener that flipped a visitor to dark mid-visit
+    // would undo that in the one place no page script can pre-empt.
   }
 
   if (document.readyState === 'loading') {
