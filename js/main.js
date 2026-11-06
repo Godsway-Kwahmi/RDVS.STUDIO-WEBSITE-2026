@@ -10697,7 +10697,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Owner, 2026-11-06: the portrait plate's left datum is one navigation-bar height left of the
   // caption column -- "the shift to the left for the new portrait position should be the same
   // distance as the height of the navigation background bar". --header-height is 56px.
-  const PORTRAIT_DATUM_OFFSET = 56;
+  // Owner, 2026-11-06 again, on portrait-position-adjustment-2.PNG: the same datum moves back to HALF a
+  // bar. Measured off that markup (1920x1081): the caption column's ink starts at x 632, the plate's own
+  // left edge was at 574 -- the 58 px that proves the 56 rule was live -- and the red guide he drew, with
+  // "MOVE ->" into it and "H 1/2" over it, sits at 595..617, i.e. 632 less 26. So the plate comes right by
+  // 28 px and the caption stands deeper inside its edge.
+  const PORTRAIT_DATUM_OFFSET = 28;     // half of --header-height (56)
   function anchorContainSlide(mediaContainer) {
     mediaContainer.style.removeProperty('--slide-contain-shift');
     if (!mediaContainer.classList.contains('slide-media-contain')) return;
@@ -10727,8 +10732,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // distance from the left edge while a centred plate's edge is a fixed distance from the centre, so
     // on a narrow window the centred edge lands right of the datum -- 48 of the pool's 67 contained
     // plates at 1366x640 -- and the caption stood in the theme ground instead of on the plate. The
-    // datum is never left of HERO_CAPTION_MIN less the bar and the guard above keeps the right edge
-    // inside the window, so pulling left cannot push the plate off screen at either end.
+    // datum is never left of HERO_CAPTION_MIN less the datum offset and the guard above keeps the right
+    // edge inside the window, so pulling left cannot push the plate off screen at either end.
     if (Math.abs(shift) > 0.05) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
   }
 
