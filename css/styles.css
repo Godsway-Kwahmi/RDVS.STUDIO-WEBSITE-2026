@@ -542,6 +542,17 @@ button {
   .slide-media-mobile-contain {
     top: var(--header-height);
     bottom: var(--mobile-contain-base, 30%);
+    /* Owner markup 2026-11-06, a phone frame of Brownie's Place with two red guides drawn the full height
+       of the screen at x=16 and x=width-16 -- the page's own margins, the lines the header, the caption
+       and the footer already stand on: "let's update the datum guides for our wide treatment for mobile
+       slide pool images". The box therefore sits between those two datums instead of bleeding to the
+       screen edges, and the plate plus its theme ground never touch the sides. The guide lines measured
+       13 and 441 on a 457px frame, i.e. the 16px column to within a hand-drawn pixel.
+       width:auto is load-bearing: the base rule pins width:100%, and an absolutely placed box that is
+       over-constrained ignores `right`. */
+    left: var(--grid-margin);
+    right: var(--grid-margin);
+    width: auto;
     height: auto;
     background: var(--background);
   }
