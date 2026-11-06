@@ -626,15 +626,16 @@ button {
 }
 
 /* Owner, 2026-11-06: "when we implement wide treatment on a mobile slide or portrait treatment on a
-   desktop slide positioning, let's not add drop shadow from the top or bottom band of the homepage".
-   The gradient above only ever paints the top fifth and the bottom third of the window; on a slide
-   shown whole those zones are theme ground, so it lands as a grey shadow across both bands (measured
-   on the light theme, 0.4 alpha turns the white band rgb(153,153,153) at the very top). js/main.js
-   raises this flag only where the treatment is actually in force -- phone contain at <=768 px,
-   portrait contain at >=1024 px -- and only when the plate leaves a real top or bottom band, so every
-   cover slide, the 769-1023 band that renders under the cover law, and a contained plate that already
-   runs the full height of the window keep the scrim exactly as it was. The fade matches the slides'
-   own 0.8 s cross-fade. */
+   desktop slide positioning, let's not add drop shadow from the top or bottom band of the homepage",
+   asked again minutes later with "for portrait or square images" added. The gradient above only ever
+   paints the top fifth and the bottom third of the window, which on a contained slide are theme
+   ground, so in the light theme the white band read as a grey drop shadow (0.4 alpha over white =
+   rgb(153,153,153)). js/main.js raises this flag wherever the treatment is actually in force -- phone
+   contain at <=768 px, portrait contain at >=1024 px -- so every cover slide and the 769-1023 band
+   that renders under the cover law keep the scrim exactly as it was. The first pass also required the
+   plate to leave a real band, which exempted a contain plate tall enough to run the window's full
+   height; the owner's second ask, naming portrait and square plates, dropped that exemption. The fade
+   matches the slides' own 0.8 s cross-fade. */
 .hero-viewport.is-contain-slide .hero-scrim {
   opacity: 0;
 }

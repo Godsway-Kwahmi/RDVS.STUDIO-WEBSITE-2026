@@ -589,6 +589,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/macord/macord-5.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         desktopPosition: 'center 100%',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
@@ -1392,6 +1393,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-2.jpg',
         mobilePosition: '36% center',
+        mobileFit: 'contain',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -4354,6 +4356,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/macord/macord-3.jpg',
         mobilePosition: '75% center',
+        mobileFit: 'contain',
         desktopPosition: 'center 100%',
         projectUrl: 'macord.html',
         desc: 'A complete 2024 school commission — street-facing facade in rhythmic coloured fins and planted terraces, landscape forecourt, resolved interiors and a bespoke furniture package, carried through to photoreal 3D visualization.',
@@ -6451,6 +6454,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-1.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Interior design and photorealistic 3D visualization for Petrus, a 2017 residence in Accra: a bedroom in greige linen and oak, a living room under a triple-ring chandelier, a glazed gym and a pool deck with the city beyond.',
         specs: {
@@ -6469,6 +6473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-2.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'The Petrus bedroom from the foot of the bed: a white sideboard with brass vertical inlays, radial wall art above, a gold teardrop vase and a dark rug over grey plank flooring.',
         specs: {
@@ -6487,6 +6492,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-3.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus living room by day: white sofa and two swivel armchairs around a sculptural white table under a triple-ring LED chandelier, four tree-ring prints on the wall and sliding doors into the gym at left.',
         specs: {
@@ -6524,6 +6530,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-5.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus kitchen at counter height: dark gloss base cabinets, cream uppers and grey marble worktops, a board with bread and cheese in the foreground beside a tall tap and under-cabinet lighting.',
         specs: {
@@ -6542,6 +6549,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-6.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus kitchen from the far end of the L-run: black gloss drawers with steel pulls, hanging utensils and a roller blind at the window, a glass door at right looking through to the gym.',
         specs: {
@@ -6560,6 +6568,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-7.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus living room from behind the sofas: a wall-mounted television over the cream media panel, two white swivel chairs and the ring chandelier, tree-ring artworks and a sliding door to the lawn beyond.',
         specs: {
@@ -6578,6 +6587,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/petrus/petrus-8.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus living room the other way: the white sofa facing the camera with a two-tier coffee table, cognac leather chair in the foreground, an abstract figure painting and a white torso sculpture at left.',
         specs: {
@@ -7969,6 +7979,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/npa/npa-3.jpg',
         mobilePosition: '15% center',
+        mobileFit: 'contain',
         projectUrl: 'npa-reception-renders.html'
       },
       {
@@ -8486,6 +8497,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/d-e-t-a-i-l-s/d-e-t-a-i-l-s-3.jpg',
         mobilePosition: '41% center',
+        mobileFit: 'contain',
         projectUrl: 'd-e-t-a-i-l-s.html',
         desc: 'A self-initiated film about the parts of an interior a walkthrough would rush past: the joint where a lamp stem meets its base, the way light sits inside a glass case, the edge of a paving slab against gravel.',
         specs: {
@@ -8765,7 +8777,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/hola/F1kFFaMWwAI9r82.jpg',
-        mobilePosition: '0% center',
+        mobileFit: 'contain',
         projectUrl: 'hola.html'
       },
       {
@@ -9771,6 +9783,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
         mobilePosition: '59% center',
+        mobileFit: 'contain',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -9786,6 +9799,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
         mobilePosition: '71% center',
+        mobileFit: 'contain',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -9801,6 +9815,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-11.jpg',
         mobilePosition: '24% center',
+        mobileFit: 'contain',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -10458,27 +10473,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // drop shadow laid across both bands. The treatment is live at two disjoint widths (phone contain at
   // <=768 px, portrait contain at >=1024 px), so the flag follows the same two floors rather than the
   // media class alone: the 769-1023 band renders every slide under the cover law and keeps its scrim.
+  // The first pass also demanded a real band before lifting the scrim, reasoning that a contain plate
+  // running the window's full height has no ground left to shade. The owner overruled that an hour
+  // later, naming portrait and square plates: the treatment itself is what the shadow must follow.
   function assignHeroScrim() {
     if (!heroViewport) return;
     const media = document.querySelector('.slide.active .slide-media');
     if (!media) return;
-    let treatment = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain')) ||
+    const treatment = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain')) ||
       (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
-    if (treatment) {
-      // Only the band is the owner's target: a contained plate that already runs the full height of
-      // its box (Hola's square at 1440x900, a portrait plate on a landscape window) leaves no top or
-      // bottom ground for the shadow to land on, and removing the scrim there would strip the caption
-      // shading off the photograph itself. `scale-down` never upscales, so the painted height is
-      // natural x min(1, box/natural) on both axes.
-      const box = media.getBoundingClientRect();
-      const plate = media.querySelector('img, video');
-      const pw = plate ? (plate.naturalWidth || plate.videoWidth || 0) : 0;
-      const ph = plate ? (plate.naturalHeight || plate.videoHeight || 0) : 0;
-      if (pw && ph && box.width && box.height) {
-        const painted = ph * Math.min(1, box.width / pw, box.height / ph);
-        treatment = box.height - painted > 1;
-      }
-    }
     heroViewport.classList.toggle('is-contain-slide', treatment);
   }
 
