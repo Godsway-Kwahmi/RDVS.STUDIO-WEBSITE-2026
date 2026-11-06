@@ -11487,13 +11487,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   const STILL_WARM_PARALLEL = 3;        // background stills allowed in flight at once
   const STILL_WARM_GAP_MS = 150;        // breathing room before the pool refills
   const STILL_WARM_CAP_MS = 30000;      // a stalled file must not park the whole deck
+  /**
+   * Owner order, 2026-11-06, on the Vercel free-bandwidth investigation: the background queue no longer
+   * walks the whole draw. Measured here: the pool's 556 media average 2.08 MB (still mean 1.66 MB, film
+   * mean 10.6 MB), so warming all twenty slides of a draw costs a visitor who leaves immediately about
+   * 42 MB of the plan's 100 GB/month -- roughly 2,400 visits and nothing else. Four slides ahead is ~24 s
+   * of runway at a 6 s dwell, which is the same headroom the queue was written to give, and every advance
+   * re-arms the walk from the new position, so the window follows the viewer instead of running ahead of
+   * them into files nobody asked for.
+   */
+  const STILL_WARM_AHEAD = 4;           // slides in front of the viewer the still queue may reach
   const warmedStills = new Set();       // urls this page has already pulled into the cache
   const stillWarmInFlight = new Map();  // url -> the background stills currently in flight
   let stillWarmGap = null;
   let stillWarmQueued = false;
 
   function stillWarmUrl() {
-    for (let step = 0; step < totalSlides; step++) {
+    for (let step = 0; step <= STILL_WARM_AHEAD && step < totalSlides; step++) {
       const idx = (currentIndex + step) % totalSlides;
       const proj = projects[idx];
       const slide = slides[idx];
@@ -11576,6 +11586,11 @@ document.addEventListener('DOMContentLoaded', async () => {
    */
   const FILM_WARM_RETRY_MS = 1200;      // breathing room between two warm passes
   const FILM_WARM_CAP_MS = 20000;       // a stalled range must not park the whole queue
+  // Same 2026-11-06 trim as the stills, and the same reason in a sharper form: a pooled film averages
+  // 10.6 MB and the largest is 43 MB, so walking every film in the draw could put 25 MB into the pipe for
+  // a visitor who never saw a second slide. Three ahead keeps the film the viewer is about to reach
+  // buffered without paying for the ones behind it.
+  const FILM_WARM_AHEAD = 3;            // slides in front of the viewer the film queue may reach
   const warmedFilms = new Set();        // urls this page has already taken as far as it intends to
   let warmItem = null;                  // the single film currently in flight
   let warmTimer = null;
@@ -11601,7 +11616,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ... but "the active slide already has the pipe" is only true once the deck has STARTED. Under the intro
     // veil nothing is playing, a built film slide carries preload="none", and the slide the viewer lands on in
     // 6.9 s is precisely the one whose bytes matter most, so while deckStarted is false it is first in line.
-    for (let step = deckStarted ? 1 : 0; step < totalSlides; step++) {
+    for (let step = deckStarted ? 1 : 0; step <= FILM_WARM_AHEAD && step < totalSlides; step++) {
       const idx = (currentIndex + step) % totalSlides;
       const slide = slides[idx];
       const vid = slide ? slide.querySelector('video') : null;
