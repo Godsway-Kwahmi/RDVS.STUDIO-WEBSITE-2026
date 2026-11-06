@@ -528,6 +528,32 @@ button {
   }
 }
 
+/* The phone counterpart of the contain law, for the few WIDE plates a phone cannot show whole under
+   cover (owner, 2026-11-06: "we are going to implement a mobile only rule for selected wide images
+   that we can't see fully on mobile of this screen real estate. The idea is to see the full image
+   with black or white at the bottom and top of the image after positioning per the theme. The image
+   shouldn't go below the base like I have marked up"). The slide media no longer spans the window:
+   it runs from under the nav bar down to the caption block, so the plate is centred in exactly the
+   space the owner boxed, never reaching the caption. `js/main.js` measures the caption block's top
+   and writes it as --mobile-contain-base; the 30% fallback is only the pre-JS frame.
+   `scale-down` is the same never-upscale value the desktop law uses, and the box takes the page's
+   ground, so the bands are black in the dark theme and white in the light one. */
+@media (max-width: 768px) {
+  .slide-media-mobile-contain {
+    top: var(--header-height);
+    bottom: var(--mobile-contain-base, 30%);
+    height: auto;
+    background: var(--background);
+  }
+
+  .slide-media-mobile-contain .slide-picture img,
+  .slide-media-mobile-contain .slide-img,
+  .slide-media-mobile-contain video {
+    object-fit: scale-down;
+    object-position: center;
+  }
+}
+
 /* A slide may ask to be shown whole rather than cropped to the window (owner, 2026-11-05: Kuma
    Residence and 3AAP — "show the image at 100% of its resolution and then fill the space around it
    with black or white per the theme color"). `scale-down` is the one object-fit that never upscales:

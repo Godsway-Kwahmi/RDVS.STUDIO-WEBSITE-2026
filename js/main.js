@@ -6307,6 +6307,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/2gs/2gs-logo-construction-v2.mp4',
         imageUrl: 'assets/images/2gs/2gs-logo-construction-frame.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: '2gs.html',
         desc: 'The eight-and-a-half-second ident: the monogram assembles itself out of the dark, its lower blocks arriving as bare outlines before they fill, while the stacked 2GS, CONSTRUCTION and +LOGISTICS wordmark draws in beside them; faint construction ticks sit under the mark and to its right, then fade as light crosses the sand fill and the finished lockup holds',
         specs: {
@@ -8078,6 +8079,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/elo-tv/elo-tv-logo-16x9-v2.mp4',
         imageUrl: 'assets/images/elo-tv/elo-tv-logo-frame.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'elo-tv.html',
         desc: 'The broadcast ident itself: eight seconds at 1920x1080 and 30 fps in which a bloom of light opens the top bar of the slanted E, the three bars unfold onto a presenter in red, and the red tv chip resolves its letters before the mark holds and fades back to black.',
         specs: {
@@ -8174,6 +8176,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/elo-tv/elo-tv-17.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
@@ -8210,6 +8213,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/elo-tv/elo-tv-16.jpg',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'elo-tv.html',
         desc: 'A 2015 brand identity and broadcast motion package — slanted ELO wordmark with halftone velocity trail, stationery system and a kinetic on-air ident that opens the letterforms over live footage.',
         specs: {
@@ -9202,18 +9206,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     '.hero-viewport .hero-credit'
   ];
 
+  // Owner, 2026-11-06: the phone contain slide is boxed between the nav bar and the caption block --
+  // the base the markup draws -- so the base is where the footer block's top lands, measured here
+  // rather than guessed from a breakpoint. The caption's own wrapping can move that line, which is
+  // why this rides the same calls that already re-classify the caption's ink.
+  function assignMobileContainBase() {
+    const foot = document.querySelector('.hero-footer');
+    if (!foot) return;
+    const base = Math.round(window.innerHeight - foot.getBoundingClientRect().top);
+    document.documentElement.style.setProperty('--mobile-contain-base', Math.max(0, base) + 'px');
+  }
+
   function assignHeroGrounds() {
     const foot = document.querySelector('.hero-footer-container');
     if (!foot) return;
+    assignMobileContainBase();
     const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
     const bandTop = window.innerHeight - strip;
+    // A phone contain slide paints the page's own ground, not a photograph, so every caption row
+    // stands on the theme and must wear the theme's ink. Without this the rows above the band stayed
+    // on the media ink and, in the light theme, the title went white-on-white.
+    const onGround = window.innerWidth <= 768 &&
+      !!document.querySelector('.slide.active .slide-media-mobile-contain');
     for (const sel of HERO_GROUND_ROWS) {
       for (const el of document.querySelectorAll(sel)) {
         const box = el.getBoundingClientRect();
         // No box is an inactive caption card: nothing is being read there, and its own rows would be
         // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
         if (!box.width || !box.height) continue;
-        el.dataset.heroGround = box.top >= bandTop - 0.05 ? 'band' : 'media';
+        el.dataset.heroGround = onGround || box.top >= bandTop - 0.05 ? 'band' : 'media';
       }
     }
   }
@@ -9458,6 +9479,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (mediaContainer) {
           if (proj.videoUrl) {
             mediaContainer.classList.remove('slide-media-contain');
+            // Owner, 2026-11-06: a film whose frame is too wide to show whole on a phone can ask for
+            // the phone contain treatment through `mobileFit`. It is a phone-only class; the desktop
+            // branch below stays on cover.
+            mediaContainer.classList.toggle('slide-media-mobile-contain', proj.mobileFit === 'contain');
             if ((proj.is360 || proj.videoUrl.includes('360')) && window.VR360) {
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
@@ -9529,6 +9554,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             // cover would crop it.
             const isContain = proj.fit === 'contain';
             mediaContainer.classList.toggle('slide-media-contain', isContain);
+            // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
+            // sliver is shown whole between the nav and the caption, on the theme ground. Kept off the
+            // desktop branch on purpose -- the stylesheet only reads it under 769 px.
+            mediaContainer.classList.toggle('slide-media-mobile-contain', proj.mobileFit === 'contain');
             // Contain is a desktop law only, and the owner moved its floor to 1024 px on 2026-11-06:
             // "implement the portrait positioning only on desktops from 1024pixels wide and above. For any
             // screen less than that width ... please have the images fill the whole screen like before".
