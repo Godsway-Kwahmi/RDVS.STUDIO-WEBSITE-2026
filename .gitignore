@@ -57,3 +57,6 @@ fetch_gallery.py
 record_master_*.js
 tube_videos.json
 assets/videos/*-walkthrough-60s.mp4
+
+# Netlify local configuration and build state
+.netlify/
