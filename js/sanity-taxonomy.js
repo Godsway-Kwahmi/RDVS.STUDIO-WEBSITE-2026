@@ -7,11 +7,11 @@
 window.RDVSSanityTaxonomy = (function () {
   var SERVICE_LABELS = {
     "art": "Art",
-    "bim": "BIM",
     "competitions": "Competitions",
     "design": "Design",
     "architecture-planning": "Architectural Design",
     "art-direction": "Art Direction",
+    "bim": "BIM",
     "web-design": "Digital & Web Design",
     "graphic-design": "Graphic Design",
     "illustration": "Illustration",
@@ -21,7 +21,7 @@ window.RDVSSanityTaxonomy = (function () {
     "turnkey-build": "Design + Build",
     "cost-engineering": "Cost Engineering",
     "product-material-sourcing": "Product and Material Sourcing",
-    "studio-projects": "In-house",
+    "studio-projects": "RND",
     "photography": "Photography",
     "architectural-photography": "Architectural Photography",
     "drone-photography": "Drone Photography",
@@ -38,6 +38,7 @@ window.RDVSSanityTaxonomy = (function () {
   var SERVICE_PARENTS = {
     "architecture-planning": "design",
     "art-direction": "design",
+    "bim": "design",
     "web-design": "design",
     "graphic-design": "design",
     "illustration": "design",
@@ -57,7 +58,7 @@ window.RDVSSanityTaxonomy = (function () {
     "tracking": "vfx-cgi",
     "virtual-reality": "vfx-cgi",
   };
-  var MAIN_SERVICES = ["art", "bim", "competitions", "design", "turnkey-build", "studio-projects", "photography", "vfx-cgi"];
+  var MAIN_SERVICES = ["art", "competitions", "design", "turnkey-build", "studio-projects", "photography", "vfx-cgi"];
   function label(token) { return SERVICE_LABELS[token] || token || ''; }
   function labels(tokens) {
     return (tokens || []).filter(Boolean).map(label);

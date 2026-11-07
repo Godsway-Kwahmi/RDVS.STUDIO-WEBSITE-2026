@@ -13,11 +13,11 @@
  */
 
 export type ServiceToken =   | 'art'
-  | 'bim'
   | 'competitions'
   | 'design'
   | 'architecture-planning'
   | 'art-direction'
+  | 'bim'
   | 'web-design'
   | 'graphic-design'
   | 'illustration'
@@ -43,14 +43,13 @@ export type ServiceToken =   | 'art'
 
 export interface ServiceOption {value: ServiceToken; label: string}
 
-/** The eight top-level services on work.html's filter bar, in bar order. */
+/** The 7 top-level services on work.html's filter bar, in bar order. */
 export const MAIN_SERVICES: ServiceOption[] = [
   {value: 'art', label: 'Art'},
-  {value: 'bim', label: 'BIM'},
   {value: 'competitions', label: 'Competitions'},
   {value: 'design', label: 'Design'},
   {value: 'turnkey-build', label: 'Design + Build'},
-  {value: 'studio-projects', label: 'In-house'},
+  {value: 'studio-projects', label: 'RND'},
   {value: 'photography', label: 'Photography'},
   {value: 'vfx-cgi', label: 'VFX + CGI'},
 ]
@@ -60,6 +59,7 @@ export interface SubServiceOption extends ServiceOption {parent: string}
 export const SUB_SERVICES: SubServiceOption[] = [
   {value: 'architecture-planning', label: 'Architectural Design', parent: 'design'},
   {value: 'art-direction', label: 'Art Direction', parent: 'design'},
+  {value: 'bim', label: 'BIM', parent: 'design'},
   {value: 'web-design', label: 'Digital & Web Design', parent: 'design'},
   {value: 'graphic-design', label: 'Graphic Design', parent: 'design'},
   {value: 'illustration', label: 'Illustration', parent: 'design'},

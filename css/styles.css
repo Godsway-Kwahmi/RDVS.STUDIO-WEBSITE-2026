@@ -224,7 +224,7 @@ button {
 /* Studio Brand Link — strictly "RDVS" */
 .brand-link {
   font-size: 1rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold, 700);
   color: var(--brand-blue);
   flex-shrink: 0;
   letter-spacing: -0.01em;
@@ -599,7 +599,9 @@ button {
      (0,1,0) lost the cascade and every contain slide still computed `cover`. Match the picture
      context to win on specificity, and keep the bare class for any img rendered outside a <picture>. */
   .slide-picture img.slide-img-contain,
-  .slide-img-contain {
+  .slide-img-contain,
+  .slide-media-contain video,
+  .slide-video-contain {
     object-fit: scale-down;
     /* Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
        edge starts on the caption's own column ("the left edge of the image is in line with the text

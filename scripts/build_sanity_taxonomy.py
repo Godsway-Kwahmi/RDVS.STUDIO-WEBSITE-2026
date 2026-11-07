@@ -102,7 +102,7 @@ slide_pools = [(k, pool_names[k]) for k in slide_keys if k in pool_names]
 # --- sanity checks on what we just read -----------------------------------------
 # Counts are cross-checked against the site's own tables rather than pinned to numbers, so adding
 # a service is a one-place change; the floors only catch a parse that read an empty bar.
-assert len(bar) >= 8 and len(mains) >= 8, 'the filter bar parsed to %d tokens' % len(bar)
+assert len(bar) >= 8 and len(mains) >= 7, 'the filter bar parsed to %d tokens' % len(bar)
 assert len(mains) + len(subs) == len(bar), 'a bar token is neither main nor sub'
 assert set(main_names) == {t for t, _ in mains}, \
     'main.js MAIN_SERVICE_NAMES %s != the bar\'s main services %s' % (
@@ -151,7 +151,7 @@ body.append('export type ServiceToken = %s' % ts_list(
 body.append('')
 body.append("export interface ServiceOption {value: ServiceToken; label: string}")
 body.append('')
-body.append('/** The eight top-level services on work.html\'s filter bar, in bar order. */')
+body.append('/** The %d top-level services on work.html\'s filter bar, in bar order. */' % len(mains))
 body.append('export const MAIN_SERVICES: ServiceOption[] = [')
 body.append(ts_list(['{value: %s, label: %s},' % (q(t), q(l)) for t, l in mains]))
 body.append(']')

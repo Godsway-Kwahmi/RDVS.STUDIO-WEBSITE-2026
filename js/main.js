@@ -28,15 +28,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // and stay on the project page (user, 2026-10-04). Keys, never labels, are the identity: labels
   // get renamed, keys do not. scratch/_service_axis.py derives both tables from the bar and the
   // pages, and the harness fails if the copies below drift from either.
-  const MAIN_SERVICE_ORDER = ['art', 'bim', 'competitions', 'design', 'turnkey-build',
+  const MAIN_SERVICE_ORDER = ['art', 'competitions', 'design', 'turnkey-build',
     'studio-projects', 'photography', 'vfx-cgi'];
   const MAIN_SERVICE_NAMES = {
-    'art': 'Art', 'bim': 'BIM', 'competitions': 'Competitions', 'design': 'Design',
-    'turnkey-build': 'Design + Build', 'studio-projects': 'In-house',
+    'art': 'Art', 'competitions': 'Competitions', 'design': 'Design',
+    'turnkey-build': 'Design + Build', 'studio-projects': 'RND',
     'photography': 'Photography', 'vfx-cgi': 'VFX + CGI'
   };
   const SUB_SERVICE_PARENTS = {
-    'architecture-planning': 'design', 'art-direction': 'design', 'web-design': 'design',
+    'architecture-planning': 'design', 'art-direction': 'design', 'bim': 'design', 'web-design': 'design',
     'graphic-design': 'design', 'illustration': 'design', 'industrial-design': 'design', 'interior-design': 'design',
     'motion-design': 'design',
     'cost-engineering': 'turnkey-build', 'product-material-sourcing': 'turnkey-build',
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
-        mobilePosition: 'center',
+        mobilePosition: 'calc(50% + 90px) center',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
         specs: {
@@ -1457,6 +1457,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2021',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
+        fit: 'contain',
         videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
         mobilePosition: 'center',
@@ -3638,6 +3639,25 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
           year: '2018',
           disciplines: '[\'3D Visualization\']'
+        }
+      },
+      {
+        id: 'hamlet-estate-plate28',
+        title: 'The Hamlet',
+        category: '3D Visualization — 2018',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/hamlet/632512549_18531000388066181_4551257344195183208_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'the-hamlet-presentation.html',
+        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
+        specs: {
+          client: 'Nest',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
+          year: '2018',
+          disciplines: ['Interior Design', '3D Visualization']
         }
       },
       {
@@ -8615,6 +8635,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'baobab-hotel-exteriors-plate3',
+        title: 'Baobab Hotel - Exteriors',
+        category: '3D Visualization — 2016',
+        service: '3D Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/baobab-hotel-exteriors/618151819_18415893631143823_4928026731099591493_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'baobab-hotel-exteriors.html'
+      },
+      {
         id: '1981-film-project-plate1',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -8717,6 +8748,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'protea-hotel-airport.html'
       },
       {
+        id: 'protea-hotel-airport-plate1',
+        title: 'Protea Hotel - Airport',
+        category: 'Architectural Visualization — 2020',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/protea-hotel-airport/626742045_18339821329240093_1053117856029620200_n.jpg',
+        fit: 'contain',
+        mobilePosition: '0% center',
+        projectUrl: 'protea-hotel-airport.html'
+      },
+      {
         id: 'ahero',
         title: 'Ahero',
         category: 'Architectural Visualization & 3D Animation — 2022',
@@ -8811,8 +8853,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-7.jpg',
         fit: 'contain',
-        containY: '75%',
-        desktopPosition: 'center 75%',
+        containY: '62%',
+        desktopPosition: 'center 62%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -8843,6 +8885,53 @@ document.addEventListener('DOMContentLoaded', async () => {
         desktopPosition: 'center 75%',
         mobilePosition: 'center',
         mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate7',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/621518319_18110728489712234_6103492954325554112_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate8',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/622761195_18138236488485238_6058413702914173974_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate9',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/622908270_18167271019400113_138851683480039831_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'giffard-park.html'
+      },
+      {
+        id: 'giffard-park-plate10',
+        title: 'Giffard Park',
+        category: 'Multi-Unit Residential — 2022',
+        service: 'Multi-Unit Residential',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/giffard-park/623046215_18177609907328818_8427966764167933738_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'giffard-park.html'
       },
       {
@@ -8893,6 +8982,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Event Space Interiors',
         discipline: 'vfx',
         imageUrl: 'assets/images/the-fitzgerald/Eud0gaBUYAABir9.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'the-fitzgerald.html'
+      },
+      {
+        id: 'the-fitzgerald-plate1',
+        title: 'The Fitzgerald',
+        category: 'Event Space Interiors — 2022',
+        service: 'Event Space Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/the-fitzgerald/622263111_18343378450226174_2074401892538003474_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'the-fitzgerald.html'
+      },
+      {
+        id: 'the-fitzgerald-plate2',
+        title: 'The Fitzgerald',
+        category: 'Event Space Interiors — 2022',
+        service: 'Event Space Interiors',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/the-fitzgerald/640059777_18561997765046812_6082808586119259174_n.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'the-fitzgerald.html'
@@ -9303,6 +9416,66 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Architectural Visualization', 'Furniture & Product Design']
         }
       },
+      {
+        id: 'ackon-desk-plate4',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/621567021_17949946770080041_4765178448596321728_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'ackon-desk.html',
+        desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
+        specs: {
+          client: 'AFK',
+          scope: 'Architectural Visualization',
+          team: 'AFK x RDVS',
+          year: '2022',
+          disciplines: ['Architectural Visualization', 'Furniture & Product Design']
+        }
+      },
+      {
+        id: 'ackon-desk-plate5',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/627751756_18306854767281012_6667867003454250581_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'ackon-desk.html',
+        desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
+        specs: {
+          client: 'AFK',
+          scope: 'Architectural Visualization',
+          team: 'AFK x RDVS',
+          year: '2022',
+          disciplines: ['Architectural Visualization', 'Furniture & Product Design']
+        }
+      },
+      {
+        id: 'ackon-desk-plate6',
+        title: 'Ackon Desk',
+        category: 'Architectural Visualization — 2022',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/ackon-desk/628012200_18302095900263102_5858083207762819128_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'ackon-desk.html',
+        desc: 'Sculptural solid timber executive desk balancing robust organic joinery with clean architectural silhouettes.',
+        specs: {
+          client: 'AFK',
+          scope: 'Architectural Visualization',
+          team: 'AFK x RDVS',
+          year: '2022',
+          disciplines: ['Architectural Visualization', 'Furniture & Product Design']
+        }
+      },
 
       {
         id: 'lamu',
@@ -9311,7 +9484,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUHJPXoA4P9Sk.jpg',
-        fit: 'contain',
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'lamu.html',
@@ -9331,7 +9503,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUIQMXoAIdEBC.jpg',
-        fit: 'contain',
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'lamu.html',
@@ -9351,7 +9522,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUHoSXwAEwqDx.jpg',
-        fit: 'contain',
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'lamu.html',
@@ -9371,7 +9541,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Visualization',
         discipline: 'vfx',
         imageUrl: 'assets/images/lamu/FtIUI0QXoCAi9Nz.jpg',
-        fit: 'contain',
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'lamu.html',
@@ -9536,6 +9705,65 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
         mobilePosition: 'center',
         mobileFit: 'contain',
+        projectUrl: 'caustics-rnd.html',
+        desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
+        specs: {
+          client: 'RDVS Studios',
+          scope: 'Self-initiated study: modelling, look-dev, caustic light simulation, lighting, rendering and edit',
+          team: 'RDVS',
+          year: '2020',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
+        id: 'caustics-rnd-plate1',
+        title: 'Caustics RnD',
+        category: '3D Animation — 2020',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/caustics-rnd/619655349_18089155420855194_8681370630851501514_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'caustics-rnd.html',
+        desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
+        specs: {
+          client: 'RDVS Studios',
+          scope: 'Self-initiated study: modelling, look-dev, caustic light simulation, lighting, rendering and edit',
+          team: 'RDVS',
+          year: '2020',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
+        id: 'caustics-rnd-plate2',
+        title: 'Caustics RnD',
+        category: '3D Animation — 2020',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/caustics-rnd/621450795_18107617090736756_5698083828675164716_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'caustics-rnd.html',
+        desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
+        specs: {
+          client: 'RDVS Studios',
+          scope: 'Self-initiated study: modelling, look-dev, caustic light simulation, lighting, rendering and edit',
+          team: 'RDVS',
+          year: '2020',
+          disciplines: ['Motion Design', '3D Animation']
+        }
+      },
+      {
+        id: 'caustics-rnd-plate3',
+        title: 'Caustics RnD',
+        category: '3D Animation — 2020',
+        service: '3D Animation',
+        discipline: 'motion',
+        imageUrl: 'assets/images/caustics-rnd/634561267_18406382041132447_2989004622592241466_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
         specs: {
@@ -10185,26 +10413,25 @@ document.addEventListener('DOMContentLoaded', async () => {
       {
         id: 'product-mlky',
         title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
+        category: 'Design · RND · VFX + CGI — 2021',
+        service: 'Design · RND · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
         fit: 'contain',
-        mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
         specs: {
           client: 'RDVS Studios',
           year: '2021',
-          disciplines: ['Industrial Design', 'Product Visualization', 'In-house']
+          disciplines: ['Industrial Design', 'Product Visualization', 'RND']
         }
       },
       {
         id: 'product-mlky-plate2',
         title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
+        category: 'Design · RND · VFX + CGI — 2021',
+        service: 'Design · RND · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-2.jpg',
         fit: 'contain',
@@ -10215,14 +10442,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'RDVS Studios',
           year: '2021',
-          disciplines: ['Industrial Design', 'Product Visualization', 'In-house']
+          disciplines: ['Industrial Design', 'Product Visualization', 'RND']
         }
       },
       {
         id: 'product-mlky-plate3',
         title: 'MLKY',
-        category: 'Design · In-house · VFX + CGI — 2021',
-        service: 'Design · In-house · VFX + CGI',
+        category: 'Design · RND · VFX + CGI — 2021',
+        service: 'Design · RND · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-3.jpg',
         fit: 'contain',
@@ -10233,7 +10460,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'RDVS Studios',
           year: '2021',
-          disciplines: ['Industrial Design', 'Product Visualization', 'In-house']
+          disciplines: ['Industrial Design', 'Product Visualization', 'RND']
         }
       },
       {
@@ -10740,7 +10967,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       service: 'Design · VFX + CGI',
       discipline: 'vfx',
       imageUrl: 'assets/images/dyv/dyv-dawn.jpg',
-      mobilePosition: '18% center',
+      mobilePosition: 'calc(50% + 90px) center',
       projectUrl: 'dyv.html'
     });
     projects.push({
@@ -11221,29 +11448,26 @@ document.addEventListener('DOMContentLoaded', async () => {
               const deskVid = proj.videoUrl;
               const deskPoster = proj.imageUrl || '';
               const rung = filmRendition(proj);
-              // Videos take the entry's own `mobilePosition` now, the same way the image branch below already
-              // does (owner, 2026-11-03: "...make sure we capture the right half of the video... so
-              // don't center this video like the other videos"). Census over the pool as
-              // scratch/_slide_deck.py parses it: 26 entries carry a videoUrl, 25 of them say 'center' and
-              // only Ahero's says anything else, so wiring the field through moves Ahero and leaves the
-              // other 25 films exactly where they are.
-              //
-              // Ahero's value is the middle of the right half: 84% puts the 390 px window on frame x
-              // 62.0%..88.0%, measured by scratch/_ahero_right_half.py through the site's own mapping
-              // (and its edge-energy profile puts the film's work at fx=0.772, so the owner's half is
-              // where the work already is). The property lands on `.slide-media`, and the phone rule
-              // in css/styles.css now reads it for video as well as for a still.
+              const isContain = proj.fit === 'contain';
+              mediaContainer.classList.toggle('slide-media-contain', isContain);
+              applyMobileFit(mediaContainer, proj);
               const mobilePos = proj.mobilePosition || 'center';
               mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
-              mediaContainer.style.removeProperty('--slide-desktop-pos');
+              if (!isContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
+              else mediaContainer.style.removeProperty('--slide-desktop-pos');
+              if (isContain && proj.containY) mediaContainer.style.setProperty('--slide-contain-y', proj.containY);
+              else mediaContainer.style.removeProperty('--slide-contain-y');
 
               mediaContainer.innerHTML = rung
                 ? `
-                <video class="slide-video" src="${rung.video}" poster="${rung.poster}" muted playsinline preload="none"></video>
+                <video class="slide-video${isContain ? ' slide-video-contain' : ''}" src="${rung.video}" poster="${rung.poster}" muted playsinline preload="none"></video>
               `
                 : `
-                <video class="slide-video" src="${deskVid}" poster="${deskPoster}" muted playsinline preload="none"></video>
+                <video class="slide-video${isContain ? ' slide-video-contain' : ''}" src="${deskVid}" poster="${deskPoster}" muted playsinline preload="none"></video>
               `;
+              if (isContain) {
+                anchorContainSlide(mediaContainer);
+              }
             }
 
           } else {

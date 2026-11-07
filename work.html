@@ -95,7 +95,6 @@
         <button type="button" class="filter-btn active" data-filter="all">All</button>
 
         <button type="button" class="filter-btn" data-filter="art">Art</button>
-        <button type="button" class="filter-btn" data-filter="bim">BIM</button>
         <button type="button" class="filter-btn" data-filter="competitions">Competitions</button>
 
         <div class="filter-group" data-group="design">
@@ -104,6 +103,7 @@
           <div class="filter-dropdown" id="designSubservices">
             <button type="button" class="filter-btn filter-subbtn" data-filter="architecture-planning">Architectural Design</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="art-direction">Art Direction</button>
+            <button type="button" class="filter-btn filter-subbtn" data-filter="bim">BIM</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="web-design">Digital &amp; Web Design</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="graphic-design">Graphic Design</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="illustration">Illustration</button>
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <button type="button" class="filter-btn" data-filter="studio-projects">In-house</button>
+        <button type="button" class="filter-btn" data-filter="studio-projects">RND</button>
 
         <div class="filter-group" data-group="photography">
           <button type="button" class="filter-btn filter-group-btn" data-filter="photography"
@@ -311,11 +311,7 @@
          data-location="Accra, Ghana" 
          data-category="interior-design vfx-cgi architectural-visualization 3d-animation">
         <div class="card-media-wrapper">
-          <video src="assets/videos/tower-cascades/tower-cascades-film.mp4" class="card-img" poster="assets/images/cascades/tower-cascades-hero.jpg" muted autoplay loop playsinline
-                 preload="metadata" aria-label="Tower Cascades — the walkthrough film of the residence">
-            <source src="assets/videos/tower-cascades/tower-cascades-film.mp4" type="video/mp4">
-            Your browser does not support the embedded film.
-          </video>
+          <img src="assets/images/cascades/E1msdaCXEAEFx84.jpg" alt="Tower Cascades" class="card-img" loading="lazy">
         </div>
         <div class="card-meta">
           <div class="card-meta-main">
@@ -2508,7 +2504,7 @@
       // sub-services: their cards carry the parent token with no sub-service
       // evidence behind it.
       const SERVICE_GROUPS = {
-        design: ['architecture-planning', 'art-direction', 'web-design',
+        design: ['architecture-planning', 'art-direction', 'bim', 'web-design',
                  'graphic-design', 'illustration', 'industrial-design', 'interior-design', 'motion-design'],
         photography: ['architectural-photography', 'drone-photography', 'principal-photography'],
         'turnkey-build': ['turnkey-build', 'cost-engineering', 'product-material-sourcing'],
