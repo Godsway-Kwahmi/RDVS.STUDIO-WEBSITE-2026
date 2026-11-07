@@ -3389,6 +3389,12 @@ a.subservice-item:hover {
     row-gap: 16px;
   }
 
+  /* Owner markup 2026-11-07: move volume pill and slide counter down by 12px on mobile */
+  .hero-status-row .hero-volume-control,
+  .hero-status-row .slide-status {
+    transform: translateY(12px);
+  }
+
   .hero-social-links {
     /* "MOVE HERE, LEFT ALIGNED" -- the phone drawing's blue box round the social row, with an arrow
        onto the container's left edge.  The row is already full width, so this is the whole change. */

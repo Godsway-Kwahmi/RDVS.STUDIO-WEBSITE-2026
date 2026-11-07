@@ -1355,6 +1355,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'architecture',
         imageUrl: 'assets/images/dyv/dyv-panoramic-header.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'dyv.html',
         desc: 'An iconic multi-tiered mixed-use urban gateway designed to maximize natural airflow, communal terrace courtyards, and sustainable coastal resilience.',
@@ -2051,6 +2052,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'smsgh.html',
         desc: 'Visualization of the breakout lounge: exposed timber ceiling beams and track lights, large colourful paintings on white walls, grey sofas, two yellow armchairs on a dark shag rug, black coffee table and white chairs beyond.',
 
+        specs: {
+          client: 'Hubtel',
+          scope: 'Interior design, graphic design, digital illustration and architectural visualization of the SMSGH workplace: reception, private offices and a breakout lounge',
+          team: 'RDVS. DESIGN',
+          year: '2013',
+          disciplines: ['Interior Design', 'Graphic Design', 'Digital Illustration', 'Architectural Visualization']
+        }
+      },
+      {
+        id: 'smsgh-plate3',
+        title: 'SMSGH',
+        category: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization — 2013',
+        service: 'Interior Design, Graphic Design, Digital Illustration & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/smsgh/smsgh-5.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'smsgh.html',
+        desc: 'Visualization of the boardroom: long pale table with black leather chairs, white ceiling with circular pendants and a wall graphic of stylized speech bubbles.',
         specs: {
           client: 'Hubtel',
           scope: 'Interior design, graphic design, digital illustration and architectural visualization of the SMSGH workplace: reception, private offices and a breakout lounge',
@@ -8789,6 +8810,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-7.jpg',
         fit: 'contain',
+        containY: '75%',
+        desktopPosition: 'center 75%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -8801,6 +8824,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-8.jpg',
         fit: 'contain',
+        containY: '75%',
+        desktopPosition: 'center 75%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -8813,6 +8838,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-9.jpg',
         fit: 'contain',
+        containY: '75%',
+        desktopPosition: 'center 75%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -9017,8 +9044,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
+        mobilePosition: '100% center',
         projectUrl: 'ttd.html'
       },      {
         id: 'ttd-plate14',
