@@ -3989,3 +3989,19 @@ html[data-intro="done"] .rdvs-intro-veil {
 }
 /* RDVS-INTRO:END */
 
+
+/* Owner update 2026-11-07: On mobile for wide treatment (.is-contain-slide under 769px),
+   the project title and date are black on the light theme's white ground, while the
+   service name stays dark grey (--text-secondary). In dark theme, they take white. */
+@media (max-width: 768px) {
+  .hero-viewport.is-contain-slide .caption-card.active .project-title,
+  .hero-viewport.is-contain-slide .caption-card.active .project-title a,
+  .hero-viewport.is-contain-slide .caption-card.active .project-date {
+    color: #000000;
+  }
+  [data-theme="dark"] .hero-viewport.is-contain-slide .caption-card.active .project-title,
+  [data-theme="dark"] .hero-viewport.is-contain-slide .caption-card.active .project-title a,
+  [data-theme="dark"] .hero-viewport.is-contain-slide .caption-card.active .project-date {
+    color: #ffffff;
+  }
+}

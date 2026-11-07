@@ -11207,9 +11207,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!heroViewport) return;
     const media = document.querySelector('.slide.active .slide-media');
     if (!media) return;
-    const treatment = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain')) ||
-      (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
-    heroViewport.classList.toggle('is-contain-slide', treatment);
+    const isMobileWide = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain'));
+    const isDesktopContain = (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
+    heroViewport.classList.toggle('is-contain-slide', isMobileWide || isDesktopContain);
+    heroViewport.classList.toggle('is-mobile-wide-slide', isMobileWide);
   }
 
   function assignHeroGrounds() {
@@ -11218,6 +11219,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     assignMobileContainBase();
     // After the base, so the phone plate is measured in the box it will actually occupy.
     assignHeroScrim();
+    const isMobileWide = !!(heroViewport && heroViewport.classList.contains('is-mobile-wide-slide'));
     const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
     const bandTop = window.innerHeight - strip;
     const activeSlide = document.querySelector('.slide.active');
@@ -11246,7 +11248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
         if (!box.width || !box.height) continue;
         if (el.classList.contains('project-title')) {
-          el.dataset.heroGround = 'media';
+          el.dataset.heroGround = isMobileWide ? 'band' : 'media';
           continue;
         }
         if (box.top >= bandTop - 0.05) {
@@ -11428,7 +11430,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // simply left off. Both caption sites build the line through here for that reason.
   function categoryLine(service, yr) {
     return yr
-      ? `<span class="service-name">${service}</span> &mdash; ${yr}`
+      ? `<span class="service-name">${service}</span> &mdash; <span class="project-date">${yr}</span>`
       : `<span class="service-name">${service}</span>`;
   }
 
@@ -12249,14 +12251,15 @@ document.addEventListener('DOMContentLoaded', async () => {
    * re-arms the walk from the new position, so the window follows the viewer instead of running ahead of
    * them into files nobody asked for.
    */
-  const STILL_WARM_AHEAD = 4;           // slides in front of the viewer the still queue may reach
+  // Unbounded whole-draw preloading: all twenty slides of the draw are warmed in the
+  // background so the entire cut is cached (owner order 2026-11-07; Vercel 100 GB cap no longer applies on Namecheap).
   const warmedStills = new Set();       // urls this page has already pulled into the cache
   const stillWarmInFlight = new Map();  // url -> the background stills currently in flight
   let stillWarmGap = null;
   let stillWarmQueued = false;
 
   function stillWarmUrl() {
-    for (let step = 0; step <= STILL_WARM_AHEAD && step < totalSlides; step++) {
+    for (let step = 0; step < totalSlides; step++) {
       const idx = (currentIndex + step) % totalSlides;
       const proj = projects[idx];
       const slide = slides[idx];
@@ -12339,11 +12342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    */
   const FILM_WARM_RETRY_MS = 1200;      // breathing room between two warm passes
   const FILM_WARM_CAP_MS = 20000;       // a stalled range must not park the whole queue
-  // Same 2026-11-06 trim as the stills, and the same reason in a sharper form: a pooled film averages
-  // 10.6 MB and the largest is 43 MB, so walking every film in the draw could put 25 MB into the pipe for
-  // a visitor who never saw a second slide. Three ahead keeps the film the viewer is about to reach
-  // buffered without paying for the ones behind it.
-  const FILM_WARM_AHEAD = 3;            // slides in front of the viewer the film queue may reach
+  // Whole-draw film preloading: all films in the draw are queued in the background one at a time.
   const warmedFilms = new Set();        // urls this page has already taken as far as it intends to
   let warmItem = null;                  // the single film currently in flight
   let warmTimer = null;
@@ -12369,7 +12368,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ... but "the active slide already has the pipe" is only true once the deck has STARTED. Under the intro
     // veil nothing is playing, a built film slide carries preload="none", and the slide the viewer lands on in
     // 6.9 s is precisely the one whose bytes matter most, so while deckStarted is false it is first in line.
-    for (let step = deckStarted ? 1 : 0; step <= FILM_WARM_AHEAD && step < totalSlides; step++) {
+    for (let step = deckStarted ? 1 : 0; step < totalSlides; step++) {
       const idx = (currentIndex + step) % totalSlides;
       const slide = slides[idx];
       const vid = slide ? slide.querySelector('video') : null;
