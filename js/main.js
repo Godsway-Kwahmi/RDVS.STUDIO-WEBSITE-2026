@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'kuma-residence.html': ['design', 'vfx-cgi'],
     'la-beach-towers.html': ['design', 'vfx-cgi'],
     'lamu.html': ['design', 'vfx-cgi'],
+    '94-laurel.html': ['vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
     'margin.html': ['design', 'vfx-cgi'],
@@ -9592,6 +9593,41 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: '94-laurel',
+        title: '94 Laurel',
+        category: 'VFX + CGI — 2013',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/94-laurel/94-laurel-1.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: '94-laurel.html',
+        desc: 'Exterior CGI visualization for a residential property in Laurel, Canada, commissioned by Brent Hughes in 2013. 3D modeling, texturing, shading, photoreal rendering, and digital post-processing by RDVS.',
+        specs: {
+          client: 'Brent Hughes',
+          location: 'Laurel, Canada',
+          year: '2013',
+          disciplines: ['3D Modeling', 'Architectural Visualization', 'Post-Processing', 'Rendering']
+        }
+      },
+      {
+        id: '94-laurel-plate2',
+        title: '94 Laurel',
+        category: 'VFX + CGI — 2013',
+        service: 'Architectural Visualization',
+        discipline: 'vfx',
+        imageUrl: 'assets/images/94-laurel/94-laurel-2.jpg',
+        mobilePosition: 'center',
+        projectUrl: '94-laurel.html',
+        desc: 'Exterior CGI visualization for a residential property in Laurel, Canada, commissioned by Brent Hughes in 2013. 3D modeling, texturing, shading, photoreal rendering, and digital post-processing by RDVS.',
+        specs: {
+          client: 'Brent Hughes',
+          location: 'Laurel, Canada',
+          year: '2013',
+          disciplines: ['3D Modeling', 'Architectural Visualization', 'Post-Processing', 'Rendering']
+        }
+      },
+      {
         id: 'mig',
         title: 'MIG',
         category: 'Modern Indigenous Goods — 2021',
@@ -10455,6 +10491,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · RND · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
@@ -11184,11 +11221,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     assignHeroScrim();
     const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
     const bandTop = window.innerHeight - strip;
-    // A phone contain slide paints the page's own ground, not a photograph, so every caption row
+    // A contain slide (phone or desktop) paints the page's own ground, not a photograph, so every caption row
     // stands on the theme and must wear the theme's ink. Without this the rows above the band stayed
     // on the media ink and, in the light theme, the title went white-on-white.
-    const onGround = window.innerWidth <= 768 &&
-      !!document.querySelector('.slide.active .slide-media-mobile-contain');
+    const onGround = !!(heroViewport && heroViewport.classList.contains('is-contain-slide'));
     for (const sel of HERO_GROUND_ROWS) {
       for (const el of document.querySelectorAll(sel)) {
         const box = el.getBoundingClientRect();
@@ -11408,7 +11444,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // they paint at their own size, and only rounding says they are wider than tall.  It reaches five
     // entries in all -- the two 1H copies of mig-1h-1 and three Tower Cascades near-squares -- and stops
     // well short of the pool's next-widest contained plate at 1.19.
-    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.05) return;
+    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.07) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
     const datum = column - PORTRAIT_DATUM_OFFSET;
     // A plate that reaches past the datum from the left has no room to sit on it without losing

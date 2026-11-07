@@ -1446,8 +1446,8 @@
       "slug": "94-laurel",
       "title": "94 Laurel",
       "year": "2013",
-      "visibility": "archived",
-      "onWorkPage": false,
+      "visibility": "live",
+      "onWorkPage": true,
       "onArchivePage": true,
       "plates": 2
     },
