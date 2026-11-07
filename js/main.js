@@ -5286,7 +5286,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/brownies-place/brownies-place-12.jpg',
         mobilePosition: '64% center',
-        mobileFit: 'contain',
         projectUrl: 'brownies-place.html',
         desc: 'A 2017 commission from the Accra developer Six Acres: RDVS Studios redesigned the facade of Brownie s Place, furnished and lit its interiors, rendered the whole set in 3D and packaged the imagery into a marketing brochure.',
         specs: {
