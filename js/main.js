@@ -11220,17 +11220,46 @@ document.addEventListener('DOMContentLoaded', async () => {
     assignHeroScrim();
     const strip = parseFloat(getComputedStyle(foot).getPropertyValue('--hero-strip-height')) || 0;
     const bandTop = window.innerHeight - strip;
-    // A contain slide (phone or desktop) paints the page's own ground, not a photograph, so every caption row
-    // stands on the theme and must wear the theme's ink. Without this the rows above the band stayed
-    // on the media ink and, in the light theme, the title went white-on-white.
-    const onGround = !!(heroViewport && heroViewport.classList.contains('is-contain-slide'));
+    const activeSlide = document.querySelector('.slide.active');
+    const media = activeSlide ? activeSlide.querySelector('.slide-media') : null;
+    const img = media ? media.querySelector('img, video') : null;
+    const isContain = !!(heroViewport && heroViewport.classList.contains('is-contain-slide'));
+    let imgRect = null;
+    if (isContain && media && img && (img.naturalWidth || img.videoWidth)) {
+      const mBox = media.getBoundingClientRect();
+      const natW = img.naturalWidth || img.videoWidth;
+      const natH = img.naturalHeight || img.videoHeight;
+      const scale = Math.min(1, mBox.width / natW, mBox.height / natH);
+      const paintedW = natW * scale;
+      const paintedH = natH * scale;
+      const shift = parseFloat(getComputedStyle(media).getPropertyValue('--slide-contain-shift')) || 0;
+      const yPctStr = getComputedStyle(media).getPropertyValue('--slide-contain-y') || '50%';
+      const yPct = (parseFloat(yPctStr) || 50) / 100;
+      const imgLeft = mBox.left + (mBox.width - paintedW) / 2 + shift;
+      const imgTop = mBox.top + (mBox.height - paintedH) * yPct;
+      imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
+    }
     for (const sel of HERO_GROUND_ROWS) {
       for (const el of document.querySelectorAll(sel)) {
         const box = el.getBoundingClientRect();
         // No box is an inactive caption card: nothing is being read there, and its own rows would be
         // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
         if (!box.width || !box.height) continue;
-        el.dataset.heroGround = onGround || box.top >= bandTop - 0.05 ? 'band' : 'media';
+        if (el.classList.contains('project-title')) {
+          el.dataset.heroGround = 'media';
+          continue;
+        }
+        if (box.top >= bandTop - 0.05) {
+          el.dataset.heroGround = 'band';
+          continue;
+        }
+        if (isContain) {
+          const onImg = imgRect && box.left < imgRect.right && box.right > imgRect.left &&
+                        box.top < imgRect.bottom && box.bottom > imgRect.top;
+          el.dataset.heroGround = onImg ? 'media' : 'band';
+        } else {
+          el.dataset.heroGround = 'media';
+        }
       }
     }
   }
