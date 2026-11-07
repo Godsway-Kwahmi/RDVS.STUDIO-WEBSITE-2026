@@ -10455,7 +10455,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · RND · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
-        fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
