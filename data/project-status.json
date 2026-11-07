@@ -1986,8 +1986,8 @@
       "slug": "product-mlky",
       "title": "MLKY",
       "year": "2021",
-      "visibility": "archived",
-      "onWorkPage": false,
+      "visibility": "live",
+      "onWorkPage": true,
       "onArchivePage": true,
       "plates": 3
     },
@@ -2004,8 +2004,8 @@
       "slug": "lamu",
       "title": "Lamu",
       "year": "2022",
-      "visibility": "archived",
-      "onWorkPage": false,
+      "visibility": "live",
+      "onWorkPage": true,
       "onArchivePage": true,
       "plates": 4
     }
