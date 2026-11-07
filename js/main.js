@@ -2702,6 +2702,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
+        id: 'la-beach-towers-plate4',
+        title: 'La Beach Towers',
+        category: '3D Visualization — 2013',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/la-beach-towers/608305180_18551338825012667_1648170342465681991_n.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'la-beach-towers.html',
+        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          year: '2013',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
+        id: 'la-beach-towers-plate5',
+        title: 'La Beach Towers',
+        category: '3D Visualization — 2013',
+        service: '3D Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/la-beach-towers/G_1R3UmbUAITQo5.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'la-beach-towers.html',
+        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
+          team: 'RDVS Team',
+          year: '2013',
+          disciplines: ['3D Visualization']
+        }
+      },
+      {
         id: 'west-cantonments-residence-plate3',
         title: 'West Cantonments Residence',
         category: 'Interior Design & 3D Visualization — 2018',
