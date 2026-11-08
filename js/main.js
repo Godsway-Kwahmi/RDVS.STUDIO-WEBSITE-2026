@@ -2467,25 +2467,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'watsons-place-plate2',
-        title: 'Watson’s Place',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'watsons-place.html',
-        desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
         id: 'watsons-place-plate3',
         title: 'Watson’s Place',
         category: 'Interior Design & Architectural Visualization — 2016',
@@ -2502,6 +2483,25 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2016',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
+        }
+      },
+      {
+        id: 'watsons-place-plate4',
+        title: 'Watson’s Place',
+        category: 'Interior Design & Architectural Visualization — 2016',
+        service: 'Interior Design & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/watsons-place/watsons-place-1.jpg',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'watsons-place.html',
+        desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
+        specs: {
+          client: 'Private Client',
+          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
+          team: 'RDVS. DESIGN',
+          year: '2016',
+          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
       {
@@ -6215,25 +6215,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2011',
           disciplines: ['Architectural Visualization']
         },
-      },
-      {
-        id: 'ert',
-        title: 'ERT',
-        category: 'Architectural Visualization — 2015',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/ert/ert-1.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'ert.html',
-        desc: 'Architectural visualization of ERT, a townhouse scheme by Mobius Architecture in Accra: three white cubic volumes with timber roof screens and a lit lap pool, seen at dusk.',
-        specs: {
-          client: 'Private Client',
-          architecture: 'Mobius Architecture',
-          scope: '3D architectural visualization: exterior views of the ERT townhouses at dusk and in daylight, including the drive approach and the corner house.',
-          team: 'RDVS Team',
-          year: '2015',
-          disciplines: '[\'Architectural Visualization\']'
-        }
       },
       {
         id: 'ert-plate1',
