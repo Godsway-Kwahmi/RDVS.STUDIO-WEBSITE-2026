@@ -696,69 +696,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'funko-ridge-plate2',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-6.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
         id: 'funko-ridge-plate3',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
         service: 'Architectural Design & Spatial Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-15.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate4',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate5',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-9.jpg',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
@@ -797,25 +740,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Architectural Design & Spatial Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-11.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate8',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-12.jpg',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
@@ -868,25 +792,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'funko-ridge-plate11',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-17.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
         id: 'funko-ridge-plate12',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
@@ -926,50 +831,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'funko-ridge-plate14',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-20.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
         id: 'funko-ridge-plate15',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
         service: 'Architectural Design & Spatial Design',
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-21.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate16',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-22.jpg',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
@@ -1002,26 +869,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'funko-ridge-plate18',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-24.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
         id: 'funko-ridge-plate19',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
@@ -1029,25 +876,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'architecture',
         imageUrl: 'assets/images/funko-ridge/funko-ridge-25.jpg',
         fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate20',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-26.jpg',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
@@ -1100,103 +928,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'funko-ridge-plate23',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-29.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate24',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-30.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate25',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-31.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate26',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-32.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate27',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-33.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
         id: 'funko-ridge-plate28',
         title: 'Funko Ridge Residence',
         category: 'Architectural Design & Spatial Design — 2019',
@@ -1205,63 +936,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/funko-ridge/funko-ridge-34.jpg',
         fit: 'contain',
         mobilePosition: 'center',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate29',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-35.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate30',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-37.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'funko-ridge.html',
-        desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
-        specs: {
-          client: 'Ridge Estates / Private Client',
-          scope: 'Architectural Design, Spatial Design, 3D VFX & Turnkey Delivery',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2019',
-          disciplines: '[\'Architectural Design\', \'Spatial Design\']'
-        }
-      },
-      {
-        id: 'funko-ridge-plate31',
-        title: 'Funko Ridge Residence',
-        category: 'Architectural Design & Spatial Design — 2019',
-        service: 'Architectural Design & Spatial Design',
-        discipline: 'architecture',
-        imageUrl: 'assets/images/funko-ridge/funko-ridge-38.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
         projectUrl: 'funko-ridge.html',
         desc: 'Terraced hillside residential enclave contoured to natural topographic gradients, minimizing site impact and optimizing panoramic ocean views.',
         specs: {
@@ -3183,25 +2857,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hamlet-estate-plate2',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-wide-hero.jpg',
-        mobilePosition: '24% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
         id: 'hamlet-estate-plate3',
         title: 'The Hamlet',
         category: '3D Visualization — 2018',
@@ -3229,44 +2884,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hamlet/E9tM3Z2XMAMNd0k.jpg',
         fit: 'contain',
         mobilePosition: '82% center',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate5',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-01.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate6',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-02.jpg',
-        mobilePosition: '70% center',
-        mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -3316,101 +2933,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hamlet-estate-plate9',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-05.jpg',
-        mobilePosition: '46% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate10',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-06.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate11',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-07.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate12',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-08.jpg',
-        mobilePosition: '68% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate13',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-09.jpg',
-        mobilePosition: '81% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
         id: 'hamlet-estate-plate14',
         title: 'The Hamlet',
         category: '3D Visualization — 2018',
@@ -3418,25 +2940,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hamlet/hamlet-10.jpg',
         mobilePosition: '73% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate15',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-11.jpg',
-        mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
@@ -3495,44 +2998,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hamlet/hamlet-14.jpg',
         mobilePosition: '40% center',
         mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate19',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-15.jpg',
-        fit: 'contain',
-        mobilePosition: '15% center',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate20',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-16.jpg',
-        fit: 'contain',
-        mobilePosition: '81% center',
         projectUrl: 'the-hamlet-presentation.html',
         desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
         specs: {
@@ -7117,25 +6582,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: ['Interior Design', '3D Visualization', 'Graphic Design', 'Industrial & Furniture Design', 'Construction']
         }
-      },
-      {
-        id: 'jhk-investment',
-        title: 'JHK',
-        category: 'Architectural Visualization — 2011',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/jhk-investment/jhk-investment-1.png',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'jhk-investment.html',
-        desc: 'JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky',
-        specs: {
-          client: 'JHK Investments',
-          scope: 'Architectural visualization for JHK Investments: ten exterior views of modern one- and two-storey houses in daylight and at dusk, and a stereo camera flythrough of the development',
-          team: 'RDVS. DESIGN',
-          year: '2011',
-          disciplines: ['Architectural Visualization']
-        },
       },
       {
         id: 'jhk-investment-plate1',
