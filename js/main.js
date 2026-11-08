@@ -2168,26 +2168,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'la-beach-towers',
-        title: 'La Beach Towers',
-        category: '3D Visualization — 2013',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-16.jpg',
-        fit: 'contain',
-        mobilePosition: '59% center',
-        mobileFit: 'contain',
-        projectUrl: 'la-beach-towers.html',
-        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'RDVS Team',
-          year: '2013',
-          disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
-        }
-      },
-      {
         id: 'west-cantonments-residence',
         title: 'West Cantonments Residence',
         category: '3D Visualization — 2018',
@@ -3873,24 +3853,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'la-beach-towers-plate1',
-        title: 'La Beach Towers',
-        category: '3D Visualization — 2013',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-1.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'la-beach-towers.html',
-        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'RDVS Team',
-          year: '2013',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
         id: 'la-beach-towers-plate2',
         title: 'La Beach Towers',
         category: '3D Visualization — 2013',
@@ -3906,26 +3868,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
           team: 'RDVS Team',
           year: '2013',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'la-beach-towers-plate3',
-        title: 'La Beach Towers',
-        category: '3D Visualization — 2013',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/la-beach-towers-12.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        projectUrl: 'la-beach-towers.html',
-        desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'RDVS Team',
-          year: '2013',
-          disciplines: '[\'3D Visualization\']'
+          disciplines: ['3D Visualization']
         }
       },
       {
@@ -7590,8 +7533,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-9.jpg',
         fit: 'contain',
-        containY: '75%',
-        desktopPosition: 'center 75%',
+        containY: '62%',
+        desktopPosition: 'center 62%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -8886,24 +8829,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-6.jpg',
-        mobilePosition: '59% center',
-        mobileFit: 'contain',
-        projectUrl: 'product-line-e-float-i.html',
-        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
-        specs: {
-          client: 'RDVS Studios',
-          year: '2020',
-        }
-      },
-      {
-        id: 'product-line-e-float-i-plate2',
-        title: 'LINE E FLOAT I',
-        category: 'Design · In-house · VFX + CGI — 2020',
-        service: 'Design · In-house · VFX + CGI',
-        discipline: 'products',
-        imageUrl: 'assets/images/mig/mig-line-e-float-i-7.jpg',
-        mobilePosition: '71% center',
-        mobileFit: 'contain',
+        fit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
@@ -8918,8 +8845,88 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Design · In-house · VFX + CGI',
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-line-e-float-i-11.jpg',
-        mobilePosition: '24% center',
-        mobileFit: 'contain',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate4',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-12.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate5',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-1.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate9',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-4.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate12',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-8.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        projectUrl: 'product-line-e-float-i.html',
+        desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
+        specs: {
+          client: 'RDVS Studios',
+          year: '2020',
+        }
+      },
+      {
+        id: 'product-line-e-float-i-plate13',
+        title: 'LINE E FLOAT I',
+        category: 'Design · In-house · VFX + CGI — 2020',
+        service: 'Design · In-house · VFX + CGI',
+        discipline: 'products',
+        imageUrl: 'assets/images/mig/mig-line-e-float-i-9.jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'product-line-e-float-i.html',
         desc: 'A media unit carried off the floor on the wall, so the floor below it stays clear and the screen reads as the only thing in the run. Shown in blush against a two-tone wall, and in white under a matching shelf.',
         specs: {
