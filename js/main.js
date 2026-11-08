@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'trumpet-africa-ident.html': ['design'],
     'ttd.html': ['design', 'vfx-cgi'],
     'villa-aggregate.html': ['design', 'vfx-cgi'],
-    'watsons-place.html': ['design', 'vfx-cgi'],
     'west-cantonments-igl-presentation.html': ['design', 'vfx-cgi'],
     'yah-kumasi-mall.html': ['design', 'vfx-cgi'],
   };
@@ -1111,25 +1110,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   interiors: {
     name: 'Interior Design',
     videos: [
-      {
-        id: 'watsons-place-film',
-        title: 'Watson’s Place',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        videoUrl: 'assets/videos/watsons-place/watsons-place-film.mp4',
-        imageUrl: 'assets/images/watsons-place/watsons-place-4.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'watsons-place.html',
-        desc: 'The delivered animation of the street views and the three rooms',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
       },
       {
         id: 'villa-aggregate-film',
@@ -2456,43 +2436,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
 
-      {
-        id: 'watsons-place-plate1',
-        title: 'Watson’s Place',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/watsons-place/watsons-place-3.jpg',
-        mobilePosition: '59% center',
-        mobileFit: 'contain',
-        projectUrl: 'watsons-place.html',
-        desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
       },
-      {
-        id: 'watsons-place-plate4',
-        title: 'Watson’s Place',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/watsons-place/watsons-place-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'watsons-place.html',
-        desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
       },
       {
         id: 'villa-aggregate-plate1',
@@ -5319,7 +5263,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5340,7 +5284,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5361,7 +5305,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-5.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5382,7 +5326,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-4.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5403,7 +5347,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-7.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5424,7 +5368,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-8.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5445,7 +5389,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-9.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5466,7 +5410,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-10.png',
         fit: 'contain',
-        desktopWidth: 900,
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -9815,7 +9759,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             mediaContainer.classList.toggle('slide-media-contain', isContain);
             mediaContainer.classList.toggle('slide-media-boxed', !!isBoxed);
             if (isBoxed) {
-              const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '900px');
+              const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
               mediaContainer.style.setProperty('--slide-desktop-width', boxW);
             } else {
               mediaContainer.style.removeProperty('--slide-desktop-width');

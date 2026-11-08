@@ -622,8 +622,8 @@ button {
 
   /* Boxed desktop slides: Hot Gossip is constrained to a 900px wide container with proportional height, surrounded by theme ground */
   .slide-media-contain.slide-media-boxed .slide-picture {
-    width: var(--slide-desktop-width, 900px);
-    max-width: var(--slide-desktop-width, 900px);
+    width: var(--slide-desktop-width, 1200px);
+    max-width: var(--slide-desktop-width, 1200px);
     height: auto;
     aspect-ratio: auto;
     display: flex;

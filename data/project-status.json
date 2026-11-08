@@ -20,15 +20,6 @@
       "onArchivePage": true,
       "plates": 17
     },
-    "watsons-place.html": {
-      "slug": "watsons-place",
-      "title": "Watson&rsquo;s Place",
-      "year": "2016",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 5
-    },
     "villa-aggregate.html": {
       "slug": "villa-aggregate",
       "title": "Villa Aggregate",
@@ -315,7 +306,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 2
+      "plates": 3
     },
     "hot-gossip.html": {
       "slug": "hot-gossip",
@@ -441,7 +432,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 15
+      "plates": 16
     },
     "el-dor.html": {
       "slug": "el-dor",
@@ -1859,6 +1850,15 @@
     "the-address.html": {
       "slug": "the-address",
       "title": "The Address",
+      "year": "2016",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 5
+    },
+    "watsons-place.html": {
+      "slug": "watsons-place",
+      "title": "Watson&rsquo;s Place",
       "year": "2016",
       "visibility": "archived",
       "onWorkPage": false,
