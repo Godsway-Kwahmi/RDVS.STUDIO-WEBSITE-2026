@@ -5167,6 +5167,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5188,6 +5189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5209,6 +5211,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-5.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5230,6 +5233,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-4.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5251,6 +5255,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-7.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5272,6 +5277,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-8.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5293,6 +5299,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/hot-gossip/hot-gossip-9.png',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -9620,8 +9627,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (isBoxed) {
               const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
               mediaContainer.style.setProperty('--slide-desktop-width', boxW);
+              const shiftX = proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0);
+              if (shiftX) {
+                mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof shiftX === 'number' ? `${shiftX}px` : shiftX);
+              } else {
+                mediaContainer.style.removeProperty('--slide-boxed-shift-x');
+              }
             } else {
               mediaContainer.style.removeProperty('--slide-desktop-width');
+              mediaContainer.style.removeProperty('--slide-boxed-shift-x');
             }
             // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
             // sliver is shown whole between the nav and the caption, on the theme ground. Kept off the

@@ -629,6 +629,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(var(--slide-boxed-shift-x, 0px));
   }
 
   .slide-media-contain.slide-media-boxed .slide-picture img.slide-img-contain,
