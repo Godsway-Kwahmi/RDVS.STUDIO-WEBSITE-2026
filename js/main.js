@@ -5302,6 +5302,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5321,6 +5323,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5340,6 +5344,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-5.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5359,6 +5365,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-4.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5378,6 +5386,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-7.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5397,6 +5407,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-8.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5416,6 +5428,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-9.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5435,6 +5449,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & 3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-10.png',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -7293,8 +7309,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-8.jpg',
         fit: 'contain',
-        containY: '62%',
-        desktopPosition: 'center 62%',
+        containY: '52%',
+        desktopPosition: 'center 52%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -8045,7 +8061,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           scope: 'Visual Effects (VFX) & Motion Design',
           team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
           year: '2016',
-          disciplines: ['Motion Design', 'Keyframe Design']
+          disciplines: ['Motion Design', '3D Animation']
         }
       },
       {
@@ -8268,25 +8284,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hfc-tvc-keyframes',
-        title: 'HFC TVC',
-        category: 'Visual Effects (VFX) & Motion Design — 2016',
-        service: 'Visual Effects (VFX) & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfc-tvc.html',
-        desc: 'High-contrast stylized motion keyframes establishing lighting mood, particle density, and corporate typographic hierarchy.',
-        specs: {
-          client: 'Midnight Run',
-          scope: 'Visual Effects (VFX) & Motion Design',
-          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
-          year: '2016',
-          disciplines: ['Motion Design', 'Keyframe Design']
-        }
-      },
-      {
         id: 'trumpet-africa-motion-plate1',
         title: 'Trumpet Africa Productions Ident',
         category: 'Broadcast — 2014',
@@ -8303,44 +8300,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'Broadcast\']'
-        }
-      },
-      {
-        id: 'hfc-tvc-motion-plate1',
-        title: 'HFC TVC',
-        category: 'Visual Effects (VFX) & Motion Design — 2016',
-        service: 'Visual Effects (VFX) & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfc-tvc.html',
-        desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
-        specs: {
-          client: 'Midnight Run',
-          scope: 'Visual Effects (VFX) & Motion Design',
-          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
-          year: '2016',
-          disciplines: '[\'Visual Effects (VFX)\', \'Motion Design\']'
-        }
-      },
-      {
-        id: 'hfc-tvc-motion-plate2',
-        title: 'HFC TVC',
-        category: 'Visual Effects (VFX) & Motion Design — 2016',
-        service: 'Visual Effects (VFX) & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/hfc-tvc/hfc-tvc-6.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfc-tvc.html',
-        desc: 'Broadcast commercial spot combining 3D kinetic typographic choreography, graphic pacing, and fluid motion design.',
-        specs: {
-          client: 'Midnight Run',
-          scope: 'Visual Effects (VFX) & Motion Design',
-          team: 'Jude Abbey, Jude Nyoagbe, Randy Biney',
-          year: '2016',
-          disciplines: '[\'Visual Effects (VFX)\', \'Motion Design\']'
         }
       },
       {
@@ -9453,6 +9412,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const isContain = !!(heroViewport && heroViewport.classList.contains('is-contain-slide'));
     let imgRect = null;
     if (isContain && media && img && (img.naturalWidth || img.videoWidth)) {
+      if (media.classList.contains('slide-media-boxed')) {
+        const r = img.getBoundingClientRect();
+        imgRect = { left: r.left, right: r.right, top: r.top, bottom: r.bottom };
+      } else {
       const mBox = media.getBoundingClientRect();
       const natW = img.naturalWidth || img.videoWidth;
       const natH = img.naturalHeight || img.videoHeight;
@@ -9465,6 +9428,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const imgLeft = mBox.left + (mBox.width - paintedW) / 2 + shift;
       const imgTop = mBox.top + (mBox.height - paintedH) * yPct;
       imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
+      }
     }
     for (const sel of HERO_GROUND_ROWS) {
       for (const el of document.querySelectorAll(sel)) {
@@ -9473,7 +9437,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
         if (!box.width || !box.height) continue;
         if (el.classList.contains('project-title')) {
-          el.dataset.heroGround = isMobileWide ? 'band' : 'media';
+          if (isContain) {
+            const onImg = imgRect && box.left < imgRect.right && box.right > imgRect.left &&
+                          box.top < imgRect.bottom && box.bottom > imgRect.top;
+            el.dataset.heroGround = onImg ? 'media' : 'band';
+          } else {
+            el.dataset.heroGround = isMobileWide ? 'band' : 'media';
+          }
           continue;
         }
         if (box.top >= bandTop - 0.05) {
@@ -9684,6 +9654,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function anchorContainSlide(mediaContainer) {
     mediaContainer.style.removeProperty('--slide-contain-shift');
     if (!mediaContainer.classList.contains('slide-media-contain')) return;
+    if (mediaContainer.classList.contains('slide-media-boxed')) return;
     if (!window.matchMedia('(min-width: 1200px)').matches) return;
     const img = mediaContainer.querySelector('img');
     if (!img || !img.naturalWidth || !img.naturalHeight) return;
@@ -9807,7 +9778,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             // value that never upscales: contain would blow a 978 px study up to the viewport, and
             // cover would crop it.
             const isContain = proj.fit === 'contain';
+            const isBoxed = isContain && (proj.desktopWidth || proj.id === 'hot-gossip' || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
             mediaContainer.classList.toggle('slide-media-contain', isContain);
+            mediaContainer.classList.toggle('slide-media-boxed', !!isBoxed);
+            if (isBoxed) {
+              const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
+              mediaContainer.style.setProperty('--slide-desktop-width', boxW);
+            } else {
+              mediaContainer.style.removeProperty('--slide-desktop-width');
+            }
             // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
             // sliver is shown whole between the nav and the caption, on the theme ground. Kept off the
             // desktop branch on purpose -- the stylesheet only reads it under 769 px.

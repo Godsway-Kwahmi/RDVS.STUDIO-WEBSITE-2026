@@ -619,6 +619,25 @@ button {
     /* The vertical nudge (owner, 2026-11-05, on the Kuma Residence study: "shift upwards slightly")
        is a pool-entry value written as --slide-contain-y; a plate that says nothing stays centred. */
   }
+
+  /* Boxed desktop slides: Hot Gossip is constrained to a 1200px wide container with proportional height, surrounded by theme ground */
+  .slide-media-contain.slide-media-boxed .slide-picture {
+    width: var(--slide-desktop-width, 1200px);
+    max-width: var(--slide-desktop-width, 1200px);
+    height: auto;
+    aspect-ratio: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-media-contain.slide-media-boxed .slide-picture img.slide-img-contain,
+  .slide-media-contain.slide-media-boxed .slide-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
 }
 
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the
