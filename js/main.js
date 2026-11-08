@@ -5303,7 +5303,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-1.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5324,7 +5324,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-6.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5345,7 +5345,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-5.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5366,7 +5366,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-4.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5387,7 +5387,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-7.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5408,7 +5408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-8.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5429,7 +5429,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-9.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -5450,7 +5450,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/hot-gossip/hot-gossip-10.png',
         fit: 'contain',
-        desktopWidth: 1200,
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'hot-gossip.html',
@@ -9782,7 +9782,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             mediaContainer.classList.toggle('slide-media-contain', isContain);
             mediaContainer.classList.toggle('slide-media-boxed', !!isBoxed);
             if (isBoxed) {
-              const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
+              const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '900px');
               mediaContainer.style.setProperty('--slide-desktop-width', boxW);
             } else {
               mediaContainer.style.removeProperty('--slide-desktop-width');

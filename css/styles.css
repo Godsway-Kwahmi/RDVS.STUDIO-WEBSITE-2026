@@ -620,10 +620,10 @@ button {
        is a pool-entry value written as --slide-contain-y; a plate that says nothing stays centred. */
   }
 
-  /* Boxed desktop slides: Hot Gossip is constrained to a 1200px wide container with proportional height, surrounded by theme ground */
+  /* Boxed desktop slides: Hot Gossip is constrained to a 900px wide container with proportional height, surrounded by theme ground */
   .slide-media-contain.slide-media-boxed .slide-picture {
-    width: var(--slide-desktop-width, 1200px);
-    max-width: var(--slide-desktop-width, 1200px);
+    width: var(--slide-desktop-width, 900px);
+    max-width: var(--slide-desktop-width, 900px);
     height: auto;
     aspect-ratio: auto;
     display: flex;
