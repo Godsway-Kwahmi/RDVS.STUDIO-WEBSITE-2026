@@ -4056,9 +4056,9 @@ html[data-intro="done"] .rdvs-intro-veil {
     z-index: 25;
     pointer-events: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 40px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.15;
+    line-height: 1.25;
     letter-spacing: -0.04em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -4085,7 +4085,7 @@ html[data-intro="done"] .rdvs-intro-veil {
   .homepage-welcome-message .welcome-line-wrapper {
     display: block;
     overflow: hidden;
-    line-height: 1.15;
+    line-height: 1.25;
   }
 
   .homepage-welcome-message .welcome-line-text {
