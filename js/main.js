@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'gh-phot-awards.html': ['design', 'vfx-cgi'],
     'giffard-park.html': ['design', 'vfx-cgi'],
     'glow-in-the-dark.html': ['design', 'vfx-cgi'],
-    'haustalks.html': ['design'],
     'hfa.html': ['design', 'vfx-cgi'],
     'hfc-tvc.html': ['design', 'vfx-cgi'],
     'hola.html': ['vfx-cgi'],
@@ -7905,63 +7904,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'Modelling: Winfred Atieku, Jude Abbey + Jude Nyoagbe | Texturing + Lighting + Shading: Jude Nyoagbe | Rendering: Jude Nyoagbe | Post Processing: Randy Biney',
           year: '2015',
           disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'haustalks',
-        title: 'Haustalks',
-        category: 'Brand Identity / Graphic Design — 2019',
-        service: 'Brand Identity & Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/haustalks/haustalks-desktop.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity & Graphic Design',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Graphic Design']
-        }
-      },
-      {
-        id: 'haustalks-plate1',
-        title: 'Haustalks',
-        category: 'Brand Identity / Graphic Design — 2019',
-        service: 'Brand Identity & Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/haustalks/haustalks-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity & Graphic Design',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Graphic Design']
-        }
-      },
-      {
-        id: 'haustalks-plate2',
-        title: 'Haustalks',
-        category: 'Brand Identity / Graphic Design — 2019',
-        service: 'Brand Identity & Graphic Design',
-        discipline: 'graphic',
-        imageUrl: 'assets/images/haustalks/haustalks-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'haustalks.html',
-        desc: 'Identity and campaign plates for Haustalks, an advice service that puts a client in touch with a named building professional — a red speech-bubble monogram set into rendered scenes of steel and stone.',
-        specs: {
-          client: 'Haustalks',
-          scope: 'Brand Identity & Graphic Design',
-          team: 'RDVS Team',
-          year: '2019',
-          disciplines: ['Graphic Design']
         }
       },
       {

@@ -1941,8 +1941,8 @@
       "slug": "haustalks",
       "title": "Haustalks",
       "year": "2019",
-      "visibility": "live",
-      "onWorkPage": true,
+      "visibility": "archived",
+      "onWorkPage": false,
       "onArchivePage": true,
       "plates": 3
     },
