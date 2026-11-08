@@ -4046,44 +4046,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'el-dor-plate3',
-        title: 'El Dor',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/el-dor/el-dor-8.jpg',
-        mobilePosition: '64% center',
-        mobileFit: 'contain',
-        projectUrl: 'el-dor.html',
-        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'el-dor-plate4',
-        title: 'El Dor',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/el-dor/el-dor-9.jpg',
-        mobilePosition: '33% center',
-        mobileFit: 'contain',
-        projectUrl: 'el-dor.html',
-        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'el-dor-plate5',
         title: 'El Dor',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -4122,25 +4084,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'el-dor-plate7',
-        title: 'El Dor',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/el-dor/el-dor-12.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'el-dor.html',
-        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'el-dor-plate8',
         title: 'El Dor',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -4149,25 +4092,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/el-dor/el-dor-13.jpg',
         mobilePosition: '15% center',
         mobileFit: 'contain',
-        projectUrl: 'el-dor.html',
-        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'el-dor-plate9',
-        title: 'El Dor',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/el-dor/el-dor-14.jpg',
-        mobilePosition: 'center',
-        desktopPosition: 'center 74.7%',
         projectUrl: 'el-dor.html',
         desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
         specs: {
@@ -5351,25 +5275,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'petrus-plate1',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'petrus.html',
-        desc: 'The Petrus bedroom from the foot of the bed: a white sideboard with brass vertical inlays, radial wall art above, a gold teardrop vase and a dark rug over grey plank flooring.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
         id: 'petrus-plate2',
         title: 'Petrus',
         category: 'Interior Design & 3D Visualization — 2017',
@@ -5437,44 +5342,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobileFit: 'contain',
         projectUrl: 'petrus.html',
         desc: 'Petrus kitchen from the far end of the L-run: black gloss drawers with steel pulls, hanging utensils and a roller blind at the window, a glass door at right looking through to the gym.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'petrus-plate6',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'petrus.html',
-        desc: 'Petrus living room from behind the sofas: a wall-mounted television over the cream media panel, two white swivel chairs and the ring chandelier, tree-ring artworks and a sliding door to the lawn beyond.',
-        specs: {
-          client: 'Imperial Homes',
-          scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'petrus-plate7',
-        title: 'Petrus',
-        category: 'Interior Design & 3D Visualization — 2017',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/petrus/petrus-8.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'petrus.html',
-        desc: 'Petrus living room the other way: the white sofa facing the camera with a two-tier coffee table, cognac leather chair in the foreground, an abstract figure painting and a white torso sculpture at left.',
         specs: {
           client: 'Imperial Homes',
           scope: 'Interior design and photorealistic 3D visualization commissioned by Imperial Homes; architecture by S.A.A',
