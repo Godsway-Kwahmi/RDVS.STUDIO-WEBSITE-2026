@@ -398,15 +398,6 @@
       "onArchivePage": true,
       "plates": 6
     },
-    "enda-acm.html": {
-      "slug": "enda-acm",
-      "title": "Enda ACM",
-      "year": "2015",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
-    },
     "empire-tower.html": {
       "slug": "empire-tower",
       "title": "Empire Tower",
@@ -1729,6 +1720,15 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 22
+    },
+    "enda-acm.html": {
+      "slug": "enda-acm",
+      "title": "Enda ACM",
+      "year": "2015",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 4
     },
     "harbour-pointe.html": {
       "slug": "harbour-pointe",
