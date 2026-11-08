@@ -1094,7 +1094,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         fit: 'contain',
-        videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
+        videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4?v=1a1bd3d805c',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
         mobilePosition: 'center',
         projectUrl: 'villa-aggregate.html',
@@ -10042,13 +10042,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     // and appears again on the first slide (currentIndex === 0) with the same animation.
     const welcomeEl = document.getElementById('homepageWelcomeMessage');
     if (welcomeEl) {
-      if (currentIndex >= 18) {
+      if (currentIndex >= 19) {
         welcomeEl.classList.add('is-hidden');
-      } else if (currentIndex === 0) {
+      } else {
         welcomeEl.classList.remove('is-hidden');
-        welcomeEl.classList.remove('is-animating');
-        void welcomeEl.offsetWidth; // re-trigger animation
-        welcomeEl.classList.add('is-animating');
+        if (currentIndex === 0) {
+          welcomeEl.classList.remove('is-animating');
+          void welcomeEl.offsetWidth; // re-trigger animation
+          welcomeEl.classList.add('is-animating');
+        }
       }
     }
 
