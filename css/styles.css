@@ -4050,9 +4050,9 @@ html[data-intro="done"] .rdvs-intro-veil {
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* Aligned with horizontal caption baseline datum (25dvh from bottom) and vertical datum (74px from left, right edge of RDVS logo) */
+    /* Aligned with horizontal caption baseline datum (25dvh from bottom) and shifted 100px right from vertical datum (174px from left) */
     bottom: 25dvh;
-    left: max(calc(var(--grid-margin, 24px) + 50px), calc((100vw - var(--max-width, 2000px)) / 2 + var(--grid-margin, 24px) + 50px));
+    left: max(calc(var(--grid-margin, 24px) + 150px), calc((100vw - var(--max-width, 2000px)) / 2 + var(--grid-margin, 24px) + 150px));
     z-index: 25;
     pointer-events: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
