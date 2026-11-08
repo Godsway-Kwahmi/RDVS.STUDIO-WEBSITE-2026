@@ -2467,25 +2467,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'watsons-place-plate3',
-        title: 'Watson’s Place',
-        category: 'Interior Design & Architectural Visualization — 2016',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/watsons-place/watsons-place-5.jpg',
-        mobilePosition: '26% center',
-        mobileFit: 'contain',
-        projectUrl: 'watsons-place.html',
-        desc: 'Five interior design and visualization plates from 2016 for Watson s Place, a residential block in Accra: two street views of the grey, stone and orange facade, then lounge, dining and bedroom interiors made as marketing material.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for property marketing: two street-facing exterior views and lounge, dining and bedroom interior renders.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
         id: 'watsons-place-plate4',
         title: 'Watson’s Place',
         category: 'Interior Design & Architectural Visualization — 2016',
@@ -2888,44 +2869,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hamlet-estate-plate7',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-03.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
-        id: 'hamlet-estate-plate8',
-        title: 'The Hamlet',
-        category: '3D Visualization — 2018',
-        service: '3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hamlet/hamlet-04.jpg',
-        mobilePosition: '15% center',
-        mobileFit: 'contain',
-        projectUrl: 'the-hamlet-presentation.html',
-        desc: 'Interior design and photorealistic 3D visualization for The Hamlet — twenty luxury residences in Cantonments, Accra, rendered to present the proposed houses to prospective clients.',
-        specs: {
-          client: 'Nest',
-          scope: 'Interior Design & 3D Visualization (Modeling & Rendering)',
-          team: 'Jude Nyoagbe, Jude Abbey, Nana Afua Addo Boateng',
-          year: '2018',
-          disciplines: '[\'3D Visualization\']'
-        }
-      },
-      {
         id: 'hamlet-estate-plate14',
         title: 'The Hamlet',
         category: '3D Visualization — 2018',
@@ -3192,41 +3135,61 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'swipe-plate5',
+        id: 'swipe',
         title: 'Swipe',
         category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-9.jpg',
-        fit: 'contain',
+        imageUrl: 'assets/images/swipe/007_CShading_LightMix (0-00-00-00).jpg',
         mobilePosition: 'center',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
           team: 'RDVS Team',
           year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Graphic Design', 'BIM & Architectural Visualization']
         }
       },
       {
-        id: 'swipe-plate6',
+        id: 'swipe-plate2',
         title: 'Swipe',
         category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-11.jpg',
+        imageUrl: 'assets/images/swipe/005 (0-00-00-00).jpg',
         fit: 'contain',
-        mobilePosition: '15% center',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
           team: 'RDVS Team',
           year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Graphic Design', 'BIM & Architectural Visualization']
+        }
+      },
+      {
+        id: 'swipe-plate3',
+        title: 'Swipe',
+        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
+        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
+        discipline: 'interiors',
+        imageUrl: 'assets/images/swipe/006 (0-00-00-00).jpg',
+        fit: 'contain',
+        mobilePosition: 'center',
+        mobileFit: 'contain',
+        projectUrl: 'swipe.html',
+        desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
+        specs: {
+          client: 'Swipe',
+          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
+          team: 'RDVS Team',
+          year: '2020',
+          disciplines: ['Interior Design', 'Graphic Design', 'BIM & Architectural Visualization']
         }
       },
       {
@@ -3235,36 +3198,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
         service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-12.jpg',
-        mobilePosition: '67% center',
-        mobileFit: 'contain',
-        projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
-        specs: {
-          client: 'Swipe',
-          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'swipe-plate8',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-16.jpg',
+        imageUrl: 'assets/images/swipe/SWIPE-HEADOFFICE.jpg',
         fit: 'contain',
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
+        desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
           client: 'Swipe',
           scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
           team: 'RDVS Team',
           year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
+          disciplines: ['Interior Design', 'Graphic Design', 'BIM & Architectural Visualization']
         }
       },
       {
@@ -4043,25 +3988,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS. DESIGN',
           year: '2018',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'el-dor-plate5',
-        title: 'El Dor',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/el-dor/el-dor-10.jpg',
-        mobilePosition: '59% center',
-        mobileFit: 'contain',
-        projectUrl: 'el-dor.html',
-        desc: 'A fifteen-plate interior design and 3D visualization set from 2018 for El D Or, a boutique hotel in the Cantonments area of Accra, moving from a sculptural lounge and marble lobby to dark jewel-toned guest suites.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and photorealistic 3D visualization for a hotel presentation.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
         }
       },
       {
@@ -7367,8 +7293,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/giffard-park-8.jpg',
         fit: 'contain',
-        containY: '75%',
-        desktopPosition: 'center 75%',
+        containY: '62%',
+        desktopPosition: 'center 62%',
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
