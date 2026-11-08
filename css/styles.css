@@ -1223,6 +1223,20 @@ button {
   stroke-linejoin: round;
 }
 
+/* Owner order, 2026-11-08: when serving 100% resolution on desktop and the left and right
+   of image or video are empty and showing white in the light theme, make the hover color
+   of the previous and next arrows dark grey. */
+@media (min-width: 1024px) {
+  [data-theme="light"] .hero-viewport.is-contain-slide .step-btn {
+    color: #666666;
+  }
+  [data-theme="light"] .hero-viewport.is-contain-slide .step-btn:hover,
+  [data-theme="light"] .hero-viewport.is-contain-slide .step-btn:focus-visible,
+  [data-theme="light"] .hero-viewport.is-contain-slide .step-btn:active {
+    color: #666666;
+  }
+}
+
 /* A touch screen has no hover to wait for, so an arrow that only appears under a pointer never appears
    at all (owner, 2026-10-23: "let's have the arrows for the slideshow on mobile screen too"). They rested
    at 55% until the owner changed the rule on 2026-11-06: "Even on touch screen on mobile, hide arrow icons
