@@ -2623,17 +2623,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'asante-interior-design-presentation.html'
       },
       {
-        id: 'swipe',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-6.jpg',
-        mobilePosition: '72% center',
-        mobileFit: 'contain',
-        projectUrl: 'swipe.html'
-      },
-      {
         id: 'yah-kumasi-mall-plate1',
         title: 'Yah!',
         category: 'Interior Design, Graphic Design & Architectural Visualization — 2016',
@@ -3745,82 +3734,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'swipe-plate1',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
-        specs: {
-          client: 'Swipe',
-          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'swipe-plate2',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
-        specs: {
-          client: 'Swipe',
-          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'swipe-plate3',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-6.jpg',
-        mobilePosition: '72% center',
-        mobileFit: 'contain',
-        projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
-        specs: {
-          client: 'Swipe',
-          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'swipe-plate4',
-        title: 'Swipe',
-        category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
-        service: 'Interior Design, Graphic Design, BIM & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/swipe/swipe-8.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        projectUrl: 'swipe.html',
-        desc: 'Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe\'s own workplace in Accra — eight plates that carry a single lime-green identity from the logo through to the walls, the glass and the wayfinding.',
-        specs: {
-          client: 'Swipe',
-          scope: 'Interior design, environmental graphics, BIM modelling and architectural visualization',
-          team: 'RDVS Team',
-          year: '2020',
-          disciplines: '[\'Interior Design\', \'Graphic Design\', \'BIM & Architectural Visualization\']'
-        }
-      },
-      {
         id: 'swipe-plate5',
         title: 'Swipe',
         category: 'Interior Design, Graphic Design, BIM & Architectural Visualization — 2020',
@@ -4738,25 +4651,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
       {
-        id: 'ela-b-plate1',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-6.jpg',
-        mobilePosition: '15% center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Render of the dining area seen through a foreground of blurred white branches: green-topped table, tan and black side chairs, black planters with tall greenery, pale carpet and the reed panel and pendant discs behind.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'ela-b-plate2',
         title: 'Ela B',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -4776,120 +4670,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'ela-b-plate3',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Overhead render looking straight down at a grey shaggy carpet with two flat sculptural shapes in teal and slate grey, a round white openwork tray, and small carved wooden objects placed beside them.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate4',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Render of the open plan living and dining area: white sofas with teal cushions in the foreground, a mint topped dining table with mixed chairs beyond, disc pendants above and a large dried-reed panel on the far wall.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate5',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-3.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Wider angle render of the same living room: low white modular seating with teal and grey cushions, black organic coffee tables on a pale rug, blue armchair at the window and two framed artworks on the wall.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate6',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-4.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Render from the seating edge toward the dining zone: a bright blue lounge chair, dark coffee table with bowls and wooden objects, white armchair, and the reed wall art lit by two flat pendant discs.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate7',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-5.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Close-up render of a mint green table top holding a potted monstera, small woven baskets and a blue glass vessel, with a roller blind framing sunlit foliage outside and dried reeds hanging at the right.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate8',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Detail render across a black kitchen counter: stainless steel pots and a gas hob in shallow focus, with a bright green clipped hedge filling the window behind and daylight raking across the worktop.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'ela-b-plate9',
         title: 'Ela B',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -4900,44 +4680,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         projectUrl: 'ela-b.html',
         desc: 'Opposite kitchen view render: the veneer wall and dark door at the right, a run of white and oak cabinets under two small windows, open shelving with jars, and three recessed ceiling discs overhead.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate10',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-11.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Bedroom render: a low oak bed with white linen and a navy throw on a teal patterned rug, black pouf at the foot, slim glass side tables, dark curtains and an orange exterior wall visible through the glazing.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate11',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-12.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Second angle of the bedroom render: the bed now against a white media wall with a wall-mounted television, pendant lamps over the side table, tall glazing to the balcony and the same geometric teal rug underfoot.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
@@ -4975,25 +4717,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         projectUrl: 'ela-b.html',
         desc: 'Detail render from the bedside: monstera leaves in the foreground, a glass side table with an open book, the white duvet and navy throw, and strong bands of sunlight falling across the teal patterned rug.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'ela-b-plate14',
-        title: 'Ela B',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/ela-b/ela-b-15.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'ela-b.html',
-        desc: 'Wide bedroom render from the foot of the room: the oak bed with navy throw centred between full-height glazing and dark drapes, a black pouf on the rug, and two pendant lights hanging low at either side.',
         specs: {
           client: 'Private Client',
           scope: 'Interior design concept and space styling, finish and furniture selection, and the complete set of photoreal interior renderings delivered as real estate marketing collateral.',
@@ -6874,25 +6597,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hfa',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-6.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfa.html',
-        desc: 'HFA in 2018: the living and dining zone of a new Accra apartment seen through its own opening, a grey sofa on a pale rug before a dark feature wall with a floating timber cabinet, and a white dining set under a dome pendant to the left.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design and photorealistic 3D visualization for a new Accra apartment, delivered as marketing imagery for the Homes Direct campaign.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'hfa-plate1',
         title: 'HFA',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -6931,25 +6635,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hfa-plate3',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfa.html',
-        desc: 'HFA master bedroom: the bed facing a tall brown feature panel with a wall-mounted television, an open walk-in wardrobe with hanging clothes to the left, a dark armchair, floor lamp and framed art beyond.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design for the master bedroom and its walk-in wardrobe, rendered for the Homes Direct marketing set.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'hfa-plate4',
         title: 'HFA',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -6962,25 +6647,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'Homes Direct',
           scope: 'Interior design and styling for the second bedroom, photographed as a render for the marketing set.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'hfa-plate5',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-4.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfa.html',
-        desc: 'HFA open-plan living and dining in bright white: a grey sofa and cushions at the left, a white dining table with molded chairs at the right, a timber cabinet wall, a floating console with greenery and a round mirror.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design for the shared living and dining room, its joinery wall and furniture schedule, rendered for the campaign.',
           team: 'RDVS. DESIGN',
           year: '2018',
           disciplines: ['Interior Design', 'Architectural Visualization']
@@ -7006,25 +6672,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hfa-plate7',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfa.html',
-        desc: 'HFA dressing area: an upholstered grey armchair before an open wardrobe with hanging clothes and white cabinetry, a folded throw on the chair, a small shelf and plant at the left over warm wood floor.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design for the walk-in dressing space and its joinery, rendered for the Homes Direct set.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
         id: 'hfa-plate8',
         title: 'HFA',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -7038,25 +6685,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         specs: {
           client: 'Homes Direct',
           scope: 'Kitchen layout, joinery and worktop specification, rendered for the campaign imagery.',
-          team: 'RDVS. DESIGN',
-          year: '2018',
-          disciplines: ['Interior Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'hfa-plate9',
-        title: 'HFA',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hfa/hfa-9.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hfa.html',
-        desc: 'HFA living room in full daylight: a grey sofa with cushions and a black round pouf on a pale rug, small timber side tables flanking it, framed art on white walls and a white dining set to the right under a dome pendant.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior design and furniture specification for the living room, rendered for the developer campaign.',
           team: 'RDVS. DESIGN',
           year: '2018',
           disciplines: ['Interior Design', 'Architectural Visualization']
