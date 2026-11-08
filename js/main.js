@@ -1110,7 +1110,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   interiors: {
     name: 'Interior Design',
     videos: [
-      },
       {
         id: 'villa-aggregate-film',
         title: 'Villa Aggregate',
@@ -2434,9 +2433,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: ['Interior Design', '3D Visualization', 'Modeling & Rendering']
         }
-      },
-
-      },
       },
       {
         id: 'villa-aggregate-plate1',
