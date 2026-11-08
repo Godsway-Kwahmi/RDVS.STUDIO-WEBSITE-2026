@@ -4613,44 +4613,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Interior Design', '3D Visualization']
         }
       },
-      {
-        id: 'bfa-plate12',
-        title: 'BFA',
-        category: 'Interior Design & 3D Visualization — 2018',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/bfa/bfa-3.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'bfa.html',
-        desc: 'BFA living room from behind a white sofa with blue velvet cushions: two glass coffee tables on gold drum bases, an oak media console under a black television, an abstract diptych on the pink wall and the dining table beyond.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior Design & 3D Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2018',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
-        id: 'bfa-plate13',
-        title: 'BFA',
-        category: 'Interior Design & 3D Visualization — 2018',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/bfa/bfa-4.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'bfa.html',
-        desc: 'BFA dining table from the opposite end, camera low: the same oak top, black chairs, citrus bowl and ring pendant, with the pink wall diptych behind, black curtains and an orange car at the window, white wire bar stools at right.',
-        specs: {
-          client: 'Homes Direct',
-          scope: 'Interior Design & 3D Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe',
-          year: '2018',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
 
 
 
