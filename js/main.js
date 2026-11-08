@@ -5403,27 +5403,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'hot-gossip-plate10',
-        title: 'Hot Gossip',
-        category: 'Interior Design & 3D Visualization — 2012',
-        service: 'Interior Design & 3D Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/hot-gossip/hot-gossip-10.png',
-        fit: 'contain',
-        desktopWidth: 1200,
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'hot-gossip.html',
-        desc: 'The bar and billiards hall from the opposite end: a radial ceiling of yellow-lit slats opening above the room, pendant clusters, and pink disc columns at either side.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior design and 3D visualization for a 2012 nightlife interior in Accra',
-          team: 'Caleb Sackey + R.D+V.S',
-          year: '2012',
-          disciplines: ['Interior Design', '3D Visualization']
-        }
-      },
-      {
         id: 'hfa-plate1',
         title: 'HFA',
         category: 'Interior Design & Architectural Visualization — 2018',
