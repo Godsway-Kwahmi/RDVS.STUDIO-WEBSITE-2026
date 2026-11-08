@@ -81,7 +81,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 28
+      "plates": 29
     },
     "asante-interior-design-presentation.html": {
       "slug": "asante-interior-design-presentation",
@@ -162,7 +162,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 7
+      "plates": 8
     },
     "ppa-ghana-competition.html": {
       "slug": "ppa-ghana-competition",
@@ -190,15 +190,6 @@
       "onWorkPage": true,
       "onArchivePage": true,
       "plates": 13
-    },
-    "of-sunsets.html": {
-      "slug": "of-sunsets",
-      "title": "Of Sunsets",
-      "year": "2017",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 28
     },
     "npa-reception-renders.html": {
       "slug": "npa-reception-renders",
@@ -236,6 +227,15 @@
       "onArchivePage": true,
       "plates": 6
     },
+    "product-mlky.html": {
+      "slug": "product-mlky",
+      "title": "MLKY",
+      "year": "2021",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 3
+    },
     "macord.html": {
       "slug": "macord",
       "title": "Macord International School",
@@ -254,6 +254,15 @@
       "onArchivePage": true,
       "plates": 9
     },
+    "lamu.html": {
+      "slug": "lamu",
+      "title": "Lamu",
+      "year": "2022",
+      "visibility": "live",
+      "onWorkPage": true,
+      "onArchivePage": true,
+      "plates": 4
+    },
     "la-beach-towers.html": {
       "slug": "la-beach-towers",
       "title": "La Beach Towers",
@@ -261,7 +270,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 16
+      "plates": 15
     },
     "kuma-residence.html": {
       "slug": "kuma-residence",
@@ -513,7 +522,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 0
+      "plates": 3
     },
     "brownies-place.html": {
       "slug": "brownies-place",
@@ -540,7 +549,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 2
+      "plates": 3
     },
     "afg.html": {
       "slug": "afg",
@@ -648,7 +657,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 6
+      "plates": 9
     },
     "ahero.html": {
       "slug": "ahero",
@@ -666,7 +675,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 10
+      "plates": 11
     },
     "giffard-park.html": {
       "slug": "giffard-park",
@@ -675,7 +684,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 9
+      "plates": 13
     },
     "hola.html": {
       "slug": "hola",
@@ -711,7 +720,7 @@
       "visibility": "live",
       "onWorkPage": true,
       "onArchivePage": true,
-      "plates": 1
+      "plates": 3
     },
     "ttd.html": {
       "slug": "ttd",
@@ -1446,8 +1455,8 @@
       "slug": "94-laurel",
       "title": "94 Laurel",
       "year": "2013",
-      "visibility": "live",
-      "onWorkPage": true,
+      "visibility": "archived",
+      "onWorkPage": false,
       "onArchivePage": true,
       "plates": 2
     },
@@ -1892,6 +1901,15 @@
       "onArchivePage": true,
       "plates": 4
     },
+    "of-sunsets.html": {
+      "slug": "of-sunsets",
+      "title": "Of Sunsets",
+      "year": "2017",
+      "visibility": "archived",
+      "onWorkPage": false,
+      "onArchivePage": true,
+      "plates": 28
+    },
     "palazzo.html": {
       "slug": "palazzo",
       "title": "Palazzo",
@@ -1982,15 +2000,6 @@
       "onArchivePage": true,
       "plates": 1
     },
-    "product-mlky.html": {
-      "slug": "product-mlky",
-      "title": "MLKY",
-      "year": "2021",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 3
-    },
     "white-house.html": {
       "slug": "white-house",
       "title": "White House",
@@ -1999,15 +2008,6 @@
       "onWorkPage": false,
       "onArchivePage": true,
       "plates": 1
-    },
-    "lamu.html": {
-      "slug": "lamu",
-      "title": "Lamu",
-      "year": "2022",
-      "visibility": "live",
-      "onWorkPage": true,
-      "onArchivePage": true,
-      "plates": 4
     }
   }
 }

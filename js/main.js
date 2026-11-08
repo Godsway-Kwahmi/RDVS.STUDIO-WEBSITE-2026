@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'kuma-residence.html': ['design', 'vfx-cgi'],
     'la-beach-towers.html': ['design', 'vfx-cgi'],
     'lamu.html': ['design', 'vfx-cgi'],
-    '94-laurel.html': ['vfx-cgi'],
     'link-drive-road.html': ['design', 'vfx-cgi'],
     'macord.html': ['design', 'vfx-cgi'],
     'margin.html': ['design', 'vfx-cgi'],
@@ -109,7 +108,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     'mtn.html': ['design', 'vfx-cgi'],
     'naadei-villas.html': ['design'],
     'npa-reception-renders.html': ['bim', 'vfx-cgi'],
-    'of-sunsets.html': ['design', 'vfx-cgi'],
     'petrus.html': ['design', 'vfx-cgi'],
     'poconos-bar-grill.html': ['design', 'vfx-cgi'],
     'ppa-ghana-competition.html': ['competitions', 'design', 'vfx-cgi'],
@@ -1042,7 +1040,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2025',
           disciplines: '[\'Architectural Design\']'
         }
-      },      {
+      },
+      {
         id: 'dyv-dawn-plate2',
         title: 'DYV',
         category: 'Interior Design & Architectural Visualization — 2025',
@@ -1061,7 +1060,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2025',
           disciplines: '[\'Architectural Design\']'
         }
-      },      {
+      },
+      {
         id: 'dyv-dawn-plate3',
         title: 'DYV',
         category: 'Interior Design & Architectural Visualization — 2025',
@@ -2561,7 +2561,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate3',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2579,7 +2580,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate4',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2597,7 +2599,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate5',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2616,7 +2619,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate6',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2635,7 +2639,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate7',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2653,7 +2658,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate8',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2671,7 +2677,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate9',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2689,7 +2696,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate10',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2707,7 +2715,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate11',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2725,7 +2734,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate12',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2744,7 +2754,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate13',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2762,7 +2773,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate14',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -2780,7 +2792,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2021',
           disciplines: '[\'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'villa-aggregate-plate15',
         title: 'Villa Aggregate',
         category: 'Interior Design & Architectural Visualization — 2021',
@@ -3521,43 +3534,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'naadei-villas-image9',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-9.jpg',
-        mobilePosition: '62% center',
-        mobileFit: 'contain',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'naadei-villas-image10',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-10.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'naadei-villas-image11',
         title: 'Naadei Villas',
         category: 'Interior Design & Architectural Visualization — 2018',
@@ -3615,104 +3591,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: 'naadei-villas-image15',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-15.jpg',
-        mobilePosition: '45% center',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'naadei-villas-image16',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-16.jpg',
-        mobilePosition: '52% center',
-        mobileFit: 'contain',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'naadei-villas-image17',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-17.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'naadei-villas-image18',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-18.jpg',
-        mobilePosition: 'center',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
         id: 'naadei-villas-image19',
         title: 'Naadei Villas',
         category: 'Interior Design & Architectural Visualization — 2018',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/naadei-villas/naadei-villas-19.jpg',
+        fit: 'contain',
         mobilePosition: '55% center',
-        projectUrl: 'naadei-villas.html',
-        desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
-        specs: {
-          client: 'Private Client',
-          scope: 'Interior Design & Architectural Visualization',
-          team: 'Jude Abbey, Jude Nyoagbe, Nana Beniako',
-          year: '2018',
-          disciplines: '[\'Interior Design\', \'Architectural Visualization\']'
-        }
-      },
-      {
-        id: 'naadei-villas-image20',
-        title: 'Naadei Villas',
-        category: 'Interior Design & Architectural Visualization — 2018',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/naadei-villas/naadei-villas-20.jpg',
-        mobilePosition: 'center',
         projectUrl: 'naadei-villas.html',
         desc: 'A 2018 interior design and architectural visualization project commissioned by a private client for Naadei Villas.',
         specs: {
@@ -3731,24 +3617,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/moty/moty-5.jpg',
         mobilePosition: 'center',
-        projectUrl: 'moty.html',
-        desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
-        specs: {
-          client: 'Mother of the Year (MOTY)',
-          scope: 'Interior design, custom furniture and fixture design, retail graphics and the full set of 3D visualizations for the MOTY children’s store at Accra Mall.',
-          team: 'RDVS. DESIGN',
-          year: '2016',
-          disciplines: ['Interior Design', 'Furniture Design', 'Graphic Design', 'Architectural Visualization']
-        }
-      },
-      {
-        id: 'moty-intro-motion-plate2',
-        title: 'MOTY',
-        category: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization — 2016',
-        service: 'Interior Design, Furniture Design, Graphic Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/moty/moty-2.jpg',
-        mobilePosition: '41% center',
         projectUrl: 'moty.html',
         desc: 'Interior design and 3D visualization by RDVS. Design in 2016 for MOTY, a children’s clothing shop at Accra Mall, combining retail interiors, custom furniture and playful graphics into a single whimsical world.',
         specs: {
@@ -3889,7 +3757,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate3',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -3907,7 +3776,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate4',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -3925,7 +3795,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate5',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -3943,7 +3814,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate6',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -3961,7 +3833,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate7',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -3979,7 +3852,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'link-drive-road-plate8',
         title: 'Link Drive Rd.',
         category: 'Interior Design & 3D Visualization — 2018',
@@ -4417,7 +4291,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: '[\'Architectural Design\', \'Interior Design   Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'ehr-plate4',
         title: 'EHR',
         category: 'Architectural Design, Interior Design & Architectural Visualization — 2017',
@@ -4897,7 +4772,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate3',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -4915,7 +4791,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate4',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -4933,7 +4810,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate5',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -4951,7 +4829,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate6',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -4970,7 +4849,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate7',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -4988,7 +4868,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate8',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5006,7 +4887,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate9',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5024,7 +4906,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate10',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5042,7 +4925,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate11',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5060,7 +4944,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate12',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5078,7 +4963,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate13',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5096,7 +4982,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate14',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5114,7 +5001,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2019',
           disciplines: '[\'Interior Design\', \'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1957-apartments-retail-plate15',
         title: '1957 Apartments and Retail',
         category: 'Interior Design & 3D Visualization — 2019',
@@ -5151,7 +5039,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate4',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5169,7 +5058,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate5',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5188,7 +5078,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate6',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5206,7 +5097,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate7',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5224,7 +5116,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate8',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5243,7 +5136,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate9',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5262,44 +5156,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate10',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-2.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
-        id: 'tower-cascades-plate11',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-3.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate12',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5317,25 +5175,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate13',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-5.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate14',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5354,7 +5195,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate15',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5372,25 +5214,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate16',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-8.jpg',
-        mobilePosition: '41% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate17',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5408,25 +5233,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate18',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-10.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate19',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5444,25 +5252,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate20',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-12.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate21',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5480,7 +5271,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate22',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5498,61 +5290,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate23',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-15.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
-        id: 'tower-cascades-plate24',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-16.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
-        id: 'tower-cascades-plate25',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-17.jpg',
-        mobilePosition: '15% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate26',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5570,25 +5309,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate27',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-19.jpg',
-        mobilePosition: '15% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate28',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5606,7 +5328,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate29',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -5624,43 +5347,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2017',
           disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
         }
-      },      {
-        id: 'tower-cascades-plate30',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-22.jpg',
-        mobilePosition: '30% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
-        id: 'tower-cascades-plate31',
-        title: 'Tower Cascades',
-        category: 'Interior Design & Architectural Visualization — 2017',
-        service: 'Interior Design & Architectural Visualization',
-        discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-23.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'tower-cascades.html',
-        desc: 'Interior design and CGI for Hawkrad Properties: thirty-two visualisation plates, an animation film and a VR walkthrough of the Tower Cascades apartments, lobby, roof terrace and gym. Architecture by ArchXenus.',
-        specs: {
-          client: 'Hawkrad Properties',
-          scope: 'Interior design and CGI — still renders, an animation film and a VR walkthrough — produced as marketing material for the development; architecture by ArchXenus',
-          team: 'RDVS Team',
-          year: '2017',
-          disciplines: ['Interior Design', 'Architectural Visualization', '3D Animation']
-        }
-      },      {
+      },
+      {
         id: 'tower-cascades-plate32',
         title: 'Tower Cascades',
         category: 'Interior Design & Architectural Visualization — 2017',
@@ -6679,7 +6367,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'Architectural Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'ert-plate3',
         title: 'ERT',
         category: 'Architectural Visualization — 2015',
@@ -7233,7 +6922,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'senya-resort-plate3',
         title: 'Senya Resort',
         category: '3D Visualization — 2018',
@@ -7251,7 +6941,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2018',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: 'senya-resort-plate4',
         title: 'Senya Resort',
         category: '3D Visualization — 2018',
@@ -7352,7 +7043,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           deliverables: '3D renders, measured and working drawings',
           disciplines: ['BIM', 'Architectural Visualization']
         }
-      },      {
+      },
+      {
         id: 'mtn-hq-plate1',
         title: 'MTN HQ',
         category: 'Graphic Design & 3D Visualization — 2017',
@@ -7725,7 +7417,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1981-plate1',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -7743,7 +7436,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1981-plate2',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -7761,7 +7455,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1981-plate3',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -7779,7 +7474,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           year: '2015',
           disciplines: '[\'3D Visualization\']'
         }
-      },      {
+      },
+      {
         id: '1981-plate4',
         title: '1981',
         category: '3D Visualization — 2015',
@@ -7864,17 +7560,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'ahero.html'
       },
       {
-        id: 'giffard-park',
-        title: 'Giffard Park',
-        category: 'Multi-Unit Residential — 2022',
-        service: 'Multi-Unit Residential',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/giffard-park/Ei4kUxWXYAIh8HL.jpg',
-        mobilePosition: '85% center',
-        mobileFit: 'contain',
-        projectUrl: 'giffard-park.html'
-      },
-      {
         id: 'giffard-park-plate1',
         title: 'Giffard Park',
         category: 'Multi-Unit Residential — 2022',
@@ -7950,42 +7635,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         projectUrl: 'giffard-park.html'
       },
       {
-        id: 'giffard-park-plate7',
-        title: 'Giffard Park',
-        category: 'Multi-Unit Residential — 2022',
-        service: 'Multi-Unit Residential',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/giffard-park/621518319_18110728489712234_6103492954325554112_n.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'giffard-park.html'
-      },
-      {
-        id: 'giffard-park-plate8',
-        title: 'Giffard Park',
-        category: 'Multi-Unit Residential — 2022',
-        service: 'Multi-Unit Residential',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/giffard-park/622761195_18138236488485238_6058413702914173974_n.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'giffard-park.html'
-      },
-      {
-        id: 'giffard-park-plate9',
-        title: 'Giffard Park',
-        category: 'Multi-Unit Residential — 2022',
-        service: 'Multi-Unit Residential',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/giffard-park/622908270_18167271019400113_138851683480039831_n.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'giffard-park.html'
-      },
-      {
         id: 'giffard-park-plate10',
         title: 'Giffard Park',
         category: 'Multi-Unit Residential — 2022',
@@ -8016,7 +7665,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
-      },      {
+      },
+      {
         id: 'margin-plate1',
         title: 'Margin',
         category: 'Workplace Interiors — 2022',
@@ -8026,7 +7676,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'margin.html'
-      },      {
+      },
+      {
         id: 'margin-plate2',
         title: 'Margin',
         category: 'Workplace Interiors — 2022',
@@ -8094,7 +7745,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '15% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate1',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8104,7 +7756,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate2',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8113,7 +7766,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/FsLMJdyX0AIUNuB.jpg',
         mobilePosition: 'center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate3',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8123,7 +7777,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '36% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate4',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8133,7 +7788,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '15% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate5',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8143,7 +7799,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '85% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate6',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8153,7 +7810,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '85% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate7',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8163,7 +7821,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '64% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate8',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8173,7 +7832,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate9',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8183,7 +7843,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '72% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate10',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8193,7 +7854,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '74% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate11',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8203,7 +7865,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate12',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8213,7 +7876,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '15% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate13',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8222,7 +7886,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/Ft5c57XWwAIKvYV.jpg',
         mobilePosition: '100% center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate14',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8231,7 +7896,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/FtU6ipnWAAAdtts.jpg',
         mobilePosition: 'center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate15',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8240,7 +7906,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/FtZCqbqWYAEc3_S.jpg',
         mobilePosition: 'center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate16',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8249,7 +7916,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/FtcjLP0WAAUNJRl.jpg',
         mobilePosition: 'center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate17',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8258,7 +7926,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/ttd/Ftn-e3YWcAYqRZ9.jpg',
         mobilePosition: 'center',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate18',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8268,7 +7937,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '66% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate19',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8278,7 +7948,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: '15% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate20',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8288,7 +7959,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate21',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8298,7 +7970,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
-      },      {
+      },
+      {
         id: 'ttd-plate22',
         title: 'TTD',
         category: 'Interior & Architecture — 2023',
@@ -8616,41 +8289,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       },
       {
-        id: '94-laurel',
-        title: '94 Laurel',
-        category: 'VFX + CGI — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/94-laurel/94-laurel-1.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        projectUrl: '94-laurel.html',
-        desc: 'Exterior CGI visualization for a residential property in Laurel, Canada, commissioned by Brent Hughes in 2013. 3D modeling, texturing, shading, photoreal rendering, and digital post-processing by RDVS.',
-        specs: {
-          client: 'Brent Hughes',
-          location: 'Laurel, Canada',
-          year: '2013',
-          disciplines: ['3D Modeling', 'Architectural Visualization', 'Post-Processing', 'Rendering']
-        }
-      },
-      {
-        id: '94-laurel-plate2',
-        title: '94 Laurel',
-        category: 'VFX + CGI — 2013',
-        service: 'Architectural Visualization',
-        discipline: 'vfx',
-        imageUrl: 'assets/images/94-laurel/94-laurel-2.jpg',
-        mobilePosition: 'center',
-        projectUrl: '94-laurel.html',
-        desc: 'Exterior CGI visualization for a residential property in Laurel, Canada, commissioned by Brent Hughes in 2013. 3D modeling, texturing, shading, photoreal rendering, and digital post-processing by RDVS.',
-        specs: {
-          client: 'Brent Hughes',
-          location: 'Laurel, Canada',
-          year: '2013',
-          disciplines: ['3D Modeling', 'Architectural Visualization', 'Post-Processing', 'Rendering']
-        }
-      },
-      {
         id: 'mig',
         title: 'MIG',
         category: 'Modern Indigenous Goods — 2021',
@@ -8871,26 +8509,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           disciplines: ['Motion Design', '3D Animation']
         }
       },
-      {
-        id: 'of-sunsets',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        videoUrl: 'assets/videos/of-sunsets/of-sunsets-film.mp4',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
 
     ],
     images: [
@@ -9082,166 +8700,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           team: 'RDVS Team',
           year: '2014',
           disciplines: '[\'3D Animation\']'
-        }
-      },
-      {
-        id: 'of-sunsets-plate1',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-4.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate2',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-12.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate3',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-18.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate4',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-20.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate5',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-21.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate6',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-23.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate7',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-26.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
-        }
-      },
-      {
-        id: 'of-sunsets-plate8',
-        title: 'Of Sunsets',
-        category: 'Architectural Visualization & Motion Design — 2017',
-        service: 'Architectural Visualization & Motion Design',
-        discipline: 'motion',
-        imageUrl: 'assets/images/of-sunsets/of-sunsets-27.jpg',
-        fit: 'contain',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
-        projectUrl: 'of-sunsets.html',
-        desc: 'Of Sunsets is a 2017 visualization and motion design set by RDVS Studio for an apartment scheme by Mobius Architecture, covering its lobby, living spaces and rooftop amenity across paired day and night lighting studies, and cut into a short film.',
-        specs: {
-          client: 'Mobius Architecture',
-          scope: '3D modelling of the lobby, apartments and roof terrace, still architectural visualization in day and night lighting conditions, and a short film cut from an earlier version of the model.',
-          team: 'RDVS. DESIGN',
-          year: '2017',
-          disciplines: ['Architectural Visualization', 'Motion Design']
         }
       },
 
@@ -11531,7 +10989,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         stepNav.classList.add('is-revealed');
         clearTimeout(stepNavRevealTimer);
         stepNavRevealTimer = setTimeout(() => stepNav.classList.remove('is-revealed'), 3000);
-      }, { passive: true });
+      },
+      { passive: true });
     }
 
     paginationBars.forEach((bar) => {
@@ -11573,7 +11032,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       heroViewport.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
         stepGestureSwipe = false;
-      }, { passive: true });
+      },
+      { passive: true });
 
       heroViewport.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
@@ -11585,7 +11045,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else if (touchEndX > touchStartX + 50) {
           updateSlide(currentIndex - 1);
         }
-      }, { passive: true });
+      },
+      { passive: true });
 
       // Capture, so this runs before the button's own listener and can stop the propagation outright. It
       // only ever acts on the click that is the tail of the swipe that just happened; a tap, a mouse click
