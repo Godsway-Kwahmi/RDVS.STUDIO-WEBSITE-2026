@@ -526,6 +526,11 @@ button {
   .slide-media video {
     object-position: var(--slide-mobile-pos, center);
   }
+
+  /* Mobile datum line (owner markup 2026-11-09): caption rests on bottom datum line directly above controls/pagination row */
+  .caption-wrapper {
+    margin-bottom: 8px;
+  }
 }
 
 /* The phone counterpart of the contain law, for the few WIDE plates a phone cannot show whole under
@@ -562,9 +567,10 @@ button {
 
   .slide-media-mobile-contain .slide-picture img,
   .slide-media-mobile-contain .slide-img,
-  .slide-media-mobile-contain video {
+  .slide-media-mobile-contain video,
+  .slide-media-mobile-contain .slide-video {
     object-fit: scale-down;
-    object-position: center bottom;
+    object-position: center top !important;
   }
 
   /* `mobileFit: 'crop'` keeps the box above but lets the plate fill it, so the overflow goes to the
@@ -3382,8 +3388,9 @@ a.subservice-item:hover {
      what keeps the fifth sheet's drawn line: the caption does not move, and the only things that change
      place are the boxed pair, which rises 17px, and the dashes, which drop 9 to lead their own line the
      way they do on the desktop band. */
+  /* Mobile datum line (owner markup 2026-11-09): caption moves down to bottom datum directly above controls/pagination row */
   .caption-wrapper {
-    margin-bottom: calc(max(88px, 10.5vh) - 17px);
+    margin-bottom: 8px;
   }
 
   /* Owner, 2026-11-06: "the text position for project name etc appears to shift for some slides but
