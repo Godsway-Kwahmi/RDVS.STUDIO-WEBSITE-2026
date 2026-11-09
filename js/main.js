@@ -501,8 +501,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design',
         discipline: 'interior-design',
         imageUrl: 'assets/images/imperial-square/imperial-square-1.jpg',
+        fit: 'contain',
         mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobileFit: 'cover',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
@@ -3699,6 +3700,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/imperial-square/imperial-square-3.jpg',
         fit: 'contain',
+        mobileFit: 'cover',
         mobilePosition: 'center',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
@@ -3718,7 +3720,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/imperial-square/imperial-square-2.jpg',
         mobilePosition: '85% center',
-        mobileFit: 'contain',
+        mobileFit: 'cover',
         projectUrl: 'imperial-square.html',
         desc: 'Comprehensive interior design, industrial & furniture design, and 3D visualization for Imperial Square commercial space.',
         specs: {
