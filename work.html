@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=1a1be6af151cc">
 </head>
 <body>
 
@@ -134,19 +134,21 @@
           </div>
         </div>
 
-        <div class="filter-group" data-group="vfx-cgi">
-          <button type="button" class="filter-btn filter-group-btn" data-filter="vfx-cgi"
-                  aria-expanded="false" aria-controls="vfxSubservices">VFX + CGI<span class="filter-caret" aria-hidden="true"></span></button>
-          <div class="filter-dropdown" id="vfxSubservices">
+        <div class="filter-group" data-group="cgi">
+          <button type="button" class="filter-btn filter-group-btn" data-filter="cgi"
+                  aria-expanded="false" aria-controls="cgiSubservices">CGI<span class="filter-caret" aria-hidden="true"></span></button>
+          <div class="filter-dropdown" id="cgiSubservices">
             <button type="button" class="filter-btn filter-subbtn" data-filter="3d-animation">3D Animation</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="architectural-visualization">Architectural Visualization</button>
-            <button type="button" class="filter-btn filter-subbtn" data-filter="match-moving">Match-moving</button>
-            <button type="button" class="filter-btn filter-subbtn" data-filter="photogrammetry">Photogrammetry</button>
+            <button type="button" class="filter-btn filter-subbtn" data-filter="augmented-reality">Augmented Reality (AR)</button>
+            <button type="button" class="filter-btn filter-subbtn" data-filter="modeling">Modeling</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="product-visualization">Product Visualization</button>
-            <button type="button" class="filter-btn filter-subbtn" data-filter="tracking">Tracking</button>
+            <button type="button" class="filter-btn filter-subbtn" data-filter="rendering">Rendering</button>
             <button type="button" class="filter-btn filter-subbtn" data-filter="virtual-reality">Virtual Reality (VR)</button>
           </div>
         </div>
+
+        <button type="button" class="filter-btn" data-filter="vfx">VFX</button>
       </div>
 
       <!-- Sort Controls (Typology, Date, Discipline) -->
@@ -171,7 +173,7 @@
          data-discipline="Interior Design, Graphic Design &amp; Architectural Visualization" 
          data-client="Yah!" 
          data-location="Kumasi, Ghana" 
-         data-category="interior-design vfx-cgi graphic-design architectural-visualization">
+         data-category="interior-design cgi graphic-design architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/yah-kumasi-mall/yah-kumasi-mall-5.jpg" alt="Yah! - the black dragon mural close-up: scaled body and curling fins filling a cream wall, shot between two out-of-focus pink columns" class="card-img" loading="lazy">
         </div>
@@ -197,7 +199,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Infinite Group Ltd" 
          data-location="Cantonments, Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/cantonments/west-cantonments-16.jpg" alt="West Cantonments Residence" class="card-img" loading="lazy">
         </div>
@@ -222,7 +224,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Aggregate Construction Limited" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <video src="assets/videos/villa-aggregate/villa-aggregate-film.mp4?v=1a1bd3d805c" class="card-img" poster="assets/images/aggregate/villa-aggregate-1.jpg" muted autoplay loop playsinline
                  preload="metadata" aria-label="Villa Aggregate — the walkthrough film of the villa">
@@ -280,7 +282,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Hawkrad Properties" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization 3d-animation">
+         data-category="interior-design cgi architectural-visualization 3d-animation">
         <div class="card-media-wrapper">
           <img src="assets/images/cascades/E1msdaCXEAEFx84.jpg" alt="Tower Cascades" class="card-img" loading="lazy">
         </div>
@@ -334,7 +336,7 @@
          data-discipline="Architectural Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Akosombo, Ghana" 
-         data-category="architecture-planning vfx-cgi architectural-visualization">
+         data-category="architecture-planning cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/the-saddle/the-saddle-1.jpg" alt="The Saddle - hillside pavilions in monochrome: low houses and their reflections in a still pond below a wooded ridge" class="card-img" loading="lazy">
         </div>
@@ -359,7 +361,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Nest" 
          data-location="Cantonments, Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/hamlet/hamlet-estate.jpg" alt="The Hamlet" class="card-img" loading="lazy">
         </div>
@@ -385,7 +387,7 @@
          data-discipline="Interior Design" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi">
+         data-category="interior-design cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/asante-interior-design-presentation/asante-interior-design-presentation-3.jpg" alt="TAI - the entrance hall: a full-height crystal chandelier dropped into a circular ceiling cove, book-matched marble floor, brass-clad piers either side of the stair and glass partitions reflecting the double-height space" class="card-img" loading="lazy">
         </div>
@@ -487,7 +489,7 @@
          data-discipline="Architectural Visualization" 
          data-client="Standard Chartered Bank" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/stanchart-hq/stanchart-hq-1.jpg" alt="Stanchart HQ - the folded glass tower at dusk, lit from within, over a junction of long-exposure traffic trails" class="card-img" loading="lazy">
         </div>
@@ -537,7 +539,7 @@
          data-discipline="3D Visualization" 
          data-client="Leonie Badger" 
          data-location="Senya, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/senya-resort/senya-resort-1.jpg" alt="Senya Resort" class="card-img" loading="lazy">
         </div>
@@ -612,7 +614,7 @@
          data-discipline="Competitions, Interior Design &amp; 3D Visualization"
          data-client="Public Procurement Authority (PPA)"
          data-location="Accra, Ghana"
-         data-category="competitions interior-design vfx-cgi architectural-visualization">
+         data-category="competitions interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/ppa-ghana-competition/ppa-ghana-competition-3.png" alt="The same symmetrical front elevation at dusk: the twin wings and their deep roof screens read as dark silhouettes against an amber and grey sunset sky, the glazed faces reflecting the last light, and the recessed central link and entrance lit from within above a line of trees." class="card-img" loading="lazy">
         </div>
@@ -637,7 +639,7 @@
          data-discipline="Architectural Design, Landscape Design, Interior Design &amp; 3D Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="architecture-planning interior-design vfx-cgi architectural-visualization">
+         data-category="architecture-planning interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/poconos-bar-grill/poconos-bar-grill-1.jpg" alt="Poconos Bar + Grill" class="card-img" loading="lazy">
         </div>
@@ -663,7 +665,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Imperial Homes" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/petrus/petrus-1.jpg" alt="Petrus bedroom: a low platform bed in greige linen against a wide oak headboard panel, brass dome lamp on a dark nightstand, a writing desk at right and full-height windows in sheer grey drapes." class="card-img" loading="lazy">
         </div>
@@ -741,7 +743,7 @@
          data-discipline="Graphic Design &amp; 3D Visualization" 
          data-client="James Cubitt" 
          data-location="Accra, Ghana" 
-         data-category="graphic-design vfx-cgi architectural-visualization">
+         data-category="graphic-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/mtn-hq/mtn-hq-1.jpg" alt="MTN HQ" class="card-img" loading="lazy">
         </div>
@@ -766,7 +768,7 @@
          data-discipline="Interior Design, Furniture Design, Graphic Design &amp; Architectural Visualization" 
          data-client="Mother of the Year (MOTY)" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi graphic-design industrial-design architectural-visualization">
+         data-category="interior-design cgi graphic-design industrial-design architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/moty/moty-7.jpg" alt="MOTY - tall view across the children&rsquo;s store under a flock of suspended white origami birds, with a red central display island of folded clothing and the yellow TOYS and CLOTHES signage behind" class="card-img" loading="lazy">
         </div>
@@ -793,7 +795,7 @@
          data-discipline="Industrial &amp; Furniture Design, Product Visualization &amp; In-house" 
          data-client="RDVS Studios" 
          data-location="Accra, Ghana" 
-         data-category="industrial-design vfx-cgi product-visualization studio-projects">
+         data-category="industrial-design cgi product-visualization studio-projects">
         <div class="card-media-wrapper">
           <img src="assets/images/mig/mig-mlky-1.jpg" alt="MLKY-FLR: a tall reeded floor column glowing warm just under a dark cap and falling to black at its base." class="card-img" loading="lazy">
         </div>
@@ -818,7 +820,7 @@
          data-discipline="Architectural Design, Landscape Design, Interior Design, Industrial &amp; Furniture Design, 3D Visualization" 
          data-client="Macord International School" 
          data-location="Accra, Ghana" 
-         data-category="architecture-planning interior-design industrial-design vfx-cgi architectural-visualization">
+         data-category="architecture-planning interior-design industrial-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/macord/macord-5.jpg" alt="Macord International School" class="card-img" loading="lazy">
         </div>
@@ -843,7 +845,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Imperial Homes" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/link-drive/link-drive-7.jpg" alt="Link Drive Rd. - formal living room with two white sofas on a striped rug beneath ornate ceiling mouldings and a ring pendant, a white fireplace with mirror and a red leather chair behind" class="card-img" loading="lazy">
         </div>
@@ -869,7 +871,7 @@
          data-discipline="Architectural Visualization" 
          data-client="Studio Commission" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization design industrial-design">
+         data-category="cgi architectural-visualization design industrial-design">
         <div class="card-media-wrapper">
           <img src="assets/images/lamu/FtIUHJPXoA4P9Sk.jpg" alt="Lamu two-tone joinery: the mitred corner where a clear-oak shelf meets a dark walnut end panel, the open compartment behind catching a black leg and a ceiling light." class="card-img" loading="lazy">
         </div>
@@ -894,7 +896,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/la-beach-towers/la-beach-towers-16.jpg" alt="LA BEACH TOWERS" class="card-img" loading="lazy">
         </div>
@@ -919,7 +921,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/kuma-residence/FRJmffPWYAECYZw.jpg" alt="Kuma Residence in monochrome from the other side: a dark glass-topped dining table with pale chairs under a linear pendant, a white stair volume to the left and the lounge beyond beneath the slatted timber ceiling" class="card-img" loading="lazy">
         </div>
@@ -943,7 +945,7 @@
          data-discipline="3D Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/kdmrd/kdmrd-3.jpg" alt="KDMRD - the red perforated-brick cube by day, its glazed balcony stacks facing the street where cars are parked, with palms and a loader at the gate to the left" class="card-img" loading="lazy">
         </div>
@@ -968,7 +970,7 @@
          data-discipline="Architectural Visualization" 
          data-client="JHK Investments" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/jhk-investment/jhk-investment-1.png" alt="JHK at dusk: a crisp white two-storey villa with tall slit windows and a glazed ground floor, its interior light spilling onto a lawn washed by garden uplights under a deep blue evening sky" class="card-img" loading="lazy">
         </div>
@@ -1018,7 +1020,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="SMSGH / Hubtel" 
          data-location="Nairobi, Kenya" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/hubtel/hubtel-nairobi-2.jpg" alt="Hubtel Nairobi" class="card-img" loading="lazy">
         </div>
@@ -1043,7 +1045,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/hot-gossip/hot-gossip-1.png" alt="Lounge with a wall of backlit pink discs above a pale curved sofa" class="card-img" loading="lazy">
         </div>
@@ -1068,7 +1070,7 @@
          data-discipline="Visual Effects (VFX) &amp; Motion Design" 
          data-client="Midnight Run" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi motion-design 3d-animation">
+         data-category="vfx motion-design 3d-animation">
         <div class="card-media-wrapper">
           <video src="assets/videos/hfc-tvc/hfc-commercial.mp4" class="card-img" poster="assets/images/hfc-tvc/hfc-tvc-1.jpg" muted autoplay loop playsinline
                  preload="metadata" aria-label="HFC TVC — the 2-second broadcast clip held with the project">
@@ -1098,7 +1100,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Homes Direct" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/hfa/hfa-6.jpg" alt="Apartment living and dining zone seen through an opening: a grey sofa before a dark feature wall with a timber cabinet above, a white dining set to the left" class="card-img" loading="lazy">
         </div>
@@ -1123,7 +1125,7 @@
          data-discipline="Graphic Design, 3D Visualization &amp; Motion Design" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="graphic-design vfx-cgi motion-design architectural-visualization">
+         data-category="graphic-design cgi motion-design architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/glow-in-the-dark/glow-in-the-dark-teaser.gif" alt="Glow in the Dark — looping neon sign teaser: dead tubing against a black wall, then the green script and yellow circle striking up" class="card-img" loading="lazy">
         </div>
@@ -1148,7 +1150,7 @@
          data-discipline="Industrial Design" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="industrial-design vfx-cgi">
+         data-category="industrial-design cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/gh-phot-awards/gh-phot-awards-5.jpg" alt="Gh Photography Awards - seen through the lens itself: the barrel faced head-on with its aperture blades at the centre, cyan light picking out the inner ring and radial blur streaking out behind it, and the curved AWARDS lettering wrapping the right-hand side of the mount" class="card-img" loading="lazy">
         </div>
@@ -1201,7 +1203,7 @@
          data-discipline="Architectural Visualization" 
          data-client="Fule Badoe" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/fule/fule-residence-1.jpg" alt="Fule - top-down view of the double-height living room: charcoal L-shaped sofa on a grey rug, white chairs by the garden doors, timber slat wall, stone-clad wall with a dark artwork and a glazed balustrade over a planter of yellow and orange flowers" class="card-img" loading="lazy">
         </div>
@@ -1226,7 +1228,7 @@
          data-discipline="Architectural Design, Industrial Design &amp; 3D Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="architecture-planning industrial-design vfx-cgi architectural-visualization">
+         data-category="architecture-planning industrial-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/frontier-filling-station/frontier-filling-station-1.jpg" alt="FRONTIER FILLING STATION" class="card-img" loading="lazy">
         </div>
@@ -1252,7 +1254,7 @@
          data-discipline="Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/ert/ert-3.jpg" alt="ERT corner house at dusk: the white cubic volume with its concrete chimney and full-height glazing, a timber Townhouses sign wall uplit at the left and an SUV under the carport." class="card-img" loading="lazy">
         </div>
@@ -1302,7 +1304,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/empire-tower/EtJStmkW4AIP-3M.jpg" alt="Empire Tower - the master bedroom: a cream bed with dark satin cushions on a patterned rug under a tiered crystal chandelier, copper-lined panelling behind the headboard and full-height glass onto the balcony" class="card-img" loading="lazy">
         </div>
@@ -1356,7 +1358,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/ela-b/ela-b-9.jpg" alt="Ela B - Render of the kitchen from the entrance side: a full-height pale veneer partition with a dark door, the galley run beyond with black counters, and a glimpse of the living room and blue chair through the opening." class="card-img" loading="lazy">
         </div>
@@ -1381,7 +1383,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/el-dor/el-dor-12.jpg" alt="El Dor - the dark hotel bedroom: a low bed against a curved black ribbed wall under cove light, magenta satin cushions and a cream throw on a white shag rug, ring-based lamps either side and a mirrored wardrobe beyond" class="card-img" loading="lazy">
         </div>
@@ -1406,7 +1408,7 @@
          data-discipline="Architectural Design, Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="architecture-planning interior-design vfx-cgi architectural-visualization">
+         data-category="architecture-planning interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/ehr/ehr-18.jpg" alt="EHR - dusk garden of a dark timber-clad villa: lit stone steps climbing to a glowing pool beside a timber fence, the glazed living room lit beyond, a woman crossing to it on stepping stones" class="card-img" loading="lazy">
         </div>
@@ -1430,7 +1432,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization motion-design">
+         data-category="interior-design cgi architectural-visualization motion-design">
         <div class="card-media-wrapper">
           <img src="assets/images/dyv/dyv-dawn.jpg" alt="DYV" class="card-img" loading="lazy">
         </div>
@@ -1455,7 +1457,7 @@
          data-discipline="3D Visualization" 
          data-client="RDVS Studios" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization studio-projects">
+         data-category="cgi architectural-visualization studio-projects">
         <div class="card-media-wrapper">
           <video src="assets/videos/d-e-t-a-i-l-s/details-film.mp4" class="card-img" poster="assets/images/d-e-t-a-i-l-s/details-film-title.jpg" muted autoplay loop playsinline
                  preload="metadata" aria-label="Details — a frame from the film: the word DETAILS in thin white capitals spaced across the shot, the model motorcycle in hard focus at the left and a run of candles going soft at the right">
@@ -1509,7 +1511,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Centre Stage Management" 
          data-location="Tema, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/csm/csm-1.jpg" alt="CSM - the open office: workstation run and glass meeting table before an orange photo-collage wall" class="card-img" loading="lazy">
         </div>
@@ -1534,7 +1536,7 @@
          data-discipline="Interior Design, Industrial &amp; Furniture Design, Graphic Design &amp; Architectural Visualization" 
          data-client="ENDA Foods" 
          data-location="Accra Mall, Accra, Ghana" 
-         data-category="interior-design industrial-design graphic-design vfx-cgi architectural-visualization art virtual-reality">
+         data-category="interior-design industrial-design graphic-design cgi architectural-visualization art virtual-reality">
         <div class="card-media-wrapper">
           <img src="assets/images/enda-accra-mall/enda-accra-mall-1-desktop.jpg" alt="Enda at Accra Mall: low timber tables set against brown leather banquettes beneath a row of pink paper lanterns, backed by a red brick dado and a backlit bamboo screen carrying a silhouetted illustration" class="card-img" loading="lazy">
         </div>
@@ -1559,7 +1561,7 @@
          data-discipline="3D Animation" 
          data-client="Ceeander Entertainment Ltd" 
          data-location="Nigeria" 
-         data-category="motion-design 3d-animation vfx-cgi">
+         data-category="motion-design 3d-animation cgi">
         <div class="card-media-wrapper">
           <video src="assets/videos/ceeander/ceeander-motion.mp4" class="card-img" poster="assets/images/ceeander/ceeander-cover.jpg" muted autoplay loop playsinline
                  preload="metadata" aria-label="Ceeander Ident — the ident animation itself: the masked-figure storyboard that runs through neon-lit eyes and a red streak of light to the Ceeander Entertainment logo resolve">
@@ -1616,7 +1618,7 @@
          data-discipline="Interior Design, Architectural Visualization &amp; Graphic Design" 
          data-client="Six Acres" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi graphic-design architectural-visualization">
+         data-category="interior-design cgi graphic-design architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/brownies-place/brownies-place-12.jpg" alt="Brownie&rsquo;s Place - detail render of three tall ceramic bottles, two cream and one teal blue, grouped on a low sideboard with a timber drawer and grey body, a window of soft-focus green leaves behind them and a palm frond and dark chair edge in the foreground." class="card-img" loading="lazy">
         </div>
@@ -1641,7 +1643,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="Homes Direct" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/bfa/bfa-6.jpg" alt="BFA - the sitting corner: a wall-mounted screen over a pink-and-white two-tone wall, a low pink table with remotes on a white shag rug, a cream armchair and tripod lamp to the right and a plant in the foreground" class="card-img" loading="lazy">
         </div>
@@ -1666,7 +1668,7 @@
          data-discipline="3D Visualization" 
          data-client="Architect Theodore Kanyi" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi architectural-visualization">
+         data-category="cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/baobab-hotel-exteriors/618151819_18415893631143823_4928026731099591493_n.jpg" alt="Baobab Hotel - Exteriors" class="card-img" loading="lazy">
         </div>
@@ -1748,7 +1750,7 @@
          data-discipline="Interior Design &amp; Architectural Visualization" 
          data-client="Access Bank" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/access-bank-iris/018_0-00-00-00_photoreal_5K.png" alt="Visualization of a glass-fronted meeting room: mesh task chairs around a table, a red and orange geometric brand graphic with chevrons on the rear wall, and a full-height glazed partition reflecting the daylight from the window wall beyond." class="card-img" loading="lazy">
         </div>
@@ -1773,7 +1775,7 @@
          data-discipline="Interior Design &amp; 3D Visualization" 
          data-client="ABL (Accra Brewery Limited)" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi architectural-visualization">
+         data-category="interior-design cgi architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/abl-reception/abl-reception-1.jpg" alt="ABL Reception" class="card-img" loading="lazy">
         </div>
@@ -1823,7 +1825,7 @@
          data-discipline="Architectural Design" 
          data-client="Imperial Homes" 
          data-location="Accra, Ghana" 
-         data-category="architecture-planning interior-design 3d-animation vfx-cgi virtual-reality">
+         data-category="architecture-planning interior-design 3d-animation cgi virtual-reality">
         <div class="card-media-wrapper">
           <img src="assets/images/barham/barham-residence.jpg" alt="41 Barham" class="card-img" loading="lazy">
         </div>
@@ -1902,7 +1904,7 @@
          data-discipline="3D Visualization" 
          data-client="Joelle Eyeson / 1981" 
          data-location="Accra, Ghana" 
-         data-category="vfx-cgi 3d-animation architectural-visualization">
+         data-category="cgi 3d-animation architectural-visualization">
         <div class="card-media-wrapper">
           <img src="assets/images/1981/1981-6.jpg" alt="1981 - the retail shop read down its centre axis, bench on the carpet runner and the lit brand panel at the head of the room" class="card-img" loading="lazy">
         </div>
@@ -1927,7 +1929,7 @@
          data-discipline="Interior Design" 
          data-client="Private Client" 
          data-location="Accra, Ghana" 
-         data-category="interior-design vfx-cgi">
+         data-category="interior-design cgi">
         <div class="card-media-wrapper">
           <img src="assets/images/1957/1957-thumb.jpg" alt="1957 Apartments and Retail Living Room Interior" class="card-img" loading="lazy">
         </div>
@@ -2404,13 +2406,13 @@
                  'graphic-design', 'illustration', 'industrial-design', 'interior-design', 'motion-design'],
         photography: ['architectural-photography', 'drone-photography', 'principal-photography'],
         'turnkey-build': ['turnkey-build', 'cost-engineering', 'product-material-sourcing'],
-        'vfx-cgi': ['3d-animation', 'architectural-visualization', 'match-moving',
-                    'photogrammetry', 'product-visualization', 'tracking', 'virtual-reality',
-                    'vfx-cgi']
+        cgi: ['3d-animation', 'architectural-visualization', 'augmented-reality',
+                'modeling', 'product-visualization', 'rendering', 'virtual-reality', 'cgi'],
+        vfx: ['vfx', 'visual-effects']
       };
 
       // Retired filter keys still live in bookmarks and in expertise.html links.
-      const LEGACY_FILTER_KEYS = { 'digital-art': 'art' };
+      const LEGACY_FILTER_KEYS = { 'digital-art': 'art', 'vfx-cgi': 'cgi' };
 
       const filterGroups = Array.from(document.querySelectorAll('.filter-group'));
 
@@ -2542,10 +2544,15 @@
           const client = (card.getAttribute('data-client') || '').toLowerCase();
           const location = (card.getAttribute('data-location') || '').toLowerCase();
 
-          // VFX + CGI Sub-services:
-          // 3D Visualization, 3D Animation, Architectural Visualization, Arch Viz fall under VFX + CGI.
-          // "visual effects" stays listed so the pre-rename spelling still finds the family.
-          const vfxSubServices = ['3d visualization', '3d animation', 'architectural visualization', 'arch viz', 'visualization', 'visualisation', 'rendering', 'cgi', 'vfx', 'visual effects'];
+          // CGI & VFX Sub-services:
+          // Architectural visualization, product visualization, Virtual reality, augmented reality,
+          // 3d animation, modeling and rendering all fall under cgi.
+          // HFC TVC is the only project under VFX for now.
+          const cgiSubServices = ['3d visualization', '3d animation', 'architectural visualization', 'arch viz', 'product visualization', 'virtual reality', 'augmented reality', 'vr', 'ar', 'modeling', 'rendering', 'cgi', 'visualization', 'visualisation'];
+          const hasCgiSubService = cgiSubServices.some(s => discipline.includes(s) || category.includes(s) || typology.includes(s) || title.includes(s));
+          const isCgiQuery = query && cgiSubServices.some(s => s.includes(query) || query.includes(s));
+
+          const vfxSubServices = ['visual effects', 'vfx', 'match-moving', 'tracking'];
           const hasVfxSubService = vfxSubServices.some(s => discipline.includes(s) || category.includes(s) || typology.includes(s) || title.includes(s));
           const isVfxQuery = query && vfxSubServices.some(s => s.includes(query) || query.includes(s));
 
@@ -2557,13 +2564,17 @@
             year.includes(query) ||
             client.includes(query) ||
             location.includes(query) ||
-            (isVfxQuery && (category.includes('vfx-cgi') || discipline.includes('visual effects')));
+            (isCgiQuery && (category.includes('cgi') || discipline.includes('cgi') || hasCgiSubService)) ||
+            (isVfxQuery && (category.includes('vfx') || discipline.includes('visual effects')));
 
           const services = category.split(/\s+/);
           const group = SERVICE_GROUPS[currentFilter];
           let matchesFilter = currentFilter === 'all'
             || (group ? group.some(key => services.includes(key)) : services.includes(currentFilter));
-          if (!matchesFilter && currentFilter === 'vfx-cgi' && hasVfxSubService) {
+          if (!matchesFilter && currentFilter === 'cgi' && hasCgiSubService && !category.includes('vfx')) {
+            matchesFilter = true;
+          }
+          if (!matchesFilter && currentFilter === 'vfx' && (category.includes('vfx') || title.includes('hfc tvc') || discipline.includes('visual effects'))) {
             matchesFilter = true;
           }
 
