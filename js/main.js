@@ -1099,6 +1099,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         mobileFit: 'cover',
         isPortraitVideo: true,
+        videoWidth: 720,
+        videoHeight: 900,
         videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4?v=1a1bd3d805c',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
         mobilePosition: 'center',
@@ -5512,6 +5514,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         mobileFit: 'cover',
         isPortraitVideo: true,
+        videoWidth: 1600,
+        videoHeight: 2000,
         mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
@@ -6284,8 +6288,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'industrial-design',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-1.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6691,8 +6695,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-5.jpg',
-        mobilePosition: '68% center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6710,8 +6714,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-6.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6729,8 +6733,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-7.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6748,8 +6752,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-8.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6767,8 +6771,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-9.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6786,8 +6790,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-10.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6805,8 +6809,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-11.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6824,8 +6828,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-12.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6843,8 +6847,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-2.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -6862,8 +6866,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Industrial Design, 3D Visualization & Motion Design',
         discipline: 'vfx',
         imageUrl: 'assets/images/gh-phot-awards/gh-phot-awards-3.jpg',
-        mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobilePosition: '85% center',
+        mobileFit: 'cover',
         projectUrl: 'gh-phot-awards.html',
         desc: 'Industrial design, 3D visualization and motion design for the Gh Photography Awards ceremony completed in 2016.',
         specs: {
@@ -9574,11 +9578,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!mediaContainer.classList.contains('slide-media-contain')) return;
     if (mediaContainer.classList.contains('slide-media-boxed')) return;
     // Desktop contain begins at 1024px
-    if (!window.matchMedia('(min-width: 1024px)').matches) return;
+    if (!window.matchMedia('(min-width: 769px)').matches) return;
     const mediaEl = mediaContainer.querySelector('img, video');
     if (!mediaEl) return;
-    const natW = mediaEl.naturalWidth || mediaEl.videoWidth;
-    const natH = mediaEl.naturalHeight || mediaEl.videoHeight;
+    const natW = mediaEl.naturalWidth || mediaEl.videoWidth || parseInt(mediaContainer.dataset.natW || '0', 10);
+    const natH = mediaEl.naturalHeight || mediaEl.videoHeight || parseInt(mediaContainer.dataset.natH || '0', 10);
     if (!natW || !natH) return;
     const W = mediaContainer.clientWidth;
     const H = mediaContainer.clientHeight;
@@ -9680,7 +9684,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               ];
               const isPortraitOrSquare = proj.isPortraitVideo ||
                 PORTRAIT_OR_SQUARE_VIDEOS.some(u => (proj.videoUrl || '').includes(u));
-              const isDesktop = window.innerWidth >= 1024;
+              const isDesktop = window.innerWidth >= 769;
               const isDesktopContain = isPortraitOrSquare || (proj.fit === 'contain' && !proj.videoUrl);
               const videoProj = Object.assign({}, proj, {
                 mobileFit: isPortraitOrSquare ? 'cover' : (proj.mobileFit || 'contain')
@@ -9718,6 +9722,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 mediaContainer.style.removeProperty('--slide-boxed-shift-x');
               }
 
+              const knownVidW = proj.videoWidth || (isPortraitOrSquare ? 720 : 1920);
+              const knownVidH = proj.videoHeight || (isPortraitOrSquare ? 900 : 1080);
+              mediaContainer.dataset.natW = knownVidW.toString();
+              mediaContainer.dataset.natH = knownVidH.toString();
+
               const vidSrc = rung ? rung.video : deskVid;
               const posterSrc = rung ? rung.poster : deskPoster;
               const vidContainClass = isDesktopContain ? ' slide-video-contain' : '';
@@ -9732,6 +9741,8 @@ document.addEventListener('DOMContentLoaded', async () => {
               if (vidEl) {
                 const applyAspectFromMeta = () => {
                   if (vidEl.videoWidth && vidEl.videoHeight) {
+                    mediaContainer.dataset.natW = vidEl.videoWidth.toString();
+                    mediaContainer.dataset.natH = vidEl.videoHeight.toString();
                     const natPortrait = vidEl.videoHeight >= vidEl.videoWidth;
                     if (natPortrait) {
                       vidEl.classList.add('is-portrait-video');
@@ -10293,13 +10304,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       const curSlideMedia = activeSlide.querySelector('.slide-media-contain');
       if (curSlideMedia) {
-        if (activeVideo.videoWidth) {
-          anchorContainSlide(curSlideMedia);
-        } else {
-          activeVideo.addEventListener('loadedmetadata', () => {
-            anchorContainSlide(curSlideMedia);
-          }, { once: true });
-        }
+        anchorContainSlide(curSlideMedia);
       }
 
       let advanced = false;

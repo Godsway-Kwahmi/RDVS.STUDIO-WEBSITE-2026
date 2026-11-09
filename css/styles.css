@@ -519,7 +519,7 @@ button {
    whose entry says nothing is still centred -- `center` is the fallback in the var() and the value in
    25 of the deck's 26 film entries, counted by scratch/_guard_ahero_mobile_pos.py through the deck's own
    pool parser. */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .slide-picture img,
   .slide-img,
   .slide-video,
@@ -566,11 +566,17 @@ button {
   }
 
   .slide-media-mobile-contain .slide-picture img,
-  .slide-media-mobile-contain .slide-img,
+  .slide-media-mobile-contain .slide-img {
+    object-fit: scale-down;
+    object-position: center bottom !important;
+  }
+
   .slide-media-mobile-contain video,
   .slide-media-mobile-contain .slide-video {
-    object-fit: scale-down;
-    object-position: center top !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 
   /* `mobileFit: 'crop'` keeps the box above but lets the plate fill it, so the overflow goes to the
@@ -625,7 +631,7 @@ button {
    that width ... have the images fill the whole screen like before" -- below 1024 px a contained
    slide simply obeys the cover law above and crops to fill. The earlier floor was 769 px, which left
    a tablet in the 769-1023 band with theme ground at the sides instead of a full-bleed picture. */
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .slide-media-contain {
     background: var(--background);
   }
@@ -641,8 +647,9 @@ button {
   .slide-picture img.slide-img-contain,
   .slide-img-contain,
   .slide-media-contain video,
+  .slide-media-contain .slide-video,
   .slide-video-contain {
-    object-fit: scale-down;
+    object-fit: scale-down !important;
     /* Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
        edge starts on the caption's own column ("the left edge of the image is in line with the text
        like this and the rest of the image shifts slightly to the right and not dead center"), so the
@@ -655,7 +662,7 @@ button {
        plate already spans the width. A portrait or square plate joins the datum at its own size too,
        which is what BFA's squares needed on a window taller than they are -- centred there, the caption
        fell inside the image. */
-    object-position: calc(50% + var(--slide-contain-shift, 0px)) var(--slide-contain-y, 50%);
+    object-position: calc(50% + var(--slide-contain-shift, 0px)) var(--slide-contain-y, 50%) !important;
     /* The vertical nudge (owner, 2026-11-05, on the Kuma Residence study: "shift upwards slightly")
        is a pool-entry value written as --slide-contain-y; a plate that says nothing stays centred. */
   }
@@ -4094,14 +4101,14 @@ html[data-intro="done"] .rdvs-intro-veil {
     flex-direction: column;
     position: absolute;
     top: calc(var(--header-height, 56px) + 16px);
-    /* Mobile phone datum line (owner markup 2026-11-09): aligned with logo column datum (38px right of 16px margin, ~54px) */
-    left: calc(var(--grid-margin, 16px) + 38px);
+    /* Mobile phone datum line (owner markup 2026-11-09, media_1794225954109_2dc3b357.jpg): aligned with left margin datum line */
+    left: var(--grid-margin, 16px);
     right: var(--grid-margin, 16px);
     z-index: 25;
     pointer-events: none;
     font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
-    /* Mobile phone: font height set to 2/3rds (21.3px) and weight set to regular 400 per user specification */
-    font-size: clamp(16px, 4.3vw, 21.3px);
+    /* Mobile phone: font height increased to 150% per user markup */
+    font-size: clamp(24px, 5.5vw, 32px);
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: -0.02em;
@@ -4144,7 +4151,7 @@ html[data-intro="done"] .rdvs-intro-veil {
     pointer-events: none;
     font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
     /* Font height increased to 200% and weight reduced to very thin 100 */
-    font-size: clamp(24px, 2.6vw, 32px);
+    font-size: clamp(32px, 3.8vw, 42px);
     font-weight: 100;
     line-height: 1.2;
     letter-spacing: -0.04em;
