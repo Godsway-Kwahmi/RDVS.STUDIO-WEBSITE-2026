@@ -4052,8 +4052,8 @@ html[data-intro="done"] .rdvs-intro-veil {
   display: none;
 }
 
-/* Mobile & Tablet: positioned in top whitespace between header and contained slide */
-@media (max-width: 1023px) {
+/* Mobile Phone (< 769px): positioned in top whitespace between header and contained slide */
+@media (max-width: 768px) {
   .homepage-welcome-message {
     display: flex;
     flex-direction: column;
@@ -4064,7 +4064,7 @@ html[data-intro="done"] .rdvs-intro-veil {
     z-index: 25;
     pointer-events: none;
     font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
-    /* Mobile font height set to 2/3rds of previous (21.3px) and weight set to regular 400 per user specification */
+    /* Mobile phone: font height set to 2/3rds (21.3px) and weight set to regular 400 per user specification */
     font-size: clamp(16px, 4.3vw, 21.3px);
     font-weight: 400;
     line-height: 1.25;
@@ -4093,23 +4093,73 @@ html[data-intro="done"] .rdvs-intro-veil {
   }
 }
 
-/* Desktop: positioned relative to vertical margin datum, horizontal baseline datum, and project title so they never overlap */
-@media (min-width: 1024px) {
+/* Mobile displays of 1024px size and proportions (769px - 1024px, e.g. 1024x860 tablet):
+   Aligned with margin datum line (no +100px shift), font height doubled (200%), and weight reduced to thin 100 */
+@media (min-width: 769px) and (max-width: 1024px) {
   .homepage-welcome-message {
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* Aligned with horizontal caption baseline datum (25dvh from bottom) and vertical datum line */
     bottom: 25dvh;
+    /* Aligned with vertical margin datum line */
     left: max(var(--grid-margin, 24px), calc((100vw - var(--max-width, 2000px)) / 2 + var(--grid-margin, 24px)));
     max-width: calc(max(calc(50% - var(--hero-caption-inset, 330px)), var(--hero-caption-min, 288px)) - var(--grid-margin, 24px) - 20px);
     z-index: 25;
     pointer-events: none;
     font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
-    /* Font height increased to 200% (doubled) and weight reduced to thin 100 per user specification */
-    font-size: clamp(26px, 2.6vw, 36px);
+    /* Font height increased to 200% and weight reduced to very thin 100 */
+    font-size: clamp(24px, 2.6vw, 32px);
     font-weight: 100;
     line-height: 1.2;
+    letter-spacing: -0.04em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ffffff;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.45s ease, color 0.3s ease;
+  }
+
+  .hero-viewport.is-contain-slide .homepage-welcome-message {
+    color: #333333;
+  }
+
+  [data-theme="dark"] .hero-viewport.is-contain-slide .homepage-welcome-message {
+    color: #ffffff;
+  }
+
+  .homepage-welcome-message.on-media,
+  .hero-viewport.is-contain-slide .homepage-welcome-message.on-media {
+    color: #ffffff !important;
+  }
+
+  .homepage-welcome-message.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Desktop (> 1024px): REVERTED per user specification ("not for desktops. Please redo and revert.")
+   - Indented +100px from margin datum
+   - Font size: clamp(16px, 1.35vw, 22px)
+   - Font weight: 300
+   - Font family: "Helvetica Neue", Helvetica, Arial, sans-serif
+*/
+@media (min-width: 1025px) {
+  .homepage-welcome-message {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* Aligned with horizontal caption baseline datum (25dvh from bottom) and vertical datum line (100px right of margin datum) */
+    bottom: 25dvh;
+    left: max(calc(var(--grid-margin, 24px) + 100px), calc((100vw - var(--max-width, 2000px)) / 2 + var(--grid-margin, 24px) + 100px));
+    max-width: calc(max(calc(50% - var(--hero-caption-inset, 330px)), var(--hero-caption-min, 288px)) - var(--grid-margin, 24px) - 100px - 20px);
+    z-index: 25;
+    pointer-events: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: clamp(16px, 1.35vw, 22px);
+    font-weight: 300;
+    line-height: 1.25;
     letter-spacing: -0.04em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
