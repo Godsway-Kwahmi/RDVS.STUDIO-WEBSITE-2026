@@ -9736,7 +9736,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             // minutes later never re-anchors and lands dead-centred instead of on the caption column.
             // `naturalWidth` is the honest "decoded yet?" test.
             if (containImg && !(containImg.complete && containImg.naturalWidth)) {
-              containImg.addEventListener('load', () => anchorContainSlide(mediaContainer), { once: true });
+              containImg.addEventListener('load', () => {
+                anchorContainSlide(mediaContainer);
+                assignHeroGrounds();
+              }, { once: true });
             }
           }
         }

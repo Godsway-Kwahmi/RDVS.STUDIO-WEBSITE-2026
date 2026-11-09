@@ -4051,8 +4051,8 @@ html[data-intro="done"] .rdvs-intro-veil {
   display: none;
 }
 
-/* Mobile: positioned in top whitespace between header and contained slide */
-@media (max-width: 768px) {
+/* Mobile & Tablet: positioned in top whitespace between header and contained slide */
+@media (max-width: 1023px) {
   .homepage-welcome-message {
     display: flex;
     flex-direction: column;
@@ -4062,17 +4062,23 @@ html[data-intro="done"] .rdvs-intro-veil {
     right: var(--grid-margin, 16px);
     z-index: 25;
     pointer-events: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.25;
+    font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
+    /* Font height increased to 200% (32px) and weight reduced to very thin (100) per user specification */
+    font-size: clamp(24px, 6.5vw, 32px);
+    font-weight: 100;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--foreground);
+    /* Dark grey when not on an image */
+    color: #333333;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.45s ease, color 0.3s ease;
+  }
+
+  [data-theme="dark"] .homepage-welcome-message:not(.on-media) {
+    color: #ffffff;
   }
 
   /* Always white when falling over image or video */
@@ -4098,25 +4104,21 @@ html[data-intro="done"] .rdvs-intro-veil {
     max-width: calc(max(calc(50% - var(--hero-caption-inset, 330px)), var(--hero-caption-min, 288px)) - var(--grid-margin, 24px) - 100px - 20px);
     z-index: 25;
     pointer-events: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: clamp(16px, 1.35vw, 22px);
-    font-weight: 300;
+    font-family: var(--font-sans, "Geist", "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-size: clamp(20px, 1.6vw, 28px);
+    font-weight: 100;
     line-height: 1.25;
     letter-spacing: -0.04em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #ffffff;
+    /* Dark grey when not on an image */
+    color: #333333;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.45s ease, color 0.3s ease;
   }
 
-  /* Dark grey on blank theme background in light mode */
-  .hero-viewport.is-contain-slide .homepage-welcome-message {
-    color: #333333;
-  }
-
-  [data-theme="dark"] .hero-viewport.is-contain-slide .homepage-welcome-message {
+  [data-theme="dark"] .homepage-welcome-message:not(.on-media) {
     color: #ffffff;
   }
 
@@ -4130,21 +4132,22 @@ html[data-intro="done"] .rdvs-intro-veil {
     opacity: 0;
     visibility: hidden;
   }
+}
 
-  .homepage-welcome-message .welcome-line-wrapper {
-    display: block;
-    overflow: hidden;
-    line-height: 1.25;
-  }
+.homepage-welcome-message .welcome-line-wrapper {
+  display: block;
+  overflow: hidden;
+  line-height: 1.2;
+}
 
-  .homepage-welcome-message .welcome-line-text {
-    display: inline-block;
-    font-weight: 300;
-    transform: translateY(0);
-    will-change: transform;
-  }
+.homepage-welcome-message .welcome-line-text {
+  display: inline-block;
+  font-weight: 100;
+  transform: translateY(0);
+  will-change: transform;
+}
 
-  .homepage-welcome-message.is-animating .welcome-line-text {
+.homepage-welcome-message.is-animating .welcome-line-text {
     animation: welcome-line-rise 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
