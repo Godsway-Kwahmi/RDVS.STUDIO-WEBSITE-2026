@@ -5043,7 +5043,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/3aap/3aap-3.jpg',
         fit: 'contain',
-        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
@@ -8050,7 +8049,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/caustics-rnd/634561267_18406382041132447_2989004622592241466_n.jpg',
         fit: 'contain',
-        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
@@ -8542,7 +8540,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
         fit: 'contain',
-        desktopShiftX: 150,
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
@@ -9559,7 +9556,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     mediaContainer.style.removeProperty('--slide-contain-shift');
     if (!mediaContainer.classList.contains('slide-media-contain')) return;
     if (mediaContainer.classList.contains('slide-media-boxed')) return;
-    if (!window.matchMedia('(min-width: 1200px)').matches) return;
+    // Desktop contain begins at 1024px
+    if (!window.matchMedia('(min-width: 1024px)').matches) return;
     const img = mediaContainer.querySelector('img');
     if (!img || !img.naturalWidth || !img.naturalHeight) return;
     const W = mediaContainer.clientWidth;
@@ -9569,24 +9567,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     const freeX = W - paintedW;
     if (freeX <= 1) return;
     // A landscape plate that is not held to the window’s height keeps its symmetric bands; only the
-    // portrait and square plates the owner’s rule names come off centre here.  The 5% tolerance is what
-    // keeps 1H's 1123x1077 and Tower Cascades' 1131x1130 in that group: on a window taller than they are
-    // they paint at their own size, and only rounding says they are wider than tall.  It reaches five
-    // entries in all -- the two 1H copies of mig-1h-1 and three Tower Cascades near-squares -- and stops
-    // well short of the pool's next-widest contained plate at 1.19.
+    // portrait and square plates come off centre to align to datum.
     if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.07) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
     const datum = column - PORTRAIT_DATUM_OFFSET;
-    // A plate that reaches past the datum from the left has no room to sit on it without losing
-    // its right edge, so it stays centred and keeps its theme ground on both sides.
-    if (datum + paintedW > W + 1) return;
+
+    // Portrait and square plates: remove any conflicting boxed shift that would displace them from the datum
+    mediaContainer.style.removeProperty('--slide-boxed-shift-x');
+
+    // Rule: "NO PORTRAIT SHOULD GO BEYOND THIS DATUMN TO THE LEFT".
+    // Left edge of the rendered image is anchored to the datum (left edge = datum).
+    // In CSS with object-fit: scale-down and object-position: calc(50% + shift) 50%,
+    // the left edge of the painted image sits at: freeX / 2 + shift.
+    // Setting shift = datum - freeX / 2 positions the left edge exactly at datum.
     const shift = datum - freeX / 2;
-    // Owner, 2026-11-05: "let the anchor pull left on narrow desktops too". The datum is a fixed
-    // distance from the left edge while a centred plate's edge is a fixed distance from the centre, so
-    // on a narrow window the centred edge lands right of the datum -- 48 of the pool's 67 contained
-    // plates at 1366x640 -- and the caption stood in the theme ground instead of on the plate. The
-    // datum is never left of HERO_CAPTION_MIN less the datum offset and the guard above keeps the right
-    // edge inside the window, so pulling left cannot push the plate off screen at either end.
     if (Math.abs(shift) > 0.05) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
   }
 
@@ -10157,6 +10151,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (statusActive) {
       statusActive.textContent = String(currentIndex + 1).padStart(2, '0');
     }
+
+    const activeSlideMedia = slides[currentIndex] && slides[currentIndex].querySelector('.slide-media-contain');
+    if (activeSlideMedia) anchorContainSlide(activeSlideMedia);
 
     startCurrentSlide();
 
