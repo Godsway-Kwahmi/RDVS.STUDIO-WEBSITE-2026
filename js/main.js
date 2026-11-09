@@ -1338,6 +1338,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-1.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1359,6 +1360,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-2.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1400,6 +1402,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-4.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1441,6 +1444,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-6.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1482,6 +1486,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-8.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1503,6 +1508,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/enda-accra-mall/enda-accra-mall-9.jpg',
         fit: 'contain',
         desktopWidth: 1200,
+        desktopShiftX: 150,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'enda-accra-mall.html',
@@ -1838,6 +1844,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design, Graphic Design & Design + Build',
         discipline: 'interiors',
         imageUrl: 'assets/images/5aap/5aap-3.jpg',
+        fit: 'contain',
+        desktopWidth: 900,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: '5aap.html',
@@ -4993,6 +5001,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/3aap/3aap-1.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: '3aap.html',
@@ -5013,6 +5022,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/3aap/3aap-2.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: '15% center',
         mobileFit: 'contain',
         projectUrl: '3aap.html',
@@ -5033,6 +5043,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/3aap/3aap-3.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: '3aap.html',
         desc: 'A workspace fit-out designed and built for Impact Hub Accra in 2019: a tall white room under an exposed concrete ceiling and steel trusses, fitted with yellow wall cabinets over black base units by MIG, the studio\u2019s furniture line. Photographed on site as the installation went in.',
@@ -5442,6 +5453,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         videoUrl: 'assets/videos/ttd/ttd-film.mp4',
         imageUrl: 'assets/images/ttd/FuIPLeNWYAIxRIj.jpg',
+        fit: 'contain',
+        desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html',
@@ -5495,6 +5509,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
         fit: 'contain',
         desktopWidth: 900,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
@@ -6087,6 +6102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/EiLEUFFXkAAAxZV.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: '20% center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -6099,6 +6115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/giffard-park/EiLEUZFWsAIF0yi.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: '85% center',
         mobileFit: 'contain',
         projectUrl: 'giffard-park.html'
@@ -6370,6 +6387,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/tea-house/tea-house-01.png',
         fit: 'contain',
         desktopWidth: 900,
+        desktopShiftX: 100,
         mobilePosition: '24% center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
@@ -6390,6 +6408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/tea-house/tea-house-02.png',
         fit: 'contain',
         desktopWidth: 900,
+        desktopShiftX: 100,
         mobilePosition: '26% center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
@@ -6410,6 +6429,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
         fit: 'contain',
         desktopWidth: 900,
+        desktopShiftX: 100,
         mobilePosition: '29% center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
@@ -7528,6 +7548,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'vfx',
         imageUrl: 'assets/images/avalon/GdOGAzlXQAA03pC.jpg',
         fit: 'contain',
+        desktopWidth: 1200,
+        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -7964,6 +7986,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         videoUrl: 'assets/videos/caustics-rnd/caustics-rnd-film.mp4',
         imageUrl: 'assets/images/caustics-rnd/caustics-rnd-film-frame.jpg',
+        fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'caustics-rnd.html',
@@ -7984,6 +8008,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/caustics-rnd/619655349_18089155420855194_8681370630851501514_n.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'caustics-rnd.html',
@@ -8004,6 +8029,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/caustics-rnd/621450795_18107617090736756_5698083828675164716_n.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'caustics-rnd.html',
@@ -8024,6 +8050,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'motion',
         imageUrl: 'assets/images/caustics-rnd/634561267_18406382041132447_2989004622592241466_n.jpg',
         fit: 'contain',
+        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'caustics-rnd.html',
         desc: 'An in-house study of caustic light: 25.7 seconds at 1920x1080, rendered in Corona Renderer 5, of the rippled webs moving water throws across a pool, its edge and the wall behind it.',
@@ -8515,6 +8542,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-1.jpg',
         fit: 'contain',
+        desktopShiftX: 150,
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
         desc: 'An experimental lighting range rather than one fixture: a reeded column that lifts a room from the floor, a cluster of rounded diffusers that reads as a single body, and a corrugated trunk tapering from a thin tip to an open mouth. RDVS designed MLKY in 2021 for the MIG line.',
@@ -8532,6 +8560,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-2.jpg',
         fit: 'contain',
+        desktopShiftX: 150,
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
@@ -8550,6 +8579,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'products',
         imageUrl: 'assets/images/mig/mig-mlky-3.jpg',
         fit: 'contain',
+        desktopShiftX: 150,
         mobileFit: 'contain',
         mobilePosition: 'center',
         projectUrl: 'product-mlky.html',
@@ -9266,13 +9296,44 @@ document.addEventListener('DOMContentLoaded', async () => {
       const paintedW = natW * scale;
       const paintedH = natH * scale;
       const shift = parseFloat(getComputedStyle(media).getPropertyValue('--slide-contain-shift')) || 0;
+      const shiftX = parseFloat(getComputedStyle(media).getPropertyValue('--slide-boxed-shift-x')) || 0;
       const yPctStr = getComputedStyle(media).getPropertyValue('--slide-contain-y') || '50%';
       const yPct = (parseFloat(yPctStr) || 50) / 100;
-      const imgLeft = mBox.left + (mBox.width - paintedW) / 2 + shift;
+      const imgLeft = mBox.left + (mBox.width - paintedW) / 2 + shift + shiftX;
       const imgTop = mBox.top + (mBox.height - paintedH) * yPct;
       imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
       }
     }
+    // Welcome message ground detection & non-overlapping position relative to datum and project title
+    const welcomeEl = document.getElementById('homepageWelcomeMessage');
+    if (welcomeEl) {
+      if (!isContain) {
+        welcomeEl.classList.add('on-media');
+      } else if (imgRect) {
+        const wBox = welcomeEl.getBoundingClientRect();
+        const onMedia = (wBox.width > 0 && wBox.height > 0) &&
+                        (wBox.left < imgRect.right && wBox.right > imgRect.left &&
+                         wBox.top < imgRect.bottom && wBox.bottom > imgRect.top);
+        welcomeEl.classList.toggle('on-media', onMedia);
+      } else {
+        welcomeEl.classList.remove('on-media');
+      }
+      // Dynamic guard: ensure welcome message never overlaps the active project title on desktop
+      if (window.innerWidth >= 1024) {
+        const activeTitle = document.querySelector('.caption-card.active .project-title');
+        if (activeTitle) {
+          const tBox = activeTitle.getBoundingClientRect();
+          const wBox = welcomeEl.getBoundingClientRect();
+          if (tBox.width > 0 && tBox.left > 0) {
+            const availWidth = Math.max(160, Math.floor(tBox.left - wBox.left - 24));
+            welcomeEl.style.maxWidth = availWidth + 'px';
+          }
+        }
+      } else {
+        welcomeEl.style.removeProperty('max-width');
+      }
+    }
+
     for (const sel of HERO_GROUND_ROWS) {
       for (const el of document.querySelectorAll(sel)) {
         const box = el.getBoundingClientRect();
@@ -9599,6 +9660,21 @@ document.addEventListener('DOMContentLoaded', async () => {
               else mediaContainer.style.removeProperty('--slide-desktop-pos');
               if (isContain && proj.containY) mediaContainer.style.setProperty('--slide-contain-y', proj.containY);
               else mediaContainer.style.removeProperty('--slide-contain-y');
+              const vidBoxed = isContain && (proj.desktopWidth || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
+              mediaContainer.classList.toggle('slide-media-boxed', !!vidBoxed);
+              if (vidBoxed) {
+                const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
+                mediaContainer.style.setProperty('--slide-desktop-width', boxW);
+              } else {
+                mediaContainer.style.removeProperty('--slide-desktop-width');
+              }
+              const vidShiftX = proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0);
+              if (isContain && vidShiftX) {
+                mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof vidShiftX === 'number' ? `${vidShiftX}px` : vidShiftX);
+              } else {
+                mediaContainer.style.removeProperty('--slide-boxed-shift-x');
+              }
+              
 
               mediaContainer.innerHTML = rung
                 ? `
@@ -9627,14 +9703,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (isBoxed) {
               const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
               mediaContainer.style.setProperty('--slide-desktop-width', boxW);
-              const shiftX = proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0);
-              if (shiftX) {
-                mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof shiftX === 'number' ? `${shiftX}px` : shiftX);
               } else {
-                mediaContainer.style.removeProperty('--slide-boxed-shift-x');
-              }
-            } else {
               mediaContainer.style.removeProperty('--slide-desktop-width');
+            }
+            const shiftX = proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0);
+            if (isContain && shiftX) {
+              mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof shiftX === 'number' ? `${shiftX}px` : shiftX);
+            } else {
               mediaContainer.style.removeProperty('--slide-boxed-shift-x');
             }
             // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
