@@ -6124,7 +6124,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
         mobilePosition: '85% center',
         projectUrl: 'avalon.html'
@@ -6134,7 +6134,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GdOGAJlXYAEedq8.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7533,7 +7533,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/Gc8QzsaXkAAQotV.jpg',
         mobilePosition: '62% center',
         mobileFit: 'contain',
@@ -7544,11 +7544,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GdOGAzlXQAA03pC.jpg',
         fit: 'contain',
-        desktopWidth: 1200,
-        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'avalon.html'
       },
@@ -7557,7 +7555,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GdTbJDjWAAAyxys.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7568,7 +7566,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GdGKctIWgAAqaDe.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7579,7 +7577,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GdI8J9RW4AAgyn1.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7590,7 +7588,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GuZ9BhbW8AAjMjv.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7601,7 +7599,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GuZ9BkOW8AAFase.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7612,7 +7610,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/GuZ9Bv1WwAA0pxM.jpg',
         fit: 'contain',
         mobilePosition: 'center',
@@ -7624,7 +7622,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         title: 'Avalon',
         category: 'Interior Architecture — 2024',
         service: 'Interior Architecture',
-        discipline: 'vfx',
+        discipline: 'cgi',
         imageUrl: 'assets/images/avalon/624954545_18094908160756194_8357279890571942706_n.jpg',
         fit: 'contain',
         mobileFit: 'contain',
@@ -9109,7 +9107,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Avalon',
       category: 'Design · VFX + CGI — 2024',
       service: 'Design · VFX + CGI',
-      discipline: 'vfx',
+      discipline: 'cgi',
       imageUrl: 'assets/images/avalon/GuZ8So8WAAATDw8.jpg',
       mobilePosition: '42% center',
       projectUrl: 'avalon.html'
@@ -9719,8 +9717,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             // with the leftover window painted in the page's theme ground. `scale-down` is the one
             // value that never upscales: contain would blow a 978 px study up to the viewport, and
             // cover would crop it.
-            const isContain = proj.fit === 'contain';
-            const isBoxed = isContain && (proj.desktopWidth || proj.id === 'hot-gossip' || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
+            // For Avalon project, all the kitchen portrait shots get the portrait treatment on desktop
+            const isAvalonKitchen = proj.imageUrl && (
+              proj.imageUrl.includes('GdOGAJlXYAEedq8') ||
+              proj.imageUrl.includes('GdOGAzlXQAA03pC') ||
+              proj.imageUrl.includes('GdTbJDjWAAAyxys')
+            );
+            const isContain = proj.fit === 'contain' || isAvalonKitchen;
+            const isBoxed = isContain && !isAvalonKitchen && (proj.desktopWidth || proj.id === 'hot-gossip' || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
             mediaContainer.classList.toggle('slide-media-contain', isContain);
             mediaContainer.classList.toggle('slide-media-boxed', !!isBoxed);
             if (isBoxed) {
