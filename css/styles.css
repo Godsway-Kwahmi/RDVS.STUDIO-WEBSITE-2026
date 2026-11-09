@@ -538,9 +538,10 @@ button {
    and writes it as --mobile-contain-base; the 30% fallback is only the pre-JS frame.
    `scale-down` is the same never-upscale value the desktop law uses, and the box takes the page's
    ground, so the bands are black in the dark theme and white in the light one. */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .slide-media-mobile-contain {
-    top: var(--header-height);
+    /* Maintain spacing between welcome message and non-cover images */
+    top: var(--mobile-contain-top, 212px);
     bottom: var(--mobile-contain-base, 30%);
     /* Owner markup 2026-11-06, a phone frame of Brownie's Place with two red guides drawn the full height
        of the screen at x=16 and x=width-16 -- the page's own margins, the lines the header, the caption
@@ -563,7 +564,7 @@ button {
   .slide-media-mobile-contain .slide-img,
   .slide-media-mobile-contain video {
     object-fit: scale-down;
-    object-position: center;
+    object-position: center top;
   }
 
   /* `mobileFit: 'crop'` keeps the box above but lets the plate fill it, so the overflow goes to the

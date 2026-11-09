@@ -9228,9 +9228,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   // why this rides the same calls that already re-classify the caption's ink.
   function assignMobileContainBase() {
     const foot = document.querySelector('.hero-footer');
-    if (!foot) return;
-    const base = Math.round(window.innerHeight - foot.getBoundingClientRect().top);
-    document.documentElement.style.setProperty('--mobile-contain-base', Math.max(0, base) + 'px');
+    if (foot) {
+      const base = Math.round(window.innerHeight - foot.getBoundingClientRect().top);
+      document.documentElement.style.setProperty('--mobile-contain-base', Math.max(0, base) + 'px');
+    }
+    const welcomeEl = document.getElementById('homepageWelcomeMessage');
+    if (welcomeEl) {
+      const wBox = welcomeEl.getBoundingClientRect();
+      if (wBox.bottom > 0) {
+        // Maintain consistent spacing between welcome message and non-cover images: 25px
+        const containTop = Math.round(wBox.bottom + 25);
+        document.documentElement.style.setProperty('--mobile-contain-top', containTop + 'px');
+      }
+    }
   }
 
   // The phone treatment family. `mobileFit: 'contain'` shows the plate whole between the nav and the
@@ -9285,6 +9295,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (media.classList.contains('slide-media-boxed')) {
         const r = img.getBoundingClientRect();
         imgRect = { left: r.left, right: r.right, top: r.top, bottom: r.bottom };
+      } else if (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain')) {
+        const mBox = media.getBoundingClientRect();
+        const natW = img.naturalWidth || img.videoWidth;
+        const natH = img.naturalHeight || img.videoHeight;
+        const scale = Math.min(1, mBox.width / natW, mBox.height / natH);
+        const paintedW = natW * scale;
+        const paintedH = natH * scale;
+        const imgLeft = mBox.left + (mBox.width - paintedW) / 2;
+        const imgTop = mBox.top;
+        imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
       } else {
       const mBox = media.getBoundingClientRect();
       const natW = img.naturalWidth || img.videoWidth;
