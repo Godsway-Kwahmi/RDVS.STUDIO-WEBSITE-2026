@@ -2330,7 +2330,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/G_1R3UmbUAITQo5.jpg',
         fit: 'contain',
+        desktopWidth: 1000,
         mobilePosition: 'center',
+        mobileFit: 'contain',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
         specs: {
