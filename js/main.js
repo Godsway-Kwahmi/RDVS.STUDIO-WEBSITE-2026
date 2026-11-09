@@ -1097,6 +1097,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
         fit: 'contain',
+        mobileFit: 'cover',
+        isPortraitVideo: true,
         videoUrl: 'assets/videos/villa-aggregate/villa-aggregate-film.mp4?v=1a1bd3d805c',
         imageUrl: 'assets/images/aggregate/villa-aggregate-1.jpg',
         mobilePosition: 'center',
@@ -5468,6 +5470,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         discipline: 'design',
         videoUrl: 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
         fit: 'contain',
+        mobileFit: 'cover',
         imageUrl: 'assets/images/mig/mig-1h-2.jpg',
         mobilePosition: 'center',
         projectUrl: 'mig.html',
@@ -5507,6 +5510,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         videoUrl: 'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
         imageUrl: 'assets/images/tea-house/tea-house-05.png',
         fit: 'contain',
+        mobileFit: 'cover',
+        isPortraitVideo: true,
         desktopWidth: 900,
         desktopShiftX: 100,
         mobilePosition: 'center',
@@ -9619,11 +9624,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (mediaContainer) {
           if (proj.videoUrl) {
             mediaContainer.classList.remove('slide-media-contain');
-            // Owner, 2026-11-06: a film whose frame is too wide to show whole on a phone can ask for
-            // the phone contain treatment through `mobileFit`. It is a phone-only class; the desktop
-            // branch below stays on cover.
-            applyMobileFit(mediaContainer, proj);
+            mediaContainer.classList.remove('slide-media-portrait-cover');
             if ((proj.is360 || proj.videoUrl.includes('360')) && window.VR360) {
+              applyMobileFit(mediaContainer, proj);
               mediaContainer.innerHTML = '';
               const vrWrap = document.createElement('div');
               vrWrap.className = 'slide-vr-wrapper vr-360-container';
@@ -9659,29 +9662,47 @@ document.addEventListener('DOMContentLoaded', async () => {
               const deskVid = proj.videoUrl;
               const deskPoster = proj.imageUrl || '';
               const rung = filmRendition(proj);
-              // Homepage slideshow video orientation law (Owner specification):
+              // Homepage slideshow video orientation law (Owner specification 2026-11-09):
               // - All wide videos: cover treatment on desktop, wide treatment on mobile (mobileFit: 'contain')
-              // - All portrait or square videos: portrait treatment on desktop (fit: 'contain'), cover treatment on mobile
+              // - All portrait videos: cover treatment on mobile (stretch to cover full screen),
+              //   and portrait treatment on desktop (fit: 'contain', anchored to vertical datum line)
               const PORTRAIT_OR_SQUARE_VIDEOS = [
                 'assets/videos/villa-aggregate/villa-aggregate-film.mp4',
+                'assets/videos/villa-aggregate/ssstwitter.com_1794175439809.mp4',
+                'assets/videos/the-tea-house/the-tea-house-website-load.mp4',
+                'assets/videos/5aap/5aap-progress.mp4',
+                'assets/videos/rdvs-intro/rdvs-intro-film-phone.mp4',
+                'assets/videos/rdvs-intro/rdvs-intro-film-phone-large.mp4',
+                'assets/videos/rdvs-intro/rdvs-intro-film-tablet-portrait.mp4',
                 'assets/videos/mig/mig-logo-letters-flip-v2.mp4',
-                'assets/videos/the-tea-house/the-tea-house-website-load.mp4'
+                'assets/videos/the-address/Video-11767.mp4'
               ];
               const isPortraitOrSquare = proj.isPortraitVideo ||
                 PORTRAIT_OR_SQUARE_VIDEOS.some(u => (proj.videoUrl || '').includes(u));
-              const isContain = isPortraitOrSquare || (proj.fit === 'contain' && !proj.videoUrl);
+              const isDesktop = window.innerWidth >= 1024;
+              const isDesktopContain = isPortraitOrSquare || (proj.fit === 'contain' && !proj.videoUrl);
               const videoProj = Object.assign({}, proj, {
-                mobileFit: isPortraitOrSquare ? 'cover' : 'contain'
+                mobileFit: isPortraitOrSquare ? 'cover' : (proj.mobileFit || 'contain')
               });
-              mediaContainer.classList.toggle('slide-media-contain', isContain);
-              applyMobileFit(mediaContainer, videoProj);
+
+              if (!isDesktop && isPortraitOrSquare) {
+                // Mobile (< 1024px) cover treatment: stretch to cover full screen
+                mediaContainer.classList.remove('slide-media-mobile-contain', 'slide-media-boxed', 'slide-media-contain');
+                mediaContainer.classList.add('slide-media-portrait-cover');
+              } else {
+                mediaContainer.classList.toggle('slide-media-contain', isDesktopContain);
+                mediaContainer.classList.remove('slide-media-portrait-cover');
+                applyMobileFit(mediaContainer, videoProj);
+              }
+
               const mobilePos = proj.mobilePosition || 'center';
               mediaContainer.style.setProperty('--slide-mobile-pos', mobilePos);
-              if (!isContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
+              if (!isDesktopContain && proj.desktopPosition) mediaContainer.style.setProperty('--slide-desktop-pos', proj.desktopPosition);
               else mediaContainer.style.removeProperty('--slide-desktop-pos');
-              if (isContain && proj.containY) mediaContainer.style.setProperty('--slide-contain-y', proj.containY);
+              if (isDesktopContain && proj.containY) mediaContainer.style.setProperty('--slide-contain-y', proj.containY);
               else mediaContainer.style.removeProperty('--slide-contain-y');
-              const vidBoxed = isContain && (proj.desktopWidth || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
+
+              const vidBoxed = isDesktop && isDesktopContain && (proj.desktopWidth || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip')));
               mediaContainer.classList.toggle('slide-media-boxed', !!vidBoxed);
               if (vidBoxed) {
                 const boxW = typeof proj.desktopWidth === 'number' ? `${proj.desktopWidth}px` : (proj.desktopWidth || '1200px');
@@ -9689,22 +9710,50 @@ document.addEventListener('DOMContentLoaded', async () => {
               } else {
                 mediaContainer.style.removeProperty('--slide-desktop-width');
               }
-              const vidShiftX = proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0);
-              if (isContain && vidShiftX) {
+              const vidShiftX = isDesktop && isDesktopContain && (proj.desktopShiftX || (typeof proj.id === 'string' && proj.id.startsWith('hot-gossip') ? 100 : 0));
+              if (vidShiftX) {
                 mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof vidShiftX === 'number' ? `${vidShiftX}px` : vidShiftX);
               } else {
                 mediaContainer.style.removeProperty('--slide-boxed-shift-x');
               }
-              
 
-              mediaContainer.innerHTML = rung
-                ? `
-                <video class="slide-video${isContain ? ' slide-video-contain' : ''}" src="${rung.video}" poster="${rung.poster}" muted playsinline preload="none"></video>
-              `
-                : `
-                <video class="slide-video${isContain ? ' slide-video-contain' : ''}" src="${deskVid}" poster="${deskPoster}" muted playsinline preload="none"></video>
+              const vidSrc = rung ? rung.video : deskVid;
+              const posterSrc = rung ? rung.poster : deskPoster;
+              const vidContainClass = isDesktopContain ? ' slide-video-contain' : '';
+              const vidPortraitClass = isPortraitOrSquare ? ' is-portrait-video' : '';
+              const vidCoverClass = (!isDesktop && isPortraitOrSquare) ? ' slide-video-cover' : '';
+
+              mediaContainer.innerHTML = `
+                <video class="slide-video${vidContainClass}${vidPortraitClass}${vidCoverClass}" src="${vidSrc}" poster="${posterSrc}" muted playsinline preload="none"></video>
               `;
-              if (isContain) {
+
+              const vidEl = mediaContainer.querySelector('video');
+              if (vidEl) {
+                const applyAspectFromMeta = () => {
+                  if (vidEl.videoWidth && vidEl.videoHeight) {
+                    const natPortrait = vidEl.videoHeight >= vidEl.videoWidth;
+                    if (natPortrait) {
+                      vidEl.classList.add('is-portrait-video');
+                      if (window.innerWidth < 1024) {
+                        mediaContainer.classList.remove('slide-media-mobile-contain', 'slide-media-boxed', 'slide-media-contain');
+                        mediaContainer.classList.add('slide-media-portrait-cover');
+                        vidEl.classList.remove('slide-video-contain');
+                        vidEl.classList.add('slide-video-cover');
+                        vidEl.style.objectFit = 'cover';
+                      } else {
+                        mediaContainer.classList.add('slide-media-contain');
+                        mediaContainer.classList.remove('slide-media-portrait-cover');
+                        vidEl.classList.add('slide-video-contain');
+                        anchorContainSlide(mediaContainer);
+                      }
+                    }
+                  }
+                };
+                vidEl.addEventListener('loadedmetadata', applyAspectFromMeta);
+                if (vidEl.readyState >= 1) applyAspectFromMeta();
+              }
+
+              if (isDesktop && isDesktopContain) {
                 anchorContainSlide(mediaContainer);
               }
             }
