@@ -6397,7 +6397,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         desktopWidth: 900,
         desktopShiftX: 100,
-        mobilePosition: '24% center',
+        mobileFit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
@@ -6418,7 +6419,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         desktopWidth: 900,
         desktopShiftX: 100,
-        mobilePosition: '26% center',
+        mobileFit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
@@ -6439,7 +6441,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         desktopWidth: 900,
         desktopShiftX: 100,
-        mobilePosition: '29% center',
+        mobileFit: 'contain',
+        mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'An identity system and bespoke UI/UX web platform for The Tea House, a tea room and event venue in Accra: a leaf mark in two greens, ochre display type and a set of organic overlapping shapes carried across the site\'s story, menu, booking and reservation flows.',
         specs: {
