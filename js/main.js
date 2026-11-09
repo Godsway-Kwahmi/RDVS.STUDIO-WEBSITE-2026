@@ -9575,17 +9575,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   const PORTRAIT_DATUM_OFFSET = 28;     // half of --header-height (56)
   function anchorContainSlide(mediaContainer) {
     mediaContainer.style.removeProperty('--slide-contain-shift');
-    if (!mediaContainer.classList.contains('slide-media-contain')) return;
+    const isPortraitContain = mediaContainer.classList.contains('slide-media-contain') ||
+      mediaContainer.querySelector('video.slide-video-contain, video[src*="villa-aggregate"], video.is-portrait-video') !== null;
+    if (!isPortraitContain) return;
     if (mediaContainer.classList.contains('slide-media-boxed')) return;
-    // Desktop contain begins at 1024px
+    // Desktop contain begins at 769px
     if (!window.matchMedia('(min-width: 769px)').matches) return;
     const mediaEl = mediaContainer.querySelector('img, video');
     if (!mediaEl) return;
     const natW = mediaEl.naturalWidth || mediaEl.videoWidth || parseInt(mediaContainer.dataset.natW || '0', 10);
     const natH = mediaEl.naturalHeight || mediaEl.videoHeight || parseInt(mediaContainer.dataset.natH || '0', 10);
     if (!natW || !natH) return;
-    const W = mediaContainer.clientWidth;
-    const H = mediaContainer.clientHeight;
+    const W = mediaContainer.clientWidth || window.innerWidth;
+    const H = mediaContainer.clientHeight || window.innerHeight;
     const scale = Math.min(1, W / natW, H / natH);
     const paintedW = natW * scale;
     const freeX = W - paintedW;
@@ -9683,9 +9685,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 'assets/videos/the-address/Video-11767.mp4'
               ];
               const isPortraitOrSquare = proj.isPortraitVideo ||
+                proj.id === 'villa-aggregate-film' ||
+                (typeof proj.id === 'string' && proj.id.includes('villa-aggregate') && proj.videoUrl) ||
                 PORTRAIT_OR_SQUARE_VIDEOS.some(u => (proj.videoUrl || '').includes(u));
               const isDesktop = window.innerWidth >= 769;
-              const isDesktopContain = isPortraitOrSquare || (proj.fit === 'contain' && !proj.videoUrl);
+              const isDesktopContain = isPortraitOrSquare || proj.fit === 'contain';
               const videoProj = Object.assign({}, proj, {
                 mobileFit: isPortraitOrSquare ? 'cover' : (proj.mobileFit || 'contain')
               });
@@ -9759,6 +9763,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         mediaContainer.classList.add('slide-media-contain');
                         mediaContainer.classList.remove('slide-media-portrait-cover');
                         vidEl.classList.add('slide-video-contain');
+                        vidEl.classList.remove('slide-video-cover');
+                        vidEl.style.removeProperty('object-fit');
                         anchorContainSlide(mediaContainer);
                       }
                     } else {
@@ -10257,7 +10263,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       statusActive.textContent = String(currentIndex + 1).padStart(2, '0');
     }
 
-    const activeSlideMedia = slides[currentIndex] && slides[currentIndex].querySelector('.slide-media-contain');
+    const activeSlideMedia = slides[currentIndex] && (
+      slides[currentIndex].querySelector('.slide-media-contain') ||
+      slides[currentIndex].querySelector('.slide-media')
+    );
     if (activeSlideMedia) anchorContainSlide(activeSlideMedia);
 
     startCurrentSlide();

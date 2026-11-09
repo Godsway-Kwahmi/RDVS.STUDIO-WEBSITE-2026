@@ -624,7 +624,8 @@ button {
   .slide-media.slide-media-portrait-cover,
   .slide-media.is-portrait-video,
   .slide-media:has(> video.is-portrait-video),
-  .slide-media:has(> video.slide-video-cover) {
+  .slide-media:has(> video.slide-video-cover),
+  .slide-media:has(> video[src*="villa-aggregate"]) {
     top: 0 !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -636,7 +637,8 @@ button {
 
   .slide-media.slide-media-portrait-cover video,
   .slide-media video.is-portrait-video,
-  .slide-media video.slide-video-cover {
+  .slide-media video.slide-video-cover,
+  .slide-media video[src*="villa-aggregate"] {
     width: 100% !important;
     height: 100% !important;
     min-width: 100% !important;
@@ -658,12 +660,16 @@ button {
    slide simply obeys the cover law above and crops to fill. The earlier floor was 769 px, which left
    a tablet in the 769-1023 band with theme ground at the sides instead of a full-bleed picture. */
 @media (min-width: 769px) {
-  .slide-media-contain {
+  .slide-media-contain,
+  .slide-media:has(> video.slide-video-contain),
+  .slide-media:has(> video[src*="villa-aggregate"]) {
     background: var(--background);
   }
 
   .slide-media-contain .slide-picture,
-  .slide-media-contain video.slide-video-contain {
+  .slide-media-contain video.slide-video-contain,
+  .slide-media video.slide-video-contain,
+  .slide-media video[src*="villa-aggregate"] {
     transform: translateX(var(--slide-boxed-shift-x, 0px));
   }
 
@@ -674,7 +680,9 @@ button {
   .slide-img-contain,
   .slide-media-contain video,
   .slide-media-contain .slide-video,
-  .slide-video-contain {
+  .slide-media video.slide-video-contain,
+  .slide-video-contain,
+  .slide-media video[src*="villa-aggregate"] {
     object-fit: scale-down !important;
     /* Owner, 2026-11-05: a plate shown whole no longer floats in the middle of the window -- its left
        edge starts on the caption's own column ("the left edge of the image is in line with the text
