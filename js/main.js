@@ -9261,7 +9261,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!heroViewport) return;
     const media = document.querySelector('.slide.active .slide-media');
     if (!media) return;
-    const isMobileWide = (window.innerWidth <= 768 && media.classList.contains('slide-media-mobile-contain'));
+    const isMobileWide = (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain'));
     const isDesktopContain = (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
     heroViewport.classList.toggle('is-contain-slide', isMobileWide || isDesktopContain);
     heroViewport.classList.toggle('is-mobile-wide-slide', isMobileWide);
