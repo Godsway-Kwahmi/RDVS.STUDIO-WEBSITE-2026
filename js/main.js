@@ -4822,7 +4822,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: 'Interior Design & Architectural Visualization — 2017',
         service: 'Interior Design & Architectural Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/cascades/tower-cascades-6.jpg',
+        imageUrl: 'assets/images/cascades/tower-cascades-6.png',
         fit: 'contain',
         mobilePosition: '70% center',
         mobileFit: 'contain',
