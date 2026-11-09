@@ -561,8 +561,8 @@ button {
     width: auto;
     height: auto;
     background: var(--background);
-    /* A slide may lift this edge further off the caption (see --slide-mobile-gap below). */
-    bottom: calc(var(--mobile-contain-base, 30%) + var(--slide-mobile-gap, 0px));
+    /* Mobile contain datum (owner markup 2026-11-09): 30px distance between media and caption */
+    bottom: calc(var(--mobile-contain-base, 30%) + var(--slide-mobile-gap, 0px) + 30px);
   }
 
   .slide-media-mobile-contain .slide-picture img,
@@ -571,12 +571,35 @@ button {
     object-position: center bottom !important;
   }
 
-  .slide-media-mobile-contain video,
-  .slide-media-mobile-contain .slide-video {
+  /* Wide videos on mobile (Owner request 2026-11-09):
+     "Don't constrain wide videos in a square when serving/positioning them on mobile.
+      Position so that we can see 100% of the wide video so that the full width is stretched/contained
+      between the datumns on the left and right and the full height is proportionally scaled upwards
+      from the datumn at the bottom of the frame for the video when delivering this on mobile." */
+  .slide-media-mobile-contain.slide-media-mobile-wide-video,
+  .slide-media-mobile-contain:has(video:not(.is-portrait-video):not(.slide-video-cover)) {
+    top: auto !important;
+    bottom: calc(var(--mobile-contain-base, 30%) + var(--slide-mobile-gap, 0px) + 30px) !important;
+    left: var(--grid-margin) !important;
+    right: var(--grid-margin) !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+  }
+
+  .slide-media-mobile-contain.slide-media-mobile-wide-video video,
+  .slide-media-mobile-contain.slide-media-mobile-wide-video .slide-video,
+  .slide-media-mobile-contain video:not(.is-portrait-video):not(.slide-video-cover),
+  .slide-media-mobile-contain .slide-video:not(.is-portrait-video):not(.slide-video-cover) {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center center !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    display: block !important;
   }
 
   /* `mobileFit: 'crop'` keeps the box above but lets the plate fill it, so the overflow goes to the
@@ -591,10 +614,13 @@ button {
     object-fit: cover;
     object-position: var(--slide-mobile-pos, center bottom);
   }
+}
 
-  /* Homepage slideshow video orientation law (Owner specification 2026-11-09):
-     "All portrait videos should get the cover treatment on mobile in the homepage slideshow.
-      This means when a video is portrait resolution it should stretch to cover the full screen" */
+/* Homepage slideshow video orientation law (Owner specification 2026-11-09):
+   "All portrait videos should get the cover treatment on mobile in the homepage slideshow.
+    This means when a video is portrait resolution it should stretch to cover the full screen"
+   On screens >= 769px (desktop & tablet), portrait videos follow the desktop portrait contain / datum rule. */
+@media (max-width: 768px) {
   .slide-media.slide-media-portrait-cover,
   .slide-media.is-portrait-video,
   .slide-media:has(> video.is-portrait-video),
@@ -821,6 +847,8 @@ button {
   background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-hairline);
+  transition: background-color var(--transition-speed) var(--transition-ease), border-color var(--transition-speed) var(--transition-ease);
   z-index: -1;
   pointer-events: none;
 }

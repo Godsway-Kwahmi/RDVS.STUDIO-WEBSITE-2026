@@ -3073,7 +3073,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/swipe/005 (0-00-00-00).jpg',
         fit: 'contain',
         mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobileFit: 'cover',
         projectUrl: 'swipe.html',
         desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
@@ -3093,7 +3093,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/swipe/006 (0-00-00-00).jpg',
         fit: 'contain',
         mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobileFit: 'cover',
         projectUrl: 'swipe.html',
         desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
@@ -3113,7 +3113,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         imageUrl: 'assets/images/swipe/SWIPE-HEADOFFICE.jpg',
         fit: 'contain',
         mobilePosition: 'center',
-        mobileFit: 'contain',
+        mobileFit: 'cover',
         projectUrl: 'swipe.html',
         desc: "Interior design, environmental graphics, BIM modelling and architectural visualization for Swipe's own workplace in Accra — a single lime-green identity from the logo through to the walls, the glass and the wayfinding.",
         specs: {
@@ -9689,10 +9689,12 @@ document.addEventListener('DOMContentLoaded', async () => {
               const videoProj = Object.assign({}, proj, {
                 mobileFit: isPortraitOrSquare ? 'cover' : (proj.mobileFit || 'contain')
               });
+              const isMobileWideVideo = !isDesktop && !isPortraitOrSquare;
+              mediaContainer.classList.toggle('slide-media-mobile-wide-video', isMobileWideVideo);
 
               if (!isDesktop && isPortraitOrSquare) {
-                // Mobile (< 1024px) cover treatment: stretch to cover full screen
-                mediaContainer.classList.remove('slide-media-mobile-contain', 'slide-media-boxed', 'slide-media-contain');
+                // Mobile (< 769px) cover treatment: stretch to cover full screen
+                mediaContainer.classList.remove('slide-media-mobile-contain', 'slide-media-boxed', 'slide-media-contain', 'slide-media-mobile-wide-video');
                 mediaContainer.classList.add('slide-media-portrait-cover');
               } else {
                 mediaContainer.classList.toggle('slide-media-contain', isDesktopContain);
@@ -9746,7 +9748,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const natPortrait = vidEl.videoHeight >= vidEl.videoWidth;
                     if (natPortrait) {
                       vidEl.classList.add('is-portrait-video');
-                      if (window.innerWidth < 1024) {
+                      mediaContainer.classList.remove('slide-media-mobile-wide-video');
+                      if (window.innerWidth < 769) {
                         mediaContainer.classList.remove('slide-media-mobile-contain', 'slide-media-boxed', 'slide-media-contain');
                         mediaContainer.classList.add('slide-media-portrait-cover');
                         vidEl.classList.remove('slide-video-contain');
@@ -9757,6 +9760,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                         mediaContainer.classList.remove('slide-media-portrait-cover');
                         vidEl.classList.add('slide-video-contain');
                         anchorContainSlide(mediaContainer);
+                      }
+                    } else {
+                      vidEl.classList.remove('is-portrait-video');
+                      if (window.innerWidth < 769) {
+                        mediaContainer.classList.add('slide-media-mobile-wide-video');
                       }
                     }
                   }
