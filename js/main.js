@@ -5512,8 +5512,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         fit: 'contain',
         mobileFit: 'cover',
         isPortraitVideo: true,
-        desktopWidth: 900,
-        desktopShiftX: 100,
         mobilePosition: 'center',
         projectUrl: 'the-tea-house.html',
         desc: 'The delivered site loading on a desktop mockup: the mark and headline in, then the shapes and the two buttons sweeping up the fold',
@@ -9577,17 +9575,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (mediaContainer.classList.contains('slide-media-boxed')) return;
     // Desktop contain begins at 1024px
     if (!window.matchMedia('(min-width: 1024px)').matches) return;
-    const img = mediaContainer.querySelector('img');
-    if (!img || !img.naturalWidth || !img.naturalHeight) return;
+    const mediaEl = mediaContainer.querySelector('img, video');
+    if (!mediaEl) return;
+    const natW = mediaEl.naturalWidth || mediaEl.videoWidth;
+    const natH = mediaEl.naturalHeight || mediaEl.videoHeight;
+    if (!natW || !natH) return;
     const W = mediaContainer.clientWidth;
     const H = mediaContainer.clientHeight;
-    const scale = Math.min(1, W / img.naturalWidth, H / img.naturalHeight);
-    const paintedW = img.naturalWidth * scale;
+    const scale = Math.min(1, W / natW, H / natH);
+    const paintedW = natW * scale;
     const freeX = W - paintedW;
     if (freeX <= 1) return;
     // A landscape plate that is not held to the window’s height keeps its symmetric bands; only the
     // portrait and square plates come off centre to align to datum.
-    if (Math.abs(img.naturalHeight * scale - H) > 1 && img.naturalWidth > img.naturalHeight * 1.07) return;
+    if (Math.abs(natH * scale - H) > 1 && natW > natH * 1.07) return;
     const column = Math.max(W / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
     const datum = column - PORTRAIT_DATUM_OFFSET;
 
@@ -9595,9 +9596,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     mediaContainer.style.removeProperty('--slide-boxed-shift-x');
 
     // Rule: "NO PORTRAIT SHOULD GO BEYOND THIS DATUMN TO THE LEFT".
-    // Left edge of the rendered image is anchored to the datum (left edge = datum).
+    // Left edge of the rendered image/video is anchored to the datum (left edge = datum).
     // In CSS with object-fit: scale-down and object-position: calc(50% + shift) 50%,
-    // the left edge of the painted image sits at: freeX / 2 + shift.
+    // the left edge of the painted media sits at: freeX / 2 + shift.
     // Setting shift = datum - freeX / 2 positions the left edge exactly at datum.
     const shift = datum - freeX / 2;
     if (Math.abs(shift) > 0.05) mediaContainer.style.setProperty('--slide-contain-shift', shift.toFixed(1) + 'px');
@@ -10289,6 +10290,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       activeVideo.muted = sharedMuted;
       activeVideo.volume = sharedMuted ? 0 : sharedVolume;
       updateVolumeUI(sharedMuted, sharedVolume);
+
+      const curSlideMedia = activeSlide.querySelector('.slide-media-contain');
+      if (curSlideMedia) {
+        if (activeVideo.videoWidth) {
+          anchorContainSlide(curSlideMedia);
+        } else {
+          activeVideo.addEventListener('loadedmetadata', () => {
+            anchorContainSlide(curSlideMedia);
+          }, { once: true });
+        }
+      }
 
       let advanced = false;
       const advanceToNext = () => {
