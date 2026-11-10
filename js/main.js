@@ -2329,8 +2329,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/G_1R3UmbUAITQo5.jpg',
-        fit: 'contain',
-        desktopWidth: 1000,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'la-beach-towers.html',
@@ -5970,6 +5968,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: 'Interior & Architecture',
         discipline: 'vfx',
         imageUrl: 'assets/images/ttd/GBzvEEhXsAAX3ll.jpg',
+        fit: 'contain',
+        desktopWidth: 1200,
         mobilePosition: '72% center',
         mobileFit: 'contain',
         projectUrl: 'ttd.html'
@@ -9299,12 +9299,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     const bandTop = window.innerHeight - strip;
     const activeSlide = document.querySelector('.slide.active');
     const media = activeSlide ? activeSlide.querySelector('.slide-media') : null;
+    if (media) anchorContainSlide(media);
     const img = media ? media.querySelector('img, video') : null;
     const isContain = !!(heroViewport && heroViewport.classList.contains('is-contain-slide'));
     let imgRect = null;
     if (isContain && media && img && (img.naturalWidth || img.videoWidth)) {
       if (media.classList.contains('slide-media-boxed')) {
-        const r = img.getBoundingClientRect();
+        const pic = media.querySelector('.slide-picture');
+        const r = (pic || img).getBoundingClientRect();
         imgRect = { left: r.left, right: r.right, top: r.top, bottom: r.bottom };
       } else if (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain')) {
         const mBox = media.getBoundingClientRect();
@@ -9346,19 +9348,36 @@ document.addEventListener('DOMContentLoaded', async () => {
       } else {
         welcomeEl.classList.remove('on-media');
       }
-      // Dynamic guard: ensure welcome message never overlaps the active project title on desktop
-      if (window.innerWidth >= 1024) {
-        const activeTitle = document.querySelector('.caption-card.active .project-title');
-        if (activeTitle) {
-          const tBox = activeTitle.getBoundingClientRect();
-          const wBox = welcomeEl.getBoundingClientRect();
-          if (tBox.width > 0 && tBox.left > 0) {
-            const availWidth = Math.max(160, Math.floor(tBox.left - wBox.left - 24));
-            welcomeEl.style.maxWidth = availWidth + 'px';
+      // Welcome message positioning relative to non-cover image edge (60px) or datum
+      const isDesktop = window.innerWidth >= 1024;
+      const isDesktopContain = isDesktop && isContain && imgRect && typeof imgRect.left === 'number' && imgRect.left > 0;
+
+      if (isDesktopContain) {
+        // Move welcome message to 60px from the left edge of any non-cover/full screen image on desktop
+        const targetRight = Math.round(window.innerWidth - (imgRect.left - 60));
+        welcomeEl.style.left = 'auto';
+        welcomeEl.style.right = targetRight + 'px';
+        const availWidth = Math.max(160, Math.floor(imgRect.left - 60 - 24));
+        welcomeEl.style.maxWidth = availWidth + 'px';
+      } else {
+        welcomeEl.style.removeProperty('right');
+        welcomeEl.style.removeProperty('left');
+        let titleGuarded = false;
+        if (isDesktop) {
+          const activeTitle = document.querySelector('.caption-card.active .project-title');
+          if (activeTitle) {
+            const tBox = activeTitle.getBoundingClientRect();
+            const wBox = welcomeEl.getBoundingClientRect();
+            if (tBox.width > 0 && tBox.left > 0 && tBox.left > wBox.left) {
+              const availWidth = Math.max(160, Math.floor(tBox.left - wBox.left - 24));
+              welcomeEl.style.maxWidth = availWidth + 'px';
+              titleGuarded = true;
+            }
           }
         }
-      } else {
-        welcomeEl.style.removeProperty('max-width');
+        if (!titleGuarded) {
+          welcomeEl.style.removeProperty('max-width');
+        }
       }
     }
 

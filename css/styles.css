@@ -4240,7 +4240,7 @@ html[data-intro="done"] .rdvs-intro-veil {
    - Font weight: 300
    - Font family: "Helvetica Neue", Helvetica, Arial, sans-serif
 */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .homepage-welcome-message {
     display: flex;
     flex-direction: column;
@@ -4252,7 +4252,9 @@ html[data-intro="done"] .rdvs-intro-veil {
     z-index: 25;
     pointer-events: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: clamp(16px, 1.35vw, 22px);
+    align-items: flex-end;
+    text-align: right;
+    font-size: clamp(24px, 2.025vw, 33px);
     font-weight: 300;
     line-height: 1.25;
     letter-spacing: -0.04em;
@@ -4286,6 +4288,7 @@ html[data-intro="done"] .rdvs-intro-veil {
 }
 
 .homepage-welcome-message .welcome-line-wrapper {
+  text-align: inherit;
   display: block;
   overflow: hidden;
   line-height: 1.2;
@@ -4296,6 +4299,7 @@ html[data-intro="done"] .rdvs-intro-veil {
   font-weight: inherit;
   transform: translateY(0);
   will-change: transform;
+  white-space: nowrap;
 }
 
 .homepage-welcome-message.is-animating .welcome-line-text {
