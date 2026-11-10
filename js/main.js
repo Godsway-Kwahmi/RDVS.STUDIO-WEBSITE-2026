@@ -9348,20 +9348,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
       }
     }
-    // Welcome message ground detection & non-overlapping position relative to datum and project title
+    // Welcome message position relative to datum and project title, and only then its ink:
+    // the ink is chosen by the ground the box is on now, not the ground it was on before the move.
     const welcomeEl = document.getElementById('homepageWelcomeMessage');
     if (welcomeEl) {
-      if (!isContain) {
-        welcomeEl.classList.add('on-media');
-      } else if (imgRect) {
-        const wBox = welcomeEl.getBoundingClientRect();
-        const onMedia = (wBox.width > 0 && wBox.height > 0) &&
-                        (wBox.left < imgRect.right && wBox.right > imgRect.left &&
-                         wBox.top < imgRect.bottom && wBox.bottom > imgRect.top);
-        welcomeEl.classList.toggle('on-media', onMedia);
-      } else {
-        welcomeEl.classList.remove('on-media');
-      }
       // Welcome message positioning relative to non-cover image edge (60px) or datum
       const isDesktop = window.innerWidth >= 1024;
       const isDesktopContain = isDesktop && isContain && imgRect && typeof imgRect.left === 'number' && imgRect.left > 0;
@@ -9395,6 +9385,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         welcomeEl.style.removeProperty('right');
         welcomeEl.style.removeProperty('left');
         welcomeEl.style.removeProperty('max-width');
+      }
+
+      // Ink follows the ground under the box as it stands now. The spring moves it for 0.75 s, so this
+      // is re-run on every frame of that travel by trackWelcomeMotion() below; a class decided only at
+      // the cut would keep the ink of the ground the message has already left.
+      if (!isContain) {
+        welcomeEl.classList.add('on-media');
+      } else if (imgRect) {
+        const wBox = welcomeEl.getBoundingClientRect();
+        const onMedia = (wBox.width > 0 && wBox.height > 0) &&
+                        (wBox.left < imgRect.right && wBox.right > imgRect.left &&
+                         wBox.top < imgRect.bottom && wBox.bottom > imgRect.top);
+        welcomeEl.classList.toggle('on-media', onMedia);
+      } else {
+        welcomeEl.classList.remove('on-media');
       }
 
       // Hairline connector between welcome message and active project title (slides 1 to 19 on desktop)
@@ -9439,6 +9444,18 @@ document.addEventListener('DOMContentLoaded', async () => {
               hairlineEl.style.right = 'auto';
               hairlineEl.style.width = lineWidth + 'px';
               hairlineEl.classList.remove('is-hidden');
+              // The line runs from the band onto the contain plate and stays over it to the title, so it
+              // is painted in both inks: the band's ink up to the plate's edge, white past it. One ink
+              // would erase one end of the connector. Stops are the settled geometry -- the width is
+              // still mid-spring when this runs -- and the plate's edge is the only boundary there is.
+              if (imgRect) {
+                const cut = Math.max(0, Math.min(lineWidth, imgRect.left - startX));
+                const bandInk = document.documentElement.getAttribute('data-theme') === 'dark' ? '#ffffff' : '#333333';
+                hairlineEl.style.backgroundImage = 'linear-gradient(to right, ' + bandInk + ' 0px, ' +
+                  bandInk + ' ' + cut + 'px, #ffffff ' + cut + 'px, #ffffff 100%)';
+              } else {
+                hairlineEl.style.removeProperty('background-image');
+              }
             } else {
               hairlineEl.classList.add('is-hidden');
               hairlineEl.style.width = '0px';
@@ -9486,6 +9503,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   function scheduleHeroGrounds() {
     if (heroGroundFrame) cancelAnimationFrame(heroGroundFrame);
     heroGroundFrame = requestAnimationFrame(() => { heroGroundFrame = 0; assignHeroGrounds(); });
+  }
+  // A cut from a cover slide to a contain slide (or back) leaves the welcome box over media and lands
+  // it on the band. Its ink is a class chosen from the ground, so the class has to be re-read while the
+  // 0.75 s spring carries the box across the plate's edge -- once, at the cut, it would keep the colour
+  // of the ground it is no longer on. Bounded to a little past the spring, and restarted by every cut.
+  let welcomeTrackFrame = 0;
+  let welcomeTrackUntil = 0;
+  function trackWelcomeMotion() {
+    if (welcomeTrackFrame) cancelAnimationFrame(welcomeTrackFrame);
+    welcomeTrackUntil = performance.now() + 900;
+    const step = () => {
+      assignHeroGrounds();
+      welcomeTrackFrame = performance.now() < welcomeTrackUntil ? requestAnimationFrame(step) : 0;
+    };
+    welcomeTrackFrame = requestAnimationFrame(step);
   }
   // The window's HEIGHT moves the band's edge against a caption lifted by a percentage, so a resize --
   // a phone rotating, a desktop address bar sliding away -- re-derives the law rather than a tier list.
@@ -9870,6 +9902,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                         vidEl.classList.remove('slide-video-cover');
                         vidEl.style.removeProperty('object-fit');
                         anchorContainSlide(mediaContainer);
+                        // Metadata just turned a cover slide into a contain one: the plate's left edge
+                        // moved, so the welcome's ground and the line's length are stale until re-derived.
+                        scheduleHeroGrounds();
                       }
                     } else {
                       vidEl.classList.remove('is-portrait-video');
@@ -10337,13 +10372,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     captionCards.forEach((card, idx) => {
       card.classList.toggle('active', idx === currentIndex);
     });
-    // The active card is the only one with a box, so a cut to a caption of a different height moves
-    // every text row in the footer block -- and near the band's edge, moving is re-classifying.
-    assignHeroGrounds();
-
     // Homepage Welcome Message visibility & animation:
     // Disappears after the 18th slide (slides 19 and 20; 0-based currentIndex >= 18),
     // and appears again on the first slide (currentIndex === 0) with the same animation.
+    // Set before the ground law, because that law reads this flag to decide whether the hairline
+    // has anything to connect to -- and the manual 19 -> 0 wrap is exactly when it flips back on.
     const welcomeEl = document.getElementById('homepageWelcomeMessage');
     if (welcomeEl) {
       if (currentIndex >= 19) {
@@ -10357,13 +10390,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       }
     }
-    const hairlineEl = document.getElementById('welcomeTitleHairline');
-    if (hairlineEl) {
-      if (currentIndex >= 19) {
-        hairlineEl.classList.add('is-hidden');
-        hairlineEl.style.width = '0px';
-      }
-    }
+
+    // The active card is the only one with a box, so a cut to a caption of a different height moves
+    // every text row in the footer block -- and near the band's edge, moving is re-classifying.
+    assignHeroGrounds();
+    // ... and the welcome box itself leaves the plate's ground mid-spring, so its ink is re-read
+    // until the spring has settled rather than frozen at the cut.
+    trackWelcomeMotion();
 
     // Hairline Pagination
     paginationBars.forEach((bar, idx) => {
