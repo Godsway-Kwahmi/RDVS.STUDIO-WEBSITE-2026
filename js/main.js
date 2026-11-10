@@ -2309,9 +2309,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2013',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/LIVING-DINING-NIGHT-1.jpg',
-        fit: 'contain',
-        desktopShiftY: 100,
+        imageUrl: 'assets/images/la-beach-towers/608305180_18551338825012667_1648170342465681991_n.jpg',
+        fit: 'cover',
         mobilePosition: 'center',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
@@ -2330,6 +2329,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/G_1R3UmbUAITQo5.jpg',
+        fit: 'contain',
+        desktopWidth: 1200,
         desktopShiftY: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
@@ -9382,6 +9383,49 @@ document.addEventListener('DOMContentLoaded', async () => {
         welcomeEl.style.removeProperty('left');
         welcomeEl.style.removeProperty('max-width');
       }
+
+      // Hairline connector between welcome message and active project title (slides 1 to 19 on desktop)
+      const hairlineEl = document.getElementById('welcomeTitleHairline');
+      if (hairlineEl) {
+        const activeCard = document.querySelector('.caption-card.active');
+        const cardIndex = activeCard && activeCard.dataset.index !== undefined ? parseInt(activeCard.dataset.index, 10) : 0;
+        const isHidden = !isDesktop || cardIndex >= 19 || (welcomeEl && welcomeEl.classList.contains('is-hidden'));
+
+        if (isHidden) {
+          hairlineEl.classList.add('is-hidden');
+          hairlineEl.style.width = '0px';
+        } else {
+          // Align with the last line of the welcome message ("and bring ideas to life.")
+          const lastLineText = welcomeEl ? (welcomeEl.querySelector('.welcome-line-wrapper:last-child .welcome-line-text') || welcomeEl) : null;
+          const welcomeBox = lastLineText ? lastLineText.getBoundingClientRect() : null;
+
+          // Align with the active project title link/text
+          const activeTitle = document.querySelector('.caption-card.active .project-title');
+          const titleText = activeTitle ? (activeTitle.querySelector('.project-title-link') || activeTitle) : null;
+          const titleBox = titleText ? titleText.getBoundingClientRect() : null;
+
+          if (welcomeBox && titleBox && titleBox.left > welcomeBox.right) {
+            const GAP = 14;
+            const startX = Math.round(welcomeBox.right + GAP);
+            const endX = Math.round(titleBox.left - GAP);
+            const lineWidth = endX - startX;
+
+            if (lineWidth > 8) {
+              const midY = Math.round((titleBox.top + titleBox.bottom) / 2);
+              hairlineEl.style.left = startX + 'px';
+              hairlineEl.style.top = midY + 'px';
+              hairlineEl.style.width = lineWidth + 'px';
+              hairlineEl.classList.remove('is-hidden');
+            } else {
+              hairlineEl.classList.add('is-hidden');
+              hairlineEl.style.width = '0px';
+            }
+          } else {
+            hairlineEl.classList.add('is-hidden');
+            hairlineEl.style.width = '0px';
+          }
+        }
+      }
     }
 
     for (const sel of HERO_GROUND_ROWS) {
@@ -9431,6 +9475,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Once here, before the deck starts: the homepage keeps its caption behind the intro veil for 6.9 s, and
   // the law should already be on the rows by the time the veil lifts rather than at the first cut.
   assignHeroGrounds();
+  window.addEventListener('load', scheduleHeroGrounds);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(scheduleHeroGrounds);
+  }
 
   // Minimalist Volume Controls
   const heroVolumeControl = document.getElementById('heroVolumeControl');
@@ -10284,6 +10332,13 @@ document.addEventListener('DOMContentLoaded', async () => {
           void welcomeEl.offsetWidth; // re-trigger animation
           welcomeEl.classList.add('is-animating');
         }
+      }
+    }
+    const hairlineEl = document.getElementById('welcomeTitleHairline');
+    if (hairlineEl) {
+      if (currentIndex >= 19) {
+        hairlineEl.classList.add('is-hidden');
+        hairlineEl.style.width = '0px';
       }
     }
 

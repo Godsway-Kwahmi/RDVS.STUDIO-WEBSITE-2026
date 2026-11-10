@@ -3507,6 +3507,8 @@ a.subservice-item:hover {
        >=1200px swap block uses for the same split -- 16px, not the 10px that only ever had to separate a
        counter that had been pushed onto a second line by a too-narrow tier. */
     row-gap: 16px;
+    /* Owner markup 2026-11-10 (media_1794314466664_58b15388.jpg): "MOVE DOWN 8PX ON MOBILE" */
+    transform: translateY(8px);
   }
 
   /* Owner markup 2026-11-07: move volume pill and slide counter down by 12px on mobile */
@@ -4240,7 +4242,36 @@ html[data-intro="done"] .rdvs-intro-veil {
    - Font weight: 300
    - Font family: "Helvetica Neue", Helvetica, Arial, sans-serif
 */
+.welcome-title-hairline {
+  display: none;
+}
+
 @media (min-width: 1024px) {
+  /* Hairline connector between welcome message and active project title (slides 1 to 19) */
+  .welcome-title-hairline {
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: #ffffff;
+    z-index: 25;
+    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
+    transition: opacity 0.35s ease, visibility 0.35s ease, width 0.35s ease, left 0.35s ease, top 0.35s ease;
+  }
+
+  [data-theme="dark"] .welcome-title-hairline {
+    box-shadow: none;
+  }
+
+  .welcome-title-hairline.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   .homepage-welcome-message {
     display: flex;
     flex-direction: column;
