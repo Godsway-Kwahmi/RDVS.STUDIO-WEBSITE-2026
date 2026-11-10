@@ -10231,10 +10231,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   let currentIndex = 0;
   const totalSlides = Math.min(slides.length, projects.length);
   const DEFAULT_IMAGE_DURATION = 6000; // 6 seconds for image slides
-  // Owner order, 2026-11-08: "for the rule to play animation in the slideshow, let's extend the cap from 30 seconds to 3 minutes".
-  // A film longer than 180 s (3 minutes) is cut at 180 s and the deck moves on; a film shorter than that still plays once, in
-  // full, and its own `ended` event advances the slide, so 180 is a ceiling and never a floor.
-  const MAX_VIDEO_DURATION = 180; // seconds of a film the slideshow will play before advancing (3 minutes cap)
+  // Owner order, 2026-11-10: "let's play all animation/video fully in the slideshow". This supersedes the
+  // 2026-11-08 ceiling of 180 s: a film slide is held for the film's own length, nothing shortens it, and its
+  // own `ended` event is what advances the deck. FILM_UNKNOWN_LENGTH_WATCHDOG exists only for a stream that
+  // never reports a length at all, so a dead file cannot strand the deck; it is re-armed to the real length
+  // the moment metadata lands, which makes it a rescue and never a cut.
+  const FILM_UNKNOWN_LENGTH_WATCHDOG = 600; // seconds to hold a film whose length is never reported
+  const FILM_GRACE = 10; // seconds of slack past a known length, for a film that stalls on the network
   let slideTimer = null;
   let progressInterval = null;
   let activeVideoCleanup = null;
@@ -10475,6 +10478,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       let advanced = false;
+      let clockRunning = false;
       const advanceToNext = () => {
         if (advanced) return;
         advanced = true;
@@ -10484,36 +10488,41 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       const getTargetDuration = () => {
         const d = activeVideo.duration;
-        if (d && !isNaN(d) && d > 0) {
-          return Math.min(d, MAX_VIDEO_DURATION);
-        }
-        return MAX_VIDEO_DURATION;
+        // 0 means "preload=`none` has not reported the length yet", which is the state at every first paint.
+        return (d && !isNaN(d) && d > 0) ? d : 0;
       };
 
       let targetDuration = getTargetDuration();
 
+      // Slack, not a ceiling: it is pushed out to the film's own length + grace as soon as that length is
+      // known, so for any film that can be measured `ended` arrives first and this never fires.
+      const armWatchdog = () => {
+        clearTimeout(slideTimer);
+        const hold = targetDuration ? targetDuration + FILM_GRACE : FILM_UNKNOWN_LENGTH_WATCHDOG;
+        slideTimer = setTimeout(advanceToNext, hold * 1000);
+      };
+      armWatchdog();
+
       const onTimeUpdate = () => {
+        const wasKnown = targetDuration > 0;
         targetDuration = getTargetDuration();
-        const cur = activeVideo.currentTime;
-        const progress = Math.min((cur / targetDuration) * 100, 100);
+        if (!wasKnown && targetDuration && !clockRunning) armWatchdog();
+        if (!targetDuration) return;
+        const progress = Math.min((activeVideo.currentTime / targetDuration) * 100, 100);
         if (activeFill) {
           activeFill.style.width = `${progress}%`;
-        }
-
-        // Rule: a film longer than the cap is cut at it -- 180 s (3 minutes cap, 2026-11-08).
-        if (cur >= MAX_VIDEO_DURATION) {
-          advanceToNext();
         }
       };
 
       const onEnded = () => {
-        // Rule: for videos shorter than the cap, play once and move to next slide
+        // Rule (2026-11-10): the end of the film is what ends the slide. Nothing plays a partial cut.
         if (activeFill) activeFill.style.width = '100%';
         advanceToNext();
       };
 
       const onLoadedMetadata = () => {
         targetDuration = getTargetDuration();
+        if (!clockRunning) armWatchdog();
       };
 
       const onError = () => {
@@ -10533,32 +10542,44 @@ document.addEventListener('DOMContentLoaded', async () => {
       activeVideo.addEventListener('loadedmetadata', onLoadedMetadata);
       activeVideo.addEventListener('error', onError);
 
+      // When browser policy blocks the play, `ended` will never fire and the dwell has to run on a clock over
+      // the film's own length. That length is not known yet at this point, so the clock starts when the
+      // metadata lands, and waits no longer than one image-slide dwell for metadata that may never come.
+      let metadataWait = 0;
+      const startBlockedClock = () => {
+        if (clockRunning || advanced) return;
+        if (slides[currentIndex] !== activeSlide) return;
+        clockRunning = true;
+        clearTimeout(metadataWait);
+        targetDuration = getTargetDuration();
+        const hold = ((targetDuration || DEFAULT_IMAGE_DURATION / 1000) + FILM_GRACE) * 1000;
+        const startTime = Date.now();
+        progressInterval = setInterval(() => {
+          const elapsed = Date.now() - startTime;
+          const prog = Math.min((elapsed / hold) * 100, 100);
+          if (activeFill) activeFill.style.width = `${prog}%`;
+          if (prog >= 100) clearInterval(progressInterval);
+        }, 40);
+        slideTimer = setTimeout(advanceToNext, hold);
+      };
+
       // Play video
       const playPromise = activeVideo.play();
       if (playPromise !== undefined) {
         playPromise.catch(err => {
           console.warn('[RDVS Slideshow] Video autoplay prevented:', err);
-          // If browser policy prevents unmuted autoplay, run timer for targetDuration
-          let startTime = Date.now();
-          const fallbackDuration = targetDuration * 1000;
-          progressInterval = setInterval(() => {
-            const elapsed = Date.now() - startTime;
-            const prog = Math.min((elapsed / fallbackDuration) * 100, 100);
-            if (activeFill) activeFill.style.width = `${prog}%`;
-            if (prog >= 100) clearInterval(progressInterval);
-          }, 40);
-          slideTimer = setTimeout(advanceToNext, fallbackDuration);
+          activeVideo.addEventListener('loadedmetadata', startBlockedClock, { once: true });
+          metadataWait = setTimeout(startBlockedClock, DEFAULT_IMAGE_DURATION);
         });
       }
-
-      // Safety timeout: guaranteed transition even if events are not dispatched
-      slideTimer = setTimeout(advanceToNext, (MAX_VIDEO_DURATION + 1) * 1000);
 
       activeVideoCleanup = () => {
         activeVideo.removeEventListener('timeupdate', onTimeUpdate);
         activeVideo.removeEventListener('ended', onEnded);
         activeVideo.removeEventListener('loadedmetadata', onLoadedMetadata);
+        activeVideo.removeEventListener('loadedmetadata', startBlockedClock);
         activeVideo.removeEventListener('error', onError);
+        clearTimeout(metadataWait);
         activeVideo.pause();
       };
 
