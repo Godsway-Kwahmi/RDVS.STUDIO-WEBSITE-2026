@@ -9424,14 +9424,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             const GAP = 14;
             const startX = Math.round(welcomeRightPos + GAP);
             const endX = Math.round(titleBox.left - GAP);
-            const lineWidth = endX - startX;
+            const lineWidth = Math.max(0, endX - startX);
 
             if (lineWidth > 8) {
               const midY = Math.round((titleBox.top + titleBox.bottom) / 2);
-              const rightOffset = Math.round(window.innerWidth - endX);
-              hairlineEl.style.left = 'auto';
-              hairlineEl.style.right = rightOffset + 'px';
-              hairlineEl.style.top = midY + 'px';
+              const welcomeRect = welcomeEl ? welcomeEl.getBoundingClientRect() : null;
+              if (welcomeRect) {
+                hairlineEl.style.top = Math.round(midY - welcomeRect.top) + 'px';
+              } else {
+                hairlineEl.style.top = 'auto';
+                hairlineEl.style.bottom = '0.625em';
+              }
+              hairlineEl.style.left = 'calc(100% + ' + GAP + 'px)';
+              hairlineEl.style.right = 'auto';
               hairlineEl.style.width = lineWidth + 'px';
               hairlineEl.classList.remove('is-hidden');
             } else {

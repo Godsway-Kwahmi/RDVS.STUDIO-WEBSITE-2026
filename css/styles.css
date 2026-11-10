@@ -4247,10 +4247,12 @@ html[data-intro="done"] .rdvs-intro-veil {
 }
 
 @media (min-width: 1024px) {
-  /* Hairline connector between welcome message and active project title (slides 1 to 19) */
+  /* Hairline connector between welcome message full stop and active project title (slides 1 to 19) */
   .welcome-title-hairline {
     display: block;
     position: absolute;
+    left: calc(100% + 14px);
+    right: auto;
     height: 1px;
     background-color: #ffffff;
     z-index: 25;
@@ -4258,18 +4260,23 @@ html[data-intro="done"] .rdvs-intro-veil {
     opacity: 1;
     visibility: visible;
     transform: translateY(-50%);
-    transform-origin: right center;
+    transform-origin: left center;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
-    /* Elastic stretch: anchored at project title on right, stretches left with physical spring recoil */
+    /* Elastic stretch toward project title: left endpoint is rigidly locked 14px from welcome message full stop */
     transition: width 0.75s cubic-bezier(0.34, 1.56, 0.64, 1),
-                right 0.45s ease,
-                left 0.75s cubic-bezier(0.34, 1.56, 0.64, 1),
                 top 0.4s ease,
                 opacity 0.35s ease,
                 visibility 0.35s ease;
   }
 
-  [data-theme="dark"] .welcome-title-hairline {
+  .hero-viewport.is-contain-slide .welcome-title-hairline {
+    background-color: #333333;
+  }
+
+  [data-theme="dark"] .welcome-title-hairline,
+  [data-theme="dark"] .hero-viewport.is-contain-slide .welcome-title-hairline,
+  .welcome-title-hairline.on-media {
+    background-color: #ffffff;
     box-shadow: none;
   }
 
