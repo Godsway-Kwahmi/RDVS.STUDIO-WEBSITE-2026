@@ -2309,8 +2309,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         category: '3D Visualization — 2013',
         service: '3D Visualization',
         discipline: 'interiors',
-        imageUrl: 'assets/images/la-beach-towers/608305180_18551338825012667_1648170342465681991_n.jpg',
+        imageUrl: 'assets/images/la-beach-towers/LIVING-DINING-NIGHT-1.jpg',
         fit: 'contain',
+        desktopShiftY: 100,
         mobilePosition: 'center',
         projectUrl: 'la-beach-towers.html',
         desc: 'Interior design and 3D visualization for La Beach Towers, a seaside development in Ghana — modeling and rendering the living, dining, and private quarters in photoreal detail.',
@@ -2329,6 +2330,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         service: '3D Visualization',
         discipline: 'interiors',
         imageUrl: 'assets/images/la-beach-towers/G_1R3UmbUAITQo5.jpg',
+        desktopShiftY: 100,
         mobilePosition: 'center',
         mobileFit: 'contain',
         projectUrl: 'la-beach-towers.html',
@@ -9327,10 +9329,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       const paintedH = natH * scale;
       const shift = parseFloat(getComputedStyle(media).getPropertyValue('--slide-contain-shift')) || 0;
       const shiftX = parseFloat(getComputedStyle(media).getPropertyValue('--slide-boxed-shift-x')) || 0;
+      const shiftY = parseFloat(getComputedStyle(media).getPropertyValue('--slide-boxed-shift-y')) || 0;
       const yPctStr = getComputedStyle(media).getPropertyValue('--slide-contain-y') || '50%';
       const yPct = (parseFloat(yPctStr) || 50) / 100;
       const imgLeft = mBox.left + (mBox.width - paintedW) / 2 + shift + shiftX;
-      const imgTop = mBox.top + (mBox.height - paintedH) * yPct;
+      const imgTop = mBox.top + (mBox.height - paintedH) * yPct + shiftY;
       imgRect = { left: imgLeft, right: imgLeft + paintedW, top: imgTop, bottom: imgTop + paintedH };
       }
     }
@@ -9359,25 +9362,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         welcomeEl.style.right = targetRight + 'px';
         const availWidth = Math.max(160, Math.floor(imgRect.left - 60 - 24));
         welcomeEl.style.maxWidth = availWidth + 'px';
+      } else if (isDesktop) {
+        // Over an image/video slide that is getting the cover/full screen treatment on desktop:
+        // Keep the welcome message 60px from the datum line to its right.
+        const HERO_CAPTION_INSET = 330;
+        const HERO_CAPTION_MIN = 312;
+        const PORTRAIT_DATUM_OFFSET = 28;
+        const activeTitle = document.querySelector('.caption-card.active .project-title');
+        const titleLeft = (activeTitle && activeTitle.getBoundingClientRect().left > 0) ? activeTitle.getBoundingClientRect().left : 0;
+        const column = titleLeft > 0 ? titleLeft : Math.max(window.innerWidth / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
+        const datum = column - PORTRAIT_DATUM_OFFSET;
+        const targetRight = Math.round(window.innerWidth - (datum - 60));
+        welcomeEl.style.left = 'auto';
+        welcomeEl.style.right = targetRight + 'px';
+        const availWidth = Math.max(160, Math.floor(datum - 60 - 24));
+        welcomeEl.style.maxWidth = availWidth + 'px';
       } else {
         welcomeEl.style.removeProperty('right');
         welcomeEl.style.removeProperty('left');
-        let titleGuarded = false;
-        if (isDesktop) {
-          const activeTitle = document.querySelector('.caption-card.active .project-title');
-          if (activeTitle) {
-            const tBox = activeTitle.getBoundingClientRect();
-            const wBox = welcomeEl.getBoundingClientRect();
-            if (tBox.width > 0 && tBox.left > 0 && tBox.left > wBox.left) {
-              const availWidth = Math.max(160, Math.floor(tBox.left - wBox.left - 24));
-              welcomeEl.style.maxWidth = availWidth + 'px';
-              titleGuarded = true;
-            }
-          }
-        }
-        if (!titleGuarded) {
-          welcomeEl.style.removeProperty('max-width');
-        }
+        welcomeEl.style.removeProperty('max-width');
       }
     }
 
@@ -9629,6 +9632,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Portrait and square plates: remove any conflicting boxed shift that would displace them from the datum
     mediaContainer.style.removeProperty('--slide-boxed-shift-x');
+    mediaContainer.style.removeProperty('--slide-boxed-shift-y');
 
     // Rule: "NO PORTRAIT SHOULD GO BEYOND THIS DATUMN TO THE LEFT".
     // Left edge of the rendered image/video is anchored to the datum (left edge = datum).
@@ -9842,6 +9846,12 @@ document.addEventListener('DOMContentLoaded', async () => {
               mediaContainer.style.setProperty('--slide-boxed-shift-x', typeof shiftX === 'number' ? `${shiftX}px` : shiftX);
             } else {
               mediaContainer.style.removeProperty('--slide-boxed-shift-x');
+            }
+            const shiftY = proj.desktopShiftY || 0;
+            if (isContain && shiftY) {
+              mediaContainer.style.setProperty('--slide-boxed-shift-y', typeof shiftY === 'number' ? `${shiftY}px` : shiftY);
+            } else {
+              mediaContainer.style.removeProperty('--slide-boxed-shift-y');
             }
             // The phone-only counterpart (owner, 2026-11-06): a wide plate that cover would crop to a
             // sliver is shown whole between the nav and the caption, on the theme ground. Kept off the
