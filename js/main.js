@@ -9365,6 +9365,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       // Welcome message positioning relative to non-cover image edge (60px) or datum
       const isDesktop = window.innerWidth >= 1024;
       const isDesktopContain = isDesktop && isContain && imgRect && typeof imgRect.left === 'number' && imgRect.left > 0;
+      let currentTargetRight = null;
 
       if (isDesktopContain) {
         // Move welcome message to 60px from the left edge of any non-cover/full screen image on desktop
@@ -9373,6 +9374,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         welcomeEl.style.right = targetRight + 'px';
         const availWidth = Math.max(160, Math.floor(imgRect.left - 60 - 24));
         welcomeEl.style.maxWidth = availWidth + 'px';
+        currentTargetRight = targetRight;
       } else if (isDesktop) {
         // Over an image/video slide that is getting the cover/full screen treatment on desktop:
         // Keep the welcome message 60px from the datum line to its right.
@@ -9388,6 +9390,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         welcomeEl.style.right = targetRight + 'px';
         const availWidth = Math.max(160, Math.floor(datum - 60 - 24));
         welcomeEl.style.maxWidth = availWidth + 'px';
+        currentTargetRight = targetRight;
       } else {
         welcomeEl.style.removeProperty('right');
         welcomeEl.style.removeProperty('left');
@@ -9414,15 +9417,20 @@ document.addEventListener('DOMContentLoaded', async () => {
           const titleText = activeTitle ? (activeTitle.querySelector('.project-title-link') || activeTitle) : null;
           const titleBox = titleText ? titleText.getBoundingClientRect() : null;
 
-          if (welcomeBox && titleBox && titleBox.left > welcomeBox.right) {
+          // Destination right edge of welcome message after elastic movement
+          const welcomeRightPos = currentTargetRight !== null ? (window.innerWidth - currentTargetRight) : (welcomeBox ? welcomeBox.right : null);
+
+          if (welcomeRightPos && titleBox && titleBox.left > welcomeRightPos) {
             const GAP = 14;
-            const startX = Math.round(welcomeBox.right + GAP);
+            const startX = Math.round(welcomeRightPos + GAP);
             const endX = Math.round(titleBox.left - GAP);
             const lineWidth = endX - startX;
 
             if (lineWidth > 8) {
               const midY = Math.round((titleBox.top + titleBox.bottom) / 2);
-              hairlineEl.style.left = startX + 'px';
+              const rightOffset = Math.round(window.innerWidth - endX);
+              hairlineEl.style.left = 'auto';
+              hairlineEl.style.right = rightOffset + 'px';
               hairlineEl.style.top = midY + 'px';
               hairlineEl.style.width = lineWidth + 'px';
               hairlineEl.classList.remove('is-hidden');
