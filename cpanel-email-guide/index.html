@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rdvs.studio - cPanel email deliverability walkthrough</title>
+<style>
+  :root{
+    --ink:#181410;
+    --muted:#6b625a;
+    --line:#e3ddd6;
+    --paper:#fbfaf8;
+    --card:#ffffff;
+    --accent:#c8401c;
+    --accent-soft:#fdeee8;
+    --ok:#1f6b45;
+    --ok-soft:#eaf5ef;
+    --warn:#8a5a00;
+    --warn-soft:#fdf3dd;
+    --code:#221d19;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px 80px}
+  header.hero{
+    background:var(--ink);
+    color:#fff;
+    padding:56px 24px 48px;
+    margin-bottom:40px;
+  }
+  .hero-inner{max-width:880px;margin:0 auto}
+  .kicker{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:#c9beb3;margin:0 0 14px
+  }
+  h1{
+    font-size:clamp(28px,4.2vw,42px);
+    line-height:1.12;margin:0 0 14px;font-weight:650;letter-spacing:-.02em
+  }
+  .hero p{margin:0;color:#d8d0c8;max-width:640px}
+  .hero .meta{
+    margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 22px;
+    font-size:13px;color:#b9aea3;border-top:1px solid #38302a;padding-top:18px
+  }
+  .hero .meta b{color:#fff;font-weight:600}
+  h2{
+    font-size:24px;line-height:1.25;margin:52px 0 6px;letter-spacing:-.01em;
+    padding-top:18px;border-top:1px solid var(--line)
+  }
+  h2 .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:32px;height:32px;border-radius:50%;
+    background:var(--accent);color:#fff;font-size:15px;font-weight:650;
+    margin-right:12px;vertical-align:2px
+  }
+  h3{font-size:17px;margin:26px 0 8px}
+  p{margin:0 0 14px}
+  small{color:var(--muted)}
+  a{color:var(--accent)}
+  code{
+    font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+    background:#efe9e2;padding:2px 6px;border-radius:4px;word-break:break-word
+  }
+  pre{
+    background:var(--code);color:#f4efe9;padding:16px 18px;border-radius:8px;
+    overflow:auto;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;
+    margin:12px 0 18px
+  }
+  pre code{background:none;padding:0;color:inherit}
+  .note,.warn,.ok{
+    border-left:4px solid;padding:14px 18px;margin:18px 0;border-radius:0 8px 8px 0;
+    font-size:15px
+  }
+  .note{background:var(--warn-soft);border-color:#d9a441}
+  .warn{background:var(--accent-soft);border-color:var(--accent)}
+  .ok{background:var(--ok-soft);border-color:#2e8b5f}
+  .note>b:first-child,.warn>b:first-child,.ok>b:first-child{display:block;margin-bottom:4px}
+  .value{
+    background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:14px 16px;margin:10px 0 18px;font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;
+    word-break:break-all
+  }
+  .value span{display:block;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+  figure{
+    margin:22px 0 28px;background:var(--card);border:1px solid var(--line);
+    border-radius:10px;padding:10px;page-break-inside:avoid;break-inside:avoid
+  }
+  figure img{display:block;width:100%;height:auto;border-radius:6px}
+  figcaption{
+    font-size:13px;color:var(--muted);padding:10px 6px 4px;line-height:1.5
+  }
+  figcaption b{color:var(--ink);font-weight:600}
+  table{
+    width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:14px;
+    background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden
+  }
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f3eee8;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#554b43}
+  tr:last-child td{border-bottom:0}
+  .state-ok{color:var(--ok);font-weight:600}
+  .state-bad{color:var(--accent);font-weight:600}
+  .state-mid{color:var(--warn);font-weight:600}
+  .checklist{list-style:none;padding:0;margin:16px 0 0;background:#fff;border:1px solid var(--line);border-radius:10px}
+  .checklist li{display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:15px}
+  .checklist li:last-child{border-bottom:0}
+  .checklist input{margin-top:4px;accent-color:var(--accent);width:16px;height:16px;flex:0 0 auto}
+  .provenance{
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;
+    font-size:14px;color:#4f463e;margin:0 0 34px
+  }
+  .provenance b{color:var(--ink)}
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  footer ul{padding-left:18px}
+  .top-link{font-size:13px;text-decoration:none;color:var(--muted)}
+  @media print{
+    body{background:#fff;font-size:12pt}
+    header.hero{background:#fff;color:#000;border-bottom:2px solid #000;padding:0 0 18px}
+    .hero p,.hero .meta{color:#333}
+    .hero .meta{border-color:#ccc}
+    .hero .meta b{color:#000}
+    h2{page-break-after:avoid}
+    figure{break-inside:avoid}
+    .wrap{padding:0}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Namecheap shared hosting - cPanel (Jupiter)</p>
+    <h1>Fix rdvs.studio email deliverability</h1>
+    <p>Zone Editor, DKIM, DMARC, SPF and AutoSSL, in the order that avoids breaking the site. Written for the decision that rdvs.studio stays on this cPanel account and is not returning to Vercel.</p>
+    <div class="meta">
+      <div>Domain <b>rdvs.studio</b></div>
+      <div>Server IP <b>192.64.117.211</b></div>
+      <div>Checked <b>11 November 2026</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="provenance">
+    <b>About the screenshots.</b> I do not have access to your cPanel account, so these are not photographs of your dashboard. Ten of them come from a live cPanel 138 demo and from Namecheap's official knowledgebase; the domain labels show <code>cpanel.tools</code> or <code>nctest.info</code> where yours will show <code>rdvs.studio</code>. The menu names and field names are the same. Wherever a value depends on your account, it is written out in full in the text, not left to the picture.
+  </div>
+
+  <h2 style="border-top:0;padding-top:0"><span class="num">0</span>What is actually broken</h2>
+  <p>Measured against public resolvers and the authoritative zone on 11 November 2026:</p>
+
+  <table>
+    <thead><tr><th>Record</th><th>Current state</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><code>A @</code></td><td><code>192.64.117.211</code></td><td class="state-ok">Correct - the site's server</td></tr>
+      <tr><td><code>CNAME www</code></td><td><code>rdvs.studio</code></td><td class="state-ok">Correct</td></tr>
+      <tr><td><code>MX @</code></td><td><code>10 mail.rdvs.studio</code></td><td class="state-ok">Target named</td></tr>
+      <tr><td><code>A mail</code></td><td>NXDOMAIN</td><td class="state-bad">Missing - inbound mail cannot reach a server</td></tr>
+      <tr><td><code>TXT @</code> (SPF)</td><td>one record, includes the server IP</td><td class="state-ok">Valid</td></tr>
+      <tr><td><code>DKIM</code></td><td>no <code>default._domainkey</code></td><td class="state-bad">Missing - outbound mail is unsigned</td></tr>
+      <tr><td><code>DMARC</code></td><td>no <code>_dmarc</code></td><td class="state-bad">Missing - no policy, no reports</td></tr>
+      <tr><td>PTR</td><td><code>server306-1.web-hosting.com</code></td><td class="state-mid">Shared IP - cannot change; not a blocker</td></tr>
+    </tbody>
+  </table>
+
+  <p>So the first fix is DNS, not a toggle. The rest is authentication. Do the steps in order; step 1 is a read-only check that protects the website.</p>
+
+  <div class="note">
+    <b>Before you start - how to reach cPanel</b>
+    <code>cpanel.rdvs.studio</code> and <code>webmail.rdvs.studio</code> do not resolve today because their subdomain records do not exist. Log in through Namecheap: <b>Dashboard &rarr; Hosting List &rarr; Manage</b> next to <code>rdvs.studio</code> &rarr; <b>Go to cPanel</b>. Once step 6 is done, <code>cpanel.rdvs.studio</code> will work as well.
+  </div>
+
+  <h2><span class="num">1</span>Open Zone Editor and confirm the zone exists</h2>
+  <p>In cPanel, open <b>Domains &rarr; Zone Editor</b>. The landing page lists every domain the hosting account controls.</p>
+
+  <figure>
+    <img src="shots/01-zone-editor.png" alt="cPanel Zone Editor landing page listing one domain with A, CNAME, MX, DNSSEC and Manage buttons">
+    <figcaption><b>The Zone Editor landing page.</b> Your list must contain <code>rdvs.studio</code>. The buttons on the row are the four record types cPanel offers directly, plus <b>Manage</b> for everything else. (Demo account, hence <code>cpanel.tools</code>.)</figcaption>
+  </figure>
+
+  <p>Before changing anything, confirm these three records. Click <b>Manage</b> to see the table.</p>
+
+  <table>
+    <thead><tr><th>Type</th><th>Name</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>A</td><td><code>@</code> (the bare domain)</td><td><code>192.64.117.211</code></td></tr>
+      <tr><td>CNAME</td><td><code>www</code></td><td><code>rdvs.studio</code></td></tr>
+      <tr><td>MX</td><td><code>@</code></td><td>priority <code>10</code>, host <code>mail.rdvs.studio</code></td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn">
+    <b>Stop condition</b>
+    If <code>rdvs.studio</code> is not listed at all, the domain is not attached to this cPanel account. Do not change nameservers until that is fixed, or the website loses its DNS. Add the domain under <b>Domains</b> in cPanel or contact Namecheap support first.
+  </div>
+
+  <p>The record table has a type filter above it - useful when you need to find SPF, DKIM and DMARC TXT records among hundreds of rows.</p>
+
+  <figure>
+    <img src="shots/04-zone-records.png" alt="Zone Editor record table with filter buttons for All, A, CAA, CNAME, MX, SRV and TXT, and an Add Record dropdown">
+    <figcaption><b>The records view.</b> Use the <b>Filter</b> row (<code>A</code>, <code>TXT</code>, ...) to narrow the list, and <b>+ Add Record</b> to create a record type that is not on the quick-buttons row. (Namecheap knowledgebase; demo domain <code>nctest.info</code>.)</figcaption>
+  </figure>
+
+  <h2><span class="num">2</span>Add the missing <code>mail</code> A record</h2>
+  <p>This is the record whose absence makes <code>mail.rdvs.studio</code> nonexistent, which in turn makes the MX unusable.</p>
+
+  <p>Click <b>+ A Record</b> on the <code>rdvs.studio</code> row (or <b>Manage &rarr; + Add Record &rarr; A</b>), then enter:</p>
+
+  <div class="value"><span>Type</span>A</div>
+  <div class="value"><span>Name</span>mail</div>
+  <div class="value"><span>Address</span>192.64.117.211</div>
+  <div class="value"><span>TTL</span>14400 (or Automatic)</div>
+
+  <figure>
+    <img src="shots/03-add-mail-a.png" alt="Add an A Record dialog with Name set to mail and Address set to 192.64.117.211">
+    <figcaption><b>The Add an A Record dialog, filled in.</b> Type only <code>mail</code> in Name - cPanel appends the zone and shows <code>mail.rdvs.studio.</code>. The Address is the same IP as the bare domain. (Demo account; your header will read "Add an A Record for rdvs.studio".)</figcaption>
+  </figure>
+
+  <p>Save, then filter by <code>mail</code> and confirm you now have an A record pointing at <code>192.64.117.211</code>. Nothing else in the zone changes.</p>
+
+  <figure>
+    <img src="shots/05-zone-actions.png" alt="Zone Editor domain row with A Record, CNAME Record, MX Record and Manage actions">
+    <figcaption><b>The quick actions on the domain row.</b> <b>Manage</b> is where the full table and the TXT records live; the four buttons are shortcuts for the common types.</figcaption>
+  </figure>
+
+  <h2><span class="num">3</span>Enable DKIM</h2>
+  <p>Go to <b>Email &rarr; Email Deliverability</b>. The list shows every domain and a status. Click <b>Manage</b> next to <code>rdvs.studio</code>.</p>
+
+  <figure>
+    <img src="shots/06-deliverability-list.png" alt="Email Deliverability list page with the domain row and Manage button">
+    <figcaption><b>Email Deliverability, list view.</b> The status column is where "Problems Exist" appears; <b>Manage</b> opens the per-domain DKIM / SPF / PTR detail. (cPanel 138 demo, where that status check never finishes and stays at Loading; your account reports the real problems there.)</figcaption>
+  </figure>
+
+  <p>On the Manage screen you will see a DKIM block. If it says a record does not exist, cPanel shows the exact record it wants:</p>
+
+  <figure>
+    <img src="shots/07-dkim-problem.png" alt="DKIM section showing PROBLEMS EXIST, the suggested TXT record name and value, and an Install the suggested record button">
+    <figcaption><b>The DKIM block with a problem.</b> Name <code>default._domainkey</code>, value <code>v=DKIM1; k=rsa; p=...</code>. Use <b>Copy</b>, never retype the key, and never generate a different one - this is the public half of the key already on the server. (Namecheap's green markup circles the Copy buttons and the install button.)</figcaption>
+  </figure>
+
+  <div class="note">
+    <b>Two ways to install it - pick one</b>
+    <b style="display:inline">A.</b> Click <b>Install the suggested record</b> right here. It works only when the domain already uses Namecheap's hosting nameservers, which is why it may be unavailable before step 6.<br>
+    <b style="display:inline">B.</b> Copy the Name and Value, then add them in <b>Zone Editor &rarr; + Add Record &rarr; TXT</b> yourself. This works regardless of nameservers.
+  </div>
+
+  <p>Enabling DKIM in cPanel usually writes the TXT into the local zone automatically as well. After clicking enable (or installing it), filter Zone Editor by <code>TXT</code> and confirm <code>default._domainkey</code> is present. If it is not, use method B.</p>
+
+  <h2><span class="num">4</span>Add DMARC as a TXT record</h2>
+  <p>cPanel's deliverability screen checks DMARC, but on Namecheap you create the record in Zone Editor. Namecheap's own guide says the same: <i>"log in to cPanel &rarr; Zone Editor and create the corresponding record as a TXT one."</i></p>
+
+  <div class="value"><span>Type</span>TXT</div>
+  <div class="value"><span>Name</span>_dmarc</div>
+  <div class="value"><span>Value</span>v=DMARC1; p=none; rua=mailto:dmarc@rdvs.studio; pct=100</div>
+  <div class="value"><span>TTL</span>14400 (or Automatic)</div>
+
+  <p>cPanel appends the zone to the name, so the published record is <code>_dmarc.rdvs.studio</code>. Keep it as a single TXT; do not wrap it or split it across two records.</p>
+
+  <div class="warn">
+    <b>Create the reporting mailbox first</b>
+    <code>rua=mailto:dmarc@rdvs.studio</code> points at a mailbox that must exist, otherwise the reports bounce. Create <code>dmarc@rdvs.studio</code> under <b>Email &rarr; Email Accounts</b>, or omit the <code>rua</code> tag for now and add it later. Reports will not arrive until step 2 is live anyway.
+  </div>
+
+  <p>Start at <code>p=none</code>. That asks receivers to monitor and report, not to block. Move to <code>p=quarantine</code> only after two to four weeks of clean reports - and do that deliberately, because a hard policy applied before alignment is proven can reject your own legitimate mail.</p>
+
+  <h2><span class="num">5</span>Confirm there is exactly one SPF record</h2>
+  <p>Filter the zone by <code>TXT</code>. SPF is the record whose value starts <code>v=spf1</code>. There must be exactly one.</p>
+
+  <div class="value"><span>Current live value</span>v=spf1 +a +mx +ip4:192.64.117.211 include:spf.web-hosting.com ~all</div>
+
+  <p>That record already authorises the correct server IP. If cPanel's installer adds another SPF while you are in here, delete the older one - two SPF records combine into a permanent error and break authentication.</p>
+
+  <figure>
+    <img src="shots/08-spf-valid.png" alt="SPF section marked VALID with the current TXT record value">
+    <figcaption><b>What a valid SPF block looks like.</b> The exact value on your account may differ in order; what matters is one record, the server IP covered, and an all-mechanism at the end. (Namecheap knowledgebase.)</figcaption>
+  </figure>
+
+  <p>Optional tidy-up: <code>v=spf1 ip4:192.64.117.211 include:spf.web-hosting.com ~all</code> does the same job without <code>+a</code> and <code>+mx</code>. Dropping <code>+mx</code> removes a mechanism that reads the MX target - the very record that was broken. Not required, but one less failure mode.</p>
+
+  <p>If your panel offers a Customize button on SPF, it edits the same record; the preview it shows before saving is the thing to read. See the two states below, an SPF being repaired and the confirmation afterwards.</p>
+
+  <figure>
+    <img src="shots/09-spf-repair.png" alt="SPF section showing PROBLEMS EXIST with a suggested record and an Install the suggested record button">
+    <figcaption><b>An SPF that needs installing.</b> The suggested value is generated from the server's own sending configuration; install it rather than hand-writing IPs. (Namecheap knowledgebase.)</figcaption>
+  </figure>
+
+  <figure>
+    <img src="shots/10-valid.png" alt="Email Deliverability list showing a green Valid status after repair">
+    <figcaption><b>After a successful install.</b> The row returns to Valid. This is the state you want for SPF and DKIM once DNS is on the hosting nameservers. (Namecheap knowledgebase.)</figcaption>
+  </figure>
+
+  <h2><span class="num">6</span>Switch the domain to Namecheap Web Hosting DNS</h2>
+  <p>Now that the zone contains the mail host, DKIM and DMARC, hand authority to it. In Namecheap: <b>Domain List &rarr; rdvs.studio &rarr; Nameservers &rarr; Namecheap Web Hosting DNS</b>.</p>
+
+  <p>The nameservers are <code>dns1.namecheaphosting.com</code> and <code>dns2.namecheaphosting.com</code>. The old BasicDNS zone keeps answering while resolvers move, so there is no dead interval; mail is already broken, so propagation cannot make it worse.</p>
+
+  <p>When the switch is visible, return to <b>Email Deliverability</b> and use <b>Repair</b> on anything still flagged. That one-click path is only available when the domain is on these nameservers - the reason for doing this step before giving up on a greyed-out Install button.</p>
+
+  <div class="note">
+    <b>From this point on, cPanel is the live DNS</b>
+    Namecheap's <b>Advanced DNS</b> page becomes a stored copy that the internet ignores. Add, edit and delete records in <b>Zone Editor</b> only. Editing the wrong one is the most common silent failure after a nameserver switch.
+  </div>
+
+  <p>Verify before moving on:</p>
+
+  <pre><code>nslookup -type=NS rdvs.studio 8.8.8.8
+nslookup mail.rdvs.studio 8.8.8.8
+nslookup -type=TXT default._domainkey.rdvs.studio 8.8.8.8
+nslookup -type=TXT _dmarc.rdvs.studio 8.8.8.8</code></pre>
+
+  <p>Expect the two hosting nameservers, then <code>192.64.117.211</code>, then two TXT answers. MX caches are one hour, so allow an hour before concluding that mail routing did not move.</p>
+
+  <h2><span class="num">7</span>Run AutoSSL</h2>
+  <p>Go to <b>Security &rarr; SSL/TLS Certificates</b> and open the <b>Status</b> tab. On older cPanel builds this page is called <b>SSL/TLS Status</b>. It lists the domain and <code>www</code> with a lock or a warning.</p>
+
+  <figure>
+    <img src="shots/11-ssl-tabs.png" alt="SSL/TLS Certificates page with Wizard, Status, Certificates, Keys, Requests, Installation and Settings tabs">
+    <figcaption><b>The tab strip.</b> Namecheap's screenshot circles <b>Wizard</b>, which issues a certificate by hand; the tab you want is <b>Status</b>, where AutoSSL reports each domain. (Namecheap knowledgebase.)</figcaption>
+  </figure>
+
+  <p>If a name is unsecured, run AutoSSL / resolve the listed issue. AutoSSL also runs on its own schedule, but running it now avoids waiting for the next pass. The domain has no CAA record, so nothing restricts Let's Encrypt issuance. Do not touch <b>Keys</b> or paste a private key to fix this - the certificate is managed for you.</p>
+
+  <h2><span class="num">8</span>Prove that mail actually works</h2>
+  <p>DNS records being present is not the same as mail being delivered. Test both directions.</p>
+
+  <h3>Outbound</h3>
+  <p>From the mailbox (webmail or a mail client), send to a Gmail address you control. In Gmail open the message &rarr; <b>Show original</b>. Expect <code>SPF: PASS</code>, <code>DKIM: PASS</code> with domain <code>rdvs.studio</code>, and <code>DMARC: PASS</code>. If DKIM shows a different domain or none, the record is not the one being used to sign - recheck step 3.</p>
+
+  <p>Then run one real message through <a href="https://www.mail-tester.com/">mail-tester.com</a> and aim for 9/10 or better, with all three authentication lines green.</p>
+
+  <h3>Inbound</h3>
+  <p>Send from Gmail to the <code>@rdvs.studio</code> mailbox and confirm it arrives. This is the test that was impossible before step 2; if it fails, the MX or its A record is still wrong.</p>
+
+  <h3>Client settings</h3>
+  <table>
+    <thead><tr><th>Setting</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>IMAP</td><td><code>mail.rdvs.studio</code>, port <code>993</code>, SSL/TLS</td></tr>
+      <tr><td>SMTP</td><td><code>mail.rdvs.studio</code>, port <code>465</code> SSL/TLS (or <code>587</code> STARTTLS)</td></tr>
+      <tr><td>Username</td><td>the full address, <code>name@rdvs.studio</code></td></tr>
+      <tr><td>Webmail</td><td><code>https://webmail.rdvs.studio</code> after step 6</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="num">9</span>If something still fails</h2>
+  <table>
+    <thead><tr><th>Symptom</th><th>Where to look</th></tr></thead>
+    <tbody>
+      <tr><td>Mail bounces with "host not found"</td><td><b>Zone Editor</b>: the <code>mail</code> A record is missing or the MX points at a different name. Re-run the four lookups in step 6.</td></tr>
+      <tr><td>Message deferred or rejected with a number</td><td><b>Email &rarr; Track Delivery</b>: filter by recipient and read the delivery event. <b>Mail Queue</b> shows retries.</td></tr>
+      <tr><td>Inbound lands in Junk</td><td><b>Email &rarr; Spam Filters</b>: check the score, whitelist the sender. FormSubmit submissions come from <code>formsubmit.co</code>.</td></tr>
+      <tr><td>Mail forwarded to Gmail is marked spam</td><td>Forwarding breaks SPF alignment at the destination. Fetch by IMAP instead of forwarding while diagnosing.</td></tr>
+      <tr><td>Gmail says "unauthenticated"</td><td>DKIM missing for the exact selector in use, or the From domain does not align with SPF. Compare the DKIM <code>d=</code> value in Show original with <code>default._domainkey</code>.</td></tr>
+      <tr><td>"Domain has exceeded the max emails per hour"</td><td>Namecheap/WHM hourly limit. Wait for the window to reset; this is a rate limit, not a spam verdict.</td></tr>
+      <tr><td>PTR warning in Email Deliverability</td><td>Expected on a shared IP (<code>server306-1.web-hosting.com</code>). It cannot be changed here and is not what blocks Gmail once SPF, DKIM and DMARC pass.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="border-top:0"><span class="num" style="background:#1f6b45">✓</span>Checklist</h2>
+  <ul class="checklist">
+    <li><input type="checkbox"> Zone Editor lists <code>rdvs.studio</code> and its A, www CNAME and MX rows are correct</li>
+    <li><input type="checkbox"> <code>mail</code> A record added, pointing at <code>192.64.117.211</code></li>
+    <li><input type="checkbox"> DKIM enabled; <code>default._domainkey</code> TXT visible in the zone</li>
+    <li><input type="checkbox"> <code>_dmarc</code> TXT added; <code>dmarc@</code> mailbox exists if <code>rua</code> is used</li>
+    <li><input type="checkbox"> Exactly one SPF TXT, covering the server IP</li>
+    <li><input type="checkbox"> Nameservers are <code>dns1/dns2.namecheaphosting.com</code></li>
+    <li><input type="checkbox"> Email Deliverability shows Valid for SPF and DKIM</li>
+    <li><input type="checkbox"> SSL/TLS Status shows the domain and www secured</li>
+    <li><input type="checkbox"> Gmail Show original: SPF, DKIM, DMARC all PASS</li>
+    <li><input type="checkbox"> Gmail to <code>@rdvs.studio</code> arrives in the inbox</li>
+  </ul>
+
+  <p style="margin-top:28px">When the checklist is complete, re-run the four <code>nslookup</code> commands one last time and keep the output. That is the evidence that the zone, not just the panel, is correct.</p>
+
+  <footer>
+    <p><b>Sources and provenance.</b> DNS values were measured on 11 November 2026 against Google Public DNS, Cloudflare DNS and the authoritative zone at <code>dns1.registrar-servers.com</code>. Interface screenshots: cPanel 138 demo at <code>cpanel.tools</code> (Zone Editor and Email Deliverability list) and Namecheap knowledgebase articles 9214, 9256 and 10504 (DKIM/SPF detail, Zone Editor records, SSL/TLS Certificates). Namecheap's deliverability article was last updated 14 July 2026 and states that the one-click install requires the domain to use Namecheap shared-hosting nameservers.</p>
+    <ul>
+      <li><a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9214/31/cpanel-email-deliverability-tool-spf-dkim-and-dmarc-records/">Namecheap: cPanel Email Deliverability Tool - SPF, DKIM, DMARC</a></li>
+      <li><a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9256/29/how-to-edit-dns-zone-in-cpanel/">Namecheap: How to edit DNS zone in cPanel</a></li>
+      <li><a href="https://www.namecheap.com/support/knowledgebase/article.aspx/10504/38/what-is-autossl-and-how-to-use-it/">Namecheap: What is AutoSSL and how to use it</a></li>
+      <li><a href="https://docs.cpanel.net/cpanel/domains/zone-editor/">cPanel: Zone Editor</a></li>
+      <li><a href="https://docs.cpanel.net/cpanel/security/ssl-tls-status/">cPanel: SSL/TLS Status</a></li>
+    </ul>
+    <p style="margin-top:18px">rdvs.studio - cPanel deliverability walkthrough - 11 November 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
