@@ -826,6 +826,22 @@ button {
     object-position: center center !important;
     transform: none !important;
   }
+
+  /* A WIDE plate sent to cover has to beat the phone datum rule above on `height` as well, or it keeps
+     `height: auto` and letterboxes inside this box's black ground: measured at 839x779 a 2048x1331 plate
+     painted 839x545 in the 839x779 box. The datum rule's `.slide-media-mobile-contain:not(...):not(...)
+     .slide-picture img` form carries three classes and two types, which outranks the four-class, one-type
+     selectors above, so this rule takes the extra class and wins. Portrait and square plates never showed
+     the problem because their auto height is already taller than the band, so the box crops them and the
+     result reads as cover either way. */
+  .slide-media.slide-media-mobile-contain.slide-media-tablet-cover .slide-picture,
+  .slide-media.slide-media-mobile-contain.slide-media-tablet-cover .slide-picture img,
+  .slide-media.slide-media-mobile-contain.slide-media-tablet-cover .slide-picture video,
+  .slide-media.slide-media-mobile-contain.slide-media-tablet-cover img,
+  .slide-media.slide-media-mobile-contain.slide-media-tablet-cover video {
+    height: 100% !important;
+    max-height: none !important;
+  }
 }
 
 /* That cover rule has no opt-out (owner, 2026-10-23: "make sure the video for the news slide fills the

@@ -9438,11 +9438,29 @@ document.addEventListener('DOMContentLoaded', async () => {
       // Ink follows the ground under the box as it stands now. The spring moves it for 0.75 s, so this
       // is re-run on every frame of that travel by trackWelcomeMotion() below; a class decided only at
       // the cut would keep the ink of the ground the message has already left.
+      // The container is not the sentence. In the 769-1024 landscape block the welcome keeps `top` from
+      // the phone rule and takes `bottom: 25dvh` from the landscape rule, so it is over-constrained and
+      // stretches: measured at 839x779 the box ran 72..584 while its three lines ended at 173. Testing
+      // that box said "on media" for every slide, so a wide plate sitting low in the band left the
+      // sentence white on white -- the owner's MOUND markup, and the ask: "when the welcome message
+      // doesn't fall on the image, make black or white per the theme to contrast the background". The
+      // words are what stand on a ground, so the union of the line wrappers decides it. The same
+      // correction `assignMobileContainBase()` got for the band's top datum.
       if (!isContain) {
         welcomeEl.classList.add('on-media');
       } else if (imgRect) {
-        const wBox = welcomeEl.getBoundingClientRect();
-        const onMedia = (wBox.width > 0 && wBox.height > 0) &&
+        const lines = welcomeEl.querySelectorAll('.welcome-line-wrapper');
+        let wBox = welcomeEl.getBoundingClientRect();
+        if (lines.length) {
+          const boxes = [...lines].map((l) => l.getBoundingClientRect());
+          wBox = {
+            left: Math.min(...boxes.map((b) => b.left)),
+            right: Math.max(...boxes.map((b) => b.right)),
+            top: boxes[0].top,
+            bottom: boxes[boxes.length - 1].bottom
+          };
+        }
+        const onMedia = (wBox.right > wBox.left && wBox.bottom > wBox.top) &&
                         (wBox.left < imgRect.right && wBox.right > imgRect.left &&
                          wBox.top < imgRect.bottom && wBox.bottom > imgRect.top);
         welcomeEl.classList.toggle('on-media', onMedia);
@@ -9522,6 +9540,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         // No box is an inactive caption card: nothing is being read there, and its own rows would be
         // measured at 0x0, which reads as "above the band" and would silently paint them media ink.
         if (!box.width || !box.height) continue;
+        // The band's top edge is tested for EVERY row, the title included. Below 1200px the caption
+        // cluster shares the band's rows (see the --hero-strip-height block in styles.css), so the title
+        // stands on the bar's theme ground -- rgba(255,255,255,0.85) at 839x779, painted luminance 0.78 --
+        // while the treatment said "cover slide, so media ink" and painted it white: 1.2-1.4:1 on 13 of
+        // the 20 slides the audit drew, with the category line one row above it correct because that row
+        // does fall through this test. On desktop the title is lifted by --hero-caption-lift well above
+        // the strip, so it still reaches the media branch and keeps white ink over the plate.
+        if (box.top >= bandTop - 0.05) {
+          el.dataset.heroGround = 'band';
+          continue;
+        }
         if (el.classList.contains('project-title')) {
           if (isContain) {
             const onImg = imgRect && box.left < imgRect.right && box.right > imgRect.left &&
@@ -9530,10 +9559,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           } else {
             el.dataset.heroGround = isMobileWide ? 'band' : 'media';
           }
-          continue;
-        }
-        if (box.top >= bandTop - 0.05) {
-          el.dataset.heroGround = 'band';
           continue;
         }
         if (isContain) {
