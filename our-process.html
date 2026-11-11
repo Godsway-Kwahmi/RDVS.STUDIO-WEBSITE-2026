@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('rdvs-theme');
+        var theme = savedTheme || 'light';   // light is the default (owner, 2026-11-06); the toggle still offers dark and a saved choice still wins
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Our Process — RDVS Studios</title>
+  <meta name="description" content="How RDVS Studios works, stage by stage: from the first call and the brief through survey, concept, design development, visualisation and documentation to fabrication, construction, handover and the photographed record.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .process-lead {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--foreground);
+      max-width: 720px;
+      margin: 0 0 20px 0;
+    }
+    .process-note {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 0 8px 0;
+    }
+    .process-timeline {
+      margin: 44px 0 0 0;
+      border-top: 1px solid var(--border-hairline);
+    }
+    .process-stage {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 0 20px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+    @media (min-width: 768px) {
+      .process-stage {
+        grid-template-columns: 88px minmax(0, 680px);
+        gap: 0 32px;
+      }
+    }
+    .process-num {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      font-variant-numeric: tabular-nums;
+      color: var(--text-secondary);
+      padding-top: 5px;
+    }
+    .process-stage-name {
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      color: var(--foreground);
+      margin: 0 0 10px 0;
+    }
+    .process-stage-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    .process-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2px 32px;
+      margin-top: 14px;
+      font-size: 0.8125rem;
+      line-height: 1.6;
+    }
+    @media (min-width: 560px) {
+      .process-meta {
+        grid-template-columns: auto 1fr;
+        gap: 0 32px;
+      }
+    }
+    .process-when,
+    .process-get {
+      margin: 0;
+    }
+    .process-when {
+      color: var(--foreground);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .process-get {
+      color: var(--text-secondary);
+    }
+    .process-get strong {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+    .process-holds {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-hairline);
+    }
+    .process-holds-heading {
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      color: var(--foreground);
+      margin: 0 0 16px 0;
+    }
+    .process-holds-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px 32px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      max-width: 900px;
+    }
+    @media (min-width: 768px) {
+      .process-holds-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .process-holds-list li {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .process-holds-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 1px;
+      background: var(--text-secondary);
+    }
+    .process-holds-list strong {
+      font-weight: 500;
+      color: var(--foreground);
+    }
+    .process-cta {
+      margin-top: 44px;
+      font-size: 1rem;
+    }
+    .process-cta a {
+      color: var(--foreground);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border-hairline);
+      padding-bottom: 2px;
+    }
+    .process-cta a:hover {
+      border-bottom-color: var(--foreground);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="RDVS Studios">RDVS</a>
+
+      <div class="header-right">
+
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="our-process.html" class="nav-link active">Our Process</a>
+          <a href="work.html" class="nav-link">Work</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="news.html" class="nav-link">News</a>
+          <a href="expertise.html" class="nav-link">Expertise</a>
+          <a href="rdvschool.html" class="nav-link nav-school">RDVSchool</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="archive.html" class="nav-link nav-archive">Archive</a>
+        </nav>
+
+        <form class="search-form" action="work.html" method="GET" role="search">
+          <input type="search" name="q" placeholder="Search..." aria-label="Search site" class="search-input" autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Dark / Light Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-light" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="mobile-toggle" aria-label="Menu" id="mobileMenuBtn">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1 class="page-title">Our Process</h1>
+      <p class="page-subtitle">Twelve stages from the first call to the photographed room. One method, whether the work is an executive suite, a headquarters, a brand or a film.</p>
+    </header>
+
+    <div class="editorial-text">
+      <p class="process-lead">We work in a closed loop. Everything visualised in the studio is engineered for acoustic, structural and material reality before it breaks ground on site, and everything we build is measured back against what we drew. The stages below are that loop, written out.</p>
+
+      <p class="process-note">The durations are bands we typically hold for a mid-size interior or fit-out, not a promise about your project &mdash; a headquarters, a new build or a competition compresses or stretches several of them at once. Stages also overlap: documentation starts while visualisation is still rendering, and long-lead procurement usually begins before a concept is finally agreed. What does not change is the order of the decisions.</p>
+
+      <div class="process-timeline">
+
+        <section class="process-stage">
+          <div class="process-num">01</div>
+          <div>
+            <h2 class="process-stage-name">First call</h2>
+            <p class="process-stage-text">We get on a call and establish what the space is actually for: who uses it, how often, what is failing today, and what would have to be true for you to say it worked. We ask about budget range and programme at this stage too, because those constraints decide the design long before the design does. No proposal, no fee card yet.</p>
+            <div class="process-meta">
+              <p class="process-when">Day one</p>
+              <p class="process-get"><strong>You get:</strong> a straight read on whether we are the right studio for it, and what we would need from you to find out.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">02</div>
+          <div>
+            <h2 class="process-stage-name">Brief &amp; scope</h2>
+            <p class="process-stage-text">The conversation becomes a written brief: the rooms or deliverables in play, the disciplines required, the budget band, the dates that matter, and who signs off. This is also where we say plainly whether the project needs a licensed architect of record &mdash; we work across the table with them when scale and vision demand it &mdash; and whether you are buying design, design and build, or one of our other practices.</p>
+            <div class="process-meta">
+              <p class="process-when">~1 week</p>
+              <p class="process-get"><strong>You get:</strong> a scope we both agree, a fee structure, a programme, and the list of disciplines that will touch it.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">03</div>
+          <div>
+            <h2 class="process-stage-name">Survey &amp; existing conditions</h2>
+            <p class="process-stage-text">We measure what is there. A taken-off survey of the shell or room, photographs of every wall and services run, the light at different hours, and drone plates where the site is too large to read from the ground. Existing drawings are checked against the building, not trusted. Almost every expensive surprise on a project is a condition nobody wrote down, so this stage is deliberately unglamorous.</p>
+            <div class="process-meta">
+              <p class="process-when">~1&ndash;2 weeks</p>
+              <p class="process-get"><strong>You get:</strong> a verified base model and a conditions record &mdash; dimensions, services, defects, constraints and the photographs behind all of it.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">04</div>
+          <div>
+            <h2 class="process-stage-name">Concept</h2>
+            <p class="process-stage-text">Geometry, light and material studied first, drawn second. We bring two or three genuinely different directions rather than one with variations, each tested against the brief and the survey, so the choice is real. Spatial clarity, quiet elegance and the reason a room works are argued here &mdash; not finishes.</p>
+            <div class="process-meta">
+              <p class="process-when">~2 weeks</p>
+              <p class="process-get"><strong>You get:</strong> two or three directions at sketch and massing level, with the trade-offs of each stated, and one chosen.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">05</div>
+          <div>
+            <h2 class="process-stage-name">Design development</h2>
+            <p class="process-stage-text">The chosen direction is resolved: plans and reflected ceiling layouts, elevations to every wall, the material palette and its junctions, lighting design and circuits, acoustic treatment, and the bespoke furniture and joinery that the scheme depends on. FF&amp;E is scheduled item by item, with the fabric, stone, metal and timber specified rather than waved at.</p>
+            <div class="process-meta">
+              <p class="process-when">~3&ndash;6 weeks</p>
+              <p class="process-get"><strong>You get:</strong> a developed design with drawings, a finish schedule, an FF&amp;E schedule and a lighting schedule &mdash; and a scheme that has been reconciled with structure and services.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">06</div>
+          <div>
+            <h2 class="process-stage-name">Visualisation &amp; approval</h2>
+            <p class="process-stage-text">The scheme is rendered photorealistically from physically based materials and ray-traced light, in the same cameras and daylight conditions you will meet on site. This is the stage where a client approves the room rather than a mood board: stills, an animated walkthrough, and virtual or augmented reality when the decision is hard to make on paper. Anything we cannot defend in a render does not go into the drawings.</p>
+            <div class="process-meta">
+              <p class="process-when">~2&ndash;3 weeks</p>
+              <p class="process-get"><strong>You get:</strong> stills and a film at the framing that matters to you, plus the material and finish board the images were actually built from.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">07</div>
+          <div>
+            <h2 class="process-stage-name">BIM, documentation &amp; quantities</h2>
+            <p class="process-stage-text">Architecture, structure and services are reconciled in one coordinated model, so clash detection, quantities and documentation all read from a single source of truth. Then it is drawn to build from: setting-out, details at critical junctions, joinery and fabrication drawings, schedules and specifications, with tolerances stated rather than implied.</p>
+            <div class="process-meta">
+              <p class="process-when">~3&ndash;6 weeks</p>
+              <p class="process-get"><strong>You get:</strong> a coordinated model, a construction drawing set, specifications and a bill of quantities &mdash; the documents a builder or a tender prices from without phoning us.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">08</div>
+          <div>
+            <h2 class="process-stage-name">Cost engineering &amp; procurement</h2>
+            <p class="process-stage-text">Cost engineering runs alongside documentation, not after it: the same elements priced across options, value-engineered where the saving is invisible and defended where it is not. Then sourcing &mdash; the timber, stone, metal, textiles, light fixtures and hardware &mdash; from suppliers we have built with, ordered against lead times that are checked against the programme rather than assumed.</p>
+            <div class="process-meta">
+              <p class="process-when">~2&ndash;4 weeks, overlapping 07</p>
+              <p class="process-get"><strong>You get:</strong> a priced package with options and their consequences, confirmed lead times, and the orders placed.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">09</div>
+          <div>
+            <h2 class="process-stage-name">Fabrication, in-house</h2>
+            <p class="process-stage-text">What the scheme needs made, we make. Our carpentry and fabrication shops handle custom timber milling, metalwork, joinery and bespoke furniture to the tolerances on the drawing, which is the difference between a detail that reads on a page and one that reads on site. Keeping it in-house means a change on a Wednesday can be in the room the following week.</p>
+            <div class="process-meta">
+              <p class="process-when">~4&ndash;10 weeks, in parallel with 10</p>
+              <p class="process-get"><strong>You get:</strong> the made items, finished and packed for install, against the shop drawings you approved.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">10</div>
+          <div>
+            <h2 class="process-stage-name">Construction &amp; site supervision</h2>
+            <p class="process-stage-text">As general contractors we run the trades on site: sequencing, structural execution, first and second fix, finishes, services installation and the joinery going in. We are on site to hold the drawing up to the building, and the drawing up to the building &mdash; the point is that what was visualised in 3D is realised identically in the physical world, not approximately.</p>
+            <div class="process-meta">
+              <p class="process-when">The long stage &mdash; ~8&ndash;24 weeks on a fit-out</p>
+              <p class="process-get"><strong>You get:</strong> the built work, progress against programme, and a single accountable party from first fix to last.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">11</div>
+          <div>
+            <h2 class="process-stage-name">Snagging, commissioning &amp; handover</h2>
+            <p class="process-stage-text">We walk the finished space against the drawings and the renders, snag what is not right, fix it, then commission: lighting circuits and scenes, AV and displays, mechanicals, doors and drawers on their runners. FF&amp;E is installed and styled last. Handover comes with as-built drawings and a care and maintenance record, so the room is looked after by someone who did not build it.</p>
+            <div class="process-meta">
+              <p class="process-when">~2&ndash;3 weeks</p>
+              <p class="process-get"><strong>You get:</strong> a snag-free, commissioned space, as-builts, and the maintenance record.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-stage">
+          <div class="process-num">12</div>
+          <div>
+            <h2 class="process-stage-name">Photography &amp; the record</h2>
+            <p class="process-stage-text">Built work is photographed after completion &mdash; interiors, office floors and buildings, with drone plates for the exteriors &mdash; because the loop only closes when the finished room is on record next to the image we promised. Those plates become the reference for the next brief, and the published record of yours. Aftercare visits follow: adjustments, teaching the space to the people who run it, and being reachable when something settles.</p>
+            <div class="process-meta">
+              <p class="process-when">Week one after handover</p>
+              <p class="process-get"><strong>You get:</strong> the photographed record of the work, licensed for your own use, and a studio that still answers the phone.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="process-holds">
+        <h2 class="process-holds-heading">Two things that hold at every stage</h2>
+        <ul class="process-holds-list">
+          <li><strong>One source of truth.</strong> The model, the drawings, the quantities, the renders and the site all read from the same geometry. When a decision changes, it changes everywhere at once, which is why nothing has to be re-proved on site.</li>
+          <li><strong>Nothing is approved twice on different terms.</strong> What you sign off at stage 06 is what is drawn at 07, priced at 08 and built at 10. If a substitution is needed, it comes back to you as a choice with its consequence, not as a fait accompli.</li>
+          <li><strong>We say what we do not do.</strong> Where a project needs a licensed architect of record, a specialist engineer or a trade we would rather partner with than pretend to own, that is said at 02 &mdash; not discovered at 10.</li>
+          <li><strong>Small studio, senior hands.</strong> The people on your first call are the people drawing, rendering and walking the site. There is no account layer between you and the work.</li>
+        </ul>
+      </div>
+
+      <p class="process-cta">Ready to start at stage one? <a href="contact.html">Initiate a consultation &rarr;</a></p>
+    </div>
+  </main>
+
+  <svg class="site-tagline" viewBox="0 0 1872 150" preserveAspectRatio="xMidYMid meet" role="img" aria-label="design . visualize . make" focusable="false"><text x="936" y="106" text-anchor="middle" textLength="1872" lengthAdjust="spacingAndGlyphs"><tspan class="st-w st-w1">design</tspan><tspan>&#160;.&#160;</tspan><tspan class="st-w st-w2">visualize</tspan><tspan>&#160;.&#160;</tspan><tspan class="st-w st-w3">make</tspan></text></svg>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>RDVS &copy; 2026. All rights reserved.</span>
+      <div class="footer-right">
+        <div class="footer-social-links" aria-label="Social media channels">
+          <a href="https://www.instagram.com/rdvs.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/RDVS_DESIGN" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://www.facebook.com/RDVS.DESIGN/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@rdvs.studio" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="expertise.html">Expertise</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js?v=1a3d4fe"></script>
+  <script src="js/sanity-taxonomy.js?v=f86cb24"></script>
+<script src="js/sanity-client.js?v=e15560f"></script>
+  <script src="js/sanity-render.js?v=f7a16fd"></script>
+</body>
+</html>
