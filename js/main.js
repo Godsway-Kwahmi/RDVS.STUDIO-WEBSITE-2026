@@ -9314,7 +9314,31 @@ document.addEventListener('DOMContentLoaded', async () => {
     const natH = mediaEl ? (mediaEl.naturalHeight || mediaEl.videoHeight) : 0;
     const portraitOrSquare = (natW && natH) ? (natW / natH <= 1.02)
       : media.querySelector('.is-portrait-video') !== null;
-    media.classList.toggle('slide-media-tablet-cover', tabletBand && portraitOrSquare);
+    // Owner, 2026-11-11, on an 839x779 window with Funko Ridge's 1400x881 frame: "when the image is
+    // taller than the [room] for it to give it the wide image treatment, give it the cover treatment
+    // instead". The datum rule draws the plate at the full width between the side datums with its height
+    // from its own aspect, but caps that height at the band the top datum and the caption leave behind.
+    // Once the cap binds the plate stops being able to hold the width -- it gives up side margins instead
+    // of growing: measured at 839x779 the box is 791 wide and the band 447 tall, so the 1.589 frame
+    // wanted 498, was clamped to 447 and painted 710 wide with 40px of ground at each side. A wide plate
+    // that cannot stand at full width joins the cover law. Films, crop plates and anything without the
+    // phone contain box are left alone: their own rules already fill the band.
+    const mediaVars = getComputedStyle(media);
+    const datumOverflows = natW && natH
+      && media.classList.contains('slide-media-mobile-contain')
+      && !media.classList.contains('slide-media-mobile-crop')
+      && !media.querySelector('video')
+      && (window.innerWidth
+          - 2 * (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--grid-margin')) || 0))
+        * natH / natW
+        > window.innerHeight
+          - (parseFloat(mediaVars.getPropertyValue('--contain-ceiling'))
+            || parseFloat(mediaVars.getPropertyValue('--mobile-contain-top')) || 212)
+          - (parseFloat(mediaVars.getPropertyValue('--mobile-contain-base'))
+            || Math.round(window.innerHeight * 0.3))
+          - (parseFloat(mediaVars.getPropertyValue('--slide-mobile-gap')) || 0)
+          - 30;
+    media.classList.toggle('slide-media-tablet-cover', tabletBand && (portraitOrSquare || datumOverflows));
     const isMobileWide = (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain')
       && !media.classList.contains('slide-media-tablet-cover'));
     const isDesktopContain = (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));

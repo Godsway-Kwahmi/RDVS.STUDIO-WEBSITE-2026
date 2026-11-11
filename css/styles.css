@@ -790,10 +790,12 @@ button {
 }
 
 /* Portrait and square media on the landscape tablet band (owner, 2026-11-11, on an 831x793 window:
-   "all the portrait and square images/gifs/videos get the full screen/cover treatment"). js/main.js
-   puts .slide-media-tablet-cover on the active slide inside this band only, reading the shape off the
-   media's own pixels, so the rule does not have to know which shape it is serving -- it only has to
-   undo the contain treatment and paint the frame edge to edge. Same values as the portrait cover floor
+   "all the portrait and square images/gifs/videos get the full screen/cover treatment"), and from the
+   same day the wide plates that cannot stand at full width in the datum box ("when the image is taller
+   than the [room] for it to give it the wide image treatment, give it the cover treatment instead").
+   js/main.js puts .slide-media-tablet-cover on the active slide inside this band only, reading the shape
+   off the media's own pixels, so the rule does not have to know which shape it is serving -- it only has
+   to undo the contain treatment and paint the frame edge to edge. Same values as the portrait cover floor
    at <=768px, so the two bands cannot disagree.
    It sits HERE, after the desktop contain block above, on purpose: that block pins
    `object-fit: scale-down !important` and a shifted `object-position !important` on every contain
