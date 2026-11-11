@@ -789,19 +789,6 @@ button {
   }
 }
 
-/* The same datum rule, one band up (owner, 2026-11-11, on a ~1000x966 window: "repeat those rules for
-   this resolution and screen size and resolution too"). From 993px the header is the desktop bar and the
-   welcome message stops taking `top` from the phone rule, so the landscape rule's `bottom: 25dvh` places
-   it alone -- its text sits LOW (measured 610..725 at 1000x966), and a ceiling taken from it left a 78px
-   band that squeezed a 952px-wide plate into a 146x78 thumbnail. In this band the welcome is drawn over
-   the media rather than above it, so the ceiling is the header: the plate fills everything between the
-   bar and the caption and its own aspect decides where its top lands. */
-@media (min-width: 993px) and (max-width: 1024px) and (orientation: landscape) {
-  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) {
-    --contain-ceiling: var(--header-height, 56px);
-  }
-}
-
 /* Portrait and square media on the landscape tablet band (owner, 2026-11-11, on an 831x793 window:
    "all the portrait and square images/gifs/videos get the full screen/cover treatment"). js/main.js
    puts .slide-media-tablet-cover on the active slide inside this band only, reading the shape off the
@@ -4350,6 +4337,22 @@ html[data-intro="done"] .rdvs-intro-veil {
   .homepage-welcome-message.is-hidden {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+/* The welcome message, up on the top datum in the 993-1024 landscape band (owner, 2026-11-11, markup
+   Capture-fix.PNG: a ~1000x966 window with the plate boxed from the left datum to the right datum and up
+   to just under the header, and an arrow drawn from the welcome to the top reading "MOVE WELCOME MESSAGE
+   UP"). From 993px the phone rule stops applying and the landscape block above places the welcome by
+   `bottom: 25dvh` alone, so its text sat at 610..725 -- in the middle of the space the plate is asked to
+   fill. On the phone's own top datum (header + 16) the whole band is free again, which is also why the
+   contain ceiling can stay the welcome rather than the header. This sits AFTER that block because both
+   set `bottom` on the same selector and the later one wins. Measured at 1000x966: the last line ends at
+   181, `--mobile-contain-top` 206 (was 750), and a 1920x1080 plate now paints 952x536 sitting on 828. */
+@media (min-width: 993px) and (max-width: 1024px) and (orientation: landscape) {
+  .homepage-welcome-message {
+    top: calc(var(--header-height, 56px) + 16px);
+    bottom: auto;
   }
 }
 
