@@ -621,9 +621,16 @@ button {
   .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture,
   .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture img,
   .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-img {
-    width: 100%;
-    height: auto;
-    max-height: calc(100vh - var(--mobile-contain-top, 212px) - var(--mobile-contain-base, 30%) - var(--slide-mobile-gap, 0px) - 30px);
+    width: 100% !important;
+    height: auto !important;
+    /* `max-width: none` and `transform: none` are for the plates that also carry the desktop boxed law
+       (`slide-media-boxed`, a 1200px container shifted right onto the caption datum). Below 1024 they
+       belong to the phone band, and measured before this, a 2944x1472 boxed plate sat at 124..1076 in a
+       1000px window -- 100px past the right datum. The owner's 2026-11-06 law already says the desktop
+       portrait positioning starts at 1024 and below it the phone law rules. */
+    max-width: none !important;
+    transform: none !important;
+    max-height: calc(100vh - var(--contain-ceiling, var(--mobile-contain-top, 212px)) - var(--mobile-contain-base, 30%) - var(--slide-mobile-gap, 0px) - 30px);
   }
 
   .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture img,
@@ -782,6 +789,19 @@ button {
   }
 }
 
+/* The same datum rule, one band up (owner, 2026-11-11, on a ~1000x966 window: "repeat those rules for
+   this resolution and screen size and resolution too"). From 993px the header is the desktop bar and the
+   welcome message stops taking `top` from the phone rule, so the landscape rule's `bottom: 25dvh` places
+   it alone -- its text sits LOW (measured 610..725 at 1000x966), and a ceiling taken from it left a 78px
+   band that squeezed a 952px-wide plate into a 146x78 thumbnail. In this band the welcome is drawn over
+   the media rather than above it, so the ceiling is the header: the plate fills everything between the
+   bar and the caption and its own aspect decides where its top lands. */
+@media (min-width: 993px) and (max-width: 1024px) and (orientation: landscape) {
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) {
+    --contain-ceiling: var(--header-height, 56px);
+  }
+}
+
 /* Portrait and square media on the landscape tablet band (owner, 2026-11-11, on an 831x793 window:
    "all the portrait and square images/gifs/videos get the full screen/cover treatment"). js/main.js
    puts .slide-media-tablet-cover on the active slide inside this band only, reading the shape off the
@@ -811,6 +831,7 @@ button {
   .slide-media.slide-media-tablet-cover video {
     width: 100% !important;
     height: 100% !important;
+    max-width: none !important;
     max-height: none !important;
     object-fit: cover !important;
     object-position: center center !important;
