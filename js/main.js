@@ -9258,7 +9258,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     const welcomeEl = document.getElementById('homepageWelcomeMessage');
     if (welcomeEl) {
-      const wBox = welcomeEl.getBoundingClientRect();
+      // The container's box is not the text. In the 769-1024 landscape block the welcome keeps `top`
+      // from the phone rule and takes `bottom: 25dvh` from the landscape rule, so it is over-constrained
+      // and stretches: at 831x793 the box ran 72-595 while its three lines ended at 173. Measuring the
+      // box put the band's top datum 422px too low and squeezed every wide plate into a 39px strip, so
+      // the datum is taken off the last line instead.
+      const lines = welcomeEl.querySelectorAll('.welcome-line-wrapper');
+      const lastLine = lines.length ? lines[lines.length - 1] : welcomeEl;
+      const wBox = lastLine.getBoundingClientRect();
       if (wBox.bottom > 0) {
         // Maintain consistent spacing between welcome message and non-cover images: 25px
         const containTop = Math.round(wBox.bottom + 25);
@@ -9295,7 +9302,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!heroViewport) return;
     const media = document.querySelector('.slide.active .slide-media');
     if (!media) return;
-    const isMobileWide = (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain'));
+    // Owner, 2026-11-11, on the landscape-tablet band (769-1024 px, wider than it is tall): "all the
+    // portrait and square images/gifs/videos get the full screen/cover treatment". The contain box is a
+    // phone law; on this proportion a portrait plate inside it reads as a strip with theme ground above
+    // and below, so the band hands portrait and square media to cover instead. The call is made from the
+    // media's own pixels because the pool carries no dimensions -- which is why a film that has not
+    // reported a size yet falls back to the is-portrait-video class the deck already sets for it.
+    const tabletBand = window.innerWidth >= 769 && window.innerWidth <= 1024 && window.innerWidth >= window.innerHeight;
+    const mediaEl = media.querySelector('img, video');
+    const natW = mediaEl ? (mediaEl.naturalWidth || mediaEl.videoWidth) : 0;
+    const natH = mediaEl ? (mediaEl.naturalHeight || mediaEl.videoHeight) : 0;
+    const portraitOrSquare = (natW && natH) ? (natW / natH <= 1.02)
+      : media.querySelector('.is-portrait-video') !== null;
+    media.classList.toggle('slide-media-tablet-cover', tabletBand && portraitOrSquare);
+    const isMobileWide = (window.innerWidth < 1024 && media.classList.contains('slide-media-mobile-contain')
+      && !media.classList.contains('slide-media-tablet-cover'));
     const isDesktopContain = (window.innerWidth >= 1024 && media.classList.contains('slide-media-contain'));
     heroViewport.classList.toggle('is-contain-slide', isMobileWide || isDesktopContain);
     heroViewport.classList.toggle('is-mobile-wide-slide', isMobileWide);
@@ -9325,7 +9346,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         const mBox = media.getBoundingClientRect();
         const natW = img.naturalWidth || img.videoWidth;
         const natH = img.naturalHeight || img.videoHeight;
-        const scale = Math.min(1, mBox.width / natW, mBox.height / natH);
+        // No `1` clamp here: the phone datum rule draws the plate at the full width between the side
+        // datums, which upscales a plate narrower than that, so assuming "never bigger than natural"
+        // would report a painted box smaller than the one on screen and mis-classify the ink rows.
+        const scale = Math.min(mBox.width / natW, mBox.height / natH);
         const paintedW = natW * scale;
         const paintedH = natH * scale;
         const imgLeft = mBox.left + (mBox.width - paintedW) / 2;

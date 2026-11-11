@@ -601,6 +601,36 @@ button {
     object-position: center bottom !important;
   }
 
+  /* Wide stills take the owner's datum rule (markup 2026-11-11, an 831x793 landscape window with the
+     plate boxed from the left datum to the right datum and sitting on the bottom one: "constrained to
+     the left, right and bottom datums and then proportionally scales upwards depending on the height of
+     the image"). The box stops being pinned to a top edge -- it spans the two side datums, sits on the
+     bottom datum, and the plate is drawn at the full width between them with its height from its own
+     aspect, growing upward. That is the law the wide films above already follow, and it is why the box
+     is no longer the thing that decides the size. The max-height is the band the top datum and the
+     caption leave behind, so a plate tall enough to climb over the welcome message gives up width
+     instead of overlap; at 1.5:1 or wider the cap never binds. `crop` slides keep the boxed law on
+     purpose -- they are asked to FILL the band, not to hug a datum -- and films are left to their own
+     rule above, because a portrait film still has to cover the window. */
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)),
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture {
+    top: auto;
+    height: auto;
+  }
+
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture,
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture img,
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - var(--mobile-contain-top, 212px) - var(--mobile-contain-base, 30%) - var(--slide-mobile-gap, 0px) - 30px);
+  }
+
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-picture img,
+  .slide-media-mobile-contain:not(.slide-media-mobile-crop):not(:has(video)) .slide-img {
+    object-fit: contain;
+  }
+
   /* Wide videos on mobile (Owner request 2026-11-09):
      "Don't constrain wide videos in a square when serving/positioning them on mobile.
       Position so that we can see 100% of the wide video so that the full width is stretched/contained
@@ -749,6 +779,42 @@ button {
     height: auto;
     object-fit: contain;
     object-position: center;
+  }
+}
+
+/* Portrait and square media on the landscape tablet band (owner, 2026-11-11, on an 831x793 window:
+   "all the portrait and square images/gifs/videos get the full screen/cover treatment"). js/main.js
+   puts .slide-media-tablet-cover on the active slide inside this band only, reading the shape off the
+   media's own pixels, so the rule does not have to know which shape it is serving -- it only has to
+   undo the contain treatment and paint the frame edge to edge. Same values as the portrait cover floor
+   at <=768px, so the two bands cannot disagree.
+   It sits HERE, after the desktop contain block above, on purpose: that block pins
+   `object-fit: scale-down !important` and a shifted `object-position !important` on every contain
+   plate from 769px up, and at equal weight the later rule wins -- measured before the move, a
+   2800x3267 portrait plate carried the class and still painted 679x793 with 76px of ground at each
+   side. The `.slide-picture img` form is what outranks it on specificity. */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .slide-media.slide-media-tablet-cover {
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #000000 !important;
+  }
+
+  .slide-media.slide-media-tablet-cover .slide-picture,
+  .slide-media.slide-media-tablet-cover .slide-picture img,
+  .slide-media.slide-media-tablet-cover .slide-picture video,
+  .slide-media.slide-media-tablet-cover img,
+  .slide-media.slide-media-tablet-cover video {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
   }
 }
 
