@@ -189,9 +189,14 @@
     <tbody>
       <tr><td>A</td><td><code>@</code> (the bare domain)</td><td><code>192.64.117.211</code></td></tr>
       <tr><td>CNAME</td><td><code>www</code></td><td><code>rdvs.studio</code></td></tr>
-      <tr><td>MX</td><td><code>@</code></td><td>priority <code>10</code>, host <code>mail.rdvs.studio</code></td></tr>
+      <tr><td>MX</td><td><code>@</code></td><td>priority <code>10</code>, host <code>mail.rdvs.studio</code> - or the three Jellyfish hosts (see the note below)</td></tr>
     </tbody>
   </table>
+
+  <div class="note">
+    <b>If the MX row reads Jellyfish, leave it alone</b>
+    A cPanel zone on Namecheap shared hosting often shows three MX rows - preferences <code>5</code>, <code>10</code> and <code>20</code>, hosts <code>mx1-hosting.jellyfish.systems</code>, <code>mx2-hosting.jellyfish.systems</code> and <code>mx3-hosting.jellyfish.systems</code> - instead of one row pointing at <code>mail.rdvs.studio</code>. That is Namecheap's spam filter: inbound mail passes through Jellyfish and is then handed to the cPanel mailbox. It is a correct configuration, not a fault. Replacing it with <code>mail.rdvs.studio</code> bypasses the filter.
+  </div>
 
   <div class="warn">
     <b>Stop condition</b>
@@ -258,7 +263,7 @@
   <div class="value"><span>Value</span>v=DMARC1; p=none; rua=mailto:dmarc@rdvs.studio; pct=100</div>
   <div class="value"><span>TTL</span>14400 (or Automatic)</div>
 
-  <p>cPanel appends the zone to the name, so the published record is <code>_dmarc.rdvs.studio</code>. Keep it as a single TXT; do not wrap it or split it across two records.</p>
+  <p>cPanel appends the zone to the name, so the published record is <code>_dmarc.rdvs.studio</code>. Keep it as a single TXT; do not wrap it or split it across two records. A shorter value of just <code>v=DMARC1; p=none;</code> is also valid - it simply asks for no reports. Add the <code>rua</code> tag later, once the mailbox exists.</p>
 
   <div class="warn">
     <b>Create the reporting mailbox first</b>
