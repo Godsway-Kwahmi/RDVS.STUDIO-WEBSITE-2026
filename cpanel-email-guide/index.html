@@ -319,6 +319,11 @@ nslookup -type=TXT _dmarc.rdvs.studio 8.8.8.8</code></pre>
 
   <p>Expect the two hosting nameservers, then <code>192.64.117.211</code>, then two TXT answers. MX caches are one hour, so allow an hour before concluding that mail routing did not move.</p>
 
+  <div class="note">
+    <b>If the delegation changed but the records did not</b>
+    This is a real state: the <code>.studio</code> registry already lists <code>dns1/dns2.namecheaphosting.com</code>, yet querying those nameservers still returns the old BasicDNS zone (NS <code>registrar-servers.com</code>, MX <code>mail.rdvs.studio</code>, no <code>mail</code> A). It means Namecheap has not activated the cPanel zone yet. Allow up to 24 hours. If it persists, check that the Nameservers field in the dashboard holds the <b>Namecheap Web Hosting DNS</b> preset and not <b>Custom DNS</b> with those two hostnames, then ask support to activate the hosting zone for the domain.
+  </div>
+
   <h2><span class="num">7</span>Run AutoSSL</h2>
   <p>Go to <b>Security &rarr; SSL/TLS Certificates</b> and open the <b>Status</b> tab. On older cPanel builds this page is called <b>SSL/TLS Status</b>. It lists the domain and <code>www</code> with a lock or a warning.</p>
 
