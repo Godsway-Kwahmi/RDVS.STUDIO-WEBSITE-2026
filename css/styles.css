@@ -1571,6 +1571,16 @@ button {
   }
 }
 
+/* The band's top edge, 8px higher on the 1024-1199 tier (owner, 2026-11-11, the same
+   Capture-res-002.PNG: a blue rule drawn along the plate's foot at image y 865 with the words "MOVE EDGE
+   UP BY 8PX"). The bar's rows are bottom-anchored, so the extra height is all taken off the top edge and
+   nothing in the band moves. Measured at 1165x803: the edge was at 695 CSS, the markup's line at 692. */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .hero-footer-container {
+    --hero-strip-height: 116px;
+  }
+}
+
 @media (min-width: 1200px) {
   /* Out of the flex flow, so the caption is the only in-flow item and its percentage margin is the
      whole story.  The box spans the band left to right -- it is transparent, and .hero-footer
@@ -4474,6 +4484,21 @@ html[data-intro="done"] .rdvs-intro-veil {
   .homepage-welcome-message.is-hidden {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+/* The welcome, up on the top datum in the 1024-1199 tier too (owner, 2026-11-11, markup
+   Capture-res-002.PNG: a ~1165x803 window on Protea Hotel, plate 13/20, with the sentence boxed at
+   630..740 and an arrow drawn from it to the header reading "MOVE WELCOME MESSAGE UP"). From 1024px the
+   desktop block above anchors the welcome by `bottom: 25dvh`, which at this tier drops it into the middle
+   of the plate. Below 1200 the caption cluster lives in the footer band instead of being lifted onto the
+   welcome's line, so there is nothing up here for it to sit beside; the sentence goes to the same top
+   datum every other band uses (header + 16) and keeps its horizontal placement. This sits AFTER that block
+   because both set `bottom` on the same selector and the later rule wins. */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .homepage-welcome-message {
+    top: calc(var(--header-height, 56px) + 16px);
+    bottom: auto;
   }
 }
 

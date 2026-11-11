@@ -9420,7 +9420,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         const HERO_CAPTION_MIN = 312;
         const PORTRAIT_DATUM_OFFSET = 28;
         const activeTitle = document.querySelector('.caption-card.active .project-title');
-        const titleLeft = (activeTitle && activeTitle.getBoundingClientRect().left > 0) ? activeTitle.getBoundingClientRect().left : 0;
+        // The title's own left edge is the caption column only from 1200px up, where --hero-caption-lift
+        // raises the cluster into the hero beside this box. Below that the title sits in the footer band
+        // at the grid margin, so reading it as a column asked for a box 88px left of x=24 and pushed the
+        // welcome entirely off screen: measured on the live build at 1165x803 the sentence ran -224..-64.
+        const titleLeft = (activeTitle && window.innerWidth >= 1200 && activeTitle.getBoundingClientRect().left > 0)
+          ? activeTitle.getBoundingClientRect().left : 0;
         const column = titleLeft > 0 ? titleLeft : Math.max(window.innerWidth / 2 - HERO_CAPTION_INSET, HERO_CAPTION_MIN);
         const datum = column - PORTRAIT_DATUM_OFFSET;
         const targetRight = Math.round(window.innerWidth - (datum - 60));
@@ -9473,7 +9478,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (hairlineEl) {
         const activeCard = document.querySelector('.caption-card.active');
         const cardIndex = activeCard && activeCard.dataset.index !== undefined ? parseInt(activeCard.dataset.index, 10) : 0;
-        const isHidden = !isDesktop || cardIndex >= 19 || (welcomeEl && welcomeEl.classList.contains('is-hidden'));
+        // The connector only makes sense where the title is lifted onto the welcome's own line, and that
+        // is the >=1200 tier: below it the caption cluster lives in the footer band, so the line would
+        // run from the welcome out into empty plate and stop. With the welcome now on the top datum from
+        // 1024 up (owner markup Capture-res-002.PNG, 2026-11-11), a connector here would hang under the
+        // header pointing at nothing.
+        const hairlineTier = window.innerWidth >= 1200;
+        const isHidden = !hairlineTier || cardIndex >= 19 || (welcomeEl && welcomeEl.classList.contains('is-hidden'));
 
         if (isHidden) {
           hairlineEl.classList.add('is-hidden');
