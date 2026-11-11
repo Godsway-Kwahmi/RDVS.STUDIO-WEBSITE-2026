@@ -282,10 +282,35 @@ button {
   }
 
   .nav-school {
-    /* First in the line, then centred in whatever the rest of the group leaves behind it. */
-    order: -1;
-    margin-left: auto;
-    margin-right: auto;
+    /* Back on its original datum, and off the mercy of how many links the group holds. It used to be
+       centred by auto margins in whatever the rest of the line left behind, which made its x a
+       function of the link set: adding "Our Process" moved it 53px left and broke its alignment with
+       the hero caption. The caption column is `50% - 330px` of this same container (.caption-wrapper,
+       and --hero-caption-inset), so the label is now pinned the same way -- 50% - 329px, which is
+       where the auto margins actually landed it at every width measured from 993 to 1920 (167, 183,
+       221, 311, 391, 631), one pixel right of the caption throughout. Out of the flow, so the link
+       cluster packs exactly as if it were not there. */
+    position: absolute;
+    left: calc(50% - 329px);
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+
+  .primary-nav {
+    /* With RDVSchool out of the flow there is no auto margin pushing the links right any more, so
+       they pack against the utility group themselves -- the same x they had before. */
+    justify-content: flex-end;
+  }
+
+  .primary-nav a[href="our-process.html"] {
+    /* Owner markup 2026-11-11, "MOVE 200px LEFT", arrow drawn from the link's own left edge. The pull
+       is 200px wherever the header has room and shrinks rather than colliding with RDVSchool: the
+       slack between the label's right edge and "Work" measures 138px at 1280, 218px at 1440 and 458px
+       at 1920 -- it grows 0.5px per px of viewport, so `50vw - 502px` IS that slack and clamp() holds
+       the pull inside it. At 993px the slack is gone and the link sits back against the cluster.
+       scratch/_nav_geom.cjs measures the result at six widths. */
+    margin-right: clamp(0px, calc(50vw - 502px), 200px);
   }
 
   .nav-archive {
